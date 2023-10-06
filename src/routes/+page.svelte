@@ -1,25 +1,41 @@
 <script lang="ts">
+	import { onMount } from "svelte";
+
 	let plang: any = {
 		english: 'PETRICHOR',
 		hindi: 'पेट्रीकोर',
 		tamil: 'பெட்ரிகோர்',
+		gujrati: 'પેટ્રિકોર',
+		malayalam: 'പെട്രിക്കോർ',
+		bengali: 'পেট্রিকোর',
 		telugu: 'పెట్రికోర్',
-		malayalam: 'പെട്രിക്കോർ'
+		punjabi: 'ਪੈਟ੍ਰਿਕੋਰ'
 	};
 	let langs = Object.keys(plang);
 	let curr_lang_index = 0;
 	let curr_petr_phrase = 'PETRICHOR';
 
-	let tooltip_text = 'english';
+	let isPhone = false
+	let mouse: HTMLDivElement
+	onMount(() => {
+		isPhone = document.body.clientWidth < 500
+		document.onmousemove = (e) => {
+			mouse.style.left = `${e.clientX}px`
+			mouse.style.top = `${e.clientY}px`
+		}
+		hovering = true
+	})
+
+	let tooltip_text = 'Petrichor in english';
 	const setLang = () => {
-		if (!hovering) {
+		if (!hovering && !isPhone) {
 			return;
 		}
 		curr_lang_index++;
 		if (curr_lang_index >= langs.length) {
 			curr_lang_index = 0;
 		}
-		ptext.style.filter = 'blur(30px)';
+		ptext.style.filter = 'blur(2svw)';
 		setTimeout(() => {
 			curr_petr_phrase = plang[langs[curr_lang_index]];
 			ptext.style.filter = '';
@@ -62,7 +78,7 @@
 
 	let hovering = false;
 	let ptext: HTMLDivElement;
-	setInterval(setLang, 750);
+	setInterval(setLang, 2000);
 </script>
 
 <div class="main" style="--p: '{curr_petr_phrase}'">
@@ -70,16 +86,15 @@
 	<div
 		bind:this={ptext}
 		class="petr"
-		on:mouseenter={() => {
-			hovering = true;
-		}}
-		on:mouseleave={() => {
-			hovering = false;
-		}}
+		
 	>
 		{curr_petr_phrase}
 	</div>
 	<span>{tttf}</span>
+</div>
+
+<div class="mouse" bind:this={mouse}>
+	EXPLORE
 </div>
 
 <style>
@@ -87,6 +102,21 @@
 		width: 100svw;
 		height: 100svh;
 		background-color: black;
+		display: grid;
+		place-items: center;
+	}
+	.mouse{
+		cursor: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+		background-color: white;
+		height: 10em;
+		aspect-ratio: 1;
+		border-radius: 100vh;
+		color: black;
 		display: grid;
 		place-items: center;
 	}
@@ -109,6 +139,8 @@
 		z-index: -1;
 		transition: 200ms ease-in-out;
 		filter: blur(4px);
+		top: 3%;
+		left: -0.3%;
 	}
 	.petr::before {
 		content: var(--p);
@@ -120,18 +152,16 @@
 		z-index: -1;
 		transition: 200ms ease-in-out;
 		filter: blur(4px);
-	}
-	.petr:hover::after {
-		top: 3%;
-		left: -0.3%;
-	}
-	.petr:hover::before {
 		top: -3%;
 		left: 0.3%;
 	}
+	.petr:hover::after {
+	}
+	.petr:hover::before {
+	}
 
 	span {
-		font-size: 40px;
+		font-size: 30px;
 		position: absolute;
 		left: 50%;
 		top: 75%;
@@ -143,20 +173,27 @@
 		padding-inline: 1em;
 		border-radius: 1em;
 		opacity: 0.4;
+		width: max-content;
 
+	}
+
+	@media(max-width: 500px){
+		span{
+			font-size: 15px;
+		}
 	}
 
 	@keyframes glitch {
 		2%,
 		64% {
-			transform: translate(2px, 0) skew(0deg);
+			transform: translate(.1%, 0) skew(0deg);
 		}
 		4%,
 		60% {
-			transform: translate(-2px, 0) skew(0deg);
+			transform: translate(-.1%, 0) skew(0deg);
 		}
 		62% {
-			transform: translate(0, 0) skew(5deg);
+			transform: translate(0, 0) skew(10deg);
 		}
 	}
 </style>
