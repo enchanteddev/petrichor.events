@@ -54,7 +54,7 @@
     nav{
         display: flex;
         justify-content: center;
-        height: 3em;
+        height: 4em;
         place-items: center;
         background-color: rgb(21, 21, 21, 0.25);
         backdrop-filter: blur(12px);
@@ -70,7 +70,7 @@
         width: 8rem;
     }
     .sidebar{
-        width: 3em;
+        width: 4em;
         background-color: rgb(21, 21, 21, 0.25);
         backdrop-filter: blur(12px);
         height: 100%;
@@ -82,7 +82,7 @@
 
     }
     .petimg{
-        height: 3em;
+        height: 4em;
         aspect-ratio: 0.55;
         background-image: url("https://petrichor.events/static/media/logo_red.7a86e334.png");
         background-position: center;
@@ -110,7 +110,7 @@
         opacity: 1;
     }
     .main{
-        margin-left: 3em;
+        margin-left: 4em;
         z-index: 2;
     }
 </style>

@@ -114,6 +114,7 @@
         border-radius: 0.4em;
         border: unset;
         color:white;
+        font-size: 20px;
         transition: 200ms ease-in-out;
     }
     .register:hover{
@@ -134,11 +135,12 @@
     .sidebar{
         overflow-y: scroll;
         height: 90vh;
-        width: 20%;
+        width: 25%;
     }
     .parent{
         display: flex;
         width: 100%;
+        /* font-size: 20px; */
     }
     .content{
         z-index: 100;
@@ -160,22 +162,25 @@
         margin-right: 0.75em;
     }
     .banner > h1{
-        font-size: 7em;
+        font-size: 9em;
         /* position: absolute;   */
         right: 5vw;
-        height: 10rem;
-        margin-bottom: 0;
-        margin-top: 1rem;
+        height: 13rem;
+        margin-bottom: 1.33rem;
+        margin-top: 1.33rem;
     }
     .banner > p{
-        margin-top: 2rem;
-        font-size: 18px;
+        margin-top: 2em;
+        font-size: 23px;
         width: 90%;
+    }
+    .banner > span{
+        font-size: 20px;
     }
     .rulebook{
         margin-top: 2rem;
         width: 85%;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     @keyframes banneranim{
