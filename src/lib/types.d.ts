@@ -2,9 +2,9 @@ export interface event {
     name: string,
     about: string,
     image: string,
+    date: string,
     rulebook: {
-        date: string,
-        structure: string,
+        structure: {[key: string]: string[]},
         rules: string[],
         judging: string[],
         prizes: string[]

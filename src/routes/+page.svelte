@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-
+	
 	let plang: any = {
 		english: 'PETRICHOR',
 		hindi: 'पेट्रीकोर',
@@ -14,10 +14,11 @@
 	let langs = Object.keys(plang);
 	let curr_lang_index = 0;
 	let curr_petr_phrase = 'PETRICHOR';
-
+	
 	let isPhone = false
 	let mouse: HTMLDivElement
 	onMount(() => {
+		window.location.replace('/events')
 		isPhone = document.body.clientWidth < 500
 		document.onmousemove = (e) => {
 			mouse.style.left = `${e.clientX}px`
