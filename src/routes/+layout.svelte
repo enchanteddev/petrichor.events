@@ -4,19 +4,20 @@
 
 </script>
 <nav>
-    <a href="/home">Home</a>
-    <a href="/home">Cultural</a>
-    <a href="/home">Technical</a>
+    <a class="petimg2" href="/home"> </a>
+    <a href="/home">About Us</a>
+    <a href="/home#events">Events</a>
     <a href="/home">Workshops</a>
     <a href="/home">Proshows</a>
+    <a href="/home">Merch</a>
+    <a href="/home">Schedule</a>
+    <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
 </nav>
 
 <div class="parent">
     <div class="sidebar">
-        <a class="petimg" href="/home"> </a>
         <div class="sb-content">
             <div class="up">
-                <a href="/login"><Icon data={user} scale={1.6}/></a>
                 <p>LOGIN</p>
                 <a href="/merch"><Icon data={shoppingCart} scale={1.6}/></a>
                 <p>MERCH</p>
@@ -56,18 +57,26 @@
         justify-content: center;
         height: 4em;
         place-items: center;
-        background-color: rgb(21, 21, 21, 0.25);
+        background-color: rgba(79, 79, 79, 0.454);
         backdrop-filter: blur(12px);
-        position: sticky;
+        position: fixed;
         top: 0;
-        z-index: 3;
+        z-index: 4;
+        left:50%;
+        transform: translate(-50%, 0);
+        border-radius: 100vh;
+        margin-top: 1em;
     }
     a{
         color: inherit;
         text-decoration: unset;
+        text-align: center;
+    }
+    a.login{
+        width: 4em;
     }
     nav > a{
-        width: 8rem;
+        width: 7rem;
     }
     .sidebar{
         width: 4em;
@@ -76,7 +85,8 @@
         height: 100%;
         position: fixed;
         top:0;
-        display: flex;
+        /* display: flex; */
+        display: none;
         flex-direction: column;
         z-index: 4;
 
@@ -88,6 +98,14 @@
         background-position: center;
         background-size: 50%;
         background-repeat: no-repeat;
+    }
+    .petimg2{
+        aspect-ratio: 0.55;
+        background-image: url("https://petrichor.events/static/media/logo_red.7a86e334.png");
+        background-position: center;
+        background-size: 30%;
+        background-repeat: no-repeat;
+        width: 4em;
     }
     .sb-content{
         flex: 1;
@@ -110,7 +128,7 @@
         opacity: 1;
     }
     .main{
-        margin-left: 4em;
+        /* margin-left: 4em; */
         z-index: 2;
     }
 </style>

@@ -18,7 +18,7 @@
 	let isPhone = false
 	let mouse: HTMLDivElement
 	onMount(() => {
-		window.location.replace('/events')
+		// window.location.replace('/events')
 		isPhone = document.body.clientWidth < 500
 		document.onmousemove = (e) => {
 			mouse.style.left = `${e.clientX}px`
