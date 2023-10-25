@@ -75,11 +75,17 @@
     }
     .workshop{
         display: flex;
-        height: 100vh;
+        height: 80vh;
     }
     
     .workshop > *{
         width: 50%;
+    }
+    .about{
+        width: 60%;
+    }
+    .img{
+        width: 40%;
     }
     .workshop:nth-child(even){
         display: flex;
@@ -118,6 +124,7 @@
     }
     .img{
         background-size: cover;
+        background-position: 20%;
         margin: 2em;
         border-radius: 2em;
     }
