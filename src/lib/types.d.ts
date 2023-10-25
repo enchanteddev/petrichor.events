@@ -12,6 +12,19 @@ export interface event {
     organisers: person[]
 }
 
+export interface workshop {
+    name: string,
+    about: string,
+    speakers: string[],
+    date: string,
+    fees: number,
+    topics: string[],
+    regdate: string,
+    location: string,
+    prereq: string[],
+    image: string
+}
+
 export interface person{
     name: string,
     image: string,

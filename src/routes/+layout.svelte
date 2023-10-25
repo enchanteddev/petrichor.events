@@ -7,7 +7,7 @@
     <a class="petimg2" href="/home"> </a>
     <a href="/home">About Us</a>
     <a href="/home#events">Events</a>
-    <a href="/home">Workshops</a>
+    <a href="/workshops">Workshops</a>
     <a href="/home">Proshows</a>
     <a href="/home">Merch</a>
     <a href="/home">Schedule</a>
