@@ -163,7 +163,7 @@
         margin-right: 0.75em;
     }
     .banner > h1{
-        font-size: 9em;
+        font-size: 9vw;
         /* position: absolute;   */
         right: 5vw;
         height: 13rem;
