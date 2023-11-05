@@ -24,6 +24,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-awesome": "^3.2.1"
+		"@phippsytech/svelte-qrious": "^0.0.3",
+		"@types/ws": "^8.5.8",
+		"qrcode": "^1.5.3",
+		"svelte-awesome": "^3.2.1",
+		"svelte-qrcode": "^1.0.0"
 	}
 }

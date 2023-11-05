@@ -30,3 +30,11 @@ export interface person{
     image: string,
     phone: number
 }
+
+export interface payment{
+    userID: string,
+    eventID: string,
+    amount: number,
+    transactionID: string,
+    CAcode: number | null
+}
