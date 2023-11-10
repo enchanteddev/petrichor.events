@@ -1,18 +1,21 @@
 <script>
     import Icon from 'svelte-awesome/components/Icon.svelte';
     import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
-
+    export let data;
 </script>
-<nav>
-    <a class="petimg2" href="/home"> </a>
-    <a href="/home">About Us</a>
-    <a href="/home#events">Events</a>
-    <a href="/workshops">Workshops</a>
-    <a href="/home">Proshows</a>
-    <a href="/home">Merch</a>
-    <a href="/home">Schedule</a>
-    <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
-</nav>
+
+{#if data.path != '/'}    
+    <nav>
+        <a class="petimg2" href="/home"> </a>
+        <a href="/home">About Us</a>
+        <a href="/home#events">Events</a>
+        <a href="/workshops">Workshops</a>
+        <a href="/home">Proshows</a>
+        <a href="/home">Merch</a>
+        <a href="/home">Schedule</a>
+        <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
+    </nav>
+{/if}
 
 <div class="parent">
     <div class="sidebar">

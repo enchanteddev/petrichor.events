@@ -94,8 +94,10 @@
 	<span>{tttf}</span>
 </div>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="mouse" bind:this={mouse}>
-	EXPLORE
+	<a href="/home" style="all: unset;">EXPLORE</a>
 </div>
 
 <style>
