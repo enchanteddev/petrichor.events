@@ -1,49 +1,59 @@
 <h1 id="heading"><span style="color:blueviolet">PETRICHOR'24</span> IS SPONSORED BY</h1>
 
-<div id='all' class=' d-flex justify-content-center align-items-center my-3'>
-    <div class="row">
+<div id='all'>
 
-        <div id="pnbSponsor" class="col-md-4 my-4">
+        <div id="pnbSponsor">
             <div class="title">Gold Sponsor</div>
             <div class="img" />
             <div class="name">Punjab National Bank</div>
         </div>
-        <div id="tripshopinSponsor" class="col-md-4 my-4">
+        <div id="tripshopinSponsor">
             <div class="title">Travel Partner</div>
             <div class="img" />
             <div class="name">TripShopin</div>
         </div>
-        <div id="sbiSponsor" class="col-md-4 my-4">
+        <div id="sbiSponsor">
             <div class="title">Gold Sponsor</div>
             <div class="img" />
             <div class="name">State Bank of India</div>
         </div>
-        <div id="canaraSponsor" class="col-md-4 my-4">
+        <div id="canaraSponsor">
             <div class="title">Tech Summit Sponsor</div>
             <div class="img" />
             <div class="name">Canara Bank</div>
         </div>
-        <div id="sparxSponsor" class="col-md-4 my-4">
+        <div id="sparxSponsor">
             <div class="title">Official Footwear Partner</div>
             <div class="img" />
             <div class="name">Sparx</div>
         </div>
-        <div id="RFSponsor" class="col-md-4 my-4">
+        <div id="RFSponsor">
             <div class="title">Official Bike Partner</div>
             <div class="img" />
             <div class="name">Royal Enfield</div>
         </div>
     </div>
-</div>
 
 
 <style>
+
+    #pnbSponsor{grid-area: pnb;}
+    #tripshopinSponsor{grid-area: trip;}
+    #sbiSponsor{grid-area: sbi;}
+    #canaraSponsor{grid-area: canara;}
+    #sparxSponsor{grid-area: sparx;}
+    #RFSponsor{grid-area: RF;}
+
 	* {
 		box-sizing: border-box;
 	}
     #all{
         margin-left: 10rem;
-        display: flex;
+        display: grid;
+        grid-template-areas: 'pnb trip sbi'
+        'canara sparx RF';
+        grid-column: 10rem;
+        gap: 10rem;
         align-items: center;
         justify-content: center;
     }
