@@ -12,7 +12,7 @@
         <a href="/workshops">Workshops</a>
         <a href="/home">Proshows</a>
         <a href="/home">Merch</a>
-        <a href="/home">Schedule</a>
+        <a href="/sponsors">Sponsors</a>
         <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
     </nav>
 {/if}

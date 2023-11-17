@@ -48,7 +48,7 @@
 		box-sizing: border-box;
 	}
     #all{
-        margin-left: 10rem;
+        /* margin-left: 10rem; */
         display: grid;
         grid-template-areas: 'pnb trip sbi'
         'canara sparx RF';
