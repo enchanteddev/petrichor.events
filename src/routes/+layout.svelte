@@ -7,11 +7,11 @@
 {#if data.path != '/'}    
     <nav>
         <a class="petimg2" href="/home"> </a>
-        <a href="/home">About Us</a>
+        <a href="/aboutus">About Us</a>
         <a href="/home#events">Events</a>
         <a href="/workshops">Workshops</a>
-        <a href="/home">Proshows</a>
-        <a href="/home">Merch</a>
+        <a href="/proshows">Proshows</a>
+        <a href="/merch">Merch</a>
         <a href="/sponsors">Sponsors</a>
         <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
     </nav>
