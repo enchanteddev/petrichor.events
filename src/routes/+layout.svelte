@@ -2,12 +2,23 @@
     import Icon from 'svelte-awesome/components/Icon.svelte';
     import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
     export let data;
+    let hover = false;
 </script>
 
 {#if data.path != '/'}    
     <nav>
         <a class="petimg2" href="/home"> </a>
-        <a href="/aboutus">About Us</a>
+        <div>
+            <a href="/aboutus" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{
+                    setTimeout(()=>{hover=false;}, 3000)
+                }}>About Us</a>
+            {#if hover}
+                <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
+                    <a href="/contactus">Contact Us</a>
+                    <a href="/reachus">Reach Us</a>
+                </div>
+            {/if}
+        </div>
         <a href="/home#events">Events</a>
         <a href="/workshops">Workshops</a>
         <a href="/proshows">Proshows</a>
@@ -43,6 +54,25 @@
 </div>
 
 <style>
+    nav > div{
+        position: relative;
+    }
+    .more{
+        position: absolute;
+        background-color: rgba(79, 79, 79, 0.454);
+        backdrop-filter: blur(12px);
+        top: 3em;
+        width: 6em;
+        padding: 1em;
+        padding-top: 0;
+        left: -1em;
+        border-radius: 1em;
+    }
+    .more > a{
+        display: block;
+        margin-top: 1em;
+        text-align: left;
+    }
     .up >p{
         all:unset;
         margin-bottom: 3em;
