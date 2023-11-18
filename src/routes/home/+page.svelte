@@ -1,7 +1,12 @@
 <!-- svelte-ignore a11y-media-has-caption -->
+<script lang="ts">
+	let visible = false;
+	setTimeout(() => {visible = true;}, 10)
+</script>
 
-<div class="main">
+<div class="main {visible ? "" : "none"}">
 	<video src="https://petrichor.events/static/media/video.95406780.mp4" autoplay muted loop />
+	<!-- <video src="%sveltekit.assets%/loading.mp4" autoplay muted loop /> -->
 	<div class="title">
 		<div class="imgparent" />
 		<div class="tit">
@@ -38,6 +43,12 @@
 </div>
 
 <style>
+	.none{
+		opacity: 0% !important;
+	}
+	.main{
+		transition: 1000ms;
+	}
 	.bupal {
 		display: flex;
 	}
