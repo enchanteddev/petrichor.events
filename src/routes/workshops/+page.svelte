@@ -25,15 +25,10 @@
                             {#each ws.topics as topic}
                                 <span class="chip">{topic}</span>
                             {/each}
-                            <span class="chip" style="background-color: red;">{ws.date}</span>
-                            <span class="chip" style="background-color: black;">{ws.location}</span>
-                            <span class="chip" style="background-color: purple;">Register on {ws.regdate}</span>
-                            <span class="chip" style="background-color: green;">₹{ws.fees}</span>
                         </div>
-                        <button class="butt">Register Now</button>
-                    </div>
-                    <div class="content">
+                        <p>Happening on <strong style="color:cyan">{ws.date}</strong> at <strong style="color:lightgreen">{ws.location}</strong></p>
                         <p>{ws.about}</p>
+                        <a href="/payment?name={ws.name}" class="butt">Register Now for ₹{ws.fees}</a>
                         <p style="color: orange;">Some knowledge in
                             {#each ws.prereq as spk, i}
                                 <span><strong>{spk}</strong>  {i == ws.prereq.length - 1 ? "" : (
@@ -57,12 +52,15 @@
         border: 1px solid white;
     }
     .butt{
+        display: block;
+        width: fit-content;
+        text-decoration: unset;
         padding: 0.8em;
         padding-inline: 1em;
-        background-color: rgba(237, 237, 237, 0.137);
+        background-color: rgb(255, 255, 255);
         border-radius: 0.4em;
         border: unset;
-        color:white;
+        color:rgb(0, 0, 0);
         cursor: pointer;
         font-size: 15px;
         margin-top: 1em;
@@ -70,8 +68,8 @@
         transition: 200ms ease-in-out;
     }
     .butt:hover{
-        background-color: rgb(255, 255, 255);
-        color: black
+        background-color: rgb(110, 255, 173);
+        color: rgb(0, 0, 0)
     }
     .workshop{
         display: flex;
@@ -113,7 +111,7 @@
     .chip{
         padding: 0.2em;
         padding-inline: 1em;
-        background-color: rgb(118, 118, 255);
+        background-color: rgb(83, 83, 215);
         margin-right: 1em;
         border-radius: 1em;
         margin-bottom: .7em;
