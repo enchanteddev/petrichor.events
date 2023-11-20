@@ -50,10 +50,49 @@
     </div>
     <div class="main">
         <slot></slot>
+        {#if data.path != '/'}    
+            <footer>
+                <div class="address">
+                    <h1>Address</h1>
+                    <p>IIT PALAKKAD, Nila campus, P O, Kanjikode-Malampuzha Road, West Kanjikode, Pudusserry West, Kanjikode, Kerala 678623</p>
+                </div>
+                <div class="address">
+                    <h1>@email</h1>
+                    <p>events.petrichor@iitpkd.ac.in</p>
+                </div>
+                <div class="address">
+                    <h1>Connect with us</h1>
+                    <div class="socials">
+                        <a href="insta"><Icon data={instagram} scale={1.6}/></a>
+                        <a href="insta"><Icon data={facebook} scale={1.6}/></a>
+                        <a href="insta"><Icon data={linkedin} scale={1.6}/></a>
+                        <a href="insta"><Icon data={twitter} scale={1.6}/></a>
+                    </div>
+                </div>
+            </footer>
+        {/if}
     </div>
 </div>
 
 <style>
+    .socials{
+        margin-left: 20%;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2em;
+        background-color: rgb(16, 16, 16);
+    }
+    .address > h1, p{
+        text-align: center;
+    }
+    .address{
+        margin-inline: 1em;
+    }
     nav > div{
         position: relative;
     }
