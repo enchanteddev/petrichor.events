@@ -128,31 +128,7 @@
 	};
 </script>
 
-<div class="parent">
-	<div class="sidebar">
-		<div class="sb-content">
-			<div class="up">
-				<p>LOGIN</p>
-				<a href="/merch"><Icon data={shoppingCart} scale={1.6} /></a>
-				<p>MERCH</p>
-				<a href="/reachus"><Icon data={mapMarker} scale={1.6} /></a>
-				<p>WHERE</p>
-				<a href="/reachus"><Icon data={calendar} scale={1.6} /></a>
-				<p>WHEN</p>
-			</div>
-			<div class="dn">
-				<a href="insta"><Icon data={instagram} scale={1.6} /></a>
-				<a href="insta"><Icon data={facebook} scale={1.6} /></a>
-				<a href="insta"><Icon data={linkedin} scale={1.6} /></a>
-				<a href="insta"><Icon data={twitter} scale={1.6} /></a>
-			</div>
-		</div>
-	</div>
-	<div class="main">
-		<slot />
-	</div>
-</div>
-
+<div id='all'>
 <h1 style="text-align:center;margin-top:10rem;">
 	Registering for <span style="color: blueviolet;">{data.name}</span>
 </h1>
@@ -221,62 +197,18 @@
 		</div>
 	</div>
 </div>
+</div>
 
 <style>
-	.up > p {
-		all: unset;
-		margin-bottom: 3em;
-		margin-top: 0.2em;
-		font-size: 0.6rem;
-	}
-	.dn > a {
-		margin-bottom: 1em;
-	}
-	.up {
-		padding-top: 2em;
-	}
-	.sidebar {
-		width: 4em;
-		background-color: rgb(21, 21, 21, 0.25);
-		backdrop-filter: blur(12px);
-		height: 100%;
-		position: fixed;
-		top: 0;
-		display: none;
-		flex-direction: column;
-		z-index: 4;
-	}
-	.sb-content {
-		flex: 1;
-	}
-	.up,
-	.dn {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		/* opacity: 0.5; */
-	}
-	.dn {
-		position: fixed;
-		bottom: 1em;
-		width: 100%;
-	}
-	.up > a,
-	.dn > a {
-		opacity: 0.5;
-	}
-	.up > a:hover,
-	.dn > a:hover {
-		opacity: 1;
-	}
-	.main {
-		/* margin-left: 4em; */
-		z-index: 2;
+	#all{
+		display: block;
 	}
 	.form {
 		margin-left: 10rem;
 		margin-top: 4rem;
 		padding-top: 0rem;
+		margin-bottom: 10rem;
+		
 	}
 	.payment {
 		margin-right: 15rem;
