@@ -39,7 +39,7 @@ export const load: PageLoad = () => {
             {
                 name: 'Robot Wars',
                 image: 'https://petrichor.events/media/tech_event_pic/Robo-Wars.jpg',
-                about: "The city screams MURDER and you know there is a highly intelligent serial killer on the prowl... the promo event: Preserved Entropy led you to his name, H. Holmes. This was surely an important lead but is it enough? Participate in this wild goose chase to take on an adventure of a lifetime. The hunt will range in topics including but not restricted to... art, music, culinary knowledge, forensics, chemistry, math, ‘googling’ etc.",
+                about: "The city screams MURDER and you know there is a highly intelligent serial killer on the prowl... the promo event: Preserved Entropy led you to his name, H. Holmes. This was surely an important lead but is it enough? Participate in this wild goose chase to take on an adventure of a lifetime. The hunt will range in topics including but not restricted to... art, music, culinary knowledge, forensics, chemistry, math, 'googling' etc.",
                 rulebook: {
                     structure: {
                         "Game Structure": [

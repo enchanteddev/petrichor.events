@@ -38,8 +38,8 @@
 	<div class="banner events" id="events">
 		<h1 style="margin-bottom: 0;">EVENTS</h1>
 		<div class="sel">
-			<a href="/events" class="event">CULTURAL</a>
-			<a href="/events" class="event">TECHNICAL</a>
+			<a href="/events/cultural" class="event">CULTURAL</a>
+			<a href="/events/technical" class="event">TECHNICAL</a>
 		</div>
 	</div>
 	<div class="banner workshops">
