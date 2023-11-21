@@ -199,8 +199,12 @@
     .up > a:hover, .dn > a:hover{
         opacity: 1;
     }
+    .parent{
+        width: 100vw;
+    }
     .main{
         /* margin-left: 4em; */
         z-index: 2;
+        width: 100vw;
     }
 </style>

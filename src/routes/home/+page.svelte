@@ -212,4 +212,23 @@
 		transition: 0s;
 		transform: translate(0, 5%);
 	}
+
+	@media (max-width: 500px){
+        .title, .banner{
+            /* width: 100svh; */
+			flex-direction: column;
+        }
+		h1{
+			font-size: 30px;
+			display: inline;
+		}
+		video{
+			top: -25vh;
+			left: 3vw;
+		}
+		.tit{
+			width: 90%;
+			padding-left: 20%;
+		}
+    }
 </style>
