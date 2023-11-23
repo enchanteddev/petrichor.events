@@ -79,6 +79,7 @@
 
 	let hovering = false;
 	let ptext: HTMLDivElement;
+	let clicked = false;
 	setInterval(setLang, 2000);
 </script>
 
@@ -96,8 +97,13 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="mouse" bind:this={mouse}>
-	<a href="/home" style="all: unset;">EXPLORE</a>
+<div class="mouse {clicked ? "big" : "small"}" bind:this={mouse} on:click={() => {
+	clicked = true;
+	setTimeout(() => {
+		window.location.href = '/home'
+	}, 800)
+}}>
+	<div style="all: unset;">{!clicked ? "EXPLORE" : "PETRICHOR 24"}</div>
 </div>
 
 <style>
@@ -108,6 +114,15 @@
 		display: grid;
 		place-items: center;
 	}
+
+	.big{
+		height: 200em;
+		background-color: black;
+	}
+	.small{
+		height: 8em;
+		background-color: white;
+	}
 	.mouse{
 		cursor: none;
 		position: absolute;
@@ -115,13 +130,13 @@
 		left: 0;
 		transform: translate(-50%, -50%);
 		z-index: 100;
-		background-color: white;
-		height: 10em;
+		/* height: 10em; */
 		aspect-ratio: 1;
 		border-radius: 100vh;
 		color: black;
 		display: grid;
 		place-items: center;
+		transition: height 1s linear, background-color 1s linear;
 	}
 	.petr {
 		font-weight: 800;

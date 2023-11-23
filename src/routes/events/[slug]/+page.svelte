@@ -87,25 +87,28 @@
         margin: 1em;
         border-radius: 0.4em;
         transition: 200ms ease-in-out;
+        overflow: hidden;
     }
     .card::before{
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
         content: "";
         position: absolute;
         height: 100%;
-        width: 0;
-        background-color: rgb(255, 151, 255);
+        width: 100%;
         transition: 100ms;
     }
-    .card:hover::before{
-        width: 0.3em;
+    .card:hover{
+        transform: scale(1.08) translateX(0px);
+        z-index: 100000;
     }
     .card > p{
         position: absolute;
+        font-size: 20px;
         bottom: 0;
         left: 1em;
-    }
-    .card:hover{
-        /* transform: scale(1.2); */
     }
     .register{
         padding: 0.8em;
@@ -136,6 +139,8 @@
         overflow-y: scroll;
         height: 100vh;
         width: 25%;
+        background-color: #28282d98;
+        backdrop-filter: blur(40px);
     }
     .parent{
         display: flex;

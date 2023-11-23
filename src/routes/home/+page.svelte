@@ -1,7 +1,17 @@
 <!-- svelte-ignore a11y-media-has-caption -->
+<script lang="ts">
+	import loading from "$lib/assets/loading.mp4"
+	import loopv from "$lib/assets/loopv.mp4"
+	let visible = false;
+	let loaded = false;
+	setTimeout(() => {visible = true;}, 10)
+	setTimeout(() => {loaded = true;}, 8000)
+</script>
 
-<div class="main">
-	<video src="https://petrichor.events/static/media/video.95406780.mp4" autoplay muted loop />
+<div class="main {visible ? "" : "none"}">
+	<!-- <video src="https://petrichor.events/static/media/video.95406780.mp4" autoplay muted loop /> -->
+	<video class={loaded ? "none" : ""} src={loading} autoplay muted />
+	<video class={!loaded ? "none" : ""} src={loopv} autoplay muted loop/>
 	<div class="title">
 		<div class="imgparent" />
 		<div class="tit">
@@ -28,8 +38,8 @@
 	<div class="banner events" id="events">
 		<h1 style="margin-bottom: 0;">EVENTS</h1>
 		<div class="sel">
-			<a href="/events" class="event">CULTURAL</a>
-			<a href="/events" class="event">TECHNICAL</a>
+			<a href="/events/cultural" class="event">CULTURAL</a>
+			<a href="/events/technical" class="event">TECHNICAL</a>
 		</div>
 	</div>
 	<div class="banner workshops">
@@ -38,6 +48,12 @@
 </div>
 
 <style>
+	.none{
+		opacity: 0% !important;
+	}
+	.main{
+		transition: 1000ms;
+	}
 	.bupal {
 		display: flex;
 	}
@@ -78,10 +94,10 @@
 	video {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -25vw;
 		width: 100vw;
 		height: 100vh;
-		filter: grayscale(10%) blur(9px);
+		filter: grayscale(10%);
 		/* opacity: 0.75; */
 		z-index: 0;
 	}
@@ -115,7 +131,7 @@
 	.imgparent {
 		width: 50vw;
 		aspect-ratio: 0.5;
-		background-image: url('https://petrichor.events/static/media/logo_red.7a86e334.png');
+		/* background-image: url('https://petrichor.events/static/media/logo_red.7a86e334.png'); */
 		background-size: 45%;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -170,9 +186,9 @@
 	}
 
 	.cool::after {
-		transform: translate(10px, 10px);
-		width: 35px;
-		height: 35px;
+		transform: translate(5px, 5px);
+		width: 0px;
+		height: 0px;
 		background: #ffffff15;
 		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(5px);
