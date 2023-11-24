@@ -1,10 +1,36 @@
 <div class="container">
 	<div class="blocks details">
-		<div class="informations">
+		<div class="informations" style="height: 0; padding-bottom: 10px;">
 			<!-- Name and Email -->
-			<div class="n-email">
-				<h2>Hi, Dhruvadeep Malakar</h2>
-				<h3 style="font-weight: lighter; ">contact@dhruvadeep.dev</h3>
+			<div class="n-email" style="padding-left: 20px;">
+				<h1 style="width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, Dhruvadeep Malakar</h1>
+				<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
+					contact@dhruvadeep.dev
+				</p>
+			</div>
+
+			<div
+				class="user-details"
+				style="padding-left: 30px; margin-top: 20px; display: flex; flex-direction: column;"
+			>
+				<p style="margin-bottom: 5px;">Phone Number</p>
+				<h4 style="margin-top: 0; margin-bottom: 10px;">+91 9876543211</h4>
+			</div>
+
+			<div
+				class="user-details"
+				style="padding-left: 30px; margin-top: 20px; display: flex; flex-direction: column;"
+			>
+				<p style="margin-bottom: 5px;">College Name</p>
+				<h4 style="margin-top: 0; margin-bottom: 10px;">Indian Institute of Technology Probably</h4>
+			</div>
+
+			<div
+				class="user-details"
+				style="padding-left: 30px; margin-top: 20px; display: flex; flex-direction: column;"
+			>
+				<p style="margin-bottom: 5px;">Graduation Year</p>
+				<h4 style="margin-top: 0; margin-bottom: 10px;">2026</h4>
 			</div>
 		</div>
 		<div class="informations" style="display: flex; ">
@@ -84,13 +110,16 @@
 	.container {
 		display: flex;
 		margin-top: 100px;
+		/* flex-direction: row;
+		justify-content: space-around; */
 		height: 100vh;
-		width: 100vw;
+		width: 99vw;
 	}
 	.blocks {
 		flex-grow: 1;
 		margin: 10px;
 		width: 100%;
+		margin: 0 20px;
 		border-radius: 5%;
 	}
 	.details {
@@ -112,8 +141,9 @@
 		background-color: #333232;
 		border-radius: 20px;
 		margin: 10px;
+		padding-top: 10px;
 		line-height: 0;
-		height: 15%;
+		height: 80px;
 		text-align: left;
 	}
 	.accommodation {
