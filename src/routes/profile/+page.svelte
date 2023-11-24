@@ -57,41 +57,68 @@
 						style="margin-top: 10px; border-radius: 10px;"
 						alt="Image of something"
 					/>
-					<h4 class="payments">Payment Verified</h4>
+					<h4 class="payments" style="background-color: green;">Payment Verified</h4>
 				</div>
 				<div class="event-data" style="text-align: left; padding: 0 30px;">
-					<h2>Event Name</h2>
-					<h3>Event Description</h3>
+					<div>
+						<h4>Labyrinth</h4>
+						<p>Technical</p>
+					</div>
+					<div>
+						<h4>Sat, 20 Jan, 2024 | 10:00 AM</h4>
+						<p>Nila Campus</p>
+					</div>
+					<div class="contact-info" style="padding-top: 20px; width:100%; text-align:right;">
+						<a href="/contacts" style=" text-decoration: none;">Contact US</a>
+					</div>
 				</div>
 			</div>
 			<div class="event-details">
 				<div class="event-image">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img
-						src="https://picsum.photos/200/100"
+						src="https://picsum.photos/200/102"
 						style="margin-top: 10px; border-radius: 10px;"
 						alt="Image of something"
 					/>
-					<h4 class="payments">Payment Verified</h4>
+					<h4 class="payments" style="background-color: red;">Payment Failed</h4>
 				</div>
 				<div class="event-data" style="text-align: left; padding: 0 30px;">
-					<h2>Event Name</h2>
-					<h3>Event Description</h3>
+					<div>
+						<h4>Tessaract</h4>
+						<p>Technical</p>
+					</div>
+					<div>
+						<h4>Sat, 20 Jan, 2024 | 1:00 PM</h4>
+						<p>Nila Campus</p>
+					</div>
+					<div class="contact-info" style="padding-top: 20px; width:100%; text-align:right;">
+						<a href="/contacts" style=" text-decoration: none;">Contact US</a>
+					</div>
 				</div>
 			</div>
 			<div class="event-details">
 				<div class="event-image">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img
-						src="https://picsum.photos/200/100"
+						src="https://picsum.photos/200/101"
 						style="margin-top: 10px; border-radius: 10px;"
 						alt="Image of something"
 					/>
-					<h4 class="payments">Payment Verified</h4>
+					<h4 class="payments" style="background-color: orange;">Payment Pending</h4>
 				</div>
 				<div class="event-data" style="text-align: left; padding: 0 30px;">
-					<h2>Event Name</h2>
-					<h3>Event Description</h3>
+					<div>
+						<h4>Studying</h4>
+						<p>Padhai Karo</p>
+					</div>
+					<div>
+						<h4>Sat, 20 Jan, 2024 | 3:00 PM</h4>
+						<p>Nila Campus</p>
+					</div>
+					<div class="contact-info" style="padding-top: 20px; width:100%; text-align:right;">
+						<a href="/contacts" style=" text-decoration: none;">Contact US</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -173,9 +200,9 @@
 		text-align: center;
 		padding: 0 15px;
 		padding-right: 10px;
+		margin-bottom: 20px;
 	}
 	.event-details .payments {
-		background-color: green;
 		color: white;
 		padding: 10px;
 		border-radius: 5px;
@@ -184,5 +211,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: 3px;
+	}
+	.event-data {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-grow: 3;
+		margin-top: -40px;
+	}
+	.event-data .contact-info a {
+		text-decoration: none;
+		color: rgb(110, 109, 109);
+		font-weight: bold;
 	}
 </style>
