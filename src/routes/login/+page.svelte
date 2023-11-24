@@ -19,6 +19,7 @@
 	</div>
 	<div class="image" />
 </div>
+<div class="blank" />
 
 <style>
 	h2 {
@@ -69,5 +70,10 @@
 	}
 	#register {
 		color: mediumslateblue;
+	}
+	.blank {
+		background-color: black;
+		width: 100%;
+		height: 100px;
 	}
 </style>
