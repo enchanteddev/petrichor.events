@@ -70,7 +70,8 @@
 </script>
 
 <div class="form-container">
-	<div class="form" on:change={validate}>
+	<div class="blank2" />
+	<div class="form image2" on:change={validate}>
 		<h2>Register for <span id="Petrichor">Petrichor</span></h2>
 		<form action="">
 			<div>
@@ -95,6 +96,7 @@
 			</div>
 			<div class="warning hide" id="inst-type-warn">Select an option</div>
 			<div class="warning hide" id="inst-name-warn">Enter a name</div>
+			<div class="warning hide" id="stream-warn">This field is mandatory</div>
 			<div>
 				<input
 					type="text"
@@ -114,7 +116,6 @@
 					<option value="2030">2030</option>
 				</select>
 			</div>
-			<div class="warning hide" id="stream-warn">This field is mandatory</div>
 			<div class="warning hide" id="yog-warn">This field is mandatory</div>
 			<div>
 				<select name="grade" class="hide" id="grade">
@@ -147,109 +148,188 @@
 <div class="blank" />
 
 <style>
-	h2 {
-		font-size: 300%;
-		font-weight: normal;
-		margin: 2% 10%;
+	@media (min-width: 501px) {
+		h2 {
+			font-size: 300%;
+			font-weight: normal;
+			margin: 2% 10%;
+		}
+		select,
+		input {
+			font-size: 150%;
+			border-radius: 10rem;
+			background-color: #40413e;
+			border: none;
+			padding: 2%;
+			color: white;
+		}
+		#email,
+		#password {
+			margin: 1% 10%;
+			width: 66%;
+		}
+		#name,
+		#stream {
+			margin: 1% 1% 1% 10%;
+			width: 29%;
+		}
+		#inst-type,
+		#grade {
+			margin: 1% 1% 1% 10%;
+			width: 33%;
+		}
+		#inst-name,
+		#phone-number {
+			margin: 1% 1%;
+			width: 30%;
+		}
+		#year-of-graduation {
+			margin: 1% 1%;
+			width: 34%;
+		}
+		::placeholder {
+			color: white;
+		}
+		#Petrichor {
+			color: #910cea;
+			font-weight: 600;
+		}
+		.form-container {
+			padding-top: 10%;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.form {
+			width: 50%;
+		}
+		.image {
+			width: 50%;
+			height: 500px;
+			background-image: url('https://i.pinimg.com/1200x/c2/55/30/c25530ab671a4098de5598e047a9a985.jpg');
+		}
+		#register {
+			font-size: 2rem;
+			margin: 1% 2% 1% 10%;
+			border-radius: 10rem;
+			padding: 2% 7%;
+			background-color: #232423;
+			color: white;
+			font-weight: bold;
+			border: none;
+		}
+		#login {
+			color: mediumslateblue;
+		}
+		.blank {
+			background-color: black;
+			width: 100%;
+			height: 100px;
+		}
+		.hide {
+			display: none;
+		}
+		.warning {
+			color: red;
+		}
+		#inst-type-warn {
+			margin-left: 18%;
+		}
+		#inst-name-warn {
+			margin-left: 55%;
+		}
+		#phone-warn {
+			margin-left: 45%;
+		}
+		#stream-warn {
+			margin-left: 15%;
+		}
+		#yog-warn {
+			margin-left: 50%;
+		}
+		#grade-warn {
+			margin-left: 15%;
+		}
+		#pwd-warn {
+			margin-left: 20%;
+		}
 	}
-	select,
-	input {
-		font-size: 150%;
-		border-radius: 10rem;
-		background-color: #40413e;
-		border: none;
-		padding: 2%;
-		color: white;
-	}
-	#email,
-	#password {
-		margin: 1% 10%;
-		width: 66%;
-	}
-	#name,
-	#stream {
-		margin: 1% 1% 1% 10%;
-		width: 29%;
-	}
-	#inst-type,
-	#grade {
-		margin: 1% 1% 1% 10%;
-		width: 33%;
-	}
-	#inst-name,
-	#phone-number {
-		margin: 1% 1%;
-		width: 30%;
-	}
-	#year-of-graduation {
-		margin: 1% 1%;
-		width: 34%;
-	}
-	::placeholder {
-		color: white;
-	}
-	#Petrichor {
-		color: #910cea;
-		font-weight: 600;
-	}
-	.form-container {
-		padding-top: 10%;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.form {
-		width: 50%;
-	}
-	.image {
-		width: 50%;
-		height: 500px;
-		background-image: url('https://i.pinimg.com/1200x/c2/55/30/c25530ab671a4098de5598e047a9a985.jpg');
-	}
-	#register {
-		font-size: 2rem;
-		margin: 1% 2% 1% 10%;
-		border-radius: 10rem;
-		padding: 2% 7%;
-		background-color: #232423;
-		color: white;
-		font-weight: bold;
-		border: none;
-	}
-	#login {
-		color: mediumslateblue;
-	}
-	.blank {
-		background-color: black;
-		width: 100%;
-		height: 100px;
-	}
-	.hide {
-		display: none;
-	}
-	.warning {
-		color: red;
-	}
-	#inst-type-warn {
-		margin-left: 18%;
-	}
-	#inst-name-warn {
-		margin-left: 55%;
-	}
-	#phone-warn {
-		margin-left: 45%;
-	}
-	#stream-warn {
-		margin-left: 15%;
-	}
-	#yog-warn {
-		margin-left: 50%;
-	}
-	#grade-warn {
-		margin-left: 15%;
-	}
-	#pwd-warn {
-		margin-left: 20%;
+	@media (max-width: 500px) {
+		h2 {
+			font-size: 300%;
+			font-weight: normal;
+			margin: 20% 15% 5%;
+		}
+		select,
+		input {
+			padding: 2%;
+			margin: 2% 6%;
+			font-size: 150%;
+			border-radius: 10rem;
+			width: 85%;
+			background-color: #40413ebb;
+			border: none;
+			color: white;
+		}
+		::placeholder {
+			color: white;
+		}
+		#Petrichor {
+			color: #910cea;
+			font-weight: 600;
+		}
+		.form-container {
+			padding-top: 10%;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.form {
+			width: 100%;
+		}
+		.image2 {
+			height: 1000px;
+			background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+				url('https://i.pinimg.com/1200x/c2/55/30/c25530ab671a4098de5598e047a9a985.jpg');
+		}
+		.image {
+			display: none;
+		}
+		#register {
+			font-size: 2rem;
+			margin: 2% 0% 2% 5%;
+			border-radius: 10rem;
+			padding: 2% 7%;
+			background-color: #232423;
+			color: white;
+			font-weight: bold;
+			border: none;
+		}
+		#login {
+			color: mediumslateblue;
+			display: inline-block;
+			margin: 2% 0 0 30%;
+		}
+		.blank {
+			background-color: black;
+			width: 100%;
+			height: 100px;
+		}
+		.hide {
+			display: none;
+		}
+		.warning {
+			color: red;
+			margin-left: 20%;
+		}
+
+		.blank2 {
+			background-color: black;
+			width: 100%;
+			height: 100px;
+		}
 	}
 </style>
