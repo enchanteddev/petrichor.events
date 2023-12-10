@@ -4,7 +4,7 @@ export interface event {
     image: string,
     date: string,
     rulebook: {
-        structure: {[key: string]: string[]},
+        structure: string[],
         rules: string[],
         judging: string[],
         prizes: string[]

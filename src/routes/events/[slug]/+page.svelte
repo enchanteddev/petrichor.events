@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { event } from "$lib/types";
+    
 	import { onMount } from "svelte";
 
     export let data: {[key: string]: event[]};
@@ -31,7 +32,7 @@
     </div>
     <div class="content">
         <div class="banner">
-            <h1>{currentEvent && currentEvent.name}</h1>
+            <h1 style="height: {currentEvent.name.length > 25 ? '15rem' : '10rem'};">{currentEvent && currentEvent.name}</h1>
             <span>{currentEvent.date}</span>
             <p>{currentEvent && currentEvent.about}</p>
             <div class="buttons">
@@ -41,23 +42,29 @@
         </div>
         <div class="rulebook" id="rules">
             <div class="structure">
-                {#each Object.keys(currentEvent.rulebook.structure) as struct}
+                <!-- {#each Object.keys(currentEvent.rulebook.structure) as struct}
                     <h2>{struct}</h2>
                     {#each currentEvent.rulebook.structure[struct] as point}
                         <li>{point}</li>
                     {/each}
+                {/each} -->
+                {#if currentEvent.rulebook.structure.length > 0}
+                    <h2>Structure</h2>
+                {/if}
+                {#each currentEvent.rulebook.structure as struct}
+                    <li class="nodot">{struct}</li>
                 {/each}
             </div>
             <div class="rules">
                 <h2>Rules</h2>
                 {#each currentEvent.rulebook.rules as struct}
-                    <li>{struct}</li>
+                    <li class="nodot">{struct}</li>
                 {/each}
             </div>
             <div class="judging">
                 <h2>Judging</h2>
                 {#each currentEvent.rulebook.judging as struct}
-                    <li>{struct}</li>
+                    <li class="nodot">{struct}</li>
                 {/each}
             </div>
             <div class="prizes">
@@ -77,6 +84,10 @@
 
 
 <style>
+    .nodot{
+        list-style-type: none;
+    }
+
     .card{
         width: 90%;
         aspect-ratio: 2;
@@ -168,12 +179,12 @@
         margin-right: 0.75em;
     }
     .banner > h1{
-        font-size: 9vw;
+        font-size: 4.5vw;
         /* position: absolute;   */
         right: 5vw;
-        height: 13rem;
-        margin-bottom: 1.33rem;
+        margin-bottom: -2.33rem;
         margin-top: 1.33rem;
+        text-align: center;
     }
     .banner > p{
         margin-top: 2em;
@@ -219,71 +230,4 @@
         margin-top: 1em;
         animation: banneranim 5s linear infinite;
     }
-    .cool {
-		all: unset;
-		margin-right: 1em;
-		width: 100px;
-		height: 30px;
-		font-size: 16px;
-		background: transparent;
-		border: none;
-		position: relative;
-		color: #f0f0f0;
-		cursor: pointer;
-		z-index: 1;
-		padding: 10px 20px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		white-space: nowrap;
-		user-select: none;
-		-webkit-user-select: none;
-		touch-action: manipulation;
-	}
-
-	.cool::after,
-	.cool::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: -99999;
-		transition: all 0.4s;
-	}
-
-	.cool::before {
-		transform: translate(0%, 0%);
-		width: 100%;
-		height: 100%;
-		background: #28282d;
-		border-radius: 10px;
-	}
-
-	.cool::after {
-		transform: translate(10px, 10px);
-		width: 35px;
-		height: 35px;
-		background: #ffffff15;
-		backdrop-filter: blur(5px);
-		-webkit-backdrop-filter: blur(5px);
-		border-radius: 50px;
-	}
-
-	.cool:hover::before {
-		transform: translate(5%, 20%);
-		width: 110%;
-		height: 110%;
-	}
-
-	.cool:hover::after {
-		border-radius: 10px;
-		transform: translate(0, 0);
-		width: 100%;
-		height: 100%;
-	}
-
-	.cool:active::after {
-		transition: 0s;
-		transform: translate(0, 5%);
-	}
 </style>

@@ -50,7 +50,7 @@
     </div>
     <div class="main">
         <slot></slot>
-        {#if data.path != '/'}    
+        {#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural'}    
             <footer>
                 <div class="address">
                     <h1>Address</h1>

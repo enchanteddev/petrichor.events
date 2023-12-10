@@ -1,8 +1,14 @@
 import type { PageLoad } from './$types';
+import { cultural, technical } from '$lib/data';
 
 
-export const load: PageLoad = () => {
-	return {
+export const load: PageLoad = ({ params }) => {
+    if (params.slug == 'technical'){
+        return technical
+    } else if (params.slug == 'cultural'){
+        return cultural
+    }
+    return {
         events: [
             {
                 name: 'Treasure Hunt',
