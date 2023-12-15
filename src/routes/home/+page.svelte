@@ -2,6 +2,7 @@
 <script lang="ts">
 	import loading from "$lib/assets/loading.mp4"
 	import loopv from "$lib/assets/loopv.mp4"
+	import { workshops } from "$lib/data";
 	let visible = false;
 	let loaded = false;
 	setTimeout(() => {visible = true;}, 10)
@@ -43,11 +44,57 @@
 		</div>
 	</div>
 	<div class="banner workshops">
-		<h1>WORK IN PROGRESS</h1>
+		<h1>Workshops</h1>
+		<div class="wscont">
+			{#each workshops.workshops as w}
+			<div class="ws" style="background-image: url('{w.image}');">
+				<h2>{w.name}</h2>
+				<p>{w.about}</p>
+			</div>
+			{/each}
+		</div>
+	</div>
+	<div class="banner contactus">
+		<h1>Contact Us</h1>
+		<input type="text" placeholder="Name">
+		<input type="text" placeholder="Email">
+		<textarea placeholder="Feedback" cols="30"></textarea>
 	</div>
 </div>
 
 <style>
+	.wscont{
+		display: flex;
+	}
+	.ws{
+		width: 25em;
+		background-color: rgba(128, 128, 128, 0.223);
+		padding: 0.5em;
+		margin: 1em;
+		border-radius: 1em;
+		background-position: center;
+		background-size: cover;
+		color: white;
+		transition: 200ms ease;
+	}
+	input, textarea {
+		padding: 1.5%;
+		margin: .5%;
+		font-size: 24px;
+		border-radius: 10rem;
+		width: 55%;
+		background-color: #40413e;
+		border: none;
+		color: white;
+	}
+	textarea{
+		height: 30em;
+		border-radius: 1em;
+		margin-bottom: 1em;
+	}
+	.ws:hover{
+		transform: translateY(-1em);
+	}
 	.none{
 		opacity: 0% !important;
 	}
@@ -63,11 +110,16 @@
 	.tit > h1 {
 		margin: 0;
 	}
+	.tit{
+		z-index: 2;
+
+	}
 	.title {
 		height: 100vh;
 		display: flex;
 		place-items: center;
 		position: relative;
+		background-color: black;
 	}
 	.sel {
 		display: flex;
@@ -99,7 +151,7 @@
 		height: 100vh;
 		filter: grayscale(10%);
 		/* opacity: 0.75; */
-		z-index: 0;
+		z-index: 1;
 	}
 	.about {
 		background-color: rgb(255, 255, 255);

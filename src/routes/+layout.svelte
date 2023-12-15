@@ -1,80 +1,90 @@
 <script>
     import Icon from 'svelte-awesome/components/Icon.svelte';
     import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
+    import bg from '$lib/assets/dark.jpg'
     export let data;
     let hover = false;
 </script>
 
-{#if data.path != '/'}    
-    <nav>
-        <a class="petimg2" href="/home"> </a>
-        <div>
-            <a href="/aboutus" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{
-                    setTimeout(()=>{hover=false;}, 3000)
-                }}>About Us</a>
-            {#if hover}
-                <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
-                    <a href="/contactus">Contact Us</a>
-                    <a href="/reachus">Reach Us</a>
+<div class="bg" style="background-image: url('{bg}');">
+
+    {#if data.path != '/'}    
+        <nav>
+            <a class="petimg2" href="/home"> </a>
+            <div>
+                <a href="/aboutus" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{
+                        setTimeout(()=>{hover=false;}, 3000)
+                    }}>About Us</a>
+                {#if hover}
+                    <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
+                        <a href="/contactus">Contact Us</a>
+                        <a href="/reachus">Reach Us</a>
+                    </div>
+                {/if}
+            </div>
+            <a href="/home#events">Events</a>
+            <a href="/workshops">Workshops</a>
+            <a href="/proshows">Proshows</a>
+            <a href="/merch">Merch</a>
+            <a href="/sponsors">Sponsors</a>
+            <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
+        </nav>
+    {/if}
+    <div class="parent">
+        <div class="sidebar">
+            <div class="sb-content">
+                <div class="up">
+                    <p>LOGIN</p>
+                    <a href="/merch"><Icon data={shoppingCart} scale={1.6}/></a>
+                    <p>MERCH</p>
+                    <a href="/reachus"><Icon data={mapMarker} scale={1.6}/></a>
+                    <p>WHERE</p>
+                    <a href="/reachus"><Icon data={calendar} scale={1.6}/></a>
+                    <p>WHEN</p>
                 </div>
+                <div class="dn">
+                    <a href="insta"><Icon data={instagram} scale={1.6}/></a>
+                    <a href="insta"><Icon data={facebook} scale={1.6}/></a>
+                    <a href="insta"><Icon data={linkedin} scale={1.6}/></a>
+                    <a href="insta"><Icon data={twitter} scale={1.6}/></a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <slot></slot>
+            {#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural'}    
+                <footer>
+                    <div class="address">
+                        <h1>Address</h1>
+                        <p>IIT PALAKKAD, Nila campus, P O, Kanjikode-Malampuzha Road, West Kanjikode, Pudusserry West, Kanjikode, Kerala 678623</p>
+                    </div>
+                    <div class="address">
+                        <h1>@email</h1>
+                        <p>events.petrichor@iitpkd.ac.in</p>
+                    </div>
+                    <div class="address">
+                        <h1>Connect with us</h1>
+                        <div class="socials">
+                            <a href="insta"><Icon data={instagram} scale={1.6}/></a>
+                            <a href="insta"><Icon data={facebook} scale={1.6}/></a>
+                            <a href="insta"><Icon data={linkedin} scale={1.6}/></a>
+                            <a href="insta"><Icon data={twitter} scale={1.6}/></a>
+                        </div>
+                    </div>
+                </footer>
             {/if}
         </div>
-        <a href="/home#events">Events</a>
-        <a href="/workshops">Workshops</a>
-        <a href="/proshows">Proshows</a>
-        <a href="/merch">Merch</a>
-        <a href="/sponsors">Sponsors</a>
-        <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
-    </nav>
-{/if}
-
-<div class="parent">
-    <div class="sidebar">
-        <div class="sb-content">
-            <div class="up">
-                <p>LOGIN</p>
-                <a href="/merch"><Icon data={shoppingCart} scale={1.6}/></a>
-                <p>MERCH</p>
-                <a href="/reachus"><Icon data={mapMarker} scale={1.6}/></a>
-                <p>WHERE</p>
-                <a href="/reachus"><Icon data={calendar} scale={1.6}/></a>
-                <p>WHEN</p>
-            </div>
-            <div class="dn">
-                <a href="insta"><Icon data={instagram} scale={1.6}/></a>
-                <a href="insta"><Icon data={facebook} scale={1.6}/></a>
-                <a href="insta"><Icon data={linkedin} scale={1.6}/></a>
-                <a href="insta"><Icon data={twitter} scale={1.6}/></a>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <slot></slot>
-        {#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural'}    
-            <footer>
-                <div class="address">
-                    <h1>Address</h1>
-                    <p>IIT PALAKKAD, Nila campus, P O, Kanjikode-Malampuzha Road, West Kanjikode, Pudusserry West, Kanjikode, Kerala 678623</p>
-                </div>
-                <div class="address">
-                    <h1>@email</h1>
-                    <p>events.petrichor@iitpkd.ac.in</p>
-                </div>
-                <div class="address">
-                    <h1>Connect with us</h1>
-                    <div class="socials">
-                        <a href="insta"><Icon data={instagram} scale={1.6}/></a>
-                        <a href="insta"><Icon data={facebook} scale={1.6}/></a>
-                        <a href="insta"><Icon data={linkedin} scale={1.6}/></a>
-                        <a href="insta"><Icon data={twitter} scale={1.6}/></a>
-                    </div>
-                </div>
-            </footer>
-        {/if}
     </div>
 </div>
 
 <style>
+    .bg:after {
+        content: "";
+        position: fixed;
+        top: 0; bottom: 0; left: 0; right: 0; 
+        background: rgba(0,0,0,0.1);
+        pointer-events: none;
+    }
     .socials{
         margin-left: 20%;
         width: 60%;
@@ -202,5 +212,8 @@
     .main{
         /* margin-left: 4em; */
         z-index: 2;
+    }
+    .parent{
+        background-image: url();
     }
 </style>

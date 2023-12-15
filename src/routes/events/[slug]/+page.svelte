@@ -1,5 +1,6 @@
 <script lang="ts">
-	import type { event } from "$lib/types";
+	import Person from "$lib/components/Person.svelte";
+import type { event } from "$lib/types";
     
 	import { onMount } from "svelte";
 
@@ -76,7 +77,11 @@
         </div>
         <div id="register">
             <h2>Organisers</h2>
-            <p>[insert organiser names here]</p>
+            <div class="orgcont">
+                {#each currentEvent.organisers as p}
+                    <Person personData={p}/>
+                {/each}
+            </div>
             <button class="register">Register for {currentEvent.name}</button>
         </div>
     </div>
@@ -84,6 +89,12 @@
 
 
 <style>
+    .orgcont{
+        display: flex;
+    }
+    #register > h2{
+        text-align: center;
+    }
     .nodot{
         list-style-type: none;
     }
