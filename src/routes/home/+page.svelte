@@ -264,4 +264,38 @@
 		transition: 0s;
 		transform: translate(0, 5%);
 	}
+
+	@media (max-width: 500px){
+        .title, .banner{
+            /* width: 100svh; */
+			flex-direction: column;
+        }
+		h1{
+			font-size: 35px;
+			display: inline;
+		}
+		video{
+			top: -10vh;
+			left: 3vw;
+			scale: 3;
+		}
+		.tit{
+			width: 90%;
+			padding-left: 20%;
+		}
+		.imgparent{
+			aspect-ratio: 0.3;
+		}
+		p{
+			text-align: justify;
+		}
+		.sel{
+			flex-direction: column;
+		}
+		.event{
+			height: 32vh;
+			margin-bottom: 1em;
+			filter: unset;
+		}
+    }
 </style>
