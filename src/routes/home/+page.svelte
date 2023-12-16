@@ -100,6 +100,7 @@
 	}
 	.main{
 		transition: 1000ms;
+		/* width: 100px; */
 	}
 	.bupal {
 		display: flex;
@@ -278,6 +279,8 @@
 			top: -10vh;
 			left: 3vw;
 			scale: 3;
+			overflow: hidden;
+			display: block;
 		}
 		.tit{
 			width: 90%;

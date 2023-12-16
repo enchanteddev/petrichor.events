@@ -8,18 +8,20 @@
 
 <div class="bg" style="background-image: url('{bg}');">
 
-    {#if data.path != '/'}    
+    {#if data.path != '/'}  
+    <div class="nav">
+
         <nav>
             <a class="petimg2" href="/home"> </a>
             <div>
                 <a href="/aboutus" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{
-                        setTimeout(()=>{hover=false;}, 3000)
-                    }}>About Us</a>
+                    setTimeout(()=>{hover=false;}, 3000)
+                }}>About Us</a>
                 {#if hover}
-                    <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
-                        <a href="/contactus">Contact Us</a>
-                        <a href="/reachus">Reach Us</a>
-                    </div>
+                <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
+                    <a href="/contactus">Contact Us</a>
+                    <a href="/reachus">Reach Us</a>
+                </div>
                 {/if}
             </div>
             <a href="/home#events">Events</a>
@@ -29,6 +31,7 @@
             <a href="/sponsors">Sponsors</a>
             <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
         </nav>
+    </div>  
     {/if}
     <div class="parent">
         <div class="sidebar">
@@ -86,6 +89,8 @@
         pointer-events: none;
     }
     .bg{
+        width: 100vw !important;
+        overflow: hidden;
         background-position: center;
         background-size: contain;
     }
@@ -224,7 +229,38 @@
     .parent{
         background-image: url();
     }
-    @media (max-width: 500px){
-        
+    @media (max-width: 600px) {
+    nav {
+        display: block;
+      align-items: center;
+      height: auto;
+      overflow: hidden;
     }
+
+    nav > a {
+      width: auto;
+      margin-bottom: 0.5em;
+    }
+
+    nav > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .more {
+      position: static;
+      background-color: transparent;
+      backdrop-filter: none;
+      width: auto;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    .more > a {
+      display: block;
+      margin-top: 0.5em;
+      text-align: center;
+    }
+  }
 </style>

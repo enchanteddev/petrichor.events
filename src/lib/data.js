@@ -300,7 +300,7 @@ export let cultural = {
                     "phone": "925"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -615,7 +615,7 @@ export let cultural = {
                     "phone": "9961985768"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/e717aa0a-05b2-4d41-9bcc-b1a8f50d3273/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -672,7 +672,7 @@ export let cultural = {
                     "phone": "8075821728"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/7bddb8b1-ecbb-40f8-99eb-9c6c9f71b150/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -721,7 +721,7 @@ export let cultural = {
                     "phone": "9961985768"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/a4555563-5854-46b4-8e8b-d46d93f13b90/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -831,7 +831,7 @@ export let cultural = {
                     "phone": "8072452762"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/4fa0f1f0-68d5-479b-b382-03dc228d5dec/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -1452,7 +1452,7 @@ export let technical = {
                     "phone": "7218175672"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/31d65d6e-dc78-4bf5-b515-13ed033daaa0/0_0.webp",
             "date": "27/1/2024 - 28/1/2024"
         },
         {
