@@ -24,6 +24,7 @@ import type { event } from "$lib/types";
 <div class="bg" bind:this={bg}></div>
 <div class="parent">
     <div class="sbcont">
+    </div>
 
         <div class="sidebar">
             {#each events as event}   
@@ -35,7 +36,6 @@ import type { event } from "$lib/types";
             </div>
             {/each}
         </div>
-    </div>
     <div class="content">
         <div class="banner">
             <h1 style="height: {currentEvent.name.length > 25 ? '15rem' : '10rem'};">{currentEvent && currentEvent.name}</h1>

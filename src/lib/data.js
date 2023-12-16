@@ -53,7 +53,7 @@ export let cultural = {
                     "phone": "9662097722"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/0a33f382-8071-4463-8e56-8368c5b3806b/0_0.webp",
             "date": "Undeclared"
         },
         {
