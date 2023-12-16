@@ -13,23 +13,28 @@ import type { event } from "$lib/types";
         bg.style.backgroundImage = `url("${currentEvent.image}")`;
     })
 
+    const setEvent = (event: event) => {
+                bg.style.backgroundImage = `url("${event.image}")`;
+                currentEvent = event;
+                console.log(event.image)
+            }
+
 </script>
 
 <div class="bg" bind:this={bg}></div>
 <div class="parent">
-    <div class="sidebar">
-        {#each events as event}   
-        <!-- svelte-ignore a11y-no-static-element-interactions -->
-        <div class="card" style="background-image: url('{event.image}');" on:mouseenter={() => {
-            bg.style.backgroundImage = `url("${event.image}")`;
-            currentEvent = event;
-            console.log(event.image)
-        }}>
-            <p>
-                {event.name}
-            </p>
+    <div class="sbcont">
+
+        <div class="sidebar">
+            {#each events as event}   
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            <div class="card" style="background-image: url('{event.image}');" on:mouseenter={()=>{setEvent(event)}} on:mousedown={()=>{setEvent(event)}}>
+                <p>
+                    {event.name}
+                </p>
+            </div>
+            {/each}
         </div>
-        {/each}
     </div>
     <div class="content">
         <div class="banner">
@@ -240,5 +245,47 @@ import type { event } from "$lib/types";
         border-radius: 12px;
         margin-top: 1em;
         animation: banneranim 5s linear infinite;
+    }
+    @media (max-width: 600px){
+        .sidebar{
+            height: 20vh;
+            width: max-content;
+            display: flex;
+            overflow: scroll;
+        }
+        .parent{
+            flex-direction: column-reverse;
+            /* width: 100vw; */
+        }
+        .content{
+            height: 70vh;
+        }
+        .card{
+            all: unset;
+            width:30vw;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+        }
+        .sbcont{
+            overflow: scroll;
+        }
+        .banner{
+            margin: 1em;
+            width: 90%;
+        }
+        .content{
+            margin: 0;
+            padding-left: 0;;
+        }
+        .register{
+            display: block;
+            margin-bottom: 1em;
+        }
+        .orgcont{
+            display: block;
+            padding-left: 25%;
+        }
     }
 </style>

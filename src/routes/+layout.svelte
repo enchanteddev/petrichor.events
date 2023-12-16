@@ -85,6 +85,10 @@
         background: rgba(0,0,0,0.1);
         pointer-events: none;
     }
+    .bg{
+        background-position: center;
+        background-size: contain;
+    }
     .socials{
         margin-left: 20%;
         width: 60%;
@@ -215,5 +219,8 @@
     }
     .parent{
         background-image: url();
+    }
+    @media (max-width: 500px){
+        
     }
 </style>
