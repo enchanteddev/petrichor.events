@@ -267,30 +267,36 @@
 	}
 
 	@media (max-width: 500px){
-        .title, .banner{
-            /* width: 100svh; */
+		.main{
+			width: 100vw;
+		}
+		.bupal{
+			margin-bottom: 5rem;
+		} 
+		.about{
+			height: 100vh;
+			padding-top: 10rem;
+			padding-bottom: 15rem;
+			width: 100vw;
+		}
+		.about > h1{
+			font-size: 20px;
+			margin-top: 5rem;
+		}
+		.title{
+            width: 100svh;
 			flex-direction: column;
         }
-		h1{
-			font-size: 35px;
-			display: inline;
-		}
 		video{
 			top: -10vh;
 			left: 3vw;
-			scale: 3;
+			/* scale: 3; */
 			overflow: hidden;
 			display: block;
 		}
-		.tit{
-			width: 90%;
-			padding-left: 20%;
-		}
-		.imgparent{
-			aspect-ratio: 0.3;
-		}
-		p{
-			text-align: justify;
+		h1{
+			font-size: 35px;
+			display: inline;
 		}
 		.sel{
 			flex-direction: column;
@@ -300,5 +306,25 @@
 			margin-bottom: 1em;
 			filter: unset;
 		}
+		.tit{
+			width: 90%;
+		}
+		.imgparent{
+			aspect-ratio: 0.3;
+		}
+		p{
+			text-align: justify;
+		}
+		.wscont{
+			display: block;
+		}
+		.ws{
+			width: 15em;
+		}
+		.workshops{
+			padding-top: 15rem;
+			padding-bottom: 20rem;
+		}
     }
+
 </style>
