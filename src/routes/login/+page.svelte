@@ -5,7 +5,7 @@
 	<div class="blank2" />
 	<div class="form image2">
 		<h2>Login to <span id="Petrichor">Petrichor</span></h2>
-		<form action="">
+		<form action="?/login">
 			<div>
 				<input type="email" name="email" id="email" placeholder="Email" required />
 			</div>
