@@ -326,5 +326,16 @@
 			padding-bottom: 20rem;
 		}
     }
+	@media screen and (max-width:330px){
+		.tit > h1 {
+			display: block;
+		}
+		.bupal{
+			display: block;
+		}
+		.cool{
+			margin: 1em;
+		}
+	}
 
 </style>

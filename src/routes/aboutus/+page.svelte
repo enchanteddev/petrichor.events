@@ -279,11 +279,20 @@ h1{
     .individualContainer {
       width: 100%;
     }
+    .aboutus_para{
+        margin-inline: 3em;
+    }
   }
 
   .personName{
     color: #F9A825;
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-style: italic;
+}
+
+@media screen and (max-width: 500px){
+    .aboutus_para{
+        text-align: left;
+    }
 }
 </style>
