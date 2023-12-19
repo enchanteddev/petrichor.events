@@ -154,7 +154,7 @@ export let cultural = {
                     "phone": "98958 19812"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/4afbe489-0966-4b49-b62a-267a6624785e/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -214,7 +214,7 @@ export let cultural = {
                     "phone": "6001301742"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/a9c2e780-c05a-4fc8-8d13-d749863334a6/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -260,7 +260,7 @@ export let cultural = {
                     "phone": "9345689884"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/3b0fcb4e-4eef-470b-bc36-13696a9a2e00/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -430,7 +430,7 @@ export let cultural = {
                     "phone": "725"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -476,7 +476,7 @@ export let cultural = {
                     "phone": "9705063009"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -870,7 +870,7 @@ export let cultural = {
                     "phone": "8281729013"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/bb0bd2e0-7ade-44ac-bcdd-4c6aed8976e8/0_0.webp",
             "date": "Undeclared"
         },
         {
@@ -973,7 +973,7 @@ export let cultural = {
                     "phone": "8281729013"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/f4059e2a-69f9-4ea7-bd1a-9079a55baefe/0_0.webp",
             "date": "Undeclared"
         }
     ]
@@ -1059,7 +1059,7 @@ export let technical = {
                     "phone": "9110641165"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/8504755d-8310-4e6b-be56-95ef5684d560/0_0.webp",
             "date": "6/1/2024"
         },
         {
@@ -1164,7 +1164,7 @@ export let technical = {
                     "phone": "6001301742"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/70aa1b56-1502-41d2-b384-ddc0d154b80b/0_0.webp",
             "date": "14/1/2024"
         },
         {
@@ -1208,7 +1208,7 @@ export let technical = {
                     "phone": "+91 7302994666"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/7329c387-a943-40a2-94a4-0e0aa3717ac3/0_0.webp",
             "date": "27/1/2024"
         },
         {
@@ -1269,7 +1269,7 @@ export let technical = {
                     "phone": "9848634455"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/9d076bbe-3010-472c-8d55-81f14606737d/0_0.webp",
             "date": "4/1/2024 - 31/1/2024"
         },
         {
@@ -1349,7 +1349,7 @@ export let technical = {
                     "phone": "+91 9939595353"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/1371d083-7a11-40b0-82cd-5401590d2534/0_0.webp",
             "date": "28/1/2024"
         },
         {
@@ -1395,7 +1395,7 @@ export let technical = {
                     "phone": "7794011990"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/10b70854-7f9a-4760-9719-37470b30b72f/0_0.webp",
             "date": "15/1/2024 - 19/1/2024"
         },
         {
@@ -1525,7 +1525,7 @@ export let technical = {
                     "phone": "9714957474"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/1adcbf9a-5e83-4e3a-9329-7b337f16badb/0_0.webp",
             "date": "28/1/2024"
         },
         {
@@ -1594,7 +1594,7 @@ export let technical = {
                     "phone": "+91 9528353345"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/1f62ca79-6ba4-440d-b8a8-155e1c555439/0_0.webp",
             "date": "27/1/2024"
         },
         {
@@ -1648,7 +1648,7 @@ export let technical = {
                     "phone": "90376 30397"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/a73fa382-699c-4053-b4f5-20e0e476a1bc/0_0.webp",
             "date": "28/1/2024"
         },
         {
@@ -1737,7 +1737,7 @@ export let technical = {
                     "phone": "7430072368"
                 }
             ],
-            "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+            "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
             "date": "28/1/2024"
         }
     ]
