@@ -122,31 +122,33 @@
 	</h1>
 
 	<div class="form">
-		<div style="background-color: rgb(90, 14, 137,0.3);" class="payment">
-			<div style="display: inline-block;">
-				<p
-					style="margin-bottom: 1rem;margin-top: 0.8rem;font-size:155%;display: inline-block;font-family:monospace"
-				>
-					Scan here for payment
-				</p>
-				<div id="img" />
-				<p style="margin-top: 1rem;font-size:155%;box-sizing:border-box;font-family:cursive">
-					<span style="font-family:cursive">&#8377;</span>{amount}
-				</p>
-				<svg
-					style="margin-top: -1rem;"
-					xmlns="http://www.w3.org/2000/svg"
-					width="120"
-					height="50"
-					fill-rule="evenodd"
-					><path d="M95.678 42.9L110 29.835l-6.784-13.516z" fill="#097939" /><path
-						d="M90.854 42.9l14.322-13.065-6.784-13.516z"
-						fill="#ed752e"
-					/><path
-						d="M22.41 16.47l-6.03 21.475 21.407.15 5.88-21.625h5.427l-7.05 25.14c-.27.96-1.298 1.74-2.295 1.74H12.31c-1.664 0-2.65-1.3-2.2-2.9l6.724-23.98zm66.182-.15h5.427l-7.538 27.03h-5.58zM49.698 27.582l27.136-.15 1.81-5.707H51.054l1.658-5.256 29.4-.27c1.83-.017 2.92 1.4 2.438 3.167L81.78 29.49c-.483 1.766-2.36 3.197-4.19 3.197H53.316L50.454 43.8h-5.28z"
-						fill="#747474"
-					/></svg
-				>
+		<div class="payall">
+			<div style="background-color: rgb(90, 14, 137,0.3);" class="payment">
+				<div style="display: inline-block;">
+					<p
+						style="margin-bottom: 1rem;margin-top: 0.8rem;font-size:155%;display: inline-block;font-family:monospace"
+					>
+						Scan here for payment
+					</p>
+					<div id="img" />
+					<p style="margin-top: 1rem;font-size:155%;box-sizing:border-box;font-family:cursive">
+						<span style="font-family:cursive">&#8377;</span>{amount}
+					</p>
+					<svg
+						style="margin-top: -1rem;"
+						xmlns="http://www.w3.org/2000/svg"
+						width="120"
+						height="50"
+						fill-rule="evenodd"
+						><path d="M95.678 42.9L110 29.835l-6.784-13.516z" fill="#097939" /><path
+							d="M90.854 42.9l14.322-13.065-6.784-13.516z"
+							fill="#ed752e"
+						/><path
+							d="M22.41 16.47l-6.03 21.475 21.407.15 5.88-21.625h5.427l-7.05 25.14c-.27.96-1.298 1.74-2.295 1.74H12.31c-1.664 0-2.65-1.3-2.2-2.9l6.724-23.98zm66.182-.15h5.427l-7.538 27.03h-5.58zM49.698 27.582l27.136-.15 1.81-5.707H51.054l1.658-5.256 29.4-.27c1.83-.017 2.92 1.4 2.438 3.167L81.78 29.49c-.483 1.766-2.36 3.197-4.19 3.197H53.316L50.454 43.8h-5.28z"
+							fill="#747474"
+						/></svg
+					>
+				</div>
 			</div>
 		</div>
 		<div id="data">
@@ -186,9 +188,6 @@
 </div>
 
 <style>
-	/* #all {
-		display: block;
-	} */
 	.form {
 		width: 100vw;
 		grid-template-areas: 'data payment';
@@ -306,25 +305,34 @@
 			width: 100vw;
 		}
 		.form {
-			width: 100vw;
 			position: relative;
 			left: 50%;
-			right: 50%;
-			margin-left: -50vw;
-			margin-right: -50vw;
+			transform: translate(-35%, 0);
 			grid-template-areas:
 				'payment'
 				'data';
 			grid-column-gap: 3rem;
-			margin-top: 4rem;
-			padding-top: 0rem;
-			margin-bottom: 10rem;
 			display: grid;
 			align-items: center;
-			/* padding-left: 35%; */
 		}
 		#data {
-			margin-left: -3rem;
+			position: relative;
+			left: 50%;
+			transform: translate(-42%, 0);
+		}
+		#transId {
+			width: 18rem;
+		}
+		.code_verification {
+			width: 18rem;
+		}
+		.payall {
+			position: relative;
+			left: 50%;
+			transform: translate(-45%, 0);
+		}
+		#submitButton {
+			width: 18rem;
 		}
 	}
 </style>
