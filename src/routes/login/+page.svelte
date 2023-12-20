@@ -7,7 +7,7 @@
 	<div class="blank2" />
 	<div class="form image2">
 		<h2>Login to <span id="Petrichor">Petrichor</span></h2>
-		<form action="?/login" use:enhance={() => {
+		<form action="?/login" method="post" use:enhance={() => {
 			return async ({result, update}) => {
 				if (result['success']){
 					goto('/profile');	

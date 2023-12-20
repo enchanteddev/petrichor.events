@@ -19,14 +19,14 @@
                 }}>About Us</a>
                 {#if hover}
                 <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
-                    <a href="/contactus">Contact Us</a>
+                    <a href="/home#contact">Contact Us</a>
                     <a href="/reachus">Reach Us</a>
                 </div>
                 {/if}
             </div>
             <a href="/home#events">Events</a>
             <a href="/workshops">Workshops</a>
-            <a href="/proshows">Proshows</a>
+            <!-- <a href="/proshows">Proshows</a> -->
             <a href="/merch">Merch</a>
             <a href="/sponsors">Sponsors</a>
             <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
