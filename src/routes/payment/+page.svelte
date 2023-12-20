@@ -186,9 +186,6 @@
 </div>
 
 <style>
-	/* #all {
-		display: block;
-	} */
 	.form {
 		width: 100vw;
 		grid-template-areas: 'data payment';
@@ -306,25 +303,34 @@
 			width: 100vw;
 		}
 		.form {
-			width: 100vw;
 			position: relative;
 			left: 50%;
-			right: 50%;
-			margin-left: -50vw;
-			margin-right: -50vw;
+			transform: translate(-35%, 0);
 			grid-template-areas:
 				'payment'
 				'data';
 			grid-column-gap: 3rem;
-			margin-top: 4rem;
-			padding-top: 0rem;
-			margin-bottom: 10rem;
 			display: grid;
 			align-items: center;
-			/* padding-left: 35%; */
 		}
 		#data {
-			margin-left: -3rem;
+			position: relative;
+			left: 50%;
+			transform: translate(-42%, 0);
+		}
+		#transId {
+			width: 18rem;
+		}
+		.code_verification {
+			width: 18rem;
+		}
+		.payall {
+			position: relative;
+			left: 50%;
+			transform: translate(-45%, 0);
+		}
+		#submitButton {
+			width: 18rem;
 		}
 	}
 </style>

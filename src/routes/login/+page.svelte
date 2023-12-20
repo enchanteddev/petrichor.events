@@ -1,11 +1,21 @@
 <script lang="ts">
+	import { enhance } from '$app/forms';
+	import { goto } from '$app/navigation'
 </script>
 
 <div class="form-container">
 	<div class="blank2" />
 	<div class="form image2">
 		<h2>Login to <span id="Petrichor">Petrichor</span></h2>
-		<form action="?/login">
+		<form action="?/login" use:enhance={() => {
+			return async ({result, update}) => {
+				if (result['success']){
+					goto('/profile');	
+				} else {
+					alert("Invalid email or password")
+				}
+			}
+		}}>
 			<div>
 				<input type="email" name="email" id="email" placeholder="Email" required />
 			</div>

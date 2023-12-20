@@ -8,13 +8,27 @@ export const load: PageServerLoad = (event) => {
 };
 
 export const actions = {
-	login: async ({ cookies, request }) => {
+	login: async ({ request }) => {
         const data = await request.formData();
 		const email = data.get('email');
 		const password = data.get('password');
         
-        const response = await fetch(API.login);
+        const fetchOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                'username': email,
+                'password': password,
+            })
+        }
 
-		return { success: true };
+        const response = await fetch(API.login, fetchOptions);
+        const resp_content = await response.json()
+        if (resp_content['ok']){
+            return { success: true };
+        }
+
 	},
 } satisfies Actions;
