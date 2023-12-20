@@ -1,3 +1,8 @@
+<script>
+    import Icon from 'svelte-awesome/components/Icon.svelte';
+    import {instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
+</script>
+
 <div class="MainContainer fullwidth">
     <div class="AboutUs para fullwidth">
         <div>
@@ -27,9 +32,10 @@
                         </picture>
                         <center><p class="personName  basicgap">Virat Kohli</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -37,13 +43,14 @@
                     </div>
                     <div class="individualContainer" id="person3" >
                         <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRurHmXFUc7OJk4FHEGvTfMIl5zSv2iLMomatM81XiQLG1dKClENwmsPD0J-FL9teaL3DosRXW1Fu38CWQ">
+                            <img class="image fullwidth" src="https://lh3.google.com/u/0/d/1tw0kCm4e1l_79Aa1S6ClRV6vSDzk3Ew7=w2000-h3556-iv1">
                         </picture>
                         <center><p class="personName basicgap">K Willianson</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -55,9 +62,10 @@
                         </picture>
                         <center><p class="personName basicgap">Joe Root</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -78,9 +86,10 @@
                         </picture>
                         <center><p class="personName basicgap">K Willianson</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -92,9 +101,10 @@
                         </picture>
                         <center><p class="personName basicgap">Joe Root</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -115,9 +125,10 @@
                         </picture>
                         <center><p class="personName basicgap" >David Willey</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -138,9 +149,10 @@
                         </picture>
                         <center><p class="personName basicgap" >David Willey</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -152,9 +164,10 @@
                         </picture>
                         <center><p class="personName  basicgap">Virat Kohli</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -166,12 +179,13 @@
                         </picture>
                         <center><p class="personName basicgap">K Willianson</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
+                            <a class="basicgap" href="//gmail.com" style="color: antiquewhite;">davidwilley@gmail.com</a>
                         </center>
                     </div>
                     <div class="individualContainer" id="person4" >
@@ -180,9 +194,10 @@
                         </picture>
                         <center><p class="personName basicgap">Joe Root</p></center>
                         <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//linkedin.com"><img class="slink" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////4+PiQkJDe3t5fX1+UlJRBQUGdnZ16enr7+/t9fX2CgoKNjY3z8/OampozMzPt7e3Pz886OjrExMTm5uYkJCSpqakXFxdubm5NTU0dHR0sLCxWVlbY2Ni4uLgODg6aurmTAAAC/UlEQVR4nO3c63KqMBSG4QZQEOWoaJHTvv+r3HQ6u0WyonsWdMXY7/lZGJt3BIWE9u0NAAAAAAAAAAAAAAAAAAAAAAB+tbxOsiypQ9vjWME+KFJvlBbV1vZYFtpUaqKobY9niShWty62R8Sntag4sj0mrl0xbxmPtJ3tUfGEpd6i1Oloe1wsO6pFeU6+NecLGaOixvbIGI7kUTYeZ7ntkTGEAR3Tu3gpEFZ0THG1PTIG0ztTuRiTG86Z0sXDrDF8mg2t7ZFx0N8z6mB7XCz0FUDv4ikzOqR6S+rmG/NxDaBfNV/OtkfF1c5r4ouTZ/+nZn9zpKUHF6/Lvp2zr5w0ebc9muWaTRJFh43tYQAAwJraYxjmtq+DOn+r6Sbbr/rmkT99iat/6qsiHRVBeaktfu1utQtNpaZLAQmxXSnva3s7aHOivbVpN9+7H3O4F/PnSt93x5GdOdGHMcT2fzHXgUz5UCQ2zh9+TLM3TFR9Gizcrj6K2ZtiJtfatF5+2Yob0zxqUaoSr+HGUJMHWo30PQUzJicWqXSB8GQiM8YwezhXPlfMjo4hf0rsJ7sUz4v5b7IH2g/HyC7E/3RM0Bl/tXsxcfZCMaLro8tivP40DKfy3kWa5MM4S2LSYdfl7TkPN0lv3ss3/u5niinr78v8cGvcbZA7zvgxs4dS9qb9BD/P2DHl/O4rMezoyZ003Bj9q70xLF2r/bPHeMRSYWeIycTma5gxPfFS+YmOkVtW5MXECfVahrNG7qkC5i0A+XFb03efctcAzBjytTr6UZxSbBKNPTtDONInTe9kTEtPCsrdoK0Z807PDLgZ8xYhZj2IQYyAXxVzb7FJg5gVIQYxAhYtnc8hZkWIcTXm0bMzNxCzIhxmiBGAGFdjqMcenY3xXynmpd6ZDDGIWQ4xrsbo//0EMTIe/WEDvX4U0y9mO+bQB5rpAwu+vnlEPQYwSipi30ruP7/kG930lx+J7SP6xeiduxf4Q1YAAAAAAAAAAAAAAAAAAAAAAAAAgFfwF0TxMDTtS9Z6AAAAAElFTkSuQmCC"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//instagram.com"><img class="slink" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY-dnNVJApokK99T5XjWn3ty-tBpBjjjsJjUYX3tBKw&s"></a></div>
-                            <div style="padding:0px 10px;;width: 33.33%;"><a href="//twitter.com"><img class="slink" src="https://img.freepik.com/free-vector/new-twitter-logo-x-icon-black-background_1017-45427.jpg?w=740&t=st=1702304942~exp=1702305542~hmac=0b4f707c6427532ca3dc9309a762228a14c6cea38c249628a5a1c552ddd6cd3c"></a></div>
+                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
+                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
                         </div></center>
                         <center>
                             <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
@@ -227,6 +242,12 @@ h1{
     color: rgb(201, 140, 255);
 }
 
+a{
+        color: inherit;
+        text-decoration: unset;
+        text-align: center;
+    }
+
 .headings{
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
@@ -267,12 +288,27 @@ h1{
 .para{
     padding-top: 10em;
 }
+.socialLinks{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 3px 0px;   
+}
+
+.icon{
+    width: 25%;
+}
+
 
 @media screen and (max-width:1000px)  {
     .individualContainer {
         width: 50%;
       align-self: center;
     }
+    .aboutus_para{
+    padding: 2.5%;
+    margin-inline: 5em;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -280,7 +316,22 @@ h1{
       width: 100%;
     }
     .aboutus_para{
-        margin-inline: 3em;
+        margin-inline: 0em;
+        font-size: smaller;
+        text-align: justify;
+        align-items: center;
+    }
+    .para{
+        padding-top: 7em;
+    }
+    .headings{
+        font-size: medium;
+    }
+    .basicgap{
+        padding: 3% 0px;
+    }
+    .individualContainer{
+        padding: 5% 8%;
     }
   }
 
@@ -288,11 +339,7 @@ h1{
     color: #F9A825;
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-style: italic;
+    font-weight: 600;
 }
 
-@media screen and (max-width: 500px){
-    .aboutus_para{
-        text-align: left;
-    }
-}
 </style>

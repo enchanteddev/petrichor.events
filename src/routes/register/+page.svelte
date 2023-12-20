@@ -75,12 +75,12 @@
 		<h2>Register for <span id="Petrichor">Petrichor</span></h2>
 		<form>
 			<div>
-				<input type="text" name="name" id="name" placeholder="Name" required />
-				<input type="tel" name="phone-number" id="phone-number" placeholder="Phone No." required />
+				<input type="text" name="username" id="name" placeholder="Name" required />
+				<input type="tel" name="phone" id="phone-number" placeholder="Phone No." required />
 			</div>
 			<div class="warning hide" id="phone-warn">Enter a valid 10 digit phone number</div>
 			<div>
-				<select name="inst-type" id="inst-type" on:change={setAptFields}>
+				<select name="institype" id="inst-type" on:change={setAptFields}>
 					<option value="">--Currently In--</option>
 					<option value="school">School</option>
 					<option value="college">College</option>
@@ -88,7 +88,7 @@
 				</select>
 				<input
 					type="text"
-					name="inst-name"
+					name="college"
 					id="inst-name"
 					placeholder="Name of Institution"
 					class="hide"
@@ -105,7 +105,7 @@
 					class="hide"
 					placeholder="Degree enrolled in"
 				/>
-				<select name="year-of-graduation" class="hide" id="year-of-graduation">
+				<select name="gradyear" class="hide" id="year-of-graduation">
 					<option value="">Year of Graduation</option>
 					<option value="2024">2024</option>
 					<option value="2025">2025</option>
