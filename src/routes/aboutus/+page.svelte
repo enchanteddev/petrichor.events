@@ -1,6 +1,7 @@
 <script>
-    import Icon from 'svelte-awesome/components/Icon.svelte';
-    import {instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
+    import Member from '$lib/components/Member.svelte';
+import Icon from 'svelte-awesome/components/Icon.svelte';
+    import {instagram, facebook, linkedin, twitter, exclamation} from 'svelte-awesome/icons'
 </script>
 
 <div class="MainContainer fullwidth">
@@ -143,21 +144,7 @@
             <div class="fullwidth basicgap AboutUs" title="Category4" >
                 <h2 class="headings basicgap" style="display: block;color: rgb(255, 180, 180);"><b>Informals</b></h2>
                 <div class="InfoContainer fullwidth" >
-                    <div class="individualContainer" id="person1" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSyuKnVg-YzO3Jdg9I1r1dj5fg3lBvG2P5o8pEuGVo3YqxP1aq9tcxaZAvCe2UbRhd-mnwKV4nsTiFJ-Us">
-                        </picture>
-                        <center><p class="personName basicgap" >David Willey</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
+                    <Member name="David Willey" email="david@yahoo.com" imageurl="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSyuKnVg-YzO3Jdg9I1r1dj5fg3lBvG2P5o8pEuGVo3YqxP1aq9tcxaZAvCe2UbRhd-mnwKV4nsTiFJ-Us"  />
                     <div class="individualContainer" id="person2" >
                         <picture class="picture fullwidth">
                             <img class="image fullwidth" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg">
