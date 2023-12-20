@@ -26,7 +26,7 @@
             </div>
             <a href="/home#events">Events</a>
             <a href="/workshops">Workshops</a>
-            <a href="/proshows">Proshows</a>
+            <!-- <a href="/proshows">Proshows</a> -->
             <a href="/merch">Merch</a>
             <a href="/sponsors">Sponsors</a>
             <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
