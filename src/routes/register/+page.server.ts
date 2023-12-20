@@ -3,12 +3,12 @@ import { API } from '$lib/index'
 
 
 export const actions = {	
-    default: async (request) => {
+    default: async ({request}) => {
 
       const data = await request.formData();
-
-      if (data.institype == 'school'){
-        data.gradyear=2024+(12-data.grade)
+      let gradyear = data.get('gradyear')?.valueOf()
+      if (data.get('institype') == 'school'){
+         gradyear = 2024 + (12 - Number(data.get('grade')))
       }
 
       await fetch(API.register,{
@@ -18,14 +18,14 @@ export const actions = {
           'Content-type':'application/json'
         },
         body:JSON.stringify({
-          "username":data.username,
-          "email":data.email,
-          "password":data.password,
-          "phone":data.phone,
-          "college":data.college,
-          "gradyear":data.gradyear,
-          "institype":data.institype,
-          "stream":data.stream
+          "username":data.get('username'),
+          "email":data.get('email'),
+          "password":data.get('password'),
+          "phone":data.get('phone'),
+          "college":data.get('college'),
+          "gradyear":gradyear,
+          "institype":data.get('institype'),
+          "stream":data.get('stream')
         }) 
       }).then(res => res.json())
       .then(res => {

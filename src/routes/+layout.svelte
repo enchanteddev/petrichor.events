@@ -16,7 +16,7 @@
             <div>
                 <a href="/aboutus" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{
                     setTimeout(()=>{hover=false;}, 3000)
-                }}>About Us</a>
+                }}>AboutUs</a>
                 {#if hover}
                 <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
                     <a href="/home#contact">Contact Us</a>
@@ -24,11 +24,11 @@
                 </div>
                 {/if}
             </div>
-            <a href="/home#events">Events</a>
-            <a href="/workshops">Workshops</a>
+            <a href="/home#events">Event</a>
+            <a href="/workshops">Workshop</a>
             <!-- <a href="/proshows">Proshows</a> -->
             <a href="/merch">Merch</a>
-            <a href="/sponsors">Sponsors</a>
+            <a href="/sponsors">Sponsor</a>
             <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
         </nav>
     </div>  
@@ -229,7 +229,7 @@
     .parent{
         background-image: url();
     }
-    @media (max-width: 600px) {
+    /* @media (max-width: 600px) {
     nav {
         display: block;
       align-items: center;
@@ -262,5 +262,17 @@
       margin-top: 0.5em;
       text-align: center;
     }
-  }
+  } */
+    @media (max-width: 600px){
+        nav{
+            font-size: small;
+        }
+        nav > a{
+            width: 5em;
+        }
+        footer{
+            display: block;
+            font-size: small;
+        }
+    }
 </style>
