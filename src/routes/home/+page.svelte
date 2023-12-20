@@ -1,5 +1,6 @@
 <!-- svelte-ignore a11y-media-has-caption -->
 <script lang="ts">
+	import { enhance } from "$app/forms";
 	import loading from "$lib/assets/loading.mp4"
 	import loopv from "$lib/assets/loopv.mp4"
 	import { workshops } from "$lib/data";
@@ -56,13 +57,21 @@
 	</div>
 	<div class="banner contactus" id="contact">
 		<h1>Contact Us</h1>
-		<input type="text" placeholder="Name">
-		<input type="text" placeholder="Email">
-		<textarea placeholder="Feedback" cols="30"></textarea>
+		<form action="?/feedback" method="post" style="display: contents;" use:enhance>
+			<input type="text" placeholder="Name" name="name">
+			<input type="text" placeholder="Email" name="email">
+			<textarea placeholder="Feedback" cols="30" name="body"></textarea>
+			<button class="cool fbut" type="submit">Submit Feedback</button>
+		</form>
 	</div>
 </div>
 
 <style>
+	.fbut{
+		margin-bottom: 1em !important;
+		font-size: 20px !important;
+		width: fit-content !important;
+	}
 	.wscont{
 		display: flex;
 	}
