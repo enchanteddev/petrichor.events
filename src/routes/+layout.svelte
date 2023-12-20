@@ -268,7 +268,7 @@
             font-size: small;
         }
         nav > a{
-            width: 5em;
+            width: 4em;
         }
         footer{
             display: block;

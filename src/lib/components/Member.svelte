@@ -8,7 +8,7 @@
 
 </script>
 
-<div class="individualContainer" id="person1" >
+<div class="individualContainer" >
     <picture class="picture fullwidth">
         <img class="image fullwidth" alt="" src="{imageurl}">
     </picture>
