@@ -54,7 +54,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="banner contactus">
+	<div class="banner contactus" id="contact">
 		<h1>Contact Us</h1>
 		<input type="text" placeholder="Name">
 		<input type="text" placeholder="Email">

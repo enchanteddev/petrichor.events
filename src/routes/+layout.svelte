@@ -19,7 +19,7 @@
                 }}>About Us</a>
                 {#if hover}
                 <div class="more" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{hover=false;}}>
-                    <a href="/contactus">Contact Us</a>
+                    <a href="/home#contact">Contact Us</a>
                     <a href="/reachus">Reach Us</a>
                 </div>
                 {/if}
