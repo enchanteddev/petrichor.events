@@ -121,7 +121,7 @@
 		Registering for <span style="color: blueviolet;">{data.name}</span>
 	</h1>
 
-	<div class="form">
+	<form class="form">
 		<div style="background-color: rgb(90, 14, 137,0.3);" class="payment">
 			<div style="display: inline-block;">
 				<p
@@ -182,7 +182,7 @@
 				/>
 			</div>
 		</div>
-	</div>
+	</form>
 </div>
 
 <style>

@@ -73,7 +73,7 @@
 	<div class="blank2" />
 	<div class="form image2" on:change={validate}>
 		<h2>Register for <span id="Petrichor">Petrichor</span></h2>
-		<form action="">
+		<form>
 			<div>
 				<input type="text" name="name" id="name" placeholder="Name" required />
 				<input type="tel" name="phone-number" id="phone-number" placeholder="Phone No." required />
