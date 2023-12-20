@@ -15,13 +15,13 @@
 	<video class={loaded ? "none" : ""} src={loading} autoplay muted />
 	<video class={!loaded ? "none" : ""} src={loopv} autoplay muted loop/>
 	<div class="title">
-		<div class="imgparent" />
+		<div class="imgparent"/>
 		<div class="tit">
 			<h1>PETRICHOR</h1>
 			<h1 class="date">2024</h1>
 			<div class="bupal">
-				<button class="cool">Explore Now</button>
-				<button class="cool">Sign Up</button>
+				<a href="#events" class="cool">Explore Now</a>
+				<a href="/register" class="cool">Sign Up</a>
 			</div>
 		</div>
 	</div>
@@ -58,9 +58,9 @@
 	<div class="banner contactus" id="contact">
 		<h1>Contact Us</h1>
 		<form action="?/feedback" method="post" style="display: contents;" use:enhance>
-			<input type="text" placeholder="Name" name="name">
-			<input type="text" placeholder="Email" name="email">
-			<textarea placeholder="Feedback" cols="30" name="body"></textarea>
+			<input type="text" placeholder="Name" name="name" required>
+			<input type="text" placeholder="Email" name="email" required>
+			<textarea placeholder="Feedback" cols="30" name="body" required></textarea>
 			<button class="cool fbut" type="submit">Submit Feedback</button>
 		</form>
 	</div>

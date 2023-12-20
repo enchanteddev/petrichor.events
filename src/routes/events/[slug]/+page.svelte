@@ -68,7 +68,7 @@ import type { event } from "$lib/types";
                 {/each}
             </div>
             <div class="judging">
-                <h2>Judging</h2>
+                <h2>Judging Criteria</h2>
                 {#each currentEvent.rulebook.judging as struct}
                     <li class="nodot">{struct}</li>
                 {/each}
@@ -76,7 +76,7 @@ import type { event } from "$lib/types";
             <div class="prizes">
                 <h2>Prizes</h2>
                 {#each currentEvent.rulebook.prizes as struct}
-                    <li>{struct}</li>
+                    <li>₹{struct}</li>
                 {/each}
             </div>
         </div>
