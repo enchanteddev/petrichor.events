@@ -87,13 +87,20 @@ import type { event } from "$lib/types";
                     <Person personData={p}/>
                 {/each}
             </div>
-            <button class="register">Register for {currentEvent.name}</button>
+            <div class="button-cont">
+                <button class="register">Register for {currentEvent.name}</button>
+            </div>
         </div>
     </div>
 </div>
 
 
 <style>
+    .button-cont{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
     .orgcont{
         display: flex;
     }
