@@ -1,8 +1,10 @@
 <script lang="ts">
 	import Person from "$lib/components/Person.svelte";
-import type { event } from "$lib/types";
+    import type { event } from "$lib/types";
+    import { isLogin } from "$lib/stores";
     
 	import { onMount } from "svelte";
+	import { API } from "$lib";
 
     export let data: {[key: string]: event[]};
     let events = data['events'];
@@ -18,6 +20,41 @@ import type { event } from "$lib/types";
                 currentEvent = event;
                 console.log(event.image)
             }
+
+    const clicked = async () => {
+        let isLogged= $isLogin; 
+        if (!isLogged){
+            location.replace('/login')
+        } else{
+            let ans
+            await fetch(API.event,{
+                method:'POST',
+                headers:{
+                    'Accept':'application/json',
+                    'Content-type':'application/json',
+                },credentials: 'include'
+                }).then(res => res.json())
+                .then(res => {
+                    ans=res
+                })
+                // @ts-ignore
+            if (ans.fee != undefined){
+                // @ts-ignore
+                if (ans.fee == 0){
+                    // Dialog
+                    // Apply free event
+                    // Show some progress bar till request is finished
+                    // Change the status to registered
+                }else{
+                    // redirect to payment page
+                    // once verified , change status of button to registered
+                }
+            }else{
+                alert("Something went wrong! Please try again.");
+                setEvent(currentEvent)
+            }
+        }
+    }
 
 </script>
 
@@ -88,7 +125,7 @@ import type { event } from "$lib/types";
                 {/each}
             </div>
             <div class="button-cont">
-                <button class="register">Register for {currentEvent.name}</button>
+                <button class="register" on:click={clicked}>Register for {currentEvent.name}</button>
             </div>
         </div>
     </div>

@@ -1,37 +1,12 @@
 <script lang="ts">
-	import { goto } from "$app/navigation";
 	import { API } from "$lib";
-	import { redirect } from "@sveltejs/kit";
+	import Event from "$lib/components/Event.svelte";
 	import { onMount } from "svelte";
-	import type { key } from "svelte-awesome/icons";
-
-	let user:{[key:string]:any}={}
+	export let data;
+	const { user } = data
+	console.log(user)
 	
-	const authenticate =async () => {
-		console.log("Hekk")
-		await fetch(API.user,{
-		method:'POST',
-		headers:{
-			'Accept':'application/json',
-			'Content-type':'application/json',
-		},credentials: 'include'
-		}).then(res => res.json())
-		.then(res => {
-			console.log(res)
-			if(res.status == 404){
-				goto('/login')
-			}
-			else{
-				user=res.response
-			}
-		})
 
-	}
-	console.log("pp")
-
-	onMount(async () => {
-		
-		authenticate()})
 </script>
 <div class="container">
 	<div class="blocks details">
@@ -79,91 +54,30 @@
 			class="events_info"
 			style="display: flex; width: 100%; justify-content: space-around; font-size: large; padding-left: 10px;"
 		>
-			<h1 class="hover-underline">EVENTS</h1>
-			<h1 class="hover-underline">WORKSHOPS</h1>
+			<center><h1 class="hover-underline">EVENTS</h1></center>
 		</div>
 
 		<div class="events_info">
-			<div class="event-details">
-				<div class="event-image">
-					<!-- svelte-ignore a11y-img-redundant-alt -->
-					<img
-						src="https://picsum.photos/200/100"
-						style="margin-top: 10px; border-radius: 10px;"
-						alt="Image of something"
-					/>
-					<h4 class="payments" style="background-color: green;">Payment Verified</h4>
-				</div>
-				<div class="event-data" style="text-align: left; padding: 0 30px;">
-					<div>
-						<h4>Labyrinth</h4>
-						<p>Technical</p>
-					</div>
-					<div>
-						<h4>Sat, 20 Jan, 2024 | 10:00 AM</h4>
-						<p>Nila Campus</p>
-					</div>
-					<div class="contact-info" style="padding-top: 20px; width:100%; text-align:right;">
-						<a href="/contacts" style=" text-decoration: none;">Contact US</a>
-					</div>
-				</div>
-			</div>
-			<div class="event-details">
-				<div class="event-image">
-					<!-- svelte-ignore a11y-img-redundant-alt -->
-					<img
-						src="https://picsum.photos/200/102"
-						style="margin-top: 10px; border-radius: 10px;"
-						alt="Image of something"
-					/>
-					<h4 class="payments" style="background-color: red;">Payment Failed</h4>
-				</div>
-				<div class="event-data" style="text-align: left; padding: 0 30px;">
-					<div>
-						<h4>Tessaract</h4>
-						<p>Technical</p>
-					</div>
-					<div>
-						<h4>Sat, 20 Jan, 2024 | 1:00 PM</h4>
-						<p>Nila Campus</p>
-					</div>
-					<div class="contact-info" style="padding-top: 20px; width:100%; text-align:right;">
-						<a href="/contacts" style=" text-decoration: none;">Contact US</a>
-					</div>
-				</div>
-			</div>
-			<div class="event-details">
-				<div class="event-image">
-					<!-- svelte-ignore a11y-img-redundant-alt -->
-					<img
-						src="https://picsum.photos/200/101"
-						style="margin-top: 10px; border-radius: 10px;"
-						alt="Image of something"
-					/>
-					<h4 class="payments" style="background-color: orange;">Payment Pending</h4>
-				</div>
-				<div class="event-data" style="text-align: left; padding: 0 30px;">
-					<div>
-						<h4>Studying</h4>
-						<p>Padhai Karo</p>
-					</div>
-					<div>
-						<h4>Sat, 20 Jan, 2024 | 3:00 PM</h4>
-						<p>Nila Campus</p>
-					</div>
-					<div class="contact-info" style="padding-top: 20px; width:100%; text-align:right;">
-						<a href="/contacts" style=" text-decoration: none;">Contact US</a>
-					</div>
-				</div>
-			</div>
+			{#each user.events as event}
+				{#if event.eventId.startsWith('T') || event.eventId.startsWith('C')}
+					<Event eventId={event.eventId} paymentStatus={event.status}/>
+				{/if}
+			{/each}
 		</div>
 	</div>
 
 	<div class="blocks" style="background-color: #242424;">
 		<div class="informations" style="display: flex; ">
 			<div class="accommodation" style="font-size: large">
-				<h1>PROSHOWS</h1>
+				<h1 class="hover-underline">WORKSHOPS/INFORMALS</h1>
 			</div>
+		</div>
+		<div class="events_info">
+			{#each user.events as event}
+				{#if event.eventId.startsWith('W') || event.eventId.startsWith('I')}
+					<Event eventId={event.eventId} paymentStatus={event.status}/>
+				{/if}
+			{/each}
 		</div>
 	</div>
 </div>

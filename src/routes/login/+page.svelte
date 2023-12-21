@@ -1,10 +1,6 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { goto } from '$app/navigation'
-	export let form
-	console.log("Hurray")
-	console.log(form)
-	console.log("Nye")
 </script>
 
 <div class="form-container">
@@ -15,7 +11,8 @@
 			return async ({result, update}) => {
 				console.log(result+"o")
 				if (result.type == 'success'){
-					goto('/profile');	
+					// goto('/profile');
+					location.replace('/profile')
 				} else {
 					alert("Invalid email or password")
 				}

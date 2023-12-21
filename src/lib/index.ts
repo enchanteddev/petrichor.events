@@ -6,5 +6,7 @@ export const API = {
     logout: backend_url + 'web/logout/',
     events_apply: backend_url + 'web/events/apply/',
     feedback: backend_url + 'web/send_grievance',
-    user : backend_url+"web/user/"
+    user : backend_url+"web/user/",
+    whoami : backend_url+"web/whoami/",
+    event : backend_url+"web/event/"
 }

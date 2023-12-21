@@ -1,5 +1,6 @@
 import type { PageServerLoad, Actions } from './$types';
 import { API } from '$lib/index'
+import { isLogin } from "$lib/stores"
 
 export const load: PageServerLoad = (event) => {
 	return {
@@ -9,7 +10,6 @@ export const load: PageServerLoad = (event) => {
 
 export const actions = {
 	login: async ({ request }) => {
-        console.log("H")
         const data = await request.formData();
 		const email = data.get('email');
 		const password = data.get('password');
@@ -26,13 +26,12 @@ export const actions = {
         }
 
         const response = await fetch(API.login, fetchOptions);
-        console.log("He"+response)
         const resp_content = await response.json()
-        console.log("He")
         if (resp_content['ok']){
-            console.log("Her")
+            isLogin.set(true)
             return { success: true };
         }
+        isLogin.set(false)
 
 	},
 } satisfies Actions;
