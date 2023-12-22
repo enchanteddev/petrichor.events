@@ -40,12 +40,10 @@ export const actions = {
                 }).then(res => res.json())
                 .then(res => {
                     ans=res
-                    // @ts-ignore
                     if (ans.user == null || ans.user == undefined){
                         isLogin.set(false)
                     }else{
                         isLogin.set(true)
-                        // @ts-ignore
                         userEvents.set(ans.events)
                     }
                 })

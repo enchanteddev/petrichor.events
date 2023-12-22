@@ -51,6 +51,7 @@
                     login:isLogged,
                     eventId:"currentEvent.id"
                 })
+                // ,credentials:"include"
                 }).then(res => res.json())
                 .then(res => {
                     ans=res
@@ -60,33 +61,31 @@
                 // @ts-ignore
                 if (ans.fee == 0){
                     // Dialog
-                    if (confirm('Are you sure')){
-                        // Apply free event
-                        registering=true
-                        await fetch(API.events_apply_free,{
-                            method:'POST',
-                            headers:{
-                                'Accept':'application/json',
-                                'Content-type':'application/json',
-                            },
-                            body:JSON.stringify({
-                                "participants":["csk1@gmail.com"],
-                                // @ts-ignore
-                                // "eventId":currentEvent.id
-                                "eventId":"TF01"
-                            })
-                        }).then(res => res.json())
-                        .then(res => {
-                            console.log(res)
-                            if (res.status == 200){
-                                userEvents.update(value => [...value, "TF01"])
-                                // userEvents.update(value => [...value, currentEvent.id])
-                                alert("Registration successfull")
-                            }else{
-                                alert('Registration Unsuccessfull! Please try Again')
-                            }
+                    // Apply free event
+                    registering=true
+                    await fetch(API.events_apply_free,{
+                        method:'POST',
+                        headers:{
+                            'Accept':'application/json',
+                            'Content-type':'application/json',
+                        },
+                        body:JSON.stringify({
+                            "participants":["csk1@gmail.com"],
+                            // @ts-ignore
+                            // "eventId":currentEvent.id
+                            "eventId":"TF01"
                         })
-                    }
+                    }).then(res => res.json())
+                    .then(res => {
+                        console.log(res)
+                        if (res.status == 200){
+                            userEvents.update(value => [...value, currentEvent.id])
+                            // userEvents.update(value => [...value, currentEvent.id])
+                            alert("Registration successfull")
+                        }else{
+                            alert('Registration Unsuccessfull! Please try Again')
+                        }
+                    })
                     setEvent(currentEvent)
                     // Show some progress bar till request is finished
 

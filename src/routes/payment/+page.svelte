@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
+	import { API } from '$lib';
 
 	export let data;
 
@@ -89,7 +90,7 @@
 	const submit = () => {
 		CAcode = success ? CAcode : '';
 		if (transactionID) {
-			fetch('https://testpetri.onrender.com/api/events/apply', {
+			fetch(API.events_apply_paid, {
 				method: 'POST',
 				body: JSON.stringify({
 					transactionID,
