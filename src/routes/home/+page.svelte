@@ -6,7 +6,7 @@
 	import Toast from "$lib/components/Toast.svelte";
 	import { workshops } from "$lib/data";
 
-	export let form;
+	// export let form;
 
 	let visible = false;
 	let loaded = false;
