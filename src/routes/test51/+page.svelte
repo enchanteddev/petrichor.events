@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Person from "$lib/components/Person.svelte";
+	import Toast from "$lib/components/Toast.svelte";
 	import type { person } from "$lib/types";
 
     let p: person = {
@@ -11,6 +12,7 @@
 
 <div class="main">
     <Person personData={p}/>
+    <Toast message="Hi!"/>
 </div>
 
 <style>

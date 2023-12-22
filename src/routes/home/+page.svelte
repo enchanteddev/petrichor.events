@@ -3,7 +3,11 @@
 	import { enhance } from "$app/forms";
 	import loading from "$lib/assets/loading.mp4"
 	import loopv from "$lib/assets/loopv.mp4"
+	import Toast from "$lib/components/Toast.svelte";
 	import { workshops } from "$lib/data";
+
+	export let form;
+
 	let visible = false;
 	let loaded = false;
 	setTimeout(() => {visible = true;}, 10)
@@ -64,6 +68,9 @@
 			<button class="cool fbut" type="submit">Submit Feedback</button>
 		</form>
 	</div>
+	<!-- {#if form?.success}
+		<Toast message="Feedback submitted"/>
+	{/if} -->
 </div>
 
 <style>
