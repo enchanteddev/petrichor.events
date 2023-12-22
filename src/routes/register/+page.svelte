@@ -1,4 +1,13 @@
 <script lang="ts">
+	import { enhance,applyAction } from "$app/forms";
+	import { goto } from "$app/navigation";
+	import { folder } from "svelte-awesome/icons";
+	import { get } from "svelte/store";
+
+	/** @type {import('./$types').ActionData} */
+	export let form;
+	console.log(form)
+
 	function validate() {
 		const inst = document.querySelector('#inst-type');
 		const instName = document.querySelector('#inst-name');
@@ -73,7 +82,17 @@
 	<div class="blank2" />
 	<div class="form image2" on:change={validate}>
 		<h2>Register for <span id="Petrichor">Petrichor</span></h2>
-		<form>
+		<form
+		 action="?/register" method="POST" use:enhance={({form}) => {
+
+			return async ({result,update}) => {
+				if (result.type == 'success'){
+					goto('/login');	
+				} else {
+					alert("Invalid email or password")
+				}
+			}
+		}}>
 			<div>
 				<input type="text" name="username" id="name" placeholder="Name" required />
 				<input type="tel" name="phone" id="phone-number" placeholder="Phone No." required />

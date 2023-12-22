@@ -1,23 +1,106 @@
 <script lang="ts">
 	import Person from "$lib/components/Person.svelte";
-import type { event } from "$lib/types";
+    import type { event } from "$lib/types";
+    import { isLogin,userEvents } from "$lib/stores";
     
 	import { onMount } from "svelte";
+	import { API } from "$lib";
 
     export let data: {[key: string]: event[]};
     let events = data['events'];
 
     let bg: HTMLDivElement
     let currentEvent: event = events[0];
+    let registered=false
+    let registering=false
+    if ($isLogin){
+        // @ts-ignore
+        if(currentEvent.id in userEvents){
+            registered=true
+        }
+    }
     onMount(() => {
         bg.style.backgroundImage = `url("${currentEvent.image}")`;
     })
 
     const setEvent = (event: event) => {
+                registering=false
                 bg.style.backgroundImage = `url("${event.image}")`;
                 currentEvent = event;
                 console.log(event.image)
+                if ($isLogin){
+                    // @ts-ignore
+                    if(currentEvent.id in userEvents){
+                        registered=true
+                    }
+                }
             }
+
+    const clicked = async () => {
+        let isLogged= $isLogin; 
+        if (!isLogged){
+            location.replace('/login')
+        } else{
+            let ans
+            await fetch(API.event,{
+                method:'POST',
+                headers:{
+                    'Accept':'application/json',
+                    'Content-type':'application/json',
+                },body:JSON.stringify({
+                    login:isLogged,
+                    eventId:"currentEvent.id"
+                })
+                }).then(res => res.json())
+                .then(res => {
+                    ans=res
+                })
+                // @ts-ignore
+            if (ans.fee != undefined){
+                // @ts-ignore
+                if (ans.fee == 0){
+                    // Dialog
+                    if (confirm('Are you sure')){
+                        // Apply free event
+                        registering=true
+                        await fetch(API.events_apply_free,{
+                            method:'POST',
+                            headers:{
+                                'Accept':'application/json',
+                                'Content-type':'application/json',
+                            },
+                            body:JSON.stringify({
+                                "participants":["csk1@gmail.com"],
+                                // @ts-ignore
+                                // "eventId":currentEvent.id
+                                "eventId":"TF01"
+                            })
+                        }).then(res => res.json())
+                        .then(res => {
+                            console.log(res)
+                            if (res.status == 200){
+                                userEvents.update(value => [...value, "TF01"])
+                                // userEvents.update(value => [...value, currentEvent.id])
+                                alert("Registration successfull")
+                            }else{
+                                alert('Registration Unsuccessfull! Please try Again')
+                            }
+                        })
+                    }
+                    setEvent(currentEvent)
+                    // Show some progress bar till request is finished
+
+                }else{
+                    // redirect to payment page
+                    location.replace('/payment')
+                }
+            }else{
+                alert("Something went wrong! Please try again.");
+                setEvent(currentEvent)
+            }
+        }
+    }
+    
 
 </script>
 
@@ -88,7 +171,12 @@ import type { event } from "$lib/types";
                 {/each}
             </div>
             <div class="button-cont">
-                <button class="register">Register for {currentEvent.name}</button>
+                {#if registering || registered }
+                    <button id="regbtn" class="register" disabled style="background-color: aqua;opacity:40%" on:click={()=>clicked()}>{(registered)?'Registered':"Register for"+ currentEvent.name}</button>
+                {/if}
+                {#if !registering && !registered}
+                    <button id="regbtn" class="register" on:click={() =>{clicked()}}>{(registered)?'Registered':"Register for"+ currentEvent.name}</button>
+                {/if}
             </div>
         </div>
     </div>

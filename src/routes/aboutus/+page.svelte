@@ -1,6 +1,42 @@
-<script>
-    import Icon from 'svelte-awesome/components/Icon.svelte';
-    import {instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
+<script lang="ts">
+    import Category from '$lib/components/Category.svelte';
+    import Ajay from "$lib/assets/CoreTeam/Ajay.jpg"
+    import ANJI from "$lib/assets/CoreTeam/ANJI.jpeg"
+    import Aryan from "$lib/assets/CoreTeam/Aryan.jpg"  
+    import Aswhin from "$lib/assets/CoreTeam/Aswhin.jpeg"
+    import Manish from "$lib/assets/CoreTeam/Manish.jpeg"
+    import Nadhana from "$lib/assets/CoreTeam/Nadhana.jpg"
+    import Netra from "$lib/assets/CoreTeam/Netra.jpeg"
+    import Pawan from "$lib/assets/CoreTeam/Pawan.jpeg"
+    import Priyanshu from "$lib/assets/CoreTeam/Priyanshu.jpg"
+    import Rushikesh from "$lib/assets/CoreTeam/Rushikesh.jpg"
+    import Sarath_A from "$lib/assets/CoreTeam/Sarath_A.jpg"
+    import Sarthak from "$lib/assets/CoreTeam/Sarthak Garg.jpeg"
+    import Shubham from "$lib/assets/CoreTeam/Shubham.jpg"
+    import Sidharth from "$lib/assets/CoreTeam/Sidharth.jpg"
+    import Siva from "$lib/assets/CoreTeam/Siva.jpg"
+    import Sujit from "$lib/assets/CoreTeam/Sujit.jpg"
+    import Utsav  from "$lib/assets/CoreTeam/Utsav Patel.jpeg"
+    import Vijay from "$lib/assets/CoreTeam/Vijay.jpg"
+    import Vishnu from "$lib/assets/CoreTeam/Vishnu.jpg"
+
+    let teams : {[key:string]:any} = {}
+    teams["Coordinator"]=[["Sarthak","sarthak@gmail.com",Sarthak]]
+
+    teams["Assistance Coordinators"]=[["Netra","netra@gmail.com",Netra],
+                                    ["Aryan Mathur","aryan@gmail.com",Aryan]]
+
+    teams["Technical Heads"]=[["Shubham","shubham@gmail.com",Shubham],
+                            ["Manish","manish@gmail.com",Manish]]
+
+    teams["Cultural Heads"]=[["Nadhana","nadhana@gmail.com",Nadhana],
+                            ["Eshwar","eshwar@gmail.com","https://records.iitpkd.ac.in/uploads/students/1618/photos/112101016%20-%20ESHWAR%20PRASAD.jpg?20220124050150"]]
+
+    teams["Web Dev Head"]=[["Kaushik Rawat","kaushik@gmail.com","https://records.iitpkd.ac.in/uploads/students/2122/photos/112201015.JPG?20221026051057"]]
+
+    teams["Informals"]=[["Lion","lion@gmail.com","https://th.bing.com/th?id=OSK.HERO8XH_s8vodPa3VIQliZrFNwgvD9pQ3xob2vslQY6YQrM&w=312&h=200&c=15&rs=2&o=6&dpr=1.3&pid=SANGAM"]]
+
+    teams["Tech Summit"]=[["Tiger",'tiger@gmail.com',"https://www.bing.com/th?id=OIP.q8OkSHaCFDGhb7m5AjIdPgHaFd&w=157&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"]]
 </script>
 
 <div class="MainContainer fullwidth">
@@ -21,191 +57,10 @@
         </div>
         <!-- <center><p class="basicgap" style="line-break: normal;">Meet the passionate minds behind Petrichor—an eclectic team fueled by creativity and dedication. Together, we weave the threads of inspiration to craft an event that transcends expectations.</p></center> -->
 
-
-        <center>
-            <div class="fullwidth basicgap AboutUs" title="Category2" >
-                <h2 class="headings basicgap" style="display: block;color: rgb(255, 180, 180);"><b>Coordinators</b></h2>
-                <div class="InfoContainer fullwidth" >
-                    <div class="individualContainer" id="person2" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg">
-                        </picture>
-                        <center><p class="personName  basicgap">Virat Kohli</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                    <div class="individualContainer" id="person3" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://lh3.google.com/u/0/d/1tw0kCm4e1l_79Aa1S6ClRV6vSDzk3Ew7=w2000-h3556-iv1">
-                        </picture>
-                        <center><p class="personName basicgap">K Willianson</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                    <div class="individualContainer" id="person4" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcS83tZYEdeHMxH4o-5ZOlqdLjMNFJSksfs_CgkCNVWn3xV2HaPV8qFChwRGXcalgAnQyTHE74L1OXpeiUw">
-                        </picture>
-                        <center><p class="personName basicgap">Joe Root</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </center>
-
-
-        <center>
-            <div class="fullwidth basicgap AboutUs" title="Category3" >
-                <h2 class="headings basicgap" style="display: block;color: rgb(255, 180, 180);"><b>Technical</b></h2>
-                <div class="InfoContainer fullwidth" >
-                    <div class="individualContainer" id="person3" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRurHmXFUc7OJk4FHEGvTfMIl5zSv2iLMomatM81XiQLG1dKClENwmsPD0J-FL9teaL3DosRXW1Fu38CWQ">
-                        </picture>
-                        <center><p class="personName basicgap">K Willianson</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                    <div class="individualContainer" id="person4" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcS83tZYEdeHMxH4o-5ZOlqdLjMNFJSksfs_CgkCNVWn3xV2HaPV8qFChwRGXcalgAnQyTHE74L1OXpeiUw">
-                        </picture>
-                        <center><p class="personName basicgap">Joe Root</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </center>
-
-
-        <center>
-            <div class="fullwidth basicgap AboutUs" title="Category4" >
-                <h2 class="headings basicgap" style="display: block;color: rgb(255, 180, 180);"><b>Cultural</b></h2>
-                <div class="InfoContainer fullwidth" >
-                    <div class="individualContainer" id="person1" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSyuKnVg-YzO3Jdg9I1r1dj5fg3lBvG2P5o8pEuGVo3YqxP1aq9tcxaZAvCe2UbRhd-mnwKV4nsTiFJ-Us">
-                        </picture>
-                        <center><p class="personName basicgap" >David Willey</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </center>
-
-
-        <center>
-            <div class="fullwidth basicgap AboutUs" title="Category4" >
-                <h2 class="headings basicgap" style="display: block;color: rgb(255, 180, 180);"><b>Informals</b></h2>
-                <div class="InfoContainer fullwidth" >
-                    <div class="individualContainer" id="person1" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSyuKnVg-YzO3Jdg9I1r1dj5fg3lBvG2P5o8pEuGVo3YqxP1aq9tcxaZAvCe2UbRhd-mnwKV4nsTiFJ-Us">
-                        </picture>
-                        <center><p class="personName basicgap" >David Willey</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                    <div class="individualContainer" id="person2" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg">
-                        </picture>
-                        <center><p class="personName  basicgap">Virat Kohli</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                    <div class="individualContainer" id="person3" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRurHmXFUc7OJk4FHEGvTfMIl5zSv2iLMomatM81XiQLG1dKClENwmsPD0J-FL9teaL3DosRXW1Fu38CWQ">
-                        </picture>
-                        <center><p class="personName basicgap">K Willianson</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a class="basicgap" href="//gmail.com" style="color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                    <div class="individualContainer" id="person4" >
-                        <picture class="picture fullwidth">
-                            <img class="image fullwidth" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcS83tZYEdeHMxH4o-5ZOlqdLjMNFJSksfs_CgkCNVWn3xV2HaPV8qFChwRGXcalgAnQyTHE74L1OXpeiUw">
-                        </picture>
-                        <center><p class="personName basicgap">Joe Root</p></center>
-                        <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                            <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                            <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                        </div></center>
-                        <center>
-                            <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">davidwilley@gmail.com</a>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </center>
+        
+        {#each Object.keys(teams) as teamName}
+            <Category categoryName={teamName} members={teams[(teamName)]} />
+        {/each}
 
     </div>
 </div>
@@ -242,69 +97,13 @@ h1{
     color: rgb(201, 140, 255);
 }
 
-a{
-        color: inherit;
-        text-decoration: unset;
-        text-align: center;
-    }
 
-.headings{
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-}
-
-.image{
-    height:200px ;
-    border-radius: 7px;
-    border: 3px rgb(228, 222, 222);
-}
-
-.slink{
-    height: 30px;
-    width: 30px;
-}
-
-.picture{
-    overflow: hidden;
-    align-items: center;
-}
-
-.InfoContainer{
-    content: "";
-  clear: both;
-  display: table;
-  row-gap: 5px;
-}
-.basicgap{
-    padding: 7px 0px;
-}
-
-.individualContainer{
-    float: left;
-  width: 33.33%;
-  padding: 50px;
-  padding-right: 60px;
-  padding-left: 60px;
-}
 .para{
     padding-top: 10em;
-}
-.socialLinks{
-    width: 70%;
-    display: flex;
-    align-items: center;
-    padding: 3px 0px;   
-}
-
-.icon{
-    width: 25%;
 }
 
 
 @media screen and (max-width:1000px)  {
-    .individualContainer {
-        width: 50%;
-      align-self: center;
-    }
     .aboutus_para{
     padding: 2.5%;
     margin-inline: 5em;
@@ -312,9 +111,6 @@ a{
 }
 
 @media screen and (max-width: 700px) {
-    .individualContainer {
-      width: 100%;
-    }
     .aboutus_para{
         margin-inline: 0em;
         font-size: smaller;
@@ -325,21 +121,8 @@ a{
         padding-top: 7em;
     }
     .headings{
-        font-size: medium;
-    }
-    .basicgap{
-        padding: 3% 0px;
-    }
-    .individualContainer{
-        padding: 5% 8%;
+        font-size: x-large;
     }
   }
-
-  .personName{
-    color: #F9A825;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    font-style: italic;
-    font-weight: 600;
-}
 
 </style>

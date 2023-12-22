@@ -324,11 +324,11 @@
 		.code_verification {
 			width: 18rem;
 		}
-		.payall {
+		/* .payall {
 			position: relative;
 			left: 50%;
 			transform: translate(-45%, 0);
-		}
+		} */
 		#submitButton {
 			width: 18rem;
 		}

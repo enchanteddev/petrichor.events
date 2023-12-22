@@ -1,9 +1,10 @@
 import { API } from '$lib/index'
+import type { Actions } from './$types';
 /** @type {import('./$types').Actions} */
 
 
 export const actions = {	
-    default: async ({request}) => {
+    register: async ({request}) => {
 
       const data = await request.formData();
       let gradyear = data.get('gradyear')?.valueOf()
@@ -29,11 +30,12 @@ export const actions = {
         }) 
       }).then(res => res.json())
       .then(res => {
-          return res.registered
+        console.log(res)
+          return {"success" : res.registered};
       }).catch(err => {
           console.log(err)
       })
         
 
   }
-};
+} satisfies Actions;

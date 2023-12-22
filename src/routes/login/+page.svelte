@@ -7,10 +7,12 @@
 	<div class="blank2" />
 	<div class="form image2">
 		<h2>Login to <span id="Petrichor">Petrichor</span></h2>
-		<form action="?/login" method="post" use:enhance={() => {
+		<form action="?/login" method="POST" use:enhance={({ form }) => {
 			return async ({result, update}) => {
-				if (result['success']){
-					goto('/profile');	
+				console.log(result+"o")
+				if (result.type == 'success'){
+					// goto('/profile');
+					location.replace('/profile')
 				} else {
 					alert("Invalid email or password")
 				}
