@@ -1,10 +1,10 @@
 import type { Actions } from './$types';
 import { API } from '$lib/index'
-import { isLogin } from '$lib/stores';
+import { isLogin,userEvents } from '$lib/stores';
 
-setTimeout(async () => {
+setTimeout(() => {
     let ans
-    await fetch(API.whoami,{
+    fetch(API.whoami,{
     method:'POST',
     headers:{
         'Accept':'application/json',
@@ -13,12 +13,15 @@ setTimeout(async () => {
     }).then(res => res.json())
     .then(res => {
         ans=res
+        console.log(res)
+        if (ans.user == null || ans.user == undefined){
+            isLogin.set(false)
+            userEvents.set([])
+        }else{
+            isLogin.set(true)
+            userEvents.set(ans.events)
+        }
     })
-    if (ans == null || ans == undefined){
-        isLogin.set(false)
-    }else{
-        isLogin.set(true)
-    }
 },0)
 
 export const actions = {

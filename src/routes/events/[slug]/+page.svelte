@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Person from "$lib/components/Person.svelte";
     import type { event } from "$lib/types";
-    import { isLogin } from "$lib/stores";
+    import { isLogin,userEvents } from "$lib/stores";
     
 	import { onMount } from "svelte";
 	import { API } from "$lib";
@@ -11,14 +11,29 @@
 
     let bg: HTMLDivElement
     let currentEvent: event = events[0];
+    let registered=false
+    let registering=false
+    if ($isLogin){
+        // @ts-ignore
+        if(currentEvent.id in userEvents){
+            registered=true
+        }
+    }
     onMount(() => {
         bg.style.backgroundImage = `url("${currentEvent.image}")`;
     })
 
     const setEvent = (event: event) => {
+                registering=false
                 bg.style.backgroundImage = `url("${event.image}")`;
                 currentEvent = event;
                 console.log(event.image)
+                if ($isLogin){
+                    // @ts-ignore
+                    if(currentEvent.id in userEvents){
+                        registered=true
+                    }
+                }
             }
 
     const clicked = async () => {
@@ -32,7 +47,10 @@
                 headers:{
                     'Accept':'application/json',
                     'Content-type':'application/json',
-                },credentials: 'include'
+                },body:JSON.stringify({
+                    login:isLogged,
+                    eventId:"currentEvent.id"
+                })
                 }).then(res => res.json())
                 .then(res => {
                     ans=res
@@ -42,12 +60,39 @@
                 // @ts-ignore
                 if (ans.fee == 0){
                     // Dialog
-                    // Apply free event
+                    if (confirm('Are you sure')){
+                        // Apply free event
+                        registering=true
+                        await fetch(API.events_apply_free,{
+                            method:'POST',
+                            headers:{
+                                'Accept':'application/json',
+                                'Content-type':'application/json',
+                            },
+                            body:JSON.stringify({
+                                "participants":["csk1@gmail.com"],
+                                // @ts-ignore
+                                // "eventId":currentEvent.id
+                                "eventId":"TF01"
+                            })
+                        }).then(res => res.json())
+                        .then(res => {
+                            console.log(res)
+                            if (res.status == 200){
+                                userEvents.update(value => [...value, "TF01"])
+                                // userEvents.update(value => [...value, currentEvent.id])
+                                alert("Registration successfull")
+                            }else{
+                                alert('Registration Unsuccessfull! Please try Again')
+                            }
+                        })
+                    }
+                    setEvent(currentEvent)
                     // Show some progress bar till request is finished
-                    // Change the status to registered
+
                 }else{
                     // redirect to payment page
-                    // once verified , change status of button to registered
+                    location.replace('/payment')
                 }
             }else{
                 alert("Something went wrong! Please try again.");
@@ -55,6 +100,7 @@
             }
         }
     }
+    
 
 </script>
 
@@ -125,7 +171,12 @@
                 {/each}
             </div>
             <div class="button-cont">
-                <button class="register" on:click={clicked}>Register for {currentEvent.name}</button>
+                {#if registering || registered }
+                    <button id="regbtn" class="register" disabled style="background-color: aqua;opacity:40%" on:click={()=>clicked()}>{(registered)?'Registered':"Register for"+ currentEvent.name}</button>
+                {/if}
+                {#if !registering && !registered}
+                    <button id="regbtn" class="register" on:click={() =>{clicked()}}>{(registered)?'Registered':"Register for"+ currentEvent.name}</button>
+                {/if}
             </div>
         </div>
     </div>

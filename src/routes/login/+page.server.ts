@@ -1,6 +1,6 @@
 import type { PageServerLoad, Actions } from './$types';
 import { API } from '$lib/index'
-import { isLogin } from "$lib/stores"
+import { isLogin,userEvents } from "$lib/stores"
 
 export const load: PageServerLoad = (event) => {
 	return {
@@ -29,9 +29,32 @@ export const actions = {
         const resp_content = await response.json()
         if (resp_content['ok']){
             isLogin.set(true)
+            setTimeout(()=>{
+                let ans
+                fetch(API.whoami,{
+                method:'POST',
+                headers:{
+                    'Accept':'application/json',
+                    'Content-type':'application/json',
+                },credentials: 'include'
+                }).then(res => res.json())
+                .then(res => {
+                    ans=res
+                    // @ts-ignore
+                    if (ans.user == null || ans.user == undefined){
+                        isLogin.set(false)
+                    }else{
+                        isLogin.set(true)
+                        // @ts-ignore
+                        userEvents.set(ans.events)
+                    }
+                })
+            })
             return { success: true };
         }
         isLogin.set(false)
+        userEvents.set([])
+
 
 	},
 } satisfies Actions;

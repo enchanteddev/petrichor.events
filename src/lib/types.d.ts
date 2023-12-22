@@ -1,4 +1,5 @@
 export interface event {
+	id: string;
     name: string,
     about: string,
     image: string,

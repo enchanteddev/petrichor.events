@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { API } from "$lib";
 	import Event from "$lib/components/Event.svelte";
-	import { onMount } from "svelte";
 	export let data;
 	const { user } = data
 	console.log(user)
@@ -135,44 +133,5 @@
 		text-decoration: underline;
 		text-decoration-color: blue;
 		text-decoration-thickness: 4px;
-	}
-	.event-details {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: center;
-		background-color: #333232;
-		border-radius: 20px;
-		margin: 10px 10px;
-		line-height: 0;
-		height: 15%;
-		text-align: center;
-		padding: 0 15px;
-		padding-right: 10px;
-		margin-bottom: 20px;
-	}
-	.event-details .payments {
-		color: white;
-		padding: 10px;
-		border-radius: 5px;
-		text-align: center;
-		flex-grow: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 3px;
-	}
-	.event-data {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: flex-start;
-		flex-grow: 3;
-		margin-top: -40px;
-	}
-	.event-data .contact-info a {
-		text-decoration: none;
-		color: rgb(110, 109, 109);
-		font-weight: bold;
 	}
 </style>
