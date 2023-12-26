@@ -1,25 +1,61 @@
 <!-- svelte-ignore a11y-media-has-caption -->
 <script lang="ts">
-	import { enhance } from "$app/forms";
-	import loading from "$lib/assets/loading.mp4"
-	import loopv from "$lib/assets/loopv.mp4"
-	import Toast from "$lib/components/Toast.svelte";
-	import { workshops } from "$lib/data";
+	import { enhance } from '$app/forms';
+	import loading from '$lib/assets/loading.mp4';
+	import loopv from '$lib/assets/loopv.mp4';
+
+	import { isLogin, userEvents } from '$lib/stores';
+	import { API, readToken } from '$lib/index';
+
+	import { workshops } from '$lib/data';
+	import { onMount } from 'svelte';
 
 	// export let form;
 
 	let visible = false;
 	let loaded = false;
-	setTimeout(() => {visible = true;}, 10)
-	setTimeout(() => {loaded = true;}, 8000)
+	setTimeout(() => {
+		visible = true;
+	}, 10);
+	setTimeout(() => {
+		loaded = true;
+	}, 8000);
+
+	onMount(() => {
+		let ans;
+		console.log(readToken());
+		fetch(API.whoami, {
+			method: 'POST',
+			headers: {
+				Accept: 'application/json',
+				'Content-type': 'application/json'
+			},
+			credentials: 'include',
+			body: JSON.stringify({
+				token: readToken()
+			})
+		})
+			.then((res) => res.json())
+			.then((res) => {
+				ans = res;
+				console.log(res);
+				if (ans.user == null || ans.user == undefined) {
+					isLogin.set(false);
+					userEvents.set([]);
+				} else {
+					isLogin.set(true);
+					userEvents.set(ans.events);
+				}
+			});
+	});
 </script>
 
-<div class="main {visible ? "" : "none"}">
+<div class="main {visible ? '' : 'none'}">
 	<!-- <video src="https://petrichor.events/static/media/video.95406780.mp4" autoplay muted loop /> -->
-	<video class={loaded ? "none" : ""} src={loading} autoplay muted />
-	<video class={!loaded ? "none" : ""} src={loopv} autoplay muted loop/>
+	<video class={loaded ? 'none' : ''} src={loading} autoplay muted />
+	<video class={!loaded ? 'none' : ''} src={loopv} autoplay muted loop />
 	<div class="title">
-		<div class="imgparent"/>
+		<div class="imgparent" />
 		<div class="tit">
 			<h1>PETRICHOR</h1>
 			<h1 class="date">2024</h1>
@@ -52,19 +88,19 @@
 		<h1>Workshops</h1>
 		<div class="wscont">
 			{#each workshops.workshops as w}
-			<div class="ws" style="background-image: url('{w.image}');">
-				<h2>{w.name}</h2>
-				<p>{w.about}</p>
-			</div>
+				<div class="ws" style="background-image: url('{w.image}');">
+					<h2>{w.name}</h2>
+					<p>{w.about}</p>
+				</div>
 			{/each}
 		</div>
 	</div>
 	<div class="banner contactus" id="contact">
 		<h1>Contact Us</h1>
 		<form action="?/feedback" method="post" style="display: contents;" use:enhance>
-			<input type="text" placeholder="Name" name="name" required>
-			<input type="text" placeholder="Email" name="email" required>
-			<textarea placeholder="Feedback" cols="30" name="body" required></textarea>
+			<input type="text" placeholder="Name" name="name" required />
+			<input type="text" placeholder="Email" name="email" required />
+			<textarea placeholder="Feedback" cols="30" name="body" required />
 			<button class="cool fbut" type="submit">Submit Feedback</button>
 		</form>
 	</div>
@@ -74,15 +110,15 @@
 </div>
 
 <style>
-	.fbut{
+	.fbut {
 		margin-bottom: 1em !important;
 		font-size: 20px !important;
 		width: fit-content !important;
 	}
-	.wscont{
+	.wscont {
 		display: flex;
 	}
-	.ws{
+	.ws {
 		width: 25em;
 		background-color: rgba(128, 128, 128, 0.223);
 		padding: 0.5em;
@@ -93,9 +129,10 @@
 		color: white;
 		transition: 200ms ease;
 	}
-	input, textarea {
+	input,
+	textarea {
 		padding: 1.5%;
-		margin: .5%;
+		margin: 0.5%;
 		font-size: 24px;
 		border-radius: 10rem;
 		width: 55%;
@@ -103,18 +140,18 @@
 		border: none;
 		color: white;
 	}
-	textarea{
+	textarea {
 		height: 30em;
 		border-radius: 1em;
 		margin-bottom: 1em;
 	}
-	.ws:hover{
+	.ws:hover {
 		transform: translateY(-1em);
 	}
-	.none{
+	.none {
 		opacity: 0% !important;
 	}
-	.main{
+	.main {
 		transition: 1000ms;
 		/* width: 100px; */
 	}
@@ -127,9 +164,8 @@
 	.tit > h1 {
 		margin: 0;
 	}
-	.tit{
+	.tit {
 		z-index: 2;
-
 	}
 	.title {
 		height: 100vh;
@@ -180,7 +216,7 @@
 	}
 	.workshops {
 		background-color: rgb(192, 235, 255);
-        color: black;
+		color: black;
 	}
 	.banner {
 		z-index: 2;
@@ -282,76 +318,75 @@
 		transform: translate(0, 5%);
 	}
 
-	@media (max-width: 500px){
-		.main{
+	@media (max-width: 500px) {
+		.main {
 			width: 100vw;
 		}
-		.bupal{
+		.bupal {
 			margin-bottom: 5rem;
-		} 
-		.about{
+		}
+		.about {
 			height: 100vh;
 			padding-top: 10rem;
 			padding-bottom: 15rem;
 			width: 100vw;
 		}
-		.about > h1{
+		.about > h1 {
 			font-size: 20px;
 			margin-top: 5rem;
 		}
-		.title{
-            width: 100svh;
+		.title {
+			width: 100svh;
 			flex-direction: column;
-        }
-		video{
+		}
+		video {
 			top: -10vh;
 			left: 3vw;
 			/* scale: 3; */
 			overflow: hidden;
 			display: block;
 		}
-		h1{
+		h1 {
 			font-size: 35px;
 			display: inline;
 		}
-		.sel{
+		.sel {
 			flex-direction: column;
 		}
-		.event{
+		.event {
 			height: 32vh;
 			margin-bottom: 1em;
 			filter: unset;
 		}
-		.tit{
+		.tit {
 			width: 90%;
 		}
-		.imgparent{
+		.imgparent {
 			aspect-ratio: 0.3;
 		}
-		p{
+		p {
 			text-align: justify;
 		}
-		.wscont{
+		.wscont {
 			display: block;
 		}
-		.ws{
+		.ws {
 			width: 15em;
 		}
-		.workshops{
+		.workshops {
 			padding-top: 15rem;
 			padding-bottom: 20rem;
 		}
-    }
-	@media screen and (max-width:330px){
+	}
+	@media screen and (max-width: 330px) {
 		.tit > h1 {
 			display: block;
 		}
-		.bupal{
+		.bupal {
 			display: block;
 		}
-		.cool{
+		.cool {
 			margin: 1em;
 		}
 	}
-
 </style>

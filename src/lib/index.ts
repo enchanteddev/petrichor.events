@@ -7,9 +7,9 @@ export const API = {
     events_apply_paid: backend_url + 'web/events/apply/paid',
     events_apply_free: backend_url + 'web/events/apply/free',
     feedback: backend_url + 'web/send_grievance',
-    user : backend_url+"web/user/",
-    whoami : backend_url+"web/whoami/",
-    event : backend_url+"web/event/"
+    user: backend_url + "web/user/",
+    whoami: backend_url + "web/whoami/",
+    event: backend_url + "web/event/"
 }
 
 
@@ -19,4 +19,29 @@ export const readID = (id: string) => {
         'paid': id[1] == 'P',
         'index': Number(id[2] + id[3])
     }
+}
+
+
+export const readToken = () => {
+    const cookies = document.cookie.split(';');
+    
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        
+        if (cookie.startsWith('token=')) {
+            return cookie.substring(6);
+        }
+    }
+    
+    return null;
+}
+
+export const setToken = (token: string, expirationDays: number) => {
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + expirationDays);
+
+    const expires = expirationDays ? `expires=${expirationDate.toUTCString()}` : '';
+
+    document.cookie = `token=${token}; ${expires}; path=/`;
+   
 }

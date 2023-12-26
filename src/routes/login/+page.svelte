@@ -1,23 +1,58 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { goto } from '$app/navigation'
+	import { setToken } from '$lib/index';
+	import { goto } from '$app/navigation';
+	
+	import { isLogin, userEvents } from '$lib/stores';
+	import { API, readToken } from '$lib/index';
 </script>
 
 <div class="form-container">
 	<div class="blank2" />
 	<div class="form image2">
 		<h2>Login to <span id="Petrichor">Petrichor</span></h2>
-		<form action="?/login" method="POST" use:enhance={({ form }) => {
-			return async ({result, update}) => {
-				console.log(result+"o")
-				if (result.type == 'success'){
-					// goto('/profile');
-					location.replace('/profile')
-				} else {
-					alert("Invalid email or password")
-				}
-			}
-		}}>
+		<form
+			action="?/login"
+			method="POST"
+			use:enhance={({ form }) => {
+				return async ({ result, update }) => {
+					if (result.type == 'success') {
+						if (result.data) {
+							// @ts-ignore
+							setToken(String(result?.data?.response?.token));
+							let ans;
+							console.log(readToken());
+							fetch(API.whoami, {
+								method: 'POST',
+								headers: {
+									Accept: 'application/json',
+									'Content-type': 'application/json'
+								},
+								credentials: 'omit',
+								body: JSON.stringify({
+									token: readToken()
+								})
+							})
+								.then((res) => res.json())
+								.then((res) => {
+									ans = res;
+									console.log(res);
+									if (ans.user == null || ans.user == undefined) {
+										isLogin.set(false);
+										userEvents.set([]);
+									} else {
+										isLogin.set(true);
+										userEvents.set(ans.events);
+									}
+								});
+						}
+						location.replace('/profile')
+					} else {
+						alert('Invalid email or password');
+					}
+				};
+			}}
+		>
 			<div>
 				<input type="email" name="email" id="email" placeholder="Email" required />
 			</div>

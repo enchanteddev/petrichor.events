@@ -1,5 +1,5 @@
 import type { PageServerLoad, Actions } from './$types';
-import { API } from '$lib/index'
+import { API, setToken } from '$lib/index'
 import { isLogin,userEvents } from "$lib/stores"
 
 export const load: PageServerLoad = (event) => {
@@ -28,27 +28,9 @@ export const actions = {
         const response = await fetch(API.login, fetchOptions);
         const resp_content = await response.json()
         if (resp_content['ok']){
+            console.log(resp_content)
             isLogin.set(true)
-            setTimeout(()=>{
-                let ans
-                fetch(API.whoami,{
-                method:'POST',
-                headers:{
-                    'Accept':'application/json',
-                    'Content-type':'application/json',
-                },credentials: 'include'
-                }).then(res => res.json())
-                .then(res => {
-                    ans=res
-                    if (ans.user == null || ans.user == undefined){
-                        isLogin.set(false)
-                    }else{
-                        isLogin.set(true)
-                        userEvents.set(ans.events)
-                    }
-                })
-            })
-            return { success: true };
+            return { success: true, response: resp_content };
         }
         isLogin.set(false)
         userEvents.set([])

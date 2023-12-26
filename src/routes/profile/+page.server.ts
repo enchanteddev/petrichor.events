@@ -1,15 +1,16 @@
 import { API } from "$lib"
-import type { PageLoad } from './$types';
+import type { PageServerLoad } from './$types';
 
 
-export const load: PageLoad  = async ({fetch}) => {
+export const load: PageServerLoad  = async ({fetch, cookies}) => {
     let ans
     await fetch(API.user,{
     method:'POST',
     headers:{
         'Accept':'application/json',
         'Content-type':'application/json',
-    },credentials: 'include'
+    },
+    body: JSON.stringify({'token': cookies.get('token')})
     }).then(res => res.json())
     .then(res => {
         ans=res

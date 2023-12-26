@@ -1,28 +1,6 @@
 import type { Actions } from './$types';
 import { API } from '$lib/index'
-import { isLogin,userEvents } from '$lib/stores';
 
-setTimeout(() => {
-    let ans
-    fetch(API.whoami,{
-    method:'POST',
-    headers:{
-        'Accept':'application/json',
-        'Content-type':'application/json',
-    },credentials: 'include'
-    }).then(res => res.json())
-    .then(res => {
-        ans=res
-        console.log(res)
-        if (ans.user == null || ans.user == undefined){
-            isLogin.set(false)
-            userEvents.set([])
-        }else{
-            isLogin.set(true)
-            userEvents.set(ans.events)
-        }
-    })
-},0)
 
 export const actions = {
 	feedback: async ({ request }) => {

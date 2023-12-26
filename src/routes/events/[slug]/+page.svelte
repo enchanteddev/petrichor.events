@@ -15,7 +15,9 @@
     let registering=false
     if ($isLogin){
         // @ts-ignore
-        if(currentEvent.id in userEvents){
+        console.log($userEvents)
+        console.log("p")
+        if(currentEvent.id in $userEvents){
             registered=true
         }
     }
@@ -28,9 +30,11 @@
                 bg.style.backgroundImage = `url("${event.image}")`;
                 currentEvent = event;
                 console.log(event.image)
+                console.log($userEvents)
+        console.log("p")
                 if ($isLogin){
                     // @ts-ignore
-                    if(currentEvent.id in userEvents){
+                    if(currentEvent.id in $userEvents){
                         registered=true
                     }
                 }
@@ -72,8 +76,7 @@
                         body:JSON.stringify({
                             "participants":["csk1@gmail.com"],
                             // @ts-ignore
-                            // "eventId":currentEvent.id
-                            "eventId":"TF01"
+                            "eventId":currentEvent.id
                         })
                     }).then(res => res.json())
                     .then(res => {
@@ -82,6 +85,7 @@
                             userEvents.update(value => [...value, currentEvent.id])
                             // userEvents.update(value => [...value, currentEvent.id])
                             alert("Registration successfull")
+                            registered=true
                         }else{
                             alert('Registration Unsuccessfull! Please try Again')
                         }
