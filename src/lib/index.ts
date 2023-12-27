@@ -15,6 +15,7 @@ export const API = {
 
 export const readID = (id: string) => {
     return {
+        // TF01
         'type': id[0],
         'paid': id[1] == 'P',
         'index': Number(id[2] + id[3])

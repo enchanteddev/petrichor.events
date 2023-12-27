@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { setToken } from '$lib/index';
-	import { goto } from '$app/navigation';
 	
-	import { isLogin, userEvents } from '$lib/stores';
+	import { isLogin, userEvents, userEmail } from '$lib/stores';
 	import { API, readToken } from '$lib/index';
 </script>
 
@@ -43,6 +42,7 @@
 									} else {
 										isLogin.set(true);
 										userEvents.set(ans.events);
+										userEmail.set(ans.email);
 									}
 								});
 						}

@@ -2,6 +2,7 @@
 	import Person from "$lib/components/Person.svelte";
     import type { event } from "$lib/types";
     import { isLogin,userEvents } from "$lib/stores";
+    import { readToken } from "$lib/index";
     
 	import { onMount } from "svelte";
 	import { API } from "$lib";
@@ -52,7 +53,6 @@
                     'Accept':'application/json',
                     'Content-type':'application/json',
                 },body:JSON.stringify({
-                    login:isLogged,
                     eventId:"currentEvent.id"
                 })
                 // ,credentials:"include"
@@ -76,7 +76,8 @@
                         body:JSON.stringify({
                             "participants":["csk1@gmail.com"],
                             // @ts-ignore
-                            "eventId":currentEvent.id
+                            "eventId":currentEvent.id,
+                            "token": readToken()
                         })
                     }).then(res => res.json())
                     .then(res => {

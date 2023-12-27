@@ -4,7 +4,7 @@
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
 
-	import { isLogin, userEvents } from '$lib/stores';
+	import { isLogin, userEvents, userEmail } from '$lib/stores';
 	import { API, readToken } from '$lib/index';
 
 	import { workshops } from '$lib/data';
@@ -30,7 +30,7 @@
 				Accept: 'application/json',
 				'Content-type': 'application/json'
 			},
-			credentials: 'include',
+			credentials: 'omit',
 			body: JSON.stringify({
 				token: readToken()
 			})
@@ -45,6 +45,8 @@
 				} else {
 					isLogin.set(true);
 					userEvents.set(ans.events);
+					console.log(ans.email)
+					userEmail.set(ans.email);
 				}
 			});
 	});
