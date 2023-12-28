@@ -46,3 +46,14 @@ export const setToken = (token: string, expirationDays: number) => {
     document.cookie = `token=${token}; ${expires}; path=/`;
    
 }
+
+export async function POST(url: string, body: any) {
+    return await fetch(url, {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify(body)
+    })
+}

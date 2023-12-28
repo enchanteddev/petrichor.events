@@ -55,7 +55,7 @@ export let cultural = {
         ],
         "image": "https://cdn.midjourney.com/0a33f382-8071-4463-8e56-8368c5b3806b/0_0.webp",
         "date": "Undeclared",
-        "id": "CF00"
+        "id": "CP00"
       },
       {
         "name": "BRUSHED BRILLIANCE",
@@ -158,7 +158,7 @@ export let cultural = {
         ],
         "image": "https://cdn.midjourney.com/4afbe489-0966-4b49-b62a-267a6624785e/0_0.webp",
         "date": "Undeclared",
-        "id": "CF02"
+        "id": "CP02"
       },
       {
         "name": "Voicestra",
@@ -219,7 +219,7 @@ export let cultural = {
         ],
         "image": "https://cdn.midjourney.com/a9c2e780-c05a-4fc8-8d13-d749863334a6/0_0.webp",
         "date": "Undeclared",
-        "id": "CF03"
+        "id": "CP03"
       },
       {
         "name": "Fashion Frenzy ",
@@ -383,7 +383,7 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CF06"
+        "id": "CP06"
       },
       {
         "name": "ChoreoClash",
@@ -439,7 +439,7 @@ export let cultural = {
         ],
         "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
         "date": "Undeclared",
-        "id": "CF07"
+        "id": "CP07"
       },
       {
         "name": "BGMI Showdown",
@@ -533,7 +533,7 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CF09"
+        "id": "CP09"
       },
       {
         "name": "CODM: Clash of Champions",
@@ -579,7 +579,7 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CF10"
+        "id": "CP10"
       },
       {
         "name": "KAVYA - weaving verses, crafting dreams",
@@ -788,7 +788,7 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CF14"
+        "id": "CP14"
       },
       {
         "name": "Click n' Roll: A Showcase of Frames",
@@ -953,7 +953,7 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CF17"
+        "id": "CP17"
       },
       {
         "name": "Sportify - The SpEnt Quiz",
