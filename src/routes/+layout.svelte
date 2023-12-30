@@ -2,6 +2,8 @@
     import Icon from 'svelte-awesome/components/Icon.svelte';
     import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
     import bg from '$lib/assets/dark.jpg'
+    import pet from '$lib/assets/pet.png'
+
     export let data;
     let hover = false;
 </script>
@@ -12,7 +14,7 @@
     <div class="nav">
 
         <nav>
-            <a class="petimg2" href="/home"> </a>
+            <a class="petimg2" href="/home" style="background-image: url('{pet}');"> </a>
             <div>
                 <a href="/aboutus" on:mouseenter={() => {hover=true;}} on:mouseleave={()=>{
                     setTimeout(()=>{hover=false;}, 3000)
@@ -192,9 +194,9 @@
     }
     .petimg2{
         aspect-ratio: 0.55;
-        background-image: url("https://petrichor.events/static/media/logo_red.7a86e334.png");
+        /* background-image: url("https://petrichor.events/static/media/logo_red.7a86e334.png"); */
         background-position: center;
-        background-size: 30%;
+        background-size: contain;
         background-repeat: no-repeat;
         width: 4em;
     }

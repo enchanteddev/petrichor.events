@@ -26,46 +26,46 @@
 			}
 		}
 		// TODO fetch request
-		else {
-			let count = 0;
-			for (let idx in emails_filled) {
-				let email = emails_filled[idx];
-				fetch('https://testpetri.onrender.com/api/events/verify', {
-					method: 'POST',
-					body: JSON.stringify({
-						email: email,
-						message: 'Verify Email'
-					}),
-					headers: {
-						'Content-type': 'application/json; charset=UTF-8'
+		
+		let count = 0;
+		for (let idx in emails_filled) {
+			let email = emails_filled[idx];
+			fetch('https://testpetri.onrender.com/api/events/verify', {
+				method: 'POST',
+				body: JSON.stringify({
+					email: email,
+					message: 'Verify Email'
+				}),
+				headers: {
+					'Content-type': 'application/json; charset=UTF-8'
+				}
+			})
+				.then((response) => response.json())
+				.then((data) => {
+					let verified = data.verified;
+					if (verified) {
+						count += 1;
+					} else {
+						fetch('https://testpetri.onrender.com/api/events/verify', {
+							method: 'POST',
+							body: JSON.stringify({
+								email: email,
+								message: 'Unverified Email'
+							}),
+							headers: {
+								'Content-type': 'application/json; charset=UTF-8'
+							}
+						});
 					}
-				})
-					.then((response) => response.json())
-					.then((data) => {
-						let verified = data.verified;
-						if (verified) {
-							count += 1;
-						} else {
-							fetch('https://testpetri.onrender.com/api/events/verify', {
-								method: 'POST',
-								body: JSON.stringify({
-									email: email,
-									message: 'Unverified Email'
-								}),
-								headers: {
-									'Content-type': 'application/json; charset=UTF-8'
-								}
-							});
-						}
-					});
-			}
-			if (count == emails_filled.length) {
-                //continue to next page
-			}
-            else{
-                location.reload()
-            }
+				});
 		}
+		if (count == emails_filled.length) {
+			//continue to next page
+		}
+		else{
+			location.reload()
+		}
+		
 	}
 </script>
 
