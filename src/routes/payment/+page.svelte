@@ -3,12 +3,12 @@
 	import QRCode from 'qrcode';
 	import { API } from '$lib';
 
-	export let data;
+	export let data: any;
 
 	let transactionID: string;
 	let CAcode: string;
 	let imgurl: string;
-	let amount = 1280;
+	let amount = data.fees;
 	let accountNumber = '007010100273206';
 	let ifscCode = 'UTIB0000007';
 	let success = false;
@@ -175,12 +175,12 @@
 			</div>
 			<div id="submitButton">
 				<p id="warning">Hii</p>
-				<input
+				<button
 					id="submit"
 					on:click={() => submit()}
 					type="submit"
 					style="cursor:pointer; display:block; margin-top:5px;"
-				/>
+				>Register Now</button>
 			</div>
 		</div>
 	</form>
@@ -231,11 +231,11 @@
 		text-align: center;
 		visibility: hidden;
 	}
-	#submitButton > input {
-		width: 6.5rem;
+	#submitButton > button {
+		width: 10rem;
 		height: 2.5rem;
 		font-size: large;
-		border-radius: 25%/50%;
+		border-radius: 2.5em;
 		background-color: rgb(0, 183, 255);
 		border: none;
 		display: block;

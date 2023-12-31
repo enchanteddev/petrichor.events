@@ -1818,18 +1818,5 @@ export let workshops =  {
             speakers: [ 'Keerthi Reddy', 'Dr. Jacob'],
             id: 'WP02'
         },
-        {
-            name: 'Unknown',
-            about: 'Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon',
-            prereq: [ 'Basic Programming Skills'],
-            fees: 1280,
-            date: '27 & 28 Jan',
-            regdate: '29 Jan',
-            image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
-            location: 'Nila Campus',
-            topics: [ 'Product Design', 'Design Thinking', 'Product-Market Pitch'],
-            speakers: [ 'Dr. Sabarimalai Manikandan'],
-            id: 'WP03'
-        },
     ]
 };

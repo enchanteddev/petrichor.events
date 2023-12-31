@@ -1,7 +1,9 @@
+import { API, POST } from '$lib';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = ({ url }) => {
-	return {
-            name: url.searchParams.get('name')
-		}
+export const load: PageLoad = async ({ url }) => {
+	const id = url.searchParams.get('id')
+	const eventResponse = await POST(API.event, {id: id});
+	const eventData = await eventResponse.json()
+	return eventData;
 };
