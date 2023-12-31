@@ -18,7 +18,7 @@ export let cultural = {
             "1000"
           ],
           "rules": [
-            "--Number of participants in each team: maximum 3--",
+            "Number of participants in each team: maximum 3",
             "1. All participants must be registered and should reach the venue 30 minutes prior to the start of the event.",
             "2. Gas stoves and induction cookers are not allowed.",
             "3. Basic cooking equipment, including mixers, vessels, and spoons, will be provided by the organizers.",
