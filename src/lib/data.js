@@ -54,7 +54,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/0a33f382-8071-4463-8e56-8368c5b3806b/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CP00"
       },
       {
@@ -218,7 +218,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/a9c2e780-c05a-4fc8-8d13-d749863334a6/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CP03"
       },
       {
@@ -306,7 +306,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF05"
       },
       {
@@ -438,7 +438,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
-        "date": "Undeclared",
+        "date": "27-01-2024",
         "id": "CP07"
       },
       {
@@ -685,7 +685,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/7bddb8b1-ecbb-40f8-99eb-9c6c9f71b150/0_0.webp",
-        "date": "Undeclared",
+        "date": "27-01-2024",
         "id": "CF12"
       },
       {
@@ -787,7 +787,7 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "Undeclared",
+        "date": "27-01-2024",
         "id": "CP14"
       },
       {
@@ -887,7 +887,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/bb0bd2e0-7ade-44ac-bcdd-4c6aed8976e8/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF16"
       },
       {
@@ -952,7 +952,7 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CP17"
       },
       {
@@ -992,7 +992,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/f4059e2a-69f9-4ea7-bd1a-9079a55baefe/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF18"
       }
     ]
