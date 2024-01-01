@@ -5,14 +5,14 @@
             "id": "CP00",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 3
         },
         {
             "name": "BRUSHED BRILLIANCE",
             "id": "CF01",
             "fees": 0,
-            "minMemeber": 1,
-            "maxMemeber": 1
+            "minMemeber": 2,
+            "maxMemeber": 2
         },
         {
             "name": "Meta Monologues",
@@ -32,29 +32,29 @@
             "name": "Fashion Frenzy ",
             "id": "CF04",
             "fees": 0,
-            "minMemeber": 1,
-            "maxMemeber": 1
+            "minMemeber": 10,
+            "maxMemeber": 15
         },
         {
             "name": "Waste to wow",
             "id": "CF05",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 2
         },
         {
             "name": "Dynamic Duet",
             "id": "CP06",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 2
         },
         {
             "name": "ChoreoClash",
             "id": "CP07",
             "fees": 0,
-            "minMemeber": 1,
-            "maxMemeber": 1
+            "minMemeber": 3,
+            "maxMemeber": 15
         },
         {
             "name": "BGMI Showdown",
@@ -110,7 +110,7 @@
             "id": "CF15",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 2
         },
         {
             "name": "Enigma - The General Quiz",
@@ -123,8 +123,8 @@
             "name": "Bandwagon",
             "id": "CP17",
             "fees": 0,
-            "minMemeber": 1,
-            "maxMemeber": 1
+            "minMemeber": 4,
+            "maxMemeber": 15
         },
         {
             "name": "Sportify - The SpEnt Quiz",
