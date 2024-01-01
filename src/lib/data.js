@@ -5,17 +5,17 @@ export let cultural = {
         "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers. It encourages teamwork, innovation, and resourcefulness in the kitchen.",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "Scores are divided as follows:",
-            "1. Taste \u2013 25 marks",
-            "2. Presentation \u2013 25 marks",
-            "3. Creativity \u2013 25 marks",
+            "1. Taste \u2013 25%",
+            "2. Presentation \u2013 25%",
+            "3. Creativity \u2013 25%",
             "4. Utilization of available resources \u2013 25 marks"
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "Number of participants in each team: maximum 3",
@@ -74,9 +74,9 @@ export let cultural = {
             "\u2022\tOverall visual impact:25%"
           ],
           "prizes": [
-            "3500",
-            "2500",
-            "1500"
+            "₹3500",
+            "₹2500",
+            "₹1500"
           ],
           "rules": [
             "\u2022        Participants must finish the painting within 60 minutes.",
@@ -127,9 +127,9 @@ export let cultural = {
             "- Overall Presentation"
           ],
           "prizes": [
-            "3000",
-            "1500",
-            "500"
+            "₹3000",
+            "₹1500",
+            "₹500"
           ],
           "rules": [
             "1. Use of fire or sharp objects that will damage the stage is prohibited.",
@@ -189,9 +189,9 @@ export let cultural = {
             "5. Overall impact"
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "1. The time allotted for each performance is 3-5 minutes.",
@@ -237,8 +237,8 @@ export let cultural = {
             "4) stage presence"
           ],
           "prizes": [
-            "10000",
-            "8000"
+            "₹10000",
+            "₹8000"
           ],
           "rules": [
             "1) form a team of 15 members including upto 10 models",
@@ -279,9 +279,9 @@ export let cultural = {
             "\u25cf\tPresentation."
           ],
           "prizes": [
-            "First:2500",
-            "second:1500",
-            "third: 1000"
+            "First: ₹2500",
+            "Second: ₹1500",
+            "Third: ₹1000"
           ],
           "rules": [
             "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
@@ -327,9 +327,9 @@ export let cultural = {
             "5 - Synchronisation"
           ],
           "prizes": [
-            "5000",
-            "3000",
-            "2000"
+            "₹5000",
+            "₹3000",
+            "₹2000"
           ],
           "rules": [
             "General Rules :",
@@ -397,9 +397,9 @@ export let cultural = {
             "4. Costume and Appearance : 20"
           ],
           "prizes": [
-            "10000",
-            "6000",
-            "3000"
+            "₹10000",
+            "₹6000",
+            "₹3000"
           ],
           "rules": [
             "1. Any dance style is allowed.",
@@ -454,9 +454,9 @@ export let cultural = {
             "2. The team with max number of points wins."
           ],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1. Players can participate through any android device/IOS device.",
@@ -501,9 +501,9 @@ export let cultural = {
             "3.Relevance to prompt - 30"
           ],
           "prizes": [
-            "2000",
-            "1000",
-            "500"
+            "₹2000",
+            "₹1000",
+            "₹500"
           ],
           "rules": [
             "1.The story should not exceed the word limit of 2000 words and must be based on the prompts provided.",
@@ -554,9 +554,9 @@ export let cultural = {
             "5. Team with max no. of points wins."
           ],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1. Teams must download all maps, check-in 10 minutes before scheduled matches, and join the lobby on time. Failure to do so may result in disqualification.",
@@ -594,9 +594,9 @@ export let cultural = {
             "3.Relevance to prompt - 30"
           ],
           "prizes": [
-            "2000",
-            "1000",
-            "500"
+            "₹2000",
+            "₹1000",
+            "₹500"
           ],
           "rules": [
             "1.The poem should not exceed the word limit of 200 words.",
@@ -641,9 +641,9 @@ export let cultural = {
             "3. Being in sync with the music"
           ],
           "prizes": [
-            "First Prize - \u20b9 3500",
-            "Second Prize - \u20b9 2500",
-            "500 ; Third Prize - \u20b9 1500"
+            "First Prize - \u20b9₹3500",
+            "Second Prize - \u20b9₹2500",
+            "500 ; Third Prize - \u20b9₹1500"
           ],
           "rules": [
             "1. All participants must report at the venue at the given time and must be",
@@ -702,9 +702,9 @@ export let cultural = {
             "4. Presentation - 30"
           ],
           "prizes": [
-            "1500",
-            "1000",
-            "500"
+            "₹1500",
+            "₹1000",
+            "₹500"
           ],
           "rules": [
             "1. Each participant is allowed to submit only one entry.",
@@ -752,9 +752,9 @@ export let cultural = {
             "5)Overall Entertainment Value"
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "",
@@ -817,9 +817,9 @@ export let cultural = {
             "4. Cinematography finesse and editing."
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
@@ -862,9 +862,9 @@ export let cultural = {
           ],
           "judging": [],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1.Teams would contain at most three participants.",
@@ -919,8 +919,8 @@ export let cultural = {
             "5. Music Arrangement"
           ],
           "prizes": [
-            "10000",
-            "9000"
+            "₹10000",
+            "₹9000"
           ],
           "rules": [
             "1. Band Size should only be between 4 and 15 members",
@@ -967,9 +967,9 @@ export let cultural = {
           ],
           "judging": [],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1.Teams consists of at most three participants.",
