@@ -1,0 +1,260 @@
+{
+    "cultural": [
+        {
+            "name": "F3: Fireless Food Fiesta",
+            "id": "CP00",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "BRUSHED BRILLIANCE",
+            "id": "CF01",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Meta Monologues",
+            "id": "CP02",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Voicestra",
+            "id": "CP03",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Fashion Frenzy ",
+            "id": "CF04",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Waste to wow",
+            "id": "CF05",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Dynamic Duet",
+            "id": "CP06",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "ChoreoClash",
+            "id": "CP07",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "BGMI Showdown",
+            "id": "CF08",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "KATHA - where words become world",
+            "id": "CP09",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "CODM: Clash of Champions",
+            "id": "CP10",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "KAVYA - weaving verses, crafting dreams",
+            "id": "CF11",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "DROP THE BEAT",
+            "id": "CF12",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Pixel Palette",
+            "id": "CF13",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Groove Mania",
+            "id": "CP14",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Click n' Roll: A Showcase of Frames",
+            "id": "CF15",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Enigma - The General Quiz",
+            "id": "CF16",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Bandwagon",
+            "id": "CP17",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Sportify - The SpEnt Quiz",
+            "id": "CF18",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        }
+    ],
+    "technical": [
+        {
+            "name": "Treasure Hunt",
+            "id": "TF00",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Simulate To The Moon",
+            "id": "TF01",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "DRONE STABILIZATION CHALLENGE",
+            "id": "TF02",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "AlgoTrek",
+            "id": "TF03",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Drone Dash",
+            "id": "TF04",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Game Forge",
+            "id": "TF05",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Kampan ",
+            "id": "TF06",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Trade-a-thon 2.0",
+            "id": "TF07",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Valorant",
+            "id": "TF08",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Labyrinth 2.0",
+            "id": "TF09",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Eggstravaganza Drop Challenge",
+            "id": "TF10",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Hover hero challenge",
+            "id": "TF11",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Quizzanaire - School Quiz",
+            "id": "TF12",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Robowar",
+            "id": "TF13",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        }
+    ],
+    "workshops": [
+        {
+            "name": "AI Workshop",
+            "id": "WP00",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Robotics",
+            "id": "WP01",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Product Management",
+            "id": "WP02",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        }
+    ]
+}
