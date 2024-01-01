@@ -5,17 +5,17 @@ export let cultural = {
         "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers. It encourages teamwork, innovation, and resourcefulness in the kitchen.",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "Scores are divided as follows:",
-            "1. Taste \u2013 25 marks",
-            "2. Presentation \u2013 25 marks",
-            "3. Creativity \u2013 25 marks",
+            "1. Taste \u2013 25%",
+            "2. Presentation \u2013 25%",
+            "3. Creativity \u2013 25%",
             "4. Utilization of available resources \u2013 25 marks"
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "Number of participants in each team: maximum 3",
@@ -54,7 +54,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/0a33f382-8071-4463-8e56-8368c5b3806b/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CP00"
       },
       {
@@ -66,7 +66,7 @@ export let cultural = {
             "Number of participants in each team: 2 (including an artist and a model)",
             "This event is open to everyone"
           ],
-          "judging": [
+          "Judging Criteria": [
             "\u2022\tParticipants will be judged based on originality, concept, painting skills, composition, overall impact and creativity",
             "\u2022\tAdherence to theme:25%",
             "\u2022\tOriginality and creativity:25%",
@@ -74,9 +74,9 @@ export let cultural = {
             "\u2022\tOverall visual impact:25%"
           ],
           "prizes": [
-            "3500",
-            "2500",
-            "1500"
+            "₹3500",
+            "₹2500",
+            "₹1500"
           ],
           "rules": [
             "\u2022        Participants must finish the painting within 60 minutes.",
@@ -120,16 +120,16 @@ export let cultural = {
             "The competition consists of only one round:",
             "Final Round: Live mono acting performance."
           ],
-          "judging": [
+          "Judging Criteria": [
             "- Acting Skills",
             "- Expression and Emotion",
             "- Engagement with the Audience",
             "- Overall Presentation"
           ],
           "prizes": [
-            "3000",
-            "1500",
-            "500"
+            "₹3000",
+            "₹1500",
+            "₹500"
           ],
           "rules": [
             "1. Use of fire or sharp objects that will damage the stage is prohibited.",
@@ -181,7 +181,7 @@ export let cultural = {
             "f. Violations of the rules may lead to disqualification.",
             "g.In case of any conflict, the judge's decision will be final and binding under all circumstances."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Stage presence",
             "2. Melody",
             "3. Rhythm sense",
@@ -189,9 +189,9 @@ export let cultural = {
             "5. Overall impact"
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "1. The time allotted for each performance is 3-5 minutes.",
@@ -218,7 +218,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/a9c2e780-c05a-4fc8-8d13-d749863334a6/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CP03"
       },
       {
@@ -230,15 +230,15 @@ export let cultural = {
             "2) deciding costumes and choreography and audio track",
             "3) performance"
           ],
-          "judging": [
+          "Judging Criteria": [
             "1) relevance to theme (metamorphosis)",
             "2) ramp walk + choreography",
             "3) costumes",
             "4) stage presence"
           ],
           "prizes": [
-            "10000",
-            "8000"
+            "₹10000",
+            "₹8000"
           ],
           "rules": [
             "1) form a team of 15 members including upto 10 models",
@@ -269,7 +269,7 @@ export let cultural = {
         "id": "CF04"
       },
       {
-        "name": "Waste to wow",
+        "name": "Waste to Wow",
         "about": " It is a craft out of waste competition where teams of two have to make beautiful crafts out of waste materials.\n\n",
         "rulebook": {
           "structure": [],
@@ -279,9 +279,9 @@ export let cultural = {
             "\u25cf\tPresentation."
           ],
           "prizes": [
-            "First:2500",
-            "second:1500",
-            "third: 1000"
+            "First: ₹2500",
+            "Second: ₹1500",
+            "Third: ₹1000"
           ],
           "rules": [
             "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
@@ -306,7 +306,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF05"
       },
       {
@@ -319,7 +319,7 @@ export let cultural = {
             "3. The video should be of at least 2 minutes and shouldn't exceed a maximum time limit of 4 minutes. This will be used for shortlisting the Duo into the Second Round.",
             "4. Selected Contestants will receive a mail and will advance to the Second round(The Grand Finale)."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1 - Song selection",
             "2 - Arrangement",
             "3 - Originality",
@@ -327,9 +327,9 @@ export let cultural = {
             "5 - Synchronisation"
           ],
           "prizes": [
-            "5000",
-            "3000",
-            "2000"
+            "₹5000",
+            "₹3000",
+            "₹2000"
           ],
           "rules": [
             "General Rules :",
@@ -390,16 +390,16 @@ export let cultural = {
         "about": "Offline group dance competition\nInviting dance groups to showcase their team's talent, coordination, and creativity\n",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "1. Choreography and Creativity : 30",
             "2. Synchronization and Expressions : 25",
             "3. Energy and Stage Presence : 25",
             "4. Costume and Appearance : 20"
           ],
           "prizes": [
-            "10000",
-            "6000",
-            "3000"
+            "₹10000",
+            "₹6000",
+            "₹3000"
           ],
           "rules": [
             "1. Any dance style is allowed.",
@@ -438,7 +438,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
-        "date": "Undeclared",
+        "date": "27-01-2024",
         "id": "CP07"
       },
       {
@@ -449,14 +449,14 @@ export let cultural = {
             "1. All the players will be playing Erangel (Classic map, Special version maybe included       depending on the update at the time of game conduct)",
             "2. There will be 6 Erangel matches in total conducted over 2 days (3 per day)"
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Teams will be given points according to the scheme mentioned above.",
             "2. The team with max number of points wins."
           ],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1. Players can participate through any android device/IOS device.",
@@ -501,9 +501,9 @@ export let cultural = {
             "3.Relevance to prompt - 30"
           ],
           "prizes": [
-            "2000",
-            "1000",
-            "500"
+            "₹2000",
+            "₹1000",
+            "₹500"
           ],
           "rules": [
             "1.The story should not exceed the word limit of 2000 words and must be based on the prompts provided.",
@@ -546,7 +546,7 @@ export let cultural = {
             "4. Map Selection: The losing team of the first game selects the second map (hardpoint), and the losing team of the second game selects the third map (domination).",
             "5. Qualification: After the first round, only 8 teams qualify for the quarter-finals."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Teams winning without playing \u2018domination\u2019 get 5 points.",
             "2. Teams winning both \u2018team deathmatch\u2019 and \u2018domination\u2019 get 4 points.",
             "3. Teams winning \u2018hardpoint\u2019 and \u2018domination\u2019 get 3 points.",
@@ -554,9 +554,9 @@ export let cultural = {
             "5. Team with max no. of points wins."
           ],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1. Teams must download all maps, check-in 10 minutes before scheduled matches, and join the lobby on time. Failure to do so may result in disqualification.",
@@ -594,9 +594,9 @@ export let cultural = {
             "3.Relevance to prompt - 30"
           ],
           "prizes": [
-            "2000",
-            "1000",
-            "500"
+            "₹2000",
+            "₹1000",
+            "₹500"
           ],
           "rules": [
             "1.The poem should not exceed the word limit of 200 words.",
@@ -635,15 +635,15 @@ export let cultural = {
         "about": "A 1 vs 1 battle where each pair of dancers will be challenged to\ndance to the unpredictable, varied beats.",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "1. Spontaneity",
             "2. Ease in performing various styles",
             "3. Being in sync with the music"
           ],
           "prizes": [
-            "First Prize - \u20b9 3500",
-            "Second Prize - \u20b9 2500",
-            "500 ; Third Prize - \u20b9 1500"
+            "First Prize - \u20b9₹3500",
+            "Second Prize - \u20b9₹2500",
+            "500 ; Third Prize - \u20b9₹1500"
           ],
           "rules": [
             "1. All participants must report at the venue at the given time and must be",
@@ -685,7 +685,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/7bddb8b1-ecbb-40f8-99eb-9c6c9f71b150/0_0.webp",
-        "date": "Undeclared",
+        "date": "27-01-2024",
         "id": "CF12"
       },
       {
@@ -695,16 +695,16 @@ export let cultural = {
           "structure": [
             "1. It is an online event whose submission will start 1 week before the Petrichor dates and will go on till the fest ends."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Creativity - 20",
             "2. Adherence to the theme - 30",
             "3. Color and visual - 20",
             "4. Presentation - 30"
           ],
           "prizes": [
-            "1500",
-            "1000",
-            "500"
+            "₹1500",
+            "₹1000",
+            "₹500"
           ],
           "rules": [
             "1. Each participant is allowed to submit only one entry.",
@@ -743,7 +743,7 @@ export let cultural = {
         "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "",
             "1)Choreography and Creativity",
             "2)Synchronisation and Expressions",
@@ -752,9 +752,9 @@ export let cultural = {
             "5)Overall Entertainment Value"
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "",
@@ -787,7 +787,7 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "Undeclared",
+        "date": "27-01-2024",
         "id": "CP14"
       },
       {
@@ -810,16 +810,16 @@ export let cultural = {
             "participants and one of the team members should submit the reel. All submitted work",
             "must be the original creation of the participant or team."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Relevance to theme and concept.",
             "2. Composition and harmonious interplay of sound and music.",
             "3. Creativity and Uniqueness.",
             "4. Cinematography finesse and editing."
           ],
           "prizes": [
-            "3000",
-            "2000",
-            "1000"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
@@ -860,11 +860,11 @@ export let cultural = {
             "3.The general bounce and pounce system will be followed for finals. (will be further explained on-spot).",
             "4.Round-specific rules will be explained on spot."
           ],
-          "judging": [],
+          "Judging Criteria": [],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1.Teams would contain at most three participants.",
@@ -887,7 +887,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/bb0bd2e0-7ade-44ac-bcdd-4c6aed8976e8/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF16"
       },
       {
@@ -911,7 +911,7 @@ export let cultural = {
             "6. The Members of the band performing offline should be the same as the ones from the uploaded video.",
             "7. Judges' decisions will be final and binding and are not open to review."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Stage Presence",
             "2. Synchronization",
             "3. Originality and Creativity",
@@ -919,8 +919,8 @@ export let cultural = {
             "5. Music Arrangement"
           ],
           "prizes": [
-            "10000",
-            "9000"
+            "₹10000",
+            "₹9000"
           ],
           "rules": [
             "1. Band Size should only be between 4 and 15 members",
@@ -952,7 +952,7 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CP17"
       },
       {
@@ -965,11 +965,11 @@ export let cultural = {
             "3.The general bounce and pounce system will be followed for finals.",
             "4.Round-specific rules will be explained on spot."
           ],
-          "judging": [],
+          "Judging Criteria": [],
           "prizes": [
-            "2500",
-            "1500",
-            "1000"
+            "₹2500",
+            "₹1500",
+            "₹1000"
           ],
           "rules": [
             "1.Teams consists of at most three participants.",
@@ -992,7 +992,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/f4059e2a-69f9-4ea7-bd1a-9079a55baefe/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF18"
       }
     ]
