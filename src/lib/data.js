@@ -1014,16 +1014,16 @@ export let technical = {
             "3. Any and all decisions taken by the judges would be binding and final."
           ],
           "prizes": [
-            "600",
-            "040",
-            "002",
-            "000"
+            "1. 6000",
+            "2. 4000",
+            "3. 2000"
+            
           ],
           "rules": [
             "1. The entire event will be online.",
-            "2. Noquestions or doubts regarding the treasure hunt will be entertained during the hunt.",
-            "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (link will be provided to the participants after the registration ends)",
-            "4. After joining the discord server, the participants are also expected to rename themselves as their : Teamname_Participant name (Note: You can edit server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification."
+            "2. No questions or doubts regarding the treasure hunt will be entertained during the hunt.",
+            "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (a link will be provided to the participants after the registration ends)",
+            "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification."
           ]
         },
         "organisers": [
@@ -1047,10 +1047,10 @@ export let technical = {
         "about": "An online simulation challenge where participants are expected to produce a trajectory plan to get the payload to its desired location, given a set of constraints such as as the fuel, the mass of the payload, etc.",
         "rulebook": {
           "structure": [
-            "1. Duration : 1 day",
+            "1. Duration: 1 day",
             "2. The constraints will be provided along with the problem",
             "statement on the day before.",
-            "3. Teams will have to code up their simulation in python.",
+            "3. Teams will have to code up their simulation in Python.",
             "4. Upon achieving all the parameters within a range of error."
           ],
           "judging": [
@@ -1058,11 +1058,11 @@ export let technical = {
             "2. Achieving required constraints - 80p",
             "3. Animation quality - 40p"
           ],
-          "prizes": [
-            "350",
-            "020",
-            "001",
-            "500"
+          "Prizes": [
+            "1. 3500",
+            "2. 2000",
+            "3. 1500"
+            
           ],
           "rules": [
             "1. The simulation results will be verified by the evaluators and that will be",
