@@ -140,21 +140,21 @@
             "id": "TF00",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 3
         },
         {
             "name": "Simulate To The Moon",
             "id": "TF01",
             "fees": 0,
-            "minMemeber": 1,
-            "maxMemeber": 1
+            "minMemeber": 2,
+            "maxMemeber": 3
         },
         {
             "name": "DRONE STABILIZATION CHALLENGE",
             "id": "TF02",
             "fees": 0,
-            "minMemeber": 1,
-            "maxMemeber": 1
+            "minMemeber": 2,
+            "maxMemeber": 3
         },
         {
             "name": "AlgoTrek",
@@ -168,21 +168,21 @@
             "id": "TF04",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 6
         },
         {
             "name": "Game Forge",
             "id": "TF05",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 4
         },
         {
             "name": "Kampan ",
             "id": "TF06",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 2
         },
         {
             "name": "Trade-a-thon 2.0",
@@ -203,21 +203,21 @@
             "id": "TF09",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 4
         },
         {
             "name": "Eggstravaganza Drop Challenge",
             "id": "TF10",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 2
         },
         {
             "name": "Hover hero challenge",
             "id": "TF11",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 3
         },
         {
             "name": "Quizzanaire - School Quiz",
@@ -231,7 +231,7 @@
             "id": "TF13",
             "fees": 0,
             "minMemeber": 1,
-            "maxMemeber": 1
+            "maxMemeber": 6
         }
     ],
     "workshops": [
