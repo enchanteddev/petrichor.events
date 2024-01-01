@@ -269,7 +269,7 @@ export let cultural = {
         "id": "CF04"
       },
       {
-        "name": "Waste to wow",
+        "name": "Waste to Wow",
         "about": " It is a craft out of waste competition where teams of two have to make beautiful crafts out of waste materials.\n\n",
         "rulebook": {
           "structure": [],
