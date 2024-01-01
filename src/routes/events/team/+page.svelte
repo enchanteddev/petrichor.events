@@ -1,8 +1,20 @@
 <script>
-	import { userEmail } from '$lib/stores';
+	import { userEmail, registerData } from '$lib/stores';
+	import { POST, API, readToken } from '$lib';
 	import { onMount } from 'svelte';
-	let min = 4;
-	let max = 6;
+	import Toast from '$lib/components/Toast.svelte';
+	
+	let eventData = null
+	let min = 1;
+	let max = 1;
+	let fees = 0
+	POST(API.event, {id: $registerData.eventID}).then(e => e.json()).then(e => {
+		eventData = e;		
+		min = eventData.minMember
+		max = eventData.maxMember
+		fees = eventData.fees
+	})
+	
 
 	let emails = Array(max);
 	emails[0] = $userEmail;
@@ -13,62 +25,32 @@
 	    }
 	})
 
-	function handleSubmit() {
+	let successToast = false
+	let failedToast = false
+	async function handleSubmit() {
 		let emails_filled = emails.filter((v) => v);
 		console.log(emails_filled);
-		if (emails_filled.length < min) {
-			if (
-				!confirm(
-					'You have not entered the minimum amount of members, do you want to continue with randomly allotted teammates for the slots you have left empty?'
-				)
-			) {
-				return;
+		if (emails_filled.length < min || emails_filled.length > max) {
+			alert(`Please add ${min} - ${max} members in your team. Currently you have added ${emails_filled.length} team members`)
+			return
+		}
+		
+		if (fees == 0){
+			const response = await POST(API.events_apply_free, {
+				participants: $registerData.registeredEmails,
+				eventId: $registerData.eventID,
+				token: readToken()
+			})
+			if (response.status == 200){
+				successToast = true;	
+			} else {
+				failedToast = true;
 			}
 		}
-		// TODO fetch request
-		
-		let count = 0;
-		for (let idx in emails_filled) {
-			let email = emails_filled[idx];
-			fetch('https://testpetri.onrender.com/api/events/verify', {
-				method: 'POST',
-				body: JSON.stringify({
-					email: email,
-					message: 'Verify Email'
-				}),
-				headers: {
-					'Content-type': 'application/json; charset=UTF-8'
-				}
-			})
-				.then((response) => response.json())
-				.then((data) => {
-					let verified = data.verified;
-					if (verified) {
-						count += 1;
-					} else {
-						fetch('https://testpetri.onrender.com/api/events/verify', {
-							method: 'POST',
-							body: JSON.stringify({
-								email: email,
-								message: 'Unverified Email'
-							}),
-							headers: {
-								'Content-type': 'application/json; charset=UTF-8'
-							}
-						});
-					}
-				});
-		}
-		if (count == emails_filled.length) {
-			//continue to next page
-		}
-		else{
-			location.reload()
-		}
-		
 	}
 </script>
-
+<Toast message="Event Registered!" bind:show={successToast}/>
+<Toast message="Event Registration Failed!" bind:show={failedToast}/>
 <div class="main">
 	<h1>Registering for Event Name [Team Event]</h1>
 	<h2>Please Add your team details</h2>

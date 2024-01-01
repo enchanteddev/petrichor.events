@@ -4,7 +4,7 @@
   
     export let message = '';
     export let duration = 5000; // default duration in milliseconds
-    let show = false;
+    export let show = false;
   
     let progress = 0;
     let timer: NodeJS.Timeout;

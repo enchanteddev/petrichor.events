@@ -39,3 +39,10 @@ export interface payment{
     transactionID: string,
     CAcode: number | null
 }
+
+
+export interface RegisterData{
+    eventID: string,
+    registeredEmails: string[],
+    proshowIncluded: boolean
+}

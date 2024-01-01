@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Person from '$lib/components/Person.svelte';
 	import type { event } from '$lib/types';
-	import { isLogin, userEvents } from '$lib/stores';
+	import { isLogin, registerData, userEvents, userEmail } from '$lib/stores';
 	import { readToken, readID, POST } from '$lib/index';
 
 	import { onMount } from 'svelte';
@@ -42,35 +42,45 @@
 	};
 
 	const clicked = async () => {
-		let isLogged = $isLogin;
-		if (!isLogged) {
+		if (!$isLogin) {
 			location.replace('/login');
 		} else {
-			if (!readID(currentEvent.id)['paid']) {
-                
-				registering = true;
-				await POST(API.events_apply_free, {
-						participants: ['csk1@gmail.com'],
-						// @ts-ignore
-						eventId: currentEvent.id,
-						token: readToken()
-					})
-					.then((res) => res.json())
-					.then((res) => {
-						console.log(res);
-						if (res.status == 200) {
-							userEvents.update((value) => [...value, currentEvent.id]);
-							// userEvents.update(value => [...value, currentEvent.id])
-							alert('Registration successfull');
-							registered = true;
-						} else {
-							alert('Registration Unsuccessfull! Please try Again');
-						}
-					});
-				setEvent(currentEvent);
+			$registerData.eventID = currentEvent.id;
+			// $registerData.registeredEmails.push($userEmail);
+			$registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
+
+			const eventDataResponse = await POST(API.event, {id: currentEvent.id})
+			const eventData = await eventDataResponse.json()
+
+			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1){
+				if (!readID(currentEvent.id)['paid']) {
+					registering = true;
+					await POST(API.events_apply_free, {
+							participants: [$userEmail],
+							// @ts-ignore
+							eventId: currentEvent.id,
+							token: readToken()
+						})
+						.then((res) => res.json())
+						.then((res) => {
+							console.log(res);
+							if (res.status == 200) {
+								userEvents.update((value) => [...value, currentEvent.id]);
+								// userEvents.update(value => [...value, currentEvent.id])
+								alert('Registration successfull');
+								registered = true;
+							} else {
+								alert('Registration Unsuccessfull! Please try Again');
+							}
+						});
+					setEvent(currentEvent);
+				} else {
+					location.replace(`/payment?id=${currentEvent.id}`);
+				}
 			} else {
-				location.replace(`/payment?name=${currentEvent.name}`);
+				location.href = '/events/team'
 			}
+
 		}
 	};
 </script>
@@ -168,7 +178,7 @@
 						class="register"
 						on:click={() => {
 							clicked();
-						}}>{registered ? 'Registered' : 'Register for' + currentEvent.name}</button
+						}}>{registered ? 'Registered ' : 'Register for ' + currentEvent.name}</button
 					>
 				{/if}
 			</div>
