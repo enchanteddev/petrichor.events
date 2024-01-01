@@ -66,7 +66,7 @@ export let cultural = {
             "Number of participants in each team: 2 (including an artist and a model)",
             "This event is open to everyone"
           ],
-          "judging": [
+          "Judging Criteria": [
             "\u2022\tParticipants will be judged based on originality, concept, painting skills, composition, overall impact and creativity",
             "\u2022\tAdherence to theme:25%",
             "\u2022\tOriginality and creativity:25%",
@@ -120,7 +120,7 @@ export let cultural = {
             "The competition consists of only one round:",
             "Final Round: Live mono acting performance."
           ],
-          "judging": [
+          "Judging Criteria": [
             "- Acting Skills",
             "- Expression and Emotion",
             "- Engagement with the Audience",
@@ -181,7 +181,7 @@ export let cultural = {
             "f. Violations of the rules may lead to disqualification.",
             "g.In case of any conflict, the judge's decision will be final and binding under all circumstances."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Stage presence",
             "2. Melody",
             "3. Rhythm sense",
@@ -230,7 +230,7 @@ export let cultural = {
             "2) deciding costumes and choreography and audio track",
             "3) performance"
           ],
-          "judging": [
+          "Judging Criteria": [
             "1) relevance to theme (metamorphosis)",
             "2) ramp walk + choreography",
             "3) costumes",
@@ -319,7 +319,7 @@ export let cultural = {
             "3. The video should be of at least 2 minutes and shouldn't exceed a maximum time limit of 4 minutes. This will be used for shortlisting the Duo into the Second Round.",
             "4. Selected Contestants will receive a mail and will advance to the Second round(The Grand Finale)."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1 - Song selection",
             "2 - Arrangement",
             "3 - Originality",
@@ -390,7 +390,7 @@ export let cultural = {
         "about": "Offline group dance competition\nInviting dance groups to showcase their team's talent, coordination, and creativity\n",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "1. Choreography and Creativity : 30",
             "2. Synchronization and Expressions : 25",
             "3. Energy and Stage Presence : 25",
@@ -449,7 +449,7 @@ export let cultural = {
             "1. All the players will be playing Erangel (Classic map, Special version maybe included       depending on the update at the time of game conduct)",
             "2. There will be 6 Erangel matches in total conducted over 2 days (3 per day)"
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Teams will be given points according to the scheme mentioned above.",
             "2. The team with max number of points wins."
           ],
@@ -546,7 +546,7 @@ export let cultural = {
             "4. Map Selection: The losing team of the first game selects the second map (hardpoint), and the losing team of the second game selects the third map (domination).",
             "5. Qualification: After the first round, only 8 teams qualify for the quarter-finals."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Teams winning without playing \u2018domination\u2019 get 5 points.",
             "2. Teams winning both \u2018team deathmatch\u2019 and \u2018domination\u2019 get 4 points.",
             "3. Teams winning \u2018hardpoint\u2019 and \u2018domination\u2019 get 3 points.",
@@ -635,7 +635,7 @@ export let cultural = {
         "about": "A 1 vs 1 battle where each pair of dancers will be challenged to\ndance to the unpredictable, varied beats.",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "1. Spontaneity",
             "2. Ease in performing various styles",
             "3. Being in sync with the music"
@@ -695,7 +695,7 @@ export let cultural = {
           "structure": [
             "1. It is an online event whose submission will start 1 week before the Petrichor dates and will go on till the fest ends."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Creativity - 20",
             "2. Adherence to the theme - 30",
             "3. Color and visual - 20",
@@ -743,7 +743,7 @@ export let cultural = {
         "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style",
         "rulebook": {
           "structure": [],
-          "judging": [
+          "Judging Criteria": [
             "",
             "1)Choreography and Creativity",
             "2)Synchronisation and Expressions",
@@ -810,7 +810,7 @@ export let cultural = {
             "participants and one of the team members should submit the reel. All submitted work",
             "must be the original creation of the participant or team."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Relevance to theme and concept.",
             "2. Composition and harmonious interplay of sound and music.",
             "3. Creativity and Uniqueness.",
@@ -860,7 +860,7 @@ export let cultural = {
             "3.The general bounce and pounce system will be followed for finals. (will be further explained on-spot).",
             "4.Round-specific rules will be explained on spot."
           ],
-          "judging": [],
+          "Judging Criteria": [],
           "prizes": [
             "₹2500",
             "₹1500",
@@ -911,7 +911,7 @@ export let cultural = {
             "6. The Members of the band performing offline should be the same as the ones from the uploaded video.",
             "7. Judges' decisions will be final and binding and are not open to review."
           ],
-          "judging": [
+          "Judging Criteria": [
             "1. Stage Presence",
             "2. Synchronization",
             "3. Originality and Creativity",
@@ -965,7 +965,7 @@ export let cultural = {
             "3.The general bounce and pounce system will be followed for finals.",
             "4.Round-specific rules will be explained on spot."
           ],
-          "judging": [],
+          "Judging Criteria": [],
           "prizes": [
             "₹2500",
             "₹1500",
