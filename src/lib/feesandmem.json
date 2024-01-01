@@ -3,7 +3,7 @@
         {
             "name": "F3: Fireless Food Fiesta",
             "id": "CP00",
-            "fees": 0,
+            "fees": 29,
             "minMemeber": 1,
             "maxMemeber": 3
         },
@@ -17,21 +17,21 @@
         {
             "name": "Meta Monologues",
             "id": "CP02",
-            "fees": 0,
+            "fees": 99,
             "minMemeber": 1,
             "maxMemeber": 1
         },
         {
             "name": "Voicestra",
             "id": "CP03",
-            "fees": 0,
+            "fees": 149,
             "minMemeber": 1,
             "maxMemeber": 1
         },
         {
             "name": "Fashion Frenzy ",
             "id": "CF04",
-            "fees": 0,
+            "fees": 149,
             "minMemeber": 10,
             "maxMemeber": 15
         },
@@ -45,21 +45,21 @@
         {
             "name": "Dynamic Duet",
             "id": "CP06",
-            "fees": 0,
+            "fees": 99,
             "minMemeber": 1,
             "maxMemeber": 2
         },
         {
             "name": "ChoreoClash",
             "id": "CP07",
-            "fees": 0,
+            "fees": 199,
             "minMemeber": 3,
             "maxMemeber": 15
         },
         {
             "name": "BGMI Showdown",
             "id": "CF08",
-            "fees": 0,
+            "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 1
         },
@@ -73,7 +73,7 @@
         {
             "name": "CODM: Clash of Champions",
             "id": "CP10",
-            "fees": 0,
+            "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 1
         },
@@ -87,7 +87,7 @@
         {
             "name": "DROP THE BEAT",
             "id": "CF12",
-            "fees": 0,
+            "fees": 149,
             "minMemeber": 1,
             "maxMemeber": 1
         },
@@ -101,7 +101,7 @@
         {
             "name": "Groove Mania",
             "id": "CP14",
-            "fees": 0,
+            "fees": 149,
             "minMemeber": 1,
             "maxMemeber": 1
         },
@@ -115,21 +115,21 @@
         {
             "name": "Enigma - The General Quiz",
             "id": "CF16",
-            "fees": 0,
+            "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 1
         },
         {
             "name": "Bandwagon",
             "id": "CP17",
-            "fees": 0,
+            "fees": 199,
             "minMemeber": 4,
             "maxMemeber": 15
         },
         {
             "name": "Sportify - The SpEnt Quiz",
             "id": "CF18",
-            "fees": 0,
+            "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 1
         }
