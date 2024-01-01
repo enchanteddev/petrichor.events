@@ -1059,9 +1059,9 @@ export let technical = {
             "3. Animation quality - 40p"
           ],
           "Prizes": [
-            "1. 3500",
-            "2. 2000",
-            "3. 1500"
+            "1. Rs. 3500",
+            "2. Rs. 2000",
+            "3. Rs. 1500"
             
           ],
           "rules": [
@@ -1069,7 +1069,7 @@ export let technical = {
             "the final decision.",
             "2. Plagiarism will result in disqualification.",
             "3. Winners will be decided on the basis of the points scored.",
-            "4. Participants have to produce an animation with the their detailed",
+            "4. Participants have to produce an animation with their details",
             "trajectory plan and simulation code to qualify for the prize."
           ]
         },
@@ -1089,41 +1089,40 @@ export let technical = {
         "about": "An offline event where participants are required to simulate a drone\u2019s stabilization and implement the same on a provided hardware setup.\n",
         "rulebook": {
           "structure": [
-            "\u25cf Round 1 :",
-            "a. Duration : 2 hours",
+            "\u25cf Round 1:",
+            "a. Duration: 2 hours",
             "b. Parameters of the set-up will be provided before the competition starts",
-            "c. Teams will qualify to the second round if they are able to simulate the",
+            "c. Teams will qualify for the second round if they are able to simulate the",
             "system and balance it properly using control algorithms like PID, LQR, etc.",
-            "\u25cf Round 2 :",
-            "a. Duration : 1 hour",
+            "\u25cf Round 2:",
+            "a. Duration: 1 hour",
             "b. Qualified teams will code the microcontroller to work based on their",
             "simulation results",
             "c. Each team will be given two chances to successfully balance the system."
           ],
           "judging": [
-            "1. Round 1 :",
+            "1. Round 1:",
             "a. Simplicity of simulation - 10p",
             "b. Achieving required constraints - 50p",
-            "2. Round 2 :",
-            "a. Simplicity of arduino code - 10p",
-            "b. Bonus points : 50p",
-            "c. Main demonstration : 50p"
+            "2. Round 2:",
+            "a. Simplicity of Arduino code - 10p",
+            "b. Bonus points: 50p",
+            "c. Main demonstration: 50p"
           ],
           "prizes": [
-            "400",
-            "025",
-            "001",
-            "500"
+            "1. Rs. 4000",
+            "2. Rs. 2500",
+            "3. Rs. 1500"
           ],
           "rules": [
-            "1. Teams will qualify to second round only if they are able to balance the system",
+            "1. Teams will qualify for the second round only if they can balance the system",
             "properly in simulation",
             "2. The simulation results will be verified by the evaluators and that will be the final",
             "decision",
             "3. Plagiarism will result in disqualification",
             "4. Participants will have to use only the details provided by the organizers, any",
             "other tweaking of the hardware is not allowed and will result in disqualification",
-            "5. Winners will be decided on the basis of the points scored"
+            "5. Winners will be decided based on the points scored"
           ]
         },
         "organisers": [
@@ -1153,15 +1152,15 @@ export let technical = {
             "id."
           ],
           "judging": [
-            "Will be evaluated as per the platform its conducted in"
+            "Will be evaluated as per the platform its conducted on"
           ],
           "prizes": [
-            "5500",
-            "4500",
-            "3500",
-            "2500",
-            "1500",
-            "500"
+            "1. Rs. 5500",
+            "2. Rs. 4500",
+            "3. Rs. 3500",
+            "4. Rs. 2500",
+            "5. Rs. 1500",
+            "6. Positions 6th to 20th runner ups: Rs. 500"
           ],
           "rules": [
             "1. It\u2019s an individual contest not a team contest.",
@@ -1206,9 +1205,9 @@ export let technical = {
             "2. Minimum Time: The team that completes the course in the shortest time."
           ],
           "prizes": [
-            "12500",
-            "10000",
-            "7500"
+            "1. Rs. 12500",
+            "2. Rs. 10000",
+            "3. Rs. 7500"
           ],
           "rules": [
             "1. Weight Limit: Maximum 1.2kg",
@@ -1257,9 +1256,9 @@ export let technical = {
             "5. Overall Fun Factor: The overall fun and entertainment value of the game."
           ],
           "prizes": [
-            "4000",
-            "2500",
-            "1500"
+            "1. Rs. 4000",
+            "2. Rs. 2500",
+            "3. Rs. 1500"
           ],
           "rules": [
             "1. Game Engine: Participants must use the Godot Engine to develop their games.",
@@ -1271,7 +1270,7 @@ export let technical = {
             "their game mechanics. The gameplay should be engaging and enjoyable.",
             "5. Graphics and Sound: Games should have suitable graphics and sound that",
             "enhance the gaming experience.",
-            "6. Game Submission: Teams must upload their games on a github repo and should send the link of the same to the supplied Google form by the submission deadline.",
+            "6. Game Submission: Teams must upload their games on a GitHub repo and should send the link of the same to the supplied Google form by the submission deadline.",
             "7. Submission Contents: The participants are requested to fill a google form which will be sent to your email regarding the event which basically contains the following:",
             "7.1.A link to the game repository.",
             "7.2. A brief description of the game.",
@@ -1346,9 +1345,9 @@ export let technical = {
             "8. If the tie still remains then both the teams will be considered as winners with the prize money divided between them."
           ],
           "prizes": [
-            "5100",
-            "3500",
-            "2100"
+            "1. Rs. 5100",
+            "2. Rs. 3500",
+            "3. Rs. 2100"
           ],
           "rules": [
             "Basic Details",
@@ -1397,9 +1396,9 @@ export let technical = {
             "priority"
           ],
           "prizes": [
-            "5000",
-            "3000",
-            "2000"
+            "1. Rs. 5000",
+            "2. Rs. 3000",
+            "3. Rs. 2000"
           ],
           "rules": [
             "1. Registered participants will have to install the StockGro application from PlayStore/ AppStore.",
@@ -1527,9 +1526,9 @@ export let technical = {
             ""
           ],
           "prizes": [
-            "7500",
-            "4500",
-            "3000"
+            "1. Rs. 7500",
+            "2. Rs. 4500",
+            "3. Rs. 3000"
           ],
           "rules": [
             "Game Rules",
@@ -1596,9 +1595,9 @@ export let technical = {
             "\u2022 Amount Used \u2192 +15 points ( < Rs 60 ) , +10 points ( < Rs 80 )"
           ],
           "prizes": [
-            "3500",
-            "2700",
-            "1800"
+            "1. Rs. 3500",
+            "2. Rs. 2700",
+            "3. Rs. 1800"
           ],
           "rules": [
             "1. The container must hit a 30 ft x 30 ft landing zone on every drop.",
@@ -1653,9 +1652,9 @@ export let technical = {
             "2.3. Main demonstration : 50p"
           ],
           "prizes": [
-            "4000",
-            "2500",
-            "1500"
+            "1. Rs. 4000",
+            "2. Rs. 2500",
+            "3. Rs. 1500"
           ],
           "rules": [
             "1. Teams will qualify to second round only if they are able to balance the system",
@@ -1698,9 +1697,9 @@ export let technical = {
             "Any malpractices won't be entertained and will lead to instant disqualification. Any round specific rules will be conveyed before the event starts"
           ],
           "prizes": [
-            "2000",
-            "1250",
-            "750"
+            "1. Rs. 2000",
+            "2. Rs. 1250",
+            "3. Rs. 750"
           ],
           "rules": [
             "",
@@ -1740,9 +1739,9 @@ export let technical = {
             "nil/later"
           ],
           "prizes": [
-            "16500",
-            "11500",
-            "7000"
+            "1. Rs. 16500",
+            "2. Rs. 11500",
+            "3. Rs. 7000"
           ],
           "rules": [
             "Robot Specifications",
