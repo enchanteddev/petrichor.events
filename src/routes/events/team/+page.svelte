@@ -1,22 +1,23 @@
-<script>
+<script lang="ts">
 	import { userEmail, registerData } from '$lib/stores';
 	import { POST, API, readToken } from '$lib';
 	import { onMount } from 'svelte';
 	import Toast from '$lib/components/Toast.svelte';
 	
-	let eventData = null
+	let eventData: any = null
 	let min = 1;
 	let max = 1;
 	let fees = 0
+	let emails = Array(max);
 	POST(API.event, {id: $registerData.eventID}).then(e => e.json()).then(e => {
 		eventData = e;		
 		min = eventData.minMember
 		max = eventData.maxMember
 		fees = eventData.fees
+		emails = Array(max);
 	})
 	
 
-	let emails = Array(max);
 	emails[0] = $userEmail;
 
 	onMount(() => {
@@ -52,14 +53,15 @@
 <Toast message="Event Registered!" bind:show={successToast}/>
 <Toast message="Event Registration Failed!" bind:show={failedToast}/>
 <div class="main">
-	<h1>Registering for Event Name [Team Event]</h1>
+	{#if eventData}		
+	<h1>Registering for Event Name {eventData.name}</h1>
 	<h2>Please Add your team details</h2>
 	<p>Email of Team Member 1 *</p>
 	<input type="text" value={$userEmail} disabled />
 	<form method="post" style="display: contents;" on:submit|preventDefault={handleSubmit}>
 		{#each Array(max - 1) as e, index}
-			<p>Email of Team Member {index + 2} {index < min - 1 ? '*' : ''}</p>
-			<input
+		<p>Email of Team Member {index + 2} {index < min - 1 ? '*' : ''}</p>
+		<input
 				type="text"
 				on:change={(e) => {
 					// @ts-ignore
@@ -67,11 +69,11 @@
 					console.log(emails);
 				}}
 			/>
-		{/each}
-		<button type="submit">Submit</button>
-	</form>
+			{/each}
+			<button type="submit">Submit</button>
+		</form>
+	{/if}
 </div>
-
 <style>
 	.main {
 		margin: 3em;
