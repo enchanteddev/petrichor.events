@@ -823,7 +823,7 @@ export let cultural = {
           ],
           "rules": [
             "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
-            "2.  Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
+            "2. Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
             "3. Participants are responsible for obtaining any necessary permissions for the use of copyrighted material, including music, images, and any other content in their submissions.",
             "4. The organizers reserve the right to disqualify any participant or entry that violates these rules.",
             "5. By participating in this Reel Making Competition, you agree to abide by these rules and guidelines and participants\u2019 entries can be used for promotion of Petrichor."
@@ -896,19 +896,19 @@ export let cultural = {
         "rulebook": {
           "structure": [
             "Round 1 (Online) :",
-            "1. All the members of the band should be clearly visible in the uploaded Video.",
-            "2. Usage of Pre Recorded tracks is strictly prohibited.",
-            "3. The uploaded video Should be within a time limit of 3 to 5 mins.",
-            "4. Audio in the uploaded file should be clear for the judges to be able to judge.",
+            "1. All the members of the band should be clearly visible in the uploaded video.",
+            "2. Usage of pre-recorded tracks is strictly prohibited.",
+            "3. The uploaded video should be within a time limit of 3 to 5 minutes.",
+            "4. Audio in the uploaded file should be clear for the judges to judge.",
             "5. Softwares like Audacity and Reaper can be used for editing your videos.",
             "",
             "Round 2 (Offline) :",
-            "1. The Time limit for the performance shouldn't exceed a maximum time of 15 Minutes including Setup and Soundchecks.",
-            "2. No Pre-Recorded tracks would be allowed, usage of any Pre-Recorded tracks will face immediate disqualification.",
-            "3. Contestants should bring their own Instruments for their performances.(Only Drum Kit would be provided)",
+            "1. The time limit for the performance shouldn't exceed a maximum time of 15 minutes including setup and soundchecks.",
+            "2. No pre-recorded tracks would be allowed, usage of any pre-recorded tracks will face immediate disqualification.",
+            "3. Contestants should bring their own instruments for their performances.(Only Drumkit would be provided)",
             "4. Extra points will be awarded for original compositions.",
-            "5. All Music shall be played live on stage and live looping on stage is not allowed.",
-            "6. The Members of the band performing offline should be the same as the ones from the uploaded video.",
+            "5. All music shall be played live on stage and live looping on stage is not allowed.",
+            "6. The members of the band performing offline should be the same as the ones from the uploaded video.",
             "7. Judges' decisions will be final and binding and are not open to review."
           ],
           "judging": [
@@ -920,14 +920,15 @@ export let cultural = {
           ],
           "prizes": [
             "₹10000",
-            "₹9000"
+            "₹6000",
+            "₹3000"
           ],
           "rules": [
-            "1. Band Size should only be between 4 and 15 members",
+            "1. Band size should only be between 4 and 15 members",
             "2. A person can play for only one single band.",
-            "3. Extra Points will be awarded for Original Compositions.",
-            "4. All the Instruments should be brought by the members of the band itself(Only the drum kit would be Provided).",
-            "5. The band should have at least one Instrumentalist present.",
+            "3. Extra points will be awarded for original compositions.",
+            "4. All the instruments should be brought by the members of the band itself(Only the drum kit would be Provided).",
+            "5. The band should have at least one instrumentalist present.",
             "6. Acapella is not allowed.",
             "7. Exceeding the time limit will lead to negative points.",
             "8. Obscenity on stage is strictly prohibited.",
