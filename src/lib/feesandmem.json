@@ -152,7 +152,7 @@
         {
             "name": "DRONE STABILIZATION CHALLENGE",
             "id": "TF02",
-            "fees": 0,
+            "fees": 79,
             "minMemeber": 2,
             "maxMemeber": 3
         },
@@ -166,7 +166,7 @@
         {
             "name": "Drone Dash",
             "id": "TF04",
-            "fees": 0,
+            "fees": 79,
             "minMemeber": 1,
             "maxMemeber": 6
         },
@@ -180,7 +180,7 @@
         {
             "name": "Kampan ",
             "id": "TF06",
-            "fees": 0,
+            "fees": 79,
             "minMemeber": 1,
             "maxMemeber": 2
         },
@@ -208,28 +208,28 @@
         {
             "name": "Eggstravaganza Drop Challenge",
             "id": "TF10",
-            "fees": 0,
+            "fees": 79,
             "minMemeber": 1,
             "maxMemeber": 2
         },
         {
             "name": "Hover hero challenge",
             "id": "TF11",
-            "fees": 0,
+            "fees": 79,
             "minMemeber": 1,
             "maxMemeber": 3
         },
         {
             "name": "Quizzanaire - School Quiz",
             "id": "TF12",
-            "fees": 0,
+            "fees": 99,
             "minMemeber": 1,
             "maxMemeber": 1
         },
         {
             "name": "Robowar",
             "id": "TF13",
-            "fees": 0,
+            "fees": 79,
             "minMemeber": 1,
             "maxMemeber": 6
         }

@@ -10,7 +10,8 @@ export const API = {
     feedback: backend_url + 'web/send_grievance',
     user: backend_url + "web/user/",
     whoami: backend_url + "web/whoami/",
-    event: backend_url + "web/event/"
+    event: backend_url + "web/event/",
+    addEvent: backend_url + "internal/event/add",
 }
 
 
