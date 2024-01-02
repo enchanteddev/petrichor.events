@@ -892,7 +892,7 @@ export let cultural = {
       },
       {
         "name": "Bandwagon",
-        "about": "This competition is a public event designed to identify and award outstanding musical ensembles, instrumentalists, soloists and composers. It would be a great platform for bands to break into the music scene.\nThis event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor.",
+        "about": "BandWars is a captivating showcase designed to identify and award outstanding musical ensembles, instrumentalists, soloists, and composers. It serves as an excellent platform for bands to break into the music scene. The competition will consist of two rounds, starting with an online submissions round for screening. The selected entries will then have the opportunity to perform live on stage in Petrichor.",
         "rulebook": {
           "structure": [
             "Round 1 (Online) :",
