@@ -5,20 +5,20 @@ export let cultural = {
         "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers. It encourages teamwork, innovation, and resourcefulness in the kitchen.",
         "rulebook": {
           "structure": [],
-          "Judging Criteria": [
+          "judging": [
             "Scores are divided as follows:",
-            "1. Taste \u2013 25%",
-            "2. Presentation \u2013 25%",
-            "3. Creativity \u2013 25%",
+            "1. Taste \u2013 25 marks",
+            "2. Presentation \u2013 25 marks",
+            "3. Creativity \u2013 25 marks",
             "4. Utilization of available resources \u2013 25 marks"
           ],
           "prizes": [
-            "₹3000",
-            "₹2000",
-            "₹1000"
+            "3000",
+            "2000",
+            "1000"
           ],
           "rules": [
-            "Number of participants in each team: maximum 3",
+            "--Number of participants in each team: maximum 3--",
             "1. All participants must be registered and should reach the venue 30 minutes prior to the start of the event.",
             "2. Gas stoves and induction cookers are not allowed.",
             "3. Basic cooking equipment, including mixers, vessels, and spoons, will be provided by the organizers.",
@@ -39,23 +39,23 @@ export let cultural = {
         "organisers": [
           {
             "name": "Satya Harika",
-            "image": "https://drive.google.com/open?id=1TOnDBfhppTXCgpLLLhhNWIT8gPglFrPf",
+            "image": "/src/lib/assets/CoreTeam/Aryan.jpg",
             "phone": "7330824852"
           },
           {
             "name": "Sai Praneeth",
-            "image": "https://drive.google.com/open?id=19nmI3-9cnAzViSvnwS9d5d0vJ5QHpPXQ",
+            "image": "/src/lib/assets/CoreTeam/Aryan.jpg",
             "phone": "8074241096"
           },
           {
             "name": "Prisha Italiya",
-            "image": "https://drive.google.com/open?id=1FOczhoCpUtKmkDtN7Z1aydhJrzLgE6zH",
+            "image": "/src/lib/assets/CoreTeam/Aryan.jpg",
             "phone": "9662097722"
           }
         ],
         "image": "https://cdn.midjourney.com/0a33f382-8071-4463-8e56-8368c5b3806b/0_0.webp",
-        "date": "28-01-2024",
-        "id": "CP00"
+        "date": "Undeclared",
+        "id": "CF00"
       },
       {
         "name": "BRUSHED BRILLIANCE",
@@ -66,7 +66,7 @@ export let cultural = {
             "Number of participants in each team: 2 (including an artist and a model)",
             "This event is open to everyone"
           ],
-          "Judging Criteria": [
+          "judging": [
             "\u2022\tParticipants will be judged based on originality, concept, painting skills, composition, overall impact and creativity",
             "\u2022\tAdherence to theme:25%",
             "\u2022\tOriginality and creativity:25%",
@@ -74,9 +74,9 @@ export let cultural = {
             "\u2022\tOverall visual impact:25%"
           ],
           "prizes": [
-            "₹3500",
-            "₹2500",
-            "₹1500"
+            "3500",
+            "2500",
+            "1500"
           ],
           "rules": [
             "\u2022        Participants must finish the painting within 60 minutes.",
@@ -120,16 +120,16 @@ export let cultural = {
             "The competition consists of only one round:",
             "Final Round: Live mono acting performance."
           ],
-          "Judging Criteria": [
+          "judging": [
             "- Acting Skills",
             "- Expression and Emotion",
             "- Engagement with the Audience",
             "- Overall Presentation"
           ],
           "prizes": [
-            "₹3000",
-            "₹1500",
-            "₹500"
+            "3000",
+            "1500",
+            "500"
           ],
           "rules": [
             "1. Use of fire or sharp objects that will damage the stage is prohibited.",
@@ -158,7 +158,7 @@ export let cultural = {
         ],
         "image": "https://cdn.midjourney.com/4afbe489-0966-4b49-b62a-267a6624785e/0_0.webp",
         "date": "Undeclared",
-        "id": "CP02"
+        "id": "CF02"
       },
       {
         "name": "Voicestra",
@@ -181,7 +181,7 @@ export let cultural = {
             "f. Violations of the rules may lead to disqualification.",
             "g.In case of any conflict, the judge's decision will be final and binding under all circumstances."
           ],
-          "Judging Criteria": [
+          "judging": [
             "1. Stage presence",
             "2. Melody",
             "3. Rhythm sense",
@@ -189,9 +189,9 @@ export let cultural = {
             "5. Overall impact"
           ],
           "prizes": [
-            "₹3000",
-            "₹2000",
-            "₹1000"
+            "3000",
+            "2000",
+            "1000"
           ],
           "rules": [
             "1. The time allotted for each performance is 3-5 minutes.",
@@ -218,8 +218,8 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/a9c2e780-c05a-4fc8-8d13-d749863334a6/0_0.webp",
-        "date": "28-01-2024",
-        "id": "CP03"
+        "date": "Undeclared",
+        "id": "CF03"
       },
       {
         "name": "Fashion Frenzy ",
@@ -230,15 +230,15 @@ export let cultural = {
             "2) deciding costumes and choreography and audio track",
             "3) performance"
           ],
-          "Judging Criteria": [
+          "judging": [
             "1) relevance to theme (metamorphosis)",
             "2) ramp walk + choreography",
             "3) costumes",
             "4) stage presence"
           ],
           "prizes": [
-            "₹10000",
-            "₹8000"
+            "10000",
+            "8000"
           ],
           "rules": [
             "1) form a team of 15 members including upto 10 models",
@@ -269,7 +269,7 @@ export let cultural = {
         "id": "CF04"
       },
       {
-        "name": "Waste to Wow",
+        "name": "Waste to wow",
         "about": " It is a craft out of waste competition where teams of two have to make beautiful crafts out of waste materials.\n\n",
         "rulebook": {
           "structure": [],
@@ -279,9 +279,9 @@ export let cultural = {
             "\u25cf\tPresentation."
           ],
           "prizes": [
-            "First: ₹2500",
-            "Second: ₹1500",
-            "Third: ₹1000"
+            "First:2500",
+            "second:1500",
+            "third: 1000"
           ],
           "rules": [
             "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
@@ -306,7 +306,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
-        "date": "28-01-2024",
+        "date": "Undeclared",
         "id": "CF05"
       },
       {
@@ -319,7 +319,7 @@ export let cultural = {
             "3. The video should be of at least 2 minutes and shouldn't exceed a maximum time limit of 4 minutes. This will be used for shortlisting the Duo into the Second Round.",
             "4. Selected Contestants will receive a mail and will advance to the Second round(The Grand Finale)."
           ],
-          "Judging Criteria": [
+          "judging": [
             "1 - Song selection",
             "2 - Arrangement",
             "3 - Originality",
@@ -327,9 +327,9 @@ export let cultural = {
             "5 - Synchronisation"
           ],
           "prizes": [
-            "₹5000",
-            "₹3000",
-            "₹2000"
+            "5000",
+            "3000",
+            "2000"
           ],
           "rules": [
             "General Rules :",
@@ -383,23 +383,23 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CP06"
+        "id": "CF06"
       },
       {
         "name": "ChoreoClash",
         "about": "Offline group dance competition\nInviting dance groups to showcase their team's talent, coordination, and creativity\n",
         "rulebook": {
           "structure": [],
-          "Judging Criteria": [
+          "judging": [
             "1. Choreography and Creativity : 30",
             "2. Synchronization and Expressions : 25",
             "3. Energy and Stage Presence : 25",
             "4. Costume and Appearance : 20"
           ],
           "prizes": [
-            "₹10000",
-            "₹6000",
-            "₹3000"
+            "10000",
+            "6000",
+            "3000"
           ],
           "rules": [
             "1. Any dance style is allowed.",
@@ -438,8 +438,8 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
-        "date": "27-01-2024",
-        "id": "CP07"
+        "date": "Undeclared",
+        "id": "CF07"
       },
       {
         "name": "BGMI Showdown",
@@ -449,14 +449,14 @@ export let cultural = {
             "1. All the players will be playing Erangel (Classic map, Special version maybe included       depending on the update at the time of game conduct)",
             "2. There will be 6 Erangel matches in total conducted over 2 days (3 per day)"
           ],
-          "Judging Criteria": [
+          "judging": [
             "1. Teams will be given points according to the scheme mentioned above.",
             "2. The team with max number of points wins."
           ],
           "prizes": [
-            "₹2500",
-            "₹1500",
-            "₹1000"
+            "2500",
+            "1500",
+            "1000"
           ],
           "rules": [
             "1. Players can participate through any android device/IOS device.",
@@ -501,9 +501,9 @@ export let cultural = {
             "3.Relevance to prompt - 30"
           ],
           "prizes": [
-            "₹2000",
-            "₹1000",
-            "₹500"
+            "2000",
+            "1000",
+            "500"
           ],
           "rules": [
             "1.The story should not exceed the word limit of 2000 words and must be based on the prompts provided.",
@@ -533,7 +533,7 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CP09"
+        "id": "CF09"
       },
       {
         "name": "CODM: Clash of Champions",
@@ -546,7 +546,7 @@ export let cultural = {
             "4. Map Selection: The losing team of the first game selects the second map (hardpoint), and the losing team of the second game selects the third map (domination).",
             "5. Qualification: After the first round, only 8 teams qualify for the quarter-finals."
           ],
-          "Judging Criteria": [
+          "judging": [
             "1. Teams winning without playing \u2018domination\u2019 get 5 points.",
             "2. Teams winning both \u2018team deathmatch\u2019 and \u2018domination\u2019 get 4 points.",
             "3. Teams winning \u2018hardpoint\u2019 and \u2018domination\u2019 get 3 points.",
@@ -554,9 +554,9 @@ export let cultural = {
             "5. Team with max no. of points wins."
           ],
           "prizes": [
-            "₹2500",
-            "₹1500",
-            "₹1000"
+            "2500",
+            "1500",
+            "1000"
           ],
           "rules": [
             "1. Teams must download all maps, check-in 10 minutes before scheduled matches, and join the lobby on time. Failure to do so may result in disqualification.",
@@ -579,7 +579,7 @@ export let cultural = {
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
         "date": "Undeclared",
-        "id": "CP10"
+        "id": "CF10"
       },
       {
         "name": "KAVYA - weaving verses, crafting dreams",
@@ -594,9 +594,9 @@ export let cultural = {
             "3.Relevance to prompt - 30"
           ],
           "prizes": [
-            "₹2000",
-            "₹1000",
-            "₹500"
+            "2000",
+            "1000",
+            "500"
           ],
           "rules": [
             "1.The poem should not exceed the word limit of 200 words.",
@@ -635,15 +635,15 @@ export let cultural = {
         "about": "A 1 vs 1 battle where each pair of dancers will be challenged to\ndance to the unpredictable, varied beats.",
         "rulebook": {
           "structure": [],
-          "Judging Criteria": [
+          "judging": [
             "1. Spontaneity",
             "2. Ease in performing various styles",
             "3. Being in sync with the music"
           ],
           "prizes": [
-            "First Prize - \u20b9₹3500",
-            "Second Prize - \u20b9₹2500",
-            "500 ; Third Prize - \u20b9₹1500"
+            "First Prize - \u20b9 3500",
+            "Second Prize - \u20b9 2500",
+            "500 ; Third Prize - \u20b9 1500"
           ],
           "rules": [
             "1. All participants must report at the venue at the given time and must be",
@@ -685,7 +685,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/7bddb8b1-ecbb-40f8-99eb-9c6c9f71b150/0_0.webp",
-        "date": "27-01-2024",
+        "date": "Undeclared",
         "id": "CF12"
       },
       {
@@ -695,16 +695,16 @@ export let cultural = {
           "structure": [
             "1. It is an online event whose submission will start 1 week before the Petrichor dates and will go on till the fest ends."
           ],
-          "Judging Criteria": [
+          "judging": [
             "1. Creativity - 20",
             "2. Adherence to the theme - 30",
             "3. Color and visual - 20",
             "4. Presentation - 30"
           ],
           "prizes": [
-            "₹1500",
-            "₹1000",
-            "₹500"
+            "1500",
+            "1000",
+            "500"
           ],
           "rules": [
             "1. Each participant is allowed to submit only one entry.",
@@ -743,7 +743,7 @@ export let cultural = {
         "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style",
         "rulebook": {
           "structure": [],
-          "Judging Criteria": [
+          "judging": [
             "",
             "1)Choreography and Creativity",
             "2)Synchronisation and Expressions",
@@ -752,9 +752,9 @@ export let cultural = {
             "5)Overall Entertainment Value"
           ],
           "prizes": [
-            "₹3000",
-            "₹2000",
-            "₹1000"
+            "3000",
+            "2000",
+            "1000"
           ],
           "rules": [
             "",
@@ -787,8 +787,8 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "27-01-2024",
-        "id": "CP14"
+        "date": "Undeclared",
+        "id": "CF14"
       },
       {
         "name": "Click n' Roll: A Showcase of Frames",
@@ -810,16 +810,16 @@ export let cultural = {
             "participants and one of the team members should submit the reel. All submitted work",
             "must be the original creation of the participant or team."
           ],
-          "Judging Criteria": [
+          "judging": [
             "1. Relevance to theme and concept.",
             "2. Composition and harmonious interplay of sound and music.",
             "3. Creativity and Uniqueness.",
             "4. Cinematography finesse and editing."
           ],
           "prizes": [
-            "₹3000",
-            "₹2000",
-            "₹1000"
+            "3000",
+            "2000",
+            "1000"
           ],
           "rules": [
             "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
@@ -860,11 +860,11 @@ export let cultural = {
             "3.The general bounce and pounce system will be followed for finals. (will be further explained on-spot).",
             "4.Round-specific rules will be explained on spot."
           ],
-          "Judging Criteria": [],
+          "judging": [],
           "prizes": [
-            "₹2500",
-            "₹1500",
-            "₹1000"
+            "2500",
+            "1500",
+            "1000"
           ],
           "rules": [
             "1.Teams would contain at most three participants.",
@@ -887,7 +887,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/bb0bd2e0-7ade-44ac-bcdd-4c6aed8976e8/0_0.webp",
-        "date": "28-01-2024",
+        "date": "Undeclared",
         "id": "CF16"
       },
       {
@@ -911,7 +911,7 @@ export let cultural = {
             "6. The Members of the band performing offline should be the same as the ones from the uploaded video.",
             "7. Judges' decisions will be final and binding and are not open to review."
           ],
-          "Judging Criteria": [
+          "judging": [
             "1. Stage Presence",
             "2. Synchronization",
             "3. Originality and Creativity",
@@ -919,8 +919,8 @@ export let cultural = {
             "5. Music Arrangement"
           ],
           "prizes": [
-            "₹10000",
-            "₹9000"
+            "10000",
+            "9000"
           ],
           "rules": [
             "1. Band Size should only be between 4 and 15 members",
@@ -952,8 +952,8 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "28-01-2024",
-        "id": "CP17"
+        "date": "Undeclared",
+        "id": "CF17"
       },
       {
         "name": "Sportify - The SpEnt Quiz",
@@ -965,11 +965,11 @@ export let cultural = {
             "3.The general bounce and pounce system will be followed for finals.",
             "4.Round-specific rules will be explained on spot."
           ],
-          "Judging Criteria": [],
+          "judging": [],
           "prizes": [
-            "₹2500",
-            "₹1500",
-            "₹1000"
+            "2500",
+            "1500",
+            "1000"
           ],
           "rules": [
             "1.Teams consists of at most three participants.",
@@ -992,7 +992,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/f4059e2a-69f9-4ea7-bd1a-9079a55baefe/0_0.webp",
-        "date": "28-01-2024",
+        "date": "Undeclared",
         "id": "CF18"
       }
     ]
@@ -1014,16 +1014,16 @@ export let technical = {
             "3. Any and all decisions taken by the judges would be binding and final."
           ],
           "prizes": [
-            "1. 6000",
-            "2. 4000",
-            "3. 2000"
-            
+            "600",
+            "040",
+            "002",
+            "000"
           ],
           "rules": [
             "1. The entire event will be online.",
-            "2. No questions or doubts regarding the treasure hunt will be entertained during the hunt.",
-            "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (a link will be provided to the participants after the registration ends)",
-            "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification."
+            "2. Noquestions or doubts regarding the treasure hunt will be entertained during the hunt.",
+            "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (link will be provided to the participants after the registration ends)",
+            "4. After joining the discord server, the participants are also expected to rename themselves as their : Teamname_Participant name (Note: You can edit server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification."
           ]
         },
         "organisers": [
@@ -1047,10 +1047,10 @@ export let technical = {
         "about": "An online simulation challenge where participants are expected to produce a trajectory plan to get the payload to its desired location, given a set of constraints such as as the fuel, the mass of the payload, etc.",
         "rulebook": {
           "structure": [
-            "1. Duration: 1 day",
+            "1. Duration : 1 day",
             "2. The constraints will be provided along with the problem",
             "statement on the day before.",
-            "3. Teams will have to code up their simulation in Python.",
+            "3. Teams will have to code up their simulation in python.",
             "4. Upon achieving all the parameters within a range of error."
           ],
           "judging": [
@@ -1058,18 +1058,18 @@ export let technical = {
             "2. Achieving required constraints - 80p",
             "3. Animation quality - 40p"
           ],
-          "Prizes": [
-            "1. Rs. 3500",
-            "2. Rs. 2000",
-            "3. Rs. 1500"
-            
+          "prizes": [
+            "350",
+            "020",
+            "001",
+            "500"
           ],
           "rules": [
             "1. The simulation results will be verified by the evaluators and that will be",
             "the final decision.",
             "2. Plagiarism will result in disqualification.",
             "3. Winners will be decided on the basis of the points scored.",
-            "4. Participants have to produce an animation with their details",
+            "4. Participants have to produce an animation with the their detailed",
             "trajectory plan and simulation code to qualify for the prize."
           ]
         },
@@ -1089,40 +1089,41 @@ export let technical = {
         "about": "An offline event where participants are required to simulate a drone\u2019s stabilization and implement the same on a provided hardware setup.\n",
         "rulebook": {
           "structure": [
-            "\u25cf Round 1:",
-            "a. Duration: 2 hours",
+            "\u25cf Round 1 :",
+            "a. Duration : 2 hours",
             "b. Parameters of the set-up will be provided before the competition starts",
-            "c. Teams will qualify for the second round if they are able to simulate the",
+            "c. Teams will qualify to the second round if they are able to simulate the",
             "system and balance it properly using control algorithms like PID, LQR, etc.",
-            "\u25cf Round 2:",
-            "a. Duration: 1 hour",
+            "\u25cf Round 2 :",
+            "a. Duration : 1 hour",
             "b. Qualified teams will code the microcontroller to work based on their",
             "simulation results",
             "c. Each team will be given two chances to successfully balance the system."
           ],
           "judging": [
-            "1. Round 1:",
+            "1. Round 1 :",
             "a. Simplicity of simulation - 10p",
             "b. Achieving required constraints - 50p",
-            "2. Round 2:",
-            "a. Simplicity of Arduino code - 10p",
-            "b. Bonus points: 50p",
-            "c. Main demonstration: 50p"
+            "2. Round 2 :",
+            "a. Simplicity of arduino code - 10p",
+            "b. Bonus points : 50p",
+            "c. Main demonstration : 50p"
           ],
           "prizes": [
-            "1. Rs. 4000",
-            "2. Rs. 2500",
-            "3. Rs. 1500"
+            "400",
+            "025",
+            "001",
+            "500"
           ],
           "rules": [
-            "1. Teams will qualify for the second round only if they can balance the system",
+            "1. Teams will qualify to second round only if they are able to balance the system",
             "properly in simulation",
             "2. The simulation results will be verified by the evaluators and that will be the final",
             "decision",
             "3. Plagiarism will result in disqualification",
             "4. Participants will have to use only the details provided by the organizers, any",
             "other tweaking of the hardware is not allowed and will result in disqualification",
-            "5. Winners will be decided based on the points scored"
+            "5. Winners will be decided on the basis of the points scored"
           ]
         },
         "organisers": [
@@ -1152,15 +1153,15 @@ export let technical = {
             "id."
           ],
           "judging": [
-            "Will be evaluated as per the platform its conducted on"
+            "Will be evaluated as per the platform its conducted in"
           ],
           "prizes": [
-            "1. Rs. 5500",
-            "2. Rs. 4500",
-            "3. Rs. 3500",
-            "4. Rs. 2500",
-            "5. Rs. 1500",
-            "6. Positions 6th to 20th runner ups: Rs. 500"
+            "5500",
+            "4500",
+            "3500",
+            "2500",
+            "1500",
+            "500"
           ],
           "rules": [
             "1. It\u2019s an individual contest not a team contest.",
@@ -1205,9 +1206,9 @@ export let technical = {
             "2. Minimum Time: The team that completes the course in the shortest time."
           ],
           "prizes": [
-            "1. Rs. 12500",
-            "2. Rs. 10000",
-            "3. Rs. 7500"
+            "12500",
+            "10000",
+            "7500"
           ],
           "rules": [
             "1. Weight Limit: Maximum 1.2kg",
@@ -1256,9 +1257,9 @@ export let technical = {
             "5. Overall Fun Factor: The overall fun and entertainment value of the game."
           ],
           "prizes": [
-            "1. Rs. 4000",
-            "2. Rs. 2500",
-            "3. Rs. 1500"
+            "4000",
+            "2500",
+            "1500"
           ],
           "rules": [
             "1. Game Engine: Participants must use the Godot Engine to develop their games.",
@@ -1270,7 +1271,7 @@ export let technical = {
             "their game mechanics. The gameplay should be engaging and enjoyable.",
             "5. Graphics and Sound: Games should have suitable graphics and sound that",
             "enhance the gaming experience.",
-            "6. Game Submission: Teams must upload their games on a GitHub repo and should send the link of the same to the supplied Google form by the submission deadline.",
+            "6. Game Submission: Teams must upload their games on a github repo and should send the link of the same to the supplied Google form by the submission deadline.",
             "7. Submission Contents: The participants are requested to fill a google form which will be sent to your email regarding the event which basically contains the following:",
             "7.1.A link to the game repository.",
             "7.2. A brief description of the game.",
@@ -1345,9 +1346,9 @@ export let technical = {
             "8. If the tie still remains then both the teams will be considered as winners with the prize money divided between them."
           ],
           "prizes": [
-            "1. Rs. 5100",
-            "2. Rs. 3500",
-            "3. Rs. 2100"
+            "5100",
+            "3500",
+            "2100"
           ],
           "rules": [
             "Basic Details",
@@ -1396,9 +1397,9 @@ export let technical = {
             "priority"
           ],
           "prizes": [
-            "1. Rs. 5000",
-            "2. Rs. 3000",
-            "3. Rs. 2000"
+            "5000",
+            "3000",
+            "2000"
           ],
           "rules": [
             "1. Registered participants will have to install the StockGro application from PlayStore/ AppStore.",
@@ -1416,8 +1417,8 @@ export let technical = {
             "phone": "9636902875"
           },
           {
-            "name": "Karthikeya ",
-            "image": "https://drive.google.com/file/d/10ok7N15ervTKHVe3wp5jHkuDArbAl8fh/view?usp=sharing",
+            "name": "Karthikeya B",
+            "image": "https://drive.google.com/open?id=1qUvGcmFSrmjaUNS-0KV2-PWSkptpspKd",
             "phone": "7794011990"
           }
         ],
@@ -1526,9 +1527,9 @@ export let technical = {
             ""
           ],
           "prizes": [
-            "1. Rs. 7500",
-            "2. Rs. 4500",
-            "3. Rs. 3000"
+            "7500",
+            "4500",
+            "3000"
           ],
           "rules": [
             "Game Rules",
@@ -1595,9 +1596,9 @@ export let technical = {
             "\u2022 Amount Used \u2192 +15 points ( < Rs 60 ) , +10 points ( < Rs 80 )"
           ],
           "prizes": [
-            "1. Rs. 3500",
-            "2. Rs. 2700",
-            "3. Rs. 1800"
+            "3500",
+            "2700",
+            "1800"
           ],
           "rules": [
             "1. The container must hit a 30 ft x 30 ft landing zone on every drop.",
@@ -1652,9 +1653,9 @@ export let technical = {
             "2.3. Main demonstration : 50p"
           ],
           "prizes": [
-            "1. Rs. 4000",
-            "2. Rs. 2500",
-            "3. Rs. 1500"
+            "4000",
+            "2500",
+            "1500"
           ],
           "rules": [
             "1. Teams will qualify to second round only if they are able to balance the system",
@@ -1697,9 +1698,9 @@ export let technical = {
             "Any malpractices won't be entertained and will lead to instant disqualification. Any round specific rules will be conveyed before the event starts"
           ],
           "prizes": [
-            "1. Rs. 2000",
-            "2. Rs. 1250",
-            "3. Rs. 750"
+            "2000",
+            "1250",
+            "750"
           ],
           "rules": [
             "",
@@ -1739,9 +1740,9 @@ export let technical = {
             "nil/later"
           ],
           "prizes": [
-            "1. Rs. 16500",
-            "2. Rs. 11500",
-            "3. Rs. 7000"
+            "16500",
+            "11500",
+            "7000"
           ],
           "rules": [
             "Robot Specifications",
@@ -1816,6 +1817,19 @@ export let workshops =  {
             topics: [ 'Product Design', 'Design Thinking', 'Product-Market Pitch'],
             speakers: [ 'Keerthi Reddy', 'Dr. Jacob'],
             id: 'WP02'
+        },
+        {
+            name: 'Unknown',
+            about: 'Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon Coming Soon',
+            prereq: [ 'Basic Programming Skills'],
+            fees: 1280,
+            date: '27 & 28 Jan',
+            regdate: '29 Jan',
+            image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
+            location: 'Nila Campus',
+            topics: [ 'Product Design', 'Design Thinking', 'Product-Market Pitch'],
+            speakers: [ 'Dr. Sabarimalai Manikandan'],
+            id: 'WP03'
         },
     ]
 };
