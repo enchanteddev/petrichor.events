@@ -126,13 +126,13 @@
 		<div style="background-color: rgb(90, 14, 137,0.3);" class="payment">
 			<div style="display: inline-block;">
 				<p
-					style="margin-bottom: 1rem;margin-top: 0.8rem;font-size:155%;display: inline-block;font-family:monospace"
+					style="margin-bottom: 1rem;margin-top: 0.8rem;font-size:155%;display: inline-block"
 				>
 					Scan here for payment
 				</p>
 				<div id="img" />
 				<p style="margin-top: 1rem;font-size:155%;box-sizing:border-box;font-family:cursive">
-					<span style="font-family:cursive">&#8377;</span>{amount}
+					<span>&#8377;</span>{amount}
 				</p>
 				<svg
 					style="margin-top: -1rem;"

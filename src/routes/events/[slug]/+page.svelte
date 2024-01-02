@@ -10,6 +10,10 @@
 	export let data: { [key: string]: event[] };
 	let events = data['events'];
 
+	$: {
+		console.log(events)
+	}
+
 	let bg: HTMLDivElement;
 	let currentEvent: event = events[0];
 	let registered = false;
@@ -47,7 +51,7 @@
 		} else {
 			$registerData.eventID = currentEvent.id;
 			// $registerData.registeredEmails.push($userEmail);
-			$registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
+			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
 			const eventDataResponse = await POST(API.event, {id: currentEvent.id})
 			const eventData = await eventDataResponse.json()
@@ -148,9 +152,9 @@
 				{/each}
 			</div>
 			<div class="prizes">
-				<h2>Prizes</h2>
+				<h2>Prizes Worth:</h2>
 				{#each currentEvent.rulebook.prizes as struct}
-					<li>₹{struct}</li>
+					<li>{struct}₹</li>
 				{/each}
 			</div>
 		</div>

@@ -6,6 +6,7 @@ export const load: PageLoad = ({ params }) => {
     if (params.slug == 'technical'){
         return technical
     } else if (params.slug == 'cultural'){
+        // console.log(cultural)
         return cultural
     }
     return {

@@ -8,6 +8,5 @@ export const userEmail  = writable("");
 
 export const registerData: Writable<RegisterData> = writable({
     eventID: "",
-    registeredEmails: [],
-    proshowIncluded: false
+    registeredEmails: []
 })

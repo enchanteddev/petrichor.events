@@ -43,6 +43,5 @@ export interface payment{
 
 export interface RegisterData{
     eventID: string,
-    registeredEmails: string[],
-    proshowIncluded: boolean
+    registeredEmails: string[]
 }
