@@ -1081,7 +1081,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/8504755d-8310-4e6b-be56-95ef5684d560/0_0.webp",
-        "date": "6/1/2024",
+        "date": "13/1/2024",
         "id": "TF01"
       },
       {
@@ -1216,7 +1216,9 @@ export let technical = {
             "3.1. Fly through hoops at various heights.",
             "3.2. Hoop Diameter: 70cm",
             "4. Drone Lights: Lights must be attached to the drone's arms.",
-            "5. Receiver Range: Minimum range of 500 meters."
+            "5. Receiver Range: Minimum range of 500 meters.",
+            "6. Team size: 4 - 6." 
+              
           ]
         },
         "organisers": [
@@ -1294,7 +1296,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/9d076bbe-3010-472c-8d55-81f14606737d/0_0.webp",
-        "date": "4/1/2024 - 31/1/2024",
+        "date": "16/1/2024 - 31/1/2024",
         "id": "TF05"
       },
       {
