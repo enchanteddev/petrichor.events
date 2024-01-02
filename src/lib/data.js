@@ -892,7 +892,7 @@ export let cultural = {
       },
       {
         "name": "Bandwagon",
-        "about": "This competition is a public event designed to identify and award outstanding musical ensembles, instrumentalists, soloists and composers. It would be a great platform for bands to break into the music scene.\nThis event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor. .",
+        "about": "This competition is a public event designed to identify and award outstanding musical ensembles, instrumentalists, soloists and composers. It would be a great platform for bands to break into the music scene.\nThis event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor.",
         "rulebook": {
           "structure": [
             "Round 1 (Online) :",
