@@ -2,7 +2,7 @@ export let cultural = {
     "events": [
       {
         "name": "F3: Fireless Food Fiesta",
-        "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers. It encourages teamwork, innovation, and resourcefulness in the kitchen.",
+        "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers.",
         "rulebook": {
           "structure": [],
           "judging": [
@@ -10,7 +10,7 @@ export let cultural = {
             "1. Taste \u2013 25%",
             "2. Presentation \u2013 25%",
             "3. Creativity \u2013 25%",
-            "4. Utilization of available resources \u2013 25 marks"
+            "4. Utilization of available resources \u2013 25%"
           ],
           "prizes": [
             "₹3000",
@@ -18,7 +18,7 @@ export let cultural = {
             "₹1000"
           ],
           "rules": [
-            "Number of participants in each team: maximum 3",
+            "Number of participants in each team : Maximum 3",
             "1. All participants must be registered and should reach the venue 30 minutes prior to the start of the event.",
             "2. Gas stoves and induction cookers are not allowed.",
             "3. Basic cooking equipment, including mixers, vessels, and spoons, will be provided by the organizers.",
@@ -33,7 +33,7 @@ export let cultural = {
             "12. Dishes will be judged based on taste, presentation, creativity, and effective use of the provided ingredients.",
             "13. The decision of the judges is final.",
             "14. Food should be prepared for one serving only.",
-            "15. Authority has the right to change any rules that are present in the rulebook."
+            "15. Organisers have the right to change any rules that are present in the rulebook."
           ]
         },
         "organisers": [
@@ -64,31 +64,30 @@ export let cultural = {
           "structure": [
             "",
             "Number of participants in each team: 2 (including an artist and a model)",
-            "This event is open to everyone"
+            "This event is open to everyone."
           ],
           "judging": [
-            "\u2022\tParticipants will be judged based on originality, concept, painting skills, composition, overall impact and creativity",
-            "\u2022\tAdherence to theme:25%",
-            "\u2022\tOriginality and creativity:25%",
-            "\u2022\tPainting skills:25%",
-            "\u2022\tOverall visual impact:25%"
+            "\u2022\tAdherence to theme - 25%",
+            "\u2022\tOriginality and creativity - 25%",
+            "\u2022\tPainting skills - 25%",
+            "\u2022\tOverall visual impact - 25%"
           ],
           "prizes": [
-            "₹3500",
-            "₹2500",
-            "₹1500"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "\u2022        Participants must finish the painting within 60 minutes.",
             "\u2022        The theme will be announced before the event.",
             "\u2022        Participants are supposed to bring the necessary brushes, sponges and mixing trays.",
-            "\u2022        Paints will be provided",
-            "\u2022        No part of the design may be applied to the models face before the start of the event",
-            "\u2022        Painting must not extend down the neck or onto the models chest, shoulders or back areas",
+            "\u2022        Paints will be provided.",
+            "\u2022        No part of the design may be applied to the models face before the start of the event.",
+            "\u2022        Painting must not extend down the neck or onto the models chest, shoulders or back areas.",
             "\u2022        Hair may be clipped or pinned back to fully expose the design area.",
             "\u2022        Participants should respect the time limit and not disrupt other contestants.",
             "\u2022        Any inappropriate or offensive designs will result in disqualification.",
-            "\u2022        Decision made by the judges are final.Requests to reconsider the final decision would not be entertained"
+            "\u2022        Decision made by the judges are final.Requests to reconsider the final decision would not be entertained."
           ]
         },
         "organisers": [
@@ -109,7 +108,7 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF01"
       },
       {
@@ -121,15 +120,15 @@ export let cultural = {
             "Final Round: Live mono acting performance."
           ],
           "judging": [
-            "- Acting Skills",
-            "- Expression and Emotion",
-            "- Engagement with the Audience",
-            "- Overall Presentation"
+            "1. Acting Skills -30%",
+            "2. Expression and Emotion - 30%",
+            "3. Engagement with the Audience - 20%",
+            "4. Overall Presentation - 20%"
           ],
           "prizes": [
-            "₹3000",
+            "₹2500",
             "₹1500",
-            "₹500"
+            "₹1000"
           ],
           "rules": [
             "1. Use of fire or sharp objects that will damage the stage is prohibited.",
@@ -227,9 +226,9 @@ export let cultural = {
         "about": "Group fashion event",
         "rulebook": {
           "structure": [
-            "1) formation of teams",
-            "2) deciding costumes and choreography and audio track",
-            "3) performance"
+            "1) Formation of teams",
+            "2) Deciding costumes and choreography and audio track",
+            "3) Performance"
           ],
           "judging": [
             "1) relevance to theme (metamorphosis)",
@@ -275,9 +274,9 @@ export let cultural = {
         "rulebook": {
           "structure": [],
           "judging": [
-            "\u25cf\tCreativity and innovation.",
-            "\u25cf\tEffectiveness in utilization of waste materials.",
-            "\u25cf\tPresentation."
+            "\u25cf\tCreativity and innovation - 50%",
+            "\u25cf\tEffectiveness in utilization of waste materials - 30%",
+            "\u25cf\tPresentation - 20%"
           ],
           "prizes": [
             "First: ₹2500",
@@ -286,22 +285,22 @@ export let cultural = {
           ],
           "rules": [
             "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
-            "\u25cf        Materials like ice cream cups, sticks, plastic bottles, soft drink cans, and used pens will be provided and it's mandatory to use them in the craft.",
+            "\u25cf        Materials like ice cream cups, sticks, plastic bottles, soft drink cans, and used pens will be provided and it is mandatory to use them in the craft.",
             "\u25cf        Participants can bring necessary items like aluminium wires, moulding clay and stationery items like scissors,glue,paints etc.",
             "Participants can also bring waste materials if they wish to. Waste material could be anything like tetra packs, bottles, newspapers, CDs, jute material, or any second-hand items that otherwise would be thrown away.",
             "\u25cf        No ready or semi-finished model or matter would be accepted by participants in the competition.",
-            "\u25cf        No mobile or Internet means would be allowed to be used at the time of the Competition.",
-            "\u25cf        The decision of the judges will be considered final and abiding."
+            "\u25cf        No mobile or Internet means would be allowed to be used at the time of the competition.",
+            "\u25cf        The decision of the judges will be considered final and bniding."
           ]
         },
         "organisers": [
           {
-            "name": "Anusha dadam",
+            "name": "Anusha Dadam",
             "image": "https://drive.google.com/open?id=13GtjjcQzslkgt9XluPEcmnRBUlVWa72X",
             "phone": "93"
           },
           {
-            "name": "Mausumi  bhuyan",
+            "name": "Mausumi  Bhuyan",
             "image": "https://drive.google.com/open?id=1DipIeTxxWY-qYvDR7WF1_KEtSEJMISSj",
             "phone": "925"
           }
@@ -391,10 +390,10 @@ export let cultural = {
         "rulebook": {
           "structure": [],
           "judging": [
-            "1. Choreography and Creativity : 30",
-            "2. Synchronization and Expressions : 25",
-            "3. Energy and Stage Presence : 25",
-            "4. Costume and Appearance : 20"
+            "1. Choreography and Creativity : 30%",
+            "2. Synchronization and Expressions : 25%",
+            "3. Energy and Stage Presence : 25%",
+            "4. Costume and Appearance : 20%"
           ],
           "prizes": [
             "₹10000",
@@ -405,7 +404,7 @@ export let cultural = {
             "1. Any dance style is allowed.",
             "2. Each group must consist of a minimum of 3 participants and a maximum of 15 participants.",
             "3. Each group is allotted a maximum of 15 minutes for their performance including stage",
-            "Prep.",
+            "preperation.",
             "4. Performances that exceed the time limit will face point deductions.",
             "5. Songs for your performance must be submitted atleast 2 days before the start of the event.",
             "6. The participants should avoid using indecent dress, song and gestures.",
@@ -493,12 +492,12 @@ export let cultural = {
         "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
-            "It will be an online event whose submission will be started 1 week ago the Petrichor dates and will go on till the fest gets over."
+            "This event will be conducted online."
           ],
           "judging": [
-            "1.Creativity - 35",
-            "2.Originality - 35",
-            "3.Relevance to prompt - 30"
+            "1.Creativity - 35%",
+            "2.Originality - 35%",
+            "3.Relevance to prompt - 30%"
           ],
           "prizes": [
             "₹2000",
@@ -513,7 +512,7 @@ export let cultural = {
             "5.The entry must be the original work of the participant, and must not have been published elsewhere.",
             "6.All the entries must be sent in a particular format (Name of Story_Name of participant).",
             "7.Illustrations such as graphs and sketches are not allowed.",
-            "8.The stories submitted before the deadline (date) will only be considered for results.",
+            "8.Only the stories submitted before the deadline (date) will be considered for judging.",
             "9.Plagiarism and use of explicit content will lead to immediate disqualification.",
             "10.The decisions made by the judges are final. Requests to reconsider",
             "the final decision will not be entertained."
@@ -551,7 +550,7 @@ export let cultural = {
             "2. Teams winning both \u2018team deathmatch\u2019 and \u2018domination\u2019 get 4 points.",
             "3. Teams winning \u2018hardpoint\u2019 and \u2018domination\u2019 get 3 points.",
             "4. Teams winning by forfeit from another team receive 3 points.",
-            "5. Team with max no. of points wins."
+            "5. Team with maximum no. of points wins."
           ],
           "prizes": [
             "₹2500",
@@ -586,12 +585,12 @@ export let cultural = {
         "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
-            "It will be an online event whose submission will start 1 week before the Petrichor dates and will go on till the fest ends."
+            "This event will be conducted online."
           ],
           "judging": [
-            "1.Creativity - 35",
-            "2.Originality - 35",
-            "3.Relevance to prompt - 30"
+            "1.Creativity - 35%",
+            "2.Originality - 35%",
+            "3.Relevance to prompt - 30%"
           ],
           "prizes": [
             "₹2000",
@@ -636,14 +635,14 @@ export let cultural = {
         "rulebook": {
           "structure": [],
           "judging": [
-            "1. Spontaneity",
-            "2. Ease in performing various styles",
-            "3. Being in sync with the music"
+            "1.  Ease in performing various styles - 30%",
+            "2. Spontaneity - 40%",
+            "3. Being in sync with the music - 30%"
           ],
           "prizes": [
-            "First Prize - \u20b9₹3500",
-            "Second Prize - \u20b9₹2500",
-            "500 ; Third Prize - \u20b9₹1500"
+            "₹3500",
+            "₹2500",
+            "₹1500"
           ],
           "rules": [
             "1. All participants must report at the venue at the given time and must be",
@@ -662,9 +661,7 @@ export let cultural = {
             "8. Judges will choose 1 participant from each battle to advance to the next round, until the battle",
             "progresses to 2 finalists.",
             "9. In the final battle each of the 2 participants will have two rounds of 1",
-            "minute each to impress the judges.",
-            "10. In case of low participation (less than 7 participants ) the organisers",
-            "have the authority to not conduct the event"
+            "minute each to impress the judges."
           ]
         },
         "organisers": [
@@ -693,13 +690,13 @@ export let cultural = {
         "about": "It's an online competition and participants are needed to submit their digital artworks according to the provided theme.",
         "rulebook": {
           "structure": [
-            "1. It is an online event whose submission will start 1 week before the Petrichor dates and will go on till the fest ends."
+            "1. This event will be conducted online and the theme will be revealed before the competition starts."
           ],
           "judging": [
-            "1. Creativity - 20",
-            "2. Adherence to the theme - 30",
-            "3. Color and visual - 20",
-            "4. Presentation - 30"
+            "1. Creativity - 20%",
+            "2. Adherence to the theme - 30%",
+            "3. Color and visual - 20%",
+            "4. Presentation - 30%"
           ],
           "prizes": [
             "₹1500",
@@ -708,18 +705,17 @@ export let cultural = {
           ],
           "rules": [
             "1. Each participant is allowed to submit only one entry.",
-            "2. It is an online event and the theme will be revealed before the competition starts.",
-            "3. Dimensions of the canvas should be 1000 px X 1000 px.",
-            "4. Any software can be used for creating the artwork but they should mention the software used",
-            "5. Submissions must be the original work of the participant, plagiarism is strictly prohibited.",
-            "6. Participants should submit two images / screen grabs of the artwork in between stages, in addition to the final artwork.",
-            "7. The editable form or link of the artwork must be submitted.",
-            "8. Submitted artwork should also contain the participant's name or signature as a means of identification.",
-            "9. A one line caption to express the artwork is encouraged.",
-            "10. The submitted artwork should be in high resolution image format (JPEG or PNG).",
-            "11. Artworks must not include watermarks from external sources, or display copyrighted content that does not belong to the participant.",
-            "12. Participants should ensure that their submissions do not contain objectionable content.",
-            "13. The decisions of the judges will be final."
+            "2. Dimensions of the canvas should be 1000 px X 1000 px.",
+            "3. Any software can be used for creating the artwork but they should mention the software used",
+            "4. Submissions must be the original work of the participant, plagiarism is strictly prohibited.",
+            "5. Participants should submit two images / screen grabs of the artwork in between stages, in addition to the final artwork.",
+            "6. The editable form or link of the artwork must be submitted.",
+            "7. Submitted artwork should also contain the participant's name or signature as a means of identification.",
+            "8. A one line caption to express the artwork is encouraged.",
+            "9. The submitted artwork should be in high resolution image format (JPEG or PNG).",
+            "10. Artworks must not include watermarks from external sources, or display copyrighted content that does not belong to the participant.",
+            "11. Participants should ensure that their submissions do not contain objectionable content.",
+            "12. The decisions of the judges will be final and binding."
           ]
         },
         "organisers": [
@@ -740,7 +736,7 @@ export let cultural = {
       },
       {
         "name": "Groove Mania",
-        "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style",
+        "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style.",
         "rulebook": {
           "structure": [],
           "judging": [
@@ -792,7 +788,7 @@ export let cultural = {
       },
       {
         "name": "Click n' Roll: A Showcase of Frames",
-        "about": "Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
         "rulebook": {
           "structure": [
             "1. Participants can compete individually or form teams of up to two members.",
