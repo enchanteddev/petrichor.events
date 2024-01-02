@@ -1417,7 +1417,7 @@ export let technical = {
           },
           {
             "name": "Karthikeya ",
-            "image": "https://drive.google.com/open?id=1qUvGcmFSrmjaUNS-0KV2-PWSkptpspKd",
+            "image": "https://drive.google.com/file/d/10ok7N15ervTKHVe3wp5jHkuDArbAl8fh/view?usp=sharing",
             "phone": "7794011990"
           }
         ],
