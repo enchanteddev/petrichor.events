@@ -162,19 +162,20 @@ export let cultural = {
       },
       {
         "name": "Voicestra",
-        "about": "Step into the spotlight and unleash the power of your melody at our solo singing competition! Elevate your voice, captivate the audience, and let the world be spellbound by the symphony of talent. Join us on a musical journey where every note resonates with passion, and where solo performers shine in a dazzling display of vocal prowess. It's not just a competition; it's your moment to enchant and leave the world breathless with the magic of your song",
+        "about": "Join our solo singing competition, welcoming voices from East and West, spanning every genre! Elevate your voice, captivate the audience, and let the world be spellbound by your talent. It's your moment to enchant and leave everyone breathless, no matter the genre or cultural influence every style is welcome",
         "rulebook": {
           "structure": [
-            "1. Round 1(Online):",
-            "a. Participants will have to shoot a video and after uploading, submit the same through the google form provided . The deadline for this is _____.",
+            "Round 1(Online) - Deadline : 20-01-2024 ",
+            "a. Participants will have to shoot a video and after uploading, submit the same through the google form provided.",
             "b. The video must have clear sound and should be a recording of a live performance with a clear face in one take.",
             "c. No editing and mixing is allowed in the audiovisual.",
             "d. Participants will have to give their introduction by saying, \u201cMy name is XYZ and this is my submission for the Petrichor \u201824 Solo singing Competition\u201d.",
+            "e. Only one submission per participant is allowed.",
             "",
             "",
-            "2. Round 2(Offline):",
+            "Round 2(Offline):",
             "a. The top entries will be shortlisted for the final round.",
-            "b. The Participant(s) should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
+            "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
             "c. The participant can use any instrument, instrumental, or karaoke music with themselves to perform if they want (not compulsory). If any karaoke is being used, the audio file in mp3 format of the karaoke must be given to the organisers 2 days prior to the event",
             "d. Participants are expected to memorise the song's lyrics and are not allowed to read the lyrics from a paper or any electronic device.",
             "e. In case of a tie, a \u201csing-off\u201d will be held (an appropriate time will be given to prepare for the same).",
@@ -182,11 +183,11 @@ export let cultural = {
             "g.In case of any conflict, the judge's decision will be final and binding under all circumstances."
           ],
           "judging": [
-            "1. Stage presence",
-            "2. Melody",
-            "3. Rhythm sense",
-            "4. Creativity and originality",
-            "5. Overall impact"
+            "1. Song Selection - 30 %",
+            "2. Melody - 20 %",
+            "3. Rhythm sense - 20 %",
+            "4. Creativity and originality - 20 %",
+            "5. Overall impact - 10 %"
           ],
           "prizes": [
             "₹3000",
@@ -311,7 +312,7 @@ export let cultural = {
       },
       {
         "name": "Dynamic Duet",
-        "about": "An Event where two individuals collaborate to perform a musical performance ",
+        "about": "Join us for the Duet Competition, where you and your teammate can weave musical magic together. Bring any genre to life, from classic to contemporary. It's not just a competition, it's a chance to create something beautiful and unforgettable as a team. ",
         "rulebook": {
           "structure": [
             "1.This event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor.",
@@ -320,11 +321,11 @@ export let cultural = {
             "4. Selected Contestants will receive a mail and will advance to the Second round(The Grand Finale)."
           ],
           "judging": [
-            "1 - Song selection",
-            "2 - Arrangement",
-            "3 - Originality",
-            "4 - Creativity",
-            "5 - Synchronisation"
+            "1. Song selection (Coherence and Variety in Set List) - 10 %",
+            "2. Arrangement - 15 %",
+            "3. Originality/Creativity - 20 %",
+            "4. Technical Brialliance/Individual Skills - 30 %",
+            "5. Synchronisation - 25 %"
           ],
           "prizes": [
             "₹5000",
@@ -333,35 +334,34 @@ export let cultural = {
           ],
           "rules": [
             "General Rules :",
-            "1 - Each Duo must contain at least one instrumentalist.",
-            "2 - A person can play for only one single Duo.",
-            "3 - Extra Points will be awarded for Original Compositions.",
-            "4 -  All the Instruments should be brought by the Pairs itself, Only the drum kit would",
-            "be Provided.",
-            "5 - Exceeding the time limit will lead to negative points.",
-            "6 - Obscenity on stage is strictly prohibited.",
-            "7 -Pre-recorded sounds are not allowed.",
-            "8 - Judge\u2019s decisions are final and binding.",
-            "9 -  Song :- The event is not genre - Specific.",
+            "1. Each duo must contain at least one instrumentalist.",
+            "2. A person can play for only one single Duo.",
+            "3. Extra points will be awarded for Original Compositions.",
+            "4. All the Instruments should be brought by the Pairs itself, Only the drum kit would",
+            "be provided.",
+            "5. Exceeding the time limit will lead to negative points.",
+            "6. Obscenity on stage is strictly prohibited.",
+            "7. Pre-recorded sounds are not allowed.",
+            "8. Judge\u2019s decisions are final and binding.",
             "",
             "Round 1 (Online) :",
-            "1 - All the members of the pair should be clearly visible in the uploaded Video.",
-            "2 - Usage of Pre-Recorded tracks is strictly prohibited.",
-            "3 - Audio in the uploaded file should be clear for the judges to be able to judge.",
-            "5 - Software like Audacity and Reaper can be used for Editing your videos.",
+            "1. All the members of the pair should be clearly visible in the uploaded Video.",
+            "2. Usage of Pre-Recorded tracks is strictly prohibited.",
+            "3. Audio in the uploaded file should be clear for the judges to be able to judge.",
+            "4. Software like Audacity and Reaper can be used for Editing your videos.",
             "",
             "Round 2 (Offline) :",
-            "1 - The Time limit for the performance shouldn't exceed a maximum time of 10",
-            "(Minutes Including Setup and Soundchecks.)",
-            "2 - No Pre-Recorded tracks would be allowed, Usage of any Pre-Recorded tracks",
+            "1. The Time limit for the performance shouldn't exceed a maximum time of 10 Minutes",
+            "(Including Setup and Soundchecks.)",
+            "2. No Pre-Recorded tracks would be allowed, Usage of any Pre-Recorded tracks",
             "will face immediate disqualification",
-            "3 - Contestants should Bring their own Instruments for their performances (Only",
+            "3. Contestants should bring their own instruments for their performances (Only",
             "Drum Kit Would be Provided)",
-            "4 - Extra points will be awarded for original compositions",
-            "5 - All Music shall be played live on stage and live looping on Stage is not allowed.",
-            "6 - The pair Performing offline should be the same as the ones from the Uploaded",
-            "Video.",
-            "7 - Judges' decisions will be final and binding and are not open to review."
+            "4. Extra points will be awarded for original compositions",
+            "5. live looping on Stage is not allowed.",
+            "6. The pair performing offline should be the same as the ones from the uploaded",
+            "video.",
+            "7. Judges' decisions will be final and binding and are not open to review."
           ]
         },
         "organisers": [
@@ -892,7 +892,7 @@ export let cultural = {
       },
       {
         "name": "Bandwagon",
-        "about": "This competition is a public event designed to identify and award outstanding musical ensembles, instrumentalists, soloists and composers. It would be a great platform for bands to break into the music scene.\nThis event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor. \nIn the first round of online submissions the Teams are required to post an Audiovisual recording of their performance of their own choice and upload it to the Google Form provided in the Petrichor Website. \nThe video should be of at least 3 minutes and shouldn't exceed a maximum time limit of 5 minutes. This will be used for shortlisting the Teams into the Second Round. \nSelected Contestants will receive a mail and will advance to the Second round(The Grand Finale).",
+        "about": "This competition is a public event designed to identify and award outstanding musical ensembles, instrumentalists, soloists and composers. It would be a great platform for bands to break into the music scene.\nThis event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor. .",
         "rulebook": {
           "structure": [
             "Round 1 (Online) :",
@@ -912,11 +912,11 @@ export let cultural = {
             "7. Judges' decisions will be final and binding and are not open to review."
           ],
           "judging": [
-            "1. Stage Presence",
-            "2. Synchronization",
-            "3. Originality and Creativity",
-            "4. Vocals and Harmony",
-            "5. Music Arrangement"
+            "1. Song Selection - 15 %",
+            "2. Synchronization - 30 %",
+            "3. Originality and Creativity - 20 %",
+            "4. Technical Brilliance / Individual Skills - 30 %",
+            "5. Overall Impact / Stage Presence - 5%"
           ],
           "prizes": [
             "₹10000",
