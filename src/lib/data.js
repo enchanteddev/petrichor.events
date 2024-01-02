@@ -1416,7 +1416,7 @@ export let technical = {
             "phone": "9636902875"
           },
           {
-            "name": "Karthikeya B",
+            "name": "Karthikeya ",
             "image": "https://drive.google.com/open?id=1qUvGcmFSrmjaUNS-0KV2-PWSkptpspKd",
             "phone": "7794011990"
           }
