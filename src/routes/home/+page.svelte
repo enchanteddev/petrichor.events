@@ -74,9 +74,9 @@
 			before. Also, yes, it's offline. We, the students of IIT Palakkad, conduct Petrichor every
 			year, and made sure last year's online event was enthralling for all its participants. Now the
 			wait is over; with just the perfect mix of cultural and technical events, we plan on making
-			Petrichor'23 an unforgettable experience for you. Trust us when we say that you won't miss out
+			Petrichor'24 an unforgettable experience for you. Trust us when we say that you won't miss out
 			on anything. Check out our website as it has answers to all the questions that you might have.
-			Stay tuned and brace yourselves for the journey of a lifetime with Petrichor'23!
+			Stay tuned and brace yourselves for the journey of a lifetime with Petrichor'24!
 		</p>
 	</div>
 	<div class="banner events" id="events">
