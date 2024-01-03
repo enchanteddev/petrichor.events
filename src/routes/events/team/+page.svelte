@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { userEmail, registerData } from '$lib/stores';
+	import { userEmail, registerData, isLogin } from '$lib/stores';
 	import { POST, API, readToken } from '$lib';
 	import { onMount } from 'svelte';
 	import Toast from '$lib/components/Toast.svelte';
+	import { goto } from '$app/navigation';
 	
 	let eventData: any = null
 	let min = 1;
@@ -11,18 +12,21 @@
 	let emails = Array(max);
 	POST(API.event, {id: $registerData.eventID}).then(e => e.json()).then(e => {
 		eventData = e;		
-		min = eventData.minMember
-		max = eventData.maxMember
+		min = eventData.minMemeber
+		max = eventData.maxMemeber
 		fees = eventData.fees
+		console.log(eventData, max)
 		emails = Array(max);
 	})
 	
 
 	emails[0] = $userEmail;
 
+	
 	onMount(() => {
+		console.log($isLogin, $userEmail)
 	    if (!$userEmail){
-	        location.replace('/login')
+	        goto('/login')
 	    }
 	})
 
@@ -47,11 +51,17 @@
 			} else {
 				failedToast = true;
 			}
+		} else {
+			goto('/payment')
 		}
 	}
 </script>
-<Toast message="Event Registered!" bind:show={successToast}/>
-<Toast message="Event Registration Failed!" bind:show={failedToast}/>
+{#if successToast}
+	<Toast message="Event Registered!" bind:show={successToast}/>
+{/if}
+{#if failedToast}
+	<Toast message="Event Registration Failed!" bind:show={failedToast}/>
+{/if}
 <div class="main">
 	{#if eventData}		
 	<h1>Registering for Event Name {eventData.name}</h1>

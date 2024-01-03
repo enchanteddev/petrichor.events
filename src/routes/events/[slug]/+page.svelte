@@ -6,12 +6,13 @@
 
 	import { onMount } from 'svelte';
 	import { API } from '$lib';
+	import { goto } from '$app/navigation';
 
 	export let data: { [key: string]: event[] };
 	let events = data['events'];
 
 	$: {
-		console.log(events)
+		console.log('$isLogin:', $isLogin, $userEmail)
 	}
 
 	let bg: HTMLDivElement;
@@ -47,7 +48,7 @@
 
 	const clicked = async () => {
 		if (!$isLogin) {
-			location.replace('/login');
+			goto('/login');
 		} else {
 			$registerData.eventID = currentEvent.id;
 			// $registerData.registeredEmails.push($userEmail);
@@ -79,10 +80,10 @@
 						});
 					setEvent(currentEvent);
 				} else {
-					location.replace(`/payment?id=${currentEvent.id}`);
+					goto(`/payment?id=${currentEvent.id}`);
 				}
 			} else {
-				location.href = '/events/team'
+				goto('/events/team')
 			}
 
 		}
