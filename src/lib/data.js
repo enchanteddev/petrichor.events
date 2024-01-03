@@ -107,7 +107,7 @@ export let cultural = {
             "phone": "96620 97722"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/8b7fb382-8bea-4e16-8e0d-dee17178f786/0_1.webp",
         "date": "28-01-2024",
         "id": "CF01"
       },
@@ -576,7 +576,7 @@ export let cultural = {
             "phone": "9848634455"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
         "date": "Undeclared",
         "id": "CP10"
       },
