@@ -1,11 +1,12 @@
 <script lang="ts">
+	import { goto } from "$app/navigation";
 	import Event from "$lib/components/Event.svelte";
 	export let data;
 	const { user } = data
 	console.log(user)
 	
-
 </script>
+
 <div class="container">
 	<div class="blocks details">
 		<div class="informations" style="height: 0; padding-bottom: 10px;">
@@ -133,5 +134,25 @@
 		text-decoration: underline;
 		text-decoration-color: blue;
 		text-decoration-thickness: 4px;
+	}
+
+	@media (max-width: 800px){
+		*{
+			font-size: small;
+		}
+		.hover-underline{
+			font-size: xx-small;
+		}
+		.accommodation{
+			font-size: xx-small;
+			
+		}
+		.blocks{
+			margin: 0px 5px;
+		}
+		.informations{
+			margin: 0px;
+			margin-bottom: 5px;
+		}
 	}
 </style>
