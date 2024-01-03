@@ -380,7 +380,7 @@ export let cultural = {
             "phone": "94814 76476"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/d6779d15-f197-4a40-adb1-16094c9efb13/0_1.webp",
         "date": "Undeclared",
         "id": "CP06"
       },
@@ -530,7 +530,7 @@ export let cultural = {
             "phone": "9961985768"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
         "date": "Undeclared",
         "id": "CP09"
       },
@@ -782,7 +782,7 @@ export let cultural = {
             "phone": "80897 26141"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/3eff2788-d39d-4b6b-8091-60a399e4766d/0_1.webp",
         "date": "27-01-2024",
         "id": "CP14"
       },
@@ -948,7 +948,7 @@ export let cultural = {
             "phone": "9525727176"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/c32c7fa4-3002-4374-bf92-fbcbcc959a11/0_2.webp",
         "date": "28-01-2024",
         "id": "CP17"
       },
@@ -1093,7 +1093,7 @@ export let technical = {
             "phone": "+917208798365"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
         "date": "14/1/2024 - 15/1/2024",
         "id": "TF00"
       },
@@ -1192,7 +1192,7 @@ export let technical = {
             "phone": "9037630397"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/a73fa382-699c-4053-b4f5-20e0e476a1bc/0_0.webp",
         "date": "28/1/2024",
         "id": "TF02"
       },
@@ -1774,7 +1774,7 @@ export let technical = {
             "phone": "+919188142004"
           }
         ],
-        "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
+        "image": "https://cdn.midjourney.com/0f338538-6fee-42ad-bd12-1701dfbc8e75/0_3.webp",
         "date": "27/1/2024",
         "id": "TF12"
       },
