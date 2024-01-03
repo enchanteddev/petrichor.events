@@ -1924,7 +1924,7 @@ export let workshops =  {
             location: 'Nila Campus',
             topics: [],
             speakers: ['YACC'],
-            id: 'WP05'
+            id: 'WP06'
         },
     ]
 };

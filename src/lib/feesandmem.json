@@ -252,21 +252,49 @@
         {
             "name": "AI Workshop",
             "id": "WP00",
-            "fees": 0,
+            "fees": 1299,
             "minMemeber": 1,
             "maxMemeber": 1
         },
         {
             "name": "Robotics",
             "id": "WP01",
-            "fees": 0,
+            "fees": 1299,
             "minMemeber": 1,
             "maxMemeber": 1
         },
         {
             "name": "Product Management",
             "id": "WP02",
-            "fees": 0,
+            "fees": 1199,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Reinforcement Learning",
+            "id": "WP03",
+            "fees": 1199,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Startup and Entrepreneurship",
+            "id": "WP04",
+            "fees": 1199,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Measurement Principles and Uncertainty Analysis",
+            "id": "WP05",
+            "fees": 1199,
+            "minMemeber": 1,
+            "maxMemeber": 1
+        },
+        {
+            "name": "Competitive Programming",
+            "id": "WP06",
+            "fees": 1299,
             "minMemeber": 1,
             "maxMemeber": 1
         }
