@@ -1400,7 +1400,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/9d076bbe-3010-472c-8d55-81f14606737d/0_0.webp",
-        "date": "16/1/2024 - 31/1/2024",
+        "date": "15/1/2024 - 31/1/2024",
         "id": "TF05"
       },
       {
