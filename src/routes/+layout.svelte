@@ -29,7 +29,7 @@
             <a href="/home#events">Event</a>
             <a href="/workshops">Workshop</a>
             <!-- <a href="/proshows">Proshows</a> -->
-            <a href="/merch">Merch</a>
+            <!-- <a href="/merch">Merch</a> -->
             <a href="/sponsors">Sponsor</a>
             <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
         </nav>
@@ -270,7 +270,7 @@
             font-size: small;
         }
         nav > a{
-            width: 4em;
+            width: 7em;
         }
         footer{
             display: block;
