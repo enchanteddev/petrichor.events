@@ -4,6 +4,11 @@
 	
 	import { isLogin, userEvents, userEmail } from '$lib/stores';
 	import { API, readToken } from '$lib/index';
+	import { goto } from '$app/navigation';
+
+	if($isLogin){
+		goto('/profile')
+	}
 </script>
 
 <div class="form-container">
@@ -46,7 +51,7 @@
 									}
 								});
 						}
-						location.replace('/profile')
+						goto('/profile')
 					} else {
 						alert('Invalid email or password');
 					}
@@ -171,7 +176,7 @@
 			display: none;
 		}
 		#login {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			margin: 2% 0% 2% 5%;
 			border-radius: 10rem;
 			padding: 2% 7%;
