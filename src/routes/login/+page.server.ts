@@ -29,11 +29,8 @@ export const actions = {
         const resp_content = await response.json()
         if (resp_content['ok']){
             console.log(resp_content)
-            isLogin.set(true)
             return { success: true, response: resp_content };
         }
-        isLogin.set(false)
-        userEvents.set([])
 
 
 	},

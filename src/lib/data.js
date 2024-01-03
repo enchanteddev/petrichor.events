@@ -1040,6 +1040,64 @@ export let cultural = {
         "image": "https://cdn.midjourney.com/f4059e2a-69f9-4ea7-bd1a-9079a55baefe/0_0.webp",
         "date": "28-01-2024",
         "id": "CF18"
+      },
+      {
+        "name": "Valorant",
+        "about": "Welcome to the Valorant Clash Championship, where skilled players and passionate fans come together for an epic day of intense competition and camaraderie. This event is designed for Valorant enthusiasts of all levels, from casual gamers to aspiring professionals.",
+        "rulebook": {
+          "structure": [
+            "1) Event is open for anyone.",
+            "2)It's an online event.",
+            "3)The main focus of the event is a Valorant tournament. Teams will compete in a double-elimination format, showcasing their skills in strategic gameplay, precise shooting, and teamwork.",
+            "4)If the participants win in a round then there will be other rounds conducted to them.",
+            "5)Registration form will be opened 2 weeks before, gather your team and the form will be closed three days before event starts.",
+            ""
+          ],
+          "judging": [
+            "1)Teams winning without playing the third game receive 5 points.",
+            "2)Teams winning the first and third games get 4 points",
+            "3)teams winning the second and third games get 3 points.",
+            "4)Teams winning by forfeit also receive 3 points.",
+            "5)Team with max no. of points wins."
+          ],
+          "prizes": [
+            "Total Pool = Rs. 5000",
+            "1st Prize = Rs. 2500",
+            "2nd Prize = Rs. 1500",
+            "3rd Prize = Rs. 1000"
+          ],
+          "rules": [
+            "1) The Petrichor '24 Valorant tournament is a 5v5 gaming competition.",
+            "Tournament Structure: It follows a single-elimination format, meaning teams are eliminated after losing one match.",
+            "2)Map Selection:",
+            "Maps are chosen randomly in the first round.",
+            "3)The team losing the first game makes a map choice for the second.",
+            "4)The team losing the second makes a map choice for the third if needed.",
+            "5)First round: Each team plays against another team in knockout format(spike rush).",
+            "6)Sub-Rounds: A sub-round occurs after the first round to narrow down the teams to 8 for the quarter-finals, determined by organizers. Conducted in \u201cspike rush\u201d mode.",
+            "7)Finals and Semifinals: These rounds use a \"spike rush\" format, and map selection is random."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "SANJAY",
+            "image": "https://drive.google.com/open?id=1w_JBi5uk-WKiwP85xKFWI1LvvXZAd3Px",
+            "phone": "9705063009"
+          },
+          {
+            "name": "JEEVA",
+            "image": "https://drive.google.com/open?id=1E5ZZcLCDJb0rTBTN5KzXLZDIUdSNeeTD",
+            "phone": "9481476476"
+          },
+          {
+            "name": "VIKRANTH",
+            "image": "https://drive.google.com/open?id=1JfTf6JaQlAgIQmfFRoKSsK509snO155f",
+            "phone": "7218175672"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/31d65d6e-dc78-4bf5-b515-13ed033daaa0/0_0.webp",
+        "date": "27/1/2024 - 28/1/2024",
+        "id": "CF19"
       }
     ]
   }
@@ -1474,7 +1532,7 @@ export let technical = {
         "id": "TF07"
       },
       {
-        "name": "Valorant",
+        "name": "WebMosiac",
         "about": "Welcome to the Valorant Clash Championship, where skilled players and passionate fans come together for an epic day of intense competition and camaraderie. This event is designed for Valorant enthusiasts of all levels, from casual gamers to aspiring professionals.",
         "rulebook": {
           "structure": [

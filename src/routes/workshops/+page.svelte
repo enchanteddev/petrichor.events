@@ -10,7 +10,7 @@
     <div class="workshops">
         {#each workshops as ws}
             <div class="workshop">
-                <div class="about">
+                <div class="about" >
                     <div class="banner">
                         <h1>{ws.name}</h1>
                         <hr>
@@ -125,5 +125,21 @@
         background-position: 20%;
         margin: 2em;
         border-radius: 2em;
+    }
+
+    @media (max-width: 1000px){
+        .banner{
+            margin: 0em;
+        }
+        .img{
+            margin: 2em 0.5em;
+        }
+        *{
+            /* font-size: smaller;   // try this also*/ 
+            font-size: small; 
+        }
+        .workshop{
+            height: 50%;
+        }
     }
 </style>

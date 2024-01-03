@@ -349,18 +349,11 @@
 		animation: banneranim 5s linear infinite;
 	}
 	@media (max-width: 600px) {
-		.sidebar {
+		/* .sidebar {
 			height: 20vh;
-			width: max-content;
 			display: flex;
-			overflow: scroll;
-		}
-		.parent {
-			flex-direction: column-reverse;
-			/* width: 100vw; */
-		}
-		.content {
-			height: 70vh;
+			overflow: auto;
+			width: initial;
 		}
 		.card {
 			all: unset;
@@ -369,6 +362,31 @@
 			background-size: cover;
 			position: relative;
 			cursor: pointer;
+		} */
+		.sidebar {
+  height: 15vh;
+  display: flex;
+  overflow-x: auto; /* Use overflow-x for horizontal scroll */
+  width: 100%; /* Set the sidebar width to 100% of its parent */
+}
+
+.card {
+  all: unset;
+  width: 30vw;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  flex: 0 0 auto; /* Prevent cards from stretching to fill available space */
+  margin-right: 10px; /* Add some spacing between cards if needed */
+}
+
+		.parent {
+			flex-direction: column-reverse;
+			/* width: 100vw; */
+		}
+		.content {
+			height: 75vh;
 		}
 		.sbcont {
 			overflow: scroll;
