@@ -2,7 +2,7 @@ export let cultural = {
     "events": [
       {
         "name": "F3: Fireless Food Fiesta",
-        "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers. It encourages teamwork, innovation, and resourcefulness in the kitchen.",
+        "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers.",
         "rulebook": {
           "structure": [],
           "judging": [
@@ -10,7 +10,7 @@ export let cultural = {
             "1. Taste \u2013 25%",
             "2. Presentation \u2013 25%",
             "3. Creativity \u2013 25%",
-            "4. Utilization of available resources \u2013 25 marks"
+            "4. Utilization of available resources \u2013 25%"
           ],
           "prizes": [
             "₹3000",
@@ -18,7 +18,7 @@ export let cultural = {
             "₹1000"
           ],
           "rules": [
-            "Number of participants in each team: maximum 3",
+            "Number of participants in each team : Maximum 3",
             "1. All participants must be registered and should reach the venue 30 minutes prior to the start of the event.",
             "2. Gas stoves and induction cookers are not allowed.",
             "3. Basic cooking equipment, including mixers, vessels, and spoons, will be provided by the organizers.",
@@ -33,7 +33,7 @@ export let cultural = {
             "12. Dishes will be judged based on taste, presentation, creativity, and effective use of the provided ingredients.",
             "13. The decision of the judges is final.",
             "14. Food should be prepared for one serving only.",
-            "15. Authority has the right to change any rules that are present in the rulebook."
+            "15. Organisers have the right to change any rules that are present in the rulebook."
           ]
         },
         "organisers": [
@@ -64,31 +64,30 @@ export let cultural = {
           "structure": [
             "",
             "Number of participants in each team: 2 (including an artist and a model)",
-            "This event is open to everyone"
+            "This event is open to everyone."
           ],
           "judging": [
-            "\u2022\tParticipants will be judged based on originality, concept, painting skills, composition, overall impact and creativity",
-            "\u2022\tAdherence to theme:25%",
-            "\u2022\tOriginality and creativity:25%",
-            "\u2022\tPainting skills:25%",
-            "\u2022\tOverall visual impact:25%"
+            "\u2022\tAdherence to theme - 25%",
+            "\u2022\tOriginality and creativity - 25%",
+            "\u2022\tPainting skills - 25%",
+            "\u2022\tOverall visual impact - 25%"
           ],
           "prizes": [
-            "₹3500",
-            "₹2500",
-            "₹1500"
+            "₹3000",
+            "₹2000",
+            "₹1000"
           ],
           "rules": [
             "\u2022        Participants must finish the painting within 60 minutes.",
             "\u2022        The theme will be announced before the event.",
             "\u2022        Participants are supposed to bring the necessary brushes, sponges and mixing trays.",
-            "\u2022        Paints will be provided",
-            "\u2022        No part of the design may be applied to the models face before the start of the event",
-            "\u2022        Painting must not extend down the neck or onto the models chest, shoulders or back areas",
+            "\u2022        Paints will be provided.",
+            "\u2022        No part of the design may be applied to the models face before the start of the event.",
+            "\u2022        Painting must not extend down the neck or onto the models chest, shoulders or back areas.",
             "\u2022        Hair may be clipped or pinned back to fully expose the design area.",
             "\u2022        Participants should respect the time limit and not disrupt other contestants.",
             "\u2022        Any inappropriate or offensive designs will result in disqualification.",
-            "\u2022        Decision made by the judges are final.Requests to reconsider the final decision would not be entertained"
+            "\u2022        Decision made by the judges are final.Requests to reconsider the final decision would not be entertained."
           ]
         },
         "organisers": [
@@ -109,7 +108,7 @@ export let cultural = {
           }
         ],
         "image": "https://petrichor.events/media/tech_event_pic/NFT.jpg",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF01"
       },
       {
@@ -121,15 +120,15 @@ export let cultural = {
             "Final Round: Live mono acting performance."
           ],
           "judging": [
-            "- Acting Skills",
-            "- Expression and Emotion",
-            "- Engagement with the Audience",
-            "- Overall Presentation"
+            "1. Acting Skills -30%",
+            "2. Expression and Emotion - 30%",
+            "3. Engagement with the Audience - 20%",
+            "4. Overall Presentation - 20%"
           ],
           "prizes": [
-            "₹3000",
+            "₹2500",
             "₹1500",
-            "₹500"
+            "₹1000"
           ],
           "rules": [
             "1. Use of fire or sharp objects that will damage the stage is prohibited.",
@@ -162,19 +161,20 @@ export let cultural = {
       },
       {
         "name": "Voicestra",
-        "about": "Step into the spotlight and unleash the power of your melody at our solo singing competition! Elevate your voice, captivate the audience, and let the world be spellbound by the symphony of talent. Join us on a musical journey where every note resonates with passion, and where solo performers shine in a dazzling display of vocal prowess. It's not just a competition; it's your moment to enchant and leave the world breathless with the magic of your song",
+        "about": "Join our solo singing competition, welcoming voices from East and West, spanning every genre! Elevate your voice, captivate the audience, and let the world be spellbound by your talent. It's your moment to enchant and leave everyone breathless, no matter the genre or cultural influence every style is welcome",
         "rulebook": {
           "structure": [
-            "1. Round 1(Online):",
-            "a. Participants will have to shoot a video and after uploading, submit the same through the google form provided . The deadline for this is _____.",
+            "Round 1(Online) - Deadline : 20-01-2024 ",
+            "a. Participants will have to shoot a video and after uploading, submit the same through the google form provided.",
             "b. The video must have clear sound and should be a recording of a live performance with a clear face in one take.",
             "c. No editing and mixing is allowed in the audiovisual.",
             "d. Participants will have to give their introduction by saying, \u201cMy name is XYZ and this is my submission for the Petrichor \u201824 Solo singing Competition\u201d.",
+            "e. Only one submission per participant is allowed.",
             "",
             "",
-            "2. Round 2(Offline):",
+            "Round 2(Offline):",
             "a. The top entries will be shortlisted for the final round.",
-            "b. The Participant(s) should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
+            "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
             "c. The participant can use any instrument, instrumental, or karaoke music with themselves to perform if they want (not compulsory). If any karaoke is being used, the audio file in mp3 format of the karaoke must be given to the organisers 2 days prior to the event",
             "d. Participants are expected to memorise the song's lyrics and are not allowed to read the lyrics from a paper or any electronic device.",
             "e. In case of a tie, a \u201csing-off\u201d will be held (an appropriate time will be given to prepare for the same).",
@@ -182,11 +182,11 @@ export let cultural = {
             "g.In case of any conflict, the judge's decision will be final and binding under all circumstances."
           ],
           "judging": [
-            "1. Stage presence",
-            "2. Melody",
-            "3. Rhythm sense",
-            "4. Creativity and originality",
-            "5. Overall impact"
+            "1. Song Selection - 30 %",
+            "2. Melody - 20 %",
+            "3. Rhythm sense - 20 %",
+            "4. Creativity and originality - 20 %",
+            "5. Overall impact - 10 %"
           ],
           "prizes": [
             "₹3000",
@@ -226,9 +226,9 @@ export let cultural = {
         "about": "Group fashion event",
         "rulebook": {
           "structure": [
-            "1) formation of teams",
-            "2) deciding costumes and choreography and audio track",
-            "3) performance"
+            "1) Formation of teams",
+            "2) Deciding costumes and choreography and audio track",
+            "3) Performance"
           ],
           "judging": [
             "1) relevance to theme (metamorphosis)",
@@ -274,9 +274,9 @@ export let cultural = {
         "rulebook": {
           "structure": [],
           "judging": [
-            "\u25cf\tCreativity and innovation.",
-            "\u25cf\tEffectiveness in utilization of waste materials.",
-            "\u25cf\tPresentation."
+            "\u25cf\tCreativity and innovation - 50%",
+            "\u25cf\tEffectiveness in utilization of waste materials - 30%",
+            "\u25cf\tPresentation - 20%"
           ],
           "prizes": [
             "First: ₹2500",
@@ -285,22 +285,22 @@ export let cultural = {
           ],
           "rules": [
             "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
-            "\u25cf        Materials like ice cream cups, sticks, plastic bottles, soft drink cans, and used pens will be provided and it's mandatory to use them in the craft.",
+            "\u25cf        Materials like ice cream cups, sticks, plastic bottles, soft drink cans, and used pens will be provided and it is mandatory to use them in the craft.",
             "\u25cf        Participants can bring necessary items like aluminium wires, moulding clay and stationery items like scissors,glue,paints etc.",
             "Participants can also bring waste materials if they wish to. Waste material could be anything like tetra packs, bottles, newspapers, CDs, jute material, or any second-hand items that otherwise would be thrown away.",
             "\u25cf        No ready or semi-finished model or matter would be accepted by participants in the competition.",
-            "\u25cf        No mobile or Internet means would be allowed to be used at the time of the Competition.",
-            "\u25cf        The decision of the judges will be considered final and abiding."
+            "\u25cf        No mobile or Internet means would be allowed to be used at the time of the competition.",
+            "\u25cf        The decision of the judges will be considered final and bniding."
           ]
         },
         "organisers": [
           {
-            "name": "Anusha dadam",
+            "name": "Anusha Dadam",
             "image": "https://drive.google.com/open?id=13GtjjcQzslkgt9XluPEcmnRBUlVWa72X",
             "phone": "93"
           },
           {
-            "name": "Mausumi  bhuyan",
+            "name": "Mausumi  Bhuyan",
             "image": "https://drive.google.com/open?id=1DipIeTxxWY-qYvDR7WF1_KEtSEJMISSj",
             "phone": "925"
           }
@@ -311,7 +311,7 @@ export let cultural = {
       },
       {
         "name": "Dynamic Duet",
-        "about": "An Event where two individuals collaborate to perform a musical performance ",
+        "about": "Join us for the Duet Competition, where you and your teammate can weave musical magic together. Bring any genre to life, from classic to contemporary. It's not just a competition, it's a chance to create something beautiful and unforgettable as a team. ",
         "rulebook": {
           "structure": [
             "1.This event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor.",
@@ -320,11 +320,11 @@ export let cultural = {
             "4. Selected Contestants will receive a mail and will advance to the Second round(The Grand Finale)."
           ],
           "judging": [
-            "1 - Song selection",
-            "2 - Arrangement",
-            "3 - Originality",
-            "4 - Creativity",
-            "5 - Synchronisation"
+            "1. Song selection (Coherence and Variety in Set List) - 10 %",
+            "2. Arrangement - 15 %",
+            "3. Originality/Creativity - 20 %",
+            "4. Technical Brialliance/Individual Skills - 30 %",
+            "5. Synchronisation - 25 %"
           ],
           "prizes": [
             "₹5000",
@@ -333,35 +333,34 @@ export let cultural = {
           ],
           "rules": [
             "General Rules :",
-            "1 - Each Duo must contain at least one instrumentalist.",
-            "2 - A person can play for only one single Duo.",
-            "3 - Extra Points will be awarded for Original Compositions.",
-            "4 -  All the Instruments should be brought by the Pairs itself, Only the drum kit would",
-            "be Provided.",
-            "5 - Exceeding the time limit will lead to negative points.",
-            "6 - Obscenity on stage is strictly prohibited.",
-            "7 -Pre-recorded sounds are not allowed.",
-            "8 - Judge\u2019s decisions are final and binding.",
-            "9 -  Song :- The event is not genre - Specific.",
+            "1. Each duo must contain at least one instrumentalist.",
+            "2. A person can play for only one single Duo.",
+            "3. Extra points will be awarded for Original Compositions.",
+            "4. All the Instruments should be brought by the Pairs itself, Only the drum kit would",
+            "be provided.",
+            "5. Exceeding the time limit will lead to negative points.",
+            "6. Obscenity on stage is strictly prohibited.",
+            "7. Pre-recorded sounds are not allowed.",
+            "8. Judge\u2019s decisions are final and binding.",
             "",
             "Round 1 (Online) :",
-            "1 - All the members of the pair should be clearly visible in the uploaded Video.",
-            "2 - Usage of Pre-Recorded tracks is strictly prohibited.",
-            "3 - Audio in the uploaded file should be clear for the judges to be able to judge.",
-            "5 - Software like Audacity and Reaper can be used for Editing your videos.",
+            "1. All the members of the pair should be clearly visible in the uploaded Video.",
+            "2. Usage of Pre-Recorded tracks is strictly prohibited.",
+            "3. Audio in the uploaded file should be clear for the judges to be able to judge.",
+            "4. Software like Audacity and Reaper can be used for Editing your videos.",
             "",
             "Round 2 (Offline) :",
-            "1 - The Time limit for the performance shouldn't exceed a maximum time of 10",
-            "(Minutes Including Setup and Soundchecks.)",
-            "2 - No Pre-Recorded tracks would be allowed, Usage of any Pre-Recorded tracks",
+            "1. The Time limit for the performance shouldn't exceed a maximum time of 10 Minutes",
+            "(Including Setup and Soundchecks.)",
+            "2. No Pre-Recorded tracks would be allowed, Usage of any Pre-Recorded tracks",
             "will face immediate disqualification",
-            "3 - Contestants should Bring their own Instruments for their performances (Only",
+            "3. Contestants should bring their own instruments for their performances (Only",
             "Drum Kit Would be Provided)",
-            "4 - Extra points will be awarded for original compositions",
-            "5 - All Music shall be played live on stage and live looping on Stage is not allowed.",
-            "6 - The pair Performing offline should be the same as the ones from the Uploaded",
-            "Video.",
-            "7 - Judges' decisions will be final and binding and are not open to review."
+            "4. Extra points will be awarded for original compositions",
+            "5. live looping on Stage is not allowed.",
+            "6. The pair performing offline should be the same as the ones from the uploaded",
+            "video.",
+            "7. Judges' decisions will be final and binding and are not open to review."
           ]
         },
         "organisers": [
@@ -391,10 +390,10 @@ export let cultural = {
         "rulebook": {
           "structure": [],
           "judging": [
-            "1. Choreography and Creativity : 30",
-            "2. Synchronization and Expressions : 25",
-            "3. Energy and Stage Presence : 25",
-            "4. Costume and Appearance : 20"
+            "1. Choreography and Creativity : 30%",
+            "2. Synchronization and Expressions : 25%",
+            "3. Energy and Stage Presence : 25%",
+            "4. Costume and Appearance : 20%"
           ],
           "prizes": [
             "₹10000",
@@ -405,7 +404,7 @@ export let cultural = {
             "1. Any dance style is allowed.",
             "2. Each group must consist of a minimum of 3 participants and a maximum of 15 participants.",
             "3. Each group is allotted a maximum of 15 minutes for their performance including stage",
-            "Prep.",
+            "preperation.",
             "4. Performances that exceed the time limit will face point deductions.",
             "5. Songs for your performance must be submitted atleast 2 days before the start of the event.",
             "6. The participants should avoid using indecent dress, song and gestures.",
@@ -493,12 +492,12 @@ export let cultural = {
         "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
-            "It will be an online event whose submission will be started 1 week ago the Petrichor dates and will go on till the fest gets over."
+            "This event will be conducted online."
           ],
           "judging": [
-            "1.Creativity - 35",
-            "2.Originality - 35",
-            "3.Relevance to prompt - 30"
+            "1.Creativity - 35%",
+            "2.Originality - 35%",
+            "3.Relevance to prompt - 30%"
           ],
           "prizes": [
             "₹2000",
@@ -513,7 +512,7 @@ export let cultural = {
             "5.The entry must be the original work of the participant, and must not have been published elsewhere.",
             "6.All the entries must be sent in a particular format (Name of Story_Name of participant).",
             "7.Illustrations such as graphs and sketches are not allowed.",
-            "8.The stories submitted before the deadline (date) will only be considered for results.",
+            "8.Only the stories submitted before the deadline (date) will be considered for judging.",
             "9.Plagiarism and use of explicit content will lead to immediate disqualification.",
             "10.The decisions made by the judges are final. Requests to reconsider",
             "the final decision will not be entertained."
@@ -551,7 +550,7 @@ export let cultural = {
             "2. Teams winning both \u2018team deathmatch\u2019 and \u2018domination\u2019 get 4 points.",
             "3. Teams winning \u2018hardpoint\u2019 and \u2018domination\u2019 get 3 points.",
             "4. Teams winning by forfeit from another team receive 3 points.",
-            "5. Team with max no. of points wins."
+            "5. Team with maximum no. of points wins."
           ],
           "prizes": [
             "₹2500",
@@ -586,12 +585,12 @@ export let cultural = {
         "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
-            "It will be an online event whose submission will start 1 week before the Petrichor dates and will go on till the fest ends."
+            "This event will be conducted online."
           ],
           "judging": [
-            "1.Creativity - 35",
-            "2.Originality - 35",
-            "3.Relevance to prompt - 30"
+            "1.Creativity - 35%",
+            "2.Originality - 35%",
+            "3.Relevance to prompt - 30%"
           ],
           "prizes": [
             "₹2000",
@@ -636,14 +635,14 @@ export let cultural = {
         "rulebook": {
           "structure": [],
           "judging": [
-            "1. Spontaneity",
-            "2. Ease in performing various styles",
-            "3. Being in sync with the music"
+            "1.  Ease in performing various styles - 30%",
+            "2. Spontaneity - 40%",
+            "3. Being in sync with the music - 30%"
           ],
           "prizes": [
-            "First Prize - \u20b9₹3500",
-            "Second Prize - \u20b9₹2500",
-            "500 ; Third Prize - \u20b9₹1500"
+            "₹3500",
+            "₹2500",
+            "₹1500"
           ],
           "rules": [
             "1. All participants must report at the venue at the given time and must be",
@@ -662,9 +661,7 @@ export let cultural = {
             "8. Judges will choose 1 participant from each battle to advance to the next round, until the battle",
             "progresses to 2 finalists.",
             "9. In the final battle each of the 2 participants will have two rounds of 1",
-            "minute each to impress the judges.",
-            "10. In case of low participation (less than 7 participants ) the organisers",
-            "have the authority to not conduct the event"
+            "minute each to impress the judges."
           ]
         },
         "organisers": [
@@ -693,13 +690,13 @@ export let cultural = {
         "about": "It's an online competition and participants are needed to submit their digital artworks according to the provided theme.",
         "rulebook": {
           "structure": [
-            "1. It is an online event whose submission will start 1 week before the Petrichor dates and will go on till the fest ends."
+            "1. This event will be conducted online and the theme will be revealed before the competition starts."
           ],
           "judging": [
-            "1. Creativity - 20",
-            "2. Adherence to the theme - 30",
-            "3. Color and visual - 20",
-            "4. Presentation - 30"
+            "1. Creativity - 20%",
+            "2. Adherence to the theme - 30%",
+            "3. Color and visual - 20%",
+            "4. Presentation - 30%"
           ],
           "prizes": [
             "₹1500",
@@ -708,18 +705,17 @@ export let cultural = {
           ],
           "rules": [
             "1. Each participant is allowed to submit only one entry.",
-            "2. It is an online event and the theme will be revealed before the competition starts.",
-            "3. Dimensions of the canvas should be 1000 px X 1000 px.",
-            "4. Any software can be used for creating the artwork but they should mention the software used",
-            "5. Submissions must be the original work of the participant, plagiarism is strictly prohibited.",
-            "6. Participants should submit two images / screen grabs of the artwork in between stages, in addition to the final artwork.",
-            "7. The editable form or link of the artwork must be submitted.",
-            "8. Submitted artwork should also contain the participant's name or signature as a means of identification.",
-            "9. A one line caption to express the artwork is encouraged.",
-            "10. The submitted artwork should be in high resolution image format (JPEG or PNG).",
-            "11. Artworks must not include watermarks from external sources, or display copyrighted content that does not belong to the participant.",
-            "12. Participants should ensure that their submissions do not contain objectionable content.",
-            "13. The decisions of the judges will be final."
+            "2. Dimensions of the canvas should be 1000 px X 1000 px.",
+            "3. Any software can be used for creating the artwork but they should mention the software used",
+            "4. Submissions must be the original work of the participant, plagiarism is strictly prohibited.",
+            "5. Participants should submit two images / screen grabs of the artwork in between stages, in addition to the final artwork.",
+            "6. The editable form or link of the artwork must be submitted.",
+            "7. Submitted artwork should also contain the participant's name or signature as a means of identification.",
+            "8. A one line caption to express the artwork is encouraged.",
+            "9. The submitted artwork should be in high resolution image format (JPEG or PNG).",
+            "10. Artworks must not include watermarks from external sources, or display copyrighted content that does not belong to the participant.",
+            "11. Participants should ensure that their submissions do not contain objectionable content.",
+            "12. The decisions of the judges will be final and binding."
           ]
         },
         "organisers": [
@@ -740,7 +736,7 @@ export let cultural = {
       },
       {
         "name": "Groove Mania",
-        "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style",
+        "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style.",
         "rulebook": {
           "structure": [],
           "judging": [
@@ -792,7 +788,7 @@ export let cultural = {
       },
       {
         "name": "Click n' Roll: A Showcase of Frames",
-        "about": "Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
         "rulebook": {
           "structure": [
             "1. Participants can compete individually or form teams of up to two members.",
@@ -823,7 +819,7 @@ export let cultural = {
           ],
           "rules": [
             "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
-            "2.  Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
+            "2. Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
             "3. Participants are responsible for obtaining any necessary permissions for the use of copyrighted material, including music, images, and any other content in their submissions.",
             "4. The organizers reserve the right to disqualify any participant or entry that violates these rules.",
             "5. By participating in this Reel Making Competition, you agree to abide by these rules and guidelines and participants\u2019 entries can be used for promotion of Petrichor."
@@ -892,42 +888,43 @@ export let cultural = {
       },
       {
         "name": "Bandwagon",
-        "about": "This competition is a public event designed to identify and award outstanding musical ensembles, instrumentalists, soloists and composers. It would be a great platform for bands to break into the music scene.\nThis event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor. \nIn the first round of online submissions the Teams are required to post an Audiovisual recording of their performance of their own choice and upload it to the Google Form provided in the Petrichor Website. \nThe video should be of at least 3 minutes and shouldn't exceed a maximum time limit of 5 minutes. This will be used for shortlisting the Teams into the Second Round. \nSelected Contestants will receive a mail and will advance to the Second round(The Grand Finale).",
+        "about": "BandWars is a captivating showcase designed to identify and award outstanding musical ensembles, instrumentalists, soloists, and composers. It serves as an excellent platform for bands to break into the music scene. The competition will consist of two rounds, starting with an online submissions round for screening. The selected entries will then have the opportunity to perform live on stage in Petrichor.",
         "rulebook": {
           "structure": [
             "Round 1 (Online) :",
-            "1. All the members of the band should be clearly visible in the uploaded Video.",
-            "2. Usage of Pre Recorded tracks is strictly prohibited.",
-            "3. The uploaded video Should be within a time limit of 3 to 5 mins.",
-            "4. Audio in the uploaded file should be clear for the judges to be able to judge.",
+            "1. All the members of the band should be clearly visible in the uploaded video.",
+            "2. Usage of pre-recorded tracks is strictly prohibited.",
+            "3. The uploaded video should be within a time limit of 3 to 5 minutes.",
+            "4. Audio in the uploaded file should be clear for the judges to judge.",
             "5. Softwares like Audacity and Reaper can be used for editing your videos.",
             "",
             "Round 2 (Offline) :",
-            "1. The Time limit for the performance shouldn't exceed a maximum time of 15 Minutes including Setup and Soundchecks.",
-            "2. No Pre-Recorded tracks would be allowed, usage of any Pre-Recorded tracks will face immediate disqualification.",
-            "3. Contestants should bring their own Instruments for their performances.(Only Drum Kit would be provided)",
+            "1. The time limit for the performance shouldn't exceed a maximum time of 15 minutes including setup and soundchecks.",
+            "2. No pre-recorded tracks would be allowed, usage of any pre-recorded tracks will face immediate disqualification.",
+            "3. Contestants should bring their own instruments for their performances.(Only Drumkit would be provided)",
             "4. Extra points will be awarded for original compositions.",
-            "5. All Music shall be played live on stage and live looping on stage is not allowed.",
-            "6. The Members of the band performing offline should be the same as the ones from the uploaded video.",
+            "5. All music shall be played live on stage and live looping on stage is not allowed.",
+            "6. The members of the band performing offline should be the same as the ones from the uploaded video.",
             "7. Judges' decisions will be final and binding and are not open to review."
           ],
           "judging": [
-            "1. Stage Presence",
-            "2. Synchronization",
-            "3. Originality and Creativity",
-            "4. Vocals and Harmony",
-            "5. Music Arrangement"
+            "1. Song Selection - 15 %",
+            "2. Synchronization - 30 %",
+            "3. Originality and Creativity - 20 %",
+            "4. Technical Brilliance / Individual Skills - 30 %",
+            "5. Overall Impact / Stage Presence - 5%"
           ],
           "prizes": [
             "₹10000",
-            "₹9000"
+            "₹6000",
+            "₹3000"
           ],
           "rules": [
-            "1. Band Size should only be between 4 and 15 members",
+            "1. Band size should only be between 4 and 15 members",
             "2. A person can play for only one single band.",
-            "3. Extra Points will be awarded for Original Compositions.",
-            "4. All the Instruments should be brought by the members of the band itself(Only the drum kit would be Provided).",
-            "5. The band should have at least one Instrumentalist present.",
+            "3. Extra points will be awarded for original compositions.",
+            "4. All the instruments should be brought by the members of the band itself(Only the drum kit would be Provided).",
+            "5. The band should have at least one instrumentalist present.",
             "6. Acapella is not allowed.",
             "7. Exceeding the time limit will lead to negative points.",
             "8. Obscenity on stage is strictly prohibited.",
@@ -1081,7 +1078,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/8504755d-8310-4e6b-be56-95ef5684d560/0_0.webp",
-        "date": "6/1/2024",
+        "date": "13/1/2024",
         "id": "TF01"
       },
       {
@@ -1216,7 +1213,9 @@ export let technical = {
             "3.1. Fly through hoops at various heights.",
             "3.2. Hoop Diameter: 70cm",
             "4. Drone Lights: Lights must be attached to the drone's arms.",
-            "5. Receiver Range: Minimum range of 500 meters."
+            "5. Receiver Range: Minimum range of 500 meters.",
+            "6. Team size: 4 - 6." 
+              
           ]
         },
         "organisers": [
@@ -1294,7 +1293,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/9d076bbe-3010-472c-8d55-81f14606737d/0_0.webp",
-        "date": "4/1/2024 - 31/1/2024",
+        "date": "16/1/2024 - 31/1/2024",
         "id": "TF05"
       },
       {
@@ -1784,7 +1783,7 @@ export let workshops =  {
             prereq: ['Basic Programming Skills'],
             fees: 1280,
             date: '27 & 28 Jan',
-            regdate: '29 Jan',
+            regdate: '26 Jan',
             image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
             location: 'Nila Campus',
             topics: ['AI Algorithms'],
@@ -1797,7 +1796,7 @@ export let workshops =  {
             prereq: ['Basic Programming Skills'],
             fees: 1280,
             date: '27 & 28 Jan',
-            regdate: '29 Jan',
+            regdate: '26 Jan',
             image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
             location: 'Nila Campus',
             topics: ['Mechanics', 'Robotics'],
@@ -1810,12 +1809,64 @@ export let workshops =  {
             prereq: ['None'],
             fees: 1280,
             date: '27 & 28 Jan',
-            regdate: '29 Jan',
+            regdate: '26 Jan',
             image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
             location: 'Nila Campus',
             topics: [ 'Product Design', 'Design Thinking', 'Product-Market Pitch'],
             speakers: [ 'Keerthi Reddy', 'Dr. Jacob'],
             id: 'WP02'
+        },
+        {
+            name: 'Reinforcement Learning',
+            about: 'Unlock the power of machine learning through practical applications and hands-on exploration in our comprehensive Reinforcement Learning Workshop.',
+            prereq: [ 'Basic Programming'],
+            fees: 1280,
+            date: '27 & 28 Jan',
+            regdate: '26 Jan',
+            image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
+            location: 'Nila Campus',
+            topics: [],
+            speakers: [  'Dr. Shaikshavali Chitraganti'],
+            id: 'WP03'
+        },
+        {
+            name: 'Startup and Entrepreneurship',
+            about: 'Empowering aspiring innovators and visionaries to navigate the entrepreneurial landscape through our immersive Startup and Entrepreneurship workshop.',
+            prereq: [ 'None'],
+            fees: 1280,
+            date: '27 & 28 Jan',
+            regdate: '26 Jan',
+            image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
+            location: 'Nila Campus',
+            topics: [],
+            speakers: ['Finance Club'],
+            id: 'WP04'
+        },
+        {
+            name: 'Measurement Principles and Uncertainty Analysis',
+            about: 'Join us for an immersive workshop exploring Measurement Principles and Uncertainty Analysis, where precision meets insight in every measurement.',
+            prereq: [ 'None'],
+            fees: 1280,
+            date: '27 & 28 Jan',
+            regdate: '26 Jan',
+            image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
+            location: 'Nila Campus',
+            topics: [],
+            speakers: ['Dr. Pramod Kuntikana', 'Dr. Anand T N C'],
+            id: 'WP05'
+        },
+        {
+            name: 'Competitive Programming',
+            about: 'Join us for a high-energy Competitive Programming workshop, where you will hone your algorithmic skills and tackle real-world coding challenges head-on!',
+            prereq: [ 'Basic Programming'],
+            fees: 1280,
+            date: '27 & 28 Jan',
+            regdate: '26 Jan',
+            image: 'https://petrichor.events/static/media/fluid.840dcea7.jpg',
+            location: 'Nila Campus',
+            topics: [],
+            speakers: ['YACC'],
+            id: 'WP05'
         },
     ]
 };
