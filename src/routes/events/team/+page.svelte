@@ -12,8 +12,8 @@
 	let emails = Array(max);
 	POST(API.event, {id: $registerData.eventID}).then(e => e.json()).then(e => {
 		eventData = e;		
-		min = eventData.minMemeber
-		max = eventData.maxMemeber
+		min = eventData.minMember
+		max = eventData.maxMember
 		fees = eventData.fees
 		console.log(eventData, max)
 		emails = Array(max);
@@ -52,7 +52,7 @@
 				failedToast = true;
 			}
 		} else {
-			goto('/payment')
+			goto(`/payment?id=${$registerData.eventID}`)
 		}
 	}
 </script>

@@ -1,14 +1,16 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
-	import { API } from '$lib';
+	import { API, readToken } from '$lib';
+	import { registerData } from '$lib/stores';
+	import { goto } from '$app/navigation';
 
 	export let data: any;
 
 	let transactionID: string;
 	let CAcode: string;
 	let imgurl: string;
-	let amount = data.fees;
+	let amount = data.fee;
 	let accountNumber = '007010100273206';
 	let ifscCode = 'UTIB0000007';
 	let success = false;
@@ -90,18 +92,26 @@
 	const submit = () => {
 		CAcode = success ? CAcode : '';
 		if (transactionID) {
+			console.log($registerData.eventID)
+			let w=$registerData.eventID
+			console.log(w)
 			fetch(API.events_apply_paid, {
 				method: 'POST',
 				body: JSON.stringify({
 					transactionID,
-					CAcode
+					CAcode,
+					"token": readToken(),
+					"eventId": w ,
+					"participants": $registerData.registeredEmails
 				}),
 				headers: {
 					'Content-type': 'application/json; charset=UTF-8'
 				}
 			})
 				.then((response) => response.json())
-				.then((data) => console.log(data));
+				.then((data) => {console.log(data)
+					// goto('/');
+				});
 		} else {
 			let warning = /** @type {HTMLInputElement} */ document.getElementById('warning');
 			if (warning != null) {
