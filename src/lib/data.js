@@ -1137,9 +1137,9 @@ export let technical = {
             "phone": "+917298991001"
           },
           {
-            "name": "Kaushik Rawat",
-            "image": "https://drive.google.com/open?id=1VrbG6yb-edtO0DwB4l7uqQlFHW57yfPl",
-            "phone": "+917208798365"
+            "name": "Kshitij Ghodake",
+            "image": Kshitij,
+            "phone": "+917298991001"
           }
         ],
         "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
