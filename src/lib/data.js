@@ -1,3 +1,52 @@
+import Harika from '$lib/assets/Organisers/Satya Harika.jpg'
+import Abhirami from '$lib/assets/Organisers/ABHIRAMI R IYER.jpg'
+import Amal from '$lib/assets/Organisers/Amal.png'
+import Ananya from '$lib/assets/Organisers/Ananya.jpg'
+import Anju from '$lib/assets/Organisers/ANJU SASIKUMAR.jpg'
+import Anup from '$lib/assets/Organisers/Anup.jpeg'
+import Anusha from '$lib/assets/Organisers/Anusha Dadam.jpg'
+import Ashwin from '$lib/assets/Organisers/Ashwin.jpg'
+import Ashwini from '$lib/assets/Organisers/Ashwini.jpg'
+import Ayush_Kumar  from '$lib/assets/Organisers/AYUSH KUMAR.jpg'
+import Ayush_Singh from '$lib/assets/Organisers/Ayush Singh.jpg'
+import Bhogaraju from '$lib/assets/Organisers/BHOGARAJU SHANMUKHA SRI KRISHNA.jpg'
+import Chirag from '$lib/assets/Organisers/CHIRAG VARSHNEY.jpg'
+import Rishitha from '$lib/assets/Organisers/DADI RISHITHA.jpg'
+import Dhruvadeep from '$lib/assets/Organisers/Dhruvadeep Malakar.jpg'
+import Divesh from '$lib/assets/Organisers/DIVESH MISHRA.jpg'
+import Manikantan from '$lib/assets/Organisers/Manikantan.jpg'
+import Gouthami from '$lib/assets/Organisers/gouthami.jpg'
+import JATIN from '$lib/assets/Organisers/jatin.jpg'
+import Karthick from '$lib/assets/Organisers/Karthick.jpg'
+import Karthikeya from '$lib/assets/Organisers/Karthikey.jpg'
+import KEVIN from '$lib/assets/Organisers/Kevin.jpg'
+import Kiran from '$lib/assets/Organisers/KIRAN M V.png'
+import Kshitij from '$lib/assets/Organisers/KSHITIJ MAHENDRA GHODAKE.jpg'
+import Mausumi from '$lib/assets/Organisers/Mausami.jpg'
+import Muhamed from '$lib/assets/Organisers/MUHAMED RIZWAN MEHABOOB.jpg'
+import Murali from '$lib/assets/Organisers/MURALI M KARTHICK.jpg'
+import Sanjay from '$lib/assets/Organisers/P Sanjay.jpg'
+import Parthiv from '$lib/assets/Organisers/PARTHIV P.jpg'
+import Parvat from '$lib/assets/Organisers/Parvat Khattak.jpg'
+import Pasupuleti from '$lib/assets/Organisers/PASUPULETI SANJAY.jpg'
+import Pushti from '$lib/assets/Organisers/PUSHTI AMIT VASOYA.jpg'
+import Praneeth from '$lib/assets/Organisers/Sai Praneeth.jpg'
+import Samyuktha from '$lib/assets/Organisers/Samyukta.jpg'
+import Shivansh from '$lib/assets/Organisers/Shivansh Chaudhary.jpeg'
+import Shreya from '$lib/assets/Organisers/Shreya.jpg'
+import Souvik from '$lib/assets/Organisers/souvik mallick.jpg'
+import Sreenath from '$lib/assets/Organisers/sreenath.jpg'
+import Shubhan from '$lib/assets/Organisers/subhan mehrotra.jpg'
+import VIKRANTH from '$lib/assets/Organisers/vikrant.jpg'
+import Vishwaa from '$lib/assets/Organisers/Vishwa.jpeg'
+import Abhijith from '$lib/assets/Organisers/Abhijith.jpg'
+import Pavitra from '$lib/assets/Organisers/Pavitra.jpg'
+import Prisha from '$lib/assets/Organisers/Prisha.jpg'
+import Nalan from '$lib/assets/Organisers/Nalan.jpg'
+import Siva from '$lib/assets/Organisers/Siva.jpg'
+import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
+
+
 export let cultural = {
     "events": [
       {
@@ -39,17 +88,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Satya Harika",
-            "image": "https://drive.google.com/open?id=1TOnDBfhppTXCgpLLLhhNWIT8gPglFrPf",
+            "image": Harika,
             "phone": "7330824852"
           },
           {
             "name": "Sai Praneeth",
-            "image": "https://drive.google.com/open?id=19nmI3-9cnAzViSvnwS9d5d0vJ5QHpPXQ",
+            "image": Praneeth,
             "phone": "8074241096"
           },
           {
             "name": "Prisha Italiya",
-            "image": "https://drive.google.com/open?id=1FOczhoCpUtKmkDtN7Z1aydhJrzLgE6zH",
+            "image": Prisha,
             "phone": "9662097722"
           }
         ],
@@ -93,17 +142,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Parvat Khattak",
-            "image": "https://drive.google.com/open?id=17PqIA1IUSsPyV0XKlycjBb2K8NnyTchT",
+            "image": Parvat,
             "phone": "7404016579"
           },
           {
             "name": "Abhirami R Iyer",
-            "image": "https://drive.google.com/open?id=1AjI7Avhb5x5nMEpwrklUPZ-wAyyTUkQf",
+            "image": Abhirami,
             "phone": "99619 85768"
           },
           {
             "name": "Prisha Italiya",
-            "image": "https://drive.google.com/open?id=1ijraOwOuqsB7OfNxMIyBxSXObqHAYpn6",
+            "image": Prisha,
             "phone": "96620 97722"
           }
         ],
@@ -141,17 +190,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Parvat Khattak",
-            "image": "https://drive.google.com/open?id=1WjmzNbiat_8Z0NLgPPe9_H3lETrlR2qN",
+            "image": Parvat,
             "phone": "7404016579"
           },
           {
             "name": "Gouthami",
-            "image": "https://drive.google.com/open?id=11SZeb2T2XELshG-_ZjvguNFAlZzEy38q",
+            "image": Gouthami,
             "phone": "89856 57465"
           },
           {
             "name": "M Sreenath Karthick",
-            "image": "https://drive.google.com/open?id=1GDBFbjBRJbsEbpZX-iQHJqwZtAJBQGmK",
+            "image": Sreenath,
             "phone": "98958 19812"
           }
         ],
@@ -208,12 +257,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Ananya Upadhyay",
-            "image": "https://drive.google.com/open?id=1vna3GZy627SUTMCIKX7X1xun5r_5CbBZ",
+            "image": Ananya,
             "phone": "9304560629"
           },
           {
             "name": "Dhruvadeep Malakar",
-            "image": "https://drive.google.com/open?id=1afGCa4tBACNWSAc0KX1VpR8OfVWP9sOI",
+            "image": Dhruvadeep,
             "phone": "6001301742"
           }
         ],
@@ -250,17 +299,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Samyuktha",
-            "image": "https://drive.google.com/open?id=1TCfSm0bj82Vla8oS0zR6cXcwlMJmBbkW",
+            "image": Samyuktha,
             "phone": "6238570963"
           },
           {
             "name": "Mausumi",
-            "image": "https://drive.google.com/open?id=1ldiWVbmJqgsWJKhkyykyw3L-7WPAi_YR",
+            "image": Mausumi,
             "phone": "7749902629"
           },
           {
             "name": "Ashwini",
-            "image": "https://drive.google.com/open?id=1W6t2lv2581lf7Lor8yN-QnRdrAFMIF1M",
+            "image": Ashwini,
             "phone": "9345689884"
           }
         ],
@@ -296,12 +345,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Anusha Dadam",
-            "image": "https://drive.google.com/open?id=13GtjjcQzslkgt9XluPEcmnRBUlVWa72X",
+            "image": Anusha,
             "phone": "93"
           },
           {
             "name": "Mausumi  Bhuyan",
-            "image": "https://drive.google.com/open?id=1DipIeTxxWY-qYvDR7WF1_KEtSEJMISSj",
+            "image": Mausumi,
             "phone": "925"
           }
         ],
@@ -366,17 +415,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Samyuktha",
-            "image": "https://drive.google.com/open?id=1n456E06R4qk_hOeJimy5GBXeRB5yd94o",
+            "image": Samyuktha,
             "phone": "99695 41254"
           },
           {
             "name": "Murali",
-            "image": "https://drive.google.com/open?id=1Lz_fidorMFqVrsRcu6YIoV8BhH-SGtFZ",
+            "image": Murali,
             "phone": "9383457896"
           },
           {
             "name": "Jeeva",
-            "image": "https://drive.google.com/open?id=19n1GfnXBXi0CzNXbJAOQpAi_VTjCdW7e",
+            "image": Jeeva,
             "phone": "94814 76476"
           }
         ],
@@ -422,17 +471,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Parthiv",
-            "image": "https://drive.google.com/open?id=130Wrugp6fpGMKoCNopwk0HwJMS7GN1Po",
+            "image": Parthiv,
             "phone": "808"
           },
           {
             "name": "Nalan",
-            "image": "https://drive.google.com/open?id=1xv050qnVoa3fwYoWM8gjTOfbP9WCzt95",
+            "image": Nalan,
             "phone": "914"
           },
           {
             "name": "Shreya",
-            "image": "https://drive.google.com/open?id=1rygwlf0GQIuQrpf_eNgTKH83eeevdsH5",
+            "image": Shreya,
             "phone": "725"
           }
         ],
@@ -474,12 +523,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Bhogaraju Shanmukha Sri Krishna",
-            "image": "https://drive.google.com/open?id=19ulOEcAza8c57d0Ko3m-y8OXSDzBPPka",
+            "image": Bhogaraju,
             "phone": "9848634455"
           },
           {
             "name": "Pasupuleti Sanjay",
-            "image": "https://drive.google.com/open?id=1-6a9AdFXzvo9Qs5JLS1rZmuhpsq1kJum",
+            "image": Sanjay,
             "phone": "9705063009"
           }
         ],
@@ -521,12 +570,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Pushti Amit Vasoya",
-            "image": "https://drive.google.com/open?id=1VPzAloQw_TVi86i2LWnaTGq-PpPVDml-",
+            "image": Pushti,
             "phone": "9429233780"
           },
           {
             "name": "Abhirami R. Iyer",
-            "image": "https://drive.google.com/open?id=17iUZlt9Q8b-AOpV2ryjFrzYM0OwHPZ9R",
+            "image": Abhirami,
             "phone": "9961985768"
           }
         ],
@@ -567,12 +616,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Pothula Sai Praneeth",
-            "image": "https://drive.google.com/open?id=1vlNm6C78BgGcicMOcHg-s5srJjC-iOVe",
+            "image": Praneeth,
             "phone": "8074241096"
           },
           {
             "name": "Bhogaraju Shanmukha Sri Krishna",
-            "image": "https://drive.google.com/open?id=1HLJY7oHfWrCsNf12qYdY1bDMQw9tn-QX",
+            "image": Bhogaraju,
             "phone": "9848634455"
           }
         ],
@@ -616,12 +665,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Pushti Amit Vasoya",
-            "image": "https://drive.google.com/open?id=1zyoarfik_yAIZVZeuFiyGKQFSfTFE4iY",
+            "image": Pushti,
             "phone": "9429233780"
           },
           {
             "name": "Abirami R. Iyer",
-            "image": "https://drive.google.com/open?id=16HfXx9P3-APz77j5QL1078DxOd1Uq61x",
+            "image": Abhirami,
             "phone": "9961985768"
           }
         ],
@@ -667,17 +716,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Rishitha",
-            "image": "https://drive.google.com/open?id=1pduC8ZytEURjilIT4vzC6TwvUd3Hlrm_",
+            "image": Rishitha,
             "phone": "7207436976"
           },
           {
             "name": "Parthiv",
-            "image": "https://drive.google.com/open?id=1w7UKkKEigOwGxOsFce2LGocqGPJGgeK-",
+            "image": Parthiv,
             "phone": "8089147259"
           },
           {
             "name": "Abhijith",
-            "image": "https://drive.google.com/open?id=1uCbpWNjn06xptvfFKLcc64BpTgep8r2f",
+            "image": Abhijith,
             "phone": "8075821728"
           }
         ],
@@ -721,12 +770,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Pushti Amit Vasoya",
-            "image": "https://drive.google.com/open?id=1VIP1CB0cYLoRDYH0h_WNyq82KcUU5HSQ",
+            "image": Pushti,
             "phone": "9429233780"
           },
           {
             "name": "Abhirami R Iyer",
-            "image": "https://drive.google.com/open?id=1C9T6ahEtSxXDn7j78Su4ZNALB2qwBxok",
+            "image": Abhirami,
             "phone": "9961985768"
           }
         ],
@@ -773,12 +822,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Anju Sasikumar",
-            "image": "https://drive.google.com/open?id=11sEf0NumdQqo98xKMld-nJCiOd3mIrQb",
+            "image": Anju,
             "phone": "7907042327"
           },
           {
             "name": "Pavitra R",
-            "image": "https://drive.google.com/open?id=1AD-epyMsLM-Z5hdCV69JrD1dogH_-3TD",
+            "image": Pavitra,
             "phone": "80897 26141"
           }
         ],
@@ -828,17 +877,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Muhamed Rizwan",
-            "image": "https://drive.google.com/open?id=1P9CsbblwJVImHPhyEKTe0aX5dOxmu0HS",
+            "image": Muhamed,
             "phone": "9207267393"
           },
           {
             "name": "Nalan S",
-            "image": "https://drive.google.com/open?id=1PDc_fINV6G7R36e-5aeHNGJsYXLtN-Ke",
+            "image": Nalan,
             "phone": "6380821237"
           },
           {
             "name": "Vishwaa PS",
-            "image": "https://drive.google.com/open?id=15BPBeFsWbFDFZzadA4NFvJ2IZoOzEGCS",
+            "image": Vishwaa,
             "phone": "8072452762"
           }
         ],
@@ -873,12 +922,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Kiran M V",
-            "image": "https://drive.google.com/open?id=1TCpyZ5MiQI5PaWwC3NLNPLvoxXNArl6U",
+            "image": Kiran,
             "phone": "7303640251"
           },
           {
             "name": "Amal Krishnan K",
-            "image": "https://drive.google.com/open?id=1fyXAiJM21Jgawt8F5aEOI9HeANUA2RYf",
+            "image": Amal,
             "phone": "8281729013"
           }
         ],
@@ -934,17 +983,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "Muhamed Rizwan",
-            "image": "https://drive.google.com/open?id=1jjIWJDf9F4j-8l3SmmzihSmWsrB_joSM",
+            "image": Muhamed,
             "phone": "9207267393"
           },
           {
             "name": "Abhijith Sureshbabu",
-            "image": "https://drive.google.com/open?id=1tiIrpZXCHcaJMd1KyJiO95fr5sqcp7Vs",
+            "image": Abhijith,
             "phone": "8075821728"
           },
           {
             "name": "Anup Kumar",
-            "image": "https://drive.google.com/open?id=1dz7SlcYjVfIyf3OIlBrM5x-gDtcIGA4B",
+            "image": Anup,
             "phone": "9525727176"
           }
         ],
@@ -979,12 +1028,12 @@ export let cultural = {
         "organisers": [
           {
             "name": "Kiran M V",
-            "image": "https://drive.google.com/open?id=1C8MSNIvYk9guzPTG5VxxvRVLX-yj7HE-",
+            "image": Kiran,
             "phone": "7306340251"
           },
           {
             "name": "Amal Krishnan K",
-            "image": "https://drive.google.com/open?id=1B7CM5jOR8lff4NqFCLoq11sLl6VULWu6",
+            "image": Amal,
             "phone": "8281729013"
           }
         ],
@@ -1084,7 +1133,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Kshitij Ghodake",
-            "image": "https://drive.google.com/open?id=1VrbG6yb-edtO0DwB4l7uqQlFHW57yfPl",
+            "image": Kshitij,
             "phone": "+917298991001"
           },
           {
@@ -1131,7 +1180,7 @@ export let technical = {
         "organisers": [
           {
             "name": "KEVIN R JACOB",
-            "image": "https://drive.google.com/open?id=16HvVLAwg8SOl8CBWByukJ0oOOP8N170H",
+            "image": KEVIN,
             "phone": "9110641165"
           }
         ],
@@ -1183,12 +1232,12 @@ export let technical = {
         "organisers": [
           {
             "name": "SIVA K M R",
-            "image": "https://drive.google.com/open?id=1Osx1BYjnOK73Y_RWdjyzeNg6lq9aWHFn",
+            "image": Siva,
             "phone": "9500643177"
           },
           {
             "name": "Manikantan R S",
-            "image": "https://drive.google.com/open?id=1MXexfY6KJIyn4Y28E2g243doNdI-bV3Y",
+            "image": Manikantan,
             "phone": "9037630397"
           }
         ],
@@ -1237,7 +1286,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Dhruvadeep Malakar",
-            "image": "https://drive.google.com/open?id=1F1rDS8MOFctd1k01SwVCUps_4Uk9Fl94",
+            "image": Dhruvadeep,
             "phone": "6001301742"
           }
         ],
@@ -1279,12 +1328,12 @@ export let technical = {
         "organisers": [
           {
             "name": "Ayush Singh",
-            "image": "https://drive.google.com/open?id=13PAfEL81hPd3wI6G4fWP2fPl9puLumVW",
+            "image": Ayush_Singh,
             "phone": "+91 88742 36084"
           },
           {
             "name": "Shivansh Chaudhary",
-            "image": "https://drive.google.com/open?id=1v3nsrd-Yk5HT2rDZA2SsoVn5kwceeOmt",
+            "image": Shivansh,
             "phone": "+91 7302994666"
           }
         ],
@@ -1341,12 +1390,12 @@ export let technical = {
         "organisers": [
           {
             "name": "Dhruvadeep Malakar",
-            "image": "https://drive.google.com/open?id=1pELKpuxBnGbPFiA8lw0qiJG4uSm0zfcU",
+            "image": Dhruvadeep,
             "phone": "6001301742"
           },
           {
             "name": "Bhogaraju Shanmukha Sri Krishna",
-            "image": "https://drive.google.com/open?id=1HQt_VoyFZREOOTO2we4GoB9OTClyReU-",
+            "image": Bhogaraju,
             "phone": "9848634455"
           }
         ],
@@ -1427,7 +1476,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Ayush Kumar",
-            "image": "https://drive.google.com/open?id=1a-Xm7oQqN5lN-zlLNpVSWHo8VengAu_a",
+            "image": Ayush_Kumar,
             "phone": "+91 9939595353"
           }
         ],
@@ -1469,12 +1518,12 @@ export let technical = {
         "organisers": [
           {
             "name": "JATIN KUMAWAT",
-            "image": "https://drive.google.com/open?id=15XSrhLACzgCaqlAyqNX6XRnuHgMlI3oW",
+            "image": JATIN,
             "phone": "9636902875"
           },
           {
             "name": "Karthikeya B",
-            "image": "https://drive.google.com/open?id=1qUvGcmFSrmjaUNS-0KV2-PWSkptpspKd",
+            "image": Karthikeya,
             "phone": "7794011990"
           }
         ],
@@ -1522,17 +1571,17 @@ export let technical = {
         "organisers": [
           {
             "name": "SANJAY",
-            "image": "https://drive.google.com/open?id=1w_JBi5uk-WKiwP85xKFWI1LvvXZAd3Px",
+            "image": Sanjay,
             "phone": "9705063009"
           },
           {
             "name": "JEEVA",
-            "image": "https://drive.google.com/open?id=1E5ZZcLCDJb0rTBTN5KzXLZDIUdSNeeTD",
+            "image": Jeeva,
             "phone": "9481476476"
           },
           {
             "name": "VIKRANTH",
-            "image": "https://drive.google.com/open?id=1JfTf6JaQlAgIQmfFRoKSsK509snO155f",
+            "image": VIKRANTH,
             "phone": "7218175672"
           }
         ],
@@ -1601,12 +1650,12 @@ export let technical = {
         "organisers": [
           {
             "name": "Divesh Mishra",
-            "image": "https://drive.google.com/open?id=1YZCLbrMKbpKU2t649D8LqN7kd7m6VmR8",
+            "image": Divesh,
             "phone": "9691584687"
           },
           {
             "name": "Shubhan Mehrotra",
-            "image": "https://drive.google.com/open?id=1AunGqIQaWfmLn1Httfoicp9OPxvl8sG4",
+            "image": Shubhan,
             "phone": "9714957474"
           }
         ],
@@ -1671,12 +1720,12 @@ export let technical = {
         "organisers": [
           {
             "name": "Ayush Kumar",
-            "image": "https://drive.google.com/open?id=1ZgbJYoeEZFss5oRPVM_Eg84xxrKpJKfE",
+            "image": Ayush_Kumar,
             "phone": "+91 9939595353"
           },
           {
             "name": "Chirag Varshney",
-            "image": "https://drive.google.com/open?id=1XclVjJyWnMwxEB55cA_k8-zPwI6cIPfR",
+            "image": Chirag,
             "phone": "+91 9528353345"
           }
         ],
@@ -1726,12 +1775,12 @@ export let technical = {
         "organisers": [
           {
             "name": "Siva K M R",
-            "image": "https://drive.google.com/open?id=1NsZVvvXjf8NCwRATUZ2aHQv7tc92Y8rb",
+            "image": Siva,
             "phone": "95006 43177"
           },
           {
             "name": "Manikantan R S",
-            "image": "https://drive.google.com/open?id=1oD0tQoOtZ7gVd9EQKZ8vl7J7jKL1Exdm",
+            "image": Manikantan,
             "phone": "90376 30397"
           }
         ],
@@ -1770,7 +1819,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Ashwin Nair",
-            "image": "https://drive.google.com/open?id=1CO5yl5Ry6vEhrp1hzFzlXFQQmWGtaIU0",
+            "image": Ashwin,
             "phone": "+919188142004"
           }
         ],
@@ -1822,7 +1871,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Souvik Mallick",
-            "image": "https://drive.google.com/open?id=1xf-1t57OX2s9DfcvqMHD8j_DcX2eLvy-",
+            "image": Souvik,
             "phone": "7430072368"
           }
         ],
