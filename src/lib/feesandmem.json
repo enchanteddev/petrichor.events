@@ -132,6 +132,13 @@
             "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 1
+        },
+        {
+            "name": "Valorant",
+            "id": "CF19",
+            "fees": 49,
+            "minMemeber": 1,
+            "maxMemeber": 1
         }
     ],
     "technical": [
@@ -192,7 +199,7 @@
             "maxMemeber": 1
         },
         {
-            "name": "Valorant",
+            "name": "WebMosiac",
             "id": "TF08",
             "fees": 0,
             "minMemeber": 1,
@@ -232,6 +239,13 @@
             "fees": 79,
             "minMemeber": 1,
             "maxMemeber": 6
+        },
+        {
+            "name": "ChipCraft",
+            "id": "TF14",
+            "fees": 0,
+            "minMemeber": 1,
+            "maxMemeber": 1
         }
     ],
     "workshops": [
