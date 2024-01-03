@@ -222,7 +222,7 @@
         {
             "name": "Quizzanaire - School Quiz",
             "id": "TF12",
-            "fees": 99,
+            "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 1
         },
@@ -230,7 +230,7 @@
             "name": "Robowar",
             "id": "TF13",
             "fees": 79,
-            "minMemeber": 1,
+            "minMemeber": 4,
             "maxMemeber": 6
         }
     ],
