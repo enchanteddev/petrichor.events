@@ -3,14 +3,14 @@
         {
             "name": "F3: Fireless Food Fiesta",
             "id": "CP00",
-            "fees": 29,
+            "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 3
         },
         {
             "name": "BRUSHED BRILLIANCE",
             "id": "CF01",
-            "fees": 0,
+            "fees": 49,
             "minMemeber": 2,
             "maxMemeber": 2
         },
@@ -38,7 +38,7 @@
         {
             "name": "Waste to wow",
             "id": "CF05",
-            "fees": 0,
+            "fees": 49,
             "minMemeber": 1,
             "maxMemeber": 2
         },
@@ -52,7 +52,7 @@
         {
             "name": "ChoreoClash",
             "id": "CP07",
-            "fees": 199,
+            "fees": 149,
             "minMemeber": 3,
             "maxMemeber": 15
         },
@@ -122,7 +122,7 @@
         {
             "name": "Bandwagon",
             "id": "CP17",
-            "fees": 199,
+            "fees": 149,
             "minMemeber": 4,
             "maxMemeber": 15
         },
