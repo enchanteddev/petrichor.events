@@ -17,12 +17,6 @@
                         <img class="image fullwidth" alt="" src="{member[2]}">
                     </picture>
                     <center><p class="personName basicgap" >{member[0]}</p></center>
-                    <center><div class="socialLinks fullwidth basicgap" style="display: flex;align-items: center;">
-                        <a class="icon" href="insta"><Icon data={instagram} scale={1.3}/></a>
-                        <a class="icon" href="insta"><Icon data={facebook} scale={1.3}/></a>
-                        <a class="icon" href="insta"><Icon data={linkedin} scale={1.3}/></a>
-                        <a class="icon" href="insta"><Icon data={twitter} scale={1.3}/></a>
-                    </div></center>
                     <center>
                         <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">{member[1]}</a>
                     </center>

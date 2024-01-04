@@ -19,26 +19,46 @@
     import Utsav  from "$lib/assets/CoreTeam/Utsav Patel.jpeg"
     import Vijay from "$lib/assets/CoreTeam/Vijay.jpg"
     import Vishnu from "$lib/assets/CoreTeam/Vishnu.jpg"
-    import Kaushik from "$lib/assets/CoreTeam/Kaushik.jpeg"
+    import Kaushik from "$lib/assets/CoreTeam/Kaushik.jpg"
     import Eshwar from "$lib/assets/CoreTeam/Eshwar.jpg"
+    import Kishore from "$lib/assets/CoreTeam/Kishore.jpg"
+    import Gayathri from "$lib/assets/CoreTeam/Gayathri.jpg"
+    import Nakul from "$lib/assets/CoreTeam/Nakul.jpg"
+    import Azim from "$lib/assets/CoreTeam/Azim.jpg"
+    import Aleena from "$lib/assets/CoreTeam/aleena.jpg"
+    import Vinay from "$lib/assets/CoreTeam/Vinay.jpg"
+    import Sai_Kumar from "$lib/assets/CoreTeam/Sai_Kumar.jpg"
 
     let teams : {[key:string]:any} = {}
-    teams["Coordinator"]=[["Sarthak","sarthak@gmail.com",Sarthak]]
+    teams["Coordinator"]=[["Sarthak","122101035@smail.iitpkd.ac.in",Sarthak]]
 
-    teams["Assistance Coordinators"]=[["Netra","netra@gmail.com",Netra],
-                                    ["Aryan Mathur","aryan@gmail.com",Aryan]]
+    teams["Assistance  Coordinators"]=[["Netra","132201017@smail.iitpkd.ac.in",Netra],
+                                    ["Aryan Mathur","122201017@smail.iitpkd.ac.in",Aryan]]
 
-    teams["Technical Heads"]=[["Shubham","shubham@gmail.com",Shubham],
-                            ["Manish","manish@gmail.com",Manish]]
+    teams["Technical Heads"]=[["Shubham","",Shubham],
+                            ["Manish","",Manish]]
 
-    teams["Cultural Heads"]=[["Nadhana","nadhana@gmail.com",Nadhana],
-                            ["Eshwar","eshwar@gmail.com",Eshwar]]
+    teams["Cultural Heads"]=[["Nandhana","1122201008@smail.iitpkd.ac.in",Nadhana],
+                            ["Eshwar","112101016@smail.iitpkd.ac.in",Eshwar]]
 
-    teams["Web Dev Head"]=[["Kaushik Rawat","kaushik@gmail.com",Kaushik]]
+    teams["Web Dev Head"]=[["Kaushik Rawat","112201015@smail.iitpkd.ac.in",Kaushik]]
 
-    teams["Informals"]=[["Lion","lion@gmail.com","https://th.bing.com/th?id=OSK.HERO8XH_s8vodPa3VIQliZrFNwgvD9pQ3xob2vslQY6YQrM&w=312&h=200&c=15&rs=2&o=6&dpr=1.3&pid=SANGAM"]]
-
-    teams["Tech Summit"]=[["Tiger",'tiger@gmail.com',"https://www.bing.com/th?id=OIP.q8OkSHaCFDGhb7m5AjIdPgHaFd&w=157&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"]]
+    teams["Creative Head"]=[["Gayathri","122201002@smail.iitpkd.ac.in",Gayathri],
+                            ["Nakul","122101024@smail.iitpkd.ac.in",Nakul]]
+    teams["Decoration Head"]=[["Anjitha","132201001@smail.iitpkd.ac.in",ANJI]]
+    teams["Film and Videography Head"]=[["Utsav","112201050@smail.iitpkd.ac.in",Utsav]]
+    teams["Content Creation Head"]=[["Sarath","122101034@smail.iitpkd.ac.in",Sarath_A]]
+    teams["Media and Publicity Head"]=[["Ashwin","",Aswhin],["Kishore","122201019@smail.iitpkd.ac.in",Kishore]]
+    teams["Social Media Head"]=[["Pavan","122201022@smail.iitpkd.ac.in",Pawan]]
+    teams["Tech-Summit Head"]=[["Vijay","",Vijay]]
+    teams["Workshop Head"]=[["Siva","",Siva]]
+    teams["Hospitality Head"]=[["Priyanshu","112101039@smail.iitpkd.ac.in",Priyanshu],["Azim","",Azim]]
+    teams["Proshow Head"]=[["Sujit","",Sujit]]
+    teams["Informals Head"]=[["Vishnu","",Vishnu]]
+    teams["Finance Head"]=[["Ajay","",Ajay]]
+    teams["Marketing Head"]=[["Rushikesh","132101027@smail.iitpkd.ac.in",Rushikesh],["Vinay","132201016@smail.iitpkd.ac.in",Vinay],["Sai Kumar","",Sai_Kumar]]
+    teams["Fest Mentor"]=[["Aleena","122201004@smail.iitpkd.ac.in",Aleena]]
+    teams["Open House Coordinator"]=[["Sidarth","112201048@smail.iitpkd.ac.in",Sidharth]]
 </script>
 
 <div class="MainContainer fullwidth">
