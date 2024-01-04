@@ -114,7 +114,7 @@
 					if (data.success){
 						alert("Payment Successful! You Will get an email shortly.")
 						setTimeout(() => {goto('/profile')}, 500)
-					}
+					} 
 				});
 		} else {
 			let warning = /** @type {HTMLInputElement} */ document.getElementById('warning');
@@ -136,7 +136,7 @@
 		Registering for <span style="color: blueviolet;">{data.name}</span>
 	</h1>
 
-	<form class="form" method="post" use:enhance>
+	<form class="form" on:submit|preventDefault>
 		<div style="background-color: rgb(90, 14, 137,0.3);" class="payment">
 			<div style="display: inline-block;">
 				<p
