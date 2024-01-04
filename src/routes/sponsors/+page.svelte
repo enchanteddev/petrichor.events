@@ -1,70 +1,49 @@
+<script lang="ts">
+	import Canara from '$lib/assets/Sponsors/Canara.jpg'
+	import Hp from '$lib/assets/Sponsors/Hp.jpg'
+	import Pnb from '$lib/assets/Sponsors/Pnb.jpg'
+	import Sbi from '$lib/assets/Sponsors/Sbi.jpg'
+	import Vasantha from '$lib/assets/Sponsors/Vasantha.jpg'
+	import Cazzkaro from '$lib/assets/Sponsors/Cazzkaro.jpeg'
+</script>
+
 <h1 id="heading1"><span style="color:blueviolet">PETRICHOR'24</span> IS SPONSORED BY</h1>
 
 <div id="all">
-	<div id="pnbSponsor">
-		<div class="title">Gold Sponsor</div>
-		<div class="img" />
+	<div id="pnbSponsor" class="sponsor">
+		<div class="title">Associate Sponsor</div>
+		<div class="img" style="background-image:url({Pnb})"/>
 		<div class="name">Punjab National Bank</div>
 	</div>
-	<div id="tripshopinSponsor">
-		<div class="title">Travel Partner</div>
-		<div class="img" />
-		<div class="name">TripShopin</div>
+	<div id="vasanthaSponsor" class="sponsor">
+		<div class="title">Event Sponsor</div>
+		<div class="img" style="background-image:url({Vasantha})"/>
+		<div class="name">Vasantha</div>
 	</div>
-	<div id="sbiSponsor">
-		<div class="title">Gold Sponsor</div>
-		<div class="img" />
+	<div id="sbiSponsor" class="sponsor">
+		<div class="title">Associate Sponsor</div>
+		<div class="img" style="background-image:url({Sbi})"/>
 		<div class="name">State Bank of India</div>
 	</div>
-	<div id="canaraSponsor">
-		<div class="title">Tech Summit Sponsor</div>
-		<div class="img" />
+	<div id="canaraSponsor" class="sponsor">
+		<div class="title">Event Sponsor</div>
+		<div class="img" style="background-image:url({Canara})"/>
 		<div class="name">Canara Bank</div>
 	</div>
-	<div id="sparxSponsor">
-		<div class="title">Official Footwear Partner</div>
-		<div class="img" />
-		<div class="name">Sparx</div>
-	</div>
-	<div id="RFSponsor">
-		<div class="title">Official Bike Partner</div>
-		<div class="img" />
-		<div class="name">Royal Enfield</div>
+	<div id="honeywellSponsor" class="sponsor">
+		<div class="title">Digital Partner</div>
+		<div class="img" style="background-image:url({Hp})"/>
+		<div class="name">Honeywell Systems</div>
 	</div>
 </div>
 
 <h2 id="heading2" style="color: aqua;">In Partnership with</h2>
 
-<div id="all">
-	<div id="pnbSponsor">
-		<div class="title">Gold Sponsor</div>
-		<div class="img" />
-		<div class="name">Punjab National Bank</div>
-	</div>
-	<div id="tripshopinSponsor">
-		<div class="title">Travel Partner</div>
-		<div class="img" />
-		<div class="name">TripShopin</div>
-	</div>
-	<div id="sbiSponsor">
-		<div class="title">Gold Sponsor</div>
-		<div class="img" />
-		<div class="name">State Bank of India</div>
-	</div>
-	<div id="canaraSponsor">
-		<div class="title">Tech Summit Sponsor</div>
-		<div class="img" />
-		<div class="name">Canara Bank</div>
-	</div>
-	<div id="sparxSponsor">
-		<div class="title">Official Footwear Partner</div>
-		<div class="img" />
-		<div class="name">Sparx</div>
-	</div>
-	<div id="RFSponsor">
-		<div class="title">Official Bike Partner</div>
-		<div class="img" />
-		<div class="name">Royal Enfield</div>
+<div id="all1">
+	<div id="cazzkaro" class="sponsor">
+		<div class="title">Only Partner</div>
+		<div class="img" style="background-image:url({Cazzkaro})"/>
+		<div class="name">Cazzkaro</div>
 	</div>
 </div>
 <div style="height: 5rem;" />
@@ -73,8 +52,8 @@
 	#pnbSponsor {
 		grid-area: pnb;
 	}
-	#tripshopinSponsor {
-		grid-area: trip;
+	#vasanthaSponsor {
+		grid-area: vasantha;
 	}
 	#sbiSponsor {
 		grid-area: sbi;
@@ -82,25 +61,32 @@
 	#canaraSponsor {
 		grid-area: canara;
 	}
-	#sparxSponsor {
-		grid-area: sparx;
+	#honeywellSponsor {
+		grid-area: honeywell;
 	}
-	#RFSponsor {
-		grid-area: RF;
+	#cazzkaro{
+		grid-area: cazzkaro;
 	}
+
 	* {
 		box-sizing: border-box;
 		margin: 0.2rem 0rem;
 	}
-	#all {
+	#all,#all1 {
 		display: grid;
-		grid-template-areas:
-			'pnb trip sbi'
-			'canara sparx RF';
 		grid-row-gap: 5rem;
 		grid-column-gap: 10rem;
 		align-items: center;
 		justify-content: center;
+	}
+	#all{
+		grid-template-areas:
+			'pnb vasantha sbi'
+			'canara honeywell honeywell';
+	}
+	#all1{
+		grid-template-areas: 
+		'cazzkaro';
 	}
 
 	#heading1 {
@@ -113,138 +99,22 @@
 		text-align: center;
 	}
 
-	#pnbSponsor > .title {
+	.sponsor > .title {
 		width: 200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	#pnbSponsor > .name {
+	.sponsor > .name {
 		width: 200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	#pnbSponsor > .img {
+	.sponsor > .img {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-image: url('https://static.vecteezy.com/system/resources/previews/020/190/451/original/punjab-national-bank-pnb-bank-logo-free-free-vector.jpg');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		height: 200px;
-		width: 200px;
-	}
-	#tripshopinSponsor > .title {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#tripshopinSponsor > .name {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#tripshopinSponsor > .img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url('https://play-lh.googleusercontent.com/a-/ALV-UjWfkWfpYBLvjRx6321IKEFUaVGftxHt2QXS6bTyR4Z260Js');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		height: 200px;
-		width: 200px;
-	}
-	#sbiSponsor > .title {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#sbiSponsor > .name {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#sbiSponsor > .img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url('https://www.logo-designer.co/storage/2017/04/2017-Design-Stack-new-logo-design-State-Bank-of-India.png');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		height: 200px;
-		width: 200px;
-	}
-	#canaraSponsor > .title {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#canaraSponsor > .name {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#canaraSponsor > .img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url('https://st.adda247.com/https://adda247-wp-multisite-assets.s3.ap-south-1.amazonaws.com/wp-content/uploads/multisite/sites/5/2022/07/26075007/Canara-Bank-Limited-Logo.jpg');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		height: 200px;
-		width: 200px;
-	}
-	#sparxSponsor > .title {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#sparxSponsor > .name {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#sparxSponsor > .img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url('https://seeklogo.com/images/S/sparx-logo-B9ECFE3A4B-seeklogo.com.png');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		height: 200px;
-		width: 200px;
-	}
-	#RFSponsor > .title {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#RFSponsor > .name {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	#RFSponsor > .img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url('https://ih1.redbubble.net/image.4768528822.6719/st,small,507x507-pad,600x600,f8f8f8.jpg');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
@@ -253,33 +123,28 @@
 	}
 
 	/* Mobile Version */
-	@media screen and (max-width: 960px) and (min-width: 375px) {
-		#all {
-			display: grid;
+	@media screen and (max-width: 960px) and (min-width: 600px) {
+		#all{
 			grid-template-areas:
-				'pnb trip'
+				'pnb vasantha'
 				'sbi canara'
-				'sparx RF';
-			grid-row-gap: 5rem;
-			grid-column-gap: 10rem;
-			align-items: center;
-			justify-content: center;
+				'honeywell honeywell';
+		}
+		#all1{
+			grid-template-areas: 'cazzkaro';
 		}
 	}
 	@media screen and (max-width: 600px) {
-		#all {
-			display: grid;
+		#all{
 			grid-template-areas:
 				'pnb'
-				'trip'
+				'vasantha'
 				'sbi'
 				'canara'
-				'sparx'
-				'RF';
-			grid-row-gap: 5rem;
-			grid-column-gap: 10rem;
-			align-items: center;
-			justify-content: center;
+				'honeywell';
+		}
+		#all1{
+			grid-template-areas: 'cazzkaro';
 		}
 	}
 </style>
