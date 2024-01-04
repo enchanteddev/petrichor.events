@@ -11,8 +11,8 @@
 	let CAcode: string;
 	let imgurl: string;
 	let amount = data.fee;
-	let accountNumber = '007010100273206';
-	let ifscCode = 'UTIB0000007';
+	let accountNumber = '110046805978';
+	let ifscCode = 'CNRB0006174';
 	let success = false;
 	let qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
 
@@ -142,7 +142,7 @@
 				</p>
 				<div id="img" />
 				<p style="margin-top: 1rem;font-size:155%;box-sizing:border-box;font-family:cursive">
-					<span>&#8377;</span>{amount}
+					{amount}
 				</p>
 				<svg
 					style="margin-top: -1rem;"
