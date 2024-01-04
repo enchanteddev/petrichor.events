@@ -87,16 +87,8 @@
 
 			return async ({result,update}) => {
 				if (result.type == 'success'){
-					if (result?.data?.status == 200)
-						goto('/login');	
-					else{
-						alert(result?.data?.data)
-						alert(result.data?.status)
-						goto('/register')
-					}
-				} else {
-					alert('Something Failed')
-				}
+					goto('/login');	
+					
 			}
 		}}>
 			<div>
