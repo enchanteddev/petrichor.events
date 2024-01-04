@@ -11,7 +11,7 @@ export const API = {
     user: backend_url + "web/user/",
     whoami: backend_url + "web/whoami/",
     event: backend_url + "web/event/",
-    verifyCA: backend_url + "internal/event/verify/",
+    verifyCA: "https://pcap-back-production.up.railway.app/api/events/verify",
     addEvent: backend_url + "internal/event/add/",
 }
 
