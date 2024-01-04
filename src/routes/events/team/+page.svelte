@@ -12,9 +12,9 @@
 	let emails = Array(max);
 	POST(API.event, {id: $registerData.eventID}).then(e => e.json()).then(e => {
 		eventData = e;		
-		min = eventData.minMember
-		max = eventData.maxMember
-		fees = eventData.fees
+		min = eventData.minMemeber
+		max = eventData.maxMemeber
+		fees = eventData.fee
 		console.log(eventData, max)
 		emails = Array(max);
 	})
@@ -34,12 +34,13 @@
 	let failedToast = false
 	async function handleSubmit() {
 		let emails_filled = emails.filter((v) => v);
+		$registerData.registeredEmails = emails_filled;
 		console.log(emails_filled);
 		if (emails_filled.length < min || emails_filled.length > max) {
 			alert(`Please add ${min} - ${max} members in your team. Currently you have added ${emails_filled.length} team members`)
 			return
 		}
-		
+		console.log('fees', fees)
 		if (fees == 0){
 			const response = await POST(API.events_apply_free, {
 				participants: $registerData.registeredEmails,
@@ -48,6 +49,7 @@
 			})
 			if (response.status == 200){
 				successToast = true;	
+				setTimeout(() => {goto('/profile')}, 1000)
 			} else {
 				failedToast = true;
 			}

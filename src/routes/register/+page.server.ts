@@ -31,7 +31,7 @@ export const actions = {
       }).then(res => res.json())
       .then(res => {
         console.log(res)
-          return {"success" : res.registered};
+        return {"success" : res.registered,"status":res.status,"data":res.message};
       }).catch(err => {
           console.log(err)
       })

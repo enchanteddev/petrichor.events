@@ -88,9 +88,7 @@
 			return async ({result,update}) => {
 				if (result.type == 'success'){
 					goto('/login');	
-				} else {
-					alert("Invalid email or password")
-				}
+					
 			}
 		}}>
 			<div>
