@@ -1533,22 +1533,35 @@ export let technical = {
       },
       {
         "name": "WebMosiac",
-        "about": "Welcome to the Valorant Clash Championship, where skilled players and passionate fans come together for an epic day of intense competition and camaraderie. This event is designed for Valorant enthusiasts of all levels, from casual gamers to aspiring professionals.",
+        "about": "You will be provided an API from the petrichor team at [that cool name].petrichor.events. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
         "rulebook": {
           "structure": [
-            "1) Event is open for anyone.",
-            "2)It's an online event.",
-            "3)The main focus of the event is a Valorant tournament. Teams will compete in a double-elimination format, showcasing their skills in strategic gameplay, precise shooting, and teamwork.",
-            "4)If the participants win in a round then there will be other rounds conducted to them.",
-            "5)Registration form will be opened 2 weeks before, gather your team and the form will be closed three days before event starts.",
-            ""
+            "SUBMISSION:",
+            "On submission, you have to submit a link to a git repo, and a link where your website is hosted online.",
+            "The git repo should be publicly accessible and up-to-date with the current version of your hosted website.",
+            "Any commits after the last day of submission will result in disqualification.",
+            "Hosting can be done on any platform of your choice.",
+            "DISQUALIFICATION:",
+            "1. Any form of plagiarism from any of the participating members.",
+            "2. More than 50% of the code copied from anywhere on the internet. (You can always copy (read: get inspired) from popular website regarding their colour palettes and design choices, only copying code is not allowed)",
+            "3. Using Bootstrap or any other CSS-removal tool is not allowed. (TailwindCSS, SCSS, and any other CSS preprocessors are allowed)",
+            "4. If the code does not run from our machine after cloning the repo, and npm install."
           ],
           "judging": [
-            "1)Teams winning without playing the third game receive 5 points.",
-            "2)Teams winning the first and third games get 4 points",
-            "3)teams winning the second and third games get 3 points.",
-            "4)Teams winning by forfeit also receive 3 points.",
-            "5)Team with max no. of points wins."
+            "1)Readability: Is all the information on the website legible? Is the font readable on all screen sizes? Are the colours having enough contrast ratio to be readable? 25 points.",
+            "2)Colour Palette: How appealing is the colour palette used in the website? How consistent are the colours across all pages in the website? Consistency is an objective measure, however appeal is NOT. Hence the appeal will be decided by how close it is to the theme of the competition and the data given. 10 points",
+            "3)Speed and Performance: We will use the lighthouse tool in Chrome, Edge, Brave, etc. to measure the website's performance and take that score and divide by 4 to give a score out of 25. 25 points",
+            "4)Mobile compatibility: Can the website adapt for a smartphone’s aspect-ratio? Is all the information visible? 15 Points",
+            "5)Browser and OS compatibility: Website will be checked on Chrome (Windows and Android), Firefox (Windows, Linux, Android), Safari (MacOS, iOS). 5 Points",
+            "5.1) The website on the desktop should look mostly the same across all browsers and Operating Systems.",
+            "5.2) Similarly on mobile devices it should look mostly the same across all browsers and Operating Systems.",
+            "6) Code Quality 20 Points",
+            "6.1) Readability: 4 Points",
+            "6.2) DRY (Do not Repeat Yourself): 3 Points",
+            "6.3) Type-safety and error handling: 3 Points",
+            "6.4) Consistent Naming convention, you can use any convention, but it has to be consistent: 5 Points",
+            "6.5) CSS-skill, No points here if you use JS for effects that can be done with CSS. (slows down the website + increases JS bundle size): 3 Points",
+            "6.6) File Structure: is the code well structured and distributed among all the files (Avoid putting everything in one file): 2 Points"
           ],
           "prizes": [
             "Total Pool = Rs. 5000",
@@ -1557,15 +1570,13 @@ export let technical = {
             "3rd Prize = Rs. 1000"
           ],
           "rules": [
-            "1) The Petrichor '24 Valorant tournament is a 5v5 gaming competition.",
-            "Tournament Structure: It follows a single-elimination format, meaning teams are eliminated after losing one match.",
-            "2)Map Selection:",
-            "Maps are chosen randomly in the first round.",
-            "3)The team losing the first game makes a map choice for the second.",
-            "4)The team losing the second makes a map choice for the third if needed.",
-            "5)First round: Each team plays against another team in knockout format(spike rush).",
-            "6)Sub-Rounds: A sub-round occurs after the first round to narrow down the teams to 8 for the quarter-finals, determined by organizers. Conducted in \u201cspike rush\u201d mode.",
-            "7)Finals and Semifinals: These rounds use a \"spike rush\" format, and map selection is random."
+            "1. Although you can use any framework, it would be recommended to use popular frameworks such as React, Vue, Angular, Svelte, etc. You can still use any framework of your choice.",
+            "2. You can add helper text all across your website apart from the data provided in the API, but you cannot change the API responses.",
+            "3. You can repeat the data in the API if the length of content provided is not sufficient for your format of displaying it.",
+            "4. You can use any assets from the internet, as long as you adhere to the copyright laws and regulations, as well as credit the artist/creator of the asset.",
+            "5. The website should be reachable and live at the submitted URL starting from the last day of submission to at least the day of the announcement of the results.",
+            "6. The usage of TypeScript is allowed. It will not directly affect any points, but indirectly it increases the code quality by having type-safety.",
+            "7. The code should be on a git repository. You can use github, gitlab, etc."
           ]
         },
         "organisers": [
