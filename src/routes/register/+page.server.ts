@@ -12,6 +12,10 @@ export const actions = {
          gradyear = 2024 + (12 - Number(data.get('grade')))
       }
 
+      if (data.get('institype') == 'neither'){
+        gradyear = 0;
+      }
+
       const response = await fetch(API.register,{
         method:'POST',
         headers:{

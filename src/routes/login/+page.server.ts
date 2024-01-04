@@ -27,6 +27,7 @@ export const actions = {
 
         const response = await fetch(API.login, fetchOptions);
         const resp_content = await response.json()
+        console.log(resp_content)
         if (resp_content['ok']){
             console.log(resp_content)
             return { success: true, response: resp_content };
