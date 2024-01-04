@@ -19,6 +19,8 @@
     import Utsav  from "$lib/assets/CoreTeam/Utsav Patel.jpeg"
     import Vijay from "$lib/assets/CoreTeam/Vijay.jpg"
     import Vishnu from "$lib/assets/CoreTeam/Vishnu.jpg"
+    import Kaushik from "$lib/assets/CoreTeam/Kaushik.jpeg"
+    import Eshwar from "$lib/assets/CoreTeam/Eshwar.jpg"
 
     let teams : {[key:string]:any} = {}
     teams["Coordinator"]=[["Sarthak","sarthak@gmail.com",Sarthak]]
@@ -30,9 +32,9 @@
                             ["Manish","manish@gmail.com",Manish]]
 
     teams["Cultural Heads"]=[["Nadhana","nadhana@gmail.com",Nadhana],
-                            ["Eshwar","eshwar@gmail.com","https://records.iitpkd.ac.in/uploads/students/1618/photos/112101016%20-%20ESHWAR%20PRASAD.jpg?20220124050150"]]
+                            ["Eshwar","eshwar@gmail.com",Eshwar]]
 
-    teams["Web Dev Head"]=[["Kaushik Rawat","kaushik@gmail.com","https://records.iitpkd.ac.in/uploads/students/2122/photos/112201015.JPG?20221026051057"]]
+    teams["Web Dev Head"]=[["Kaushik Rawat","kaushik@gmail.com",Kaushik]]
 
     teams["Informals"]=[["Lion","lion@gmail.com","https://th.bing.com/th?id=OSK.HERO8XH_s8vodPa3VIQliZrFNwgvD9pQ3xob2vslQY6YQrM&w=312&h=200&c=15&rs=2&o=6&dpr=1.3&pid=SANGAM"]]
 

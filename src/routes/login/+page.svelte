@@ -50,10 +50,14 @@
 										userEmail.set(ans.email);
 									}
 								});
+								goto('/profile')
+						}else{
+							alert('Invalid email or password');
+							goto('/login')
 						}
-						goto('/profile')
 					} else {
 						alert('Invalid email or password');
+						goto('/login')
 					}
 				};
 			}}
