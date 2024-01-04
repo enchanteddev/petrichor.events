@@ -48,6 +48,11 @@
     .main{
         background-color: #242020;
     }
+    .workshop .img{
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     .debug{
         border: 1px solid white;
     }

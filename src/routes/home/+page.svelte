@@ -90,9 +90,9 @@
 		<h1>Workshops</h1>
 		<div class="wscont">
 			{#each workshops.workshops as w}
-				<div class="ws" style="background-image: url('{w.image}');">
-					<h2>{w.name}</h2>
-					<p>{w.about}</p>
+				<div class="ws" style="background-image: url('{w.image}');font-weight:bolder">
+						<h2>{w.name}</h2>
+						<p>{w.about}</p>
 				</div>
 			{/each}
 		</div>
@@ -130,6 +130,8 @@
 		background-size: cover;
 		color: white;
 		transition: 200ms ease;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	input,
 	textarea {
