@@ -1,5 +1,5 @@
-const backend_url = 'http://127.0.0.1:8000/'
-// const backend_url = 'https://petrichor-backend.vercel.app/'
+// const backend_url = 'http://127.0.0.1:8000/'
+const backend_url = 'https://petrichor-backend.vercel.app/'
 
 export const API = {
     login: backend_url + 'web/login/',
