@@ -378,8 +378,8 @@
 			width: 15em;
 		}
 		.workshops {
-			padding-top: 15rem;
-			padding-bottom: 20rem;
+			padding-top: 45rem;
+			padding-bottom: 45rem;
 		}
 	}
 	@media screen and (max-width: 330px) {
