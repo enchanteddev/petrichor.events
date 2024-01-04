@@ -12,7 +12,7 @@ export const actions = {
          gradyear = 2024 + (12 - Number(data.get('grade')))
       }
 
-      await fetch(API.register,{
+      const response = await fetch(API.register,{
         method:'POST',
         headers:{
           'Accept':'application/json',
@@ -28,13 +28,17 @@ export const actions = {
           "institype":data.get('institype'),
           "stream":data.get('stream')
         }) 
-      }).then(res => res.json())
-      .then(res => {
-        console.log(res)
-        return {"success" : res.registered,"status":res.status,"data":res.message};
-      }).catch(err => {
-          console.log(err)
       })
+      // .then(res => res.json())
+      // .then(res => {
+      //   console.log(res)
+      //   return {"success" : res.registered,"status":res.status,"data":res.message};
+      // }).catch(err => {
+      //     console.log(err)
+      // })
+      const resp_content = await response.json()
+      console.log(resp_content);
+      return {"success" : resp_content.registered,"status":resp_content.status,"data":resp_content.message};
         
 
   }
