@@ -35,7 +35,7 @@
             style="margin-top: 10px; border-radius: 10px; height:150px;width:200px"
             alt="Image of something"/>
             
-        <h4 class="payments" style="background-color: {(paymentStatus == "Payment Verified")? "green":"red"};">{paymentStatus}</h4>
+        <h4 class="payments" style="background-color: {(paymentStatus == "Payment Verified")? "green":"red"};">{paymentStatus ? "Verified" : "Verification in progress"}</h4>
     </div>
     <div class="event-data" style="text-align: left; padding: 0 30px;">
         <div>

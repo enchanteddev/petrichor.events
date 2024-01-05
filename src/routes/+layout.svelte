@@ -1,6 +1,6 @@
 <script>
     import Icon from 'svelte-awesome/components/Icon.svelte';
-    import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter} from 'svelte-awesome/icons'
+    import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter, youtube} from 'svelte-awesome/icons'
     import bg from '$lib/assets/dark.jpg'
     import pet from '$lib/assets/pet.png'
 
@@ -65,15 +65,15 @@
                     </div>
                     <div class="address">
                         <h1>@email</h1>
-                        <p>events.petrichor@iitpkd.ac.in</p>
+                        <p><a href="mailto:events.petrichor@iitpkd.ac.in">events.petrichor@iitpkd.ac.in</a></p>
                     </div>
                     <div class="address">
                         <h1>Connect with us</h1>
                         <div class="socials">
-                            <a href="insta"><Icon data={instagram} scale={1.6}/></a>
-                            <a href="insta"><Icon data={facebook} scale={1.6}/></a>
-                            <a href="insta"><Icon data={linkedin} scale={1.6}/></a>
-                            <a href="insta"><Icon data={twitter} scale={1.6}/></a>
+                            <a href="https://instagram.com/petrichor.iitpkd" target="_blank"><Icon data={instagram} scale={1.6}/></a>
+                            <a href="https://www.linkedin.com/company/petrichor-iitpkd" target="_blank"><Icon data={linkedin} scale={1.6}/></a>
+                            <a href="https://x.com/Petrichor_IIT" target="_blank"><Icon data={twitter} scale={1.6}/></a>
+                            <a href="https://youtube.com/@petrichoriitpalakkad173?si=hn8YHyfXVcJ_KZUr" target="_blank"><Icon data={youtube} scale={1.6}/></a>
                         </div>
                     </div>
                 </footer>

@@ -90,7 +90,7 @@
 					goto('/login');	
 					
 			}
-		}}>
+			}}}>
 			<div>
 				<input type="text" name="username" id="name" placeholder="Name" required />
 				<input type="tel" name="phone" id="phone-number" placeholder="Phone No." required />

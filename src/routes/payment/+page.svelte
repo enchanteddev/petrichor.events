@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 	import { API, readToken } from '$lib';
-	import { isLogin, registerData } from '$lib/stores';
+	import { registerData, isLogin } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 
@@ -16,16 +16,20 @@
 	let CAcode: string;
 	let imgurl: string;
 	let amount = data.fee;
-	let accountNumber = '110046805978';
-	let ifscCode = 'CNRB0006174';
+	// let accountNumber = '9493256601';
+	// let ifscCode = 'CNRB0006174';
 	let success = false;
-	let qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+	// let qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+	let qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`
 
 	QRCode?.toDataURL(`${qrcodeurl}`, function (err: any, url: string) {
 		imgurl = url;
 	});
 
 	onMount(() => {
+		if (!$isLogin){
+			goto('/login');
+		}
 		let bgimage = window.document.getElementById('img');
 		if (bgimage !== null) {
 			bgimage.style.backgroundImage = `url(${imgurl})`;
@@ -45,7 +49,7 @@
 				}
 			}, 3500);
 		} else {
-			fetch('https://testpetri.onrender.com/api/events/verify', {
+			fetch('https://pcap-back-production.up.railway.app/api/events/verify', {
 				method: 'POST',
 				body: JSON.stringify({
 					CAcode
@@ -63,7 +67,8 @@
 					let CAcodeElt = window.document.getElementById('CAcode') as HTMLInputElement;
 					if (success) {
 						amount = 1000;
-						qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+						// qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+						qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`
 
 						QRCode?.toDataURL(`${qrcodeurl}`, function (err: any, url: any) {
 							imgurl = url;
@@ -115,8 +120,11 @@
 			})
 				.then((response) => response.json())
 				.then((data) => {console.log(data)
-					if (data.success){
-						alert("Payment Successful! You Will get an email shortly.")
+					if (data.status == 200){
+						alert("Payment Successful! You will get an email shortly.")
+						setTimeout(() => {goto('/profile')}, 500)
+					} else if (data.status == 500){
+						alert("You have already applied for the event")
 						setTimeout(() => {goto('/profile')}, 500)
 					}
 				});
@@ -140,7 +148,7 @@
 		Registering for <span style="color: blueviolet;">{data.name}</span>
 	</h1>
 
-	<form class="form" method="post" use:enhance>
+	<form class="form" on:submit|preventDefault>
 		<div style="background-color: rgb(90, 14, 137,0.3);" class="payment">
 			<div style="display: inline-block;">
 				<p
@@ -222,7 +230,6 @@
 		width: 20rem;
 		text-align: center;
 		background-color: black;
-		padding: 2.5rem;
 		padding-top: 0.7rem;
 		border-radius: 10%;
 		z-index: 1;
@@ -318,6 +325,10 @@
 	}
 
 	@media screen and (max-width: 900px) {
+		.payment{
+			left: 50%;
+    		transform: translate(-67%);
+		}
 		h1 {
 			width: 100vw;
 		}

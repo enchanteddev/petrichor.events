@@ -8,6 +8,7 @@ import Anusha from '$lib/assets/Organisers/Anusha Dadam.jpg'
 import Ashwin from '$lib/assets/Organisers/Ashwin.jpg'
 import Ashwini from '$lib/assets/Organisers/Ashwini.jpg'
 import Ayush_Kumar  from '$lib/assets/Organisers/AYUSH KUMAR.jpg'
+import Ayush_Raj  from '$lib/assets/Organisers/AYUSH RAJ.jpg'
 import Ayush_Singh from '$lib/assets/Organisers/Ayush Singh.jpg'
 import Bhogaraju from '$lib/assets/Organisers/BHOGARAJU SHANMUKHA SRI KRISHNA.jpg'
 import Chirag from '$lib/assets/Organisers/CHIRAG VARSHNEY.jpg'
@@ -1081,17 +1082,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "SANJAY",
-            "image": "https://drive.google.com/open?id=1w_JBi5uk-WKiwP85xKFWI1LvvXZAd3Px",
+            "image": Sanjay,
             "phone": "9705063009"
           },
           {
             "name": "JEEVA",
-            "image": "https://drive.google.com/open?id=1E5ZZcLCDJb0rTBTN5KzXLZDIUdSNeeTD",
+            "image": Jeeva,
             "phone": "9481476476"
           },
           {
             "name": "VIKRANTH",
-            "image": "https://drive.google.com/open?id=1JfTf6JaQlAgIQmfFRoKSsK509snO155f",
+            "image": VIKRANTH,
             "phone": "7218175672"
           }
         ],
@@ -1131,11 +1132,6 @@ export let technical = {
           ]
         },
         "organisers": [
-          {
-            "name": "Kshitij Ghodake",
-            "image": Kshitij,
-            "phone": "+917298991001"
-          },
           {
             "name": "Kshitij Ghodake",
             "image": Kshitij,
@@ -1475,9 +1471,9 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Ayush Kumar",
-            "image": Ayush_Kumar,
-            "phone": "+91 9939595353"
+            "name": "Ayush Raj",
+            "image": Ayush_Raj,
+            "phone": "+91 8092450569"
           }
         ],
         "image": "https://cdn.midjourney.com/1371d083-7a11-40b0-82cd-5401590d2534/0_0.webp",
@@ -1533,22 +1529,35 @@ export let technical = {
       },
       {
         "name": "WebMosiac",
-        "about": "Welcome to the Valorant Clash Championship, where skilled players and passionate fans come together for an epic day of intense competition and camaraderie. This event is designed for Valorant enthusiasts of all levels, from casual gamers to aspiring professionals.",
+        "about": "You will be provided an API from the petrichor team at webmosaic.petrichor.events. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
         "rulebook": {
           "structure": [
-            "1) Event is open for anyone.",
-            "2)It's an online event.",
-            "3)The main focus of the event is a Valorant tournament. Teams will compete in a double-elimination format, showcasing their skills in strategic gameplay, precise shooting, and teamwork.",
-            "4)If the participants win in a round then there will be other rounds conducted to them.",
-            "5)Registration form will be opened 2 weeks before, gather your team and the form will be closed three days before event starts.",
-            ""
+            "SUBMISSION:",
+            "On submission, you have to submit a link to a git repo, and a link where your website is hosted online.",
+            "The git repo should be publicly accessible and up-to-date with the current version of your hosted website.",
+            "Any commits after the last day of submission will result in disqualification.",
+            "Hosting can be done on any platform of your choice.",
+            "DISQUALIFICATION:",
+            "1. Any form of plagiarism from any of the participating members.",
+            "2. More than 50% of the code copied from anywhere on the internet. (You can always copy (read: get inspired) from popular website regarding their colour palettes and design choices, only copying code is not allowed)",
+            "3. Using Bootstrap or any other CSS-removal tool is not allowed. (TailwindCSS, SCSS, and any other CSS preprocessors are allowed)",
+            "4. If the code does not run from our machine after cloning the repo, and npm install."
           ],
           "judging": [
-            "1)Teams winning without playing the third game receive 5 points.",
-            "2)Teams winning the first and third games get 4 points",
-            "3)teams winning the second and third games get 3 points.",
-            "4)Teams winning by forfeit also receive 3 points.",
-            "5)Team with max no. of points wins."
+            "1)Readability: Is all the information on the website legible? Is the font readable on all screen sizes? Are the colours having enough contrast ratio to be readable? 25 points.",
+            "2)Colour Palette: How appealing is the colour palette used in the website? How consistent are the colours across all pages in the website? Consistency is an objective measure, however appeal is NOT. Hence the appeal will be decided by how close it is to the theme of the competition and the data given. 10 points",
+            "3)Speed and Performance: We will use the lighthouse tool in Chrome, Edge, Brave, etc. to measure the website's performance and take that score and divide by 4 to give a score out of 25. 25 points",
+            "4)Mobile compatibility: Can the website adapt for a smartphone’s aspect-ratio? Is all the information visible? 15 Points",
+            "5)Browser and OS compatibility: Website will be checked on Chrome (Windows and Android), Firefox (Windows, Linux, Android), Safari (MacOS, iOS). 5 Points",
+            "5.1) The website on the desktop should look mostly the same across all browsers and Operating Systems.",
+            "5.2) Similarly on mobile devices it should look mostly the same across all browsers and Operating Systems.",
+            "6) Code Quality 20 Points",
+            "6.1) Readability: 4 Points",
+            "6.2) DRY (Do not Repeat Yourself): 3 Points",
+            "6.3) Type-safety and error handling: 3 Points",
+            "6.4) Consistent Naming convention, you can use any convention, but it has to be consistent: 5 Points",
+            "6.5) CSS-skill, No points here if you use JS for effects that can be done with CSS. (slows down the website + increases JS bundle size): 3 Points",
+            "6.6) File Structure: is the code well structured and distributed among all the files (Avoid putting everything in one file): 2 Points"
           ],
           "prizes": [
             "Total Pool = Rs. 5000",
@@ -1557,15 +1566,13 @@ export let technical = {
             "3rd Prize = Rs. 1000"
           ],
           "rules": [
-            "1) The Petrichor '24 Valorant tournament is a 5v5 gaming competition.",
-            "Tournament Structure: It follows a single-elimination format, meaning teams are eliminated after losing one match.",
-            "2)Map Selection:",
-            "Maps are chosen randomly in the first round.",
-            "3)The team losing the first game makes a map choice for the second.",
-            "4)The team losing the second makes a map choice for the third if needed.",
-            "5)First round: Each team plays against another team in knockout format(spike rush).",
-            "6)Sub-Rounds: A sub-round occurs after the first round to narrow down the teams to 8 for the quarter-finals, determined by organizers. Conducted in \u201cspike rush\u201d mode.",
-            "7)Finals and Semifinals: These rounds use a \"spike rush\" format, and map selection is random."
+            "1. Although you can use any framework, it would be recommended to use popular frameworks such as React, Vue, Angular, Svelte, etc. You can still use any framework of your choice.",
+            "2. You can add helper text all across your website apart from the data provided in the API, but you cannot change the API responses.",
+            "3. You can repeat the data in the API if the length of content provided is not sufficient for your format of displaying it.",
+            "4. You can use any assets from the internet, as long as you adhere to the copyright laws and regulations, as well as credit the artist/creator of the asset.",
+            "5. The website should be reachable and live at the submitted URL starting from the last day of submission to at least the day of the announcement of the results.",
+            "6. The usage of TypeScript is allowed. It will not directly affect any points, but indirectly it increases the code quality by having type-safety.",
+            "7. The code should be on a git repository. You can use github, gitlab, etc."
           ]
         },
         "organisers": [
@@ -1878,6 +1885,51 @@ export let technical = {
         "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
         "date": "28/1/2024",
         "id": "TF13"
+      },
+      {
+        "name": "Chipcraft",
+        "about": "This technical challenge invites you to create a customized PCB, integrating a microcontroller tailored to a given application.",
+        "rulebook": {
+          "structure": [
+            "In this event, participants are tasked with designing and laying out a microcontroller-PCB solution for a specified application. The source code for programming the microcontroller must be included in the submission. A template for the schematic circuit design of the STM32 microcontroller, complete with a linear regulator, USB connector, clock generator, and programming connector, will be provided. The specific application for PCB design will be disclosed at the start of the event. Participants are expected to create a block diagram design, expand the schematic within the provided template, and ultimately craft a comprehensive layout for the PCB, incorporating the specified components."
+          ],
+          "judging": [
+            "1. Total Marks: 100",
+            "2. Incorrect designs will not lead to disqualification, but points will be deducted based on the criticality of the mistake, ranging from -5 to -20.",
+            "Weightage of Evaluation Parameters:",
+            "1. Design Simplicity: 20 points",
+            "2. Design Efficiency: 20 points",
+            "3. Cost-Effective Design (Considering Bill of Materials): 10 points",
+            "4. Placement and Layouting of the PCB: 40 points"
+          ],
+          "prizes": [
+            "Total: ₹8,000",
+            "First Place: ₹4,000",
+            "Second Place: ₹2,500",
+            "Third Place: ₹1,500",
+            "Additionally, the first-place team will have their design printed and assembled at the Innovation Lab, with the PCB sent to the winners by courier. ( need budget for this 2 - 3 k)"
+          ],
+          "rules": [
+            "1. Participants must submit the schematic, PCB layout, and the program to run on the controller, accompanied by a block diagram explanation of the code.",
+            "2. The microcontroller used in the design must be STM32 (a template layout and datasheet for the controller will be provided).",
+            "3. Teams can employ their preferred CAD tools for PCB design.",
+            "4. Each team is limited to one solution submission.",
+            "5. Plagiarism will result in disqualification.",
+            "6. Late submissions, with a penalty of 20 points, will be accepted up to one day after the deadline.",
+            "7. The team with the highest point score will be declared the winners. In the case of a tie, the time of submission will serve as the tiebreaker.",
+            "8. The decision of the evaluators will be final."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Manikantan",
+            "image": Manikantan,
+            "phone": "9037630397"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
+        "date": "28/1/2024",
+        "id": "TF13"
       }
     ]
   }
@@ -1888,7 +1940,7 @@ export let workshops =  {
             name: 'AI Workshop',
             about: 'Machine Learning is an essential skill for any aspiring data analyst and data scientist, and also for those who wish to transform a massive amount of raw data into trends and predictions. Machine learning is actively being used today, perhaps in many more places than one would expect. Join this workshop and discuss on some recent problem statements using ML',
             prereq: ['Basic Programming Skills'],
-            fees: 1280,
+            fees: 1299,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
             image: 'https://imgs.search.brave.com/rinfk11tjOtQ0OM-xLkUGFohtI9LZ-cUe81Tu0eGAaI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/aS1jbG91ZC13aXRo/LXJvYm90LWZhY2Vf/MjMtMjE0OTczOTc1/OC5qcGc_c2l6ZT02/MjYmZXh0PWpwZw',
@@ -1901,7 +1953,7 @@ export let workshops =  {
             name: 'Robotics',
             about: 'This is about modelling Self-balancing robots and involves concepts from control systems and hardware aspects to make one',
             prereq: ['Basic Programming Skills'],
-            fees: 1280,
+            fees: 1299,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
             image: 'https://imgs.search.brave.com/XlQ12_S5GdqeJ5S3sjviLwDalImVB3IdcPF2b3feMn8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDgzMDMz/OTcuanBn',
@@ -1914,7 +1966,7 @@ export let workshops =  {
             name: 'Product Management',
             about: 'This is about modelling Self-balancing robots and involves concepts from control systems and hardware aspects to make one',
             prereq: ['None'],
-            fees: 1280,
+            fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
             image: 'https://th.bing.com/th/id/OIP.NvmK9m5WDaUIP59icbm_wAHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
@@ -1927,10 +1979,10 @@ export let workshops =  {
             name: 'Reinforcement Learning',
             about: 'Unlock the power of machine learning through practical applications and hands-on exploration in our comprehensive Reinforcement Learning Workshop.',
             prereq: [ 'Basic Programming'],
-            fees: 1280,
+            fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://miro.medium.com/v2/resize:fit:1140/1*EhJ5xkuACJSwPVqa47Jwig.jpeg',
+            image: 'https://imgs.search.brave.com/xUJDPd-rd0rAX9DDxIhu0NCFM3rCoBMRsqRVgBJRNss/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzE5LzEyLzQ3/LzM2MF9GXzYxOTEy/NDc4Ml9OVTZvekU2/RHJaV3pxandvYWNn/TXZOYVZ1RkJZQmRr/RS5qcGc',
             location: 'Nila Campus',
             topics: [],
             speakers: [  'Dr. Shaikshavali Chitraganti'],
@@ -1940,7 +1992,7 @@ export let workshops =  {
             name: 'Startup and Entrepreneurship',
             about: 'Empowering aspiring innovators and visionaries to navigate the entrepreneurial landscape through our immersive Startup and Entrepreneurship workshop.',
             prereq: [ 'None'],
-            fees: 1280,
+            fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
             image: 'https://ejournalz.com/wp-content/uploads/2018/04/becoming-an-entrepreneur.jpg',
@@ -1953,7 +2005,7 @@ export let workshops =  {
             name: 'Measurement Principles and Uncertainty Analysis',
             about: 'Join us for an immersive workshop exploring Measurement Principles and Uncertainty Analysis, where precision meets insight in every measurement.',
             prereq: [ 'None'],
-            fees: 1280,
+            fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
             image: 'https://cdn.mos.cms.futurecdn.net/YxDjBWSwkDWEqBo8mSYbqY-1200-80.jpg',
@@ -1966,7 +2018,7 @@ export let workshops =  {
             name: 'Competitive Programming',
             about: 'Join us for a high-energy Competitive Programming workshop, where you will hone your algorithmic skills and tackle real-world coding challenges head-on!',
             prereq: [ 'Basic Programming'],
-            fees: 1280,
+            fees: 1299,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
             image: 'https://imgs.search.brave.com/Q7nkBpzGa69_hef40mdiCXlkMyHQrBpTN6XCStzQAAw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA1/NTA1NjYxMi9waG90/by9jb2RpbmctbGF0/ZS1pbnRvLXRoZS1u/aWdodC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9MFlTck03/NmhnNF85Q2l2a0V3/aEhPa3lKWldNaVYt/NGdKak9mS2VFNHFV/cz0',

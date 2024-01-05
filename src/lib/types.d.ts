@@ -23,7 +23,8 @@ export interface workshop {
     regdate: string,
     location: string,
     prereq: string[],
-    image: string
+    image: string,
+    id: string
 }
 
 export interface person{
