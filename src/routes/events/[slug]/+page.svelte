@@ -51,7 +51,7 @@
 			goto('/login');
 		} else {
 			$registerData.eventID = currentEvent.id;
-			// $registerData.registeredEmails.push($userEmail);
+			$registerData.registeredEmails.push($userEmail);
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
 			const eventDataResponse = await POST(API.event, { id: currentEvent.id });
