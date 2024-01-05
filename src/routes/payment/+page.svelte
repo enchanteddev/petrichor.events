@@ -182,7 +182,7 @@
 			<input
 				id="transId"
 				type="text"
-				maxlength="25"
+				maxlength="50"
 				placeholder="Your Transaction Id"
 				style="display:block;"
 				bind:value={transactionID}
