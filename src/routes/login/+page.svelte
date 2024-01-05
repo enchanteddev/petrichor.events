@@ -7,10 +7,11 @@
 	import { API, readToken } from '$lib/index';
 	import { goto } from '$app/navigation';
 
+	let loading = false;
 	if($isLogin){
+		loading = true
 		goto('/profile')
 	}
-	let loading = false;
 </script>
 
 <Loading spinning = {loading} />
