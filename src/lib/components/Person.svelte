@@ -19,6 +19,7 @@
         aspect-ratio: 1;
         border-radius: 0.4em;
         margin: 2rem;
+        background-repeat: no-repeat;
     }
     h2{
         position: absolute;
