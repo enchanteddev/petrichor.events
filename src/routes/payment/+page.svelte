@@ -2,11 +2,15 @@
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 	import { API, readToken } from '$lib';
-	import { registerData } from '$lib/stores';
+	import { isLogin, registerData } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 
 	export let data: any;
+
+	if(!$isLogin){
+		goto('/login')
+	}
 
 	let transactionID: string;
 	let CAcode: string;
