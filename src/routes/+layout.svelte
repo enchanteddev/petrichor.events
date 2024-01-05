@@ -3,6 +3,7 @@
     import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter, youtube} from 'svelte-awesome/icons'
     import bg from '$lib/assets/dark.jpg'
     import pet from '$lib/assets/pet.png'
+    import { isLogin } from '$lib/stores'
 
     export let data;
     let hover = false;
@@ -31,7 +32,7 @@
             <!-- <a href="/proshows">Proshows</a> -->
             <!-- <a href="/merch">Merch</a> -->
             <a href="/sponsors">Sponsors</a>
-            <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
+            <a href="{$isLogin? "/profile" : "/login"}" class="login"><Icon data={user} scale={1.6}/></a>
         </nav>
     </div>  
     {/if}
