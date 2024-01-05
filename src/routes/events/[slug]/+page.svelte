@@ -12,7 +12,7 @@
 	let events = data['events'];
 
 	$: {
-		console.log('$isLogin:', $isLogin, $userEmail)
+		console.log('$isLogin:', $isLogin, $userEmail);
 	}
 
 	let bg: HTMLDivElement;
@@ -54,18 +54,18 @@
 			// $registerData.registeredEmails.push($userEmail);
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
-			const eventDataResponse = await POST(API.event, {id: currentEvent.id})
-			const eventData = await eventDataResponse.json()
+			const eventDataResponse = await POST(API.event, { id: currentEvent.id });
+			const eventData = await eventDataResponse.json();
 
-			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1){
+			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1) {
 				if (eventData.fees == 0) {
 					registering = true;
 					await POST(API.events_apply_free, {
-							participants: [$userEmail],
-							// @ts-ignore
-							eventId: currentEvent.id,
-							token: readToken()
-						})
+						participants: [$userEmail],
+						// @ts-ignore
+						eventId: currentEvent.id,
+						token: readToken()
+					})
 						.then((res) => res.json())
 						.then((res) => {
 							console.log(res);
@@ -83,9 +83,8 @@
 					goto(`/payment?id=${currentEvent.id}`);
 				}
 			} else {
-				goto('/events/team')
+				goto('/events/team');
 			}
-
 		}
 	};
 </script>
@@ -136,27 +135,35 @@
 				{#if currentEvent.rulebook.structure.length > 0}
 					<h2>Structure</h2>
 				{/if}
+				{#if currentEvent.rulebook.structure}
 				{#each currentEvent.rulebook.structure as struct}
 					<li class="nodot">{struct}</li>
 				{/each}
+				{/if}
 			</div>
 			<div class="rules">
 				<h2>Rules</h2>
+				{#if currentEvent.rulebook.rules}
 				{#each currentEvent.rulebook.rules as struct}
 					<li class="nodot">{struct}</li>
 				{/each}
+				{/if}
 			</div>
 			<div class="judging">
 				<h2>Judging Criteria</h2>
+				{#if currentEvent.rulebook.judging}
 				{#each currentEvent.rulebook.judging as struct}
 					<li class="nodot">{struct}</li>
 				{/each}
+				{/if}
 			</div>
 			<div class="prizes">
 				<h2>Prizes Worth:</h2>
+				{#if currentEvent.rulebook.prizes}
 				{#each currentEvent.rulebook.prizes as struct}
-					<li>{struct}₹</li>
+					<li>{struct}</li>
 				{/each}
+				{/if}
 			</div>
 		</div>
 		<div id="register">
@@ -365,22 +372,22 @@
 			cursor: pointer;
 		} */
 		.sidebar {
-  height: 15vh;
-  display: flex;
-  overflow-x: auto; /* Use overflow-x for horizontal scroll */
-  width: 100%; /* Set the sidebar width to 100% of its parent */
-}
+			height: 15vh;
+			display: flex;
+			overflow-x: auto; /* Use overflow-x for horizontal scroll */
+			width: 100%; /* Set the sidebar width to 100% of its parent */
+		}
 
-.card {
-  all: unset;
-  width: 30vw;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  cursor: pointer;
-  flex: 0 0 auto; /* Prevent cards from stretching to fill available space */
-  margin-right: 10px; /* Add some spacing between cards if needed */
-}
+		.card {
+			all: unset;
+			width: 30vw;
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			cursor: pointer;
+			flex: 0 0 auto; /* Prevent cards from stretching to fill available space */
+			margin-right: 10px; /* Add some spacing between cards if needed */
+		}
 
 		.parent {
 			flex-direction: column-reverse;

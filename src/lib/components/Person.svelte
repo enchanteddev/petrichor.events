@@ -18,6 +18,7 @@
         height: 12em;
         aspect-ratio: 1;
         border-radius: 0.4em;
+        margin: 2rem;
     }
     h2{
         position: absolute;
@@ -39,5 +40,12 @@
     div:hover p{
         /* z-index: -1; */
         height: 1.25em;
+    }
+
+    @media screen and (max-width:600px){
+        div{
+            left: 20%;
+			transform: translate(-50%);
+        }
     }
 </style>
