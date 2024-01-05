@@ -8,6 +8,7 @@ import Anusha from '$lib/assets/Organisers/Anusha Dadam.jpg'
 import Ashwin from '$lib/assets/Organisers/Ashwin.jpg'
 import Ashwini from '$lib/assets/Organisers/Ashwini.jpg'
 import Ayush_Kumar  from '$lib/assets/Organisers/AYUSH KUMAR.jpg'
+import Ayush_Raj  from '$lib/assets/Organisers/AYUSH RAJ.jpg'
 import Ayush_Singh from '$lib/assets/Organisers/Ayush Singh.jpg'
 import Bhogaraju from '$lib/assets/Organisers/BHOGARAJU SHANMUKHA SRI KRISHNA.jpg'
 import Chirag from '$lib/assets/Organisers/CHIRAG VARSHNEY.jpg'
@@ -1470,9 +1471,9 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Ayush Kumar",
-            "image": Ayush_Kumar,
-            "phone": "+91 9939595353"
+            "name": "Ayush Raj",
+            "image": Ayush_Raj,
+            "phone": "+91 8092450569"
           }
         ],
         "image": "https://cdn.midjourney.com/1371d083-7a11-40b0-82cd-5401590d2534/0_0.webp",
@@ -1921,9 +1922,9 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Souvik Mallick",
-            "image": Souvik,
-            "phone": "7430072368"
+            "name": "Manikantan",
+            "image": Manikantan,
+            "phone": "9037630397"
           }
         ],
         "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",

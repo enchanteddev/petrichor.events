@@ -221,7 +221,6 @@
 		width: 20rem;
 		text-align: center;
 		background-color: black;
-		padding: 2.5rem;
 		padding-top: 0.7rem;
 		border-radius: 10%;
 		z-index: 1;
@@ -317,6 +316,10 @@
 	}
 
 	@media screen and (max-width: 900px) {
+		.payment{
+			left: 50%;
+    		transform: translate(-67%);
+		}
 		h1 {
 			width: 100vw;
 		}
