@@ -28,7 +28,7 @@
                         </div>
                         <p>Happening on <strong style="color:cyan">{ws.date}</strong> at <strong style="color:lightgreen">{ws.location}</strong></p>
                         <p>{ws.about}</p>
-                        <a href="/payment?name={ws.name}" class="butt">Register Now for ₹{ws.fees}</a>
+                        <a href="/payment?id={ws.id}" class="butt">Register Now for ₹{ws.fees}</a>
                         <p style="color: orange;">Some knowledge in
                             {#each ws.prereq as spk, i}
                                 <span><strong>{spk}</strong>  {i == ws.prereq.length - 1 ? "" : (

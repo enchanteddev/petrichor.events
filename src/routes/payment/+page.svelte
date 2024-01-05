@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 	import { API, readToken } from '$lib';
-	import { registerData } from '$lib/stores';
+	import { registerData, isLogin } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 
@@ -22,6 +22,9 @@
 	});
 
 	onMount(() => {
+		if (!$isLogin){
+			goto('/login');
+		}
 		let bgimage = window.document.getElementById('img');
 		if (bgimage !== null) {
 			bgimage.style.backgroundImage = `url(${imgurl})`;
@@ -41,7 +44,7 @@
 				}
 			}, 3500);
 		} else {
-			fetch('https://testpetri.onrender.com/api/events/verify', {
+			fetch('https://pcap-back-production.up.railway.app/api/events/verify', {
 				method: 'POST',
 				body: JSON.stringify({
 					CAcode
