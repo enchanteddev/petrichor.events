@@ -1,13 +1,14 @@
 import type { PageLoad } from './$types';
 import { cultural, technical } from '$lib/data';
+import json from '$lib/feesandmem.json';
 
 
 export const load: PageLoad = ({ params }) => {
     if (params.slug == 'technical'){
-        return technical
+        return {'nofee':technical,'withfee':json.technical}
     } else if (params.slug == 'cultural'){
         // console.log(cultural)
-        return cultural
+        return {'nofee':cultural,'withfee':json.cultural}
     }
     return {
         events: [
