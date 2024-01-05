@@ -50,7 +50,6 @@
     }
     .workshop .img{
         background-position: center;
-        background-size: contain;
         background-repeat: no-repeat;
     }
     .debug{

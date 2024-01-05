@@ -1081,17 +1081,17 @@ export let cultural = {
         "organisers": [
           {
             "name": "SANJAY",
-            "image": "https://drive.google.com/open?id=1w_JBi5uk-WKiwP85xKFWI1LvvXZAd3Px",
+            "image": Sanjay,
             "phone": "9705063009"
           },
           {
             "name": "JEEVA",
-            "image": "https://drive.google.com/open?id=1E5ZZcLCDJb0rTBTN5KzXLZDIUdSNeeTD",
+            "image": Jeeva,
             "phone": "9481476476"
           },
           {
             "name": "VIKRANTH",
-            "image": "https://drive.google.com/open?id=1JfTf6JaQlAgIQmfFRoKSsK509snO155f",
+            "image": VIKRANTH,
             "phone": "7218175672"
           }
         ],
@@ -1941,7 +1941,7 @@ export let workshops =  {
             fees: 1280,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://miro.medium.com/v2/resize:fit:1140/1*EhJ5xkuACJSwPVqa47Jwig.jpeg',
+            image: 'https://imgs.search.brave.com/xUJDPd-rd0rAX9DDxIhu0NCFM3rCoBMRsqRVgBJRNss/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzE5LzEyLzQ3/LzM2MF9GXzYxOTEy/NDc4Ml9OVTZvekU2/RHJaV3pxandvYWNn/TXZOYVZ1RkJZQmRr/RS5qcGc',
             location: 'Nila Campus',
             topics: [],
             speakers: [  'Dr. Shaikshavali Chitraganti'],
