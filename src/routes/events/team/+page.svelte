@@ -74,7 +74,7 @@
 		{#each Array(max - 1) as e, index}
 		<p>Email of Team Member {index + 2} {index < min - 1 ? '*' : ''}</p>
 		<input
-				type="text"
+				type="email"
 				on:change={(e) => {
 					// @ts-ignore
 					emails[index + 1] = e.target.value;
