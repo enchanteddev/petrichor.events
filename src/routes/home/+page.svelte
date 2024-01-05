@@ -184,7 +184,7 @@
 	.event {
 		text-decoration: unset;
 		text-align: center;
-		background-image: url('https://petrichor.events/static/media/pic_2.5393c81e.jpg');
+		background-image: url('https://www.nme.com/wp-content/uploads/2020/08/we-the-fest-2020-virtual-home-edition.jpg');
 		height: 65vh;
 		aspect-ratio: 0.95;
 		margin-inline: 1em;
