@@ -10,9 +10,9 @@
 	export let data: any;
 	let loading = false;
 
-	// if(!$isLogin){
-	// 	goto('/login')
-	// }
+	if(!$isLogin){
+		goto('/login')
+	}
 
 	let transactionID: string;
 	let CAcode: string;
@@ -29,9 +29,9 @@
 	});
 
 	onMount(() => {
-		// if (!$isLogin){
-		// 	goto('/login');
-		// }
+		if (!$isLogin){
+			goto('/login');
+		}
 		let bgimage = window.document.getElementById('img');
 		if (bgimage !== null) {
 			bgimage.style.backgroundImage = `url(${imgurl})`;
