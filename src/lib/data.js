@@ -347,12 +347,12 @@ export let cultural = {
           {
             "name": "Anusha Dadam",
             "image": Anusha,
-            "phone": "93"
+            "phone": "+91 93925 39384"
           },
           {
             "name": "Mausumi  Bhuyan",
             "image": Mausumi,
-            "phone": "925"
+            "phone": "7749902629"
           }
         ],
         "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
