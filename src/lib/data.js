@@ -1135,11 +1135,6 @@ export let technical = {
             "name": "Kshitij Ghodake",
             "image": Kshitij,
             "phone": "+917298991001"
-          },
-          {
-            "name": "Kshitij Ghodake",
-            "image": Kshitij,
-            "phone": "+917298991001"
           }
         ],
         "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
@@ -1877,6 +1872,51 @@ export let technical = {
             "4. If the machine is controlled wirelessly the machine must have at least a four frequency remote control circuit or two dual control circuits which may be interchanged before the start the match to avoid frequency interference with the opposing team. The case of any interference in the wireless systems will not be considered for the rematch or results.",
             "Weapon Systems",
             "1. Robots can have any kind of flippers, wedges, lifting devices etc. as weapons. Only the weapons mentioned above are allowed and inclusion of any other weapon is not allowed."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Souvik Mallick",
+            "image": Souvik,
+            "phone": "7430072368"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
+        "date": "28/1/2024",
+        "id": "TF13"
+      },
+      {
+        "name": "Chipcraft",
+        "about": "This technical challenge invites you to create a customized PCB, integrating a microcontroller tailored to a given application.",
+        "rulebook": {
+          "structure": [
+            "In this event, participants are tasked with designing and laying out a microcontroller-PCB solution for a specified application. The source code for programming the microcontroller must be included in the submission. A template for the schematic circuit design of the STM32 microcontroller, complete with a linear regulator, USB connector, clock generator, and programming connector, will be provided. The specific application for PCB design will be disclosed at the start of the event. Participants are expected to create a block diagram design, expand the schematic within the provided template, and ultimately craft a comprehensive layout for the PCB, incorporating the specified components."
+          ],
+          "judging": [
+            "1. Total Marks: 100",
+            "2. Incorrect designs will not lead to disqualification, but points will be deducted based on the criticality of the mistake, ranging from -5 to -20.",
+            "Weightage of Evaluation Parameters:",
+            "1. Design Simplicity: 20 points",
+            "2. Design Efficiency: 20 points",
+            "3. Cost-Effective Design (Considering Bill of Materials): 10 points",
+            "4. Placement and Layouting of the PCB: 40 points"
+          ],
+          "prizes": [
+            "Total: ₹8,000",
+            "First Place: ₹4,000",
+            "Second Place: ₹2,500",
+            "Third Place: ₹1,500",
+            "Additionally, the first-place team will have their design printed and assembled at the Innovation Lab, with the PCB sent to the winners by courier. ( need budget for this 2 - 3 k)"
+          ],
+          "rules": [
+            "1. Participants must submit the schematic, PCB layout, and the program to run on the controller, accompanied by a block diagram explanation of the code.",
+            "2. The microcontroller used in the design must be STM32 (a template layout and datasheet for the controller will be provided).",
+            "3. Teams can employ their preferred CAD tools for PCB design.",
+            "4. Each team is limited to one solution submission.",
+            "5. Plagiarism will result in disqualification.",
+            "6. Late submissions, with a penalty of 20 points, will be accepted up to one day after the deadline.",
+            "7. The team with the highest point score will be declared the winners. In the case of a tie, the time of submission will serve as the tiebreaker.",
+            "8. The decision of the evaluators will be final."
           ]
         },
         "organisers": [

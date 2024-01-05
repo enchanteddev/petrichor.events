@@ -32,10 +32,10 @@
     let teams : {[key:string]:any} = {}
     teams["Coordinator"]=[["Sarthak","122101035@smail.iitpkd.ac.in",Sarthak]]
 
-    teams["Assistance  Coordinators"]=[["Netra","132201017@smail.iitpkd.ac.in",Netra],
+    teams["Assistant Coordinators"]=[["Netra","132201017@smail.iitpkd.ac.in",Netra],
                                     ["Aryan Mathur","122201017@smail.iitpkd.ac.in",Aryan]]
 
-    teams["Technical Heads"]=[["Shubham","",Shubham],
+    teams["Technical Heads"]=[["Shubhan","",Shubham],
                             ["Manish","",Manish]]
 
     teams["Cultural Heads"]=[["Nandhana","1122201008@smail.iitpkd.ac.in",Nadhana],

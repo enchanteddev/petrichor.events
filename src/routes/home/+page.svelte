@@ -1,5 +1,6 @@
 <!-- svelte-ignore a11y-media-has-caption -->
 <script lang="ts">
+	import Cult from '$lib/assets/Sponsors/cult.jpg'
 	import { enhance } from '$app/forms';
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
@@ -82,8 +83,8 @@
 	<div class="banner events" id="events">
 		<h1 style="margin-bottom: 0;">EVENTS</h1>
 		<div class="sel">
-			<a href="/events/cultural" class="event">CULTURAL</a>
-			<a href="/events/technical" class="event">TECHNICAL</a>
+			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
+			<a href="/events/technical" class="event" style="background-image: url({Cult});">TECHNICAL</a>
 		</div>
 	</div>
 	<div class="banner workshops">
@@ -184,7 +185,8 @@
 	.event {
 		text-decoration: unset;
 		text-align: center;
-		background-image: url('https://www.nme.com/wp-content/uploads/2020/08/we-the-fest-2020-virtual-home-edition.jpg');
+		/* background-image: url('https://petrichor.events/static/media/pic_2.5393c81e.jpg'); */
+/* 		background-image: url('https://www.nme.com/wp-content/uploads/2020/08/we-the-fest-2020-virtual-home-edition.jpg'); */
 		height: 65vh;
 		aspect-ratio: 0.95;
 		margin-inline: 1em;
