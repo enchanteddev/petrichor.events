@@ -17,10 +17,10 @@
 		fees = eventData.fee
 		console.log(eventData, max)
 		emails = Array(max);
+		emails[0] = $userEmail;
 	})
 	
 
-	emails[0] = $userEmail;
 
 	
 	onMount(() => {
