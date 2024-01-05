@@ -8,13 +8,15 @@
 	import { API } from '$lib';
 	import { goto } from '$app/navigation';
 
-	export let data: { [key: string]: event[] };
-	let events = data['events'];
+	export let data: any;
+	let events = data['nofee']['events'];
+	let events1 = data['withfee']
 
+	
 	$: {
 		console.log('$isLogin:', $isLogin, $userEmail);
 	}
-
+	
 	let bg: HTMLDivElement;
 	let currentEvent: event = events[0];
 	let registered = false;
@@ -27,6 +29,9 @@
 			registered = true;
 		}
 	}
+
+	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
+
 	onMount(() => {
 		bg.style.backgroundImage = `url("${currentEvent.image}")`;
 	});
@@ -35,6 +40,7 @@
 		registering = false;
 		bg.style.backgroundImage = `url("${event.image}")`;
 		currentEvent = event;
+		currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
 		// console.log(event.image);
 		// console.log($userEvents);
 		// console.log('p');
@@ -123,7 +129,7 @@
 			<p>{currentEvent && currentEvent.about}</p>
 			<div class="buttons">
 				<a href="#rules" class="a-unset register">LEARN MORE</a>
-				<a href="#register" class="a-unset register">REGISTER NOW</a>
+				<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':currEveFee}</a>
 			</div>
 		</div>
 		<div class="rulebook" id="rules">
