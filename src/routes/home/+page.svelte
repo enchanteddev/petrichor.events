@@ -1,6 +1,7 @@
 <!-- svelte-ignore a11y-media-has-caption -->
 <script lang="ts">
-	import Cult from '$lib/assets/Sponsors/cult.jpg'
+	import Cult from '$lib/assets/Cult&Tech/cult.jpg'
+	import Tech from '$lib/assets/Cult&Tech/TechnicalWeb.jpg'
 	import { enhance } from '$app/forms';
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
@@ -84,7 +85,7 @@
 		<h1 style="margin-bottom: 0;">EVENTS</h1>
 		<div class="sel">
 			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
-			<a href="/events/technical" class="event" style="background-image: url({Cult});">TECHNICAL</a>
+			<a href="/events/technical" class="event" style="background-image: url({Tech});">TECHNICAL</a>
 		</div>
 	</div>
 	<div class="banner workshops">
