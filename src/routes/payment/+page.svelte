@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 	import { API, readToken } from '$lib';
-	import { registerData, isLogin } from '$lib/stores';
+	import { registerData, isLogin, userEvents } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 
@@ -121,6 +121,7 @@
 				.then((response) => response.json())
 				.then((data) => {console.log(data)
 					if (data.status == 200){
+						userEvents.update((value) => [...value, $registerData.eventID]);
 						alert("Payment Successful! You will get an email shortly.")
 						setTimeout(() => {goto('/profile')}, 500)
 					} else if (data.status == 500){

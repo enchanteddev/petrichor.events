@@ -21,8 +21,8 @@
 	let registering = false;
 	if ($isLogin) {
 		// @ts-ignore
-		console.log($userEvents);
-		console.log('p');
+		// console.log($userEvents);
+		// console.log('p');
 		if (currentEvent.id in $userEvents) {
 			registered = true;
 		}
@@ -35,14 +35,16 @@
 		registering = false;
 		bg.style.backgroundImage = `url("${event.image}")`;
 		currentEvent = event;
-		console.log(event.image);
-		console.log($userEvents);
-		console.log('p');
+		// console.log(event.image);
+		// console.log($userEvents);
+		// console.log('p');
 		if ($isLogin) {
 			// @ts-ignore
-			if (currentEvent.id in $userEvents) {
-				registered = true;
-			}
+			$userEvents.forEach(element => {
+				if (element == currentEvent.id){
+					registered=true
+				}
+			});
 		}
 	};
 
