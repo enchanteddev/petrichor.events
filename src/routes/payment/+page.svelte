@@ -12,10 +12,11 @@
 	let CAcode: string;
 	let imgurl: string;
 	let amount = data.fee;
-	let accountNumber = '110046805978';
-	let ifscCode = 'CNRB0006174';
+	// let accountNumber = '9493256601';
+	// let ifscCode = 'CNRB0006174';
 	let success = false;
-	let qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+	// let qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+	let qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`
 
 	QRCode?.toDataURL(`${qrcodeurl}`, function (err: any, url: string) {
 		imgurl = url;
@@ -62,7 +63,8 @@
 					let CAcodeElt = window.document.getElementById('CAcode') as HTMLInputElement;
 					if (success) {
 						amount = 1000;
-						qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+						// qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
+						qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`
 
 						QRCode?.toDataURL(`${qrcodeurl}`, function (err: any, url: any) {
 							imgurl = url;
