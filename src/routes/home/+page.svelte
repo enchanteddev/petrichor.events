@@ -26,31 +26,34 @@
 	onMount(() => {
 		let ans;
 		console.log(readToken());
-		fetch(API.whoami, {
-			method: 'POST',
-			headers: {
-				Accept: 'application/json',
-				'Content-type': 'application/json'
-			},
-			credentials: 'omit',
-			body: JSON.stringify({
-				token: readToken()
+		if(readToken()){
+			fetch(API.whoami, {
+				method: 'POST',
+				headers: {
+					Accept: 'application/json',
+					'Content-type': 'application/json'
+				},
+				credentials: 'omit',
+				body: JSON.stringify({
+					token: readToken()
+				})
 			})
-		})
-			.then((res) => res.json())
-			.then((res) => {
-				ans = res;
-				console.log(res);
-				if (ans.user == null || ans.user == undefined) {
-					isLogin.set(false);
-					userEvents.set([]);
-				} else {
-					isLogin.set(true);
-					userEvents.set(ans.events);
-					console.log(ans.email);
-					userEmail.set(ans.email);
-				}
-			});
+				.then((res) => res.json())
+				.then((res) => {
+					ans = res;
+					console.log(res);
+					if (ans.user == null || ans.user == undefined) {
+						isLogin.set(false);
+						userEvents.set([]);
+					} else {
+						isLogin.set(true);
+						userEvents.set(ans.events);
+						console.log(ans.email);
+						userEmail.set(ans.email);
+					}
+				});
+
+		}
 	});
 </script>
 
