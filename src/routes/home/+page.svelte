@@ -1,7 +1,7 @@
 <!-- svelte-ignore a11y-media-has-caption -->
 <script lang="ts">
-	import Cult from '$lib/assets/Cult&Tech/cult.jpg'
-	import Tech from '$lib/assets/Cult&Tech/TechnicalWeb.jpg'
+	import Cult from '$lib/assets/Cult&Tech/cult.jpg';
+	import Tech from '$lib/assets/Cult&Tech/TechnicalWeb.jpg';
 	import { enhance } from '$app/forms';
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
@@ -47,7 +47,7 @@
 				} else {
 					isLogin.set(true);
 					userEvents.set(ans.events);
-					console.log(ans.email)
+					console.log(ans.email);
 					userEmail.set(ans.email);
 				}
 			});
@@ -92,10 +92,15 @@
 		<h1>Workshops</h1>
 		<div class="wscont">
 			{#each workshops.workshops as w}
-				<div class="ws" style="background-image: url('{w.image}');font-weight:bolder">
+				<a href="/workshops#{w.name}" style="text-decoration:None;">
+					<div
+						class="ws"
+						style="background-image: url('{w.image}');font-weight:bolder;"
+					>
 						<h2>{w.name}</h2>
 						<p>{w.about}</p>
-				</div>
+					</div>
+				</a>
 			{/each}
 		</div>
 	</div>
@@ -187,7 +192,7 @@
 		text-decoration: unset;
 		text-align: center;
 		/* background-image: url('https://petrichor.events/static/media/pic_2.5393c81e.jpg'); */
-/* 		background-image: url('https://www.nme.com/wp-content/uploads/2020/08/we-the-fest-2020-virtual-home-edition.jpg'); */
+		/* 		background-image: url('https://www.nme.com/wp-content/uploads/2020/08/we-the-fest-2020-virtual-home-edition.jpg'); */
 		height: 65vh;
 		aspect-ratio: 0.95;
 		margin-inline: 1em;
@@ -325,7 +330,34 @@
 		transform: translate(0, 5%);
 	}
 
-	@media (max-width: 500px) {
+	@media screen and (min-width: 930px){
+		.wscont {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		.workshops{
+			width: 100%;
+			overflow: hidden;
+			padding: 25rem 0rem;
+		} 
+		.ws{
+			height: 250px;
+		}
+	}
+
+	@media (max-width: 930px) {
+		.wscont {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+		.workshops{
+			width: 100%;
+			overflow: hidden;
+			padding: 45rem 0rem;
+		} 
+		.ws {
+			width: 15em;
+		}
 		.main {
 			width: 100vw;
 		}
@@ -373,16 +405,6 @@
 		}
 		p {
 			text-align: justify;
-		}
-		.wscont {
-			display: block;
-		}
-		.ws {
-			width: 15em;
-		}
-		.workshops {
-			padding-top: 45rem;
-			padding-bottom: 45rem;
 		}
 	}
 	@media screen and (max-width: 330px) {
