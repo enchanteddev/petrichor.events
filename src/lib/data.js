@@ -206,7 +206,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/4afbe489-0966-4b49-b62a-267a6624785e/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CP02"
       },
       {
@@ -315,7 +315,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/3b0fcb4e-4eef-470b-bc36-13696a9a2e00/0_0.webp",
-        "date": "Undeclared",
+        "date": "28-01-2024",
         "id": "CF04"
       },
       {
@@ -431,7 +431,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/d6779d15-f197-4a40-adb1-16094c9efb13/0_1.webp",
-        "date": "Undeclared",
+        "date": "28-01-24",
         "id": "CP06"
       },
       {
@@ -534,7 +534,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
-        "date": "Undeclared",
+        "date": "20-01-24",
         "id": "CF08"
       },
       {
@@ -581,7 +581,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
-        "date": "Undeclared",
+        "date": "08-01-24 to 28-01-24",
         "id": "CP09"
       },
       {
@@ -627,7 +627,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
-        "date": "Undeclared",
+        "date": "21-01-24",
         "id": "CP10"
       },
       {
@@ -676,7 +676,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/e717aa0a-05b2-4d41-9bcc-b1a8f50d3273/0_0.webp",
-        "date": "Undeclared",
+        "date": "08-01-24 to 28-01-24",
         "id": "CF11"
       },
       {
@@ -781,7 +781,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/a4555563-5854-46b4-8e8b-d46d93f13b90/0_0.webp",
-        "date": "Undeclared",
+        "date": "08-01-24 to 28-01-24",
         "id": "CF13"
       },
       {
@@ -893,7 +893,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/4fa0f1f0-68d5-479b-b382-03dc228d5dec/0_0.webp",
-        "date": "Undeclared",
+        "date": "27-01-24 to 31-01-24",
         "id": "CF15"
       },
       {
@@ -1097,7 +1097,7 @@ export let cultural = {
           }
         ],
         "image": "https://cdn.midjourney.com/31d65d6e-dc78-4bf5-b515-13ed033daaa0/0_0.webp",
-        "date": "27/1/2024 - 28/1/2024",
+        "date": "19-01-24",
         "id": "CF19"
       }
     ]
