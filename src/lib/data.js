@@ -1921,8 +1921,8 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Souvik Mallick",
-            "image": Souvik,
+            "name": "Manikantan",
+            "image": Manikantan,
             "phone": "7430072368"
           }
         ],
