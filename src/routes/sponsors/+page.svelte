@@ -41,7 +41,7 @@
 
 <div id="all1">
 	<div id="cazzkaro" class="sponsor">
-		<div class="title">Mertch Partner</div>
+		<div class="title">Merch Partner</div>
 		<div class="img" style="background-image:url({Cazzkaro})"/>
 		<div class="name">Cazzkaro</div>
 	</div>
