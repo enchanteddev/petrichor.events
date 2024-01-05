@@ -1923,7 +1923,7 @@ export let technical = {
           {
             "name": "Manikantan",
             "image": Manikantan,
-            "phone": "7430072368"
+            "phone": "9037630397"
           }
         ],
         "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
