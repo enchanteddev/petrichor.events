@@ -116,10 +116,13 @@
 			})
 				.then((response) => response.json())
 				.then((data) => {console.log(data)
-					if (data.success){
-						alert("Payment Successful! You Will get an email shortly.")
+					if (data.status == 200){
+						alert("Payment Successful! You will get an email shortly.")
 						setTimeout(() => {goto('/profile')}, 500)
-					} 
+					} else if (data.status == 500){
+						alert("You have already applied for the event")
+						setTimeout(() => {goto('/profile')}, 500)
+					}
 				});
 		} else {
 			let warning = /** @type {HTMLInputElement} */ document.getElementById('warning');
