@@ -104,8 +104,8 @@
 			fetch(API.events_apply_paid, {
 				method: 'POST',
 				body: JSON.stringify({
-					transactionID,
-					CAcode,
+					transactionID: transactionID,
+					CACode: CAcode,
 					"token": readToken(),
 					"eventId": w ,
 					"participants": $registerData.registeredEmails

@@ -58,7 +58,7 @@
 			const eventData = await eventDataResponse.json();
 
 			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1) {
-				if (eventData.fees == 0) {
+				if (eventData.fee == 0) {
 					registering = true;
 					await POST(API.events_apply_free, {
 						participants: [$userEmail],
