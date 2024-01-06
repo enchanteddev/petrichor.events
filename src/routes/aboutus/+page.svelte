@@ -106,7 +106,7 @@ h1{
     font-size: 64px;
 }
 .fullwidth{
-    width: 100%;
+   /* width: 100%; */
 }
 
 .aboutus_para{
