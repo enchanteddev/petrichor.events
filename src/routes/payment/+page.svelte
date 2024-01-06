@@ -110,9 +110,9 @@
 				body: JSON.stringify({
 					transactionID,
 					CAcode,
-					token: readToken(),
-					eventId: w,
-					participants: $registerData.registeredEmails
+					"token": readToken(),
+					"eventId": w ,
+					"participants": $registerData.registeredEmails
 				}),
 				headers: {
 					'Content-type': 'application/json; charset=UTF-8'

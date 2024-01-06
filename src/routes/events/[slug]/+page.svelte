@@ -71,7 +71,7 @@
 			loading = false
 
 			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1) {
-				if (eventData.fees == 0) {
+				if (eventData.fee == 0) {
 					registering = true;
 					loading = true
 					await POST(API.events_apply_free, {
