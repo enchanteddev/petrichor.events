@@ -3,10 +3,15 @@
     import {user, shoppingCart, mapMarker, calendar, instagram, facebook, linkedin, twitter, youtube} from 'svelte-awesome/icons'
     import bg from '$lib/assets/dark.jpg'
     import pet from '$lib/assets/pet.png'
+    import { isLogin } from '$lib/stores'
+	import Loading from '$lib/components/Loading.svelte';
 
     export let data;
     let hover = false;
+    let loading = false;
 </script>
+
+<Loading spinning={loading}></Loading>
 
 <div class="bg" style="background-image: url('{bg}');">
 
@@ -31,7 +36,7 @@
             <!-- <a href="/proshows">Proshows</a> -->
             <!-- <a href="/merch">Merch</a> -->
             <a href="/sponsors">Sponsors</a>
-            <a href="/login" class="login"><Icon data={user} scale={1.6}/></a>
+            <a href="{$isLogin? "/profile" : "/login"}" class="login"><Icon data={user} scale={1.6}/></a>
         </nav>
     </div>  
     {/if}

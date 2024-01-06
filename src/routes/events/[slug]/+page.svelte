@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Loading from '$lib/components/Loading.svelte';
 	import Person from '$lib/components/Person.svelte';
 	import type { event } from '$lib/types';
 	import { isLogin, registerData, userEvents, userEmail } from '$lib/stores';
@@ -8,25 +9,31 @@
 	import { API } from '$lib';
 	import { goto } from '$app/navigation';
 
-	export let data: { [key: string]: event[] };
-	let events = data['events'];
+	export let data: any;
+	let events = data['nofee']['events'];
+	let events1 = data['withfee']
+	let loading = false
 
+	
 	$: {
 		console.log('$isLogin:', $isLogin, $userEmail);
 	}
-
+	
 	let bg: HTMLDivElement;
 	let currentEvent: event = events[0];
 	let registered = false;
 	let registering = false;
 	if ($isLogin) {
 		// @ts-ignore
-		console.log($userEvents);
-		console.log('p');
+		// console.log($userEvents);
+		// console.log('p');
 		if (currentEvent.id in $userEvents) {
 			registered = true;
 		}
 	}
+
+	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
+
 	onMount(() => {
 		bg.style.backgroundImage = `url("${currentEvent.image}")`;
 	});
@@ -35,31 +42,38 @@
 		registering = false;
 		bg.style.backgroundImage = `url("${event.image}")`;
 		currentEvent = event;
-		console.log(event.image);
-		console.log($userEvents);
-		console.log('p');
+		currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
+		// console.log(event.image);
+		// console.log($userEvents);
+		// console.log('p');
 		if ($isLogin) {
 			// @ts-ignore
-			if (currentEvent.id in $userEvents) {
-				registered = true;
-			}
+			$userEvents.forEach(element => {
+				if (element == currentEvent.id){
+					registered=true
+				}
+			});
 		}
 	};
 
 	const clicked = async () => {
 		if (!$isLogin) {
+			loading = true
 			goto('/login');
 		} else {
 			$registerData.eventID = currentEvent.id;
 			$registerData.registeredEmails.push($userEmail);
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
+			loading = true 
 			const eventDataResponse = await POST(API.event, { id: currentEvent.id });
 			const eventData = await eventDataResponse.json();
+			loading = false
 
 			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1) {
 				if (eventData.fee == 0) {
 					registering = true;
+					loading = true
 					await POST(API.events_apply_free, {
 						participants: [$userEmail],
 						// @ts-ignore
@@ -68,6 +82,7 @@
 					})
 						.then((res) => res.json())
 						.then((res) => {
+							loading = false
 							console.log(res);
 							if (res.status == 200) {
 								userEvents.update((value) => [...value, currentEvent.id]);
@@ -80,14 +95,18 @@
 						});
 					setEvent(currentEvent);
 				} else {
+					loading = true
 					goto(`/payment?id=${currentEvent.id}`);
 				}
 			} else {
+				loading = true
 				goto('/events/team');
 			}
 		}
 	};
 </script>
+
+<Loading spinning = {loading}></Loading>
 
 <div class="bg" bind:this={bg} />
 <div class="parent">
@@ -121,7 +140,7 @@
 			<p>{currentEvent && currentEvent.about}</p>
 			<div class="buttons">
 				<a href="#rules" class="a-unset register">LEARN MORE</a>
-				<a href="#register" class="a-unset register">REGISTER NOW</a>
+				<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':currEveFee}</a>
 			</div>
 		</div>
 		<div class="rulebook" id="rules">

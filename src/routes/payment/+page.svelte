@@ -2,11 +2,17 @@
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 	import { API, readToken } from '$lib';
-	import { registerData, isLogin } from '$lib/stores';
+	import { registerData, isLogin, userEvents } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
+	import Loading from '$lib/components/Loading.svelte';
 
 	export let data: any;
+	let loading = false;
+
+	if(!$isLogin){
+		goto('/login')
+	}
 
 	let transactionID: string;
 	let CAcode: string;
@@ -45,6 +51,7 @@
 				}
 			}, 3500);
 		} else {
+			loading = true;
 			fetch('https://pcap-back-production.up.railway.app/api/events/verify', {
 				method: 'POST',
 				body: JSON.stringify({
@@ -56,8 +63,10 @@
 			})
 				.then((response) => response.json())
 				.then((data) => {
+					loading = false;
 					console.log(data);
 					console.log('a');
+
 					success = data.verified;
 					let verify = window.document.getElementById('verify');
 					let CAcodeElt = window.document.getElementById('CAcode') as HTMLInputElement;
@@ -98,6 +107,7 @@
 	const submit = () => {
 		CAcode = success ? CAcode : '';
 		if (transactionID) {
+			loading = true;
 			console.log($registerData.eventID)
 			let w=$registerData.eventID
 			console.log(w)
@@ -115,8 +125,11 @@
 				}
 			})
 				.then((response) => response.json())
-				.then((data) => {console.log(data)
+				.then((data) => {
+					loading = false;
+					console.log(data)
 					if (data.status == 200){
+						userEvents.update((value) => [...value, $registerData.eventID]);
 						alert("Payment Successful! You will get an email shortly.")
 						setTimeout(() => {goto('/profile')}, 500)
 					} else if (data.status == 500){
@@ -138,6 +151,8 @@
 		}
 	};
 </script>
+
+<Loading spinning = {loading} />
 
 <div id="all">
 	<h1 style="text-align:center;margin-top:10rem;">
@@ -177,7 +192,7 @@
 			<input
 				id="transId"
 				type="text"
-				maxlength="25"
+				maxlength="50"
 				placeholder="Your Transaction Id"
 				style="display:block;"
 				bind:value={transactionID}

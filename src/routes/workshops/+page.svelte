@@ -9,7 +9,7 @@
     <div style="height: 5em;"></div>
     <div class="workshops">
         {#each workshops as ws}
-            <div class="workshop">
+            <div class="workshop" id="{ws.name}">
                 <div class="about" >
                     <div class="banner">
                         <h1>{ws.name}</h1>

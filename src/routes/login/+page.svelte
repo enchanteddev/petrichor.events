@@ -1,15 +1,20 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { setToken } from '$lib/index';
+	import Loading from '$lib/components/Loading.svelte';
 	
 	import { isLogin, userEvents, userEmail } from '$lib/stores';
 	import { API, readToken } from '$lib/index';
 	import { goto } from '$app/navigation';
 
+	let loading = false;
 	if($isLogin){
+		loading = true
 		goto('/profile')
 	}
 </script>
+
+<Loading spinning = {loading} />
 
 <div class="form-container">
 	<div class="blank2" />
@@ -19,6 +24,7 @@
 			action="?/login"
 			method="POST"
 			use:enhance={({ form }) => {
+				loading = true
 				return async ({ result, update }) => {
 					if (result.type == 'success') {
 						if (result.data) {
@@ -39,6 +45,7 @@
 							})
 								.then((res) => res.json())
 								.then((res) => {
+									loading = false
 									ans = res;
 									console.log(res);
 									if (ans.user == null || ans.user == undefined) {
@@ -52,10 +59,12 @@
 								});
 								goto('/profile')
 						}else{
+							loading = false
 							alert('Invalid email or password');
 							goto('/login')
 						}
 					} else {
+						loading = false
 						alert('Invalid email or password');
 						goto('/login')
 					}

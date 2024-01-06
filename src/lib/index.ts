@@ -50,6 +50,14 @@ export const setToken = (token: string, expirationDays: number) => {
    
 }
 
+export const deleteToken = () =>{
+    try {
+        document.cookie="token=;expires=Thu, 01 Jan 2000 00:00:01 GMT"
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 export async function POST(url: string, body: any) {
     return await fetch(url, {
         method: 'POST',

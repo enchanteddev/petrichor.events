@@ -1,9 +1,21 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
+	import { deleteToken } from "$lib";
 	import Event from "$lib/components/Event.svelte";
+	import { isLogin, registerData, userEmail, userEvents } from "$lib/stores.js";
 	export let data;
 	const { user } = data
 	console.log(user)
+
+	const logout =async () => {
+		isLogin.set(false)
+		userEvents.set([])
+		userEmail.set("")
+		registerData.set({eventID: "",
+			registeredEmails: []})
+		deleteToken()
+		goto('/')
+	}
 	
 </script>
 
@@ -16,6 +28,7 @@
 				<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
 					{user.email}
 				</p>
+				<button class="logout" style="background-color: red;" on:click={()=>{logout()}}>Logout</button>
 			</div>
 
 			<div
@@ -120,6 +133,16 @@
 		line-height: 0;
 		height: 80px;
 		text-align: left;
+	}
+	.logout{
+		text-decoration: none;
+		border-radius: 10px;
+		align-self: flex-start;
+		font-size: smaller;
+		margin-top: 10px;
+	}
+	.logout:hover{
+		cursor: pointer;
 	}
 	.accommodation {
 		display: flex;

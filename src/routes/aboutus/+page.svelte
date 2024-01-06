@@ -35,8 +35,8 @@
     teams["Assistant Coordinators"]=[["Netra","132201017@smail.iitpkd.ac.in",Netra],
                                     ["Aryan Mathur","122201017@smail.iitpkd.ac.in",Aryan]]
 
-    teams["Technical Heads"]=[["Shubhan","",Shubham],
-                            ["Manish","",Manish]]
+    teams["Technical Heads"]=[["Shubhan","122101037@smail.iitpkd.ac.in",Shubham],
+                            ["Manish","122101023@smail.iitpkd.ac.in",Manish]]
 
     teams["Cultural Heads"]=[["Nandhana","1122201008@smail.iitpkd.ac.in",Nadhana],
                             ["Eshwar","112101016@smail.iitpkd.ac.in",Eshwar]]
@@ -48,15 +48,15 @@
     teams["Decoration Head"]=[["Anjitha","132201001@smail.iitpkd.ac.in",ANJI]]
     teams["Film and Videography Head"]=[["Utsav","112201050@smail.iitpkd.ac.in",Utsav]]
     teams["Content Creation Head"]=[["Sarath","122101034@smail.iitpkd.ac.in",Sarath_A]]
-    teams["Media and Publicity Head"]=[["Ashwin","",Aswhin],["Kishore","122201019@smail.iitpkd.ac.in",Kishore]]
+    teams["Media and Publicity Head"]=[["Ashwin","122101004@smail.iitpkd.ac.in",Aswhin],["Kishore","122201019@smail.iitpkd.ac.in",Kishore]]
     teams["Social Media Head"]=[["Pavan","122201022@smail.iitpkd.ac.in",Pawan]]
-    teams["Tech-Summit Head"]=[["Vijay","",Vijay]]
-    teams["Workshop Head"]=[["Siva","",Siva]]
-    teams["Hospitality Head"]=[["Priyanshu","112101039@smail.iitpkd.ac.in",Priyanshu],["Azim","",Azim]]
-    teams["Proshow Head"]=[["Sujit","",Sujit]]
-    teams["Informals Head"]=[["Vishnu","",Vishnu]]
-    teams["Finance Head"]=[["Ajay","",Ajay]]
-    teams["Marketing Head"]=[["Rushikesh","132101027@smail.iitpkd.ac.in",Rushikesh],["Vinay","132201016@smail.iitpkd.ac.in",Vinay],["Sai Kumar","",Sai_Kumar]]
+    teams["Tech-Summit Head"]=[["Vijay","112101060@smail.iitpkd.ac.in",Vijay]]
+    teams["Workshop Head"]=[["Siva","122101038@smail.iitpkd.ac.in",Siva]]
+    teams["Hospitality Head"]=[["Priyanshu","112101039@smail.iitpkd.ac.in",Priyanshu],["Azim","122201042@smail.iitpkd.ac.in",Azim]]
+    teams["Proshow Head"]=[["Sujit","112001043@smail.iitpkd.ac.in",Sujit]]
+    teams["Informals Head"]=[["Vishnu","112101053@smail.iitpkd.ac.in",Vishnu]]
+    teams["Finance Head"]=[["Ajay","122001017@smail.iitpkd.ac.in",Ajay]]
+    teams["Marketing Head"]=[["Rushikesh","132101027@smail.iitpkd.ac.in",Rushikesh],["Vinay","132201016@smail.iitpkd.ac.in",Vinay],["Sai Kumar","132101035@smail.iitpkd.ac.in",Sai_Kumar]]
     teams["Fest Mentor"]=[["Aleena","122201004@smail.iitpkd.ac.in",Aleena]]
     teams["Open House Coordinator"]=[["Sidarth","112201048@smail.iitpkd.ac.in",Sidharth]]
 </script>

@@ -1,16 +1,20 @@
 <script lang="ts">
-	import { userEmail, registerData, isLogin } from '$lib/stores';
+	import { userEmail, registerData, isLogin, userEvents } from '$lib/stores';
 	import { POST, API, readToken } from '$lib';
 	import { onMount } from 'svelte';
 	import Toast from '$lib/components/Toast.svelte';
 	import { goto } from '$app/navigation';
+	import Loading from '$lib/components/Loading.svelte';
 	
 	let eventData: any = null
 	let min = 1;
 	let max = 1;
 	let fees = 0
 	let emails = Array(max);
+	let loading = false
+	loading = true
 	POST(API.event, {id: $registerData.eventID}).then(e => e.json()).then(e => {
+		loading = false
 		eventData = e;		
 		min = eventData.minMemeber
 		max = eventData.maxMemeber
@@ -26,6 +30,7 @@
 	onMount(() => {
 		console.log($isLogin, $userEmail)
 	    if (!$userEmail){
+			loading = true
 	        goto('/login')
 	    }
 	})
@@ -42,22 +47,27 @@
 		}
 		console.log('fees', fees)
 		if (fees == 0){
+			loading = true
 			const response = await POST(API.events_apply_free, {
 				participants: $registerData.registeredEmails,
 				eventId: $registerData.eventID,
 				token: readToken()
 			})
+			loading = false
 			if (response.status == 200){
 				successToast = true;	
+				userEvents.update((value) => [...value, $registerData.eventID]);
 				setTimeout(() => {goto('/profile')}, 1000)
 			} else {
 				failedToast = true;
 			}
 		} else {
+			loading = true 
 			goto(`/payment?id=${$registerData.eventID}`)
 		}
 	}
 </script>
+<Loading spinning = {loading}></Loading>
 {#if successToast}
 	<Toast message="Event Registered!" bind:show={successToast}/>
 {/if}
