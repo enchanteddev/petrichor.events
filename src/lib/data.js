@@ -276,9 +276,21 @@ export let cultural = {
         "about": "Group fashion event",
         "rulebook": {
           "structure": [
-            "1) Formation of teams",
-            "2) Deciding costumes and choreography and audio track",
-            "3) Performance"
+            "Round 1 (Online) :",
+            "1) It is a group event. No individual participation is allowed.",
+            "2) Each team can have a maximum of 15 members consisting of 6-12 models.",
+            "3) Every team should submit photos of their models or videos of their performance for shortlisting, in a Google form which will be provided via your registered email id.",
+            "4) Shortlisting will be done based on presentation of the contestants' fashion sense, clearly displaying the dress and pose.",
+            "5) The deadline for submission for the online screening round is on 15th January 2024.", 
+            " ", 
+            "Round 2 (Offline) :",
+            "1) Top entries will be selected for this round.",
+            "2) All participants must register via our website to be eligible for participation.",
+            "3) Each team is allotted 15 minutes for the performance.",
+            "4) Every performance must be based on a theme. The theme can be decided by the team.",
+            "5) Use of accessories like bags, scarves, hats, etc. is encouraged; however, use of fire, water, and any item that could damage the stage or hinder the performance of other teams will lead to disqualification",
+            "6) The teams are required to submit their music via a Google form provided to them after the selections. They should also bring it on a pen-drive, along with an audio backup.",
+            "7) Provision of light and sound will be taken care of by the organizers",
           ],
           "judging": [
             "1) relevance to theme (metamorphosis)",
