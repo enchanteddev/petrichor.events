@@ -18,11 +18,8 @@
 	let CAcode: string;
 	let imgurl: string;
 	let amount = data.fee;
-	// let accountNumber = '9493256601';
-	// let ifscCode = 'CNRB0006174';
 	let success = false;
-	// let qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
-	let qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`
+	let qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`;
 
 	QRCode?.toDataURL(`${qrcodeurl}`, function (err: any, url: string) {
 		imgurl = url;
@@ -71,23 +68,20 @@
 					let verify = window.document.getElementById('verify');
 					let CAcodeElt = window.document.getElementById('CAcode') as HTMLInputElement;
 					if (success) {
-						amount = 1000;
-						// qrcodeurl = `upi://pay?pa=${accountNumber}@${ifscCode}.ifsc.npci&am=${amount}&cu=INR`;
-						qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`
-
-						QRCode?.toDataURL(`${qrcodeurl}`, function (err: any, url: any) {
-							imgurl = url;
-						});
-
-						let bgimage = window.document.getElementById('img');
-						if (bgimage !== null) {
-							bgimage.style.backgroundImage = `url(${imgurl})`;
-						}
-
 						if (verify != null) {
 							verify.innerHTML = 'Verified';
 							CAcodeElt.disabled = true;
 						}
+						if (warning != null) {
+							warning.style.visibility = 'visible';
+							warning.style.color = 'green';
+							warning.innerHTML = "You'll get your cahsback soon!!!";
+						}
+						setTimeout(() => {
+							if (warning != null) {
+								warning.style.visibility = 'hidden';
+							}
+						}, 3500);
 					} else {
 						if (verify != null) {
 							verify.innerHTML = 'Unverified';
@@ -108,17 +102,17 @@
 		CAcode = success ? CAcode : '';
 		if (transactionID) {
 			loading = true;
-			console.log($registerData.eventID)
-			let w=$registerData.eventID
-			console.log(w)
+			console.log($registerData.eventID);
+			let w = $registerData.eventID;
+			console.log(w);
 			fetch(API.events_apply_paid, {
 				method: 'POST',
 				body: JSON.stringify({
 					transactionID,
 					CAcode,
-					"token": readToken(),
-					"eventId": w ,
-					"participants": $registerData.registeredEmails
+					token: readToken(),
+					eventId: w,
+					participants: $registerData.registeredEmails
 				}),
 				headers: {
 					'Content-type': 'application/json; charset=UTF-8'
@@ -127,14 +121,18 @@
 				.then((response) => response.json())
 				.then((data) => {
 					loading = false;
-					console.log(data)
-					if (data.status == 200){
+					console.log(data);
+					if (data.status == 200) {
 						userEvents.update((value) => [...value, $registerData.eventID]);
-						alert("Payment Successful! You will get an email shortly.")
-						setTimeout(() => {goto('/profile')}, 500)
-					} else if (data.status == 500){
-						alert("You have already applied for the event")
-						setTimeout(() => {goto('/profile')}, 500)
+						alert('Payment Successful! You will get an email shortly.');
+						setTimeout(() => {
+							goto('/profile');
+						}, 500);
+					} else if (data.status == 500) {
+						alert('You have already applied for the event');
+						setTimeout(() => {
+							goto('/profile');
+						}, 500);
 					}
 				});
 		} else {
@@ -152,7 +150,7 @@
 	};
 </script>
 
-<Loading spinning = {loading} />
+<Loading spinning={loading} />
 
 <div id="all">
 	<h1 style="text-align:center;margin-top:10rem;">
@@ -162,9 +160,7 @@
 	<form class="form" on:submit|preventDefault>
 		<div style="background-color: rgb(90, 14, 137,0.3);" class="payment">
 			<div style="display: inline-block;">
-				<p
-					style="margin-bottom: 1rem;margin-top: 0.8rem;font-size:155%;display: inline-block"
-				>
+				<p style="margin-bottom: 1rem;margin-top: 0.8rem;font-size:155%;display: inline-block">
 					Scan here for payment
 				</p>
 				<div id="img" />
@@ -216,8 +212,8 @@
 					id="submit"
 					on:click={() => submit()}
 					type="submit"
-					style="cursor:pointer; display:block; margin-top:5px;"
-				>Register Now</button>
+					style="cursor:pointer; display:block; margin-top:5px;">Register Now</button
+				>
 			</div>
 		</div>
 	</form>
@@ -336,9 +332,9 @@
 	}
 
 	@media screen and (max-width: 900px) {
-		.payment{
+		.payment {
 			left: 50%;
-    		transform: translate(-67%);
+			transform: translate(-67%);
 		}
 		h1 {
 			width: 100vw;
@@ -365,11 +361,9 @@
 		.code_verification {
 			width: 18rem;
 		}
-		/* .payall {
-			position: relative;
-			left: 50%;
-			transform: translate(-45%, 0);
-		} */
+		#verify {
+			margin-left: -1rem;
+		}
 		#submitButton {
 			width: 18rem;
 		}
