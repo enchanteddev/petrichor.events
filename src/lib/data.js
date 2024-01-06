@@ -450,7 +450,22 @@ export let cultural = {
         "name": "ChoreoClash",
         "about": "Offline group dance competition\nInviting dance groups to showcase their team's talent, coordination, and creativity\n",
         "rulebook": {
-          "structure": [],
+          "structure": [
+              "Round 1 (Online): ",
+                "1) Participants will have to shoot a video of them dancing in any style.",
+                "2) The duration of the video must be in between 2 minutes and 3 minutes.",
+                "3) The video must have clear sound and visuals and should be a recording of a live performance.",
+                "4) All the members of the team should be clearly visible in the uploaded video.",
+                "5) Upload your videos in your Google Drive in .mp4 format and submit the link of the same through the Google Form, which will be provided via your registered email id.",
+                "6) Only one submission per team is allowed.",
+                "7) The deadline for submission of videos for the online screening round is on 15th January 2024."
+              ""
+              "Round 2 (Offline) : ",
+            "a. The top entries will be shortlisted for the final round",
+            "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event",
+            "c. Violations of the rules may lead to disqualification"
+              
+          ],
           "judging": [
             "1. Choreography and Creativity : 30%",
             "2. Synchronization and Expressions : 25%",
@@ -469,16 +484,15 @@ export let cultural = {
             "preperation.",
             "4. Performances that exceed the time limit will face point deductions.",
             "5. Songs for your performance must be submitted atleast 2 days before the start of the event.",
-            "6. The participants should avoid using indecent dress, song and gestures.",
-            "7. Groups are responsible for their own props and costumes.",
-            "8. Any stunts that can cause life risk are not permitted.",
-            "9. Use of fire, sharp objects, or any other dangerous elements on stage is strictly prohibited.",
-            "10. It is mandatory for all participants to be present at the venue atleast 30 minutes before the competition begins.",
-            "11. Groups must arrive at the designated backstage area at least 5 minutes before their",
+            "6. Groups are responsible for their own props and costumes.",
+            "7. Any stunts that can cause life risk are not permitted.",
+            "8. Use of fire, sharp objects, or any other dangerous elements on stage is strictly prohibited.",
+            "9. It is mandatory for all participants to be present at the venue atleast 30 minutes before the competition begins.",
+            "10. Groups must arrive at the designated backstage area at least 5 minutes before their",
             "performance slot.",
-            "12. Any last-minute changes or requests should be communicated to the event coordinators well in advance.",
-            "13. The judges' decisions will be final and cannot be disputed.",
-            "14. All participants and teams are expected to display good sportsmanship and respect towards fellow participants, organisers, and judges."
+            "11. Any last-minute changes or requests should be communicated to the event coordinators well in advance.",
+            "12. The judges' decisions will be final and cannot be disputed.",
+            "13. All participants and teams are expected to display good sportsmanship and respect towards fellow participants, organisers, and judges."
           ]
         },
         "organisers": [
