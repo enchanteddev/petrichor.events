@@ -800,7 +800,19 @@ export let cultural = {
         "name": "Groove Mania",
         "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style.",
         "rulebook": {
-          "structure": [],
+          "structure": [
+              "Round 1 (Online): ",
+                "1) Participants will have to shoot a video of them dancing in any style. The duration of the video must be in between 2 minutes and 3 minutes",
+                "2) The video must have clear sound and visuals and should be a recording of a live performance with a clear face in one take",
+                "3) Upload your videos in your Google Drive in .mp4 format and submit the link of the same through the Google form which will be provided via your registered email id",
+                "4) Only one submission per participant is allowed",
+                "5) The deadline for submission of videos for the online screening round is on 15th January 2024",
+              " ",
+              "Round 2 (Offline): ",
+                "a. The top entries will be shortlisted for the final round",
+                "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event",
+                "c. Violations of the rules may lead to disqualification"
+          ],
           "judging": [
             "",
             "1)Choreography and Creativity",
@@ -816,20 +828,14 @@ export let cultural = {
           ],
           "rules": [
             "",
-            "1)Any dance style is allowed.",
-            "2) The participants should avoid using indecent dress, song and gestures. Any stunts that can cause life risk are not permitted.",
-            "3) Usage of props is permitted and must be arranged by the participants themselves.",
-            "3) Use of fire, sharp objects, or any other dangerous elements on stage is strictly",
-            "prohibited.",
-            "4)The minimum time is 3 minutes and maximum is 5 minutes including stage preparation. Not following the time limit will lead to a penalty.",
-            "5) Choice of song will be given to the participants. The song track must be submitted to the organizers at least 2 days before the event.",
-            "4)It is mandatory for all participants to be present at the venue before the competition",
-            "begins.",
-            "5) Any last-minute changes or requests should be communicated to the event coordinators well in advance.",
-            "6) The judges' decisions will be final and cannot be disputed.",
-            "7) The costumes, props, song or anything related to the performance should not be offensive or disgraceful towards any person, profession or community.",
-            "8)All participants are expected to display good sportsmanship and respect towards",
-            "fellow participants, organisers, and judges."
+            "• Any dance style is allowed",
+            "• The participants should avoid using indecent dress, song and gestures",
+            "• Any stunts that can cause life risk are not permitted",
+            "• Use of fire, sharp objects, or any other dangerous elements on stage is strictly prohibited",
+            "• It is mandatory for all participants to be present at the venue before the competition begins",
+            "• Any last-minute changes or requests should be communicated to the event coordinators well in advance",
+            "• The judges' decisions will be final and cannot be disputed",
+            "• All participants are expected to display good sportsmanship and respect towards fellow participants, organisers, and judges"
           ]
         },
         "organisers": [
