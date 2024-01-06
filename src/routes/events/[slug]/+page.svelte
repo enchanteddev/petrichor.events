@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Loading from '$lib/components/Loading.svelte';
 	import Person from '$lib/components/Person.svelte';
 	import type { event } from '$lib/types';
 	import { isLogin, registerData, userEvents, userEmail } from '$lib/stores';
@@ -11,6 +12,7 @@
 	export let data: any;
 	let events = data['nofee']['events'];
 	let events1 = data['withfee']
+	let loading = false
 
 	
 	$: {
@@ -56,18 +58,22 @@
 
 	const clicked = async () => {
 		if (!$isLogin) {
+			loading = true
 			goto('/login');
 		} else {
 			$registerData.eventID = currentEvent.id;
 			$registerData.registeredEmails.push($userEmail);
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
+			loading = true 
 			const eventDataResponse = await POST(API.event, { id: currentEvent.id });
 			const eventData = await eventDataResponse.json();
+			loading = false
 
 			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1) {
 				if (eventData.fees == 0) {
 					registering = true;
+					loading = true
 					await POST(API.events_apply_free, {
 						participants: [$userEmail],
 						// @ts-ignore
@@ -76,6 +82,7 @@
 					})
 						.then((res) => res.json())
 						.then((res) => {
+							loading = false
 							console.log(res);
 							if (res.status == 200) {
 								userEvents.update((value) => [...value, currentEvent.id]);
@@ -88,14 +95,18 @@
 						});
 					setEvent(currentEvent);
 				} else {
+					loading = true
 					goto(`/payment?id=${currentEvent.id}`);
 				}
 			} else {
+				loading = true
 				goto('/events/team');
 			}
 		}
 	};
 </script>
+
+<Loading spinning = {loading}></Loading>
 
 <div class="bg" bind:this={bg} />
 <div class="parent">

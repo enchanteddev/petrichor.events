@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { enhance,applyAction } from "$app/forms";
 	import { goto } from "$app/navigation";
+	import Loading from "$lib/components/Loading.svelte";
 	import { folder } from "svelte-awesome/icons";
 	import { get } from "svelte/store";
 
 	/** @type {import('./$types').ActionData} */
 	export let form;
 	console.log(form)
+
+	let loading = false
 
 	function validate() {
 		const inst = document.querySelector('#inst-type');
@@ -78,6 +81,7 @@
 	}
 </script>
 
+<Loading spinning={loading}></Loading>
 <div class="form-container">
 	<div class="blank2" />
 	<div class="form image2" on:change={validate}>
@@ -87,6 +91,7 @@
 
 			return async ({result,update}) => {
 				if (result.type == 'success'){
+					loading = true
 					goto('/login');	
 					
 			}

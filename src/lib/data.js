@@ -1951,7 +1951,7 @@ export let workshops =  {
         },
         {
             name: 'Robotics',
-            about: 'This is about modelling Self-balancing robots and involves concepts from control systems and hardware aspects to make one',
+            about: 'Embark on a comprehensive journey into wheeled robot dynamics, mastering the intricacies of differential drive kinematics, control strategies, and Python programming for simulation and trajectory tracking.',
             prereq: ['Basic Programming Skills'],
             fees: 1299,
             date: '27 & 28 Jan',
@@ -1964,7 +1964,7 @@ export let workshops =  {
         },
         {
             name: 'Product Management',
-            about: 'This is about modelling Self-balancing robots and involves concepts from control systems and hardware aspects to make one',
+            about: "Unlock the art and science of effective product management in our immersive workshop, where you'll refine your skills in ideation, prioritization, and execution to drive successful product outcomes.",
             prereq: ['None'],
             fees: 1199,
             date: '27 & 28 Jan',
