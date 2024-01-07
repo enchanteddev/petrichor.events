@@ -356,7 +356,7 @@
 		.workshops{
 			width: 100%;
 			overflow: hidden;
-			padding: 45rem 0rem;
+			padding: 55rem 0rem;
 		} 
 		.ws {
 			width: 15em;

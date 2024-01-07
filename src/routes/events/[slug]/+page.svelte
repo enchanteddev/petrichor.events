@@ -179,9 +179,16 @@
 			<div class="prizes">
 				<h2>Prizes Worth:</h2>
 				{#if currentEvent.rulebook.prizes}
+				{#if currentEvent.id.slice(0,1)=='T'}
+				{#each currentEvent.rulebook.prizes as struct}
+					<li style="list-style: none;">{struct}</li>
+				{/each}
+				{/if}
+				{#if currentEvent.id.slice(0,1)=='C'}
 				{#each currentEvent.rulebook.prizes as struct}
 					<li>{struct}</li>
 				{/each}
+				{/if}
 				{/if}
 			</div>
 		</div>
