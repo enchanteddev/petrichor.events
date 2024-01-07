@@ -1971,8 +1971,7 @@ export let technical = {
             "Total: ₹8,000",
             "1. Rs. 4,000",
             "2. Rs. 2,500",
-            "3. Rs. 1,500",
-            "Additionally, the first-place team will have their design printed and assembled at the Innovation Lab, with the PCB sent to the winners by courier. ( need budget for this 2 - 3 k)"
+            "3. Rs. 1,500"
           ],
           "rules": [
             "1. Participants must submit the schematic, PCB layout, and the program to run on the controller, accompanied by a block diagram explanation of the code.",
