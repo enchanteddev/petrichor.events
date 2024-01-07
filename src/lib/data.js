@@ -458,8 +458,8 @@ export let cultural = {
                 "4) All the members of the team should be clearly visible in the uploaded video.",
                 "5) Upload your videos in your Google Drive in .mp4 format and submit the link of the same through the Google Form, which will be provided via your registered email id.",
                 "6) Only one submission per team is allowed.",
-                "7) The deadline for submission of videos for the online screening round is on 15th January 2024."
-              ""
+                "7) The deadline for submission of videos for the online screening round is on 15th January 2024.",
+              "",
               "Round 2 (Offline) : ",
             "a. The top entries will be shortlisted for the final round",
             "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event",
@@ -1978,7 +1978,7 @@ export let workshops =  {
             image: 'https://imgs.search.brave.com/rinfk11tjOtQ0OM-xLkUGFohtI9LZ-cUe81Tu0eGAaI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/aS1jbG91ZC13aXRo/LXJvYm90LWZhY2Vf/MjMtMjE0OTczOTc1/OC5qcGc_c2l6ZT02/MjYmZXh0PWpwZw',
             location: 'Nila Campus',
             topics: ['AI Algorithms'],
-            speakers: [ 'Dr. C K Narayanan', 'Dr. Sahely Bahdra', 'Dr. Koninika Pal'],
+            speakers: [ 'Dr. C K Narayanan', 'Dr. Sahely Bhadra', 'Dr. Koninika Pal'],
             id: 'WP00'
         },
         {
@@ -1995,7 +1995,7 @@ export let workshops =  {
             id: 'WP01'
         },
         {
-            name: 'Product Management',
+            name: 'Product Design',
             about: "Unlock the art and science of effective product management in our immersive workshop, where you'll refine your skills in ideation, prioritization, and execution to drive successful product outcomes.",
             prereq: ['None'],
             fees: 1199,
@@ -2004,7 +2004,7 @@ export let workshops =  {
             image: 'https://th.bing.com/th/id/OIP.NvmK9m5WDaUIP59icbm_wAHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
             location: 'Nila Campus',
             topics: [ 'Product Design', 'Design Thinking', 'Product-Market Pitch'],
-            speakers: [ 'Keerthi Reddy', 'Dr. Jacob'],
+            speakers: [ 'Dr. Jacob Chandapillai', 'Shyam Sundar Pati'],
             id: 'WP02'
         },
         {

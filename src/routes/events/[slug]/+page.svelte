@@ -140,7 +140,7 @@
 			<p>{currentEvent && currentEvent.about}</p>
 			<div class="buttons">
 				<a href="#rules" class="a-unset register">LEARN MORE</a>
-				<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':currEveFee}</a>
+				<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':`₹${currEveFee}`}</a>
 			</div>
 		</div>
 		<div class="rulebook" id="rules">
