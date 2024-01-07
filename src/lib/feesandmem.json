@@ -229,7 +229,7 @@
         {
             "name": "Quizzanaire - School Quiz",
             "id": "TF12",
-            "fees": 49,
+            "fees": 0,
             "minMemeber": 1,
             "maxMemeber": 1
         },

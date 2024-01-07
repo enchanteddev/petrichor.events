@@ -1829,22 +1829,22 @@ export let technical = {
       },
       {
         "name": "Quizzanaire - School Quiz",
-        "about": "In the realm of knowledge, there are no boundaries, and the fun knows no limits. Petrichor\u2019 24 brings you Quizzanaire, a quiz competition exclusively for school students. There will be two categories: \nJuniors - Class 8-10th\nSeniors - Class 11-12th\n\nTopic: Anything and everything under the sun and beyond.\nParticipation: Teams of two or one\nRegistration fees: None",
+        "about": "In the realm of knowledge, there are no boundaries, and the fun knows no limits. Petrichor\u2019 24 brings you Quizzanaire, a quiz competition exclusively for school students. It will be an inter school quiz competition.\n\nTopic: Anything and everything under the sun and beyond.\nParticipation: Teams of two or one\nRegistration fees: None",
         "rulebook": {
           "structure": [
-            "1. The quiz will be conducted across two sessions, one for Juniors and one for Seniors.",
-            "2. Each quiz consists of two rounds: prelims and finals.",
-            "3. The top 8 individuals from the preliminary round will qualify for the finals.",
-            "4. The general bounce and pounce system will be followed (will be further explained on-spot).",
+            "1. Each quiz consists of two rounds: prelims and finals.",
+            "2. The top 8 Teams from the preliminary round will qualify for the finals.",
+            "3. The general bounce and pounce system will be followed (will be further explained on-spot).",
             "Round-specific rules will be explained on spot."
           ],
           "judging": [
             "Any malpractices won't be entertained and will lead to instant disqualification. Any round specific rules will be conveyed before the event starts"
           ],
           "prizes": [
-            "1. Rs. 2000",
-            "2. Rs. 1250",
-            "3. Rs. 750"
+            "Total Rs. 6000",
+            "1. Rs. 3000",
+            "2. Rs. 2000",
+            "3. Rs. 1000"
           ],
           "rules": [
             "",
