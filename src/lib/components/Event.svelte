@@ -27,7 +27,7 @@
 
 </script>
 
-<div class="event-details">
+<div class="event-details" style="padding: 10px 15px;">
     <div class="event-image">
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img
@@ -39,17 +39,17 @@
     </div>
     <div class="event-data" style="text-align: left; padding: 0 30px;">
         <div>
-            <h4>{event["name"]}</h4>
-            <p>{Eventtype}</p>
+            <h4 style="line-height: 20px;text-align:center">{event["name"]}</h4>
+            <p style="text-align:center">{Eventtype}</p>
         </div>
         <div>
-            <h4>{event["date"]}</h4>
+            <h4 style="line-height: 20px;text-align:center">{event["date"]}</h4>
             {#if event["location"] != undefined}
                 <p>{event["location"]}</p>
             {/if}
         </div>
         <div class="contact-info" style="padding-top: 20px; width:100%; text-align:right;">
-            <a href="/home/#contact" style=" text-decoration: none;">Contact US</a>
+            <a href="/home/#contact" style=" text-decoration: none;text-align:center">Contact US</a>
         </div>
     </div>
 </div>
@@ -94,7 +94,7 @@
 	.event-data .contact-info a {
 		text-decoration: none;
 		color: rgb(110, 109, 109);
-		font-weight: bold;
-	}
+		font-weight: bold;   
+    }
 
 </style>

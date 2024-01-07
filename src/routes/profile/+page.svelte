@@ -21,7 +21,7 @@
 
 <div class="container">
 	<div class="blocks details">
-		<div class="informations" style="height: 0; padding-bottom: 10px;">
+		<div class="informations info">
 			<!-- Name and Email -->
 			<div class="n-email" style="padding-left: 20px;">
 				<h1 style="width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
@@ -102,6 +102,7 @@
 		justify-content: space-around; */
 		height: 100vh;
 		width: 99vw;
+		overflow: scroll;
 	}
 	.blocks {
 		flex-grow: 1;
@@ -113,6 +114,10 @@
 	.details {
 		display: flex;
 		flex-direction: column;
+	}
+	.info{
+		height: 0;
+		padding-bottom: 10rem;
 	}
 	.informations {
 		flex-grow: 1;
@@ -168,14 +173,39 @@
 		}
 		.accommodation{
 			font-size: xx-small;
-			
 		}
 		.blocks{
-			margin: 0px 5px;
+			margin: 5px 5px;
+			border-radius: 5%/10%;
+			width: 25rem;
 		}
 		.informations{
 			margin: 0px;
 			margin-bottom: 5px;
+			height: 15rem;
+			flex-direction: column;
+			border-radius: 5%/10%;
+			width: 25rem;
+		}
+		.info{
+			height: 15rem;
+		}
+		.n-email{
+			height: 5rem;
+		}
+		.container{
+			display: flex;
+			flex-direction: column;
+			overflow: scroll;
+			align-items: center;
+		}
+	}
+	@media (max-width:400px){
+		.blocks, .informations{
+			width: 25rem;
+		}
+		.container{
+			align-items: first baseline;
 		}
 	}
 </style>
