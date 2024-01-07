@@ -166,8 +166,24 @@ export let cultural = {
         "about": "Showcase your acting prowess in a solo performance.",
         "rulebook": {
           "structure": [
-            "The competition consists of only one round:",
-            "Final Round: Live mono acting performance."
+            "The competition consists of two rounds:",
+            "",
+            "Round 1:Online screening",
+            "1. Participants will have to shoot a video of them acting in a short scene .The duration of the video must be in between 2 mins and 3 minutes.", 
+            "2. Upload your videos in your google drive in .mp4 format and submit the link of the same through the google form which will be provided via your registered email id.",
+            "3. The video must have clear sound and should be a recording of a live performance with a clear face in one take.",
+            "4. Only one submission per participant is allowed.",
+            "5. All languages are allowed.",
+            "6. The deadline for submission of videos for the online screening round is on 15th January 2024.",
+            "",
+            "Round 2(Offline):",
+            "1. The top entries will be shortlisted for the final round.",
+            "2. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
+            "3. Time limit: 5 -10 minutes.",
+            "4. Participants are responsible for their own costumes and props.",
+            "5. All languages are allowed.",
+            "6. Violations of the rules may lead to disqualification."
+              
           ],
           "judging": [
             "1. Acting Skills -30%",
