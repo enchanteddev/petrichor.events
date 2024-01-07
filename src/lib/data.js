@@ -69,6 +69,7 @@ export let cultural = {
           ],
           "rules": [
             "Number of participants in each team : Maximum 3",
+            "Registration fee for this event is ₹49 for each registrant.",
             "1. All participants must be registered and should reach the venue 30 minutes prior to the start of the event.",
             "2. Gas stoves and induction cookers are not allowed.",
             "3. Basic cooking equipment, including mixers, vessels, and spoons, will be provided by the organizers.",
@@ -114,7 +115,8 @@ export let cultural = {
           "structure": [
             "",
             "Number of participants in each team: 2 (including an artist and a model)",
-            "This event is open to everyone."
+            "This event is open to everyone.",
+            "Registration fee for this event is ₹49 for each registrant."
           ],
           "judging": [
             "\u2022\tAdherence to theme - 25%",
@@ -166,8 +168,25 @@ export let cultural = {
         "about": "Showcase your acting prowess in a solo performance.",
         "rulebook": {
           "structure": [
-            "The competition consists of only one round:",
-            "Final Round: Live mono acting performance."
+            "The competition consists of two rounds:",
+            "",
+            "Round 1:Online screening",
+            "1. Participants will have to shoot a video of them acting in a short scene .The duration of the video must be in between 2 mins and 3 minutes.", 
+            "2. Upload your videos in your google drive in .mp4 format and submit the link of the same through the google form which will be provided via your registered email id.",
+            "3. The video must have clear sound and should be a recording of a live performance with a clear face in one take.",
+            "4. Only one submission per participant is allowed.",
+            "5. All languages are allowed.",
+            "6. The deadline for submission of videos for the online screening round is on 15th January 2024.",
+            "",
+            "Round 2(Offline):",
+            "Registration fee for this event is ₹99 for each registrant.",
+            "1. The top entries will be shortlisted for the final round.",
+            "2. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
+            "3. Time limit: 5 -10 minutes.",
+            "4. Participants are responsible for their own costumes and props.",
+            "5. All languages are allowed.",
+            "6. Violations of the rules may lead to disqualification."
+              
           ],
           "judging": [
             "1. Acting Skills -30%",
@@ -223,6 +242,7 @@ export let cultural = {
             "",
             "",
             "Round 2(Offline):",
+            "Registration fee for this event is ₹149 for each registrant.",
             "a. The top entries will be shortlisted for the final round.",
             "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
             "c. The participant can use any instrument, instrumental, or karaoke music with themselves to perform if they want (not compulsory). If any karaoke is being used, the audio file in mp3 format of the karaoke must be given to the organisers 2 days prior to the event",
@@ -284,6 +304,7 @@ export let cultural = {
             "5) The deadline for submission for the online screening round is on 15th January 2024.", 
             " ", 
             "Round 2 (Offline) :",
+            "Registration fee for this event is ₹149 for each registrant.",
             "1) Top entries will be selected for this round.",
             "2) All participants must register via our website to be eligible for participation.",
             "3) Each team is allotted 15 minutes for the performance.",
@@ -346,6 +367,7 @@ export let cultural = {
             "Third: ₹1000"
           ],
           "rules": [
+            "Registration fee for this event is ₹49 for each registrant.",
             "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
             "\u25cf        Materials like ice cream cups, sticks, plastic bottles, soft drink cans, and used pens will be provided and it is mandatory to use them in the craft.",
             "\u25cf        Participants can bring necessary items like aluminium wires, moulding clay and stationery items like scissors,glue,paints etc.",
@@ -394,6 +416,7 @@ export let cultural = {
             "₹2000"
           ],
           "rules": [
+            "Registration fee for this event is ₹99 for each registrant.",
             "General Rules :",
             "1. Each duo must contain at least one instrumentalist.",
             "2. A person can play for only one single Duo.",
@@ -461,6 +484,7 @@ export let cultural = {
                 "7) The deadline for submission of videos for the online screening round is on 15th January 2024.",
               "",
               "Round 2 (Offline) : ",
+              "Registration fee for this event is ₹149 for each registrant.",
             "a. The top entries will be shortlisted for the final round",
             "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event",
             "c. Violations of the rules may lead to disqualification"
@@ -521,8 +545,10 @@ export let cultural = {
         "about": "Competitive online BGMI Esports event.",
         "rulebook": {
           "structure": [
+            "Registration fee for this event is ₹49 for each registrant.",
             "1. All the players will be playing Erangel (Classic map, Special version maybe included       depending on the update at the time of game conduct)",
-            "2. There will be 6 Erangel matches in total conducted over 2 days (3 per day)"
+            "2. There will be 6 Erangel matches in total conducted over 2 days (3 per day)",
+            
           ],
           "judging": [
             "1. Teams will be given points according to the scheme mentioned above.",
@@ -615,6 +641,7 @@ export let cultural = {
         "about": "Online Competitive Esports event.",
         "rulebook": {
           "structure": [
+            "Registration fee for this event is ₹49 for each registrant.",
             "1. Tournament Format: The tournament follows a single-elimination format, where teams are eliminated after losing one match.",
             "3. First Round Games: In the first round, teams play three games: team deathmatch,",
             "hardpoint, and domination, with the team winning two games advancing.",
@@ -721,6 +748,7 @@ export let cultural = {
             "₹1500"
           ],
           "rules": [
+            "Registration fee for this event is ₹149 for each registrant.",
             "1. All participants must report at the venue at the given time and must be",
             "at the venue throughout the event.",
             "2. Inflammable objects, water, and heavy props are not permitted",
@@ -823,6 +851,7 @@ export let cultural = {
                 "5) The deadline for submission of videos for the online screening round is on 15th January 2024",
               " ",
               "Round 2 (Offline): ",
+              "Registration fee for this event is ₹149 for each registrant.",
                 "a. The top entries will be shortlisted for the final round",
                 "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event",
                 "c. Violations of the rules may lead to disqualification"
@@ -933,6 +962,7 @@ export let cultural = {
         "about": "Get ready for a mind blowing quiz on anything and everything under the sun and beyond.",
         "rulebook": {
           "structure": [
+            "Registration fee for this event is ₹49 for each registrant.",
             "1.The quiz consists of two rounds: prelims and finals.",
             "2.The top 8 individuals from the preliminary round will qualify for the finals.",
             "3.The general bounce and pounce system will be followed for finals. (will be further explained on-spot).",
@@ -981,6 +1011,7 @@ export let cultural = {
             "5. Softwares like Audacity and Reaper can be used for editing your videos.",
             "",
             "Round 2 (Offline) :",
+            "Registration fee for this event is ₹149 for each registrant.",
             "1. The time limit for the performance shouldn't exceed a maximum time of 15 minutes including setup and soundchecks.",
             "2. No pre-recorded tracks would be allowed, usage of any pre-recorded tracks will face immediate disqualification.",
             "3. Contestants should bring their own instruments for their performances.(Only Drumkit would be provided)",
@@ -1039,6 +1070,7 @@ export let cultural = {
         "about": "Get ready for the Sport and Entertainment Quiz cuz we\u2019ve got some \u2018slam dunk\u2019 questions for you. Brush up your knowledge on sports, pop culture and everything in between.",
         "rulebook": {
           "structure": [
+            "Registration fee for this event is ₹49 for each registrant.",
             "1.The quiz consists of two rounds: prelims and finals.",
             "2.The top 8 individuals from the preliminary round will qualify for the finals.",
             "3.The general bounce and pounce system will be followed for finals.",
@@ -1079,6 +1111,7 @@ export let cultural = {
         "about": "Welcome to the Valorant Clash Championship, where skilled players and passionate fans come together for an epic day of intense competition and camaraderie. This event is designed for Valorant enthusiasts of all levels, from casual gamers to aspiring professionals.",
         "rulebook": {
           "structure": [
+            "Registration fee for this event is ₹49 for each registrant.",
             "1) Event is open for anyone.",
             "2)It's an online event.",
             "3)The main focus of the event is a Valorant tournament. Teams will compete in a double-elimination format, showcasing their skills in strategic gameplay, precise shooting, and teamwork.",
