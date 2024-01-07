@@ -1223,7 +1223,7 @@ export let technical = {
             "2. Achieving required constraints - 80p",
             "3. Animation quality - 40p"
           ],
-          "Prizes": [
+          "prizes": [
             "1. Rs. 3500",
             "2. Rs. 2000",
             "3. Rs. 1500"
@@ -1626,9 +1626,9 @@ export let technical = {
           ],
           "prizes": [
             "Total Pool = Rs. 5000",
-            "1st Prize = Rs. 2500",
-            "2nd Prize = Rs. 1500",
-            "3rd Prize = Rs. 1000"
+            "1. Rs. 2500",
+            "2. Rs. 1500",
+            "3. Rs. 1000"
           ],
           "rules": [
             "1. Although you can use any framework, it would be recommended to use popular frameworks such as React, Vue, Angular, Svelte, etc. You can still use any framework of your choice.",
@@ -1969,9 +1969,9 @@ export let technical = {
           ],
           "prizes": [
             "Total: ₹8,000",
-            "First Place: ₹4,000",
-            "Second Place: ₹2,500",
-            "Third Place: ₹1,500",
+            "1. Rs. 4,000",
+            "2. Rs. 2,500",
+            "3. Rs. 1,500",
             "Additionally, the first-place team will have their design printed and assembled at the Innovation Lab, with the PCB sent to the winners by courier. ( need budget for this 2 - 3 k)"
           ],
           "rules": [
