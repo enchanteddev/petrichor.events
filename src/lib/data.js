@@ -1926,7 +1926,9 @@ export let technical = {
             "1. The dimensions of the robot should not exceed 55 cm x 55 cm x 55 cm at any point during the match.",
             "2. The weight of the bot should be less than 25kg (55.12lbs). Note that the weight of adapters and the remote controller will not be included in these constraints.",
             "3. The power source of the robot cannot exceed 30V.",
+            "4. Motors with maximum 350w can only be used for the driving of the Robot.",
             "Mobility",
+            "5. Maximum voltage of battery should be 24v.",
             "1. Methods of mobility may include,Rolling (wheels, tracks or the whole robot), Walking (linear actuated legs with no rolling or cam operated motion), Shuffling (rotational cam operated legs).",
             "2. Jumping and hopping is not allowed.",
             "3. Flying (using aerofoil, helium balloons, ornithopters, etc.) is not allowed.",
@@ -1935,7 +1937,8 @@ export let technical = {
             "1. Both wired and wireless remote controls are allowed in the event.",
             "2. All wires coming out of the robot should be bundled as a single unit.",
             "3. The wires should be properly protected and insulated. The wire should be sufficiently long so as to remain slack at all times during the competition.",
-            "4. If the machine is controlled wirelessly the machine must have at least a four frequency remote control circuit or two dual control circuits which may be interchanged before the start the match to avoid frequency interference with the opposing team. The case of any interference in the wireless systems will not be considered for the rematch or results.",
+            "4. Minimum wire length of 5m is required for wired robots.",
+            "5. If the machine is controlled wirelessly the machine must have at least a four frequency remote control circuit or two dual control circuits which may be interchanged before the start the match to avoid frequency interference with the opposing team. The case of any interference in the wireless systems will not be considered for the rematch or results.",
             "Weapon Systems",
             "1. Robots can have any kind of flippers, wedges, lifting devices etc. as weapons. Only the weapons mentioned above are allowed and inclusion of any other weapon is not allowed."
           ]
