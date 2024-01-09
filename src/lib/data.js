@@ -1112,7 +1112,7 @@ export let cultural = {
 export let technical = {
     "events": [
          {
-        "name": "Treasure Hunt",
+        "name": "Tessaract 2.0",
         "about": "Participants are tasked with solving a sequence of challenges and riddles. The challenges will navigate them across various platforms and demand sharp, out-of-the-box thinking to successfully complete",
         "rulebook": {
           "structure": [
@@ -1124,9 +1124,9 @@ export let technical = {
             "3. Any and all decisions taken by the judges would be binding and final."
           ],
           "prizes": [
-            "1. 6000",
-            "2. 4000",
-            "3. 2000"
+            "1. 6125",
+            "2. 3675",
+            "3. 2200"
             
           ],
           "rules": [
@@ -1382,10 +1382,10 @@ export let technical = {
             "6.6) File Structure: is the code well structured and distributed among all the files (Avoid putting everything in one file): 2 Points"
           ],
           "prizes": [
-            "Total Pool = Rs. 5000",
-            "1. Rs. 2500",
-            "2. Rs. 1500",
-            "3. Rs. 1000"
+            "Total Pool = Rs. 15000",
+            "1. Rs. 7000",
+            "2. Rs. 5000",
+            "3. Rs. 3000"
           ],
           "rules": [
             "1. Although you can use any framework, it would be recommended to use popular frameworks such as React, Vue, Angular, Svelte, etc. You can still use any framework of your choice.",
@@ -1512,9 +1512,9 @@ export let technical = {
             "2. Minimum Time: The team that completes the course in the shortest time."
           ],
           "prizes": [
-            "1. Rs. 12500",
-            "2. Rs. 10000",
-            "3. Rs. 7500"
+            "1. Rs. 14450",
+            "2. Rs. 9700",
+            "3. Rs. 5850"
           ],
           "rules": [
             "1. Weight Limit: Maximum 1.2kg",
@@ -1582,9 +1582,9 @@ export let technical = {
             "\u2022 Amount Used \u2192 +15 points ( < Rs 60 ) , +10 points ( < Rs 80 )"
           ],
           "prizes": [
-            "1. Rs. 3500",
-            "2. Rs. 2700",
-            "3. Rs. 1800"
+            "1. Rs. 4000",
+            "2. Rs. 2400",
+            "3. Rs. 1600"
           ],
           "rules": [
             "1. The container must hit a 30 ft x 30 ft landing zone on every drop.",
@@ -1627,9 +1627,9 @@ export let technical = {
             "3. Any and all decisions taken by the judges would be binding and final."
           ],
           "prizes": [
-            "1. 6000",
-            "2. 4000",
-            "3. 2000"
+            "1. 10200",
+            "2. 6100",
+            "3. 3700"
             
           ],
           "rules": [
@@ -1731,64 +1731,7 @@ export let technical = {
         "date": "28/1/2024",
         "id": "TF06"
       },
-      {
-        "name": "DRONE STABILIZATION CHALLENGE",
-        "about": "An offline event where participants are required to simulate a drone\u2019s stabilization and implement the same on a provided hardware setup.\n",
-        "rulebook": {
-          "structure": [
-            "\u25cf Round 1:",
-            "a. Duration: 2 hours",
-            "b. Parameters of the set-up will be provided before the competition starts",
-            "c. Teams will qualify for the second round if they are able to simulate the",
-            "system and balance it properly using control algorithms like PID, LQR, etc.",
-            "\u25cf Round 2:",
-            "a. Duration: 1 hour",
-            "b. Qualified teams will code the microcontroller to work based on their",
-            "simulation results",
-            "c. Each team will be given two chances to successfully balance the system."
-          ],
-          "judging": [
-            "1. Round 1:",
-            "a. Simplicity of simulation - 10p",
-            "b. Achieving required constraints - 50p",
-            "2. Round 2:",
-            "a. Simplicity of Arduino code - 10p",
-            "b. Bonus points: 50p",
-            "c. Main demonstration: 50p"
-          ],
-          "prizes": [
-            "1. Rs. 4000",
-            "2. Rs. 2500",
-            "3. Rs. 1500"
-          ],
-          "rules": [
-            "1. Teams will qualify for the second round only if they can balance the system",
-            "properly in simulation",
-            "2. The simulation results will be verified by the evaluators and that will be the final",
-            "decision",
-            "3. Plagiarism will result in disqualification",
-            "4. Participants will have to use only the details provided by the organizers, any",
-            "other tweaking of the hardware is not allowed and will result in disqualification",
-            "5. Winners will be decided based on the points scored"
-          ]
-        },
-        "organisers": [
-          {
-            "name": "SIVA K M R",
-            "image": Siva,
-            "phone": "9500643177"
-          },
-          {
-            "name": "Manikantan R S",
-            "image": Manikantan,
-            "phone": "9037630397"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/a73fa382-699c-4053-b4f5-20e0e476a1bc/0_0.webp",
-        "date": "28/1/2024",
-        "id": "TF02"
-      },
-
+    
       {
         "name": "Labyrinth 2.0",
         "about": "Teams have to build an autonomous robot that can follow white lines and keep track of directions while going through the maze. The robot has to go through the path, reach the end point in the dry run, and then go from the starting point to the ending point in the shortest path in the actual run.",
