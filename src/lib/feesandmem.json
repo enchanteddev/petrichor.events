@@ -24,14 +24,14 @@
         {
             "name": "Voicestra",
             "id": "CP03",
-            "fees": 149,
+            "fees": 0,
             "minMemeber": 1,
             "maxMemeber": 1
         },
         {
             "name": "Fashion Frenzy ",
             "id": "CF04",
-            "fees": 149,
+            "fees": 0,
             "minMemeber": 10,
             "maxMemeber": 15
         },
@@ -45,16 +45,16 @@
         {
             "name": "Dynamic Duet",
             "id": "CP06",
-            "fees": 99,
+            "fees": 0,
             "minMemeber": 1,
             "maxMemeber": 2
         },
         {
             "name": "ChoreoClash",
             "id": "CP07",
-            "fees": 149,
+            "fees": 0,
             "minMemeber": 3,
-            "maxMemeber": 15
+            "maxMemeber": 25
         },
         {
             "name": "BGMI Showdown",
@@ -101,7 +101,7 @@
         {
             "name": "Groove Mania",
             "id": "CP14",
-            "fees": 149,
+            "fees": 0,
             "minMemeber": 1,
             "maxMemeber": 1
         },
@@ -122,9 +122,9 @@
         {
             "name": "Bandwagon",
             "id": "CP17",
-            "fees": 149,
+            "fees": 0,
             "minMemeber": 4,
-            "maxMemeber": 15
+            "maxMemeber": 20
         },
         {
             "name": "Sportify - The SpEnt Quiz",
