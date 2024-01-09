@@ -26,6 +26,8 @@
 	if ($isLogin) {
 		// @ts-ignore
 		// console.log($userEvents);
+		// console.log(currentEvent.id)
+		// console.log(currentEvent.id in $userEvents)
 		// console.log('p');
 		if (currentEvent.id in $userEvents) {
 			registered = true;
@@ -45,6 +47,8 @@
 		currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
 		// console.log(event.image);
 		// console.log($userEvents);
+		// console.log(currentEvent.id)
+		registered=false	
 		// console.log('p');
 		if ($isLogin) {
 			// @ts-ignore
