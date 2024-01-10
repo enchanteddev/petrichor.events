@@ -1401,9 +1401,9 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Kaushik Rawat",
-            "image": Kaushik,
-            "phone": "7208798635"
+            "name": "Kshitij",
+            "image": Kshitij,
+            "phone": "+917298991001"
           },
               {
             "name": "Kshitij Ghodake",
@@ -1618,7 +1618,7 @@ export let technical = {
       },
     {
         "name": "Clench Bot",
-        "about": "Clench Bot is a challenging and exciting event that requires technical skills, logical thinking, problem-solving abilities, and teamwork. It is a great opportunity for students who are interested in robotics and want to showcase their talent and creativity.","Teams have to build a manually controlled bot that can do simple tasks of gripping objects and putting them in target zones so that it can complete the route by overcoming the hurdles in its path."
+        "about": "Clench Bot is a challenging and exciting event that requires technical skills, logical thinking, problem-solving abilities, and teamwork. It is a great opportunity for students who are interested in robotics and want to showcase their talent and creativity. Teams have to build a manually controlled bot that can do simple tasks of gripping objects and putting them in target zones so that it can complete the route by overcoming the hurdles in its path.",
         "rulebook": {
           "structure": [
             "",
