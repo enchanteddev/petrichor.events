@@ -110,6 +110,67 @@ export let cultural = {
         "date": "28-01-2024",
         "id": "CF04"
       },
+
+     {
+        "name": "Click n' Roll: A Showcase of Frames",
+        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "rulebook": {
+          "structure": [
+            "1. Participants can compete individually or form teams of up to two members.",
+            "2. Event is open for everyone without any age restrictions.",
+            "3. Each team can upload a maximum of two reels.",
+            "4. Participants should focus on capturing the festival's vibrant atmosphere, activities, and",
+            "emotions through both photography and reel making,all the video clippings should be",
+            "taken during the fest.",
+            "5. Create a captivating reel within the timeframe of 60 seconds to 90 seconds which should",
+            "be in MP4 or MOV format.",
+            "6. Photography and video capturing should be done on 27/01/2024 and 28/01/2024 (on the days of Petrichor)and",
+            "editing it and reel making can be done from 27/01/2024 to 31/01/2024.",
+            "7. The last date to submit the reel is on 31/01/2024 before 11:59pm.",
+            "8. Entries should be submitted through the google form which will be sent to registered",
+            "participants and one of the team members should submit the reel. All submitted work",
+            "must be the original creation of the participant or team."
+          ],
+          "judging": [
+            "1. Relevance to theme and concept.",
+            "2. Composition and harmonious interplay of sound and music.",
+            "3. Creativity and Uniqueness.",
+            "4. Cinematography finesse and editing."
+          ],
+          "prizes": [
+            "₹3000",
+            "₹2000",
+            "₹1000"
+          ],
+          "rules": [
+            "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
+            "2. Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
+            "3. Participants are responsible for obtaining any necessary permissions for the use of copyrighted material, including music, images, and any other content in their submissions.",
+            "4. The organizers reserve the right to disqualify any participant or entry that violates these rules.",
+            "5. By participating in this Reel Making Competition, you agree to abide by these rules and guidelines and participants\u2019 entries can be used for promotion of Petrichor."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Muhamed Rizwan",
+            "image": Muhamed,
+            "phone": "9207267393"
+          },
+          {
+            "name": "Nalan S",
+            "image": Nalan,
+            "phone": "6380821237"
+          },
+          {
+            "name": "Vishwaa PS",
+            "image": Vishwaa,
+            "phone": "8072452762"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/4fa0f1f0-68d5-479b-b382-03dc228d5dec/0_0.webp",
+        "date": "27-01-24 to 31-01-24",
+        "id": "CF15"
+      },
         {
         "name": "F3: Fireless Food Fiesta",
         "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers.",
@@ -887,66 +948,7 @@ export let cultural = {
         "id": "CF18"
       },
 
-      {
-        "name": "Click n' Roll: A Showcase of Frames",
-        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
-        "rulebook": {
-          "structure": [
-            "1. Participants can compete individually or form teams of up to two members.",
-            "2. Event is open for everyone without any age restrictions.",
-            "3. Each team can upload a maximum of two reels.",
-            "4. Participants should focus on capturing the festival's vibrant atmosphere, activities, and",
-            "emotions through both photography and reel making,all the video clippings should be",
-            "taken during the fest.",
-            "5. Create a captivating reel within the timeframe of 60 seconds to 90 seconds which should",
-            "be in MP4 or MOV format.",
-            "6. Photography and video capturing should be done on 27/01/2024 and 28/01/2024 (on the days of Petrichor)and",
-            "editing it and reel making can be done from 27/01/2024 to 31/01/2024.",
-            "7. The last date to submit the reel is on 31/01/2024 before 11:59pm.",
-            "8. Entries should be submitted through the google form which will be sent to registered",
-            "participants and one of the team members should submit the reel. All submitted work",
-            "must be the original creation of the participant or team."
-          ],
-          "judging": [
-            "1. Relevance to theme and concept.",
-            "2. Composition and harmonious interplay of sound and music.",
-            "3. Creativity and Uniqueness.",
-            "4. Cinematography finesse and editing."
-          ],
-          "prizes": [
-            "₹3000",
-            "₹2000",
-            "₹1000"
-          ],
-          "rules": [
-            "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
-            "2. Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
-            "3. Participants are responsible for obtaining any necessary permissions for the use of copyrighted material, including music, images, and any other content in their submissions.",
-            "4. The organizers reserve the right to disqualify any participant or entry that violates these rules.",
-            "5. By participating in this Reel Making Competition, you agree to abide by these rules and guidelines and participants\u2019 entries can be used for promotion of Petrichor."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Muhamed Rizwan",
-            "image": Muhamed,
-            "phone": "9207267393"
-          },
-          {
-            "name": "Nalan S",
-            "image": Nalan,
-            "phone": "6380821237"
-          },
-          {
-            "name": "Vishwaa PS",
-            "image": Vishwaa,
-            "phone": "8072452762"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/4fa0f1f0-68d5-479b-b382-03dc228d5dec/0_0.webp",
-        "date": "27-01-24 to 31-01-24",
-        "id": "CF15"
-      },
+     
      
      
       {
