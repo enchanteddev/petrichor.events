@@ -157,11 +157,11 @@
             "maxMemeber": 2
         },
         {
-            "name": "Robo Rumble",
+            "name": "Clench Bot",
             "id": "TF02",
             "fees": 79,
             "minMemeber": 1,
-            "maxMemeber": 2
+            "maxMemeber": 4
         },
         {
             "name": "AlgoTrek",
