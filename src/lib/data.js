@@ -2096,3 +2096,35 @@ export let workshops =  {
         },
     ]
 };
+
+export const merch = [
+    {
+        id: "MH1",
+        name: "Hoodie",
+        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
+        price: 101,
+        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+    },
+    {
+        id: "MH2",
+        name: "Hoodie",
+        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
+        price: 101,
+        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+    },
+    {
+        id: "MH3",
+        name: "Hoodie",
+        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
+        price: 101,
+        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+    },
+    {
+        id: "MH4",
+        name: "Hoodie",
+        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
+        price: 101,
+        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+    },
+
+]

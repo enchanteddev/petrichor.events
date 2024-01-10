@@ -46,3 +46,9 @@ export interface RegisterData{
     eventID: string,
     registeredEmails: string[]
 }
+
+export type MerchItem = {
+    name: string,
+    price: number
+    size: string
+}
