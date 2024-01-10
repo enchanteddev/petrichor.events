@@ -51,6 +51,127 @@ import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
 export let cultural = {
     "events": [
       {
+        "name": "Fashion Frenzy ",
+        "about": "Group fashion event",
+        "rulebook": {
+          "structure": [
+            "Round 1 (Online) :",
+            "1) It is a group event. No individual participation is allowed.",
+            "2) Each team can have a maximum of 15 members consisting of 6-12 models.",
+            "3) Every team should submit photos of their models or videos of their performance for shortlisting, in a Google form which will be provided via your registered email id.",
+            "4) Shortlisting will be done based on presentation of the contestants' fashion sense, clearly displaying the dress and pose.",
+            "5) The deadline for submission for the online screening round is on 15th January 2024.", 
+            " ", 
+            "Round 2 (Offline) :",
+            "Registration fee for this event is ₹149 for each registrant.",
+            "1) Top entries will be selected for this round.",
+            "2) All participants must register via our website to be eligible for participation.",
+            "3) Each team is allotted 15 minutes for the performance.",
+            "4) Every performance must be based on a theme. The theme can be decided by the team.",
+            "5) Use of accessories like bags, scarves, hats, etc. is encouraged; however, use of fire, water, and any item that could damage the stage or hinder the performance of other teams will lead to disqualification",
+            "6) The teams are required to submit their music via a Google form provided to them after the selections. They should also bring it on a pen-drive, along with an audio backup.",
+            "7) Provision of light and sound will be taken care of by the organizers",
+          ],
+          "judging": [
+            "1) relevance to theme (metamorphosis)",
+            "2) ramp walk + choreography",
+            "3) costumes",
+            "4) stage presence"
+          ],
+          "prizes": [
+            "₹10000",
+            "₹8000"
+          ],
+          "rules": [
+            "1) form a team of 15 members including upto 10 models",
+            "2) setup and performance must be done within 15min",
+            "3) risky poses and vulgarity is prohibited",
+            "4) live narration is permitted during the performance"
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Samyuktha",
+            "image": Samyuktha,
+            "phone": "6238570963"
+          },
+          {
+            "name": "Mausumi",
+            "image": Mausumi,
+            "phone": "7749902629"
+          },
+          {
+            "name": "Ashwini",
+            "image": Ashwini,
+            "phone": "9345689884"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/3b0fcb4e-4eef-470b-bc36-13696a9a2e00/0_0.webp",
+        "date": "28-01-2024",
+        "id": "CF04"
+      },
+
+     {
+        "name": "Click n' Roll: A Showcase of Frames",
+        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "rulebook": {
+          "structure": [
+            "1. Participants can compete individually or form teams of up to two members.",
+            "2. Event is open for everyone without any age restrictions.",
+            "3. Each team can upload a maximum of two reels.",
+            "4. Participants should focus on capturing the festival's vibrant atmosphere, activities, and",
+            "emotions through both photography and reel making,all the video clippings should be",
+            "taken during the fest.",
+            "5. Create a captivating reel within the timeframe of 60 seconds to 90 seconds which should",
+            "be in MP4 or MOV format.",
+            "6. Photography and video capturing should be done on 27/01/2024 and 28/01/2024 (on the days of Petrichor)and",
+            "editing it and reel making can be done from 27/01/2024 to 31/01/2024.",
+            "7. The last date to submit the reel is on 31/01/2024 before 11:59pm.",
+            "8. Entries should be submitted through the google form which will be sent to registered",
+            "participants and one of the team members should submit the reel. All submitted work",
+            "must be the original creation of the participant or team."
+          ],
+          "judging": [
+            "1. Relevance to theme and concept.",
+            "2. Composition and harmonious interplay of sound and music.",
+            "3. Creativity and Uniqueness.",
+            "4. Cinematography finesse and editing."
+          ],
+          "prizes": [
+            "₹3000",
+            "₹2000",
+            "₹1000"
+          ],
+          "rules": [
+            "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
+            "2. Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
+            "3. Participants are responsible for obtaining any necessary permissions for the use of copyrighted material, including music, images, and any other content in their submissions.",
+            "4. The organizers reserve the right to disqualify any participant or entry that violates these rules.",
+            "5. By participating in this Reel Making Competition, you agree to abide by these rules and guidelines and participants\u2019 entries can be used for promotion of Petrichor."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Muhamed Rizwan",
+            "image": Muhamed,
+            "phone": "9207267393"
+          },
+          {
+            "name": "Nalan S",
+            "image": Nalan,
+            "phone": "6380821237"
+          },
+          {
+            "name": "Vishwaa PS",
+            "image": Vishwaa,
+            "phone": "8072452762"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/4fa0f1f0-68d5-479b-b382-03dc228d5dec/0_0.webp",
+        "date": "27-01-24 to 31-01-24",
+        "id": "CF15"
+      },
+        {
         "name": "F3: Fireless Food Fiesta",
         "about": "This no-fire Cooking Competition is designed to showcase participants' culinary creativity and skills in preparing delicious dishes without the use of open flames, such as gas stoves or induction cookers.",
         "rulebook": {
@@ -108,127 +229,7 @@ export let cultural = {
         "date": "28-01-2024",
         "id": "CP00"
       },
-      {
-        "name": "BRUSHED BRILLIANCE",
-        "about": "The event is all about unleashing your creativity and showcasing your face painting skills.",
-        "rulebook": {
-          "structure": [
-            "",
-            "Number of participants in each team: 2 (including an artist and a model)",
-            "This event is open to everyone.",
-            "Registration fee for this event is ₹49 for each registrant."
-          ],
-          "judging": [
-            "\u2022\tAdherence to theme - 25%",
-            "\u2022\tOriginality and creativity - 25%",
-            "\u2022\tPainting skills - 25%",
-            "\u2022\tOverall visual impact - 25%"
-          ],
-          "prizes": [
-            "₹3000",
-            "₹2000",
-            "₹1000"
-          ],
-          "rules": [
-            "\u2022        Participants must finish the painting within 60 minutes.",
-            "\u2022        The theme will be announced before the event.",
-            "\u2022        Participants are supposed to bring the necessary brushes, sponges and mixing trays.",
-            "\u2022        Paints will be provided.",
-            "\u2022        No part of the design may be applied to the models face before the start of the event.",
-            "\u2022        Painting must not extend down the neck or onto the models chest, shoulders or back areas.",
-            "\u2022        Hair may be clipped or pinned back to fully expose the design area.",
-            "\u2022        Participants should respect the time limit and not disrupt other contestants.",
-            "\u2022        Any inappropriate or offensive designs will result in disqualification.",
-            "\u2022        Decision made by the judges are final.Requests to reconsider the final decision would not be entertained."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Parvat Khattak",
-            "image": Parvat,
-            "phone": "7404016579"
-          },
-          {
-            "name": "Abhirami R Iyer",
-            "image": Abhirami,
-            "phone": "99619 85768"
-          },
-          {
-            "name": "Prisha Italiya",
-            "image": Prisha,
-            "phone": "96620 97722"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/8b7fb382-8bea-4e16-8e0d-dee17178f786/0_1.webp",
-        "date": "28-01-2024",
-        "id": "CF01"
-      },
-      {
-        "name": "Meta Monologues",
-        "about": "Showcase your acting prowess in a solo performance.",
-        "rulebook": {
-          "structure": [
-            "The competition consists of two rounds:",
-            "",
-            "Round 1:Online screening",
-            "1. Participants will have to shoot a video of them acting in a short scene .The duration of the video must be in between 2 mins and 3 minutes.", 
-            "2. Upload your videos in your google drive in .mp4 format and submit the link of the same through the google form which will be provided via your registered email id.",
-            "3. The video must have clear sound and should be a recording of a live performance with a clear face in one take.",
-            "4. Only one submission per participant is allowed.",
-            "5. All languages are allowed.",
-            "6. The deadline for submission of videos for the online screening round is on 15th January 2024.",
-            "",
-            "Round 2(Offline):",
-            "Registration fee for this event is ₹99 for each registrant.",
-            "1. The top entries will be shortlisted for the final round.",
-            "2. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event.",
-            "3. Time limit: 5 -10 minutes.",
-            "4. Participants are responsible for their own costumes and props.",
-            "5. All languages are allowed.",
-            "6. Violations of the rules may lead to disqualification."
-              
-          ],
-          "judging": [
-            "1. Acting Skills -30%",
-            "2. Expression and Emotion - 30%",
-            "3. Engagement with the Audience - 20%",
-            "4. Overall Presentation - 20%"
-          ],
-          "prizes": [
-            "₹2500",
-            "₹1500",
-            "₹1000"
-          ],
-          "rules": [
-            "1. Use of fire or sharp objects that will damage the stage is prohibited.",
-            "2. Costumes and props should be safe and appropriate.",
-            "3. Profanity or offensive content is strictly prohibited.",
-            "4. Performances exceeding the time limit will be penalised.",
-            "5. The decision of the judges is final and binding."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Parvat Khattak",
-            "image": Parvat,
-            "phone": "7404016579"
-          },
-          {
-            "name": "Gouthami",
-            "image": Gouthami,
-            "phone": "89856 57465"
-          },
-          {
-            "name": "M Sreenath Karthick",
-            "image": Sreenath,
-            "phone": "98958 19812"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/4afbe489-0966-4b49-b62a-267a6624785e/0_0.webp",
-        "date": "28-01-2024",
-        "id": "CP02"
-      },
-      {
+     {
         "name": "Voicestra",
         "about": "Join our solo singing competition, welcoming voices from East and West, spanning every genre! Elevate your voice, captivate the audience, and let the world be spellbound by your talent. It's your moment to enchant and leave everyone breathless, no matter the genre or cultural influence every style is welcome",
         "rulebook": {
@@ -291,109 +292,7 @@ export let cultural = {
         "date": "28-01-2024",
         "id": "CP03"
       },
-      {
-        "name": "Fashion Frenzy ",
-        "about": "Group fashion event",
-        "rulebook": {
-          "structure": [
-            "Round 1 (Online) :",
-            "1) It is a group event. No individual participation is allowed.",
-            "2) Each team can have a maximum of 15 members consisting of 6-12 models.",
-            "3) Every team should submit photos of their models or videos of their performance for shortlisting, in a Google form which will be provided via your registered email id.",
-            "4) Shortlisting will be done based on presentation of the contestants' fashion sense, clearly displaying the dress and pose.",
-            "5) The deadline for submission for the online screening round is on 15th January 2024.", 
-            " ", 
-            "Round 2 (Offline) :",
-            "Registration fee for this event is ₹149 for each registrant.",
-            "1) Top entries will be selected for this round.",
-            "2) All participants must register via our website to be eligible for participation.",
-            "3) Each team is allotted 15 minutes for the performance.",
-            "4) Every performance must be based on a theme. The theme can be decided by the team.",
-            "5) Use of accessories like bags, scarves, hats, etc. is encouraged; however, use of fire, water, and any item that could damage the stage or hinder the performance of other teams will lead to disqualification",
-            "6) The teams are required to submit their music via a Google form provided to them after the selections. They should also bring it on a pen-drive, along with an audio backup.",
-            "7) Provision of light and sound will be taken care of by the organizers",
-          ],
-          "judging": [
-            "1) relevance to theme (metamorphosis)",
-            "2) ramp walk + choreography",
-            "3) costumes",
-            "4) stage presence"
-          ],
-          "prizes": [
-            "₹10000",
-            "₹8000"
-          ],
-          "rules": [
-            "1) form a team of 15 members including upto 10 models",
-            "2) setup and performance must be done within 15min",
-            "3) risky poses and vulgarity is prohibited",
-            "4) live narration is permitted during the performance"
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Samyuktha",
-            "image": Samyuktha,
-            "phone": "6238570963"
-          },
-          {
-            "name": "Mausumi",
-            "image": Mausumi,
-            "phone": "7749902629"
-          },
-          {
-            "name": "Ashwini",
-            "image": Ashwini,
-            "phone": "9345689884"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/3b0fcb4e-4eef-470b-bc36-13696a9a2e00/0_0.webp",
-        "date": "28-01-2024",
-        "id": "CF04"
-      },
-      {
-        "name": "Waste to Wow",
-        "about": " It is a craft out of waste competition where teams of two have to make beautiful crafts out of waste materials.\n\n",
-        "rulebook": {
-          "structure": [],
-          "judging": [
-            "\u25cf\tCreativity and innovation - 50%",
-            "\u25cf\tEffectiveness in utilization of waste materials - 30%",
-            "\u25cf\tPresentation - 20%"
-          ],
-          "prizes": [
-            "First: ₹2500",
-            "Second: ₹1500",
-            "Third: ₹1000"
-          ],
-          "rules": [
-            "Registration fee for this event is ₹49 for each registrant.",
-            "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
-            "\u25cf        Materials like ice cream cups, sticks, plastic bottles, soft drink cans, and used pens will be provided and it is mandatory to use them in the craft.",
-            "\u25cf        Participants can bring necessary items like aluminium wires, moulding clay and stationery items like scissors,glue,paints etc.",
-            "Participants can also bring waste materials if they wish to. Waste material could be anything like tetra packs, bottles, newspapers, CDs, jute material, or any second-hand items that otherwise would be thrown away.",
-            "\u25cf        No ready or semi-finished model or matter would be accepted by participants in the competition.",
-            "\u25cf        No mobile or Internet means would be allowed to be used at the time of the competition.",
-            "\u25cf        The decision of the judges will be considered final and bniding."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Anusha Dadam",
-            "image": Anusha,
-            "phone": "+91 93925 39384"
-          },
-          {
-            "name": "Mausumi  Bhuyan",
-            "image": Mausumi,
-            "phone": "7749902629"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
-        "date": "28-01-2024",
-        "id": "CF05"
-      },
-      {
+     {
         "name": "Dynamic Duet",
         "about": "Join us for the Duet Competition, where you and your teammate can weave musical magic together. Bring any genre to life, from classic to contemporary. It's not just a competition, it's a chance to create something beautiful and unforgettable as a team. ",
         "rulebook": {
@@ -469,6 +368,279 @@ export let cultural = {
         "date": "28-01-24",
         "id": "CP06"
       },
+     {
+        "name": "Bandwagon",
+        "about": "BandWars is a captivating showcase designed to identify and award outstanding musical ensembles, instrumentalists, soloists, and composers. It serves as an excellent platform for bands to break into the music scene. The competition will consist of two rounds, starting with an online submissions round for screening. The selected entries will then have the opportunity to perform live on stage in Petrichor.",
+        "rulebook": {
+          "structure": [
+            "Round 1 (Online) :",
+            "1. All the members of the band should be clearly visible in the uploaded video.",
+            "2. Usage of pre-recorded tracks is strictly prohibited.",
+            "3. The uploaded video should be within a time limit of 3 to 5 minutes.",
+            "4. Audio in the uploaded file should be clear for the judges to judge.",
+            "5. Softwares like Audacity and Reaper can be used for editing your videos.",
+            "",
+            "Round 2 (Offline) :",
+            "Registration fee for this event is ₹149 for each registrant.",
+            "1. The time limit for the performance shouldn't exceed a maximum time of 15 minutes including setup and soundchecks.",
+            "2. No pre-recorded tracks would be allowed, usage of any pre-recorded tracks will face immediate disqualification.",
+            "3. Contestants should bring their own instruments for their performances.(Only Drumkit would be provided)",
+            "4. Extra points will be awarded for original compositions.",
+            "5. All music shall be played live on stage and live looping on stage is not allowed.",
+            "6. The members of the band performing offline should be the same as the ones from the uploaded video.",
+            "7. Judges' decisions will be final and binding and are not open to review."
+          ],
+          "judging": [
+            "1. Song Selection - 15 %",
+            "2. Synchronization - 30 %",
+            "3. Originality and Creativity - 20 %",
+            "4. Technical Brilliance / Individual Skills - 30 %",
+            "5. Overall Impact / Stage Presence - 5%"
+          ],
+          "prizes": [
+            "₹10000",
+            "₹6000",
+            "₹3000"
+          ],
+          "rules": [
+            "1. Band size should only be between 4 and 15 members",
+            "2. A person can play for only one single band.",
+            "3. Extra points will be awarded for original compositions.",
+            "4. All the instruments should be brought by the members of the band itself(Only the drum kit would be Provided).",
+            "5. The band should have at least one instrumentalist present.",
+            "6. Acapella is not allowed.",
+            "7. Exceeding the time limit will lead to negative points.",
+            "8. Obscenity on stage is strictly prohibited.",
+            "9. Pre-recorded sounds are not allowed."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Muhamed Rizwan",
+            "image": Muhamed,
+            "phone": "9207267393"
+          },
+          {
+            "name": "Abhijith Sureshbabu",
+            "image": Abhijith,
+            "phone": "8075821728"
+          },
+          {
+            "name": "Anup Kumar",
+            "image": Anup,
+            "phone": "9525727176"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/c32c7fa4-3002-4374-bf92-fbcbcc959a11/0_2.webp",
+        "date": "28-01-2024",
+        "id": "CP17"
+      },
+      {
+        "name": "BRUSHED BRILLIANCE",
+        "about": "The event is all about unleashing your creativity and showcasing your face painting skills.",
+        "rulebook": {
+          "structure": [
+            "",
+            "Number of participants in each team: 2 (including an artist and a model)",
+            "This event is open to everyone.",
+            "Registration fee for this event is ₹49 for each registrant."
+          ],
+          "judging": [
+            "\u2022\tAdherence to theme - 25%",
+            "\u2022\tOriginality and creativity - 25%",
+            "\u2022\tPainting skills - 25%",
+            "\u2022\tOverall visual impact - 25%"
+          ],
+          "prizes": [
+            "₹3000",
+            "₹2000",
+            "₹1000"
+          ],
+          "rules": [
+            "\u2022        Participants must finish the painting within 60 minutes.",
+            "\u2022        The theme will be announced before the event.",
+            "\u2022        Participants are supposed to bring the necessary brushes, sponges and mixing trays.",
+            "\u2022        Paints will be provided.",
+            "\u2022        No part of the design may be applied to the models face before the start of the event.",
+            "\u2022        Painting must not extend down the neck or onto the models chest, shoulders or back areas.",
+            "\u2022        Hair may be clipped or pinned back to fully expose the design area.",
+            "\u2022        Participants should respect the time limit and not disrupt other contestants.",
+            "\u2022        Any inappropriate or offensive designs will result in disqualification.",
+            "\u2022        Decision made by the judges are final.Requests to reconsider the final decision would not be entertained."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Parvat Khattak",
+            "image": Parvat,
+            "phone": "7404016579"
+          },
+          {
+            "name": "Abhirami R Iyer",
+            "image": Abhirami,
+            "phone": "99619 85768"
+          },
+          {
+            "name": "Prisha Italiya",
+            "image": Prisha,
+            "phone": "96620 97722"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/8b7fb382-8bea-4e16-8e0d-dee17178f786/0_1.webp",
+        "date": "28-01-2024",
+        "id": "CF01"
+      },   
+      {
+        "name": "Waste to Wow",
+        "about": " It is a craft out of waste competition where teams of two have to make beautiful crafts out of waste materials.\n\n",
+        "rulebook": {
+          "structure": [],
+          "judging": [
+            "\u25cf\tCreativity and innovation - 50%",
+            "\u25cf\tEffectiveness in utilization of waste materials - 30%",
+            "\u25cf\tPresentation - 20%"
+          ],
+          "prizes": [
+            "First: ₹2500",
+            "Second: ₹1500",
+            "Third: ₹1000"
+          ],
+          "rules": [
+            "Registration fee for this event is ₹49 for each registrant.",
+            "\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.",
+            "\u25cf        Materials like ice cream cups, sticks, plastic bottles, soft drink cans, and used pens will be provided and it is mandatory to use them in the craft.",
+            "\u25cf        Participants can bring necessary items like aluminium wires, moulding clay and stationery items like scissors,glue,paints etc.",
+            "Participants can also bring waste materials if they wish to. Waste material could be anything like tetra packs, bottles, newspapers, CDs, jute material, or any second-hand items that otherwise would be thrown away.",
+            "\u25cf        No ready or semi-finished model or matter would be accepted by participants in the competition.",
+            "\u25cf        No mobile or Internet means would be allowed to be used at the time of the competition.",
+            "\u25cf        The decision of the judges will be considered final and bniding."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Anusha Dadam",
+            "image": Anusha,
+            "phone": "+91 93925 39384"
+          },
+          {
+            "name": "Mausumi  Bhuyan",
+            "image": Mausumi,
+            "phone": "7749902629"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
+        "date": "28-01-2024",
+        "id": "CF05"
+      },
+     {
+        "name": "Pixel Palette",
+        "about": "It's an online competition and participants are needed to submit their digital artworks according to the provided theme.",
+        "rulebook": {
+          "structure": [
+            "1. This event will be conducted online and the theme will be revealed before the competition starts."
+          ],
+          "judging": [
+            "1. Creativity - 20%",
+            "2. Adherence to the theme - 30%",
+            "3. Color and visual - 20%",
+            "4. Presentation - 30%"
+          ],
+          "prizes": [
+            "₹1500",
+            "₹1000",
+            "₹500"
+          ],
+          "rules": [
+            "1. Each participant is allowed to submit only one entry.",
+            "2. Dimensions of the canvas should be 1000 px X 1000 px.",
+            "3. Any software can be used for creating the artwork but they should mention the software used",
+            "4. Submissions must be the original work of the participant, plagiarism is strictly prohibited.",
+            "5. Participants should submit two images / screen grabs of the artwork in between stages, in addition to the final artwork.",
+            "6. The editable form or link of the artwork must be submitted.",
+            "7. Submitted artwork should also contain the participant's name or signature as a means of identification.",
+            "8. A one line caption to express the artwork is encouraged.",
+            "9. The submitted artwork should be in high resolution image format (JPEG or PNG).",
+            "10. Artworks must not include watermarks from external sources, or display copyrighted content that does not belong to the participant.",
+            "11. Participants should ensure that their submissions do not contain objectionable content.",
+            "12. The decisions of the judges will be final and binding."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Pushti Amit Vasoya",
+            "image": Pushti,
+            "phone": "9429233780"
+          },
+          {
+            "name": "Abhirami R Iyer",
+            "image": Abhirami,
+            "phone": "9961985768"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/a4555563-5854-46b4-8e8b-d46d93f13b90/0_0.webp",
+        "date": "08-01-24 to 28-01-24",
+        "id": "CF13"
+      },
+          {
+        "name": "Groove Mania",
+        "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style.",
+        "rulebook": {
+          "structure": [
+              "Round 1 (Online): ",
+                "1) Participants will have to shoot a video of them dancing in any style. The duration of the video must be in between 2 minutes and 3 minutes",
+                "2) The video must have clear sound and visuals and should be a recording of a live performance with a clear face in one take",
+                "3) Upload your videos in your Google Drive in .mp4 format and submit the link of the same through the Google form which will be provided via your registered email id",
+                "4) Only one submission per participant is allowed",
+                "5) The deadline for submission of videos for the online screening round is on 15th January 2024",
+              " ",
+              "Round 2 (Offline): ",
+              "Registration fee for this event is ₹149 for each registrant.",
+                "a. The top entries will be shortlisted for the final round",
+                "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event",
+                "c. Violations of the rules may lead to disqualification"
+          ],
+          "judging": [
+            "",
+            "1)Choreography and Creativity",
+            "2)Synchronisation and Expressions",
+            "3)Energy and Stage Presence",
+            "4)Costume and Appearance",
+            "5)Overall Entertainment Value"
+          ],
+          "prizes": [
+            "₹3000",
+            "₹2000",
+            "₹1000"
+          ],
+          "rules": [
+            "",
+            "• Any dance style is allowed",
+            "• The participants should avoid using indecent dress, song and gestures",
+            "• Any stunts that can cause life risk are not permitted",
+            "• Use of fire, sharp objects, or any other dangerous elements on stage is strictly prohibited",
+            "• It is mandatory for all participants to be present at the venue before the competition begins",
+            "• Any last-minute changes or requests should be communicated to the event coordinators well in advance",
+            "• The judges' decisions will be final and cannot be disputed",
+            "• All participants are expected to display good sportsmanship and respect towards fellow participants, organisers, and judges"
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Anju Sasikumar",
+            "image": Anju,
+            "phone": "7907042327"
+          },
+          {
+            "name": "Pavitra R",
+            "image": Pavitra,
+            "phone": "80897 26141"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/3eff2788-d39d-4b6b-8091-60a399e4766d/0_1.webp",
+        "date": "27-01-2024",
+        "id": "CP14"
+      },
+     
       {
         "name": "ChoreoClash",
         "about": "Offline group dance competition\nInviting dance groups to showcase their team's talent, coordination, and creativity\n",
@@ -540,199 +712,7 @@ export let cultural = {
         "date": "27-01-2024",
         "id": "CP07"
       },
-      {
-        "name": "BGMI Showdown",
-        "about": "Competitive online BGMI Esports event.",
-        "rulebook": {
-          "structure": [
-            "Registration fee for this event is ₹49 for each registrant.",
-            "1. All the players will be playing Erangel (Classic map, Special version maybe included       depending on the update at the time of game conduct)",
-            "2. There will be 6 Erangel matches in total conducted over 2 days (3 per day)",
-            
-          ],
-          "judging": [
-            "1. Teams will be given points according to the scheme mentioned above.",
-            "2. The team with max number of points wins."
-          ],
-          "prizes": [
-            "₹2500",
-            "₹1500",
-            "₹1000"
-          ],
-          "rules": [
-            "1. Players can participate through any android device/IOS device.",
-            "2. Use of emulators is strictly prohibited.",
-            "3. The use of any hack is strictly prohibited",
-            "4. Cheating/toxic behaviour is not tolerated. Warnings will be given to the teams that commit such offences.",
-            "5. The match shall continue regardless of player disconnecting or facing any in-game glitches/errors",
-            "6. Squads should contain at least 1 and at most 4 participants and failing to get 4 participants or failing to enter any of the six rounds is the issue of the team.",
-            "8. In case of any tie of scores in top 5 teams, TDM is conducted for the respective teams for the final winner.",
-            "9. This TDM is \u201cfirst to 50 kills\u201d.",
-            "",
-            "*Additional rules may be included by the Esports community according to the situation.",
-            "*Any violation of above rules will result in disqualification from the tournament. Moreover, regardless of the result of the game you will get less than 0 points (and even negative points) according to the offence."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
-            "image": Bhogaraju,
-            "phone": "9848634455"
-          },
-          {
-            "name": "Pasupuleti Sanjay",
-            "image": Sanjay,
-            "phone": "9705063009"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
-        "date": "20-01-24",
-        "id": "CF08"
-      },
-      {
-        "name": "KATHA - where words become world",
-        "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
-        "rulebook": {
-          "structure": [
-            "This event will be conducted online."
-          ],
-          "judging": [
-            "1.Creativity - 35%",
-            "2.Originality - 35%",
-            "3.Relevance to prompt - 30%"
-          ],
-          "prizes": [
-            "₹2000",
-            "₹1000",
-            "₹500"
-          ],
-          "rules": [
-            "1.The story should not exceed the word limit of 2000 words and must be based on the prompts provided.",
-            "2.The entry must be in English or Hindi with an appropriate title.",
-            "3.The use of language should be careful. No part of the society or individual should be offended.",
-            "4.Only one submission is allowed per participant.",
-            "5.The entry must be the original work of the participant, and must not have been published elsewhere.",
-            "6.All the entries must be sent in a particular format (Name of Story_Name of participant).",
-            "7.Illustrations such as graphs and sketches are not allowed.",
-            "8.Only the stories submitted before the deadline (date) will be considered for judging.",
-            "9.Plagiarism and use of explicit content will lead to immediate disqualification.",
-            "10.The decisions made by the judges are final. Requests to reconsider",
-            "the final decision will not be entertained."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Pushti Amit Vasoya",
-            "image": Pushti,
-            "phone": "9429233780"
-          },
-          {
-            "name": "Abhirami R. Iyer",
-            "image": Abhirami,
-            "phone": "9961985768"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
-        "date": "08-01-24 to 28-01-24",
-        "id": "CP09"
-      },
-      {
-        "name": "CODM: Clash of Champions",
-        "about": "Online Competitive Esports event.",
-        "rulebook": {
-          "structure": [
-            "Registration fee for this event is ₹49 for each registrant.",
-            "1. Tournament Format: The tournament follows a single-elimination format, where teams are eliminated after losing one match.",
-            "3. First Round Games: In the first round, teams play three games: team deathmatch,",
-            "hardpoint, and domination, with the team winning two games advancing.",
-            "4. Map Selection: The losing team of the first game selects the second map (hardpoint), and the losing team of the second game selects the third map (domination).",
-            "5. Qualification: After the first round, only 8 teams qualify for the quarter-finals."
-          ],
-          "judging": [
-            "1. Teams winning without playing \u2018domination\u2019 get 5 points.",
-            "2. Teams winning both \u2018team deathmatch\u2019 and \u2018domination\u2019 get 4 points.",
-            "3. Teams winning \u2018hardpoint\u2019 and \u2018domination\u2019 get 3 points.",
-            "4. Teams winning by forfeit from another team receive 3 points.",
-            "5. Team with maximum no. of points wins."
-          ],
-          "prizes": [
-            "₹2500",
-            "₹1500",
-            "₹1000"
-          ],
-          "rules": [
-            "1. Teams must download all maps, check-in 10 minutes before scheduled matches, and join the lobby on time. Failure to do so may result in disqualification.",
-            "2. Teams can substitute a player if needed, but organizers must be informed before 2 PM.",
-            "3. All roster members must have their Call of Duty accounts in good standing, without bans or restrictions.",
-            "4. Remember to refer to the full tournament rules for complete details and any updates."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Pothula Sai Praneeth",
-            "image": Praneeth,
-            "phone": "8074241096"
-          },
-          {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
-            "image": Bhogaraju,
-            "phone": "9848634455"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
-        "date": "21-01-24",
-        "id": "CP10"
-      },
-      {
-        "name": "KAVYA - weaving verses, crafting dreams",
-        "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
-        "rulebook": {
-          "structure": [
-            "This event will be conducted online."
-          ],
-          "judging": [
-            "1.Creativity - 35%",
-            "2.Originality - 35%",
-            "3.Relevance to prompt - 30%"
-          ],
-          "prizes": [
-            "₹2000",
-            "₹1000",
-            "₹500"
-          ],
-          "rules": [
-            "1.The poem should not exceed the word limit of 200 words.",
-            "2.The poem must be based on the prompts provided.",
-            "3.The entry must be in English or Hindi.",
-            "4.Every entry must have a title.",
-            "5.The use of language should be careful. No part of the society or individual should be offended.",
-            "6.Only one submission is allowed per participant.",
-            "7.The entry must be the original work of the participant, and must not have been published elsewhere.",
-            "8.All the entries must be sent in a particular format (Name of Poem_Name of participant).",
-            "9.Illustrations such as graphs and sketches are not allowed.",
-            "10.The poems submitted before the deadline (date) will only be considered for results.",
-            "11.Plagiarism and use of explicit content will lead to immediate disqualification.",
-            "12.The decisions made by the judges are final. Requests to reconsider",
-            "the final decision will not be entertained."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Pushti Amit Vasoya",
-            "image": Pushti,
-            "phone": "9429233780"
-          },
-          {
-            "name": "Abirami R. Iyer",
-            "image": Abhirami,
-            "phone": "9961985768"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/e717aa0a-05b2-4d41-9bcc-b1a8f50d3273/0_0.webp",
-        "date": "08-01-24 to 28-01-24",
-        "id": "CF11"
-      },
-      {
+     {
         "name": "DROP THE BEAT",
         "about": "A 1 vs 1 battle where each pair of dancers will be challenged to\ndance to the unpredictable, varied beats.",
         "rulebook": {
@@ -789,37 +769,35 @@ export let cultural = {
         "date": "27-01-2024",
         "id": "CF12"
       },
-      {
-        "name": "Pixel Palette",
-        "about": "It's an online competition and participants are needed to submit their digital artworks according to the provided theme.",
+       {
+        "name": "KATHA - where words become world",
+        "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
-            "1. This event will be conducted online and the theme will be revealed before the competition starts."
+            "This event will be conducted online."
           ],
           "judging": [
-            "1. Creativity - 20%",
-            "2. Adherence to the theme - 30%",
-            "3. Color and visual - 20%",
-            "4. Presentation - 30%"
+            "1.Creativity - 35%",
+            "2.Originality - 35%",
+            "3.Relevance to prompt - 30%"
           ],
           "prizes": [
-            "₹1500",
+            "₹2000",
             "₹1000",
             "₹500"
           ],
           "rules": [
-            "1. Each participant is allowed to submit only one entry.",
-            "2. Dimensions of the canvas should be 1000 px X 1000 px.",
-            "3. Any software can be used for creating the artwork but they should mention the software used",
-            "4. Submissions must be the original work of the participant, plagiarism is strictly prohibited.",
-            "5. Participants should submit two images / screen grabs of the artwork in between stages, in addition to the final artwork.",
-            "6. The editable form or link of the artwork must be submitted.",
-            "7. Submitted artwork should also contain the participant's name or signature as a means of identification.",
-            "8. A one line caption to express the artwork is encouraged.",
-            "9. The submitted artwork should be in high resolution image format (JPEG or PNG).",
-            "10. Artworks must not include watermarks from external sources, or display copyrighted content that does not belong to the participant.",
-            "11. Participants should ensure that their submissions do not contain objectionable content.",
-            "12. The decisions of the judges will be final and binding."
+            "1.The story should not exceed the word limit of 2000 words and must be based on the prompts provided.",
+            "2.The entry must be in English or Hindi with an appropriate title.",
+            "3.The use of language should be careful. No part of the society or individual should be offended.",
+            "4.Only one submission is allowed per participant.",
+            "5.The entry must be the original work of the participant, and must not have been published elsewhere.",
+            "6.All the entries must be sent in a particular format (Name of Story_Name of participant).",
+            "7.Illustrations such as graphs and sketches are not allowed.",
+            "8.Only the stories submitted before the deadline (date) will be considered for judging.",
+            "9.Plagiarism and use of explicit content will lead to immediate disqualification.",
+            "10.The decisions made by the judges are final. Requests to reconsider",
+            "the final decision will not be entertained."
           ]
         },
         "organisers": [
@@ -829,135 +807,65 @@ export let cultural = {
             "phone": "9429233780"
           },
           {
-            "name": "Abhirami R Iyer",
+            "name": "Abhirami R. Iyer",
             "image": Abhirami,
             "phone": "9961985768"
           }
         ],
-        "image": "https://cdn.midjourney.com/a4555563-5854-46b4-8e8b-d46d93f13b90/0_0.webp",
+        "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
         "date": "08-01-24 to 28-01-24",
-        "id": "CF13"
+        "id": "CP09"
       },
-      {
-        "name": "Groove Mania",
-        "about": "\nOffline solo dance competition\nDance enthusiasts are welcomed to showcase their unique hidden dance style.",
+     {
+        "name": "KAVYA - weaving verses, crafting dreams",
+        "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
-              "Round 1 (Online): ",
-                "1) Participants will have to shoot a video of them dancing in any style. The duration of the video must be in between 2 minutes and 3 minutes",
-                "2) The video must have clear sound and visuals and should be a recording of a live performance with a clear face in one take",
-                "3) Upload your videos in your Google Drive in .mp4 format and submit the link of the same through the Google form which will be provided via your registered email id",
-                "4) Only one submission per participant is allowed",
-                "5) The deadline for submission of videos for the online screening round is on 15th January 2024",
-              " ",
-              "Round 2 (Offline): ",
-              "Registration fee for this event is ₹149 for each registrant.",
-                "a. The top entries will be shortlisted for the final round",
-                "b. The participant should be present in the venue at least 20 minutes before the scheduled commencement of the event",
-                "c. Violations of the rules may lead to disqualification"
+            "This event will be conducted online."
           ],
           "judging": [
-            "",
-            "1)Choreography and Creativity",
-            "2)Synchronisation and Expressions",
-            "3)Energy and Stage Presence",
-            "4)Costume and Appearance",
-            "5)Overall Entertainment Value"
+            "1.Creativity - 35%",
+            "2.Originality - 35%",
+            "3.Relevance to prompt - 30%"
           ],
           "prizes": [
-            "₹3000",
             "₹2000",
-            "₹1000"
+            "₹1000",
+            "₹500"
           ],
           "rules": [
-            "",
-            "• Any dance style is allowed",
-            "• The participants should avoid using indecent dress, song and gestures",
-            "• Any stunts that can cause life risk are not permitted",
-            "• Use of fire, sharp objects, or any other dangerous elements on stage is strictly prohibited",
-            "• It is mandatory for all participants to be present at the venue before the competition begins",
-            "• Any last-minute changes or requests should be communicated to the event coordinators well in advance",
-            "• The judges' decisions will be final and cannot be disputed",
-            "• All participants are expected to display good sportsmanship and respect towards fellow participants, organisers, and judges"
+            "1.The poem should not exceed the word limit of 200 words.",
+            "2.The poem must be based on the prompts provided.",
+            "3.The entry must be in English or Hindi.",
+            "4.Every entry must have a title.",
+            "5.The use of language should be careful. No part of the society or individual should be offended.",
+            "6.Only one submission is allowed per participant.",
+            "7.The entry must be the original work of the participant, and must not have been published elsewhere.",
+            "8.All the entries must be sent in a particular format (Name of Poem_Name of participant).",
+            "9.Illustrations such as graphs and sketches are not allowed.",
+            "10.The poems submitted before the deadline (date) will only be considered for results.",
+            "11.Plagiarism and use of explicit content will lead to immediate disqualification.",
+            "12.The decisions made by the judges are final. Requests to reconsider",
+            "the final decision will not be entertained."
           ]
         },
         "organisers": [
           {
-            "name": "Anju Sasikumar",
-            "image": Anju,
-            "phone": "7907042327"
+            "name": "Pushti Amit Vasoya",
+            "image": Pushti,
+            "phone": "9429233780"
           },
           {
-            "name": "Pavitra R",
-            "image": Pavitra,
-            "phone": "80897 26141"
+            "name": "Abirami R. Iyer",
+            "image": Abhirami,
+            "phone": "9961985768"
           }
         ],
-        "image": "https://cdn.midjourney.com/3eff2788-d39d-4b6b-8091-60a399e4766d/0_1.webp",
-        "date": "27-01-2024",
-        "id": "CP14"
+        "image": "https://cdn.midjourney.com/e717aa0a-05b2-4d41-9bcc-b1a8f50d3273/0_0.webp",
+        "date": "08-01-24 to 28-01-24",
+        "id": "CF11"
       },
-      {
-        "name": "Click n' Roll: A Showcase of Frames",
-        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
-        "rulebook": {
-          "structure": [
-            "1. Participants can compete individually or form teams of up to two members.",
-            "2. Event is open for everyone without any age restrictions.",
-            "3. Each team can upload a maximum of two reels.",
-            "4. Participants should focus on capturing the festival's vibrant atmosphere, activities, and",
-            "emotions through both photography and reel making,all the video clippings should be",
-            "taken during the fest.",
-            "5. Create a captivating reel within the timeframe of 60 seconds to 90 seconds which should",
-            "be in MP4 or MOV format.",
-            "6. Photography and video capturing should be done on 27/01/2024 and 28/01/2024 (on the days of Petrichor)and",
-            "editing it and reel making can be done from 27/01/2024 to 31/01/2024.",
-            "7. The last date to submit the reel is on 31/01/2024 before 11:59pm.",
-            "8. Entries should be submitted through the google form which will be sent to registered",
-            "participants and one of the team members should submit the reel. All submitted work",
-            "must be the original creation of the participant or team."
-          ],
-          "judging": [
-            "1. Relevance to theme and concept.",
-            "2. Composition and harmonious interplay of sound and music.",
-            "3. Creativity and Uniqueness.",
-            "4. Cinematography finesse and editing."
-          ],
-          "prizes": [
-            "₹3000",
-            "₹2000",
-            "₹1000"
-          ],
-          "rules": [
-            "1. Participants should capture beautiful moments during the Petrichor and make reels out of them.",
-            "2. Participants must adhere to ethical and respectful conduct throughout the competition. Inappropriate or offensive content will result in disqualification",
-            "3. Participants are responsible for obtaining any necessary permissions for the use of copyrighted material, including music, images, and any other content in their submissions.",
-            "4. The organizers reserve the right to disqualify any participant or entry that violates these rules.",
-            "5. By participating in this Reel Making Competition, you agree to abide by these rules and guidelines and participants\u2019 entries can be used for promotion of Petrichor."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Muhamed Rizwan",
-            "image": Muhamed,
-            "phone": "9207267393"
-          },
-          {
-            "name": "Nalan S",
-            "image": Nalan,
-            "phone": "6380821237"
-          },
-          {
-            "name": "Vishwaa PS",
-            "image": Vishwaa,
-            "phone": "8072452762"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/4fa0f1f0-68d5-479b-b382-03dc228d5dec/0_0.webp",
-        "date": "27-01-24 to 31-01-24",
-        "id": "CF15"
-      },
-      {
+     {
         "name": "Enigma - The General Quiz",
         "about": "Get ready for a mind blowing quiz on anything and everything under the sun and beyond.",
         "rulebook": {
@@ -997,73 +905,6 @@ export let cultural = {
         "image": "https://cdn.midjourney.com/bb0bd2e0-7ade-44ac-bcdd-4c6aed8976e8/0_0.webp",
         "date": "28-01-2024",
         "id": "CF16"
-      },
-      {
-        "name": "Bandwagon",
-        "about": "BandWars is a captivating showcase designed to identify and award outstanding musical ensembles, instrumentalists, soloists, and composers. It serves as an excellent platform for bands to break into the music scene. The competition will consist of two rounds, starting with an online submissions round for screening. The selected entries will then have the opportunity to perform live on stage in Petrichor.",
-        "rulebook": {
-          "structure": [
-            "Round 1 (Online) :",
-            "1. All the members of the band should be clearly visible in the uploaded video.",
-            "2. Usage of pre-recorded tracks is strictly prohibited.",
-            "3. The uploaded video should be within a time limit of 3 to 5 minutes.",
-            "4. Audio in the uploaded file should be clear for the judges to judge.",
-            "5. Softwares like Audacity and Reaper can be used for editing your videos.",
-            "",
-            "Round 2 (Offline) :",
-            "Registration fee for this event is ₹149 for each registrant.",
-            "1. The time limit for the performance shouldn't exceed a maximum time of 15 minutes including setup and soundchecks.",
-            "2. No pre-recorded tracks would be allowed, usage of any pre-recorded tracks will face immediate disqualification.",
-            "3. Contestants should bring their own instruments for their performances.(Only Drumkit would be provided)",
-            "4. Extra points will be awarded for original compositions.",
-            "5. All music shall be played live on stage and live looping on stage is not allowed.",
-            "6. The members of the band performing offline should be the same as the ones from the uploaded video.",
-            "7. Judges' decisions will be final and binding and are not open to review."
-          ],
-          "judging": [
-            "1. Song Selection - 15 %",
-            "2. Synchronization - 30 %",
-            "3. Originality and Creativity - 20 %",
-            "4. Technical Brilliance / Individual Skills - 30 %",
-            "5. Overall Impact / Stage Presence - 5%"
-          ],
-          "prizes": [
-            "₹10000",
-            "₹6000",
-            "₹3000"
-          ],
-          "rules": [
-            "1. Band size should only be between 4 and 15 members",
-            "2. A person can play for only one single band.",
-            "3. Extra points will be awarded for original compositions.",
-            "4. All the instruments should be brought by the members of the band itself(Only the drum kit would be Provided).",
-            "5. The band should have at least one instrumentalist present.",
-            "6. Acapella is not allowed.",
-            "7. Exceeding the time limit will lead to negative points.",
-            "8. Obscenity on stage is strictly prohibited.",
-            "9. Pre-recorded sounds are not allowed."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Muhamed Rizwan",
-            "image": Muhamed,
-            "phone": "9207267393"
-          },
-          {
-            "name": "Abhijith Sureshbabu",
-            "image": Abhijith,
-            "phone": "8075821728"
-          },
-          {
-            "name": "Anup Kumar",
-            "image": Anup,
-            "phone": "9525727176"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/c32c7fa4-3002-4374-bf92-fbcbcc959a11/0_2.webp",
-        "date": "28-01-2024",
-        "id": "CP17"
       },
       {
         "name": "Sportify - The SpEnt Quiz",
@@ -1106,6 +947,107 @@ export let cultural = {
         "date": "28-01-2024",
         "id": "CF18"
       },
+
+     
+     
+     
+      {
+        "name": "BGMI Showdown",
+        "about": "Competitive online BGMI Esports event.",
+        "rulebook": {
+          "structure": [
+            "Registration fee for this event is ₹49 for each registrant.",
+            "1. All the players will be playing Erangel (Classic map, Special version maybe included       depending on the update at the time of game conduct)",
+            "2. There will be 6 Erangel matches in total conducted over 2 days (3 per day)",
+            
+          ],
+          "judging": [
+            "1. Teams will be given points according to the scheme mentioned above.",
+            "2. The team with max number of points wins."
+          ],
+          "prizes": [
+            "₹2500",
+            "₹1500",
+            "₹1000"
+          ],
+          "rules": [
+            "1. Players can participate through any android device/IOS device.",
+            "2. Use of emulators is strictly prohibited.",
+            "3. The use of any hack is strictly prohibited",
+            "4. Cheating/toxic behaviour is not tolerated. Warnings will be given to the teams that commit such offences.",
+            "5. The match shall continue regardless of player disconnecting or facing any in-game glitches/errors",
+            "6. Squads should contain at least 1 and at most 4 participants and failing to get 4 participants or failing to enter any of the six rounds is the issue of the team.",
+            "8. In case of any tie of scores in top 5 teams, TDM is conducted for the respective teams for the final winner.",
+            "9. This TDM is \u201cfirst to 50 kills\u201d.",
+            "",
+            "*Additional rules may be included by the Esports community according to the situation.",
+            "*Any violation of above rules will result in disqualification from the tournament. Moreover, regardless of the result of the game you will get less than 0 points (and even negative points) according to the offence."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "image": Bhogaraju,
+            "phone": "9848634455"
+          },
+          {
+            "name": "Pasupuleti Sanjay",
+            "image": Sanjay,
+            "phone": "9705063009"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
+        "date": "20-01-24",
+        "id": "CF08"
+      },
+   
+      {
+        "name": "CODM: Clash of Champions",
+        "about": "Online Competitive Esports event.",
+        "rulebook": {
+          "structure": [
+            "Registration fee for this event is ₹49 for each registrant.",
+            "1. Tournament Format: The tournament follows a single-elimination format, where teams are eliminated after losing one match.",
+            "3. First Round Games: In the first round, teams play three games: team deathmatch,",
+            "hardpoint, and domination, with the team winning two games advancing.",
+            "4. Map Selection: The losing team of the first game selects the second map (hardpoint), and the losing team of the second game selects the third map (domination).",
+            "5. Qualification: After the first round, only 8 teams qualify for the quarter-finals."
+          ],
+          "judging": [
+            "1. Teams winning without playing \u2018domination\u2019 get 5 points.",
+            "2. Teams winning both \u2018team deathmatch\u2019 and \u2018domination\u2019 get 4 points.",
+            "3. Teams winning \u2018hardpoint\u2019 and \u2018domination\u2019 get 3 points.",
+            "4. Teams winning by forfeit from another team receive 3 points.",
+            "5. Team with maximum no. of points wins."
+          ],
+          "prizes": [
+            "₹2500",
+            "₹1500",
+            "₹1000"
+          ],
+          "rules": [
+            "1. Teams must download all maps, check-in 10 minutes before scheduled matches, and join the lobby on time. Failure to do so may result in disqualification.",
+            "2. Teams can substitute a player if needed, but organizers must be informed before 2 PM.",
+            "3. All roster members must have their Call of Duty accounts in good standing, without bans or restrictions.",
+            "4. Remember to refer to the full tournament rules for complete details and any updates."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Pothula Sai Praneeth",
+            "image": Praneeth,
+            "phone": "8074241096"
+          },
+          {
+            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "image": Bhogaraju,
+            "phone": "9848634455"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
+        "date": "21-01-24",
+        "id": "CP10"
+      },   
       {
         "name": "Valorant",
         "about": "Welcome to the Valorant Clash Championship, where skilled players and passionate fans come together for an epic day of intense competition and camaraderie. This event is designed for Valorant enthusiasts of all levels, from casual gamers to aspiring professionals.",
@@ -1171,8 +1113,8 @@ export let cultural = {
 
 export let technical = {
     "events": [
-      {
-        "name": "Treasure Hunt",
+         {
+        "name": "Tessaract 2.0",
         "about": "Participants are tasked with solving a sequence of challenges and riddles. The challenges will navigate them across various platforms and demand sharp, out-of-the-box thinking to successfully complete",
         "rulebook": {
           "structure": [
@@ -1184,9 +1126,9 @@ export let technical = {
             "3. Any and all decisions taken by the judges would be binding and final."
           ],
           "prizes": [
-            "1. 6000",
-            "2. 4000",
-            "3. 2000"
+            "1. 6125",
+            "2. 3675",
+            "3. 2200"
             
           ],
           "rules": [
@@ -1204,205 +1146,59 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
-        "date": "14/1/2024 - 15/1/2024",
+        "date": "15/1/2024",
         "id": "TF00"
       },
-      {
-        "name": "Simulate To The Moon",
-        "about": "An online simulation challenge where participants are expected to produce a trajectory plan to get the payload to its desired location, given a set of constraints such as as the fuel, the mass of the payload, etc.",
+        {
+        "name": "Trade-a-thon 2.0",
+        "about": "A five-day online trading competition designed to test your trading skills and knowledge in a simulated trading environment.",
         "rulebook": {
           "structure": [
-            "1. Duration: 1 day",
-            "2. The constraints will be provided along with the problem",
-            "statement on the day before.",
-            "3. Teams will have to code up their simulation in Python.",
-            "4. Upon achieving all the parameters within a range of error."
+            "1.The trading competition will be held on the app StockGro/",
+            "2. Information on how to log in and register on the online platform (StockGro)",
+            "would be communicated.",
+            "3. The competition will run for 5 trading days"
           ],
           "judging": [
-            "1. Simplicity of simulation - 10p",
-            "2. Achieving required constraints - 80p",
-            "3. Animation quality - 40p"
+            "1. The final ranking will be determined by the cumulative ROI over the 5-day",
+            "competition period.",
+            "2. The participant with the highest ROI will be declared the winner.",
+            "3. In case of a tie, the team with the lower number of trades will be given",
+            "priority"
           ],
           "prizes": [
-            "1. Rs. 3500",
-            "2. Rs. 2000",
-            "3. Rs. 1500"
-            
+            "1. Rs. 5000",
+            "2. Rs. 3000",
+            "3. Rs. 2000"
           ],
           "rules": [
-            "1. The simulation results will be verified by the evaluators and that will be",
-            "the final decision.",
-            "2. Plagiarism will result in disqualification.",
-            "3. Winners will be decided on the basis of the points scored.",
-            "4. Participants have to produce an animation with their details",
-            "trajectory plan and simulation code to qualify for the prize."
+            "1. Registered participants will have to install the StockGro application from PlayStore/ AppStore.",
+            "2. Registered participants need to create a StockGro to join the stock trading competition.",
+            "3. The account and assets allocated will be purely virtual and cannot be liquidated into real money.",
+            "4. Any profit/loss made in this contest is virtual and only for the purpose of the competition.",
+            "5. Duplicate registration will not be accepted.",
+            "6. Other details and guidelines shall be shared with the participants via Email."
           ]
         },
         "organisers": [
           {
-            "name": "KEVIN R JACOB",
-            "image": KEVIN,
-            "phone": "9110641165"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/8504755d-8310-4e6b-be56-95ef5684d560/0_0.webp",
-        "date": "13/1/2024",
-        "id": "TF01"
-      },
-      {
-        "name": "DRONE STABILIZATION CHALLENGE",
-        "about": "An offline event where participants are required to simulate a drone\u2019s stabilization and implement the same on a provided hardware setup.\n",
-        "rulebook": {
-          "structure": [
-            "\u25cf Round 1:",
-            "a. Duration: 2 hours",
-            "b. Parameters of the set-up will be provided before the competition starts",
-            "c. Teams will qualify for the second round if they are able to simulate the",
-            "system and balance it properly using control algorithms like PID, LQR, etc.",
-            "\u25cf Round 2:",
-            "a. Duration: 1 hour",
-            "b. Qualified teams will code the microcontroller to work based on their",
-            "simulation results",
-            "c. Each team will be given two chances to successfully balance the system."
-          ],
-          "judging": [
-            "1. Round 1:",
-            "a. Simplicity of simulation - 10p",
-            "b. Achieving required constraints - 50p",
-            "2. Round 2:",
-            "a. Simplicity of Arduino code - 10p",
-            "b. Bonus points: 50p",
-            "c. Main demonstration: 50p"
-          ],
-          "prizes": [
-            "1. Rs. 4000",
-            "2. Rs. 2500",
-            "3. Rs. 1500"
-          ],
-          "rules": [
-            "1. Teams will qualify for the second round only if they can balance the system",
-            "properly in simulation",
-            "2. The simulation results will be verified by the evaluators and that will be the final",
-            "decision",
-            "3. Plagiarism will result in disqualification",
-            "4. Participants will have to use only the details provided by the organizers, any",
-            "other tweaking of the hardware is not allowed and will result in disqualification",
-            "5. Winners will be decided based on the points scored"
-          ]
-        },
-        "organisers": [
-          {
-            "name": "SIVA K M R",
-            "image": Siva,
-            "phone": "9500643177"
+            "name": "JATIN KUMAWAT",
+            "image": JATIN,
+            "phone": "9636902875"
           },
           {
-            "name": "Manikantan R S",
-            "image": Manikantan,
-            "phone": "9037630397"
+            "name": "Karthikeya B",
+            "image": Karthikeya,
+            "phone": "7794011990"
           }
         ],
-        "image": "https://cdn.midjourney.com/a73fa382-699c-4053-b4f5-20e0e476a1bc/0_0.webp",
-        "date": "28/1/2024",
-        "id": "TF02"
+        "image": "https://cdn.midjourney.com/10b70854-7f9a-4760-9719-37470b30b72f/0_0.webp",
+        "date": "15/1/2024 - 19/1/2024",
+        "id": "TF07"
       },
-      {
-        "name": "AlgoTrek",
-        "about": "Petrichor presents AlgoTrek, where your coding skills are your weapons. Use them wisely to fight hordes of challenging problems within 2.5 hours in this online CP contest.",
-        "rulebook": {
-          "structure": [
-            "1. One CP contest of 2.5 hours where winners will be selected through",
-            "common leaderboard.",
-            "2. It\u2019s free to register and the contest link will be sent to your registered mail",
-            "id."
-          ],
-          "judging": [
-            "Will be evaluated as per the platform its conducted on"
-          ],
-          "prizes": [
-            "1. Rs. 5500",
-            "2. Rs. 4500",
-            "3. Rs. 3500",
-            "4. Rs. 2500",
-            "5. Rs. 1500",
-            "6. Positions 6th to 20th runner ups: Rs. 500"
-          ],
-          "rules": [
-            "1. It\u2019s an individual contest not a team contest.",
-            "2. You are not allowed to communicate with other participants , use another",
-            "person\u2019s code for solutions/generators, share ideas of solutions.",
-            "3. You are not allowed to use multiple accounts and will have to take part in",
-            "the contest by using only your personal and single account.",
-            "4. You are not allowed to use third party codes from other websites for e.g.",
-            "geekforgeeks",
-            "5. An ID will be allocated to the participants on registration which shall be",
-            "used for future references.",
-            "6. All modes of official communication will be through the petrichor's e-mail.",
-            "Participants are advised to keep track of all folders in their e-mail accounts.",
-            "7. In case plagiarism is found on candidate\u2019s code then that candidate will be",
-            "disqualified from the contest and will be barred from receiving any prizes.",
-            "8. Participants have to fill the online form for participating in the Contest."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Dhruvadeep Malakar",
-            "image": Dhruvadeep,
-            "phone": "6001301742"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/70aa1b56-1502-41d2-b384-ddc0d154b80b/0_0.webp",
-        "date": "14/1/2024",
-        "id": "TF03"
-      },
-      {
-        "name": "Drone Dash",
-        "about": "Welcome to Drone Dash, an exhilarating drone racing competition that challenges teams to navigate through hoops with precision and speed. Get ready to showcase your piloting skills in this thrilling event!",
-        "rulebook": {
-          "structure": [
-            "1. Round 1:Qualifying Round (if enough participation)",
-            "2. Teams compete for a place in the next round based on performance.",
-            "3. Round 2: Final Round",
-            "4. Qualified teams vie for the first three positions."
-          ],
-          "judging": [
-            "1. Maximum Hoops: The team that successfully navigates through the maximum number of hoops.",
-            "2. Minimum Time: The team that completes the course in the shortest time."
-          ],
-          "prizes": [
-            "1. Rs. 12500",
-            "2. Rs. 10000",
-            "3. Rs. 7500"
-          ],
-          "rules": [
-            "1. Weight Limit: Maximum 1.2kg",
-            "2. Flight Time: Minimum 10 minutes",
-            "3. Hoops Navigation:",
-            "3.1. Fly through hoops at various heights.",
-            "3.2. Hoop Diameter: 70cm",
-            "4. Drone Lights: Lights must be attached to the drone's arms.",
-            "5. Receiver Range: Minimum range of 500 meters.",
-            "6. Team size: 4 - 6." 
-              
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Ayush Singh",
-            "image": Ayush_Singh,
-            "phone": "+91 88742 36084"
-          },
-          {
-            "name": "Shivansh Chaudhary",
-            "image": Shivansh,
-            "phone": "+91 7302994666"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/7329c387-a943-40a2-94a4-0e0aa3717ac3/0_0.webp",
-        "date": "27/1/2024",
-        "id": "TF04"
-      },
-      {
+       
+     
+         {
         "name": "Game Forge",
         "about": "An online game development competition where participants showcase their creative skills in\ndeveloping games using a Godot Engine.",
         "rulebook": {
@@ -1464,7 +1260,428 @@ export let technical = {
         "date": "15/1/2024 - 31/1/2024",
         "id": "TF05"
       },
+     {
+        "name": "AlgoTrek",
+        "about": "Petrichor presents AlgoTrek, where your coding skills are your weapons. Use them wisely to fight hordes of challenging problems within 2.5 hours in this online CP contest.",
+        "rulebook": {
+          "structure": [
+            "1. One CP contest of 2.5 hours where winners will be selected through",
+            "common leaderboard.",
+            "2. It\u2019s free to register and the contest link will be sent to your registered mail",
+            "id."
+          ],
+          "judging": [
+            "Will be evaluated as per the platform its conducted on"
+          ],
+          "prizes": [
+            "1. Rs. 5500",
+            "2. Rs. 4500",
+            "3. Rs. 3500",
+            "4. Rs. 2500",
+            "5. Rs. 1500",
+            "6. Positions 6th to 20th runner ups: Rs. 500"
+          ],
+          "rules": [
+            "1. It\u2019s an individual contest not a team contest.",
+            "2. You are not allowed to communicate with other participants , use another",
+            "person\u2019s code for solutions/generators, share ideas of solutions.",
+            "3. You are not allowed to use multiple accounts and will have to take part in",
+            "the contest by using only your personal and single account.",
+            "4. You are not allowed to use third party codes from other websites for e.g.",
+            "geekforgeeks",
+            "5. An ID will be allocated to the participants on registration which shall be",
+            "used for future references.",
+            "6. All modes of official communication will be through the petrichor's e-mail.",
+            "Participants are advised to keep track of all folders in their e-mail accounts.",
+            "7. In case plagiarism is found on candidate\u2019s code then that candidate will be",
+            "disqualified from the contest and will be barred from receiving any prizes.",
+            "8. Participants have to fill the online form for participating in the Contest."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Dhruvadeep Malakar",
+            "image": Dhruvadeep,
+            "phone": "6001301742"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/70aa1b56-1502-41d2-b384-ddc0d154b80b/0_0.webp",
+        "date": "16/1/2024",
+        "id": "TF03"
+      },
+        {
+        "name": "Simulate To The Moon",
+        "about": "An online simulation challenge where participants are expected to produce a trajectory plan to get the payload to its desired location, given a set of constraints such as as the fuel, the mass of the payload, etc.",
+        "rulebook": {
+          "structure": [
+            "1. Duration: 1 day",
+            "2. The constraints will be provided along with the problem",
+            "statement on the day before.",
+            "3. Teams will have to code up their simulation in Python.",
+            "4. Upon achieving all the parameters within a range of error."
+          ],
+          "judging": [
+            "1. Simplicity of simulation - 10p",
+            "2. Achieving required constraints - 80p",
+            "3. Animation quality - 40p"
+          ],
+          "prizes": [
+            "1. Rs. 3500",
+            "2. Rs. 2000",
+            "3. Rs. 1500"
+            
+          ],
+          "rules": [
+            "1. The simulation results will be verified by the evaluators and that will be",
+            "the final decision.",
+            "2. Plagiarism will result in disqualification.",
+            "3. Winners will be decided on the basis of the points scored.",
+            "4. Participants have to produce an animation with their details",
+            "trajectory plan and simulation code to qualify for the prize."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "KEVIN R JACOB",
+            "image": KEVIN,
+            "phone": "9110641165"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/8504755d-8310-4e6b-be56-95ef5684d560/0_0.webp",
+        "date": "20/1/2024",
+        "id": "TF01"
+      },
+           {
+        "name": "WebMosiac",
+        "about": "You will be provided an API from the petrichor team at webmosaic.petrichor.events. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
+        "rulebook": {
+          "structure": [
+            "SUBMISSION:",
+            "On submission, you have to submit a link to a git repo, and a link where your website is hosted online.",
+            "The git repo should be publicly accessible and up-to-date with the current version of your hosted website.",
+            "Any commits after the last day of submission will result in disqualification.",
+            "Hosting can be done on any platform of your choice.",
+            "DISQUALIFICATION:",
+            "1. Any form of plagiarism from any of the participating members.",
+            "2. More than 50% of the code copied from anywhere on the internet. (You can always copy (read: get inspired) from popular website regarding their colour palettes and design choices, only copying code is not allowed)",
+            "3. Using Bootstrap or any other CSS-removal tool is not allowed. (TailwindCSS, SCSS, and any other CSS preprocessors are allowed)",
+            "4. If the code does not run from our machine after cloning the repo, and npm install."
+          ],
+          "judging": [
+            "1)Readability: Is all the information on the website legible? Is the font readable on all screen sizes? Are the colours having enough contrast ratio to be readable? 25 points.",
+            "2)Colour Palette: How appealing is the colour palette used in the website? How consistent are the colours across all pages in the website? Consistency is an objective measure, however appeal is NOT. Hence the appeal will be decided by how close it is to the theme of the competition and the data given. 10 points",
+            "3)Speed and Performance: We will use the lighthouse tool in Chrome, Edge, Brave, etc. to measure the website's performance and take that score and divide by 4 to give a score out of 25. 25 points",
+            "4)Mobile compatibility: Can the website adapt for a smartphone’s aspect-ratio? Is all the information visible? 15 Points",
+            "5)Browser and OS compatibility: Website will be checked on Chrome (Windows and Android), Firefox (Windows, Linux, Android), Safari (MacOS, iOS). 5 Points",
+            "5.1) The website on the desktop should look mostly the same across all browsers and Operating Systems.",
+            "5.2) Similarly on mobile devices it should look mostly the same across all browsers and Operating Systems.",
+            "6) Code Quality 20 Points",
+            "6.1) Readability: 4 Points",
+            "6.2) DRY (Do not Repeat Yourself): 3 Points",
+            "6.3) Type-safety and error handling: 3 Points",
+            "6.4) Consistent Naming convention, you can use any convention, but it has to be consistent: 5 Points",
+            "6.5) CSS-skill, No points here if you use JS for effects that can be done with CSS. (slows down the website + increases JS bundle size): 3 Points",
+            "6.6) File Structure: is the code well structured and distributed among all the files (Avoid putting everything in one file): 2 Points"
+          ],
+          "prizes": [
+            "Total Pool = Rs. 15000",
+            "1. Rs. 7000",
+            "2. Rs. 5000",
+            "3. Rs. 3000"
+          ],
+          "rules": [
+            "1. Although you can use any framework, it would be recommended to use popular frameworks such as React, Vue, Angular, Svelte, etc. You can still use any framework of your choice.",
+            "2. You can add helper text all across your website apart from the data provided in the API, but you cannot change the API responses.",
+            "3. You can repeat the data in the API if the length of content provided is not sufficient for your format of displaying it.",
+            "4. You can use any assets from the internet, as long as you adhere to the copyright laws and regulations, as well as credit the artist/creator of the asset.",
+            "5. The website should be reachable and live at the submitted URL starting from the last day of submission to at least the day of the announcement of the results.",
+            "6. The usage of TypeScript is allowed. It will not directly affect any points, but indirectly it increases the code quality by having type-safety.",
+            "7. The code should be on a git repository. You can use github, gitlab, etc."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Kaushik Rawat",
+            "image": Kaushik,
+            "phone": "7208798635"
+          },
+              {
+            "name": "Kshitij Ghodake",
+            "image": Kshitij,
+            "phone": "+917298991001"
+          }
+         
+        ],
+        "image": "https://cdn.midjourney.com/31d65d6e-dc78-4bf5-b515-13ed033daaa0/0_0.webp",
+        "date": "21/1/2024",
+        "id": "TF08"
+      },
+          {
+        "name": "Chipcraft",
+        "about": "This technical challenge invites you to create a customized PCB, integrating a microcontroller tailored to a given application.",
+        "rulebook": {
+          "structure": [
+            "In this event, participants are tasked with designing and laying out a microcontroller-PCB solution for a specified application. The source code for programming the microcontroller must be included in the submission. A template for the schematic circuit design of the STM32 microcontroller, complete with a linear regulator, USB connector, clock generator, and programming connector, will be provided. The specific application for PCB design will be disclosed at the start of the event. Participants are expected to create a block diagram design, expand the schematic within the provided template, and ultimately craft a comprehensive layout for the PCB, incorporating the specified components."
+          ],
+          "judging": [
+            "1. Total Marks: 100",
+            "2. Incorrect designs will not lead to disqualification, but points will be deducted based on the criticality of the mistake, ranging from -5 to -20.",
+            "Weightage of Evaluation Parameters:",
+            "1. Design Simplicity: 20 points",
+            "2. Design Efficiency: 20 points",
+            "3. Cost-Effective Design (Considering Bill of Materials): 10 points",
+            "4. Placement and Layouting of the PCB: 40 points"
+          ],
+          "prizes": [
+            "Total: ₹8,000",
+            "1. Rs. 4,000",
+            "2. Rs. 2,500",
+            "3. Rs. 1,500"
+          ],
+          "rules": [
+            "1. Participants must submit the schematic, PCB layout, and the program to run on the controller, accompanied by a block diagram explanation of the code.",
+            "2. The microcontroller used in the design must be STM32 (a template layout and datasheet for the controller will be provided).",
+            "3. Teams can employ their preferred CAD tools for PCB design.",
+            "4. Each team is limited to one solution submission.",
+            "5. Plagiarism will result in disqualification.",
+            "6. Late submissions, with a penalty of 20 points, will be accepted up to one day after the deadline.",
+            "7. The team with the highest point score will be declared the winners. In the case of a tie, the time of submission will serve as the tiebreaker.",
+            "8. The decision of the evaluators will be final."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Manikantan",
+            "image": Manikantan,
+            "phone": "9037630397"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
+        "date": "21/1/2024",
+        "id": "TF13"
+      },
       {
+        "name": "Quizzanaire - School Quiz",
+        "about": "In the realm of knowledge, there are no boundaries, and the fun knows no limits. Petrichor\u2019 24 brings you Quizzanaire, a quiz competition exclusively for school students. It will be an inter school quiz competition.\n\nTopic: Anything and everything under the sun and beyond.\nParticipation: Teams of two or one\nRegistration fees: None",
+        "rulebook": {
+          "structure": [
+            "1. Each quiz consists of two rounds: prelims and finals.",
+            "2. The top 8 Teams from the preliminary round will qualify for the finals.",
+            "3. The general bounce and pounce system will be followed (will be further explained on-spot).",
+            "Round-specific rules will be explained on spot."
+          ],
+          "judging": [
+            "Any malpractices won't be entertained and will lead to instant disqualification. Any round specific rules will be conveyed before the event starts"
+          ],
+          "prizes": [
+            "Total Rs. 6000",
+            "1. Rs. 3000",
+            "2. Rs. 2000",
+            "3. Rs. 1000"
+          ],
+          "rules": [
+            "",
+            "1. Teams of two or one.",
+            "2. Teams should arrive at least 30 mins before the start of the event for verification.",
+            "3. Prelims will be in written format. Papers will be provided. It is advised to bring your own pens. Finals will be on-stage.",
+            "4. Adopting any kind of malpractice will lead to disqualification.",
+            "5. The decision taken by the quizmasters will be final and binding."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Ashwin Nair",
+            "image": Ashwin,
+            "phone": "+919188142004"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/0f338538-6fee-42ad-bd12-1701dfbc8e75/0_3.webp",
+        "date": "27/1/2024",
+        "id": "TF12"
+      },
+      {
+        "name": "Drone Dash",
+        "about": "Welcome to Drone Dash, an exhilarating drone racing competition that challenges teams to navigate through hoops with precision and speed. Get ready to showcase your piloting skills in this thrilling event!",
+        "rulebook": {
+          "structure": [
+            "1. Round 1:Qualifying Round (if enough participation)",
+            "2. Teams compete for a place in the next round based on performance.",
+            "3. Round 2: Final Round",
+            "4. Qualified teams vie for the first three positions."
+          ],
+          "judging": [
+            "1. Maximum Hoops: The team that successfully navigates through the maximum number of hoops.",
+            "2. Minimum Time: The team that completes the course in the shortest time."
+          ],
+          "prizes": [
+            "1. Rs. 14450",
+            "2. Rs. 9700",
+            "3. Rs. 5850"
+          ],
+          "rules": [
+            "1. Weight Limit: Maximum 1.2kg",
+            "2. Flight Time: Minimum 10 minutes",
+            "3. Hoops Navigation:",
+            "3.1. Fly through hoops at various heights.",
+            "3.2. Hoop Diameter: 70cm",
+            "4. Drone Lights: Lights must be attached to the drone's arms.",
+            "5. Receiver Range: Minimum range of 500 meters.",
+            "6. Team size: 4 - 6." 
+              
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Ayush Singh",
+            "image": Ayush_Singh,
+            "phone": "+91 88742 36084"
+          },
+          {
+            "name": "Shivansh Chaudhary",
+            "image": Shivansh,
+            "phone": "+91 7302994666"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/7329c387-a943-40a2-94a4-0e0aa3717ac3/0_0.webp",
+        "date": "27/1/2024",
+        "id": "TF04"
+      },
+     {
+        "name": "Eggstravaganza Drop Challenge",
+        "about": "A creativity and engineering prowess challenge where every team, with a limited selection of materials acquired through an auction, will have to craft a compact egg-protective structure.",
+        "rulebook": {
+          "structure": [
+            "You shall be given 2 hours to make the protective container ( 1 hour for thinking and buying materials and 1 hour for making the container).",
+            "The event will be follow as :",
+            "\u2022 The event starts with the disclosement of the available materials.",
+            "\u2022 A virtual money of 100 Rs will be given to participants for buying materials available there.",
+            "\u2022 The First one hour , Participants will utilize this to think of the design and the materials required to make their structures keeping in the mind the fixed virtual money ( 100 Rs. ).",
+            "\u2022 After this , their will be a break of half an hour . During this participants will submit their materials requirement ( from the available materials ) . Required Materials will be issued 10 mins before the last phase of the event ( 1 hr to make structure ).",
+            "\u2022 After making the structures , Three rounds will take place for testing the structure :",
+            "First Round :",
+            "\u2022 The egg with the container will be dropped from the 25 feet height.",
+            "\u2022 Participants whose eggs are fully intact will be allowed to move to the second round .",
+            "\u2022 Two chances will given for each round . However the second chance will lead to some penalties mentioned later .",
+            "Second Round :",
+            "\u2022 The egg will be dropped from height of 35 feet.",
+            "\u2022 Again the same rule as of first round.",
+            "Third Round :",
+            "\u2022 This will be the final round .",
+            "\u2022 The egg will be dropped from height of 45 feet.",
+            "\u2022 Same rule as of first two rounds."
+          ],
+          "judging": [
+            "The model will be evaluated based on its effectiveness , simplicity , design explanation , aesthetics and time to design the model. There will be some penalty in case the model doesn\u2019t work in the first",
+            "attempt.",
+            "\u2022 Those egg which are fully intact after the first drop are allowed to make second drop from greater height from the previous one and in the similar manner to make third drop.",
+            "The model will be graded only if the egg remains intact or is just partially cracked (content of egg doesn\u2019t come out).",
+            "\u2022 Partially cracked egg \u2192 +5 points (first round) , +10 points (second round) and +15 points (third round)",
+            "\u2022 No crack \u2192 +10 points (first around) , +15 points (second round) and +20 points (third round)",
+            "\u2022 Intact design \u2192 +30 points",
+            "\u2022 Simple and effective design \u2192 +35 points",
+            "\u2022 Time Taken \u2192 < 30 min : +20 points , < 45 min : +10 points",
+            "\u2022 Extra chance / Second chance \u2192 -10 points",
+            "\u2022 Amount Used \u2192 +15 points ( < Rs 60 ) , +10 points ( < Rs 80 )"
+          ],
+          "prizes": [
+            "1. Rs. 4000",
+            "2. Rs. 2400",
+            "3. Rs. 1600"
+          ],
+          "rules": [
+            "1. The container must hit a 30 ft x 30 ft landing zone on every drop.",
+            "2. Must not contain : liquid or gel , styroform in any form.",
+            "3. If the egg is damaged during placement in the container , a second egg will be provided with no penality.",
+            "4. Use of adhesive between material and egg is not permitted.",
+            "5. Maximum time will be 1 hr for designing the structures after getting material from auctioning.",
+            "6. The structure will be dropped with zero velocity.",
+            "7. Two chances will be given to each team for each round. However , the second chance will lead to a penality of 10 points.",
+            "8. Teams can only use material provided at the time of auctioning. Using materials from outside will lead to disqualification.",
+            "9. Individual member or a group of two members can participate as a team."
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Ayush Kumar",
+            "image": Ayush_Kumar,
+            "phone": "+91 9939595353"
+          },
+          {
+            "name": "Chirag Varshney",
+            "image": Chirag,
+            "phone": "+91 9528353345"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/1f62ca79-6ba4-440d-b8a8-155e1c555439/0_0.webp",
+        "date": "27/1/2024",
+        "id": "TF10"
+      },
+    {
+        "name": "Clench Bot",
+        "about": "Clench Bot is a challenging and exciting event that requires technical skills, logical thinking, problem-solving abilities, and teamwork. It is a great opportunity for students who are interested in robotics and want to showcase their talent and creativity.","Teams have to build a manually controlled bot that can do simple tasks of gripping objects and putting them in target zones so that it can complete the route by overcoming the hurdles in its path."
+        "rulebook": {
+          "structure": [
+            "",
+              " BOT SPECIFICATIONS",
+                 "1. The dimensions of the bot should be less than or equal to300 mm X 200mm X 300mm (lxbxh) failing which the team will be disqualified from the competition (this excludes the dimension of the gripper but includes tires). The bot can, however, extend its dimension once the run starts. An error of (±5%) is permitted. ",
+                 "2. The bot must be controlled manually.",
+                 "3. Teams can use both wired as well as wireless control mechanisms. In the case of wired bots, the length of the wire should be a minimum of 2 meters so that the wire remains slack at any instant of time. If the participants use a wireless mechanism they have to use either a dual-frequency remote, Bluetooth, or Wifi.",
+                 "4. The dimensions of the remote are not included in the size constraint of the bot.",
+                 "5. The Bot must have an onboard power supply in any case.",
+                 "6. Participants are not supposed to use any readymade Lego components or readymade gripping mechanism. However, the participants are allowed to use ready-made gear assemblies.",
+                 "7.The mechanism used should be such that only one person will control the bot.",
+                 "8. Failing to meet any of the above specifications will lead to immediate disqualification.",
+
+                "POWER SUPPLY",
+                "1. The participants should use an onboard electric or non-electric power supply i.e. the power source should be on the bot itself. The power source must be non-polluting and must satisfy the safety constraints determined by the organizers. In the case of the non-electric power supply, the participants must get it approved by the organizers beforehand via email. Organizers are not responsible for the inconvenience if approval is not sought.",
+                "2.In the case of an electric power supply, the voltage between any two points should be less than or equal to 24V DCat all times during the run.",
+                "3. AC power supply will not be provided and cannot be used in the competition."
+          ],
+          "judging": [
+            "P = Points scored after completing checkpoints.",
+                            "A = Penalties",
+                           " T = (360 - time taken in sec)",
+                            "Total score = A+T-P",
+                           " Team with maximum total score will be winner."
+          ],
+          "prizes": [
+            "1. 10200",
+            "2. 6100",
+            "3. 3700"
+            
+          ],
+          "rules": [
+            "1. The bot would be checked for safety before starting and will be disqualified if found unsafe for other participants.",
+            "2. Only one team member is allowed to handle the bot. No other team member is allowed to enter the arena.",
+             "3.Thebotwill be liable for disqualification if it causes any kind of damage to the arena. ",
+             "4.  Thebot is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
+             "5.Any damages to the blocks will lead to immediate disqualification.",
+             "6.A maximum of 6 minutes will be given to each team.",
+              "7. Thearena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
+              "8. Blocks that are correctly deposited in deposit zones/pushed from the ramp won’t be disturbed.",
+              "9.Thetimer won’t be stopped during this process. ",
+
+           " In case of any disputes/discrepancies, the organizer’s decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
+
+          ]
+        },
+        "organisers": [
+          {
+            "name": "Divesh Mishra",
+            "image": Divesh,
+            "phone": "9691584687"
+          },
+          {
+            "name": "Shubhan Mehrotra",
+            "image": Shubhan,
+            "phone": "9714957474"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
+        "date": "27/1/2024",
+        "id": "TF00"
+      },
+     {
         "name": "Kampan ",
         "about": "KAMPAN\nA competition where participants have to design a building model using their own creativity using ice cream sticks that can withstand vibrations and waves.",
         "rulebook": {
@@ -1545,122 +1762,7 @@ export let technical = {
         "date": "28/1/2024",
         "id": "TF06"
       },
-      {
-        "name": "Trade-a-thon 2.0",
-        "about": "A five-day online trading competition designed to test your trading skills and knowledge in a simulated trading environment.",
-        "rulebook": {
-          "structure": [
-            "1.The trading competition will be held on the app StockGro/",
-            "2. Information on how to log in and register on the online platform (StockGro)",
-            "would be communicated.",
-            "3. The competition will run for 5 trading days"
-          ],
-          "judging": [
-            "1. The final ranking will be determined by the cumulative ROI over the 5-day",
-            "competition period.",
-            "2. The participant with the highest ROI will be declared the winner.",
-            "3. In case of a tie, the team with the lower number of trades will be given",
-            "priority"
-          ],
-          "prizes": [
-            "1. Rs. 5000",
-            "2. Rs. 3000",
-            "3. Rs. 2000"
-          ],
-          "rules": [
-            "1. Registered participants will have to install the StockGro application from PlayStore/ AppStore.",
-            "2. Registered participants need to create a StockGro to join the stock trading competition.",
-            "3. The account and assets allocated will be purely virtual and cannot be liquidated into real money.",
-            "4. Any profit/loss made in this contest is virtual and only for the purpose of the competition.",
-            "5. Duplicate registration will not be accepted.",
-            "6. Other details and guidelines shall be shared with the participants via Email."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "JATIN KUMAWAT",
-            "image": JATIN,
-            "phone": "9636902875"
-          },
-          {
-            "name": "Karthikeya B",
-            "image": Karthikeya,
-            "phone": "7794011990"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/10b70854-7f9a-4760-9719-37470b30b72f/0_0.webp",
-        "date": "15/1/2024 - 19/1/2024",
-        "id": "TF07"
-      },
-      {
-        "name": "WebMosiac",
-        "about": "You will be provided an API from the petrichor team at webmosaic.petrichor.events. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
-        "rulebook": {
-          "structure": [
-            "SUBMISSION:",
-            "On submission, you have to submit a link to a git repo, and a link where your website is hosted online.",
-            "The git repo should be publicly accessible and up-to-date with the current version of your hosted website.",
-            "Any commits after the last day of submission will result in disqualification.",
-            "Hosting can be done on any platform of your choice.",
-            "DISQUALIFICATION:",
-            "1. Any form of plagiarism from any of the participating members.",
-            "2. More than 50% of the code copied from anywhere on the internet. (You can always copy (read: get inspired) from popular website regarding their colour palettes and design choices, only copying code is not allowed)",
-            "3. Using Bootstrap or any other CSS-removal tool is not allowed. (TailwindCSS, SCSS, and any other CSS preprocessors are allowed)",
-            "4. If the code does not run from our machine after cloning the repo, and npm install."
-          ],
-          "judging": [
-            "1)Readability: Is all the information on the website legible? Is the font readable on all screen sizes? Are the colours having enough contrast ratio to be readable? 25 points.",
-            "2)Colour Palette: How appealing is the colour palette used in the website? How consistent are the colours across all pages in the website? Consistency is an objective measure, however appeal is NOT. Hence the appeal will be decided by how close it is to the theme of the competition and the data given. 10 points",
-            "3)Speed and Performance: We will use the lighthouse tool in Chrome, Edge, Brave, etc. to measure the website's performance and take that score and divide by 4 to give a score out of 25. 25 points",
-            "4)Mobile compatibility: Can the website adapt for a smartphone’s aspect-ratio? Is all the information visible? 15 Points",
-            "5)Browser and OS compatibility: Website will be checked on Chrome (Windows and Android), Firefox (Windows, Linux, Android), Safari (MacOS, iOS). 5 Points",
-            "5.1) The website on the desktop should look mostly the same across all browsers and Operating Systems.",
-            "5.2) Similarly on mobile devices it should look mostly the same across all browsers and Operating Systems.",
-            "6) Code Quality 20 Points",
-            "6.1) Readability: 4 Points",
-            "6.2) DRY (Do not Repeat Yourself): 3 Points",
-            "6.3) Type-safety and error handling: 3 Points",
-            "6.4) Consistent Naming convention, you can use any convention, but it has to be consistent: 5 Points",
-            "6.5) CSS-skill, No points here if you use JS for effects that can be done with CSS. (slows down the website + increases JS bundle size): 3 Points",
-            "6.6) File Structure: is the code well structured and distributed among all the files (Avoid putting everything in one file): 2 Points"
-          ],
-          "prizes": [
-            "Total Pool = Rs. 5000",
-            "1. Rs. 2500",
-            "2. Rs. 1500",
-            "3. Rs. 1000"
-          ],
-          "rules": [
-            "1. Although you can use any framework, it would be recommended to use popular frameworks such as React, Vue, Angular, Svelte, etc. You can still use any framework of your choice.",
-            "2. You can add helper text all across your website apart from the data provided in the API, but you cannot change the API responses.",
-            "3. You can repeat the data in the API if the length of content provided is not sufficient for your format of displaying it.",
-            "4. You can use any assets from the internet, as long as you adhere to the copyright laws and regulations, as well as credit the artist/creator of the asset.",
-            "5. The website should be reachable and live at the submitted URL starting from the last day of submission to at least the day of the announcement of the results.",
-            "6. The usage of TypeScript is allowed. It will not directly affect any points, but indirectly it increases the code quality by having type-safety.",
-            "7. The code should be on a git repository. You can use github, gitlab, etc."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "SANJAY",
-            "image": Sanjay,
-            "phone": "9705063009"
-          },
-          {
-            "name": "JEEVA",
-            "image": Jeeva,
-            "phone": "9481476476"
-          },
-          {
-            "name": "VIKRANTH",
-            "image": VIKRANTH,
-            "phone": "7218175672"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/31d65d6e-dc78-4bf5-b515-13ed033daaa0/0_0.webp",
-        "date": "27/1/2024 - 28/1/2024",
-        "id": "TF08"
-      },
+    
       {
         "name": "Labyrinth 2.0",
         "about": "Teams have to build an autonomous robot that can follow white lines and keep track of directions while going through the maze. The robot has to go through the path, reach the end point in the dry run, and then go from the starting point to the ending point in the shortest path in the actual run.",
@@ -1735,76 +1837,7 @@ export let technical = {
         "date": "28/1/2024",
         "id": "TF09"
       },
-      {
-        "name": "Eggstravaganza Drop Challenge",
-        "about": "A creativity and engineering prowess challenge where every team, with a limited selection of materials acquired through an auction, will have to craft a compact egg-protective structure.",
-        "rulebook": {
-          "structure": [
-            "You shall be given 2 hours to make the protective container ( 1 hour for thinking and buying materials and 1 hour for making the container).",
-            "The event will be follow as :",
-            "\u2022 The event starts with the disclosement of the available materials.",
-            "\u2022 A virtual money of 100 Rs will be given to participants for buying materials available there.",
-            "\u2022 The First one hour , Participants will utilize this to think of the design and the materials required to make their structures keeping in the mind the fixed virtual money ( 100 Rs. ).",
-            "\u2022 After this , their will be a break of half an hour . During this participants will submit their materials requirement ( from the available materials ) . Required Materials will be issued 10 mins before the last phase of the event ( 1 hr to make structure ).",
-            "\u2022 After making the structures , Three rounds will take place for testing the structure :",
-            "First Round :",
-            "\u2022 The egg with the container will be dropped from the 25 feet height.",
-            "\u2022 Participants whose eggs are fully intact will be allowed to move to the second round .",
-            "\u2022 Two chances will given for each round . However the second chance will lead to some penalties mentioned later .",
-            "Second Round :",
-            "\u2022 The egg will be dropped from height of 35 feet.",
-            "\u2022 Again the same rule as of first round.",
-            "Third Round :",
-            "\u2022 This will be the final round .",
-            "\u2022 The egg will be dropped from height of 45 feet.",
-            "\u2022 Same rule as of first two rounds."
-          ],
-          "judging": [
-            "The model will be evaluated based on its effectiveness , simplicity , design explanation , aesthetics and time to design the model. There will be some penalty in case the model doesn\u2019t work in the first",
-            "attempt.",
-            "\u2022 Those egg which are fully intact after the first drop are allowed to make second drop from greater height from the previous one and in the similar manner to make third drop.",
-            "The model will be graded only if the egg remains intact or is just partially cracked (content of egg doesn\u2019t come out).",
-            "\u2022 Partially cracked egg \u2192 +5 points (first round) , +10 points (second round) and +15 points (third round)",
-            "\u2022 No crack \u2192 +10 points (first around) , +15 points (second round) and +20 points (third round)",
-            "\u2022 Intact design \u2192 +30 points",
-            "\u2022 Simple and effective design \u2192 +35 points",
-            "\u2022 Time Taken \u2192 < 30 min : +20 points , < 45 min : +10 points",
-            "\u2022 Extra chance / Second chance \u2192 -10 points",
-            "\u2022 Amount Used \u2192 +15 points ( < Rs 60 ) , +10 points ( < Rs 80 )"
-          ],
-          "prizes": [
-            "1. Rs. 3500",
-            "2. Rs. 2700",
-            "3. Rs. 1800"
-          ],
-          "rules": [
-            "1. The container must hit a 30 ft x 30 ft landing zone on every drop.",
-            "2. Must not contain : liquid or gel , styroform in any form.",
-            "3. If the egg is damaged during placement in the container , a second egg will be provided with no penality.",
-            "4. Use of adhesive between material and egg is not permitted.",
-            "5. Maximum time will be 1 hr for designing the structures after getting material from auctioning.",
-            "6. The structure will be dropped with zero velocity.",
-            "7. Two chances will be given to each team for each round. However , the second chance will lead to a penality of 10 points.",
-            "8. Teams can only use material provided at the time of auctioning. Using materials from outside will lead to disqualification.",
-            "9. Individual member or a group of two members can participate as a team."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Ayush Kumar",
-            "image": Ayush_Kumar,
-            "phone": "+91 9939595353"
-          },
-          {
-            "name": "Chirag Varshney",
-            "image": Chirag,
-            "phone": "+91 9528353345"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/1f62ca79-6ba4-440d-b8a8-155e1c555439/0_0.webp",
-        "date": "27/1/2024",
-        "id": "TF10"
-      },
+     
       {
         "name": "Hover hero challenge",
         "about": "An offline event where participants are required to simulate a drone\u2019s stabilization and\nimplement the same on a provided hardware setup.",
@@ -1860,47 +1893,9 @@ export let technical = {
         "date": "28/1/2024",
         "id": "TF11"
       },
+     
       {
-        "name": "Quizzanaire - School Quiz",
-        "about": "In the realm of knowledge, there are no boundaries, and the fun knows no limits. Petrichor\u2019 24 brings you Quizzanaire, a quiz competition exclusively for school students. It will be an inter school quiz competition.\n\nTopic: Anything and everything under the sun and beyond.\nParticipation: Teams of two or one\nRegistration fees: None",
-        "rulebook": {
-          "structure": [
-            "1. Each quiz consists of two rounds: prelims and finals.",
-            "2. The top 8 Teams from the preliminary round will qualify for the finals.",
-            "3. The general bounce and pounce system will be followed (will be further explained on-spot).",
-            "Round-specific rules will be explained on spot."
-          ],
-          "judging": [
-            "Any malpractices won't be entertained and will lead to instant disqualification. Any round specific rules will be conveyed before the event starts"
-          ],
-          "prizes": [
-            "Total Rs. 6000",
-            "1. Rs. 3000",
-            "2. Rs. 2000",
-            "3. Rs. 1000"
-          ],
-          "rules": [
-            "",
-            "1. Teams of two or one.",
-            "2. Teams should arrive at least 30 mins before the start of the event for verification.",
-            "3. Prelims will be in written format. Papers will be provided. It is advised to bring your own pens. Finals will be on-stage.",
-            "4. Adopting any kind of malpractice will lead to disqualification.",
-            "5. The decision taken by the quizmasters will be final and binding."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Ashwin Nair",
-            "image": Ashwin,
-            "phone": "+919188142004"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/0f338538-6fee-42ad-bd12-1701dfbc8e75/0_3.webp",
-        "date": "27/1/2024",
-        "id": "TF12"
-      },
-      {
-        "name": "Robowar",
+        "name": "Robowars",
         "about": "A typical bot vs bot competition in a half open\narena where custom made bots fight to\nincapacitate each other.",
         "rulebook": {
           "structure": [
@@ -1908,7 +1903,7 @@ export let technical = {
             "1. Two robots will face off in three round matches where each round will be of duration 4 minutes and a 1.5-minute break in between the rounds for repairs if needed.",
             "2. The winners of the qualifier matches will be declared as per the points they would achieve in the two rounds.",
             "3. Format of matches (Knockout or League) will be decided depending upon the number of teams participating.",
-            "4. The size of the battle arena is decided to be 10 feet x 8 feet with wedges on the border.",
+            "4. The size of the battle arena is decided to be 20 feet x 15 feet with wedges on the border.",
             "Special Case. There may be a possibility that in a special case there may be more than 2 teams competing in a match Special Cases are as follows",
             "1. If there is a tie of scores between more than 2 teams.",
             "2. If the number of participating teams do not fit within the desired format."
@@ -1953,51 +1948,8 @@ export let technical = {
         "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
         "date": "28/1/2024",
         "id": "TF13"
-      },
-      {
-        "name": "Chipcraft",
-        "about": "This technical challenge invites you to create a customized PCB, integrating a microcontroller tailored to a given application.",
-        "rulebook": {
-          "structure": [
-            "In this event, participants are tasked with designing and laying out a microcontroller-PCB solution for a specified application. The source code for programming the microcontroller must be included in the submission. A template for the schematic circuit design of the STM32 microcontroller, complete with a linear regulator, USB connector, clock generator, and programming connector, will be provided. The specific application for PCB design will be disclosed at the start of the event. Participants are expected to create a block diagram design, expand the schematic within the provided template, and ultimately craft a comprehensive layout for the PCB, incorporating the specified components."
-          ],
-          "judging": [
-            "1. Total Marks: 100",
-            "2. Incorrect designs will not lead to disqualification, but points will be deducted based on the criticality of the mistake, ranging from -5 to -20.",
-            "Weightage of Evaluation Parameters:",
-            "1. Design Simplicity: 20 points",
-            "2. Design Efficiency: 20 points",
-            "3. Cost-Effective Design (Considering Bill of Materials): 10 points",
-            "4. Placement and Layouting of the PCB: 40 points"
-          ],
-          "prizes": [
-            "Total: ₹8,000",
-            "1. Rs. 4,000",
-            "2. Rs. 2,500",
-            "3. Rs. 1,500"
-          ],
-          "rules": [
-            "1. Participants must submit the schematic, PCB layout, and the program to run on the controller, accompanied by a block diagram explanation of the code.",
-            "2. The microcontroller used in the design must be STM32 (a template layout and datasheet for the controller will be provided).",
-            "3. Teams can employ their preferred CAD tools for PCB design.",
-            "4. Each team is limited to one solution submission.",
-            "5. Plagiarism will result in disqualification.",
-            "6. Late submissions, with a penalty of 20 points, will be accepted up to one day after the deadline.",
-            "7. The team with the highest point score will be declared the winners. In the case of a tie, the time of submission will serve as the tiebreaker.",
-            "8. The decision of the evaluators will be final."
-          ]
-        },
-        "organisers": [
-          {
-            "name": "Manikantan",
-            "image": Manikantan,
-            "phone": "9037630397"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
-        "date": "28/1/2024",
-        "id": "TF13"
       }
+
     ]
   }
   
