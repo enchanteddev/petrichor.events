@@ -1146,7 +1146,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
-        "date": "14/1/2024 - 15/1/2024",
+        "date": "15/1/2024",
         "id": "TF00"
       },
         {
@@ -1618,15 +1618,31 @@ export let technical = {
       },
     {
         "name": "Clench Bot",
-        "about": "Clench Bot is a challenging and exciting event that requires technical skills, logical thinking, problem-solving abilities, and teamwork. It is a great opportunity for students who are interested in robotics and want to showcase their talent and creativity.",
+        "about": "Clench Bot is a challenging and exciting event that requires technical skills, logical thinking, problem-solving abilities, and teamwork. It is a great opportunity for students who are interested in robotics and want to showcase their talent and creativity.","Teams have to build a manually controlled bot that can do simple tasks of gripping objects and putting them in target zones so that it can complete the route by overcoming the hurdles in its path."
         "rulebook": {
           "structure": [
-            "All the information about the event will be conveyed to the participants via the discord server, no questions will be entertained during the hunt. The event will definitely satiate your hunger for a good puzzle. The participants will be mailed an initial story a few days before the event and are requested to check their mail before the event for the same. On the day of the event, each round will take place on a particular discord server and the participants will need to gain access to the subsequent servers by solving the current round. Hints may be broadcasted to everyone with respect to overall performance in the hunt."
+            "",
+              " BOT SPECIFICATIONS",
+                 "1. The dimensions of the bot should be less than or equal to300 mm X 200mm X 300mm (lxbxh) failing which the team will be disqualified from the competition (this excludes the dimension of the gripper but includes tires). The bot can, however, extend its dimension once the run starts. An error of (±5%) is permitted. ",
+                 "2. The bot must be controlled manually.",
+                 "3. Teams can use both wired as well as wireless control mechanisms. In the case of wired bots, the length of the wire should be a minimum of 2 meters so that the wire remains slack at any instant of time. If the participants use a wireless mechanism they have to use either a dual-frequency remote, Bluetooth, or Wifi.",
+                 "4. The dimensions of the remote are not included in the size constraint of the bot.",
+                 "5. The Bot must have an onboard power supply in any case.",
+                 "6. Participants are not supposed to use any readymade Lego components or readymade gripping mechanism. However, the participants are allowed to use ready-made gear assemblies.",
+                 "7.The mechanism used should be such that only one person will control the bot.",
+                 "8. Failing to meet any of the above specifications will lead to immediate disqualification.",
+
+                "POWER SUPPLY",
+                "1. The participants should use an onboard electric or non-electric power supply i.e. the power source should be on the bot itself. The power source must be non-polluting and must satisfy the safety constraints determined by the organizers. In the case of the non-electric power supply, the participants must get it approved by the organizers beforehand via email. Organizers are not responsible for the inconvenience if approval is not sought.",
+                "2.In the case of an electric power supply, the voltage between any two points should be less than or equal to 24V DCat all times during the run.",
+                "3. AC power supply will not be provided and cannot be used in the competition."
           ],
           "judging": [
-            "1. Participants get a certain number of points upon passing each round. As the challenges escalate in difficulty, the points for them will increase proportionally.",
-            "2. The winners are decided by the number of rounds solved and in case of a tie, the team solving a particular round first, wins.",
-            "3. Any and all decisions taken by the judges would be binding and final."
+            "P = Points scored after completing checkpoints.",
+                            "A = Penalties",
+                           " T = (360 - time taken in sec)",
+                            "Total score = A+T-P",
+                           " Team with maximum total score will be winner."
           ],
           "prizes": [
             "1. 10200",
@@ -1635,21 +1651,34 @@ export let technical = {
             
           ],
           "rules": [
-            "1. The entire event will be online.",
-            "2. No questions or doubts regarding the treasure hunt will be entertained during the hunt.",
-            "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (a link will be provided to the participants after the registration ends)",
-            "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification."
+            "1. The bot would be checked for safety before starting and will be disqualified if found unsafe for other participants.",
+            "2. Only one team member is allowed to handle the bot. No other team member is allowed to enter the arena.",
+             "3.Thebotwill be liable for disqualification if it causes any kind of damage to the arena. ",
+             "4.  Thebot is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
+             "5.Any damages to the blocks will lead to immediate disqualification.",
+             "6.A maximum of 6 minutes will be given to each team.",
+              "7. Thearena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
+              "8. Blocks that are correctly deposited in deposit zones/pushed from the ramp won’t be disturbed.",
+              "9.Thetimer won’t be stopped during this process. ",
+
+           " In case of any disputes/discrepancies, the organizer’s decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
+
           ]
         },
         "organisers": [
           {
-            "name": "Kshitij Ghodake",
-            "image": Kshitij,
-            "phone": "+917298991001"
+            "name": "Divesh Mishra",
+            "image": Divesh,
+            "phone": "9691584687"
+          },
+          {
+            "name": "Shubhan Mehrotra",
+            "image": Shubhan,
+            "phone": "9714957474"
           }
         ],
         "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
-        "date": "14/1/2024 - 15/1/2024",
+        "date": "27/1/2024",
         "id": "TF00"
       },
      {
