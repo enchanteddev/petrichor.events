@@ -46,7 +46,10 @@ import Prisha from '$lib/assets/Organisers/Prisha.jpg'
 import Nalan from '$lib/assets/Organisers/Nalan.jpg'
 import Siva from '$lib/assets/Organisers/Siva.jpg'
 import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
-
+import tblack from '$lib/assets/Merch/black.png'
+import twhite from '$lib/assets/Merch/white.png'
+import hoodie from '$lib/assets/Merch/hoodie.png'
+import cap from '$lib/assets/Merch/Cap.png'
 
 export let cultural = {
     "events": [
@@ -2052,30 +2055,30 @@ export let workshops =  {
 export const merch = [
     {
         id: "MH1",
-        name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        name: "White T-Shirt",
+        imgs: [twhite],
+        price: 390,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH2",
-        name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        name: "Black T-Shirt",
+        imgs: [tblack],
+        price: 390,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH3",
         name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        imgs: [hoodie],
+        price: 690,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH4",
-        name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        name: "Cap",
+        imgs: [cap],
+        price: 110,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
 
