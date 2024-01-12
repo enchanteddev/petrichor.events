@@ -1084,9 +1084,9 @@ export let cultural = {
             "Maps are chosen randomly in the first round.",
             "3)The team losing the first game makes a map choice for the second.",
             "4)The team losing the second makes a map choice for the third if needed.",
-            "5)First round: Each team plays against another team in knockout format(spike rush).",
-            "6)Sub-Rounds: A sub-round occurs after the first round to narrow down the teams to 8 for the quarter-finals, determined by organizers. Conducted in \u201cspike rush\u201d mode.",
-            "7)Finals and Semifinals: These rounds use a \"spike rush\" format, and map selection is random."
+            "5)First round: Each team plays against another team in knockout format (swiftplay).",
+            "6)Sub-Rounds: A sub-round occurs after the first round to narrow down the teams to 8 for the quarter-finals, determined by organizers. Conducted in \u201cswiftplay\u201d mode.",
+            "7)Finals and Semifinals: These rounds use a \"swiftplay\" format, and map selection is random."
           ]
         },
         "organisers": [
