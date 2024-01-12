@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { userEmail, registerData, isLogin, userEvents } from '$lib/stores';
+	import { page } from '$app/stores';
+	import { userEmail, registerData, isLogin  } from '$lib/stores';
 	import { POST, API, readToken } from '$lib';
 	import { onMount } from 'svelte';
 	import Toast from '$lib/components/Toast.svelte';
@@ -31,7 +32,7 @@
 		console.log($isLogin, $userEmail)
 	    if (!$userEmail){
 			loading = true
-	        goto('/login')
+	        goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`)
 	    }
 	})
 
@@ -56,7 +57,6 @@
 			loading = false
 			if (response.status == 200){
 				successToast = true;	
-				userEvents.update((value) => [...value, $registerData.eventID]);
 				setTimeout(() => {goto('/profile')}, 1000)
 			} else {
 				failedToast = true;

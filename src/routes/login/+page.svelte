@@ -1,20 +1,29 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { enhance } from '$app/forms';
 	import { setToken } from '$lib/index';
 	import Loading from '$lib/components/Loading.svelte';
-	
-	import { isLogin, userEvents, userEmail } from '$lib/stores';
+
+	import { isLogin, userEmail } from '$lib/stores';
 	import { API, readToken } from '$lib/index';
 	import { goto } from '$app/navigation';
 
+	export let data: any;
+
+	// console.log($page.url, 'h');
+
 	let loading = false;
-	if($isLogin){
-		loading = true
-		goto('/profile')
+	if ($isLogin) {
+		loading = true;
+		if (data.nextpg != null) {
+			goto(`${data.nextpg}`);
+		} else {
+			goto('/profile');
+		}
 	}
 </script>
 
-<Loading spinning = {loading} />
+<Loading spinning={loading} />
 
 <div class="form-container">
 	<div class="blank2" />
@@ -24,7 +33,7 @@
 			action="?/login"
 			method="POST"
 			use:enhance={({ form }) => {
-				loading = true
+				loading = true;
 				return async ({ result, update }) => {
 					if (result.type == 'success') {
 						if (result.data) {
@@ -45,28 +54,30 @@
 							})
 								.then((res) => res.json())
 								.then((res) => {
-									loading = false
+									loading = false;
 									ans = res;
 									console.log(res);
 									if (ans.user == null || ans.user == undefined) {
 										isLogin.set(false);
-										userEvents.set([]);
 									} else {
 										isLogin.set(true);
-										userEvents.set(ans.events);
 										userEmail.set(ans.email);
 									}
 								});
-								goto('/profile')
-						}else{
-							loading = false
+							if (data.nextpg != null) {
+								goto(`${data.nextpg}`);
+							} else {
+								goto('/profile');
+							}
+						} else {
+							loading = false;
 							alert('Invalid email or password');
-							goto('/login')
+							goto(`/login${$page.url.search}`);
 						}
 					} else {
-						loading = false
+						loading = false;
 						alert('Invalid email or password');
-						goto('/login')
+						goto(`/login${$page.url.search}`);
 					}
 				};
 			}}

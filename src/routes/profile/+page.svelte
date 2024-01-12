@@ -2,14 +2,13 @@
 	import { goto } from "$app/navigation";
 	import { deleteToken } from "$lib";
 	import Event from "$lib/components/Event.svelte";
-	import { isLogin, registerData, userEmail, userEvents } from "$lib/stores.js";
+	import { isLogin, registerData, userEmail} from "$lib/stores.js";
 	export let data;
 	const { user } = data
 	console.log(user)
 
 	const logout =async () => {
 		isLogin.set(false)
-		userEvents.set([])
 		userEmail.set("")
 		registerData.set({eventID: "",
 			registeredEmails: []})

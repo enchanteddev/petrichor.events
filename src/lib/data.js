@@ -537,6 +537,7 @@ export let cultural = {
       },
      {
         "name": "Pixel Palette",
+        "theme": "Depict the ever-shifting landscapes of emotions through vibrant and dynamic digital art, capturing the essence of emotional metamorphosis.",
         "about": "It's an online competition and participants are needed to submit their digital artworks according to the provided theme.",
         "rulebook": {
           "structure": [
@@ -774,6 +775,7 @@ export let cultural = {
       },
        {
         "name": "KATHA - where words become world",
+        'theme': "Write about a character who discovers a mysterious portal that leads to infinite parallel universes, each with its own set of transformations and challenges.",
         "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
@@ -821,6 +823,7 @@ export let cultural = {
       },
      {
         "name": "KAVYA - weaving verses, crafting dreams",
+        "theme": "Create a poem that reflects on the cyclical nature of life, weaving themes of birth, growth, decay, and rebirth into a tapestry of infinite existence.",
         "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
