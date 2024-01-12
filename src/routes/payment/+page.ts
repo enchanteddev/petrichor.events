@@ -5,7 +5,8 @@ export const load: PageLoad = async ({ url }) => {
 	const id = url.searchParams.get('id')
 	console.log(id)
 	const eventResponse = await POST(API.event, {id: id});
-	const eventData = await eventResponse.json()
+	let eventData = await eventResponse.json()
+	eventData.id = id;
 	console.log(eventData)
 	return eventData;
 };

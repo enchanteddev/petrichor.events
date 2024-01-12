@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 	import { API, readToken } from '$lib';
-	import { registerData, isLogin, userEvents } from '$lib/stores';
+	import { registerData, isLogin, userEvents, userEmail } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 	import Loading from '$lib/components/Loading.svelte';
@@ -12,6 +12,10 @@
 
 	if(!$isLogin){
 		goto('/login')
+	}
+
+	if($registerData.registeredEmails.length == 0){
+		$registerData.registeredEmails.push($userEmail);
 	}
 
 	let transactionID: string;
@@ -102,8 +106,8 @@
 		CAcode = success ? CAcode : '';
 		if (transactionID) {
 			loading = true;
-			console.log($registerData.eventID);
-			let w = $registerData.eventID;
+			console.log(data.id);
+			let w = data.id;
 			console.log(w);
 			fetch(API.events_apply_paid, {
 				method: 'POST',
