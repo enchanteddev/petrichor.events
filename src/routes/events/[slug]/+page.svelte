@@ -123,6 +123,10 @@
 				{currentEvent && currentEvent.name}
 			</h1>
 			<span>{currentEvent.date}</span>
+			{#if currentEvent.theme}
+			<h2>Theme</h2>
+			<p style="margin-top: -1rem;">{currentEvent.theme}</p>
+			{/if}
 			<p>{currentEvent && currentEvent.about}</p>
 			<div class="buttons">
 				<a href="#rules" class="a-unset register">LEARN MORE</a>

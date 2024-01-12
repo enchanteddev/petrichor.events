@@ -1,6 +1,7 @@
 export interface event {
 	id: string;
     name: string,
+    theme: string,
     about: string,
     image: string,
     date: string,
