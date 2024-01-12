@@ -16,7 +16,9 @@
 	if ($isLogin) {
 		loading = true;
 		if (data.nextpg != null) {
-			goto(`${data.nextpg}`);
+			setTimeout(() => {
+				goto(data.nextpg);
+			}, 500);
 		} else {
 			goto('/profile');
 		}
@@ -65,7 +67,9 @@
 									}
 								});
 							if (data.nextpg != null) {
-								goto(`${data.nextpg}`);
+								setTimeout(() => {
+									goto(data.nextpg);
+								}, 500);
 							} else {
 								goto('/profile');
 							}
