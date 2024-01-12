@@ -1,8 +1,9 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 	import { API, readToken } from '$lib';
-	import { registerData, isLogin, userEvents, userEmail } from '$lib/stores';
+	import { registerData, isLogin, userEmail } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 	import Loading from '$lib/components/Loading.svelte';
@@ -10,11 +11,11 @@
 	export let data: any;
 	let loading = false;
 
-	if(!$isLogin){
-		goto('/login')
+	if (!$isLogin) {
+		goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 	}
 
-	if($registerData.registeredEmails.length == 0){
+	if ($registerData.registeredEmails.length == 0) {
 		$registerData.registeredEmails.push($userEmail);
 	}
 
@@ -30,8 +31,8 @@
 	});
 
 	onMount(() => {
-		if (!$isLogin){
-			goto('/login');
+		if (!$isLogin) {
+			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		}
 		let bgimage = window.document.getElementById('img');
 		if (bgimage !== null) {
@@ -114,9 +115,9 @@
 				body: JSON.stringify({
 					transactionID,
 					CAcode,
-					"token": readToken(),
-					"eventId": w ,
-					"participants": $registerData.registeredEmails
+					token: readToken(),
+					eventId: w,
+					participants: $registerData.registeredEmails
 				}),
 				headers: {
 					'Content-type': 'application/json; charset=UTF-8'
@@ -127,7 +128,6 @@
 					loading = false;
 					console.log(data);
 					if (data.status == 200) {
-						userEvents.update((value) => [...value, $registerData.eventID]);
 						alert('Payment Successful! You will get an email shortly.');
 						setTimeout(() => {
 							goto('/profile');

@@ -1,9 +1,13 @@
 import type { PageServerLoad, Actions } from './$types';
-import { API, setToken } from '$lib/index'
-import { isLogin,userEvents } from "$lib/stores"
 
-export const load: PageServerLoad = (event) => {
+import { API, setToken, POST } from '$lib/index'
+import { isLogin } from "$lib/stores"
+
+export const load: PageServerLoad = async ({url}) => {
+    const nextpg = url.searchParams.get('nextpg')
+    console.log(nextpg)
 	return {
+        nextpg : nextpg,
 		logged_in: false
 	};
 };

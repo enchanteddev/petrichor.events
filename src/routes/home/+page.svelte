@@ -6,7 +6,7 @@
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
 
-	import { isLogin, userEvents, userEmail } from '$lib/stores';
+	import { isLogin, userEmail } from '$lib/stores';
 	import { API, readToken } from '$lib/index';
 
 	import { workshops } from '$lib/data';
@@ -44,10 +44,8 @@
 					console.log(res);
 					if (ans.user == null || ans.user == undefined) {
 						isLogin.set(false);
-						userEvents.set([]);
 					} else {
 						isLogin.set(true);
-						userEvents.set(ans.events);
 						console.log(ans.email);
 						userEmail.set(ans.email);
 					}

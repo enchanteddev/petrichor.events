@@ -1,8 +1,9 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import Loading from '$lib/components/Loading.svelte';
 	import Person from '$lib/components/Person.svelte';
 	import type { event } from '$lib/types';
-	import { isLogin, registerData, userEvents, userEmail } from '$lib/stores';
+	import { isLogin, registerData, userEmail } from '$lib/stores';
 	import { readToken, readID, POST } from '$lib/index';
 
 	import { onMount } from 'svelte';
@@ -23,16 +24,6 @@
 	let currentEvent: event = events[0];
 	let registered = false;
 	let registering = false;
-	if ($isLogin) {
-		// @ts-ignore
-		// console.log($userEvents);
-		// console.log(currentEvent.id)
-		// console.log(currentEvent.id in $userEvents)
-		// console.log('p');
-		if (currentEvent.id in $userEvents) {
-			registered = true;
-		}
-	}
 
 	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
 
@@ -50,20 +41,12 @@
 		// console.log(currentEvent.id)
 		registered=false	
 		// console.log('p');
-		if ($isLogin) {
-			// @ts-ignore
-			$userEvents.forEach(element => {
-				if (element == currentEvent.id){
-					registered=true
-				}
-			});
-		}
 	};
 
 	const clicked = async () => {
 		if (!$isLogin) {
 			loading = true
-			goto('/login');
+			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		} else {
 			$registerData.eventID = currentEvent.id;
 			$registerData.registeredEmails.push($userEmail);
@@ -89,7 +72,6 @@
 							loading = false
 							console.log(res);
 							if (res.status == 200) {
-								userEvents.update((value) => [...value, currentEvent.id]);
 								// userEvents.update(value => [...value, currentEvent.id])
 								alert('Registration successfull');
 								registered = true;
