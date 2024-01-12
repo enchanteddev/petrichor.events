@@ -46,7 +46,10 @@ import Prisha from '$lib/assets/Organisers/Prisha.jpg'
 import Nalan from '$lib/assets/Organisers/Nalan.jpg'
 import Siva from '$lib/assets/Organisers/Siva.jpg'
 import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
-
+import tblack from '$lib/assets/Merch/black.png'
+import twhite from '$lib/assets/Merch/white.png'
+import hoodie from '$lib/assets/Merch/hoodie.png'
+import cap from '$lib/assets/Merch/Cap.png'
 
 export let cultural = {
     "events": [
@@ -1623,7 +1626,7 @@ export let technical = {
           "structure": [
             "",
               " BOT SPECIFICATIONS",
-                 "1. The dimensions of the bot should be less than or equal to300 mm X 200mm X 300mm (lxbxh) failing which the team will be disqualified from the competition (this excludes the dimension of the gripper but includes tires). The bot can, however, extend its dimension once the run starts. An error of (±5%) is permitted. ",
+                 "1. The dimensions of the bot should be less than or equal to 300 mm X 200mm X 300mm (lxbxh) failing which the team will be disqualified from the competition (this excludes the dimension of the gripper but includes tires). The bot can, however, extend its dimension once the run starts. An error of (±5%) is permitted. ",
                  "2. The bot must be controlled manually.",
                  "3. Teams can use both wired as well as wireless control mechanisms. In the case of wired bots, the length of the wire should be a minimum of 2 meters so that the wire remains slack at any instant of time. If the participants use a wireless mechanism they have to use either a dual-frequency remote, Bluetooth, or Wifi.",
                  "4. The dimensions of the remote are not included in the size constraint of the bot.",
@@ -1653,13 +1656,13 @@ export let technical = {
           "rules": [
             "1. The bot would be checked for safety before starting and will be disqualified if found unsafe for other participants.",
             "2. Only one team member is allowed to handle the bot. No other team member is allowed to enter the arena.",
-             "3.Thebotwill be liable for disqualification if it causes any kind of damage to the arena. ",
-             "4.  Thebot is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
+             "3.The bot will be liable for disqualification if it causes any kind of damage to the arena. ",
+             "4.    is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
              "5.Any damages to the blocks will lead to immediate disqualification.",
              "6.A maximum of 6 minutes will be given to each team.",
-              "7. Thearena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
+              "7. The arena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
               "8. Blocks that are correctly deposited in deposit zones/pushed from the ramp won’t be disturbed.",
-              "9.Thetimer won’t be stopped during this process. ",
+              "9.The timer won’t be stopped during this process. ",
 
            " In case of any disputes/discrepancies, the organizer’s decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
 
@@ -1679,7 +1682,7 @@ export let technical = {
         ],
         "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
         "date": "27/1/2024",
-        "id": "TF00"
+        "id": "TF02"
       },
      {
         "name": "Kampan ",
@@ -2052,30 +2055,30 @@ export let workshops =  {
 export const merch = [
     {
         id: "MH1",
-        name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        name: "White T-Shirt",
+        imgs: [twhite],
+        price: 390,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH2",
-        name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        name: "Black T-Shirt",
+        imgs: [tblack],
+        price: 390,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH3",
         name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        imgs: [hoodie],
+        price: 690,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH4",
-        name: "Hoodie",
-        imgs: ["https://i5.walmartimages.com/asr/96554892-e5ec-4838-9cad-449077916242_1.4d5a8a03103fc019f5214f4478df5e1e.jpeg"],
-        price: 101,
+        name: "Cap",
+        imgs: [cap],
+        price: 110,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
 

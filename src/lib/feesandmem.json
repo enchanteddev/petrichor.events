@@ -153,15 +153,15 @@
             "name": "Simulate To The Moon",
             "id": "TF01",
             "fees": 0,
-            "minMemeber": 2,
-            "maxMemeber": 3
+            "minMemeber": 1,
+            "maxMemeber": 2
         },
         {
-            "name": "DRONE STABILIZATION CHALLENGE",
+            "name": "Clench Bot",
             "id": "TF02",
             "fees": 79,
-            "minMemeber": 2,
-            "maxMemeber": 3
+            "minMemeber": 1,
+            "maxMemeber": 4
         },
         {
             "name": "AlgoTrek",
@@ -208,7 +208,7 @@
         {
             "name": "Labyrinth 2.0",
             "id": "TF09",
-            "fees": 0,
+            "fees": 79,
             "minMemeber": 1,
             "maxMemeber": 4
         },
