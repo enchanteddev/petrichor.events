@@ -2079,7 +2079,7 @@ export const merch = [
         name: "Cap",
         imgs: [cap],
         price: 110,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['free-size'] // leave empty for xs, s, m, l ,xl, xxl 
     },
 
 ]
