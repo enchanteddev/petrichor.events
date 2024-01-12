@@ -372,7 +372,7 @@ export let cultural = {
         "id": "CP06"
       },
      {
-        "name": "Bandwagon",
+        "name": "BandWars",
         "about": "BandWars is a captivating showcase designed to identify and award outstanding musical ensembles, instrumentalists, soloists, and composers. It serves as an excellent platform for bands to break into the music scene. The competition will consist of two rounds, starting with an online submissions round for screening. The selected entries will then have the opportunity to perform live on stage in Petrichor.",
         "rulebook": {
           "structure": [
@@ -439,7 +439,7 @@ export let cultural = {
         "id": "CP17"
       },
       {
-        "name": "BRUSHED BRILLIANCE",
+        "name": "Brushed Brilliance",
         "about": "The event is all about unleashing your creativity and showcasing your face painting skills.",
         "rulebook": {
           "structure": [
@@ -1647,7 +1647,7 @@ export let technical = {
             "P = Points scored after completing checkpoints.",
                             "A = Penalties",
                            " T = (360 - time taken in sec)",
-                            "Total score = A+T-P",
+                            "Total score = P+T-A",
                            " Team with maximum total score will be winner."
           ],
           "prizes": [
