@@ -133,7 +133,7 @@
 							goto('/profile');
 						}, 500);
 					} else if (data.status == 500) {
-						alert('You have already applied for the event');
+						alert(data.message);
 						setTimeout(() => {
 							goto('/profile');
 						}, 500);
