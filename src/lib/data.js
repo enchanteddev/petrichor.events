@@ -109,7 +109,7 @@ export let cultural = {
             "phone": "9345689884"
           }
         ],
-        "image": "https://cdn.midjourney.com/3b0fcb4e-4eef-470b-bc36-13696a9a2e00/0_0.webp",
+        "image": "https://cdn.midjourney.com/7bf2fdf0-3fae-4f32-ac13-c616f8d29646/0_3.webp",
         "date": "28-01-2024",
         "id": "CF04"
       },
@@ -170,7 +170,7 @@ export let cultural = {
             "phone": "8072452762"
           }
         ],
-        "image": "https://cdn.midjourney.com/4fa0f1f0-68d5-479b-b382-03dc228d5dec/0_0.webp",
+        "image": "https://cdn.midjourney.com/6b745358-6ee8-4bb9-a362-9a054884709a/0_1.webp",
         "date": "27-01-24 to 31-01-24",
         "id": "CF15"
       },
@@ -228,7 +228,7 @@ export let cultural = {
             "phone": "9662097722"
           }
         ],
-        "image": "https://cdn.midjourney.com/0a33f382-8071-4463-8e56-8368c5b3806b/0_0.webp",
+        "image": "https://cdn.midjourney.com/732718b7-f4a4-4acd-92ef-6d96d07a75e6/0_1.webp",
         "date": "28-01-2024",
         "id": "CP00"
       },
@@ -291,7 +291,7 @@ export let cultural = {
             "phone": "6001301742"
           }
         ],
-        "image": "https://cdn.midjourney.com/a9c2e780-c05a-4fc8-8d13-d749863334a6/0_0.webp",
+        "image": "https://cdn.midjourney.com/cad16784-df60-49f4-952d-a46b0e5b311a/0_0.webp",
         "date": "28-01-2024",
         "id": "CP03"
       },
@@ -367,12 +367,12 @@ export let cultural = {
             "phone": "94814 76476"
           }
         ],
-        "image": "https://cdn.midjourney.com/d6779d15-f197-4a40-adb1-16094c9efb13/0_1.webp",
+        "image": "https://cdn.midjourney.com/a27017c5-47c6-46f8-9ba2-1839e9cc41fd/0_0.webp",
         "date": "28-01-24",
         "id": "CP06"
       },
      {
-        "name": "Bandwagon",
+        "name": "BandWars",
         "about": "BandWars is a captivating showcase designed to identify and award outstanding musical ensembles, instrumentalists, soloists, and composers. It serves as an excellent platform for bands to break into the music scene. The competition will consist of two rounds, starting with an online submissions round for screening. The selected entries will then have the opportunity to perform live on stage in Petrichor.",
         "rulebook": {
           "structure": [
@@ -434,7 +434,7 @@ export let cultural = {
             "phone": "9525727176"
           }
         ],
-        "image": "https://cdn.midjourney.com/c32c7fa4-3002-4374-bf92-fbcbcc959a11/0_2.webp",
+        "image": "https://cdn.midjourney.com/f7b1ae0c-e49f-41b6-9515-cc0e0db964a1/0_1.webp",
         "date": "28-01-2024",
         "id": "CP17"
       },
@@ -489,7 +489,7 @@ export let cultural = {
             "phone": "96620 97722"
           }
         ],
-        "image": "https://cdn.midjourney.com/8b7fb382-8bea-4e16-8e0d-dee17178f786/0_1.webp",
+        "image": "https://cdn.midjourney.com/0d053d33-106a-49e1-beb2-81013b9627e8/0_1.webp",
         "date": "28-01-2024",
         "id": "CF01"
       },   
@@ -531,7 +531,7 @@ export let cultural = {
             "phone": "7749902629"
           }
         ],
-        "image": "https://cdn.midjourney.com/9db941fe-2f5c-481a-a650-e04f97e0cabf/0_0.webp",
+        "image": "https://cdn.midjourney.com/6adeb863-5c93-4ad7-a120-de0580ef87b1/0_0.webp",
         "date": "28-01-2024",
         "id": "CF05"
       },
@@ -581,7 +581,7 @@ export let cultural = {
             "phone": "9961985768"
           }
         ],
-        "image": "https://cdn.midjourney.com/a4555563-5854-46b4-8e8b-d46d93f13b90/0_0.webp",
+        "image": "https://cdn.midjourney.com/a695b598-0b52-4d7c-8001-299fef1c9c06/0_3.webp",
         "date": "08-01-24 to 28-01-24",
         "id": "CF13"
       },
@@ -640,7 +640,7 @@ export let cultural = {
             "phone": "80897 26141"
           }
         ],
-        "image": "https://cdn.midjourney.com/3eff2788-d39d-4b6b-8091-60a399e4766d/0_1.webp",
+        "image": "https://cdn.midjourney.com/5e34e1cd-8133-464b-97ed-6962bf9388ab/0_0.webp",
         "date": "27-01-2024",
         "id": "CP14"
       },
@@ -712,7 +712,7 @@ export let cultural = {
             "phone": "725"
           }
         ],
-        "image": "https://cdn.midjourney.com/d1d407cb-0830-4e7b-a66c-605c85bd2495/0_0.webp",
+        "image": "https://cdn.midjourney.com/4253b791-9511-4681-9a54-22fb79ed81cf/0_0.webp",
         "date": "27-01-2024",
         "id": "CP07"
       },
@@ -769,7 +769,7 @@ export let cultural = {
             "phone": "8075821728"
           }
         ],
-        "image": "https://cdn.midjourney.com/7bddb8b1-ecbb-40f8-99eb-9c6c9f71b150/0_0.webp",
+        "image": "https://cdn.midjourney.com/a9735b80-ad6b-4b1f-a8f9-0621f262cd31/0_1.webp",
         "date": "27-01-2024",
         "id": "CF12"
       },
@@ -817,7 +817,7 @@ export let cultural = {
             "phone": "9961985768"
           }
         ],
-        "image": "https://cdn.midjourney.com/a25c2e67-07cd-4750-84df-0239d9640dfb/0_0.webp",
+        "image": "https://cdn.midjourney.com/b8ea37e5-7058-4cc4-944c-265f033d2361/0_2.webp",
         "date": "08-01-24 to 28-01-24",
         "id": "CP09"
       },
@@ -867,7 +867,7 @@ export let cultural = {
             "phone": "9961985768"
           }
         ],
-        "image": "https://cdn.midjourney.com/e717aa0a-05b2-4d41-9bcc-b1a8f50d3273/0_0.webp",
+        "image": "https://cdn.midjourney.com/e1a4a9ae-71eb-4c83-a198-865e600663b9/0_1.webp",
         "date": "08-01-24 to 28-01-24",
         "id": "CF11"
       },
@@ -908,7 +908,7 @@ export let cultural = {
             "phone": "8281729013"
           }
         ],
-        "image": "https://cdn.midjourney.com/bb0bd2e0-7ade-44ac-bcdd-4c6aed8976e8/0_0.webp",
+        "image": "https://cdn.midjourney.com/a65041b2-ffaa-4bf6-bfd8-78d31ba31e33/0_1.webp",
         "date": "28-01-2024",
         "id": "CF16"
       },
