@@ -1647,7 +1647,7 @@ export let technical = {
             "P = Points scored after completing checkpoints.",
                             "A = Penalties",
                            " T = (360 - time taken in sec)",
-                            "Total score = A+T-P",
+                            "Total score = P+T-A",
                            " Team with maximum total score will be winner."
           ],
           "prizes": [
