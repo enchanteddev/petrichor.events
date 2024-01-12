@@ -8,18 +8,14 @@
 	import { API, readToken } from '$lib/index';
 	import { goto } from '$app/navigation';
 
-	export let data: any;
+	// export let data: any;
 
 	// console.log($page.url, 'h');
 
 	let loading = false;
 	if ($isLogin) {
 		loading = true;
-		if (data.nextpg != null) {
-			goto(`${data.nextpg}`);
-		} else {
-			goto('/profile');
-		}
+		goto('/profile');
 	}
 </script>
 
@@ -64,11 +60,7 @@
 										userEmail.set(ans.email);
 									}
 								});
-							if (data.nextpg != null) {
-								goto(`${data.nextpg}`);
-							} else {
 								goto('/profile');
-							}
 						} else {
 							loading = false;
 							alert('Invalid email or password');
