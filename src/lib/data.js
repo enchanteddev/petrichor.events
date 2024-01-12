@@ -2054,32 +2054,32 @@ export let workshops =  {
 
 export const merch = [
     {
-        id: "MH1",
+        id: "MT1",
         name: "White T-Shirt",
         imgs: [twhite],
         price: 390,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
-        id: "MH2",
+        id: "MT2",
         name: "Black T-Shirt",
         imgs: [tblack],
         price: 390,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
-        id: "MH3",
+        id: "MH1",
         name: "Hoodie",
         imgs: [hoodie],
         price: 690,
         sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
-        id: "MH4",
+        id: "MC1",
         name: "Cap",
         imgs: [cap],
         price: 110,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['free-size'] // leave empty for xs, s, m, l ,xl, xxl 
     },
 
 ]
