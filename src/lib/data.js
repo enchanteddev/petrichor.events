@@ -1193,7 +1193,7 @@ export let technical = {
             "phone": "9636902875"
           },
           {
-            "name": "Karthikeya B",
+            "name": "Karthikeya D",
             "image": Karthikeya,
             "phone": "7794011990"
           }

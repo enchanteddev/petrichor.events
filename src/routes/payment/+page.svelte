@@ -22,7 +22,7 @@
 	let transactionID: string;
 	let CAcode: string;
 	let imgurl: string;
-	let amount = data.fee;
+	let amount = data.fees;
 	let success = false;
 	let qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`;
 
