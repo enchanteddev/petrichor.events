@@ -1312,7 +1312,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/9b22c8b0-c6ec-4d71-80f3-4c43d227b5b6/0_0.webp",
-        "date": "16/1/2024",
+        "date": "19/1/2024",
         "id": "TF03"
       },
         {
