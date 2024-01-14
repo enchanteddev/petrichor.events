@@ -244,8 +244,8 @@
 		font-size: 20px;
 	}
 	.workshops {
-		background-color: rgb(192, 235, 255);
-		color: black;
+		background-color: rgb(29, 0, 59);
+		color: rgb(255, 255, 255);
 	}
 	.banner {
 		z-index: 2;
@@ -373,7 +373,7 @@
 			padding: 55rem 0rem;
 		} 
 		.ws {
-			width: 25em;
+			width: 20em;
 			height: 15em;
 		}
 		
