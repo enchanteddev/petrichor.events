@@ -46,9 +46,12 @@ import Prisha from '$lib/assets/Organisers/Prisha.jpg'
 import Nalan from '$lib/assets/Organisers/Nalan.jpg'
 import Siva from '$lib/assets/Organisers/Siva.jpg'
 import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
-import tblack from '$lib/assets/Merch/black.png'
-import twhite from '$lib/assets/Merch/white.png'
-import hoodie from '$lib/assets/Merch/hoodie.png'
+import tblackf from '$lib/assets/Merch/T Shirt F IIT P1.png'
+import tblackb from '$lib/assets/Merch/T Shirt B IIT P1.png'
+import twhitef from '$lib/assets/Merch/White T B IIT P1.png'
+import twhiteb from '$lib/assets/Merch/White T F IIT P1.png'
+import hoodief from '$lib/assets/Merch/Hoodie F.png'
+import hoodieb from '$lib/assets/Merch/Hoodie B.png'
 import cap from '$lib/assets/Merch/Cap.png'
 
 export let cultural = {
@@ -2054,23 +2057,23 @@ export const merch = [
     {
         id: "MT1",
         name: "White T-Shirt",
-        imgs: [twhite],
+        imgs: [twhitef, twhiteb],
         price: 390,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['S', 'M', 'L', "XL"] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MT2",
         name: "Black T-Shirt",
-        imgs: [tblack],
+        imgs: [tblackf, tblackb],
         price: 390,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['S', 'M', 'L', "XL"] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH1",
         name: "Hoodie",
-        imgs: [hoodie],
+        imgs: [hoodief, hoodieb],
         price: 690,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['S', 'M', 'L', "XL"] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MC1",

@@ -3,6 +3,7 @@
 	import  Icon  from "svelte-awesome/components/Icon.svelte";
 	import { cartPlus } from "svelte-awesome/icons";
 	import OptionSelector from "./OptionSelector.svelte";
+	import Imgs from "./ImgCaraousel.svelte";
     
     type CartSizeUpdate = (size: string) => void
     type CartRemove = () => void
@@ -22,12 +23,13 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="main" on:mouseenter={() => {hovering = true}} on:mouseleave={() => {hovering=false}}>
     <div class="imgholder">
-        <img src={imgs[0]} alt="Image of {name}">
+        <!-- <img src={imgs[0]} alt="Image of {name}"> -->
+        <Imgs images={imgs} />
         <span class="cart-marker {inCart ? "" : "invis"}"><Icon data={cartPlus} scale={1.4}/></span>
     </div>
     <h2>{name}</h2>
     <p>Rs. {price}</p>
-    <div class="more {hovering ? "vis" : ""}">
+    <div class="more vis">
         <OptionSelector options={sizesAvailable} onSelect={(s) => {
             if (inCart) updateCart(s);
             size = s;
@@ -35,18 +37,18 @@
         }}/>
 
         {#if inCart}
-            <button on:click={() => {
+            <button class="button-28 addtocart" on:click={() => {
                 removeCart()
                 inCart = false
             }}>Remove from Cart</button>
         {:else}
         {#if size}
-            <button class="addtocart" on:click={() => {
+            <button class="button-28 addtocart" on:click={() => {
                 updateCart(size);
                 inCart = true;
             }}>Add To Cart</button>
         {:else}
-        <button class="addtocart" disabled>Add To Cart</button>
+        <button class="button-28 addtocart" disabled>Add To Cart</button>
         {/if}
         {/if}
     </div>
@@ -55,15 +57,18 @@
 <style>
     .main{
         position: relative;
-        width: fit-content;
+        width: 20em;
         margin: 1em;
         transition: 200ms;
+        background-color: rgb(130, 101, 143);
+        width: repeat(3, minmax(0, 1fr));
+        padding:1em;
+        border-radius: 2em;
     }
     .main:hover{
-        scale: 1.2;
+        scale: 1.1;
     }
     .imgholder{
-        width: fit-content;
         position: relative;
     }
     .imgholder::after{
@@ -75,6 +80,7 @@
         left: 0;
         height: 10em;
         width: 100%;
+        border-radius: 0 0 1em 1em;
     }
     .cart-marker{
         position: absolute;
@@ -91,9 +97,14 @@
         border-radius: 1em;
     }
     .more{
-        display: none;
+        opacity: 0;
     }
     .vis{
-        display: unset;
+        opacity: 1;
+    }
+    .addtocart{
+        padding: 0.25em !important;
+        padding-inline: 2em !important;
+        margin-top: 0.75em;
     }
 </style>
