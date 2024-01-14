@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Toast from "$lib/components/Toast.svelte";
 	import type { MerchItem } from "$lib/types";
     import {merch} from '$lib/data'
 	import Item from "./Item.svelte";
@@ -18,6 +19,7 @@
             }
             return
         }
+        show=true;
         shoppingCart[id].size = size;
     }
 
@@ -27,8 +29,9 @@
     }
 
     $: console.log(shoppingCart)
+    let show = false;
 </script>
-
+<Toast message={"Size Updated"} bind:show duration={1000}/>
 <div class="main">
     <div class="items">
 
@@ -37,6 +40,7 @@
         name={m.name}
         price={m.price}
         imgs={m.imgs}
+        sizesAvailable={m.sizes}
         updateCart={(size) => {updateItemSize(m.id, size)}}
         removeCart={() => {removeItem(m.id)}}
         />
@@ -45,8 +49,8 @@
     <div class="bottom">
 
         {#if Object.keys(shoppingCart).length !== 0 && shoppingCart.constructor === Object}
+            <button class="button-85 checkout">Proceed To Checkout</button>
         {/if}
-        <button class="button-85 checkout">Proceed To Checkout</button>
     </div>
 </div>
 <style>

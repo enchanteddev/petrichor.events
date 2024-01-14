@@ -10,20 +10,20 @@
     let timer: NodeJS.Timeout;
   
     onMount(() => {
-      show = true;
-  
       // Start the timeout and update progress
       timer = setInterval(() => {
-        progress += (100 / duration) * 50;
+        if (!show) return
+        progress += (100 / duration) * 5;
         if (progress >= 100) {
           closeToast();
         }
-      }, 50);
+      }, 5);
     });
   
     function closeToast() {
-      clearInterval(timer);
+      // clearInterval(timer);
       show = false;
+      progress = 0;
     }
   </script>
   

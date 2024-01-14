@@ -1,5 +1,4 @@
 <script lang="ts">
-    import type { MerchItem } from "$lib/types";
 	import  Icon  from "svelte-awesome/components/Icon.svelte";
 	import { cartPlus } from "svelte-awesome/icons";
 	import OptionSelector from "./OptionSelector.svelte";
@@ -19,7 +18,6 @@
     let size: string = '';
     let hovering = false;
 </script>
-
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="main" on:mouseenter={() => {hovering = true}} on:mouseleave={() => {hovering=false}}>
     <div class="imgholder">
