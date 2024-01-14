@@ -36,6 +36,8 @@
             <!-- <a href="/proshows">Proshows</a> -->
             <!-- <a href="/merch">Merch</a> -->
             <a href="/sponsors">Sponsors</a>
+            <a href="/accomodation">Accomodation</a>
+            <a href="/merch">Merch</a>
             <a href="{$isLogin? "/profile" : "/login"}" class="login"><Icon data={user} scale={1.6}/></a>
         </nav>
     </div>  
