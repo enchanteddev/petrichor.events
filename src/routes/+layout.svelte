@@ -36,6 +36,8 @@
             <!-- <a href="/proshows">Proshows</a> -->
             <!-- <a href="/merch">Merch</a> -->
             <a href="/sponsors">Sponsors</a>
+            <a href="/accomodation">Accomodation</a>
+            <a href="/merch">Merch</a>
             <a href="{$isLogin? "/profile" : "/login"}" class="login"><Icon data={user} scale={1.6}/></a>
         </nav>
     </div>  
@@ -66,7 +68,8 @@
                 <footer>
                     <div class="address">
                         <h1>Address</h1>
-                        <p>IIT PALAKKAD, Nila campus, P O, Kanjikode-Malampuzha Road, West Kanjikode, Pudusserry West, Kanjikode, Kerala 678623</p>
+                        <Icon data={mapMarker} scale={1.2}></Icon>
+                        <a href="https://www.google.com/maps/place/IIT+Palakkad,+Nila+Campus/@10.8077887,76.725758,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba86f48a12144bf:0x4047c5d94954718a!8m2!3d10.8077887!4d76.725758!16s%2Fg%2F11s5xlpyg0?hl=en&entry=ttu" target="_blank"> IIT PALAKKAD, Nila campus, P O, Kanjikode-Malampuzha Road, West Kanjikode, Pudusserry West, Kanjikode, Kerala 678623</a>
                     </div>
                     <div class="address">
                         <h1>@email</h1>
@@ -75,7 +78,7 @@
                     <div class="address">
                         <h1>Connect with us</h1>
                         <div class="socials">
-                            <a href="https://instagram.com/petrichor.iitpkd" target="_blank"><Icon data={instagram} scale={1.6}/></a>
+                            <a href="https://instagram.com/petrichor.iitpkd" target="_blank"><Icon data={instagram} scale={0}/></a>
                             <a href="https://www.linkedin.com/company/petrichor-iitpkd" target="_blank"><Icon data={linkedin} scale={1.6}/></a>
                             <a href="https://x.com/Petrichor_IIT" target="_blank"><Icon data={twitter} scale={1.6}/></a>
                             <a href="https://youtube.com/@petrichoriitpalakkad173?si=hn8YHyfXVcJ_KZUr" target="_blank"><Icon data={youtube} scale={1.6}/></a>

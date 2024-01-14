@@ -19,9 +19,18 @@
 
 
 <style>
+@font-face {
+		font-family: 'Atmospheric';
+		src: url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('embedded-opentype'), /* Internet Explorer */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('woff2'),             /* Super Modern Browsers */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('woff'),              /* Pretty Modern Browsers */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('truetype'),          /* Safari, Android, iOS */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('svg');               /* Legacy iOS */
+		font-weight: 200;
+	}
 	:root{
 		--pfont: 'Inter', sans-serif;
-		--sfont: 'Merriweather', serif;
+		--sfont: 'Atmospheric', sans-serif;
 		--wfont: 'Arial', sans-serif;
 	}
 	html, body{
@@ -37,6 +46,10 @@
 	.a-unset{
 		color: inherit;
 		text-decoration: unset;
+	}
+
+	.atmos{
+		font: var(--sfont);
 	}
 	
 </style>
