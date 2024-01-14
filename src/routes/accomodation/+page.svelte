@@ -1,22 +1,16 @@
 <div class="flex justify-center items-center h-screen bg-blue-lightest ayush-acc-whole">
 	<div class="je_acco_banger_title_contaier">
-		<h class="merch-head">Accomodations</h>
+		<h1 class="merch-head">Accomodations</h1>
 	</div>
 
 	<div class="abt_para_2 abt_para" data-aos="zoom-in">
-		<div class="jj_acco_pic_container_button">
-			<a class="jj_clean_a" href="https://forms.gle/idhAfBGCPjvWDmNJ8" target="_blank">
-				{' '}
-				Book Now{' '}
-			</a>
-		</div>
 		<br />
 		<br />
 		<br />
 		<br />
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-10 col-md-9">
-				Petrichor '24 - IIT Palakkad | Events | Proshow | Workshops | Open Day
+				<h4 style="color: burlywood;">Petrichor '24 - IIT Palakkad | Events | Proshow | Workshops | Open Day</h4>
 				<ul>
 					<li>Accommodation is arranged at external hotels.</li>
 					<li>Below mentioned rates are per day rates.</li>
@@ -44,9 +38,9 @@
 							<li>Rate per head</li>
 						</ul>
 						<ul>
-							<li>Rs 380 for one day</li>
-							<li>Rs 680 for two days</li>
-							<li>Rs 930 for three days</li>
+							<li>Rs 320 for one day</li>
+							<li>Rs 610 for two days</li>
+							<li>Rs 900 for three days</li>
 						</ul>
 					</strong>
 					<strong>
@@ -63,8 +57,7 @@
 					</strong>
 					<strong>
 						<li>
-							Check-Out time will be 24hrs from Check-in time if payment is done for one day. If
-							exceeding 24hrs, payment for the next day has to be done.
+							Check-In time will be 2000 hrs and check-out time be 2000 hrs the next day. We can adjust the timings according to the rooms alloted to different groups. If staying for more than 24 hrs or alloted time then you will have to pay for one more day.
 						</li>
 					</strong>
 				</ul>
@@ -110,5 +103,43 @@
 		<br />
 		<br />
 		<br />
+		<div class="jj_acco_pic_container_button">
+			<a class="jj_clean_a" href="https://forms.gle/idhAfBGCPjvWDmNJ8" target="_blank">
+				{' '}
+				Book Now{' '}
+			</a>
+		</div>
 	</div>
 </div>
+
+<style>
+.ayush-acc-whole{
+	margin-top: 7rem;
+}
+.merch-head{
+	text-align: center;
+	color: blueviolet;
+}
+.jj_acco_pic_container_button{
+	background-color: rgb(207, 146, 24);
+	position: relative;
+	width: 8rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 50%;
+	transform: translate(-50%);
+	margin-bottom: 2rem;
+	border-radius: 15%/40%;
+}
+.jj_acco_pic_container_button>a{
+	text-decoration: none;
+	color: aqua;
+}
+.abt_para{
+	margin-left: 2rem;
+	margin-top: -5rem;
+}
+
+</style>
