@@ -5,6 +5,7 @@
 	import Sbi from '$lib/assets/Sponsors/Sbi.jpg'
 	import Vasantha from '$lib/assets/Sponsors/Vasantha.jpg'
 	import Cazzkaro from '$lib/assets/Sponsors/Cazzkaro.jpeg'
+	import Chess from '$lib/assets/Sponsors/chess.webp'
 </script>
 
 <h1 id="heading1"><span style="color:blueviolet">PETRICHOR'24</span> IS SPONSORED BY</h1>
@@ -34,6 +35,11 @@
 		<div class="title">Digital Partner</div>
 		<div class="img" style="background-image:url({Hp})"/>
 		<div class="name">Honeywell Systems</div>
+	</div>
+	<div id="chess" class="sponsor">
+		<div class="title">Event Sponsor</div>
+		<div class="img" style="background-image:url({Chess})"/>
+		<div class="name">Chess.com</div>
 	</div>
 </div>
 
@@ -67,6 +73,9 @@
 	#cazzkaro{
 		grid-area: cazzkaro;
 	}
+	#chess{
+		grid-area: chess;
+	}
 
 	* {
 		box-sizing: border-box;
@@ -82,7 +91,7 @@
 	#all{
 		grid-template-areas:
 			'pnb vasantha sbi'
-			'canara honeywell honeywell';
+			'canara honeywell chess';
 	}
 	#all1{
 		grid-template-areas: 
