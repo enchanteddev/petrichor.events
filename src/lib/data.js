@@ -1454,7 +1454,8 @@ export let technical = {
             "6. Late submissions, with a penalty of 20 points, will be accepted up to one day after the deadline.",
             "7. The team with the highest point score will be declared the winners. In the case of a tie, the time of submission will serve as the tiebreaker.",
             "8. The decision of the evaluators will be final.",
-            "9. Team size: 1"
+            "9. Team size: 1-3",
+            "10. The event has a 3 day deadline to solve the problem statement so the event starts from 21/01/2024 to 24/01/2024"
           ]
         },
         "organisers": [
