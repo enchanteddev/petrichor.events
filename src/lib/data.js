@@ -1670,9 +1670,9 @@ export let technical = {
               "7. The arena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
               "8. Blocks that are correctly deposited in deposit zones/pushed from the ramp won’t be disturbed.",
               "9.The timer won’t be stopped during this process. ",
-              "10. Team size: 1-4"
+              "10. Team size: 1-4",
               
-              " In case of any disputes/discrepancies, the organizer’s decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
+              " In case of any disputes/discrepancies, the organizer's decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
 
           ]
         },
