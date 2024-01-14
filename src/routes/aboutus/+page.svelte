@@ -25,7 +25,7 @@
     import Gayathri from "$lib/assets/CoreTeam/Gayathri.png"
     import Nakul from "$lib/assets/CoreTeam/Nakul.png"
     import Azim from "$lib/assets/CoreTeam/Azim.png"
-    import Aleena from "$lib/assets/CoreTeam/aleena.png"
+    import Aleena from "$lib/assets/CoreTeam/Aleena.png"
     import Vinay from "$lib/assets/CoreTeam/Vinay.png"
     import Sai_Kumar from "$lib/assets/CoreTeam/Sai Kumar.png"
 
