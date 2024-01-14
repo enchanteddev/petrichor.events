@@ -1,10 +1,12 @@
 <script lang="ts">
+    // @ts-nocheck
     import { workshops } from '$lib/data';
     import { cultural } from '$lib/data';
     import { technical } from '$lib/data';
 
     export let eventId : string
     export let paymentStatus: string
+    console.log(eventId)
     let Eventtype=""
     let events=[]
     switch (eventId.charAt(0)) {
@@ -21,12 +23,11 @@
             Eventtype="Workshop"
             break;
     }
-    const event:{[key:string]:any}=events[Number(eventId.substring(2))]
-
-
-
+    const event = events.find((e) => e.id == eventId);
+    console.log(events)
 </script>
 
+{#if event}
 <div class="event-details" style="padding: 10px 15px;">
     <div class="event-image">
         <!-- svelte-ignore a11y-img-redundant-alt -->
@@ -53,7 +54,7 @@
         </div>
     </div>
 </div>
-
+{/if}
 <style>
 
 

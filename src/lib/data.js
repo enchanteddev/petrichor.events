@@ -949,7 +949,7 @@ export let cultural = {
             "phone": "8281729013"
           }
         ],
-        "image": "https://cdn.midjourney.com/f4059e2a-69f9-4ea7-bd1a-9079a55baefe/0_0.webp",
+        "image": "https://cdn.midjourney.com/32eeddf7-fcc5-41d8-a555-663370e1af4c/0_1.webp",
         "date": "28-01-2024",
         "id": "CF18"
       },
@@ -1151,8 +1151,8 @@ export let technical = {
             "phone": "+917298991001"
           }
         ],
-        "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
-        "date": "15/1/2024",
+        "image": "https://cdn.midjourney.com/890eb944-68b9-4a5e-b009-af623663c016/0_2.webp",
+        "date": "19/1/2024",
         "id": "TF00"
       },
         {
@@ -1198,7 +1198,7 @@ export let technical = {
             "phone": "7794011990"
           }
         ],
-        "image": "https://cdn.midjourney.com/10b70854-7f9a-4760-9719-37470b30b72f/0_0.webp",
+        "image": "https://cdn.midjourney.com/dc2ceeff-73bc-4474-ae8f-c9183db16822/0_0.webp",
         "date": "15/1/2024 - 19/1/2024",
         "id": "TF07"
       },
@@ -1262,8 +1262,8 @@ export let technical = {
             "phone": "9848634455"
           }
         ],
-        "image": "https://cdn.midjourney.com/9d076bbe-3010-472c-8d55-81f14606737d/0_0.webp",
-        "date": "15/1/2024 - 31/1/2024",
+        "image": "https://cdn.midjourney.com/1ab4ed8b-c3b5-43e8-bc3c-85609aac1c5b/0_0.webp",
+        "date": "16/1/2024 - 31/1/2024",
         "id": "TF05"
       },
      {
@@ -1311,8 +1311,8 @@ export let technical = {
             "phone": "6001301742"
           }
         ],
-        "image": "https://cdn.midjourney.com/70aa1b56-1502-41d2-b384-ddc0d154b80b/0_0.webp",
-        "date": "16/1/2024",
+        "image": "https://cdn.midjourney.com/9b22c8b0-c6ec-4d71-80f3-4c43d227b5b6/0_0.webp",
+        "date": "19/1/2024",
         "id": "TF03"
       },
         {
@@ -1353,7 +1353,7 @@ export let technical = {
             "phone": "9110641165"
           }
         ],
-        "image": "https://cdn.midjourney.com/8504755d-8310-4e6b-be56-95ef5684d560/0_0.webp",
+        "image": "https://cdn.midjourney.com/c0c949d2-13c8-4698-ab9e-4817520df736/0_3.webp",
         "date": "20/1/2024",
         "id": "TF01"
       },
@@ -1407,18 +1407,13 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Kshitij",
+            "name": "Kaushik Rawat",
             "image": Kshitij,
-            "phone": "+917298991001"
-          },
-              {
-            "name": "Kshitij Ghodake",
-            "image": Kshitij,
-            "phone": "+917298991001"
+            "phone": "+9172087 98365"
           }
-         
+             
         ],
-        "image": "https://cdn.midjourney.com/31d65d6e-dc78-4bf5-b515-13ed033daaa0/0_0.webp",
+        "image": "https://cdn.midjourney.com/ebe37262-aaa4-4ea0-ad21-f922cdfd2ea3/0_0.webp",
         "date": "21/1/2024",
         "id": "TF08"
       },
@@ -1462,7 +1457,7 @@ export let technical = {
             "phone": "9037630397"
           }
         ],
-        "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
+        "image": "https://cdn.midjourney.com/7cb5190b-a340-46a6-b821-f58fe414e736/0_1.webp",
         "date": "21/1/2024",
         "id": "TF13"
       },
@@ -1501,7 +1496,7 @@ export let technical = {
             "phone": "+919188142004"
           }
         ],
-        "image": "https://cdn.midjourney.com/0f338538-6fee-42ad-bd12-1701dfbc8e75/0_3.webp",
+        "image": "https://cdn.midjourney.com/a92476e6-3241-4916-a93b-2acab672a257/0_3.webp",
         "date": "27/1/2024",
         "id": "TF12"
       },
@@ -1548,7 +1543,7 @@ export let technical = {
             "phone": "+91 7302994666"
           }
         ],
-        "image": "https://cdn.midjourney.com/7329c387-a943-40a2-94a4-0e0aa3717ac3/0_0.webp",
+        "image": "https://cdn.midjourney.com/6b108189-d247-4a02-b6e1-2141b265b634/0_0.webp",
         "date": "27/1/2024",
         "id": "TF04"
       },
@@ -1618,7 +1613,7 @@ export let technical = {
             "phone": "+91 9528353345"
           }
         ],
-        "image": "https://cdn.midjourney.com/1f62ca79-6ba4-440d-b8a8-155e1c555439/0_0.webp",
+        "image": "https://cdn.midjourney.com/5a4d460a-0915-4912-9cda-cd2b0689c0ff/0_3.webp",
         "date": "27/1/2024",
         "id": "TF10"
       },
@@ -1683,7 +1678,7 @@ export let technical = {
             "phone": "9714957474"
           }
         ],
-        "image": "https://cdn.midjourney.com/986104e8-98af-412b-b4c2-74423ee6d3ab/0_0.webp",
+        "image": "https://cdn.midjourney.com/2a5fdf01-661d-4a9c-b288-842531f018b3/0_2.webp",
         "date": "27/1/2024",
         "id": "TF02"
       },
@@ -1764,7 +1759,7 @@ export let technical = {
             "phone": "+91 8092450569"
           }
         ],
-        "image": "https://cdn.midjourney.com/1371d083-7a11-40b0-82cd-5401590d2534/0_0.webp",
+        "image": "https://cdn.midjourney.com/acd4d76b-1fdf-4366-9252-e58da7b6bcde/0_1.webp",
         "date": "28/1/2024",
         "id": "TF06"
       },
@@ -1829,9 +1824,9 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Divesh Mishra",
+            "name": "Arnav Kadu",
             "image": Divesh,
-            "phone": "9691584687"
+            "phone": "9987358608"
           },
           {
             "name": "Shubhan Mehrotra",
@@ -1839,7 +1834,7 @@ export let technical = {
             "phone": "9714957474"
           }
         ],
-        "image": "https://cdn.midjourney.com/1adcbf9a-5e83-4e3a-9329-7b337f16badb/0_0.webp",
+        "image": "https://cdn.midjourney.com/751714f1-9cff-40b4-94c1-3914b5d7ad7c/0_0.webp",
         "date": "28/1/2024",
         "id": "TF09"
       },
@@ -1895,7 +1890,7 @@ export let technical = {
             "phone": "90376 30397"
           }
         ],
-        "image": "https://cdn.midjourney.com/a73fa382-699c-4053-b4f5-20e0e476a1bc/0_0.webp",
+        "image": "https://cdn.midjourney.com/3c7e3d45-50ce-4984-acae-236ef04f51b1/0_1.webp",
         "date": "28/1/2024",
         "id": "TF11"
       },
@@ -1951,7 +1946,7 @@ export let technical = {
             "phone": "7430072368"
           }
         ],
-        "image": "https://cdn.midjourney.com/e05b2051-e42c-4f41-9ad1-a26296c6007d/0_0.webp",
+        "image": "https://cdn.midjourney.com/ea440f6f-628a-46bc-a522-d62a8fc89b93/0_2.webp",
         "date": "28/1/2024",
         "id": "TF13"
       }
@@ -1968,7 +1963,7 @@ export let workshops =  {
             fees: 1299,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://imgs.search.brave.com/rinfk11tjOtQ0OM-xLkUGFohtI9LZ-cUe81Tu0eGAaI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/aS1jbG91ZC13aXRo/LXJvYm90LWZhY2Vf/MjMtMjE0OTczOTc1/OC5qcGc_c2l6ZT02/MjYmZXh0PWpwZw',
+            image: 'https://cdn.midjourney.com/315a8582-5721-445b-b70d-796c0e9e5ba2/0_3.webp',
             location: 'Nila Campus',
             topics: ['AI Algorithms'],
             speakers: [ 'Dr. C K Narayanan', 'Dr. Sahely Bhadra', 'Dr. Koninika Pal'],
@@ -1981,7 +1976,7 @@ export let workshops =  {
             fees: 1299,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://imgs.search.brave.com/XlQ12_S5GdqeJ5S3sjviLwDalImVB3IdcPF2b3feMn8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDgzMDMz/OTcuanBn',
+            image: 'https://cdn.midjourney.com/9455f9e8-74f5-47c3-945c-21eeba3dda1e/0_0.webp',
             location: 'Nila Campus',
             topics: ['Mechanics', 'Robotics'],
             speakers: ['Dr. Vijay Muralidharan'],
@@ -1994,7 +1989,7 @@ export let workshops =  {
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://th.bing.com/th/id/OIP.NvmK9m5WDaUIP59icbm_wAHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7',
+            image: 'https://cdn.midjourney.com/82d3adc2-1f5a-4161-83bb-c10681493f10/0_1.webp',
             location: 'Nila Campus',
             topics: [ 'Product Design', 'Design Thinking', 'Product-Market Pitch'],
             speakers: [ 'Dr. Jacob Chandapillai', 'Shyam Sundar Pati'],
@@ -2007,7 +2002,7 @@ export let workshops =  {
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://imgs.search.brave.com/xUJDPd-rd0rAX9DDxIhu0NCFM3rCoBMRsqRVgBJRNss/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzE5LzEyLzQ3/LzM2MF9GXzYxOTEy/NDc4Ml9OVTZvekU2/RHJaV3pxandvYWNn/TXZOYVZ1RkJZQmRr/RS5qcGc',
+            image: 'https://cdn.midjourney.com/b530d541-7d6f-4026-a52a-86c859798acc/0_2.webp',
             location: 'Nila Campus',
             topics: [],
             speakers: [  'Dr. Shaikshavali Chitraganti'],
@@ -2020,7 +2015,7 @@ export let workshops =  {
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://ejournalz.com/wp-content/uploads/2018/04/becoming-an-entrepreneur.jpg',
+            image: 'https://cdn.midjourney.com/ff96b5d1-3439-4034-87c2-058c3fe9d166/0_2.webp',
             location: 'Nila Campus',
             topics: [],
             speakers: ['Finance Club'],
@@ -2033,7 +2028,7 @@ export let workshops =  {
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://cdn.mos.cms.futurecdn.net/YxDjBWSwkDWEqBo8mSYbqY-1200-80.jpg',
+            image: 'https://cdn.midjourney.com/5f5c7d27-67c3-4164-b571-0f2a200451ff/0_2.webp',
             location: 'Nila Campus',
             topics: [],
             speakers: ['Dr. Pramod Kuntikana', 'Dr. Anand T N C'],
@@ -2046,7 +2041,7 @@ export let workshops =  {
             fees: 1299,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://imgs.search.brave.com/Q7nkBpzGa69_hef40mdiCXlkMyHQrBpTN6XCStzQAAw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA1/NTA1NjYxMi9waG90/by9jb2RpbmctbGF0/ZS1pbnRvLXRoZS1u/aWdodC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9MFlTck03/NmhnNF85Q2l2a0V3/aEhPa3lKWldNaVYt/NGdKak9mS2VFNHFV/cz0',
+            image: 'https://cdn.midjourney.com/4db536d9-1752-4f7d-8e0a-eb87b44ceeef/0_1.webp',
             location: 'Nila Campus',
             topics: [],
             speakers: ['YACC'],
