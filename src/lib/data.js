@@ -1141,7 +1141,8 @@ export let technical = {
             "1. The entire event will be online.",
             "2. No questions or doubts regarding the treasure hunt will be entertained during the hunt.",
             "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (a link will be provided to the participants after the registration ends)",
-            "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification."
+            "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification.",
+            "5. Team size:1-3"     
           ]
         },
         "organisers": [
@@ -1183,7 +1184,8 @@ export let technical = {
             "3. The account and assets allocated will be purely virtual and cannot be liquidated into real money.",
             "4. Any profit/loss made in this contest is virtual and only for the purpose of the competition.",
             "5. Duplicate registration will not be accepted.",
-            "6. Other details and guidelines shall be shared with the participants via Email."
+            "6. Other details and guidelines shall be shared with the participants via Email.",
+            "7. Team size : 1"
           ]
         },
         "organisers": [
@@ -1247,7 +1249,8 @@ export let technical = {
             "7.4. Contact information for at least one team member.",
             "8. Game Documentation: Along with the game, participants should provide any",
             "necessary documentation, including instructions on how to play the game and any",
-            "special features or controls."
+            "special features or controls.",
+            "9.Team size:1-4" 
           ]
         },
         "organisers": [
@@ -1301,7 +1304,8 @@ export let technical = {
             "Participants are advised to keep track of all folders in their e-mail accounts.",
             "7. In case plagiarism is found on candidate\u2019s code then that candidate will be",
             "disqualified from the contest and will be barred from receiving any prizes.",
-            "8. Participants have to fill the online form for participating in the Contest."
+            "8. Participants have to fill the online form for participating in the Contest.",
+            "9. Team size: 1" 
           ]
         },
         "organisers": [
@@ -1343,7 +1347,8 @@ export let technical = {
             "2. Plagiarism will result in disqualification.",
             "3. Winners will be decided on the basis of the points scored.",
             "4. Participants have to produce an animation with their details",
-            "trajectory plan and simulation code to qualify for the prize."
+            "trajectory plan and simulation code to qualify for the prize.",
+            "5. Team size :1-2"
           ]
         },
         "organisers": [
@@ -1402,7 +1407,8 @@ export let technical = {
             "4. You can use any assets from the internet, as long as you adhere to the copyright laws and regulations, as well as credit the artist/creator of the asset.",
             "5. The website should be reachable and live at the submitted URL starting from the last day of submission to at least the day of the announcement of the results.",
             "6. The usage of TypeScript is allowed. It will not directly affect any points, but indirectly it increases the code quality by having type-safety.",
-            "7. The code should be on a git repository. You can use github, gitlab, etc."
+            "7. The code should be on a git repository. You can use github, gitlab, etc.",
+            "8. Team size: 1"
           ]
         },
         "organisers": [
@@ -1447,7 +1453,8 @@ export let technical = {
             "5. Plagiarism will result in disqualification.",
             "6. Late submissions, with a penalty of 20 points, will be accepted up to one day after the deadline.",
             "7. The team with the highest point score will be declared the winners. In the case of a tie, the time of submission will serve as the tiebreaker.",
-            "8. The decision of the evaluators will be final."
+            "8. The decision of the evaluators will be final.",
+            "9. Team size: 1"
           ]
         },
         "organisers": [
@@ -1487,6 +1494,7 @@ export let technical = {
             "3. Prelims will be in written format. Papers will be provided. It is advised to bring your own pens. Finals will be on-stage.",
             "4. Adopting any kind of malpractice will lead to disqualification.",
             "5. The decision taken by the quizmasters will be final and binding."
+            
           ]
         },
         "organisers": [
@@ -1598,7 +1606,8 @@ export let technical = {
             "6. The structure will be dropped with zero velocity.",
             "7. Two chances will be given to each team for each round. However , the second chance will lead to a penality of 10 points.",
             "8. Teams can only use material provided at the time of auctioning. Using materials from outside will lead to disqualification.",
-            "9. Individual member or a group of two members can participate as a team."
+            "9. Individual member or a group of two members can participate as a team.",
+            "10. Team size: 1-2"
           ]
         },
         "organisers": [
@@ -1661,8 +1670,9 @@ export let technical = {
               "7. The arena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
               "8. Blocks that are correctly deposited in deposit zones/pushed from the ramp won’t be disturbed.",
               "9.The timer won’t be stopped during this process. ",
-
-           " In case of any disputes/discrepancies, the organizer’s decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
+              "10. Team size: 1-4"
+              
+              " In case of any disputes/discrepancies, the organizer’s decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
 
           ]
         },
@@ -1749,7 +1759,8 @@ export let technical = {
             "5. Building should be hollow at the center. Some amount of Weight will be kept at different floors in subsequent rounds therefore, keep sufficient space so that they can enter the floor.",
             "If the building does not meet the specified requirements then a penalty will be imposed or the team can be disqualified.",
             "Come to the event with fully prepared construction diagrams of the building and make sure that the dimensions of each and every element are within range.",
-            "Participation certificates will be awarded to all the participants."
+            "Participation certificates will be awarded to all the participants.",
+            "6. Team size: 1-2"
           ]
         },
         "organisers": [
@@ -1819,7 +1830,8 @@ export let technical = {
             "4. The bot has to give a signal by glowing a LED as soon as it senses the END point.",
             "5. A total of 3 minutes will be provided to complete the dry run. A total of 2 minutes and 30 seconds will be provided to complete the actual run.",
             "6. If the bot takes more than 3 minutes for completing the dry run, then the extra time taken will be deducted from the timing of the actual run which is 2 minutes and 30 seconds.",
-            "7. Teams will be given 1 minute for calibration."
+            "7. Teams will be given 1 minute for calibration.",
+            "8. Team size: 1-4"
           ]
         },
         "organisers": [
@@ -1875,8 +1887,8 @@ export let technical = {
             "decision",
             "3. Plagiarism will result in disqualification",
             "4. Participants will have to use only the details provided by the organizers, any other tweaking of the hardware is not allowed and will result in disqualification",
-            "5. Winners will be decided on the basis of the points scored"
-          ]
+            "5. Winners will be decided on the basis of the points scored",
+            "6. Team size: 1-3"          ]
         },
         "organisers": [
           {
@@ -1923,6 +1935,7 @@ export let technical = {
             "2. The weight of the bot should be less than 25kg (55.12lbs). Note that the weight of adapters and the remote controller will not be included in these constraints.",
             "3. The power source of the robot cannot exceed 30V.",
             "4. Motors with maximum 350w can only be used for the driving of the Robot.",
+            "5. Team size: 4-6",
             "Mobility",
             "5. Maximum voltage of battery should be 24v.",
             "1. Methods of mobility may include,Rolling (wheels, tracks or the whole robot), Walking (linear actuated legs with no rolling or cam operated motion), Shuffling (rotational cam operated legs).",
