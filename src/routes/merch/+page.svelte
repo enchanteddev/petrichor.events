@@ -3,6 +3,7 @@
 	import type { MerchItem } from "$lib/types";
     import {merch} from '$lib/data'
 	import Item from "./Item.svelte";
+	import PaymentPortal from "./PaymentPortal.svelte";
 
     let shoppingCart: {[key: string]: MerchItem} = {}
     function updateItemSize(id: string, size: string){
@@ -30,6 +31,7 @@
 
     $: console.log(shoppingCart)
     let show = false;
+    let startPayment = false;
 </script>
 <Toast message={"Size Updated"} bind:show duration={1000}/>
 <div class="main">
@@ -48,10 +50,11 @@
     </div>
     <div class="bottom">
 
-        {#if Object.keys(shoppingCart).length !== 0 && shoppingCart.constructor === Object}
-            <button class="button-85 checkout">Proceed To Checkout</button>
+        {#if false && Object.keys(shoppingCart).length !== 0 && shoppingCart.constructor === Object}
+            <button class="button-85 checkout" on:click={() => {startPayment=true; console.log("PRESSED")}}>Proceed To Checkout</button>
         {/if}
     </div>
+    <PaymentPortal amount={100} bind:show={startPayment}/>
 </div>
 <style>
     .bottom{
