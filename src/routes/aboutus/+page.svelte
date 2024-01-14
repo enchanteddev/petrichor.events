@@ -1,39 +1,40 @@
 <script lang="ts">
     import Category from '$lib/components/Category.svelte';
-    import Ajay from "$lib/assets/CoreTeam/Ajay.jpg"
-    import ANJI from "$lib/assets/CoreTeam/ANJI.jpeg"
-    import Aryan from "$lib/assets/CoreTeam/Aryan.jpg"  
-    import Aswhin from "$lib/assets/CoreTeam/Aswhin.jpeg"
-    import Manish from "$lib/assets/CoreTeam/Manish.jpeg"
-    import Nadhana from "$lib/assets/CoreTeam/Nadhana.jpg"
-    import Netra from "$lib/assets/CoreTeam/Netra.jpeg"
-    import Pawan from "$lib/assets/CoreTeam/Pawan.jpeg"
-    import Priyanshu from "$lib/assets/CoreTeam/Priyanshu.jpg"
-    import Rushikesh from "$lib/assets/CoreTeam/Rushikesh.jpg"
-    import Sarath_A from "$lib/assets/CoreTeam/Sarath_A.jpg"
-    import Sarthak from "$lib/assets/CoreTeam/Sarthak Garg.jpeg"
-    import Shubham from "$lib/assets/CoreTeam/Shubham.jpg"
-    import Sidharth from "$lib/assets/CoreTeam/Sidharth.jpg"
-    import Siva from "$lib/assets/CoreTeam/Siva.jpg"
-    import Sujit from "$lib/assets/CoreTeam/Sujit.jpg"
-    import Utsav  from "$lib/assets/CoreTeam/Utsav Patel.jpeg"
-    import Vijay from "$lib/assets/CoreTeam/Vijay.jpg"
-    import Vishnu from "$lib/assets/CoreTeam/Vishnu.jpg"
-    import Kaushik from "$lib/assets/CoreTeam/Kaushik.jpg"
-    import Eshwar from "$lib/assets/CoreTeam/Eshwar.jpg"
-    import Kishore from "$lib/assets/CoreTeam/Kishore.jpg"
-    import Gayathri from "$lib/assets/CoreTeam/Gayathri.jpg"
-    import Nakul from "$lib/assets/CoreTeam/Nakul.jpg"
-    import Azim from "$lib/assets/CoreTeam/Azim.jpg"
-    import Aleena from "$lib/assets/CoreTeam/aleena.jpg"
-    import Vinay from "$lib/assets/CoreTeam/Vinay.jpg"
-    import Sai_Kumar from "$lib/assets/CoreTeam/Sai_Kumar.jpg"
+    import Ajay from "$lib/assets/CoreTeam/Ajay.png"
+    import ANJI from "$lib/assets/CoreTeam/Anjitha.png"
+    import Aryan from "$lib/assets/CoreTeam/Aryan.png"  
+    import Aswhin from "$lib/assets/CoreTeam/Ashwin.png"
+    import Manish from "$lib/assets/CoreTeam/Manish.png"
+    import Nadhana from "$lib/assets/CoreTeam/Nandhana.png"
+    import Netra from "$lib/assets/CoreTeam/Netra.png"
+    import Pawan from "$lib/assets/CoreTeam/Pawan.png"
+    import Priyanshu from "$lib/assets/CoreTeam/Priyanshu.png"
+    import Rushikesh from "$lib/assets/CoreTeam/Rushikesh.png"
+    import Sarath_A from "$lib/assets/CoreTeam/Sarath.png"
+    import Sarthak from "$lib/assets/CoreTeam/Sarthak.png"
+    import Shubham from "$lib/assets/CoreTeam/Shubhan.png"
+    import Sidharth from "$lib/assets/CoreTeam/Sidarth.png"
+    import Siva from "$lib/assets/CoreTeam/Siva.png"
+    import Sujit from "$lib/assets/CoreTeam/Sujit.png"
+    import Utsav  from "$lib/assets/CoreTeam/Utsav.png"
+    import Vijay from "$lib/assets/CoreTeam/Vijay.png"
+    import Vishnu from "$lib/assets/CoreTeam/Vishnu.png"
+    import Kaushik from "$lib/assets/CoreTeam/Kaushik.png"
+    import Eshwar from "$lib/assets/CoreTeam/Eshwar.png"
+    import Kishore from "$lib/assets/CoreTeam/Kishore.png"
+    import Gayathri from "$lib/assets/CoreTeam/Gayathri.png"
+    import Nakul from "$lib/assets/CoreTeam/Nakul.png"
+    import Azim from "$lib/assets/CoreTeam/Azim.png"
+    import Aleena from "$lib/assets/CoreTeam/aleena.png"
+    import Vinay from "$lib/assets/CoreTeam/Vinay.png"
+    import Sai_Kumar from "$lib/assets/CoreTeam/Sai Kumar.png"
 
     let teams : {[key:string]:any} = {}
     teams["Coordinator"]=[["Sarthak","122101035@smail.iitpkd.ac.in",Sarthak]]
 
     teams["Assistant Coordinators"]=[["Netra","132201017@smail.iitpkd.ac.in",Netra],
                                     ["Aryan Mathur","122201017@smail.iitpkd.ac.in",Aryan]]
+    teams["Fest Mentor"]=[["Aleena","122201004@smail.iitpkd.ac.in",Aleena]]
 
     teams["Technical Heads"]=[["Shubhan","122101037@smail.iitpkd.ac.in",Shubham],
                             ["Manish","122101023@smail.iitpkd.ac.in",Manish]]
@@ -57,7 +58,6 @@
     teams["Informals Head"]=[["Vishnu","112101053@smail.iitpkd.ac.in",Vishnu]]
     teams["Finance Head"]=[["Ajay","122001017@smail.iitpkd.ac.in",Ajay]]
     teams["Marketing Head"]=[["Rushikesh","132101027@smail.iitpkd.ac.in",Rushikesh],["Vinay","132201016@smail.iitpkd.ac.in",Vinay],["Sai Kumar","132101035@smail.iitpkd.ac.in",Sai_Kumar]]
-    teams["Fest Mentor"]=[["Aleena","122201004@smail.iitpkd.ac.in",Aleena]]
     teams["Open House Coordinator"]=[["Sidarth","112201048@smail.iitpkd.ac.in",Sidharth]]
 </script>
 
@@ -116,7 +116,7 @@ h1{
     text-align: justify;
     overflow-x: auto;
     line-break: normal;
-    color: rgb(201, 140, 255);
+    color: white;
 }
 
 
