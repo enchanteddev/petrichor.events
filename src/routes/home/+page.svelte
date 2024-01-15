@@ -23,8 +23,10 @@
 		loaded = true;
 	}, 8000);
 
+	let winsize = 3000;
 	onMount(() => {
 		let ans;
+		winsize = window.innerWidth;
 		console.log(readToken());
 		if(readToken()){
 			fetch(API.whoami, {
@@ -75,7 +77,7 @@
 		<p>
 			Petrichor- the annual techno-cultural fest of IIT Palakkad is back again, and better than ever
 			before. Also, yes, it's offline. We, the students of IIT Palakkad, conduct Petrichor every
-			year, and made sure last year's online event was enthralling for all its participants. Now the
+			year, and made sure last year's event was enthralling for all its participants. Now the
 			wait is over; with just the perfect mix of cultural and technical events, we plan on making
 			Petrichor'24 an unforgettable experience for you. Trust us when we say that you won't miss out
 			on anything. Check out our website as it has answers to all the questions that you might have.
@@ -113,8 +115,8 @@
 		<form action="?/feedback" method="post" style="display: contents;" use:enhance>
 			<input type="text" placeholder="Name" name="name" required />
 			<input type="text" placeholder="Email" name="email" required />
-			<textarea placeholder="Feedback" cols="30" name="body" required />
-			<button class="cool fbut" type="submit">Submit Feedback</button>
+			<textarea placeholder="Feedback" name="body" required />
+			<button class="fbut button-85" type="submit">Submit Feedback</button>
 		</form>
 	</div>
 	<!-- {#if form?.success}
@@ -163,11 +165,12 @@
 		padding: 1.5%;
 		margin: 0.5%;
 		font-size: 24px;
-		border-radius: 10rem;
+		border-radius: 2rem;
 		width: 55%;
-		background-color: #40413e;
+		background-color: rgba(0, 0, 0, 0.5);
 		border: none;
 		color: white;
+		text-indent: 3%;
 	}
 	textarea {
 		height: 30em;
@@ -369,6 +372,9 @@
 	}
 
 	@media (max-width: 930px) {
+		textarea{
+			height: 15em;
+		}
 		.wscont {
 			display: grid;
 			grid-template-columns: 1fr;
