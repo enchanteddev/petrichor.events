@@ -135,16 +135,16 @@
 
     @media (max-width:2000px){
         h1{
-        font-size:7vw;
+        font-size:5vw;
         }
         .abouttext{
-            font-size: 30px;
+            font-size: 20px;
         }
         .happening{
-            font-size: 30px;
+            font-size: 20px;
         }
         .butt{
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 

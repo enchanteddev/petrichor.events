@@ -87,7 +87,7 @@
 		<div class="sel">
 			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
 			<a href="/events/technical" class="event" style="background-image: url({Tech});">TECHNICAL</a>
-			<a href="/events/informals" class="event" style="background-image: url({Tech});">INFORMALS</a>
+			<a href="/informals" class="event" style="background-image: url({Tech});">INFORMALS</a>
 		</div>
 	</div>
 	<div class="banner workshops">
