@@ -12,10 +12,14 @@
             <div class="informal" id="{ws.name}">
                 <div class="about" >
                     <div class="banner">
-                        <h1>{ws.name}</h1>
+                        <h1 >{ws.name}</h1>
                         <hr>
-                        <p>Happening on <strong style="color:cyan">{ws.date}</strong> at <strong style="color:lightgreen">{ws.location}</strong></p>
-                        <p>{ws.about}</p>
+                        <p class="happening">Happening on <strong class="happening" style="color:cyan">{ws.date}</strong> at <strong class ="happening" style="color:lightgreen">{ws.location}</strong></p>
+                        <p class="abouttext">{ws.about}</p>
+                        {#if ws.registerLink}
+                            <a href={ws.registerLink} class="butt">Register Now</a>
+                            <p class="happening"> Checkout the <strong><a href="https://docs.google.com/document/d/1adhrxokM3ZU9h4fu-wiLbPZTTJafiKyMfZaLR22pJps/edit?usp=sharing" style="color:cyan"> Rulebook </a></strong> for more details</p>
+                        {/if}
                     </div>
                 </div>
                 <div class="img" style="background-image: url('{ws.image}');"></div>
@@ -25,6 +29,9 @@
 </div>
 
 <style>
+    h1{
+        font-size:5vw;
+    }
     .main{
         background-color: #242020;
     }
@@ -111,19 +118,109 @@
         border-radius: 2em;
     }
 
+    @media (max-width:3000px){
+        h1{
+        font-size:10vw;
+        }
+        .abouttext{
+            font-size: 45px;
+        }
+        .happening{
+            font-size: 50px;
+        }
+        .butt{
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width:2000px){
+        h1{
+        font-size:7vw;
+        }
+        .abouttext{
+            font-size: 30px;
+        }
+        .happening{
+            font-size: 30px;
+        }
+        .butt{
+            font-size: 25px;
+        }
+    }
+
+
+    @media (max-width:1800px){
+        h1{
+        font-size:5vw;
+        }
+    }
+
+    @media (max-width:1500px){
+        h1{
+        font-size:4vw;
+        }
+        .abouttext{
+            font-size: 20px;
+        }
+        .happening{
+            font-size: 25px;
+        }
+        .butt{
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width:1300px){
+        h1{
+        font-size:3vw;
+        }
+        .abouttext{
+            font-size: 18px;
+        }
+        .happening{
+            font-size: 23px;
+        }
+        .butt{
+            font-size: 18px;
+        }
+    }
+
     @media (max-width: 1000px){
+        h1{
+        font-size:2vw;
+        }
+        .abouttext{
+            font-size: small;
+        }
+        .happening{
+            font-size: small;
+        }
+        .butt{
+            font-size: small;
+        }
         .banner{
             margin: 0em;
         }
         .img{
             margin: 2em 0.5em;
         }
-        *{
-            /* font-size: smaller;   // try this also*/ 
-            font-size: small; 
-        }
         .informal{
             height: 50%;
+        }
+    }
+
+    @media (max-width: 700px){
+        h1{
+        font-size:4vw;
+        }
+        .abouttext{
+            font-size: 8px;
+        }
+        .happening{
+            font-size: 8px;
+        }
+        .butt{
+            font-size: 8px;
         }
     }
 </style>

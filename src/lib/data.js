@@ -53,6 +53,9 @@ import twhiteb from '$lib/assets/Merch/White T F IIT P1.png'
 import hoodief from '$lib/assets/Merch/Hoodie F.png'
 import hoodieb from '$lib/assets/Merch/Hoodie B.png'
 import cap from '$lib/assets/Merch/Cap.png'
+import laser from '$lib/assets/Informals/Lazer.jpg'
+import VR from '$lib/assets/Informals/ARVR.jpg'
+import Chess from '$lib/assets/Informals/Chess.jpg'
 
 
 export const closedRegistrations = [
@@ -1675,7 +1678,7 @@ export let technical = {
             "1. The bot would be checked for safety before starting and will be disqualified if found unsafe for other participants.",
             "2. Only one team member is allowed to handle the bot. No other team member is allowed to enter the arena.",
              "3.The bot will be liable for disqualification if it causes any kind of damage to the arena. ",
-             "4.    is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
+             "4. The bot is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
              "5.Any damages to the blocks will lead to immediate disqualification.",
              "6.A maximum of 6 minutes will be given to each team.",
               "7. The arena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
@@ -2105,13 +2108,30 @@ export const merch = [
     },
 
 ]
+
 export const informals = [
     {
-      name: 'test1',
-      about: 'testststsetsetet',
-      location: 'nila',
-      date: '12-30-13',
-      image: Abhijith,
+      name: 'King’s Knightmare',
+      about: "Ready to make your move? ♟️ Join King's Knightmare, the online chess showdown by Petrichor'24 in collaboration with chess.com. Registration is free, and exciting prizes await the strategic minds who conquer the board. Don't miss out—register now and let the chess battle begin!",
+      location: 'Online',
+      date: ' 21-01-2024 and 22-01-2024',
+      image: Chess,
+      registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdzJLUonZ4UTuellHrrp2kATS-zTh8ZxJ6f0C3QcujdmFh4Cg/viewform?usp=sf_link"
+    },
+    {
+      name: 'Laser Tag',
+      about: "Dive into the ultimate laser showdown! Gather your squad, suit up in neon, and embark on an adrenaline-fueled mission under the glow of lasers. 🌟 Are you ready for the ultimate tag challenge?",
+      location: 'Nila Campus',
+      date: ' 27-01-2024 and 28-01-2024',
+      image: laser,
+      registerLink: null
+    },
+    {
+      name: 'VR Gaming',
+      about: "Step into the future of gaming at our VR Event! Immerse yourself in mind-bending worlds, conquer virtual challenges, and redefine your gaming experience. It's not just a game; it's a virtual adventure!",
+      location: 'Nila Campus',
+      date: ' 27-01-2024 and 28-01-2024',
+      image: VR,
       registerLink: null
     }
 ]
