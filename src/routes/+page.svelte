@@ -83,7 +83,7 @@
 	setInterval(setLang, 2000);
 </script>
 
-<div class="main" style="--p: '{curr_petr_phrase}'">
+<div class="main atmos" style="--p: '{curr_petr_phrase}'">
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div
 		bind:this={ptext}

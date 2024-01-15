@@ -22,7 +22,7 @@
 	let transactionID: string;
 	let CAcode: string;
 	let imgurl: string;
-	let amount = data.fees;
+	let amount = data.fees * $registerData.registeredEmails.length;
 	let success = false;
 	let qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`;
 
@@ -132,6 +132,7 @@
 						setTimeout(() => {
 							goto('/profile');
 						}, 500);
+						$registerData.registeredEmails = []
 					} else if (data.status == 500) {
 						alert(data.message);
 						setTimeout(() => {

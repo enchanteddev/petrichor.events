@@ -64,8 +64,8 @@
 	<div class="title">
 		<div class="imgparent" />
 		<div class="tit">
-			<h1>PETRICHOR</h1>
-			<h1 class="date">2024</h1>
+			<h1 class="atmos">PETRICHOR</h1>
+			<h1 class="date atmos">2024</h1>
 			<div class="bupal">
 				<a href="#events" class="cool">Explore Now</a>
 				<a href="/register" class="cool">Sign Up</a>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 	<div class="banner about">
-		<h1>ABOUT PETRICHOR</h1>
+		<h1>ABOUT <span class="atmos aboutpetr">PETRICHOR</span></h1>
 		<p>
 			Petrichor- the annual techno-cultural fest of IIT Palakkad is back again, and better than ever
 			before. Also, yes, it's offline. We, the students of IIT Palakkad, conduct Petrichor every
@@ -85,11 +85,11 @@
 		</p>
 	</div>
 	<div class="banner events" id="events">
-		<h1 style="margin-bottom: 0;">EVENTS</h1>
+		<h1 class="atmos" style="margin-bottom: 0;">EVENTS</h1>
 		<div class="sel">
 			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
 			<a href="/events/technical" class="event" style="background-image: url({Tech});">TECHNICAL</a>
-			<a href="/events/informals" class="event" style="background-image: url({Tech});">INFORMALS</a>
+			<a href="/informals" class="event" style="background-image: url({Tech});">INFORMALS</a>
 		</div>
 	</div>
 	<div class="banner workshops">
@@ -125,6 +125,13 @@
 </div>
 
 <style>
+	.event > h1{
+
+	}
+	.aboutpetr{
+		font-size: 90px;
+		color: #8f60c1
+	}
 .cont{
 		transition: 200ms ease;
 	width: min-content;
@@ -248,7 +255,8 @@
 		font-size: 20px;
 	}
 	.workshops {
-		background-color: rgb(29, 0, 59);
+		background-color: rgb(29, 0, 59, 0.30);
+		backdrop-filter: blur(12px);
 		color: rgb(255, 255, 255);
 	}
 	.banner {
@@ -263,7 +271,7 @@
 		/* background: white; */
 	}
 	h1.date {
-		font-weight: 100;
+		font-weight: 1;
 		/* text-align: right; */
 	}
 	.imgparent {

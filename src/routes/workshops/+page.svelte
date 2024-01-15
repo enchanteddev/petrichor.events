@@ -29,6 +29,7 @@
                         <p>Happening on <strong style="color:cyan">{ws.date}</strong> at <strong style="color:lightgreen">{ws.location}</strong></p>
                         <p>{ws.about}</p>
                         <a href="https://forms.gle/9LhejkwmaBfGqFsw9" class="butt">Register Now for ₹{ws.fees}</a>
+                        {#if ws.prereq.length > 0}
                         <p style="color: orange;">Some knowledge in
                             {#each ws.prereq as spk, i}
                                 <span><strong>{spk}</strong>  {i == ws.prereq.length - 1 ? "" : (
@@ -36,6 +37,7 @@
                                 )} </span>
                             {/each} is expected.
                         </p>
+                        {/if}
                     </div>
                 </div>
                 <div class="img" style="background-image: url('{ws.image}');"></div>
@@ -46,7 +48,7 @@
 
 <style>
     .main{
-        background-color: #242020;
+        background-color: transparent;
     }
     .workshop .img{
         background-position: center;
@@ -92,7 +94,7 @@
     .workshop:nth-child(even){
         display: flex;
         flex-direction: row-reverse;
-        background-color: rgb(115, 76, 160);
+        background-color: transparent;
         /* color: black */
     }
     .workshop:nth-child(odd){

@@ -53,6 +53,9 @@ import twhiteb from '$lib/assets/Merch/White T F IIT P1.png'
 import hoodief from '$lib/assets/Merch/Hoodie F.png'
 import hoodieb from '$lib/assets/Merch/Hoodie B.png'
 import cap from '$lib/assets/Merch/Cap.png'
+import laser from '$lib/assets/Informals/Lazer.jpg'
+import VR from '$lib/assets/Informals/ARVR.jpg'
+import Chess from '$lib/assets/Informals/Chess.jpg'
 
 
 export const closedRegistrations = [
@@ -123,8 +126,8 @@ export let cultural = {
       },
 
      {
-        "name": "Click n' Roll: A Showcase of Frames",
-        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "name": "Click n' Roll",
+        "about": "A Showcase of Frames. This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
         "rulebook": {
           "structure": [
             "1. Participants can compete individually or form teams of up to two members.",
@@ -784,9 +787,9 @@ export let cultural = {
         "id": "CF12"
       },
        {
-        "name": "KATHA - where words become world",
+        "name": "KATHA",
         'theme': "Write about a character who discovers a mysterious portal that leads to infinite parallel universes, each with its own set of transformations and challenges.",
-        "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
+        "about": "Where words become world. An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
             "This event will be conducted online."
@@ -832,9 +835,9 @@ export let cultural = {
         "id": "CP09"
       },
      {
-        "name": "KAVYA - weaving verses, crafting dreams",
+        "name": "KAVYA",
         "theme": "Create a poem that reflects on the cyclical nature of life, weaving themes of birth, growth, decay, and rebirth into a tapestry of infinite existence.",
-        "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
+        "about": "Weaving verses, crafting dreams. An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
             "This event will be conducted online."
@@ -1675,7 +1678,7 @@ export let technical = {
             "1. The bot would be checked for safety before starting and will be disqualified if found unsafe for other participants.",
             "2. Only one team member is allowed to handle the bot. No other team member is allowed to enter the arena.",
              "3.The bot will be liable for disqualification if it causes any kind of damage to the arena. ",
-             "4.    is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
+             "4. The bot is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
              "5.Any damages to the blocks will lead to immediate disqualification.",
              "6.A maximum of 6 minutes will be given to each team.",
               "7. The arena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
@@ -2009,7 +2012,7 @@ export let workshops =  {
         {
             name: 'Product Design',
             about: "Unlock the art and science of effective product management in our immersive workshop, where you'll refine your skills in ideation, prioritization, and execution to drive successful product outcomes.",
-            prereq: ['None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
@@ -2035,7 +2038,7 @@ export let workshops =  {
         {
             name: 'Startup and Entrepreneurship',
             about: 'Empowering aspiring innovators and visionaries to navigate the entrepreneurial landscape through our immersive Startup and Entrepreneurship workshop.',
-            prereq: [ 'None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
@@ -2048,7 +2051,7 @@ export let workshops =  {
         {
             name: 'Measurement Principles and Uncertainty Analysis',
             about: 'Join us for an immersive workshop exploring Measurement Principles and Uncertainty Analysis, where precision meets insight in every measurement.',
-            prereq: [ 'None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
@@ -2105,13 +2108,30 @@ export const merch = [
     },
 
 ]
+
 export const informals = [
     {
-      name: 'test1',
-      about: 'testststsetsetet',
-      location: 'nila',
-      date: '12-30-13',
-      image: Abhijith,
+      name: 'King’s Knightmare',
+      about: "Ready to make your move? ♟️ Join King's Knightmare, the online chess showdown by Petrichor'24 in collaboration with chess.com. Registration is free, and exciting prizes await the strategic minds who conquer the board. Don't miss out—register now and let the chess battle begin!",
+      location: 'Online',
+      date: ' 21-01-2024 and 22-01-2024',
+      image: Chess,
+      registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdzJLUonZ4UTuellHrrp2kATS-zTh8ZxJ6f0C3QcujdmFh4Cg/viewform?usp=sf_link"
+    },
+    {
+      name: 'Laser Tag',
+      about: "Dive into the ultimate laser showdown! Gather your squad, suit up in neon, and embark on an adrenaline-fueled mission under the glow of lasers. 🌟 Are you ready for the ultimate tag challenge?",
+      location: 'Nila Campus',
+      date: ' 27-01-2024 and 28-01-2024',
+      image: laser,
+      registerLink: null
+    },
+    {
+      name: 'VR Gaming',
+      about: "Step into the future of gaming at our VR Event! Immerse yourself in mind-bending worlds, conquer virtual challenges, and redefine your gaming experience. It's not just a game; it's a virtual adventure!",
+      location: 'Nila Campus',
+      date: ' 27-01-2024 and 28-01-2024',
+      image: VR,
       registerLink: null
     }
 ]

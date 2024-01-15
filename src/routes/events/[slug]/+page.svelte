@@ -50,7 +50,7 @@
 			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		} else {
 			$registerData.eventID = currentEvent.id;
-			$registerData.registeredEmails.push($userEmail);
+			$registerData.registeredEmails = [$userEmail];
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
 			loading = true 
@@ -120,7 +120,7 @@
 	</div>
 	<div class="content">
 		<div class="banner">
-			<h1 class="atmos" style="height: {currentEvent.name.length > 25 ? '15rem' : '10rem'};">
+			<h1 class="atmos" style="height: {currentEvent.name.length > 18 ? '14rem' : '10rem'};">
 				{currentEvent && currentEvent.name}
 			</h1>
 			<span>{currentEvent.date}</span>
@@ -301,7 +301,7 @@
 		background-position: center;
 		background-size: cover;
 		transition: background-image 2s;
-		filter: blur(5px);
+		filter: blur(5px) brightness(50%);
 	}
 	.sidebar {
 		overflow-y: scroll;
