@@ -14,6 +14,7 @@
 
 <style>
     .main{
+        font-family: var(--pfont);
         background-color: rgb(27, 27, 27);
         width: min-content;
         margin: 1em;
@@ -32,6 +33,7 @@
         background-repeat: no-repeat;
     }
     h2{
+        font-family: var(--pfont);
         margin-left: 1rem;
         width: max-content;
         /* color: black; */

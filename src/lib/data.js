@@ -297,7 +297,7 @@ export let cultural = {
             "phone": "9304560629"
           },
           {
-            "name": "Dhruvadeep Malakar",
+            "name": "Dhruvadeep",
             "image": Dhruvadeep,
             "phone": "6001301742"
           }
@@ -437,7 +437,7 @@ export let cultural = {
             "phone": "9207267393"
           },
           {
-            "name": "Abhijith Sureshbabu",
+            "name": "Abhijith",
             "image": Abhijith,
             "phone": "8075821728"
           },
@@ -584,7 +584,7 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pushti Amit Vasoya",
+            "name": "Pushti Vasoya",
             "image": Pushti,
             "phone": "9429233780"
           },
