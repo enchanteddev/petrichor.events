@@ -87,6 +87,7 @@
 		<div class="sel">
 			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
 			<a href="/events/technical" class="event" style="background-image: url({Tech});">TECHNICAL</a>
+			<a href="/events/informals" class="event" style="background-image: url({Tech});">INFORMALS</a>
 		</div>
 	</div>
 	<div class="banner workshops">
@@ -212,7 +213,7 @@
 		/* 		background-image: url('https://www.nme.com/wp-content/uploads/2020/08/we-the-fest-2020-virtual-home-edition.jpg'); */
 		height: 65vh;
 		aspect-ratio: 0.95;
-		margin-inline: 1em;
+		margin-inline: 0.5em;
 		background-size: cover;
 		color: white;
 		display: grid;
@@ -360,6 +361,11 @@
 		.ws{
 			height: 250px;
 		}
+		.event{
+			width: 28vw;
+			height: 60vh;
+			margin-top: 1.2em;
+		}
 	}
 
 	@media (max-width: 930px) {
@@ -424,6 +430,9 @@
 		}
 		p {
 			text-align: justify;
+		}
+		.events{
+			margin: 7em;
 		}
 	}
 	@media screen and (max-width: 330px) {
