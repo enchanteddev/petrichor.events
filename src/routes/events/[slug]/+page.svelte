@@ -112,7 +112,7 @@
 					setEvent(event);
 				}}
 			>
-				<p>
+				<p class="atmos"> 
 					{event.name}
 				</p>
 			</div>
@@ -120,7 +120,7 @@
 	</div>
 	<div class="content">
 		<div class="banner">
-			<h1 style="height: {currentEvent.name.length > 25 ? '15rem' : '10rem'};">
+			<h1 class="atmos" style="height: {currentEvent.name.length > 25 ? '15rem' : '10rem'};">
 				{currentEvent && currentEvent.name}
 			</h1>
 			<span>{currentEvent.date}</span>
@@ -227,6 +227,9 @@
 </div>
 
 <style>
+	.banner > h1{
+		font: var(--sfont);
+	}
 	.button-cont {
 		width: 100%;
 		display: grid;

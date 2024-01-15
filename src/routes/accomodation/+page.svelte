@@ -112,7 +112,7 @@
 		<br />
 		<br />
 		<div class="jj_acco_pic_container_button button-85">
-			<a class="jj_clean_a" href="https://forms.gle/idhAfBGCPjvWDmNJ8" target="_blank">
+			<a class="jj_clean_a" href="https://forms.gle/e3ugEtTcvLsp7dqq7" target="_blank">
 				{' '}
 				Book Now{' '}
 			</a>
@@ -152,19 +152,31 @@
 		margin-left: 2rem;
 		margin-top: -5rem;
 	}
-	.det,
-	.findet {
-		position: relative;
-		left: 50%;
-		transform: translate(-50%);
-		margin-bottom: 5rem;
-		background-color: black;
-		width: 70rem;
-		padding: 2rem;
-		border-radius: 5%/15%;
-		opacity: 0.85;
+	@media (min-width:600px){
+		.det,
+		.findet {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			margin-bottom: 5rem;
+			background-color: black;
+			width: 70rem;
+			padding: 2rem;
+			border-radius: 5%/15%;
+			opacity: 0.85;
+		}
 	}
 	.findet {
 		border-radius: 5%/10%;
+	}
+
+	@media (max-width:600px){
+		.det{
+			margin: 2rem;
+		}
+		.findet{
+			margin-right: 1.5rem;
+			margin-left: -1.5rem;
+		}
 	}
 </style>

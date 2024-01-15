@@ -150,7 +150,8 @@
 				'vasantha'
 				'sbi'
 				'canara'
-				'honeywell';
+				'honeywell'
+				'chess';
 		}
 		#all1{
 			grid-template-areas: 'cazzkaro';

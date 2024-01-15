@@ -94,13 +94,15 @@
 		<div class="wscont">
 			{#each workshops.workshops as w}
 				<a href="/workshops#{w.name}" style="text-decoration:None;">
+				<div class="cont">
 					<div
 						class="ws"
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
-						<h2>{w.name}</h2>
-						<p>{w.about}</p>
 					</div>
+					<h2>{w.name}</h2>
+						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
+				</div>
 				</a>
 			{/each}
 		</div>
@@ -120,6 +122,11 @@
 </div>
 
 <style>
+.cont{
+		transition: 200ms ease;
+	width: min-content;
+	margin-bottom: 4em;
+}
 	.fbut {
 		margin-bottom: 1em !important;
 		font-size: 20px !important;
@@ -129,17 +136,26 @@
 		display: flex;
 	}
 	.ws {
+		position: relative;
 		width: 25em;
 		background-color: rgba(128, 128, 128, 0.223);
+		filter: brightness(70%);
 		padding: 0.5em;
 		margin: 1em;
 		border-radius: 1em;
 		background-position: center;
 		background-size: cover;
 		color: white;
-		transition: 200ms ease;
 		background-size: cover;
 		background-repeat: no-repeat;
+		z-index: 1;
+	}
+	.cont > h2{
+		position: relative;
+		margin-top: -3.5em;
+		margin-left: 1.5em !important;
+		z-index: 2;
+		color: white;
 	}
 	input,
 	textarea {
@@ -157,7 +173,7 @@
 		border-radius: 1em;
 		margin-bottom: 1em;
 	}
-	.ws:hover {
+	.cont:hover {
 		transform: translateY(-1em);
 	}
 	.none {
@@ -228,8 +244,8 @@
 		font-size: 20px;
 	}
 	.workshops {
-		background-color: rgb(192, 235, 255);
-		color: black;
+		background-color: rgb(29, 0, 59);
+		color: rgb(255, 255, 255);
 	}
 	.banner {
 		z-index: 2;
@@ -357,8 +373,10 @@
 			padding: 55rem 0rem;
 		} 
 		.ws {
-			width: 15em;
+			width: 20em;
+			height: 15em;
 		}
+		
 		.main {
 			width: 100vw;
 		}
