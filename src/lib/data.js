@@ -53,9 +53,9 @@ import twhiteb from '$lib/assets/Merch/White T F IIT P1.png'
 import hoodief from '$lib/assets/Merch/Hoodie F.png'
 import hoodieb from '$lib/assets/Merch/Hoodie B.png'
 import cap from '$lib/assets/Merch/Cap.png'
-import laser from '$lib/assets/Informals/Lazer.png'
-import VR from '$lib/assets/Informals/ARVR.png'
-import Chess from '$lib/assets/Informals/Chess.png'
+import laser from '$lib/assets/Informals/Lazer.jpg'
+import VR from '$lib/assets/Informals/ARVR.jpg'
+import Chess from '$lib/assets/Informals/Chess.jpg'
 
 
 export const closedRegistrations = [
@@ -2108,6 +2108,7 @@ export const merch = [
     },
 
 ]
+
 export const informals = [
     {
       name: 'King’s Knightmare',
@@ -2116,15 +2117,15 @@ export const informals = [
       date: ' 21-01-2024 and 22-01-2024',
       image: Chess,
       registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdzJLUonZ4UTuellHrrp2kATS-zTh8ZxJ6f0C3QcujdmFh4Cg/viewform?usp=sf_link"
-    }
+    },
     {
       name: 'Laser Tag',
       about: "Dive into the ultimate laser showdown! Gather your squad, suit up in neon, and embark on an adrenaline-fueled mission under the glow of lasers. 🌟 Are you ready for the ultimate tag challenge?",
       location: 'Nila Campus',
       date: ' 27-01-2024 and 28-01-2024',
-      image: Laser,
+      image: laser,
       registerLink: null
-    }
+    },
     {
       name: 'VR Gaming',
       about: "Step into the future of gaming at our VR Event! Immerse yourself in mind-bending worlds, conquer virtual challenges, and redefine your gaming experience. It's not just a game; it's a virtual adventure!",
