@@ -4,43 +4,47 @@
     export let personData: person
 </script>
 
-<div style="background-image: url('{personData.image}');">
+<div class="main">
+    <div class="bg" style="background-image: url('{personData.image}');">
+    </div>
     <h2>{personData.name}</h2>
-    <p>📞 {personData.phone}</p>
+    <p>{personData.phone}</p>
 </div>
 
 
 <style>
-    div{
+    .main{
+        background-color: rgb(27, 27, 27);
+        width: min-content;
+        margin: 1em;
+        border-radius: 1em;
+        overflow: hidden;
+        width: 14em;
+    }
+    div.bg{
         background-size: cover;
         background-position: center;
         position: relative;
         height: 12em;
         aspect-ratio: 1;
         border-radius: 0.4em;
-        margin: 2rem;
+        margin: 1rem;
         background-repeat: no-repeat;
     }
     h2{
-        position: absolute;
-        bottom: 1em;
-        margin: 0;
+        margin-left: 1rem;
+        width: max-content;
         /* color: black; */
     } 
     p{
-        position: absolute;
-        height: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.05em;
+        margin: 1rem;
+        margin-top: -0.5rem;
         overflow: hidden;
-        width: 100%;
-        margin: 0;
-        bottom: -0em;
-        background-color: rgb(186, 22, 198);
+        width: min-content;
         text-align: center;
         border-radius: 0 0 0.4em 0.4em;
-    }
-    div:hover p{
-        /* z-index: -1; */
-        height: 1.25em;
     }
 
     @media screen and (max-width:600px){

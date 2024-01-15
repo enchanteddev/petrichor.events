@@ -2,6 +2,7 @@
 <script lang="ts">
 	import Cult from '$lib/assets/Cult&Tech/cult.jpg';
 	import Tech from '$lib/assets/Cult&Tech/TechnicalWeb.jpg';
+	import Infor from '$lib/assets/Cult&Tech/Informals.png';
 	import { enhance } from '$app/forms';
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
@@ -72,7 +73,7 @@
 	</div>
 	<div class="banner about">
 		<h1>ABOUT <span class="atmos aboutpetr">PETRICHOR</span></h1>
-		<p>
+		<p style="text-align: justify; line-height: 1.5em">
 			Petrichor- the annual techno-cultural fest of IIT Palakkad is back again, and better than ever
 			before. Also, yes, it's offline. We, the students of IIT Palakkad, conduct Petrichor every
 			year, and made sure last year's online event was enthralling for all its participants. Now the
@@ -87,11 +88,11 @@
 		<div class="sel">
 			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
 			<a href="/events/technical" class="event" style="background-image: url({Tech});">TECHNICAL</a>
-			<a href="/informals" class="event" style="background-image: url({Tech});">INFORMALS</a>
+			<a href="/informals" class="event" style="background-image: url({Infor});">INFORMALS</a>
 		</div>
 	</div>
 	<div class="banner workshops">
-		<h1>Workshops</h1>
+		<h1 class="atmos">Workshops</h1>
 		<div class="wscont">
 			{#each workshops.workshops as w}
 				<a href="/workshops#{w.name}" style="text-decoration:None;">
@@ -123,8 +124,9 @@
 </div>
 
 <style>
-	.event > h1{
-
+	.workshops > h1{
+		font-size: 65px;
+		
 	}
 	.aboutpetr{
 		font-size: 90px;
@@ -359,7 +361,7 @@
 	@media screen and (min-width: 930px){
 		.wscont {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 		.workshops{
 			width: 100%;

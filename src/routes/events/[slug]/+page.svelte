@@ -125,7 +125,7 @@
 			</h1>
 			<span>{currentEvent.date}</span>
 			{#if currentEvent.theme}
-			<h2>Theme</h2>
+			<h2>THEME</h2>
 			<p style="margin-top: -1rem;">{currentEvent.theme}</p>
 			{/if}
 			<p>{currentEvent && currentEvent.about}</p>
@@ -148,7 +148,7 @@
                     {/each}
                 {/each} -->
 				{#if currentEvent.rulebook.structure.length > 0}
-					<h2>Structure</h2>
+					<h2>STRUCTURE</h2>
 				{/if}
 				{#if currentEvent.rulebook.structure}
 				{#each currentEvent.rulebook.structure as struct}
@@ -157,7 +157,7 @@
 				{/if}
 			</div>
 			<div class="rules">
-				<h2>Rules</h2>
+				<h2>RULES</h2>
 				{#if currentEvent.rulebook.rules}
 				{#each currentEvent.rulebook.rules as struct}
 					<li class="nodot">{struct}</li>
@@ -165,7 +165,7 @@
 				{/if}
 			</div>
 			<div class="judging">
-				<h2>Judging Criteria</h2>
+				<h2>JUDGING CRITERIA</h2>
 				{#if currentEvent.rulebook.judging}
 				{#each currentEvent.rulebook.judging as struct}
 					<li class="nodot">{struct}</li>
@@ -173,7 +173,7 @@
 				{/if}
 			</div>
 			<div class="prizes">
-				<h2>Prizes Worth:</h2>
+				<h2>PRIZES WORTH</h2>
 				{#if currentEvent.rulebook.prizes}
 				{#if currentEvent.id.slice(0,1)=='T'}
 				{#each currentEvent.rulebook.prizes as struct}
@@ -181,15 +181,15 @@
 				{/each}
 				{/if}
 				{#if currentEvent.id.slice(0,1)=='C'}
-				{#each currentEvent.rulebook.prizes as struct}
-					<li>{struct}</li>
+				{#each currentEvent.rulebook.prizes as struct, index}
+					<li style="font-size: 22px; list-style: none; font-weight: 400">Prize for position {index + 1} : {struct}</li>
 				{/each}
 				{/if}
 				{/if}
 			</div>
 		</div>
 		<div id="register">
-			<h2>Organisers</h2>
+			<h2 >ORGANISERS</h2>
 			<div class="orgcont">
 				{#each currentEvent.organisers as p}
 					<Person personData={p} />
@@ -234,6 +234,7 @@
 		width: 100%;
 		display: grid;
 		place-items: center;
+		margin-bottom: 3em;
 	}
 	.orgcont {
 		display: flex;

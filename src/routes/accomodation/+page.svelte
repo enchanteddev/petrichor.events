@@ -1,7 +1,7 @@
 <div class="flex justify-center items-center h-screen bg-blue-lightest ayush-acc-whole">
 	<div class="det">
 		<div class="je_acco_banger_title_contaier">
-			<h1 class="merch-head">Accomodations</h1>
+			<h1 class="merch-head atmos">Accomodations</h1>
 		</div>
 		<ul>
 			<li>Accommodation is arranged at external hotels.</li>
@@ -25,7 +25,7 @@
 				<br />
 				<br />
 				<div class="findet">
-				<h5 style="font-size: larger;color: #a226bc;text-align: center;">
+				<h5 class="atmos" style="font-size: 36px;color: rgb(216, 191, 238);text-align: center;">
 					Terms & conditions
 				</h5>
 					<ul>
@@ -128,10 +128,11 @@
 	}
 	.merch-head {
 		text-align: center;
-		color: blueviolet;
+		color: rgb(216, 191, 238);
+		font-size: 60px;
 	}
 	.jj_acco_pic_container_button {
-		background-color: #28282d;
+		background-color: #28282d6c;
 		position: relative;
 		width: 8rem;
 		height: 3rem;
@@ -159,7 +160,7 @@
 			left: 50%;
 			transform: translate(-50%);
 			margin-bottom: 5rem;
-			background-color: black;
+			background-color: rgba(0, 0, 0, 0.442);
 			width: 70rem;
 			padding: 2rem;
 			border-radius: 5%/15%;
