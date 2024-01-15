@@ -116,7 +116,11 @@ h2{
      width: 25%;
  }
 
-
+@media screen and (max-width:3000px){
+    .image{
+        height:30vw ;
+    }
+}
  
  @media screen and (max-width:1100px)  {
     .widthcond2{
@@ -136,6 +140,10 @@ h2{
     .image{
         height:400px ;
     }
+    .thirdswidth{
+        float: center;
+    width: 50%;
+}
 
 
 }
@@ -154,6 +162,7 @@ h2{
     .widthcond1,.widthcond2{
         width: 70%;
     }
+
     
   }
  
