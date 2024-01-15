@@ -50,7 +50,7 @@
 			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		} else {
 			$registerData.eventID = currentEvent.id;
-			$registerData.registeredEmails.push($userEmail);
+			$registerData.registeredEmails = [$userEmail];
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
 			loading = true 
