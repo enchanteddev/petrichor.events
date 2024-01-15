@@ -10,8 +10,8 @@
 		linkedin,
 		twitter,
 		youtube,
-        alignJustify,
-        remove
+		alignJustify,
+		remove
 	} from 'svelte-awesome/icons';
 	import bg from '$lib/assets/dark.jpg';
 	import pet from '$lib/assets/pet.png';
@@ -29,12 +29,12 @@
 		winsize = window.innerWidth;
 	});
 
-    let isVisN = false;
+	let isVisN = false;
 </script>
 
 <Loading spinning={loading} />
 
-<div class="bg" >
+<div class="bg">
 	{#if data.path != '/' && winsize > 600}
 		<div class="nav">
 			<nav class="nnav">
@@ -79,60 +79,84 @@
 	{/if}
 	{#if data.path != '/' && winsize < 600}
 		<nav class="navbar">
-			<!-- <div class="navbar-container container">
-				<input type="checkbox" name="" id="" />
-				<div class="hamburger-lines">
-					<span class="line line1" />
-					<span class="line line2" />
-					<span class="line line3" />
-				</div>
-				<ul class="menu-items">
-					<li>
-						<a href={$isLogin ? '/profile' : '/login'} class="login"
-							><Icon data={user} scale={2.5} /></a
-						>
-					</li>
-					<li><a href="/home#events">Events</a></li>
-					<li><a href="/workshops">Workshops</a></li>
-					<li><a href="/sponsors">Sponsors</a></li>
-					<li><a href="/accomodation">Accomodation</a></li>
-					<li><a href="/merch">Merch</a></li>
-				</ul>
-			</div> -->
-            <button class="ham" on:click={() => {
-                isVisN = !isVisN
-            }}><Icon data={isVisN ? remove :alignJustify} scale={isVisN ? 2 : 1.5}/></button>
-            <ul class="menu-items {isVisN ? "vis" : ""}">
-                <li on:click={() => {
-                    isVisN = false;
-                }}>
-				<a href="/home">
-                    Home
-				</a>
-                </li>
-                <li on:click={() => {
-                    isVisN = false;
-                }}>
-                    <a href={$isLogin ? '/profile' : '/login'} class="login"
-                        >Login</a
-                    >
-                </li>
-                <li on:click={() => {
-                    isVisN = false;
-                }}><a href="/home#events">Events</a></li>
-                <li on:click={() => {
-                    isVisN = false;
-                }}><a href="/workshops">Workshops</a></li>
-                <li on:click={() => {
-                    isVisN = false;
-                }}><a href="/sponsors">Sponsors</a></li>
-                <li on:click={() => {
-                    isVisN = false;
-                }}><a href="/accomodation">Accomodation</a></li>
-                <li on:click={() => {
-                    isVisN = false;
-                }}><a href="/merch">Merch</a></li>
-            </ul>
+			<button
+				class="ham"
+				on:click={() => {
+					isVisN = !isVisN;
+				}}><Icon data={isVisN ? remove : alignJustify} scale={isVisN ? 2 : 1.5} /></button
+			>
+			<ul class="menu-items {isVisN ? 'vis' : ''}">
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/aboutus">About Us</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/home"> Home </a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href={$isLogin ? '/profile' : '/login'} class="login">Login</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/home#events">Events</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/workshops">Workshops</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/sponsors">Sponsors</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/accomodation">Accomodation</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/merch">Merch</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/home#contact">Contact Us</a>
+				</li>
+				<!-- <li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/reachus">Reach Us</a>
+				</li> -->
+			</ul>
 		</nav>
 	{/if}
 	<div class="parent">
@@ -199,44 +223,44 @@
 </div>
 
 <style>
-.ham{
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: rgb(144, 144, 144);
-    margin-top: 1em;
-    margin-left: 0.5em;
-}
-nav{
-    position: fixed;
-    top:0;
-    z-index: 1000000000000000000;
-}
-.button{
-    z-index: 1;
-}
-	.menu-items{
-        height: 100svh;
-        width: 60svw;
-        position: absolute;
-        top: -1em;
-        left: calc(-60svw - 10em);
-        background-color: rgba(49, 49, 49, 0.718);
-        backdrop-filter: blur(12px);
-        z-index: -1;
-        list-style: none;
-        padding-top: 30svh;
-        transition: 200ms ease-in-out;
-    }
-    .menu-items>li{
-        padding-bottom: 1em;
-        margin-left: -1em;
-        font-size: 25px;
-        text-align: center;
-    }
-    .vis{
-        left: 0;
-    }
+	.ham {
+		background-color: transparent;
+		outline: none;
+		border: none;
+		color: rgb(144, 144, 144);
+		margin-top: 1em;
+		margin-left: 0.5em;
+	}
+	nav {
+		position: fixed;
+		top: 0;
+		z-index: 1000000000000000000;
+	}
+	.button {
+		z-index: 1;
+	}
+	.menu-items {
+		height: 100svh;
+		width: 60svw;
+		position: absolute;
+		top: -1em;
+		left: calc(-60svw - 10em);
+		background-color: rgba(49, 49, 49, 0.718);
+		backdrop-filter: blur(12px);
+		z-index: -1;
+		list-style: none;
+		padding-top: 20svh;
+		transition: 200ms ease-in-out;
+	}
+	.menu-items > li {
+		padding-bottom: 1em;
+		margin-left: -1em;
+		font-size: 25px;
+		text-align: center;
+	}
+	.vis {
+		left: 0;
+	}
 	.bg:after {
 		content: '';
 		position: fixed;
@@ -425,5 +449,4 @@ nav{
       text-align: center;
     }
   } */
-	
 </style>
