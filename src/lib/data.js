@@ -54,6 +54,11 @@ import hoodief from '$lib/assets/Merch/Hoodie F.png'
 import hoodieb from '$lib/assets/Merch/Hoodie B.png'
 import cap from '$lib/assets/Merch/Cap.png'
 
+
+export const closedRegistrations = [
+    "TF07"
+]
+
 export let cultural = {
     "events": [
       {
@@ -2098,3 +2103,4 @@ export const merch = [
     },
 
 ]
+export const informals = {}

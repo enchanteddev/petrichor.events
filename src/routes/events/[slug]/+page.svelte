@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import Loading from '$lib/components/Loading.svelte';
 	import Person from '$lib/components/Person.svelte';
+	import { closedRegistrations } from '$lib/data'
 	import type { event } from '$lib/types';
 	import { isLogin, registerData, userEmail } from '$lib/stores';
 	import { readToken, readID, POST } from '$lib/index';
@@ -130,7 +131,12 @@
 			<p>{currentEvent && currentEvent.about}</p>
 			<div class="buttons">
 				<a href="#rules" class="a-unset register">LEARN MORE</a>
-				<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':`₹${currEveFee}`}</a>
+				{#if closedRegistrations.includes(currentEvent.id)}
+					<!-- svelte-ignore a11y-missing-attribute -->
+					<a class="a-unset register">Registrations Closed</a>
+				{:else}
+					<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':`₹${currEveFee}`}</a>
+				{/if}
 			</div>
 		</div>
 		<div class="rulebook" id="rules">
@@ -189,6 +195,11 @@
 					<Person personData={p} />
 				{/each}
 			</div>
+			{#if closedRegistrations.includes(currentEvent.id)}
+				<div class="button-cont">
+					<button class="register">Registrations Closed</button>
+				</div>
+			{:else}
 			<div class="button-cont">
 				{#if registering || registered}
 					<button
@@ -210,6 +221,7 @@
 					>
 				{/if}
 			</div>
+			{/if}
 		</div>
 	</div>
 </div>
