@@ -75,11 +75,10 @@ h2{
      }
  
  .image{
-     height:400px ;
      border-radius: 7px;
      border: 3px rgb(228, 222, 222);
      object-fit: cover;
-     object-position: 100% 10%;
+     object-position: 50% 10%;
  }
  
  .picture{
@@ -116,6 +115,8 @@ h2{
  .icon{
      width: 25%;
  }
+
+
  
  @media screen and (max-width:1100px)  {
     .widthcond2{
@@ -131,6 +132,9 @@ h2{
     }
     .widthcond1{
         width: 50%;
+    }
+    .image{
+        height:400px ;
     }
 
 
@@ -150,6 +154,7 @@ h2{
     .widthcond1,.widthcond2{
         width: 70%;
     }
+    
   }
  
    .personName{
