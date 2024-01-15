@@ -3,6 +3,7 @@
 	import Cult from '$lib/assets/Cult&Tech/cult.jpg';
 	import Tech from '$lib/assets/Cult&Tech/TechnicalWeb.jpg';
 	import Infor from '$lib/assets/Cult&Tech/Informals.png';
+	import SpaceButton from '$lib/components/SpaceButton.svelte';
 	import { enhance } from '$app/forms';
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
@@ -117,7 +118,7 @@
 			<input type="text" placeholder="Name" name="name" required />
 			<input type="text" placeholder="Email" name="email" required />
 			<textarea placeholder="Feedback" name="body" required />
-			<button class="fbut button-85" type="submit">Submit Feedback</button>
+			<SpaceButton text="Submit Feedback"/>
 		</form>
 	</div>
 	<!-- {#if form?.success}
@@ -143,6 +144,8 @@
 		margin-bottom: 1em !important;
 		font-size: 20px !important;
 		width: fit-content !important;
+		padding: 0.5em;
+		padding-inline: 1em;
 	}
 	.wscont {
 		display: flex;

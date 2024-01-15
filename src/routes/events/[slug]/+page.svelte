@@ -5,7 +5,7 @@
 	import { closedRegistrations } from '$lib/data'
 	import type { event } from '$lib/types';
 	import { isLogin, registerData, userEmail } from '$lib/stores';
-	import { readToken, readID, POST } from '$lib/index';
+	import { readToken, readID, POST, titleCase } from '$lib/index';
 
 	import { onMount } from 'svelte';
 	import { API } from '$lib';
@@ -142,7 +142,7 @@
 		<div class="rulebook" id="rules">
 			<div class="structure">
 				<!-- {#each Object.keys(currentEvent.rulebook.structure) as struct}
-                    <h2>{struct}</h2>
+                    <h2>{titleCase(struct)}</h2>
                     {#each currentEvent.rulebook.structure[struct] as point}
                         <li>{point}</li>
                     {/each}
@@ -152,7 +152,7 @@
 				{/if}
 				{#if currentEvent.rulebook.structure}
 				{#each currentEvent.rulebook.structure as struct}
-					<li class="nodot">{struct}</li>
+					<li class="nodot">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 			</div>
@@ -160,7 +160,7 @@
 				<h2>RULES</h2>
 				{#if currentEvent.rulebook.rules}
 				{#each currentEvent.rulebook.rules as struct}
-					<li class="nodot">{struct}</li>
+					<li class="nodot">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 			</div>
@@ -168,7 +168,7 @@
 				<h2>JUDGING CRITERIA</h2>
 				{#if currentEvent.rulebook.judging}
 				{#each currentEvent.rulebook.judging as struct}
-					<li class="nodot">{struct}</li>
+					<li class="nodot">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 			</div>
@@ -177,12 +177,12 @@
 				{#if currentEvent.rulebook.prizes}
 				{#if currentEvent.id.slice(0,1)=='T'}
 				{#each currentEvent.rulebook.prizes as struct}
-					<li style="list-style: none;">{struct}</li>
+					<li style="list-style: none;">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 				{#if currentEvent.id.slice(0,1)=='C'}
 				{#each currentEvent.rulebook.prizes as struct, index}
-					<li style="font-size: 22px; list-style: none; font-weight: 400">Prize for position {index + 1} : {struct}</li>
+					<li style="font-size: 22px; list-style: none; font-weight: 400">Prize for position {index + 1} : {titleCase(struct)}</li>
 				{/each}
 				{/if}
 				{/if}
@@ -405,7 +405,7 @@
 			cursor: pointer;
 		} */
 		.sidebar {
-			height: 15vh;
+			height: 15svh;
 			display: flex;
 			overflow-x: auto; /* Use overflow-x for horizontal scroll */
 			width: 100%; /* Set the sidebar width to 100% of its parent */
@@ -427,7 +427,7 @@
 			/* width: 100vw; */
 		}
 		.content {
-			height: 75vh;
+			height: 75svh;
 		}
 		.sbcont {
 			overflow: scroll;

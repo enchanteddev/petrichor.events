@@ -18,7 +18,7 @@
                         <p class="abouttext">{ws.about}</p>
                         {#if ws.registerLink}
                             <a href={ws.registerLink} class="butt">Register Now</a>
-                            <p class="happening"> Checkout the <strong><a href="https://docs.google.com/document/d/1adhrxokM3ZU9h4fu-wiLbPZTTJafiKyMfZaLR22pJps/edit?usp=sharing" style="color:cyan"> Rulebook </a></strong> for more details</p>
+                            <p class="happening"> Checkout the <strong><a href="https://docs.google.com/document/d/1adhrxokM3ZU9h4fu-wiLbPZTTJafiKyMfZaLR22pJps/edit?usp=sharing" style="color:cyan"> Rulebook</a></strong> for more details</p>
                         {/if}
                     </div>
                 </div>
