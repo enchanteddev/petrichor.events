@@ -18,7 +18,7 @@
     import Sujit from "$lib/assets/CoreTeam/Sujit.png"
     import Utsav  from "$lib/assets/CoreTeam/Utsav.png"
     import Vijay from "$lib/assets/CoreTeam/Vijay.png"
-    import Vishnu from "$lib/assets/CoreTeam/Vishnu.png"
+    import Vishnu from "$lib/assets/CoreTeam/Vishnu.jpg"
     import Kaushik from "$lib/assets/CoreTeam/Kaushik.png"
     import Eshwar from "$lib/assets/CoreTeam/Eshwar.png"
     import Kishore from "$lib/assets/CoreTeam/Kishore.png"
