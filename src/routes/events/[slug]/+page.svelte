@@ -235,6 +235,7 @@
 		display: grid;
 		place-items: center;
 		margin-bottom: 3em;
+		margin-top: 1em;
 	}
 	.orgcont {
 		display: flex;

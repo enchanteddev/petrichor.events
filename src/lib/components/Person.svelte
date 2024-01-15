@@ -14,7 +14,8 @@
 
 <style>
     .main{
-        background-color: rgb(27, 27, 27);
+        background-color: rgb(27, 27, 27, 0.5);
+        backdrop-filter: blur(12px);
         width: min-content;
         margin: 1em;
         border-radius: 1em;
@@ -42,7 +43,7 @@
         margin: 1rem;
         margin-top: -0.5rem;
         overflow: hidden;
-        width: min-content;
+        width: fit-content;
         text-align: center;
         border-radius: 0 0 0.4em 0.4em;
     }
