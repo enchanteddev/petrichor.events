@@ -75,6 +75,10 @@ h2{
      }
  
  .image{
+<<<<<<< HEAD
+=======
+     height:400px ;
+>>>>>>> upstream/main
      border-radius: 7px;
      border: 3px rgb(228, 222, 222);
      object-fit: cover;
