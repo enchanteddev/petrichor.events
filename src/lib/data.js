@@ -712,17 +712,17 @@ export let cultural = {
           {
             "name": "Parthiv",
             "image": Parthiv,
-            "phone": "808"
+            "phone": "8089147259"
           },
           {
             "name": "Nalan",
             "image": Nalan,
-            "phone": "914"
+            "phone": "6380821237"
           },
           {
             "name": "Shreya",
             "image": Shreya,
-            "phone": "725"
+            "phone": "9111480723"
           }
         ],
         "image": "https://cdn.midjourney.com/4253b791-9511-4681-9a54-22fb79ed81cf/0_0.webp",
@@ -820,7 +820,7 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pushti Amit Vasoya",
+            "name": "Pushti Vasoya",
             "image": Pushti,
             "phone": "9429233780"
           },
@@ -870,7 +870,7 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pushti Amit Vasoya",
+            "name": "Pushti Vasoya",
             "image": Pushti,
             "phone": "9429233780"
           },
@@ -1005,12 +1005,12 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "name": "Shanmukha",
             "image": Bhogaraju,
             "phone": "9848634455"
           },
           {
-            "name": "Pasupuleti Sanjay",
+            "name": "Sanjay",
             "image": Sanjay,
             "phone": "9705063009"
           }
@@ -1053,12 +1053,12 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pothula Sai Praneeth",
+            "name": "Sai Praneeth",
             "image": Praneeth,
             "phone": "8074241096"
           },
           {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "name": "Shanmukha",
             "image": Bhogaraju,
             "phone": "9848634455"
           }
@@ -1273,7 +1273,7 @@ export let technical = {
             "phone": "6001301742"
           },
           {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "name": "Shanmukha",
             "image": Bhogaraju,
             "phone": "9848634455"
           }
