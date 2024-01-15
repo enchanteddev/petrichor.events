@@ -16,6 +16,7 @@
     .main{
         background-color: rgb(27, 27, 27, 0.5);
         backdrop-filter: blur(12px);
+        font-family: var(--pfont);
         width: min-content;
         margin: 1em;
         border-radius: 1em;
@@ -33,6 +34,7 @@
         background-repeat: no-repeat;
     }
     h2{
+        font-family: var(--pfont);
         margin-left: 1rem;
         width: max-content;
         /* color: black; */
