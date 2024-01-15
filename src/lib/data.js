@@ -2105,4 +2105,13 @@ export const merch = [
     },
 
 ]
-export const informals = {}
+export const informals = [
+    {
+      name: 'test1',
+      about: 'testststsetsetet',
+      location: 'nila',
+      date: '12-30-13',
+      image: Abhijith,
+      registerLink: null
+    }
+]

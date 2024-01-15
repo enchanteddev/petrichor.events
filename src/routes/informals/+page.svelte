@@ -1,41 +1,21 @@
 <script lang="ts">
-	import type { workshop } from "$lib/types";
+    import type {informal} from '$lib/types'
     export let data;
-    let workshops: workshop[]
-    $: workshops  = data.workshops
+    let informals: informal[]
+    $: informals  = data.inf
 </script>
 
 <div class="main">
     <div style="height: 5em;"></div>
-    <div class="workshops">
-        {#each workshops as ws}
-            <div class="workshop" id="{ws.name}">
+    <div class="informals">
+        {#each informals as ws}
+            <div class="informal" id="{ws.name}">
                 <div class="about" >
                     <div class="banner">
                         <h1>{ws.name}</h1>
                         <hr>
-                        <p style="font-style: italic;">By
-                            {#each ws.speakers as spk, i}
-                                <span><strong>{spk}</strong>  {i == ws.speakers.length - 1 ? "" : (
-                                    i < ws.speakers.length - 2 ? "," : "and"
-                                )} </span>
-                            {/each}
-                        </p>
-                        <div class="chips">
-                            {#each ws.topics as topic}
-                                <span class="chip">{topic}</span>
-                            {/each}
-                        </div>
                         <p>Happening on <strong style="color:cyan">{ws.date}</strong> at <strong style="color:lightgreen">{ws.location}</strong></p>
                         <p>{ws.about}</p>
-                        <a href="https://forms.gle/9LhejkwmaBfGqFsw9" class="butt">Register Now for ₹{ws.fees}</a>
-                        <p style="color: orange;">Some knowledge in
-                            {#each ws.prereq as spk, i}
-                                <span><strong>{spk}</strong>  {i == ws.prereq.length - 1 ? "" : (
-                                    i < ws.prereq.length - 2 ? "," : "and "
-                                )} </span>
-                            {/each} is expected.
-                        </p>
                     </div>
                 </div>
                 <div class="img" style="background-image: url('{ws.image}');"></div>
@@ -48,7 +28,7 @@
     .main{
         background-color: #242020;
     }
-    .workshop .img{
+    .informal .img{
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -75,12 +55,12 @@
         background-color: rgb(110, 255, 173);
         color: rgb(0, 0, 0)
     }
-    .workshop{
+    .informal{
         display: flex;
         height: 80vh;
     }
     
-    .workshop > *{
+    .informal > *{
         width: 50%;
     }
     .about{
@@ -89,13 +69,13 @@
     .img{
         width: 40%;
     }
-    .workshop:nth-child(even){
+    .informal:nth-child(even){
         display: flex;
         flex-direction: row-reverse;
         background-color: rgb(115, 76, 160);
         /* color: black */
     }
-    .workshop:nth-child(odd){
+    .informal:nth-child(odd){
         display: flex;
     }
     .banner{
@@ -142,7 +122,7 @@
             /* font-size: smaller;   // try this also*/ 
             font-size: small; 
         }
-        .workshop{
+        .informal{
             height: 50%;
         }
     }
