@@ -75,10 +75,6 @@ h2{
      }
  
  .image{
-<<<<<<< HEAD
-=======
-     height:400px ;
->>>>>>> upstream/main
      border-radius: 7px;
      border: 3px rgb(228, 222, 222);
      object-fit: cover;
@@ -137,7 +133,9 @@ h2{
     .widthcond1{
         width: 50%;
     }
-    .image{}
+    .image{
+        height:400px ;
+    }
 
 
 }
@@ -156,9 +154,7 @@ h2{
     .widthcond1,.widthcond2{
         width: 70%;
     }
-    .image{
-        height:400px ;
-    }
+    
   }
  
    .personName{
