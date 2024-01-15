@@ -11,7 +11,7 @@
 		twitter,
 		youtube,
 		alignJustify,
-		remove
+		remove,
 	} from 'svelte-awesome/icons';
 	import bg from '$lib/assets/dark.jpg';
 	import pet from '$lib/assets/pet.png';
@@ -181,7 +181,7 @@
 		</div>
 		<div class="main">
 			<slot />
-			{#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural'}
+			{#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural' && winsize > 600}
 				<footer>
 					<div class="address">
 						<h1>Address</h1>
@@ -202,7 +202,7 @@
 						<h1>Connect with us</h1>
 						<div class="socials">
 							<a href="https://instagram.com/petrichor.iitpkd" target="_blank"
-								><Icon data={instagram} scale={0} /></a
+								><Icon data={instagram} scale={1.6} /></a
 							>
 							<a href="https://www.linkedin.com/company/petrichor-iitpkd" target="_blank"
 								><Icon data={linkedin} scale={1.6} /></a
@@ -218,11 +218,45 @@
 					</div>
 				</footer>
 			{/if}
+			{#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural' && winsize < 600}
+				<footer>
+					<div class="address">
+						<a
+							href="https://www.google.com/maps/place/IIT+Palakkad,+Nila+Campus/@10.8077887,76.725758,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba86f48a12144bf:0x4047c5d94954718a!8m2!3d10.8077887!4d76.725758!16s%2Fg%2F11s5xlpyg0?hl=en&entry=ttu"
+							target="_blank"
+						>Reach Us</a
+						>
+					</div>
+					<div class="address">
+						<a href="mailto:events.petrichor@iitpkd.ac.in">Email Us</a>
+					</div>
+					<div class="address">
+						<div class="socials">
+							<a href="https://instagram.com/petrichor.iitpkd" target="_blank"
+								class="ic"><Icon data={instagram} scale={1.2} /></a
+							>
+							<a href="https://www.linkedin.com/company/petrichor-iitpkd" target="_blank"
+								class="ic"><Icon data={linkedin} scale={1.2} /></a
+							>
+							<a href="https://x.com/Petrichor_IIT" target="_blank"
+								class="ic"><Icon data={twitter} scale={1.2} /></a
+							>
+							<a
+								href="https://youtube.com/@petrichoriitpalakkad173?si=hn8YHyfXVcJ_KZUr"
+								target="_blank" class="ic"><Icon data={youtube} scale={1.2} /></a
+							>
+						</div>
+					</div>
+				</footer>
+			{/if}
 		</div>
 	</div>
 </div>
 
 <style>
+	.ic{
+		margin: 0.2em;
+	}
 	.ham {
 		background-color: transparent;
 		outline: none;
@@ -449,4 +483,13 @@
       text-align: center;
     }
   } */
+  @media (max-width: 600px){
+	.address{
+		margin-left: 0em;
+	}
+	.socials{
+		margin-left: 0em;
+		margin-top: -0.2em;
+	}
+  }
 </style>
