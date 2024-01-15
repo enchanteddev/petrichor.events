@@ -12,7 +12,7 @@
             <div class="informal" id="{ws.name}">
                 <div class="about" >
                     <div class="banner">
-                        <h1 >{ws.name}</h1>
+                        <h1 class="atmos">{ws.name}</h1>
                         <hr>
                         <p class="happening">Happening on <strong class="happening" style="color:cyan">{ws.date}</strong> at <strong class ="happening" style="color:lightgreen">{ws.location}</strong></p>
                         <p class="abouttext">{ws.about}</p>
@@ -33,7 +33,7 @@
         font-size:5vw;
     }
     .main{
-        background-color: #242020;
+        background-color: transparent;
     }
     .informal .img{
         background-position: center;
@@ -79,7 +79,7 @@
     .informal:nth-child(even){
         display: flex;
         flex-direction: row-reverse;
-        background-color: rgb(115, 76, 160);
+        background-color: transparent;
         /* color: black */
     }
     .informal:nth-child(odd){
@@ -151,7 +151,7 @@
 
     @media (max-width:1800px){
         h1{
-        font-size:5vw;
+        font-size:3.5vw;
         }
     }
 

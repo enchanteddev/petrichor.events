@@ -126,8 +126,8 @@ export let cultural = {
       },
 
      {
-        "name": "Click n' Roll: A Showcase of Frames",
-        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "name": "Click n' Roll",
+        "about": "A Showcase of Frames. This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
         "rulebook": {
           "structure": [
             "1. Participants can compete individually or form teams of up to two members.",
@@ -787,9 +787,9 @@ export let cultural = {
         "id": "CF12"
       },
        {
-        "name": "KATHA - where words become world",
+        "name": "KATHA",
         'theme': "Write about a character who discovers a mysterious portal that leads to infinite parallel universes, each with its own set of transformations and challenges.",
-        "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
+        "about": "Where words become world. An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
             "This event will be conducted online."
@@ -835,9 +835,9 @@ export let cultural = {
         "id": "CP09"
       },
      {
-        "name": "KAVYA - weaving verses, crafting dreams",
+        "name": "KAVYA",
         "theme": "Create a poem that reflects on the cyclical nature of life, weaving themes of birth, growth, decay, and rebirth into a tapestry of infinite existence.",
-        "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
+        "about": "Weaving verses, crafting dreams. An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
             "This event will be conducted online."
@@ -2012,7 +2012,7 @@ export let workshops =  {
         {
             name: 'Product Design',
             about: "Unlock the art and science of effective product management in our immersive workshop, where you'll refine your skills in ideation, prioritization, and execution to drive successful product outcomes.",
-            prereq: ['None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
@@ -2038,7 +2038,7 @@ export let workshops =  {
         {
             name: 'Startup and Entrepreneurship',
             about: 'Empowering aspiring innovators and visionaries to navigate the entrepreneurial landscape through our immersive Startup and Entrepreneurship workshop.',
-            prereq: [ 'None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
@@ -2051,7 +2051,7 @@ export let workshops =  {
         {
             name: 'Measurement Principles and Uncertainty Analysis',
             about: 'Join us for an immersive workshop exploring Measurement Principles and Uncertainty Analysis, where precision meets insight in every measurement.',
-            prereq: [ 'None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',

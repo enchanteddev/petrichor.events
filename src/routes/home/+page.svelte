@@ -83,7 +83,7 @@
 		</p>
 	</div>
 	<div class="banner events" id="events">
-		<h1 class="" style="margin-bottom: 0;">EVENTS</h1>
+		<h1 class="atmos" style="margin-bottom: 0;">EVENTS</h1>
 		<div class="sel">
 			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
 			<a href="/events/technical" class="event" style="background-image: url({Tech});">TECHNICAL</a>
@@ -123,7 +123,7 @@
 </div>
 
 <style>
-	.workshops > h1{
+	.event > h1{
 
 	}
 	.aboutpetr{
@@ -252,7 +252,8 @@
 		font-size: 20px;
 	}
 	.workshops {
-		background-color: rgb(29, 0, 59);
+		background-color: rgb(29, 0, 59, 0.30);
+		backdrop-filter: blur(12px);
 		color: rgb(255, 255, 255);
 	}
 	.banner {
