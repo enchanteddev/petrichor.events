@@ -75,7 +75,7 @@ h2{
      }
  
  .image{
-     height:300px ;
+     height:400px ;
      border-radius: 7px;
      border: 3px rgb(228, 222, 222);
      object-fit: cover;
