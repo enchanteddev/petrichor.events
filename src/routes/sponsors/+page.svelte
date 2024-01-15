@@ -4,7 +4,7 @@
 	import Pnb from '$lib/assets/Sponsors/Pnb.jpg'
 	import Sbi from '$lib/assets/Sponsors/Sbi.jpg'
 	import Vasantha from '$lib/assets/Sponsors/Vasantha.jpg'
-	import Cazzkaro from '$lib/assets/Sponsors/Cazzkaro.jpeg'
+	import Cazzkaro from '$lib/assets/Sponsors/Cazz_Karo_Logo.png'
 	import Chess from '$lib/assets/Sponsors/chess.webp'
 </script>
 
