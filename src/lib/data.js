@@ -1268,7 +1268,7 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Dhruvadeep Malakar",
+            "name": "Dhruvadeep",
             "image": Dhruvadeep,
             "phone": "6001301742"
           },
@@ -1323,7 +1323,7 @@ export let technical = {
         },
         "organisers": [
           {
-            "name": "Dhruvadeep Malakar",
+            "name": "Dhruvadeep",
             "image": Dhruvadeep,
             "phone": "6001301742"
           }
@@ -1560,7 +1560,7 @@ export let technical = {
             "phone": "+91 88742 36084"
           },
           {
-            "name": "Shivansh Chaudhary",
+            "name": "Shivansh",
             "image": Shivansh,
             "phone": "+91 7302994666"
           }
