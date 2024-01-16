@@ -408,18 +408,22 @@
 			height: 15svh;
 			display: flex;
 			overflow-x: auto; /* Use overflow-x for horizontal scroll */
-			width: 100%; /* Set the sidebar width to 100% of its parent */
+			width: 97%; /* Set the sidebar width to 100% of its parent */
+			margin: 0 0.5em;
 		}
 
 		.card {
 			all: unset;
-			width: 30vw;
+			width: 12rem;
 			background-position: center;
 			background-size: cover;
 			position: relative;
 			cursor: pointer;
 			flex: 0 0 auto; /* Prevent cards from stretching to fill available space */
 			margin-right: 10px; /* Add some spacing between cards if needed */
+		}
+		.card > p {
+			font-size: 17px;
 		}
 
 		.parent {
