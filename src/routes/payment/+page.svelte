@@ -10,6 +10,14 @@
 
 	export let data: any;
 	let loading = false;
+	let registeredEvents:Array<string>
+
+	onMount(()=>{
+		let local=window.localStorage.getItem("registeredEvents")?.split(",")
+		if(local){
+			registeredEvents = local
+		}
+	})
 
 	if (!$isLogin) {
 		goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
@@ -129,6 +137,8 @@
 					console.log(data);
 					if (data.status == 200) {
 						alert('Payment Successful! You will get an email shortly.');
+						registeredEvents.push(w)
+						window.localStorage.setItem("registeredEvents",registeredEvents.toString())
 						setTimeout(() => {
 							goto('/profile');
 						}, 500);

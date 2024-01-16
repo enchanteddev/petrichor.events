@@ -13,6 +13,7 @@
 	let fees = 0
 	let emails = Array(max);
 	let loading = false
+	let registeredEvents : Array<string>
 	loading = true
 	POST(API.event, {id: $registerData.eventID}).then(e => e.json()).then(e => {
 		loading = false
@@ -30,6 +31,10 @@
 	
 	onMount(() => {
 		console.log($isLogin, $userEmail)
+		let local=window.localStorage.getItem("registeredEvents")?.split(",")
+		if (local){
+			registeredEvents =local
+		}
 	    if (!$userEmail){
 			loading = true
 	        goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`)
@@ -57,6 +62,8 @@
 			loading = false
 			if (response.status == 200){
 				successToast = true;	
+				registeredEvents.push($registerData.eventID)
+				window.localStorage.setItem("registeredEvents",registeredEvents.toString())
 				setTimeout(() => {goto('/profile')}, 1000)
 			} else {
 				failedToast = true;

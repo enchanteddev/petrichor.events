@@ -52,6 +52,7 @@
 						isLogin.set(true);
 						console.log(ans.email);
 						userEmail.set(ans.email);
+						window.localStorage.setItem("registeredEvents",ans.events)
 					}
 				});
 

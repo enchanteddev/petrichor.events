@@ -15,6 +15,7 @@
 	let events = data['nofee']['events'];
 	let events1 = data['withfee']
 	let loading = false
+	let registeredEvents:Array<string>
 
 	
 	$: {
@@ -24,24 +25,34 @@
 	let bg: HTMLDivElement;
 	let currentEvent: event = events[0];
 	let registered = false;
+	onMount(() => {
+		bg.style.backgroundImage = `url("${currentEvent.image}")`;
+		setEvent(currentEvent)
+		let local=window.localStorage.getItem("registeredEvents")?.split(",")
+		if (local){
+			registeredEvents = local;
+		}
+	});
+
 	let registering = false;
 
 	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
 
-	onMount(() => {
-		bg.style.backgroundImage = `url("${currentEvent.image}")`;
-	});
 
 	const setEvent = (event: event) => {
 		registering = false;
 		bg.style.backgroundImage = `url("${event.image}")`;
 		currentEvent = event;
 		currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
-		// console.log(event.image);
-		// console.log($userEvents);
-		// console.log(currentEvent.id)
 		registered=false	
-		// console.log('p');
+		if(registeredEvents?.includes(event.id)){
+			registered=true
+		}
+		// registeredEvents.forEach(element =>{
+		// 	if(element == event.id){
+		// 		registered=true
+		// 	}
+		// })
 	};
 
 	const clicked = async () => {
@@ -75,6 +86,8 @@
 							if (res.status == 200) {
 								// userEvents.update(value => [...value, currentEvent.id])
 								alert('Registration successfull');
+								registeredEvents.push(currentEvent.id)
+								window.localStorage.setItem("registeredEvents",(registeredEvents).toString())
 								registered = true;
 							} else {
 								alert('Registration Unsuccessfull! Please try Again');
