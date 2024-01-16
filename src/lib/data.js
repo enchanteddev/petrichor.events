@@ -5,6 +5,7 @@ import Ananya from '$lib/assets/Organisers/Ananya.jpg'
 import Anju from '$lib/assets/Organisers/ANJU SASIKUMAR.jpg'
 import Anup from '$lib/assets/Organisers/Anup.jpeg'
 import Anusha from '$lib/assets/Organisers/Anusha Dadam.jpg'
+import Arnav from '$lib/assets/Organisers/ARNAV KADU.jpg'
 import Ashwin from '$lib/assets/Organisers/Ashwin.jpg'
 import Ashwini from '$lib/assets/Organisers/Ashwini.jpg'
 import Ayush_Kumar  from '$lib/assets/Organisers/AYUSH KUMAR.jpg'
@@ -1851,7 +1852,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Arnav Kadu",
-            "image": Divesh,
+            "image": Arnav,
             "phone": "9987358608"
           },
           {
