@@ -12,7 +12,11 @@ export const API = {
     whoami: backend_url + "web/whoami/",
     event: backend_url + "web/event/",
     verifyCA: "https://pcap-back-production.up.railway.app/api/events/verify",
-    addEvent: backend_url + "internal/event/add/",
+    
+    hasAddress: backend_url + 'hasaddress/',
+    addAddress: backend_url + 'address/add/',
+    getAddress: backend_url + 'address/get/',
+    merchPay: backend_url + 'payment/make/',
 }
 
 

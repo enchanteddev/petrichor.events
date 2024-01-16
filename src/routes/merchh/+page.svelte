@@ -50,7 +50,7 @@
     </div>
     <div class="bottom">
 
-        {#if false && Object.keys(shoppingCart).length !== 0 && shoppingCart.constructor === Object}
+        {#if true || Object.keys(shoppingCart).length !== 0 && shoppingCart.constructor === Object}
             <button class="button-85 checkout" on:click={() => {startPayment=true; console.log("PRESSED")}}>Proceed To Checkout</button>
         {/if}
     </div>
