@@ -179,5 +179,9 @@
 			margin-right: 1.5rem;
 			margin-left: -1.5rem;
 		}
+		.merch-head{
+			font-size: 30px;
+			margin-left: -1em;
+		}
 	}
 </style>

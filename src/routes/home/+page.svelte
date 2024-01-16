@@ -130,10 +130,6 @@
 		font-size: 65px;
 		
 	}
-	.aboutpetr{
-		font-size: 90px;
-		color: #8f60c1
-	}
 .cont{
 		transition: 200ms ease;
 	width: min-content;
@@ -289,7 +285,7 @@
 	}
 	h1 {
 		font-family: var(--pfont);
-		font-size: 100px;
+		font-size: 90px;
 		font-weight: 1000;
 	}
 
@@ -362,6 +358,11 @@
 	}
 
 	@media screen and (min-width: 930px){
+		
+		.aboutpetr{
+			font-size: 90px;
+			color: #8f60c1
+		}
 		.wscont {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
@@ -382,6 +383,14 @@
 	}
 
 	@media (max-width: 930px) {
+		.workshops > h1{
+			font-size: 30px;
+		}
+		.aboutpetr{
+			display: block;
+			font-size: 40px;
+			color: #8f60c1
+		}
 		textarea{
 			height: 15em;
 		}
@@ -411,10 +420,10 @@
 			padding-bottom: 15rem;
 			width: 100vw;
 		}
-		.about > h1 {
+		/* .about > h1 {
 			font-size: 20px;
 			margin-top: 5rem;
-		}
+		} */
 		.title {
 			width: 100svh;
 			flex-direction: column;
@@ -451,10 +460,14 @@
 			margin: 7em;
 		}
 	}
-	@media screen and (max-width: 330px) {
+	@media screen and (max-width: 480px) {
 		.tit > h1 {
 			display: block;
 		}
+		/* .about > h1 {
+			display: block;
+			font-size: small;
+		} */
 		.bupal {
 			display: block;
 		}

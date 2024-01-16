@@ -52,6 +52,7 @@
 
     @media screen and (max-width:600px){
         div{
+            position: relative;
             left: 20%;
 			transform: translate(-50%);
         }
