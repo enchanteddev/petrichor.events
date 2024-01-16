@@ -46,10 +46,21 @@ import Prisha from '$lib/assets/Organisers/Prisha.jpg'
 import Nalan from '$lib/assets/Organisers/Nalan.jpg'
 import Siva from '$lib/assets/Organisers/Siva.jpg'
 import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
-import tblack from '$lib/assets/Merch/black.png'
-import twhite from '$lib/assets/Merch/white.png'
-import hoodie from '$lib/assets/Merch/hoodie.png'
+import tblackf from '$lib/assets/Merch/T Shirt F IIT P1.png'
+import tblackb from '$lib/assets/Merch/T Shirt B IIT P1.png'
+import twhitef from '$lib/assets/Merch/White T B IIT P1.png'
+import twhiteb from '$lib/assets/Merch/White T F IIT P1.png'
+import hoodief from '$lib/assets/Merch/Hoodie F.png'
+import hoodieb from '$lib/assets/Merch/Hoodie B.png'
 import cap from '$lib/assets/Merch/Cap.png'
+import laser from '$lib/assets/Informals/Lazer.jpg'
+import VR from '$lib/assets/Informals/ARVR.jpg'
+import Chess from '$lib/assets/Informals/Chess.jpg'
+
+
+export const closedRegistrations = [
+    "TF07"
+]
 
 export let cultural = {
     "events": [
@@ -63,7 +74,7 @@ export let cultural = {
             "2) Each team can have a maximum of 15 members consisting of 6-12 models.",
             "3) Every team should submit photos of their models or videos of their performance for shortlisting, in a Google form which will be provided via your registered email id.",
             "4) Shortlisting will be done based on presentation of the contestants' fashion sense, clearly displaying the dress and pose.",
-            "5) The deadline for submission for the online screening round is on 15th January 2024.", 
+            "5) The deadline for submission for the online screening round is on 20th January 2024.", 
             " ", 
             "Round 2 (Offline) :",
             "Registration fee for this event is ₹149 for each registrant.",
@@ -115,8 +126,8 @@ export let cultural = {
       },
 
      {
-        "name": "Click n' Roll: A Showcase of Frames",
-        "about": "This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "name": "Click n' Roll",
+        "about": "A Showcase of Frames. This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
         "rulebook": {
           "structure": [
             "1. Participants can compete individually or form teams of up to two members.",
@@ -286,7 +297,7 @@ export let cultural = {
             "phone": "9304560629"
           },
           {
-            "name": "Dhruvadeep Malakar",
+            "name": "Dhruvadeep",
             "image": Dhruvadeep,
             "phone": "6001301742"
           }
@@ -303,7 +314,8 @@ export let cultural = {
             "1.This event will consist of two rounds in which the first round of screening would be an online submissions round and the selected entries will be performing live on stage in Petrichor.",
             "2. In the first round of online submissions the pairs are required to post an Audiovisual recording of their performance of their own choice and upload it to the Google Form provided in the Petrichor Website.",
             "3. The video should be of at least 2 minutes and shouldn't exceed a maximum time limit of 4 minutes. This will be used for shortlisting the Duo into the Second Round.",
-            "4. Selected Contestants will receive a mail and will advance to the Second round(The Grand Finale)."
+            "4. The deadline for submission of videos for the online screening round is on 20th January 2024",
+            "5. Selected Contestants will receive a mail and will advance to the Second round(The Grand Finale)."
           ],
           "judging": [
             "1. Song selection (Coherence and Variety in Set List) - 10 %",
@@ -382,6 +394,7 @@ export let cultural = {
             "3. The uploaded video should be within a time limit of 3 to 5 minutes.",
             "4. Audio in the uploaded file should be clear for the judges to judge.",
             "5. Softwares like Audacity and Reaper can be used for editing your videos.",
+            "6. The deadline for submission of videos for the online screening round is on 20th January 2024",
             "",
             "Round 2 (Offline) :",
             "Registration fee for this event is ₹149 for each registrant.",
@@ -424,7 +437,7 @@ export let cultural = {
             "phone": "9207267393"
           },
           {
-            "name": "Abhijith Sureshbabu",
+            "name": "Abhijith",
             "image": Abhijith,
             "phone": "8075821728"
           },
@@ -571,7 +584,7 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pushti Amit Vasoya",
+            "name": "Pushti Vasoya",
             "image": Pushti,
             "phone": "9429233780"
           },
@@ -595,7 +608,7 @@ export let cultural = {
                 "2) The video must have clear sound and visuals and should be a recording of a live performance with a clear face in one take",
                 "3) Upload your videos in your Google Drive in .mp4 format and submit the link of the same through the Google form which will be provided via your registered email id",
                 "4) Only one submission per participant is allowed",
-                "5) The deadline for submission of videos for the online screening round is on 15th January 2024",
+                "5) The deadline for submission of videos for the online screening round is on 20th January 2024",
               " ",
               "Round 2 (Offline): ",
               "Registration fee for this event is ₹149 for each registrant.",
@@ -657,7 +670,7 @@ export let cultural = {
                 "4) All the members of the team should be clearly visible in the uploaded video.",
                 "5) Upload your videos in your Google Drive in .mp4 format and submit the link of the same through the Google Form, which will be provided via your registered email id.",
                 "6) Only one submission per team is allowed.",
-                "7) The deadline for submission of videos for the online screening round is on 15th January 2024.",
+                "7) The deadline for submission of videos for the online screening round is on 20th January 2024.",
               "",
               "Round 2 (Offline) : ",
               "Registration fee for this event is ₹149 for each registrant.",
@@ -699,17 +712,17 @@ export let cultural = {
           {
             "name": "Parthiv",
             "image": Parthiv,
-            "phone": "808"
+            "phone": "8089147259"
           },
           {
             "name": "Nalan",
             "image": Nalan,
-            "phone": "914"
+            "phone": "6380821237"
           },
           {
             "name": "Shreya",
             "image": Shreya,
-            "phone": "725"
+            "phone": "9111480723"
           }
         ],
         "image": "https://cdn.midjourney.com/4253b791-9511-4681-9a54-22fb79ed81cf/0_0.webp",
@@ -774,9 +787,9 @@ export let cultural = {
         "id": "CF12"
       },
        {
-        "name": "KATHA - where words become world",
+        "name": "KATHA",
         'theme': "Write about a character who discovers a mysterious portal that leads to infinite parallel universes, each with its own set of transformations and challenges.",
-        "about": "An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
+        "about": "Where words become world. An individual event where participants will write a short story of 1000-2000 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
             "This event will be conducted online."
@@ -807,7 +820,7 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pushti Amit Vasoya",
+            "name": "Pushti Vasoya",
             "image": Pushti,
             "phone": "9429233780"
           },
@@ -822,9 +835,9 @@ export let cultural = {
         "id": "CP09"
       },
      {
-        "name": "KAVYA - weaving verses, crafting dreams",
+        "name": "KAVYA",
         "theme": "Create a poem that reflects on the cyclical nature of life, weaving themes of birth, growth, decay, and rebirth into a tapestry of infinite existence.",
-        "about": "An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
+        "about": "Weaving verses, crafting dreams. An individual event where participants will write a poetry of 100-200 words in English or Hindi based on the given prompts.",
         "rulebook": {
           "structure": [
             "This event will be conducted online."
@@ -857,7 +870,7 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pushti Amit Vasoya",
+            "name": "Pushti Vasoya",
             "image": Pushti,
             "phone": "9429233780"
           },
@@ -992,12 +1005,12 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "name": "Shanmukha",
             "image": Bhogaraju,
             "phone": "9848634455"
           },
           {
-            "name": "Pasupuleti Sanjay",
+            "name": "Sanjay",
             "image": Sanjay,
             "phone": "9705063009"
           }
@@ -1040,12 +1053,12 @@ export let cultural = {
         },
         "organisers": [
           {
-            "name": "Pothula Sai Praneeth",
+            "name": "Sai Praneeth",
             "image": Praneeth,
             "phone": "8074241096"
           },
           {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "name": "Shanmukha",
             "image": Bhogaraju,
             "phone": "9848634455"
           }
@@ -1141,7 +1154,8 @@ export let technical = {
             "1. The entire event will be online.",
             "2. No questions or doubts regarding the treasure hunt will be entertained during the hunt.",
             "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (a link will be provided to the participants after the registration ends)",
-            "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification."
+            "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification.",
+            "5. Team size:1-3"     
           ]
         },
         "organisers": [
@@ -1183,7 +1197,8 @@ export let technical = {
             "3. The account and assets allocated will be purely virtual and cannot be liquidated into real money.",
             "4. Any profit/loss made in this contest is virtual and only for the purpose of the competition.",
             "5. Duplicate registration will not be accepted.",
-            "6. Other details and guidelines shall be shared with the participants via Email."
+            "6. Other details and guidelines shall be shared with the participants via Email.",
+            "7. Team size : 1"
           ]
         },
         "organisers": [
@@ -1247,17 +1262,18 @@ export let technical = {
             "7.4. Contact information for at least one team member.",
             "8. Game Documentation: Along with the game, participants should provide any",
             "necessary documentation, including instructions on how to play the game and any",
-            "special features or controls."
+            "special features or controls.",
+            "9.Team size:1-4" 
           ]
         },
         "organisers": [
           {
-            "name": "Dhruvadeep Malakar",
+            "name": "Dhruvadeep",
             "image": Dhruvadeep,
             "phone": "6001301742"
           },
           {
-            "name": "Bhogaraju Shanmukha Sri Krishna",
+            "name": "Shanmukha",
             "image": Bhogaraju,
             "phone": "9848634455"
           }
@@ -1301,12 +1317,13 @@ export let technical = {
             "Participants are advised to keep track of all folders in their e-mail accounts.",
             "7. In case plagiarism is found on candidate\u2019s code then that candidate will be",
             "disqualified from the contest and will be barred from receiving any prizes.",
-            "8. Participants have to fill the online form for participating in the Contest."
+            "8. Participants have to fill the online form for participating in the Contest.",
+            "9. Team size: 1" 
           ]
         },
         "organisers": [
           {
-            "name": "Dhruvadeep Malakar",
+            "name": "Dhruvadeep",
             "image": Dhruvadeep,
             "phone": "6001301742"
           }
@@ -1343,7 +1360,8 @@ export let technical = {
             "2. Plagiarism will result in disqualification.",
             "3. Winners will be decided on the basis of the points scored.",
             "4. Participants have to produce an animation with their details",
-            "trajectory plan and simulation code to qualify for the prize."
+            "trajectory plan and simulation code to qualify for the prize.",
+            "5. Team size :1-2"
           ]
         },
         "organisers": [
@@ -1402,7 +1420,8 @@ export let technical = {
             "4. You can use any assets from the internet, as long as you adhere to the copyright laws and regulations, as well as credit the artist/creator of the asset.",
             "5. The website should be reachable and live at the submitted URL starting from the last day of submission to at least the day of the announcement of the results.",
             "6. The usage of TypeScript is allowed. It will not directly affect any points, but indirectly it increases the code quality by having type-safety.",
-            "7. The code should be on a git repository. You can use github, gitlab, etc."
+            "7. The code should be on a git repository. You can use github, gitlab, etc.",
+            "8. Team size: 1"
           ]
         },
         "organisers": [
@@ -1447,7 +1466,9 @@ export let technical = {
             "5. Plagiarism will result in disqualification.",
             "6. Late submissions, with a penalty of 20 points, will be accepted up to one day after the deadline.",
             "7. The team with the highest point score will be declared the winners. In the case of a tie, the time of submission will serve as the tiebreaker.",
-            "8. The decision of the evaluators will be final."
+            "8. The decision of the evaluators will be final.",
+            "9. Team size: 1-3",
+            "10. The event has a 3 day deadline to solve the problem statement so the event starts from 21/01/2024 to 24/01/2024"
           ]
         },
         "organisers": [
@@ -1459,7 +1480,7 @@ export let technical = {
         ],
         "image": "https://cdn.midjourney.com/7cb5190b-a340-46a6-b821-f58fe414e736/0_1.webp",
         "date": "21/1/2024",
-        "id": "TF13"
+        "id": "TF14"
       },
       {
         "name": "Quizzanaire - School Quiz",
@@ -1487,6 +1508,7 @@ export let technical = {
             "3. Prelims will be in written format. Papers will be provided. It is advised to bring your own pens. Finals will be on-stage.",
             "4. Adopting any kind of malpractice will lead to disqualification.",
             "5. The decision taken by the quizmasters will be final and binding."
+            
           ]
         },
         "organisers": [
@@ -1538,7 +1560,7 @@ export let technical = {
             "phone": "+91 88742 36084"
           },
           {
-            "name": "Shivansh Chaudhary",
+            "name": "Shivansh",
             "image": Shivansh,
             "phone": "+91 7302994666"
           }
@@ -1598,7 +1620,8 @@ export let technical = {
             "6. The structure will be dropped with zero velocity.",
             "7. Two chances will be given to each team for each round. However , the second chance will lead to a penality of 10 points.",
             "8. Teams can only use material provided at the time of auctioning. Using materials from outside will lead to disqualification.",
-            "9. Individual member or a group of two members can participate as a team."
+            "9. Individual member or a group of two members can participate as a team.",
+            "10. Team size: 1-2"
           ]
         },
         "organisers": [
@@ -1655,14 +1678,15 @@ export let technical = {
             "1. The bot would be checked for safety before starting and will be disqualified if found unsafe for other participants.",
             "2. Only one team member is allowed to handle the bot. No other team member is allowed to enter the arena.",
              "3.The bot will be liable for disqualification if it causes any kind of damage to the arena. ",
-             "4.    is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
+             "4. The bot is not allowed to slide the blocks against the ground except for fine adjustments in the Deposit Zone.",
              "5.Any damages to the blocks will lead to immediate disqualification.",
              "6.A maximum of 6 minutes will be given to each team.",
               "7. The arena has 5 checkpoints. In case the bot gets stuck at any place, then the block it is carrying (if any) will be repositioned at its initial position and the bot will be kept in the checkpoints corresponding to that zone. There will be no penalty for this.",
               "8. Blocks that are correctly deposited in deposit zones/pushed from the ramp won’t be disturbed.",
               "9.The timer won’t be stopped during this process. ",
-
-           " In case of any disputes/discrepancies, the organizer’s decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
+              "10. Team size: 1-4",
+              
+              " In case of any disputes/discrepancies, the organizer's decision will be final and binding. The organizers reserve the right to change any or all of the above rules as they deem fit Change in rules, if any will be highlighted on the website and notified to the registered teams."
 
           ]
         },
@@ -1749,7 +1773,8 @@ export let technical = {
             "5. Building should be hollow at the center. Some amount of Weight will be kept at different floors in subsequent rounds therefore, keep sufficient space so that they can enter the floor.",
             "If the building does not meet the specified requirements then a penalty will be imposed or the team can be disqualified.",
             "Come to the event with fully prepared construction diagrams of the building and make sure that the dimensions of each and every element are within range.",
-            "Participation certificates will be awarded to all the participants."
+            "Participation certificates will be awarded to all the participants.",
+            "6. Team size: 1-2"
           ]
         },
         "organisers": [
@@ -1819,7 +1844,8 @@ export let technical = {
             "4. The bot has to give a signal by glowing a LED as soon as it senses the END point.",
             "5. A total of 3 minutes will be provided to complete the dry run. A total of 2 minutes and 30 seconds will be provided to complete the actual run.",
             "6. If the bot takes more than 3 minutes for completing the dry run, then the extra time taken will be deducted from the timing of the actual run which is 2 minutes and 30 seconds.",
-            "7. Teams will be given 1 minute for calibration."
+            "7. Teams will be given 1 minute for calibration.",
+            "8. Team size: 1-4"
           ]
         },
         "organisers": [
@@ -1875,8 +1901,8 @@ export let technical = {
             "decision",
             "3. Plagiarism will result in disqualification",
             "4. Participants will have to use only the details provided by the organizers, any other tweaking of the hardware is not allowed and will result in disqualification",
-            "5. Winners will be decided on the basis of the points scored"
-          ]
+            "5. Winners will be decided on the basis of the points scored",
+            "6. Team size: 1-3"          ]
         },
         "organisers": [
           {
@@ -1923,6 +1949,7 @@ export let technical = {
             "2. The weight of the bot should be less than 25kg (55.12lbs). Note that the weight of adapters and the remote controller will not be included in these constraints.",
             "3. The power source of the robot cannot exceed 30V.",
             "4. Motors with maximum 350w can only be used for the driving of the Robot.",
+            "5. Team size: 4-6",
             "Mobility",
             "5. Maximum voltage of battery should be 24v.",
             "1. Methods of mobility may include,Rolling (wheels, tracks or the whole robot), Walking (linear actuated legs with no rolling or cam operated motion), Shuffling (rotational cam operated legs).",
@@ -1985,7 +2012,7 @@ export let workshops =  {
         {
             name: 'Product Design',
             about: "Unlock the art and science of effective product management in our immersive workshop, where you'll refine your skills in ideation, prioritization, and execution to drive successful product outcomes.",
-            prereq: ['None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
@@ -2002,7 +2029,7 @@ export let workshops =  {
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://cdn.midjourney.com/b530d541-7d6f-4026-a52a-86c859798acc/0_2.webp',
+            image: 'https://cdn.midjourney.com/dc2ceeff-73bc-4474-ae8f-c9183db16822/0_2.webp',
             location: 'Nila Campus',
             topics: [],
             speakers: [  'Dr. Shaikshavali Chitraganti'],
@@ -2011,11 +2038,11 @@ export let workshops =  {
         {
             name: 'Startup and Entrepreneurship',
             about: 'Empowering aspiring innovators and visionaries to navigate the entrepreneurial landscape through our immersive Startup and Entrepreneurship workshop.',
-            prereq: [ 'None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
-            image: 'https://cdn.midjourney.com/ff96b5d1-3439-4034-87c2-058c3fe9d166/0_2.webp',
+            image: 'https://cdn.midjourney.com/a65041b2-ffaa-4bf6-bfd8-78d31ba31e33/0_3.webp',
             location: 'Nila Campus',
             topics: [],
             speakers: ['Finance Club'],
@@ -2024,7 +2051,7 @@ export let workshops =  {
         {
             name: 'Measurement Principles and Uncertainty Analysis',
             about: 'Join us for an immersive workshop exploring Measurement Principles and Uncertainty Analysis, where precision meets insight in every measurement.',
-            prereq: [ 'None'],
+            prereq: [],
             fees: 1199,
             date: '27 & 28 Jan',
             regdate: '26 Jan',
@@ -2054,23 +2081,23 @@ export const merch = [
     {
         id: "MT1",
         name: "White T-Shirt",
-        imgs: [twhite],
+        imgs: [twhitef, twhiteb],
         price: 390,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['S', 'M', 'L', "XL"] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MT2",
         name: "Black T-Shirt",
-        imgs: [tblack],
+        imgs: [tblackf, tblackb],
         price: 390,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['S', 'M', 'L', "XL"] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MH1",
         name: "Hoodie",
-        imgs: [hoodie],
+        imgs: [hoodief, hoodieb],
         price: 690,
-        sizes: [] // leave empty for xs, s, m, l ,xl, xxl 
+        sizes: ['S', 'M', 'L', "XL"] // leave empty for xs, s, m, l ,xl, xxl 
     },
     {
         id: "MC1",
@@ -2080,4 +2107,31 @@ export const merch = [
         sizes: ['free-size'] // leave empty for xs, s, m, l ,xl, xxl 
     },
 
+]
+
+export const informals = [
+    {
+      name: 'King’s Knightmare',
+      about: "Ready to make your move? Join King's Knightmare, the online chess showdown by Petrichor'24 in collaboration with chess.com. Registration is free, and exciting prizes await the strategic minds who conquer the board. Don't miss out—register now and let the chess battle begin!",
+      location: 'Chess.com',
+      date: ' 21-01-2024 and 22-01-2024',
+      image: Chess,
+      registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdzJLUonZ4UTuellHrrp2kATS-zTh8ZxJ6f0C3QcujdmFh4Cg/viewform?usp=sf_link"
+    },
+    {
+      name: 'Laser Tag',
+      about: "Dive into the ultimate laser showdown! Gather your squad, suit up in neon, and embark on an adrenaline-fueled mission under the glow of lasers. Are you ready for the ultimate tag challenge?",
+      location: 'Nila Campus',
+      date: ' 27-01-2024 and 28-01-2024',
+      image: laser,
+      registerLink: null
+    },
+    {
+      name: 'VR Gaming',
+      about: "Step into the future of gaming at our VR Event! Immerse yourself in mind-bending worlds, conquer virtual challenges, and redefine your gaming experience. It's not just a game; it's a virtual adventure!",
+      location: 'Nila Campus',
+      date: ' 27-01-2024 and 28-01-2024',
+      image: VR,
+      registerLink: null
+    }
 ]

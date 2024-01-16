@@ -2,9 +2,10 @@
 	import { page } from '$app/stores';
 	import Loading from '$lib/components/Loading.svelte';
 	import Person from '$lib/components/Person.svelte';
+	import { closedRegistrations } from '$lib/data'
 	import type { event } from '$lib/types';
 	import { isLogin, registerData, userEmail } from '$lib/stores';
-	import { readToken, readID, POST } from '$lib/index';
+	import { readToken, readID, POST, titleCase } from '$lib/index';
 
 	import { onMount } from 'svelte';
 	import { API } from '$lib';
@@ -49,7 +50,7 @@
 			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		} else {
 			$registerData.eventID = currentEvent.id;
-			$registerData.registeredEmails.push($userEmail);
+			$registerData.registeredEmails = [$userEmail];
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
 			loading = true 
@@ -111,7 +112,7 @@
 					setEvent(event);
 				}}
 			>
-				<p>
+				<p class="atmos"> 
 					{event.name}
 				</p>
 			</div>
@@ -119,76 +120,86 @@
 	</div>
 	<div class="content">
 		<div class="banner">
-			<h1 style="height: {currentEvent.name.length > 25 ? '15rem' : '10rem'};">
+			<h1 class="atmos" style="height: {currentEvent.name.length > 18 ? '14rem' : '10rem'};">
 				{currentEvent && currentEvent.name}
 			</h1>
 			<span>{currentEvent.date}</span>
 			{#if currentEvent.theme}
-			<h2>Theme</h2>
+			<h2>THEME</h2>
 			<p style="margin-top: -1rem;">{currentEvent.theme}</p>
 			{/if}
 			<p>{currentEvent && currentEvent.about}</p>
 			<div class="buttons">
 				<a href="#rules" class="a-unset register">LEARN MORE</a>
-				<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':`₹${currEveFee}`}</a>
+				{#if closedRegistrations.includes(currentEvent.id)}
+					<!-- svelte-ignore a11y-missing-attribute -->
+					<a class="a-unset register">Registrations Closed</a>
+				{:else}
+					<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':`₹${currEveFee}`}</a>
+				{/if}
 			</div>
 		</div>
 		<div class="rulebook" id="rules">
 			<div class="structure">
 				<!-- {#each Object.keys(currentEvent.rulebook.structure) as struct}
-                    <h2>{struct}</h2>
+                    <h2>{titleCase(struct)}</h2>
                     {#each currentEvent.rulebook.structure[struct] as point}
                         <li>{point}</li>
                     {/each}
                 {/each} -->
 				{#if currentEvent.rulebook.structure.length > 0}
-					<h2>Structure</h2>
+					<h2>STRUCTURE</h2>
 				{/if}
 				{#if currentEvent.rulebook.structure}
 				{#each currentEvent.rulebook.structure as struct}
-					<li class="nodot">{struct}</li>
+					<li class="nodot">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 			</div>
 			<div class="rules">
-				<h2>Rules</h2>
+				<h2>RULES</h2>
 				{#if currentEvent.rulebook.rules}
 				{#each currentEvent.rulebook.rules as struct}
-					<li class="nodot">{struct}</li>
+					<li class="nodot">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 			</div>
 			<div class="judging">
-				<h2>Judging Criteria</h2>
+				<h2>JUDGING CRITERIA</h2>
 				{#if currentEvent.rulebook.judging}
 				{#each currentEvent.rulebook.judging as struct}
-					<li class="nodot">{struct}</li>
+					<li class="nodot">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 			</div>
 			<div class="prizes">
-				<h2>Prizes Worth:</h2>
+				<h2>PRIZES WORTH</h2>
 				{#if currentEvent.rulebook.prizes}
 				{#if currentEvent.id.slice(0,1)=='T'}
 				{#each currentEvent.rulebook.prizes as struct}
-					<li style="list-style: none;">{struct}</li>
+					<li style="list-style: none;">{titleCase(struct)}</li>
 				{/each}
 				{/if}
 				{#if currentEvent.id.slice(0,1)=='C'}
-				{#each currentEvent.rulebook.prizes as struct}
-					<li>{struct}</li>
+				{#each currentEvent.rulebook.prizes as struct, index}
+					<li style="font-size: 22px; list-style: none; font-weight: 400">Prize for position {index + 1} : {titleCase(struct)}</li>
 				{/each}
 				{/if}
 				{/if}
 			</div>
 		</div>
 		<div id="register">
-			<h2>Organisers</h2>
+			<h2 >ORGANISERS</h2>
 			<div class="orgcont">
 				{#each currentEvent.organisers as p}
 					<Person personData={p} />
 				{/each}
 			</div>
+			{#if closedRegistrations.includes(currentEvent.id)}
+				<div class="button-cont">
+					<button class="register">Registrations Closed</button>
+				</div>
+			{:else}
 			<div class="button-cont">
 				{#if registering || registered}
 					<button
@@ -210,15 +221,21 @@
 					>
 				{/if}
 			</div>
+			{/if}
 		</div>
 	</div>
 </div>
 
 <style>
+	.banner > h1{
+		font: var(--sfont);
+	}
 	.button-cont {
 		width: 100%;
 		display: grid;
 		place-items: center;
+		margin-bottom: 3em;
+		margin-top: 1em;
 	}
 	.orgcont {
 		display: flex;
@@ -286,7 +303,7 @@
 		background-position: center;
 		background-size: cover;
 		transition: background-image 2s;
-		filter: blur(5px);
+		filter: blur(5px) brightness(50%);
 	}
 	.sidebar {
 		overflow-y: scroll;
@@ -388,7 +405,7 @@
 			cursor: pointer;
 		} */
 		.sidebar {
-			height: 15vh;
+			height: 15svh;
 			display: flex;
 			overflow-x: auto; /* Use overflow-x for horizontal scroll */
 			width: 100%; /* Set the sidebar width to 100% of its parent */
@@ -410,7 +427,7 @@
 			/* width: 100vw; */
 		}
 		.content {
-			height: 75vh;
+			height: 75svh;
 		}
 		.sbcont {
 			overflow: scroll;

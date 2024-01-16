@@ -53,3 +53,12 @@ export type MerchItem = {
     price: number
     size: string
 }
+
+export type informal = {
+    name: string,
+    about: string,
+    location: string,
+    date: string,
+    image: string,
+    registerLink: string | null
+}

@@ -8,6 +8,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Krona+One&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
 		%sveltekit.head%
 	</head>
@@ -19,9 +22,18 @@
 
 
 <style>
+@font-face {
+		font-family: 'Atmospheric';
+		src: url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('embedded-opentype'), /* Internet Explorer */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('woff2'),             /* Super Modern Browsers */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('woff'),              /* Pretty Modern Browsers */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('truetype'),          /* Safari, Android, iOS */
+			url('%sveltekit.assets%/Fonts/Atmospheric.ttf') format('svg');               /* Legacy iOS */
+		font-weight: 200;
+	}
 	:root{
-		--pfont: 'Inter', sans-serif;
-		--sfont: 'Merriweather', serif;
+		--pfont: 'Raleway', sans-serif;
+		--sfont: 'Atmospheric', sans-serif;
 		--wfont: 'Arial', sans-serif;
 	}
 	html, body{
@@ -32,11 +44,201 @@
 		/* position: absolute; */
 		color: white;
 		font-family: var(--pfont);
-		background-color: black;
+		background-image: url('%sveltekit.assets%/WebsiteBackdrop.png');
+    background-size: cover;
 	}
 	.a-unset{
 		color: inherit;
 		text-decoration: unset;
 	}
+
+	.atmos{
+		font-family: var(--sfont) !important;
+	}
 	
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #dcdcdc;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+  color: rgba(200, 200, 200, 0.402);
+  border-color: grey;
+  cursor:not-allowed;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.button-contactus {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #100720;
+  transition: 0.1s;
+}
+
+.button-contactus::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button-contactus:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  transition: 0.5s;
+}
+
+.button-reg {
+  --green: #1BFD9C;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.button-reg:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.button-reg:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+.button-reg:hover:before {
+  transform: translateX(15em);
+}
+
+
 </style>

@@ -68,3 +68,20 @@ export async function POST(url: string, body: any) {
         body: JSON.stringify(body)
     })
 }
+
+
+export function titleCase(inputString: string) {
+    // return inputString
+    // Split the input string into an array of sentences
+    const sentences = inputString.split('.');
+  
+    // Capitalize the first word of each sentence
+    const titleSentences = sentences.map(sentence => {
+        return sentence.charAt(0).toUpperCase() + sentence.slice(1)
+    });
+  
+    // Join the sentences back into a single string
+    const titleString = titleSentences.join('. ');
+  
+    return titleString;
+  }

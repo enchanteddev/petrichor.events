@@ -2,6 +2,8 @@
 <script lang="ts">
 	import Cult from '$lib/assets/Cult&Tech/cult.jpg';
 	import Tech from '$lib/assets/Cult&Tech/TechnicalWeb.jpg';
+	import Infor from '$lib/assets/Cult&Tech/Informals.png';
+	import SpaceButton from '$lib/components/SpaceButton.svelte';
 	import { enhance } from '$app/forms';
 	import loading from '$lib/assets/loading.mp4';
 	import loopv from '$lib/assets/loopv.mp4';
@@ -23,8 +25,10 @@
 		loaded = true;
 	}, 8000);
 
+	let winsize = 3000;
 	onMount(() => {
 		let ans;
+		winsize = window.innerWidth;
 		console.log(readToken());
 		if(readToken()){
 			fetch(API.whoami, {
@@ -62,8 +66,8 @@
 	<div class="title">
 		<div class="imgparent" />
 		<div class="tit">
-			<h1>PETRICHOR</h1>
-			<h1 class="date">2024</h1>
+			<h1 class="atmos">PETRICHOR</h1>
+			<h1 class="date atmos">2024</h1>
 			<div class="bupal">
 				<a href="#events" class="cool">Explore Now</a>
 				<a href="/register" class="cool">Sign Up</a>
@@ -71,11 +75,11 @@
 		</div>
 	</div>
 	<div class="banner about">
-		<h1>ABOUT PETRICHOR</h1>
-		<p>
+		<h1>ABOUT <span class="atmos aboutpetr">PETRICHOR</span></h1>
+		<p style="text-align: justify; line-height: 1.5em">
 			Petrichor- the annual techno-cultural fest of IIT Palakkad is back again, and better than ever
 			before. Also, yes, it's offline. We, the students of IIT Palakkad, conduct Petrichor every
-			year, and made sure last year's online event was enthralling for all its participants. Now the
+			year, and made sure last year's event was enthralling for all its participants. Now the
 			wait is over; with just the perfect mix of cultural and technical events, we plan on making
 			Petrichor'24 an unforgettable experience for you. Trust us when we say that you won't miss out
 			on anything. Check out our website as it has answers to all the questions that you might have.
@@ -83,24 +87,27 @@
 		</p>
 	</div>
 	<div class="banner events" id="events">
-		<h1 style="margin-bottom: 0;">EVENTS</h1>
+		<h1 class="atmos" style="margin-bottom: 0;">EVENTS</h1>
 		<div class="sel">
 			<a href="/events/cultural" class="event" style="background-image: url({Cult});">CULTURAL</a>
 			<a href="/events/technical" class="event" style="background-image: url({Tech});">TECHNICAL</a>
+			<a href="/informals" class="event" style="background-image: url({Infor});">INFORMALS</a>
 		</div>
 	</div>
 	<div class="banner workshops">
-		<h1>Workshops</h1>
+		<h1 class="atmos">Workshops</h1>
 		<div class="wscont">
 			{#each workshops.workshops as w}
 				<a href="/workshops#{w.name}" style="text-decoration:None;">
+				<div class="cont">
 					<div
 						class="ws"
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
-						<h2>{w.name}</h2>
-						<p>{w.about}</p>
 					</div>
+					<h2>{w.name}</h2>
+						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
+				</div>
 				</a>
 			{/each}
 		</div>
@@ -110,8 +117,8 @@
 		<form action="?/feedback" method="post" style="display: contents;" use:enhance>
 			<input type="text" placeholder="Name" name="name" required />
 			<input type="text" placeholder="Email" name="email" required />
-			<textarea placeholder="Feedback" cols="30" name="body" required />
-			<button class="cool fbut" type="submit">Submit Feedback</button>
+			<textarea placeholder="Feedback" name="body" required />
+			<SpaceButton text="Submit Feedback"/>
 		</form>
 	</div>
 	<!-- {#if form?.success}
@@ -120,44 +127,65 @@
 </div>
 
 <style>
+	.workshops > h1{
+		font-size: 65px;
+		
+	}
+.cont{
+		transition: 200ms ease;
+	width: min-content;
+	margin-bottom: 4em;
+}
 	.fbut {
 		margin-bottom: 1em !important;
 		font-size: 20px !important;
 		width: fit-content !important;
+		padding: 0.5em;
+		padding-inline: 1em;
 	}
 	.wscont {
 		display: flex;
 	}
 	.ws {
+		position: relative;
 		width: 25em;
 		background-color: rgba(128, 128, 128, 0.223);
+		filter: brightness(70%);
 		padding: 0.5em;
 		margin: 1em;
 		border-radius: 1em;
 		background-position: center;
 		background-size: cover;
 		color: white;
-		transition: 200ms ease;
 		background-size: cover;
 		background-repeat: no-repeat;
+		z-index: 1;
+	}
+	.cont > h2{
+		position: relative;
+		margin-top: -3.5em;
+		margin-left: 1.5em !important;
+		z-index: 2;
+		color: white;
 	}
 	input,
 	textarea {
 		padding: 1.5%;
 		margin: 0.5%;
 		font-size: 24px;
-		border-radius: 10rem;
+		border-radius: 2rem;
 		width: 55%;
-		background-color: #40413e;
+		background-color: rgba(0, 0, 0, 0.5);
 		border: none;
 		color: white;
+		text-indent: 3%;
 	}
 	textarea {
 		height: 30em;
 		border-radius: 1em;
 		margin-bottom: 1em;
 	}
-	.ws:hover {
+	.cont:hover {
 		transform: translateY(-1em);
 	}
 	.none {
@@ -196,7 +224,7 @@
 		/* 		background-image: url('https://www.nme.com/wp-content/uploads/2020/08/we-the-fest-2020-virtual-home-edition.jpg'); */
 		height: 65vh;
 		aspect-ratio: 0.95;
-		margin-inline: 1em;
+		margin-inline: 0.5em;
 		background-size: cover;
 		color: white;
 		display: grid;
@@ -228,8 +256,9 @@
 		font-size: 20px;
 	}
 	.workshops {
-		background-color: rgb(192, 235, 255);
-		color: black;
+		background-color: rgb(29, 0, 59, 0.30);
+		backdrop-filter: blur(12px);
+		color: rgb(255, 255, 255);
 	}
 	.banner {
 		z-index: 2;
@@ -243,7 +272,7 @@
 		/* background: white; */
 	}
 	h1.date {
-		font-weight: 100;
+		font-weight: 1;
 		/* text-align: right; */
 	}
 	.imgparent {
@@ -259,7 +288,7 @@
 	}
 	h1 {
 		font-family: var(--pfont);
-		font-size: 100px;
+		font-size: 90px;
 		font-weight: 1000;
 	}
 
@@ -332,9 +361,14 @@
 	}
 
 	@media screen and (min-width: 930px){
+		
+		.aboutpetr{
+			font-size: 90px;
+			color: #8f60c1
+		}
 		.wscont {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 		.workshops{
 			width: 100%;
@@ -344,9 +378,25 @@
 		.ws{
 			height: 250px;
 		}
+		.event{
+			width: 28vw;
+			height: 60vh;
+			margin-top: 1.2em;
+		}
 	}
 
 	@media (max-width: 930px) {
+		.workshops > h1{
+			font-size: 30px;
+		}
+		.aboutpetr{
+			display: block;
+			font-size: 40px;
+			color: #8f60c1
+		}
+		textarea{
+			height: 15em;
+		}
 		.wscont {
 			display: grid;
 			grid-template-columns: 1fr;
@@ -357,8 +407,10 @@
 			padding: 55rem 0rem;
 		} 
 		.ws {
-			width: 15em;
+			width: 20em;
+			height: 15em;
 		}
+		
 		.main {
 			width: 100vw;
 		}
@@ -371,10 +423,10 @@
 			padding-bottom: 15rem;
 			width: 100vw;
 		}
-		.about > h1 {
+		/* .about > h1 {
 			font-size: 20px;
 			margin-top: 5rem;
-		}
+		} */
 		.title {
 			width: 100svh;
 			flex-direction: column;
@@ -407,11 +459,18 @@
 		p {
 			text-align: justify;
 		}
+		.events{
+			margin: 7em;
+		}
 	}
-	@media screen and (max-width: 330px) {
+	@media screen and (max-width: 480px) {
 		.tit > h1 {
 			display: block;
 		}
+		/* .about > h1 {
+			display: block;
+			font-size: small;
+		} */
 		.bupal {
 			display: block;
 		}

@@ -18,7 +18,7 @@
                     </picture>
                     <center><p class="personName basicgap" >{member[0]}</p></center>
                     <center>
-                        <a href="//gmail.com" style="text-decoration: none;color: antiquewhite;">{member[1]}</a>
+                        <a href="{'https://mail.google.com/mail/?view=cm&to=' + member[1] + '&su=Inquiry%20about%20Petrichor%2024&body=Dear%20' + categoryName + '%2C%0A&cc=petrichor@iitpkd.ac.in'}" style="text-decoration: none;color: antiquewhite;">{member[1]}</a>
                     </center>
                 </div>
             {/each}
@@ -75,9 +75,10 @@ h2{
      }
  
  .image{
-     height:200px ;
      border-radius: 7px;
      border: 3px rgb(228, 222, 222);
+     object-fit: cover;
+     object-position: 50% 10%;
  }
  
  .picture{
@@ -114,6 +115,12 @@ h2{
  .icon{
      width: 25%;
  }
+
+@media screen and (max-width:3000px){
+    .image{
+        height:30vw ;
+    }
+}
  
  @media screen and (max-width:1100px)  {
     .widthcond2{
@@ -130,6 +137,13 @@ h2{
     .widthcond1{
         width: 50%;
     }
+    .image{
+        height:400px ;
+    }
+    .thirdswidth{
+        float: center;
+    width: 50%;
+}
 
 
 }
@@ -148,6 +162,8 @@ h2{
     .widthcond1,.widthcond2{
         width: 70%;
     }
+
+    
   }
  
    .personName{
