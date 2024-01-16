@@ -160,7 +160,7 @@
 		</nav>
 	{/if}
 	<div class="parent">
-		<div class="sidebar">
+		<!-- <div class="sidebar">
 			<div class="sb-content">
 				<div class="up">
 					<p>LOGIN</p>
@@ -178,7 +178,7 @@
 					<a href="insta"><Icon data={twitter} scale={1.6} /></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="main">
 			<slot />
 			{#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural' && winsize > 600}

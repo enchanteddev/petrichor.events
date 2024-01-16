@@ -62,8 +62,24 @@
 				failedToast = true;
 			}
 		} else {
-			loading = true 
-			goto(`/payment?id=${$registerData.eventID}`)
+			loading = true
+			if ($registerData.registeredEmails.map((e) => e.endsWith('smail.iitpkd.ac.in')).every((e) => e)){
+				const response = await POST(API.events_apply_paid, {
+							transactionID: '',
+							CAcode: '',
+							token: readToken(),
+							eventId: $registerData.eventID,
+							participants: $registerData.registeredEmails
+						})
+
+						const result = await response.json()
+						if (result.status == 200){
+							alert("Event applied, no need to pay as all participants from IIT Palakkad")
+							goto('/profile')
+						}
+			} else {
+				goto(`/payment?id=${$registerData.eventID}`)
+			}
 		}
 	}
 </script>
