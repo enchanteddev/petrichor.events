@@ -3,6 +3,8 @@
 	<head>
 		<title>Petrichor 2024</title>
 		<meta charset="utf-8" />
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +39,8 @@
 		--wfont: 'Arial', sans-serif;
 	}
 	html, body{
-		margin: 0;
-		padding: 0;
-		height: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
 		width: 100vw;
 		/* position: absolute; */
 		color: white;
@@ -240,5 +241,8 @@
   transform: translateX(15em);
 }
 
-
+::-webkit-scrollbar {
+        width: 1px;
+        background: transparent; /* make scrollbar transparent */
+    }
 </style>

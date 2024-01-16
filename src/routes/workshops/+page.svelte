@@ -28,7 +28,7 @@
                         </div>
                         <p>Happening on <strong style="color:cyan">{ws.date}</strong> at <strong style="color:lightgreen">{ws.location}</strong></p>
                         <p>{ws.about}</p>
-                        <a href="https://forms.gle/9LhejkwmaBfGqFsw9" class="button-reg butt">Register Now for ₹{ws.fees}</a>
+                        <a href="https://forms.gle/EPr5U6SMBYRzzjeV8" class="button-reg butt">Register Now for ₹{ws.fees}</a>
                         {#if ws.prereq.length > 0}
                         <p style="color: orange;">Some knowledge in
                             {#each ws.prereq as spk, i}
