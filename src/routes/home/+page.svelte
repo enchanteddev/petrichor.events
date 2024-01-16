@@ -127,6 +127,12 @@
 </div>
 
 <style>
+textarea{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 	.workshops > h1{
 		font-size: 65px;
 		

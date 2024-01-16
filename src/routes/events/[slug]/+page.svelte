@@ -421,7 +421,7 @@
 			cursor: pointer;
 		} */
 		.sidebar {
-			height: 15svh;
+			height: 21svh;
 			display: flex;
 			overflow-x: auto; /* Use overflow-x for horizontal scroll */
 			width: 97%; /* Set the sidebar width to 100% of its parent */
