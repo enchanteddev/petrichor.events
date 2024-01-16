@@ -28,7 +28,7 @@
                         </div>
                         <p>Happening on <strong style="color:cyan">{ws.date}</strong> at <strong style="color:lightgreen">{ws.location}</strong></p>
                         <p>{ws.about}</p>
-                        <a href="https://forms.gle/9LhejkwmaBfGqFsw9" class="butt">Register Now for ₹{ws.fees}</a>
+                        <a href="https://forms.gle/9LhejkwmaBfGqFsw9" class="button-reg butt">Register Now for ₹{ws.fees}</a>
                         {#if ws.prereq.length > 0}
                         <p style="color: orange;">Some knowledge in
                             {#each ws.prereq as spk, i}
@@ -63,10 +63,10 @@
         text-decoration: unset;
         padding: 0.8em;
         padding-inline: 1em;
-        background-color: rgb(255, 255, 255);
+        /* background-color: rgb(255, 255, 255); */
         border-radius: 0.4em;
-        border: unset;
-        color:rgb(0, 0, 0);
+        /* border: unset; */
+        /* color:rgb(0, 0, 0); */
         cursor: pointer;
         font-size: 15px;
         margin-top: 1em;
@@ -74,8 +74,8 @@
         transition: 200ms ease-in-out;
     }
     .butt:hover{
-        background-color: rgb(110, 255, 173);
-        color: rgb(0, 0, 0)
+        /* background-color: rgb(110, 255, 173); */
+        /* color: rgb(0, 0, 0) */
     }
     .workshop{
         display: flex;
