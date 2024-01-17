@@ -134,7 +134,6 @@
 <style>
 	.container{
 		display: flex;
-		flex-direction: column-reverse;
 		place-items: top;
 	}
 	.form{
@@ -190,6 +189,7 @@
 		}
 		.container{
 			place-items: center;
+			flex-direction: column-reverse;
 		}
 		.img{
 			width: 95svw;
