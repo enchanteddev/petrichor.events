@@ -143,7 +143,7 @@
 		<a href="/workshops" class="workbutt button-85">Go To Workshops</a>
 	</div>
 	<div class="banner contactus" id="contact">
-		<h1>Contact Us</h1>
+		<h1 class="atmos">Contact Us</h1>
 		<form action="?/feedback" method="post" style="display: contents;" use:enhance>
 			<input type="text" placeholder="Name" name="name" required />
 			<input type="text" placeholder="Email" name="email" required />
