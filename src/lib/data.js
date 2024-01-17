@@ -1171,54 +1171,7 @@ export let technical = {
         "date": "20/1/2024",
         "id": "TF00"
       },
-        {
-        "name": "Trade-a-thon 2.0",
-        "about": "A five-day online trading competition designed to test your trading skills and knowledge in a simulated trading environment.",
-        "rulebook": {
-          "structure": [
-            "1.The trading competition will be held on the app StockGro/",
-            "2. Information on how to log in and register on the online platform (StockGro)",
-            "would be communicated.",
-            "3. The competition will run for 5 trading days"
-          ],
-          "judging": [
-            "1. The final ranking will be determined by the cumulative ROI over the 5-day",
-            "competition period.",
-            "2. The participant with the highest ROI will be declared the winner.",
-            "3. In case of a tie, the team with the lower number of trades will be given",
-            "priority"
-          ],
-          "prizes": [
-            "1. Rs. 5000",
-            "2. Rs. 3000",
-            "3. Rs. 2000"
-          ],
-          "rules": [
-            "1. Registered participants will have to install the StockGro application from PlayStore/ AppStore.",
-            "2. Registered participants need to create a StockGro to join the stock trading competition.",
-            "3. The account and assets allocated will be purely virtual and cannot be liquidated into real money.",
-            "4. Any profit/loss made in this contest is virtual and only for the purpose of the competition.",
-            "5. Duplicate registration will not be accepted.",
-            "6. Other details and guidelines shall be shared with the participants via Email.",
-            "7. Team size : 1"
-          ]
-        },
-        "organisers": [
-          {
-            "name": "JATIN KUMAWAT",
-            "image": JATIN,
-            "phone": "9636902875"
-          },
-          {
-            "name": "Karthikeya D",
-            "image": Karthikeya,
-            "phone": "7794011990"
-          }
-        ],
-        "image": "https://cdn.midjourney.com/dc2ceeff-73bc-4474-ae8f-c9183db16822/0_0.webp",
-        "date": "15/1/2024 - 19/1/2024",
-        "id": "TF07"
-      },
+        
        
      
          {
@@ -1978,7 +1931,55 @@ export let technical = {
         "image": "https://cdn.midjourney.com/ea440f6f-628a-46bc-a522-d62a8fc89b93/0_2.webp",
         "date": "28/1/2024",
         "id": "TF13"
-      }
+      },
+      {
+        "name": "Trade-a-thon 2.0",
+        "about": "A five-day online trading competition designed to test your trading skills and knowledge in a simulated trading environment.",
+        "rulebook": {
+          "structure": [
+            "1.The trading competition will be held on the app StockGro/",
+            "2. Information on how to log in and register on the online platform (StockGro)",
+            "would be communicated.",
+            "3. The competition will run for 5 trading days"
+          ],
+          "judging": [
+            "1. The final ranking will be determined by the cumulative ROI over the 5-day",
+            "competition period.",
+            "2. The participant with the highest ROI will be declared the winner.",
+            "3. In case of a tie, the team with the lower number of trades will be given",
+            "priority"
+          ],
+          "prizes": [
+            "1. Rs. 5000",
+            "2. Rs. 3000",
+            "3. Rs. 2000"
+          ],
+          "rules": [
+            "1. Registered participants will have to install the StockGro application from PlayStore/ AppStore.",
+            "2. Registered participants need to create a StockGro to join the stock trading competition.",
+            "3. The account and assets allocated will be purely virtual and cannot be liquidated into real money.",
+            "4. Any profit/loss made in this contest is virtual and only for the purpose of the competition.",
+            "5. Duplicate registration will not be accepted.",
+            "6. Other details and guidelines shall be shared with the participants via Email.",
+            "7. Team size : 1"
+          ]
+        },
+        "organisers": [
+          {
+            "name": "JATIN KUMAWAT",
+            "image": JATIN,
+            "phone": "9636902875"
+          },
+          {
+            "name": "Karthikeya D",
+            "image": Karthikeya,
+            "phone": "7794011990"
+          }
+        ],
+        "image": "https://cdn.midjourney.com/dc2ceeff-73bc-4474-ae8f-c9183db16822/0_0.webp",
+        "date": "15/1/2024 - 19/1/2024",
+        "id": "TF07"
+      },
 
     ]
   }
