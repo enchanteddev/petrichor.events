@@ -114,7 +114,6 @@
 <div class="bg" bind:this={bg} />
 <div class="parent">
 	<div class="sbcont" />
-
 	<div class="sidebar">
 		{#each events as event}
 			<!-- svelte-ignore a11y-no-static-element-interactions -->
