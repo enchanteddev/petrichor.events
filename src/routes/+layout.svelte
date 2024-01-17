@@ -62,7 +62,7 @@
 							}}
 						>
 							<a href="/home#contact">Contact Us</a>
-							<a href="/reachus">Reach Us</a>
+							<a href="https://www.google.com/maps/place/IIT+Palakkad,+Nila+Campus/@10.8077887,76.725758,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba86f48a12144bf:0x4047c5d94954718a!8m2!3d10.8077887!4d76.725758!16s%2Fg%2F11s5xlpyg0?hl=en&entry=ttu">Reach Us</a>
 						</div>
 					{/if}
 				</div>
@@ -105,7 +105,7 @@
 						isVisN = false;
 					}}
 				>
-					<a href={$isLogin ? '/profile' : '/login'} class="login">Login</a>
+					<a href={$isLogin ? '/profile' : '/login'} class="login">{$isLogin ? 'Profile' : 'Login'}</a>
 				</li>
 				<li
 					on:click={() => {
