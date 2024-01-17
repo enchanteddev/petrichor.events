@@ -24,9 +24,9 @@
 		}
 	})
 
-	// if (!$isLogin) {
-	// 	goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
-	// }
+	if (!$isLogin) {
+		goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
+	}
 
 	if ($registerData.registeredEmails.length == 0) {
 		$registerData.registeredEmails.push($userEmail);
@@ -44,9 +44,9 @@
 	});
 
 	onMount(() => {
-		// if (!$isLogin) {
-		// 	goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
-		// }
+	if (!$isLogin) {
+			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
+		}
 		let bgimage = window.document.getElementById('img');
 		if (bgimage !== null) {
 			bgimage.style.backgroundImage = `url(${imgurl})`;
