@@ -130,11 +130,12 @@
 
 <div class="bg" bind:this={bg} />
 <div class="parent">
-	<div class="sbcont" />
 	<div class="sidebar">
-		{#each events as event, index}
-			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<div
+			<div class="sbcont">
+		
+				{#each events as event, index}
+				<!-- svelte-ignore a11y-no-static-element-interactions -->
+				<div
 				class="card"
 				style="background-image: url('{event.image}');"
 				on:mouseenter={() => {
@@ -142,21 +143,22 @@
 					let query = new URLSearchParams($page.url.searchParams.toString());
 					query.set('id', index.toString());
 					goto(`?${query.toString()}`);
-
+					
 				}}
 				on:mousedown={() => {
 					setEvent(event);
 					let query = new URLSearchParams($page.url.searchParams.toString());
 					query.set('id', index.toString());
 					goto(`?${query.toString()}`);
-
+					
 				}}
 			>
-				<p class="atmos"> 
+			<p class="atmos"> 
 					{event.name}
 				</p>
+		</div>
+				{/each}
 			</div>
-		{/each}
 	</div>
 	<div class="content" bind:this={content}>
 		<div class="banner">
@@ -228,7 +230,7 @@
 				{/if}
 			</div>
 		</div>
-		<div id="register">
+		<div >
 			<h2 >ORGANISERS</h2>
 			<div class="orgcont">
 				{#each currentEvent.organisers as p}
@@ -243,7 +245,7 @@
 			<div class="button-cont">
 				{#if registering || registered}
 					<button
-						id="regbtn"
+						id="register"
 						class="register"
 						disabled
 						style="background-color: aqua;opacity:40%"
@@ -253,7 +255,7 @@
 				{/if}
 				{#if !registering && !registered}
 					<button
-						id="regbtn"
+					id="register"
 						class="register"
 						on:click={() => {
 							clicked();
@@ -286,6 +288,7 @@
 	}
 	.nodot {
 		list-style-type: none;
+		margin-bottom: 0.6em;
 	}
 
 	.card {
@@ -353,6 +356,36 @@
 		width: 25%;
 		background-color: #28282d98;
 		backdrop-filter: blur(40px);
+	}
+	.sbcont{
+		animation: scrollpc 1.5s ease-in-out;
+		animation-delay: 1s;
+		
+	}
+	
+	@keyframes scrollpc { 
+		from {
+			margin-top: 0;
+		}
+		50%{
+			margin-top: -70%;
+		}
+		to{
+			margin-top: 0;
+		}
+	
+	}
+	@keyframes scrollmob { 
+		from {
+			margin-left: 0;
+		}
+		50%{
+			margin-left: -70%;
+		}
+		to{
+			margin-left: 0;
+		}
+	
 	}
 	.parent {
 		display: flex;
@@ -463,6 +496,16 @@
 			width: 97%; /* Set the sidebar width to 100% of its parent */
 			margin: 0 0.5em;
 		}
+		
+		.sbcont > *{
+			
+			display: block !important;
+		}
+		.sbcont{
+			display: flex;
+			animation: scrollmob 1.5s ease-in-out;
+			animation-delay: 1s;
+		}
 
 		.card {
 			all: unset;
@@ -473,6 +516,9 @@
 			cursor: pointer;
 			flex: 0 0 auto; /* Prevent cards from stretching to fill available space */
 			margin-right: 10px; /* Add some spacing between cards if needed */
+			border-radius: 1em;
+			overflow: hidden;
+			margin-top: 0.4em;
 		}
 		.card > p {
 			font-size: 17px;
