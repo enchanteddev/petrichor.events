@@ -277,6 +277,7 @@
 	}
 	.orgcont {
 		display: flex;
+		justify-content: center;
 	}
 	#register > h2 {
 		text-align: center;
