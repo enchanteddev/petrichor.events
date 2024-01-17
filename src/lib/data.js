@@ -5,6 +5,7 @@ import Ananya from '$lib/assets/Organisers/Ananya.jpg'
 import Anju from '$lib/assets/Organisers/ANJU SASIKUMAR.jpg'
 import Anup from '$lib/assets/Organisers/Anup.jpeg'
 import Anusha from '$lib/assets/Organisers/Anusha Dadam.jpg'
+import Arnav from '$lib/assets/Organisers/ARNAV KADU.jpg'
 import Ashwin from '$lib/assets/Organisers/Ashwin.jpg'
 import Ashwini from '$lib/assets/Organisers/Ashwini.jpg'
 import Ayush_Kumar  from '$lib/assets/Organisers/AYUSH KUMAR.jpg'
@@ -1155,7 +1156,8 @@ export let technical = {
             "2. No questions or doubts regarding the treasure hunt will be entertained during the hunt.",
             "3. All further information about the event will be specifically given to the participants through a discord server. Participants are requested to have an account beforehand (a link will be provided to the participants after the registration ends)",
             "4. After joining the Discord server, the participants are also expected to rename themselves as their: Teamname_Participant name (Note: You can edit your server profile instead of your Discord username) 5. Discussing hints or sharing answers is strictly forbidden. Breaching this rule will lead to disqualification.",
-            "5. Team size:1-3"     
+            "5. Team size:1-3" ,
+            "6. Time : 1:00 pm - 5:00 pm"
           ]
         },
         "organisers": [
@@ -1166,7 +1168,7 @@ export let technical = {
           }
         ],
         "image": "https://cdn.midjourney.com/890eb944-68b9-4a5e-b009-af623663c016/0_2.webp",
-        "date": "19/1/2024",
+        "date": "20/1/2024",
         "id": "TF00"
       },
         {
@@ -1851,7 +1853,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Arnav Kadu",
-            "image": Divesh,
+            "image": Arnav,
             "phone": "9987358608"
           },
           {

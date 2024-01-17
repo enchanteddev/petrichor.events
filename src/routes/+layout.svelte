@@ -182,24 +182,18 @@
 		<div class="main">
 			<slot />
 			{#if data.path != '/' && data.path != '/events/technical' && data.path != '/events/cultural' && winsize > 600}
-				<footer>
+				<footer style="padding-top:4em;">
 					<div class="address">
-						<h1>Address</h1>
-						<Icon data={mapMarker} scale={1.2} style="display:block;margin-left:4em;"/>
 						<a
 							href="https://www.google.com/maps/place/IIT+Palakkad,+Nila+Campus/@10.8077887,76.725758,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba86f48a12144bf:0x4047c5d94954718a!8m2!3d10.8077887!4d76.725758!16s%2Fg%2F11s5xlpyg0?hl=en&entry=ttu"
-							target="_blank" style="width: 14em;display:inline-block;margin-left: 6em;margin-top:-2em"
+							target="_blank">
+						<Icon data={mapMarker} scale={1.8} style="display:block;margin-left:0.5em;" class="ic"/>
+						<p style="width: 14em;display:block;margin-left: 3em;margin-top:-2em;line-height:.1.3em;text-align:left"
 						>
-							IIT PALAKKAD, Nila campus, P O, Kanjikode-Malampuzha Road, West Kanjikode, Pudusserry
-							West, Kanjikode, Kerala 678623</a
+							IIT PALAKKAD, Nila campus, Kanjikode, Kerala 678623
+							</p></a
 						>
 					</div>
-					<div class="address">
-						<h1>@email</h1>
-						<p><a href="mailto:events.petrichor@iitpkd.ac.in">events.petrichor@iitpkd.ac.in</a></p>
-					</div>
-					<div class="address">
-						<h1>Connect with us</h1>
 						<div class="socials">
 							<a href="https://instagram.com/petrichor.iitpkd" target="_blank" class="icon"
 								><Icon data={instagram} scale={1.6} class="ico"/></a
@@ -215,6 +209,10 @@
 								target="_blank" class="icon"><Icon data={youtube} scale={1.6} class="ico"/></a
 							>
 						</div>
+					<div class="email">
+					<a href="mailto:events.petrichor@iitpkd.ac.in">
+						<div style="display:inline;margin-left:-2.5em"><i class="fa-solid fa-envelope fa-lg icon"></i></div>
+						<a href="mailto:events.petrichor@iitpkd.ac.in" style="margin-left: 0.5em;font-size:large">events.petrichor@iitpkd.ac.in</a></a>
 					</div>
 				</footer>
 			{/if}
@@ -254,15 +252,16 @@
 </div>
 
 <style>
-	.ico:hover{
+	.email{
+		margin-left: 10em;
 	}
 	.ic{
 		margin: 0.2em;
 	}
 	.ic:hover,.icon:hover{
 		position: relative;
-		scale: 1.2;
-		transition: ease 200ms;
+		scale: 1.4;
+		transition: ease 500ms;
 	}
 	.ham {
 		background-color: transparent;
