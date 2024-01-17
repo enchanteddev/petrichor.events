@@ -3,6 +3,8 @@
 	import { deleteToken } from '$lib';
 	import Event from '$lib/components/Event.svelte';
 	import { isLogin, registerData, userEmail } from '$lib/stores.js';
+	import { Icon } from 'svelte-awesome';
+	import { powerOff } from 'svelte-awesome/icons';
 	export let data;
 	const { user } = data;
 	console.log(user);
@@ -20,17 +22,18 @@
 	<div class="blocks details" style="">
 		<div class="informations info">
 			<!-- Name and Email -->
-			<div class="n-email" style="padding-left: 20px; opacity: 0.75;">
-				<h1 style="width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
-				<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
-					{user.email}
-				</p>
+			<div class="n-email" style="padding-left: 20px; ">
+				<div class="name-mail-cont">
+					<h1 style="width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
+					<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
+						{user.email}
+					</p>
+				</div>
 				<button
 					class="logout"
-					style="background-color: red;"
 					on:click={() => {
 						logout();
-					}}>Logout</button
+					}}><Icon data={powerOff} scale={1.4} /></button
 				>
 			</div>
 
@@ -64,7 +67,10 @@
 			</div> -->
 		<!-- </div> -->
 	</div>
-	<div class="blocks" style="background-color: #242424;">
+	<div
+		class="blocks"
+		style="background-color: #242424; backdrop-filter: blur(100px); opacity: 1 !important;"
+	>
 		<div
 			class="events_info"
 			style="display: flex; width: 100%; justify-content: space-around; font-size: large; padding-left: 10px;"
@@ -81,7 +87,7 @@
 		</div>
 	</div>
 
-	<div class="blocks" style="background-color: #242424;">
+	<!-- <div class="blocks" style="background-color: #242424;">
 		<div class="informations" style="display: flex; ">
 			<div class="accommodation" style="font-size: large">
 				<h1 class="hover-underline">MUSICAL NIGHTS</h1>
@@ -94,7 +100,7 @@
 				{/if}
 			{/each}
 		</div>
-	</div>
+	</div> -->
 </div>
 
 <style>
@@ -117,8 +123,8 @@
 		width: 100%;
 		margin: 0 20px;
 		border-radius: 5%;
-		opacity: 0.8;
-		backdrop-filter: blur(10px);
+		opacity: 0.6;
+		backdrop-filter: blur(40px);
 	}
 	.details {
 		display: flex;
@@ -136,24 +142,36 @@
 	}
 	.n-email {
 		display: flex;
-		flex-direction: column;
-
 		align-items: center;
 
-		background-color: #333232;
+		/* background-color: black; */
 		border-radius: 20px;
-		margin: 10px;
-		padding-top: 10px;
-		line-height: 0;
-		height: 80px;
+		/* margin: 10px;
+		padding-top: 10px; */
+		line-height: 1em;
+		height: auto;
 		text-align: left;
+		position: relative;
+		place-items: center;
+		padding-bottom: 15px;
 	}
 	.logout {
+		position: absolute;
 		text-decoration: none;
-		border-radius: 10px;
+		border-radius: 100em;
 		align-self: flex-start;
 		font-size: smaller;
 		margin-top: 10px;
+		right: 1em;
+		top: 50%;
+		translate: 0 -75%;
+		padding: 1.25em;
+		background-color: #242424;
+		border: 1px solid black;
+		background-color: inherit;
+		border: transparent;
+		color: white;
+		aspect-ratio: 1;
 	}
 	.logout:hover {
 		cursor: pointer;
