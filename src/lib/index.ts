@@ -88,4 +88,4 @@ export function titleCase(inputString: string) {
     const titleString = titleSentences.join('. ');
   
     return titleString;
-  }
+}

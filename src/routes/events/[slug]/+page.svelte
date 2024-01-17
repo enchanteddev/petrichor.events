@@ -446,6 +446,10 @@
 			position: relative;
 			cursor: pointer;
 		} */
+		.content {
+			z-index: 1;
+			padding-top: 2em;
+		}
 		.sidebar {
 			height: 21svh;
 			display: flex;

@@ -6,6 +6,7 @@
 	import Toast from '$lib/components/Toast.svelte';
 	import { goto } from '$app/navigation';
 	import Loading from '$lib/components/Loading.svelte';
+	import {getEventDataJS} from '$lib/helper'
 	
 	let eventData: any = null
 	let min = 1;
@@ -25,9 +26,9 @@
 		emails = Array(max);
 		emails[0] = $userEmail;
 	})
-	
 
-
+	const bgimg = getEventDataJS($registerData.eventID)?.image
+	console.log("BG", bgimg)
 	
 	onMount(() => {
 		console.log($isLogin, $userEmail)
@@ -99,27 +100,61 @@
 {/if}
 <div class="main">
 	{#if eventData}		
-	<h1>Registering for Event Name {eventData.name}</h1>
-	<h2>Please Add your team details</h2>
-	<p>Email of Team Member 1 *</p>
-	<input type="text" value={$userEmail} disabled />
-	<form method="post" style="display: contents;" on:submit|preventDefault={handleSubmit}>
-		{#each Array(max - 1) as e, index}
-		<p>Email of Team Member {index + 2} {index < min - 1 ? '*' : ''}</p>
-		<input
+	<h1>Registering for <span class="atmos" style="font-size: smaller; color: rgb(216, 191, 238)">{eventData.name}</span></h1>
+	<div class="container">
+		<div class="form">
+			
+			<h2>Please add your team's details</h2>
+			<p>Email of Team Member 1 *</p>
+			<input type="text" value={$userEmail} disabled />
+			<form method="post" style="display: contents;" on:submit|preventDefault={handleSubmit}>
+				{#each Array(max - 1) as e, index}
+				<p>Email of Team Member {index + 2} {index < min - 1 ? '*' : ''}</p>
+				<input
 				type="email"
 				on:change={(e) => {
 					// @ts-ignore
 					emails[index + 1] = e.target.value;
 					console.log(emails);
 				}}
-			/>
-			{/each}
+				/>
+				{/each}
+				<br>
 			<button type="submit">Submit</button>
-		</form>
+			</form>
+		</div>
+		<div class="img" style={`background-image: url("${bgimg}")`}>
+		<span class="atmos">
+			{eventData.name}
+		</span>
+		</div>
+	</div>
 	{/if}
 </div>
 <style>
+	.container{
+		display: flex;
+		flex-direction: column-reverse;
+		place-items: top;
+	}
+	.form{
+		margin-right: 5em;
+	}
+	.img{
+		width: 40svw;
+		height: 60svh;
+		background-size: cover;
+		background-position: center;
+		border-radius: 2em;
+		position: relative;
+	}
+	.img > span{
+		position: absolute;
+		bottom: 1em;
+		left: 1em;
+		font-size: 24px;
+		text-shadow: 2px 2px 2px black;
+	}
 	.main {
 		margin: 3em;
 		margin-top: 6em;
@@ -147,5 +182,24 @@
 		border-radius: 1em;
 		width: 10em;
 		cursor: pointer;
+	}
+
+	@media (max-width: 600px){
+		.main{
+			margin-top: 4em;
+		}
+		.container{
+			place-items: center;
+		}
+		.img{
+			width: 95svw;
+			height: 40svh;
+		}
+		.form{
+			margin: unset;
+		}
+		input{
+			width: 88vw;
+		}
 	}
 </style>
