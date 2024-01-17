@@ -1292,16 +1292,23 @@ export let technical = {
         "about": "An online simulation challenge where participants are expected to produce a trajectory plan to get the payload to its desired location, given a set of constraints such as as the fuel, the mass of the payload, etc.",
         "rulebook": {
           "structure": [
-            "1. Duration: 1 day",
+            "1. Duration: 3 hrs(2:00 pm to 5:00 pm)",
             "2. The constraints will be provided along with the problem",
             "statement on the day before.",
             "3. Teams will have to code up their simulation in Python.",
             "4. Upon achieving all the parameters within a range of error."
           ],
           "judging": [
-            "1. Simplicity of simulation - 10p",
-            "2. Achieving required constraints - 80p",
-            "3. Animation quality - 40p"
+          
+        "1. Achieving required constraints ",
+        "1.aFuel Constraint - 40p",
+        "1.b No of stages used (Negative points -1 to -10)p",
+        "2. Animation - 30p",
+        "3. Calculations and Justification of Trajectory ",
+        "3.a Milestones 60p ",
+       " 3.b Calculations 60p ",
+        "There will be partial credit for solutions."
+
           ],
           "prizes": [
             "1. Rs. 3500",
