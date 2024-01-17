@@ -1390,7 +1390,7 @@ export let technical = {
           {
             "name": "Kaushik Rawat",
             "image": Kshitij,
-            "phone": "+9172087 98365"
+            "phone": "+917298991001"
           }
              
         ],
