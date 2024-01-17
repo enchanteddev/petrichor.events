@@ -64,6 +64,8 @@
 									} else {
 										isLogin.set(true);
 										userEmail.set(ans.email);
+										window.localStorage.setItem("registeredEvents",ans.events)
+
 									}
 								});
 							if (data.nextpg != null) {
