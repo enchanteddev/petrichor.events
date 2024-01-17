@@ -344,6 +344,7 @@
 		filter: blur(5px) brightness(50%);
 	}
 	.sidebar {
+		scrollbar-width: none;  /* Firefox */
 		overflow-y: scroll;
 		height: 100vh;
 		width: 25%;
