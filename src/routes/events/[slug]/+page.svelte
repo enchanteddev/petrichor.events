@@ -228,7 +228,7 @@
 				{/if}
 			</div>
 		</div>
-		<div id="register">
+		<div >
 			<h2 >ORGANISERS</h2>
 			<div class="orgcont">
 				{#each currentEvent.organisers as p}
@@ -243,7 +243,7 @@
 			<div class="button-cont">
 				{#if registering || registered}
 					<button
-						id="regbtn"
+						id="register"
 						class="register"
 						disabled
 						style="background-color: aqua;opacity:40%"
@@ -253,7 +253,7 @@
 				{/if}
 				{#if !registering && !registered}
 					<button
-						id="regbtn"
+					id="register"
 						class="register"
 						on:click={() => {
 							clicked();
@@ -473,6 +473,9 @@
 			cursor: pointer;
 			flex: 0 0 auto; /* Prevent cards from stretching to fill available space */
 			margin-right: 10px; /* Add some spacing between cards if needed */
+			border-radius: 1em;
+			overflow: hidden;
+			margin-top: 0.4em;
 		}
 		.card > p {
 			font-size: 17px;

@@ -73,7 +73,7 @@
 			<h1 class="date atmos">2024</h1>
 			<div class="bupal">
 				<a href="#events" class="cool">Explore Now</a>
-				<a href="/register" class="cool">Sign Up</a>
+				<a href="/{$isLogin? "profile" : "register"}" class="cool">{$isLogin? "Profile" : "Sign Up"}</a>
 			</div>
 		</div>
 	</div>
