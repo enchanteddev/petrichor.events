@@ -77,13 +77,11 @@
 					transportation.
 				</li>
 				<li>The form will be closed if either all the rooms are filled or by 24-01-2024.</li>
-			</ol>
-			<ul>
 				<li>
 					Timings of all the events and workshops will be shared by respective organizers before the
 					fest. Participants are expected to reach the campus on their own before the event timings
 				</li>
-			</ul>
+			</ol>
 		</ul>
 	</div>
 	</div>
