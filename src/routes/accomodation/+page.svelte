@@ -8,10 +8,10 @@
 			<h1 class="merch-head atmos">Accomodations</h1>
 		</div>
 		<div class="mpcst">
-			<div class="orma">
+			<a style="text-decoration: none; color: white;" href="https://www.google.com/maps/place/Orma+Tourist+Home/@10.7986016,76.6353658,17z/data=!3m1!4b1!4m9!3m8!1s0x3ba871dd92f93f9d:0x5e27e3e37d1d2570!5m2!4m1!1i2!8m2!3d10.7985963!4d76.6379461!16s%2Fg%2F11bzt6stl_?hl=en&entry=ttu" class="orma">
 				<div class="ormamap" style="background-image: url({orma});" />
 				<p class="ormahead">Orma Tourist Home</p>
-			</div>
+			</a>
 			<div class="cost">
 				<h2>Cost of stay per head:</h2>
 				<ul>
@@ -99,7 +99,8 @@
 		height: 20em;
 		text-indent: 1em;
 		display: inline-block;
-		background-color: #bdbdbd;
+		/* background-color: #bdbdbd; */
+		background-color: #a492b5;
 		width: 18em;
 		color: black;
 		border-radius: 15%/10%;
@@ -110,6 +111,7 @@
 	}
 	.cost > ul {
 		list-style: none;
+		margin-left: -1.25em;
 	}
 	.ormamap {
 		width: 40em;
@@ -124,12 +126,13 @@
 		align-items: center;
 		width: 20em;
 		height: 3.5em;
-		text-indent: 2em;
+		text-indent: 1em;
 		font-weight: 700;
-		font-family: 'Raleway Bold', Helvetica, Arial, sans;
+		/* font-family: 'Raleway Bold', Helvetica, Arial, sans; */
 		font-size: xx-large;
 		z-index: 1000;
-		margin-top: -3.5em;
+		margin-top: -3em;
+		text-shadow: 1px 1px 4px black;
 		/* background-color: rgba(0, 0, 0, 0.3); */
 		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 	}
