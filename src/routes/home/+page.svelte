@@ -108,7 +108,7 @@
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
 					</div>
-					<h2>{w.name}</h2>
+					<h2 class="atmos" style="font-size: 20px; text-shadow: 1px black">{w.name}</h2>
 						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
 				</div>
 				</a>
@@ -121,7 +121,7 @@
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
 					</div>
-					<h2>{w.name}</h2>
+					<h2 class="atmos" style="font-size: 20px; text-shadow: 2px 1px 2px black;">{w.name}</h2>
 						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
 				</div>
 				</a>
@@ -134,7 +134,7 @@
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
 					</div>
-					<h2>{w.name}</h2>
+					<h2 class="atmos" style="font-size: 20px; text-shadow: 1px black">{w.name}</h2>
 						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
 				</div>
 				</a>
