@@ -73,7 +73,7 @@
 			<h1 class="date atmos">2024</h1>
 			<div class="bupal">
 				<a href="#events" class="cool">Explore Now</a>
-				<a href="/register" class="cool">Sign Up</a>
+				<a href="/{$isLogin? "profile" : "register"}" class="cool">{$isLogin? "Profile" : "Sign Up"}</a>
 			</div>
 		</div>
 	</div>
@@ -108,7 +108,7 @@
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
 					</div>
-					<h2>{w.name}</h2>
+					<h2 class="atmos" style="font-size: 20px; text-shadow: 1px black">{w.name}</h2>
 						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
 				</div>
 				</a>
@@ -121,7 +121,7 @@
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
 					</div>
-					<h2>{w.name}</h2>
+					<h2 class="atmos" style="font-size: 20px; text-shadow: 2px 1px 2px black;">{w.name}</h2>
 						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
 				</div>
 				</a>
@@ -134,7 +134,7 @@
 						style="background-image: url('{w.image}');font-weight:bolder;"
 					>
 					</div>
-					<h2>{w.name}</h2>
+					<h2 class="atmos" style="font-size: 20px; text-shadow: 1px black">{w.name}</h2>
 						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
 				</div>
 				</a>
@@ -143,7 +143,7 @@
 		<a href="/workshops" class="workbutt button-85">Go To Workshops</a>
 	</div>
 	<div class="banner contactus" id="contact">
-		<h1>Contact Us</h1>
+		<h1 class="atmos">Contact Us</h1>
 		<form action="?/feedback" method="post" style="display: contents;" use:enhance>
 			<input type="text" placeholder="Name" name="name" required />
 			<input type="text" placeholder="Email" name="email" required />
@@ -466,7 +466,6 @@ input{
 		.workshops{
 			width: 100%;
 			overflow: hidden;
-			padding: 55rem 0rem;
 		} 
 		.ws {
 			width: 20em;

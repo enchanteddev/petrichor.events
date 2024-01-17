@@ -128,7 +128,7 @@ export let cultural = {
 
      {
         "name": "Click n' Roll",
-        "about": "A Showcase of Frames. This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "about": "A Showcase of Frames. This event will be conducted online. Participants have to capture the essence of the fest through photography and videography and create reels using them.",
         "rulebook": {
           "structure": [
             "1. Participants can compete individually or form teams of up to two members.",
@@ -1390,7 +1390,7 @@ export let technical = {
           {
             "name": "Kaushik Rawat",
             "image": Kshitij,
-            "phone": "+9172087 98365"
+            "phone": "+917298991001"
           }
              
         ],
