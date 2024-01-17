@@ -37,8 +37,7 @@
 	let registering = false;
 
 	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
-
-
+	let content: HTMLDivElement;
 	const setEvent = (event: event) => {
 		registering = false;
 		bg.style.backgroundImage = `url("${event.image}")`;
@@ -55,6 +54,9 @@
 		// 	}
 		// })
 		console.log(eventId)
+		if (content){
+			content.scrollTo(0, 0)
+		}
 	};
 
 	const clicked = async () => {
@@ -156,7 +158,7 @@
 			</div>
 		{/each}
 	</div>
-	<div class="content">
+	<div class="content" bind:this={content}>
 		<div class="banner">
 			<h1 class="atmos" style="height: {currentEvent.name.length > 18 ? '14rem' : '10rem'};">
 				{currentEvent && currentEvent.name}

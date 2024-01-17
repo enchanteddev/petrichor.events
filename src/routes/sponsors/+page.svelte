@@ -2,13 +2,13 @@
 	import Canara from '$lib/assets/Sponsors/Canara.jpg'
 	import Hp from '$lib/assets/Sponsors/Hp.jpg'
 	import Pnb from '$lib/assets/Sponsors/Pnb.jpg'
-	import Sbi from '$lib/assets/Sponsors/Sbi.jpg'
+	import Sbi from '$lib/assets/Sponsors/SBI.jpeg'
 	import Vasantha from '$lib/assets/Sponsors/Vasantha.jpg'
 	import Cazzkaro from '$lib/assets/Sponsors/Cazz_Karo_Logo.png'
 	import Chess from '$lib/assets/Sponsors/chess.webp'
 </script>
 
-<h1 id="heading1"><span style="color:blueviolet">PETRICHOR'24</span> IS SPONSORED BY</h1>
+<h1 id="heading1"><span class="atmos" style="color:blueviolet">PETRICHOR'24</span> IS SPONSORED BY</h1>
 
 <div id="all">
 	<div id="pnbSponsor" class="sponsor">
@@ -43,7 +43,7 @@
 	</div>
 </div>
 
-<h2 id="heading2" style="color: aqua;">In Partnership with</h2>
+<h2 id="heading2" class="atmos" style="color:rgb(216, 191, 238)">In Partnership with</h2>
 
 <div id="all1">
 	<div id="cazzkaro" class="sponsor">
@@ -129,6 +129,9 @@
 		background-position: center;
 		height: 200px;
 		width: 200px;
+	}
+	.title, .name{
+		font-size: larger;
 	}
 
 	/* Mobile Version */

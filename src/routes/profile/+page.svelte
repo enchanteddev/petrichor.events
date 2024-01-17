@@ -3,6 +3,8 @@
 	import { deleteToken } from "$lib";
 	import Event from "$lib/components/Event.svelte";
 	import { isLogin, registerData, userEmail} from "$lib/stores.js";
+	import { Icon } from "svelte-awesome";
+	import { powerOff } from "svelte-awesome/icons";
 	export let data;
 	const { user } = data
 	console.log(user)
@@ -23,11 +25,13 @@
 		<div class="informations info">
 			<!-- Name and Email -->
 			<div class="n-email" style="padding-left: 20px;">
-				<h1 style="width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
-				<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
-					{user.email}
-				</p>
-				<button class="logout" style="background-color: red;" on:click={()=>{logout()}}>Logout</button>
+				<div class="name-email-cont">
+					<h1 style="font-size:x-large ;width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
+					<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
+						{user.email}
+					</p>
+				</div>
+				<button class="logout" on:click={()=>{logout()}}><Icon data={powerOff} scale={1.4}/></button>
 			</div>
 
 			<div
@@ -126,24 +130,36 @@
 	}
 	.n-email {
 		display: flex;
-		flex-direction: column;
-
 		align-items: center;
 
 		background-color: #333232;
 		border-radius: 20px;
-		margin: 10px;
-		padding-top: 10px;
-		line-height: 0;
-		height: 80px;
+		/* margin: 10px;
+		padding-top: 10px; */
+		line-height: 1em;
+		height: auto;
 		text-align: left;
+		position: relative;
+		place-items: center;
 	}
 	.logout{
+		position: absolute;
 		text-decoration: none;
-		border-radius: 10px;
+		border-radius: 100em;
 		align-self: flex-start;
 		font-size: smaller;
 		margin-top: 10px;
+		right: 1em;
+		top: 50%;
+		translate: 0 -75%;
+		padding: 1.25em;
+		background-color: #242424;
+		border: 1px solid black;
+		background-color: inherit;
+		border: transparent;
+		color: white;
+		aspect-ratio: 1;
+
 	}
 	.logout:hover{
 		cursor: pointer;

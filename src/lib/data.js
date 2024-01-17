@@ -1292,16 +1292,23 @@ export let technical = {
         "about": "An online simulation challenge where participants are expected to produce a trajectory plan to get the payload to its desired location, given a set of constraints such as as the fuel, the mass of the payload, etc.",
         "rulebook": {
           "structure": [
-            "1. Duration: 1 day",
+            "1. Duration: 3 hrs(2:00 pm to 5:00 pm)",
             "2. The constraints will be provided along with the problem",
             "statement on the day before.",
             "3. Teams will have to code up their simulation in Python.",
             "4. Upon achieving all the parameters within a range of error."
           ],
           "judging": [
-            "1. Simplicity of simulation - 10p",
-            "2. Achieving required constraints - 80p",
-            "3. Animation quality - 40p"
+          
+        "1. Achieving required constraints ",
+        "1.aFuel Constraint - 40p",
+        "1.b No of stages used (Negative points -1 to -10)p",
+        "2. Animation - 30p",
+        "3. Calculations and Justification of Trajectory ",
+        "3.a Milestones 60p ",
+       " 3.b Calculations 60p ",
+        "There will be partial credit for solutions."
+
           ],
           "prizes": [
             "1. Rs. 3500",
@@ -1902,11 +1909,11 @@ export let technical = {
             "Robot Specifications",
             "1. The dimensions of the robot should not exceed 55 cm x 55 cm x 55 cm at any point during the match.",
             "2. The weight of the bot should be less than 25kg (55.12lbs). Note that the weight of adapters and the remote controller will not be included in these constraints.",
-            "3. The power source of the robot cannot exceed 30V.",
-            "4. Motors with maximum 350w can only be used for the driving of the Robot.",
-            "5. Team size: 4-6",
-            "Mobility",
+            "3. Motors with maximum 350w can only be used for the driving of the Robot.",
+            "4. Team size: 4-6",
             "5. Maximum voltage of battery should be 24v.",
+            "Mobility",
+            
             "1. Methods of mobility may include,Rolling (wheels, tracks or the whole robot), Walking (linear actuated legs with no rolling or cam operated motion), Shuffling (rotational cam operated legs).",
             "2. Jumping and hopping is not allowed.",
             "3. Flying (using aerofoil, helium balloons, ornithopters, etc.) is not allowed.",
