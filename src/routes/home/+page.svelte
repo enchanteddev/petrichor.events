@@ -466,7 +466,6 @@ input{
 		.workshops{
 			width: 100%;
 			overflow: hidden;
-			padding: 55rem 0rem;
 		} 
 		.ws {
 			width: 20em;

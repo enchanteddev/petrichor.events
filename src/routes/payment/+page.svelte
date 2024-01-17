@@ -7,6 +7,11 @@
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 	import Loading from '$lib/components/Loading.svelte';
+	import utr1 from '$lib/assets/UtrRefer/utr1.jpeg'
+	import utr2 from '$lib/assets/UtrRefer/utr2.jpeg'
+	import utr3 from '$lib/assets/UtrRefer/utr3.jpeg'
+	import utr4 from '$lib/assets/UtrRefer/utr4.jpeg'
+	import utr5 from '$lib/assets/UtrRefer/utr5.jpeg'
 
 	export let data: any;
 	let loading = false;
@@ -19,9 +24,9 @@
 		}
 	})
 
-	if (!$isLogin) {
-		goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
-	}
+	// if (!$isLogin) {
+	// 	goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
+	// }
 
 	if ($registerData.registeredEmails.length == 0) {
 		$registerData.registeredEmails.push($userEmail);
@@ -39,9 +44,9 @@
 	});
 
 	onMount(() => {
-		if (!$isLogin) {
-			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
-		}
+		// if (!$isLogin) {
+		// 	goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
+		// }
 		let bgimage = window.document.getElementById('img');
 		if (bgimage !== null) {
 			bgimage.style.backgroundImage = `url(${imgurl})`;
@@ -222,7 +227,7 @@
 				<button id="verify" style="cursor:pointer" on:click={() => verify(CAcode)}>Verify</button>
 			</div>
 			<div id="submitButton">
-				<p id="warning">Hii</p>
+				<p id="warning"></p>
 				<button
 					id="submit"
 					on:click={() => submit()}
@@ -234,7 +239,28 @@
 	</form>
 </div>
 
+<h1 style="text-align: center;margin-top:-3em">Example of Transaction ID</h1>
+<div class="images">
+<img src="{utr1}" alt=""/>
+<img src="{utr2}" alt=""/>
+<img src="{utr3}" alt=""/>
+<img src="{utr4}" alt=""/>
+<img src="{utr5}" alt=""/>
+</div>
+
 <style>
+.images{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+	margin: 1em;
+	display: inline-block;
+	width:10rem;
+	height:15rem
+}
 	.form {
 		width: 100vw;
 		grid-template-areas: 'data payment';
@@ -381,6 +407,14 @@
 		}
 		#submitButton {
 			width: 18rem;
+		}
+	}
+	@media (max-width:600px){
+		#all{
+			margin-top: -6em;
+		}
+		.images{
+			flex-direction: column;
 		}
 	}
 </style>
