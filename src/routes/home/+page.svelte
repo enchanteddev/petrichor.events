@@ -459,10 +459,10 @@ input{
 		textarea{
 			height: 15em;
 		}
-		.wscont {
+		/* .wscont {
 			display: grid;
 			grid-template-columns: 1fr;
-		}
+		} */
 		.workshops{
 			width: 100%;
 			overflow: hidden;
