@@ -1,37 +1,37 @@
 <script lang="ts">
-	import { goto } from "$app/navigation";
-	import { deleteToken } from "$lib";
-	import Event from "$lib/components/Event.svelte";
-	import { isLogin, registerData, userEmail} from "$lib/stores.js";
-	import { Icon } from "svelte-awesome";
-	import { powerOff } from "svelte-awesome/icons";
+	import { goto } from '$app/navigation';
+	import { deleteToken } from '$lib';
+	import Event from '$lib/components/Event.svelte';
+	import { isLogin, registerData, userEmail } from '$lib/stores.js';
 	export let data;
-	const { user } = data
-	console.log(user)
+	const { user } = data;
+	console.log(user);
 
-	const logout =async () => {
-		isLogin.set(false)
-		userEmail.set("")
-		registerData.set({eventID: "",
-			registeredEmails: []})
-		deleteToken()
-		goto('/')
-	}
-	
+	const logout = async () => {
+		isLogin.set(false);
+		userEmail.set('');
+		registerData.set({ eventID: '', registeredEmails: [] });
+		deleteToken();
+		goto('/');
+	};
 </script>
 
 <div class="container">
-	<div class="blocks details">
+	<div class="blocks details" style="">
 		<div class="informations info">
 			<!-- Name and Email -->
-			<div class="n-email" style="padding-left: 20px;">
-				<div class="name-email-cont">
-					<h1 style="font-size:x-large ;width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
-					<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
-						{user.email}
-					</p>
-				</div>
-				<button class="logout" on:click={()=>{logout()}}><Icon data={powerOff} scale={1.4}/></button>
+			<div class="n-email" style="padding-left: 20px; opacity: 0.75;">
+				<h1 style="width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
+				<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
+					{user.email}
+				</p>
+				<button
+					class="logout"
+					style="background-color: red;"
+					on:click={() => {
+						logout();
+					}}>Logout</button
+				>
 			</div>
 
 			<div
@@ -58,11 +58,11 @@
 				<h4 style="margin-top: 0; margin-bottom: 10px;">{user.gradyear}</h4>
 			</div>
 		</div>
-		<div class="informations" style="display: flex; ">
+		<!-- <div class="informations" style="display: flex; ">
 			<div class="accommodation" style="font-size: large">
 				<h1>ACCOMMODATION</h1>
-			</div>
-		</div>
+			</div> -->
+		<!-- </div> -->
 	</div>
 	<div class="blocks" style="background-color: #242424;">
 		<div
@@ -75,7 +75,7 @@
 		<div class="events_info">
 			{#each user.events as event}
 				{#if event.eventId.startsWith('T') || event.eventId.startsWith('C')}
-					<Event eventId={event.eventId} paymentStatus={event.status}/>
+					<Event eventId={event.eventId} paymentStatus={event.status} />
 				{/if}
 			{/each}
 		</div>
@@ -84,13 +84,13 @@
 	<div class="blocks" style="background-color: #242424;">
 		<div class="informations" style="display: flex; ">
 			<div class="accommodation" style="font-size: large">
-				<h1 class="hover-underline">WORKSHOPS/INFORMALS</h1>
+				<h1 class="hover-underline">MUSICAL NIGHTS</h1>
 			</div>
 		</div>
 		<div class="events_info">
 			{#each user.events as event}
 				{#if event.eventId.startsWith('W') || event.eventId.startsWith('I')}
-					<Event eventId={event.eventId} paymentStatus={event.status}/>
+					<Event eventId={event.eventId} paymentStatus={event.status} />
 				{/if}
 			{/each}
 		</div>
@@ -98,6 +98,10 @@
 </div>
 
 <style>
+	html {
+		zoom: 1 !important;
+		transform: scale(1) !important;
+	}
 	.container {
 		display: flex;
 		margin-top: 100px;
@@ -113,55 +117,45 @@
 		width: 100%;
 		margin: 0 20px;
 		border-radius: 5%;
+		opacity: 0.8;
+		backdrop-filter: blur(10px);
 	}
 	.details {
 		display: flex;
 		flex-direction: column;
 	}
-	.info{
+	.info {
 		height: 0;
 		padding-bottom: 10rem;
 	}
 	.informations {
 		flex-grow: 1;
-		background-color: #242424;
+		/* background-color: no; */
 		margin: 10px;
 		border-radius: 5%;
 	}
 	.n-email {
 		display: flex;
+		flex-direction: column;
+
 		align-items: center;
 
 		background-color: #333232;
 		border-radius: 20px;
-		/* margin: 10px;
-		padding-top: 10px; */
-		line-height: 1em;
-		height: auto;
+		margin: 10px;
+		padding-top: 10px;
+		line-height: 0;
+		height: 80px;
 		text-align: left;
-		position: relative;
-		place-items: center;
 	}
-	.logout{
-		position: absolute;
+	.logout {
 		text-decoration: none;
-		border-radius: 100em;
+		border-radius: 10px;
 		align-self: flex-start;
 		font-size: smaller;
 		margin-top: 10px;
-		right: 1em;
-		top: 50%;
-		translate: 0 -75%;
-		padding: 1.25em;
-		background-color: #242424;
-		border: 1px solid black;
-		background-color: inherit;
-		border: transparent;
-		color: white;
-		aspect-ratio: 1;
-
 	}
-	.logout:hover{
+	.logout:hover {
 		cursor: pointer;
 	}
 	.accommodation {
@@ -179,47 +173,48 @@
 		text-decoration-thickness: 4px;
 	}
 
-	@media (max-width: 800px){
-		*{
+	@media (max-width: 800px) {
+		* {
 			font-size: small;
 		}
-		.hover-underline{
+		.hover-underline {
 			font-size: xx-small;
 		}
-		.accommodation{
+		.accommodation {
 			font-size: xx-small;
 		}
-		.blocks{
+		.blocks {
 			margin: 5px 5px;
 			border-radius: 5%/10%;
 			width: 25rem;
 		}
-		.informations{
+		.informations {
 			margin: 0px;
 			margin-bottom: 5px;
-			height: 15rem;
+			/* height: 15rem; */
 			flex-direction: column;
 			border-radius: 5%/10%;
 			width: 25rem;
 		}
-		.info{
-			height: 15rem;
+		.info {
+			/* height: 15rem; */
 		}
-		.n-email{
+		.n-email {
 			height: 5rem;
 		}
-		.container{
+		.container {
 			display: flex;
 			flex-direction: column;
 			overflow: scroll;
 			align-items: center;
 		}
 	}
-	@media (max-width:400px){
-		.blocks, .informations{
+	@media (max-width: 400px) {
+		.blocks,
+		.informations {
 			width: 25rem;
 		}
-		.container{
+		.container {
 			align-items: first baseline;
 		}
 	}
