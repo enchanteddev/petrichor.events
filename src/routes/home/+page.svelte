@@ -52,11 +52,14 @@
 						isLogin.set(true);
 						console.log(ans.email);
 						userEmail.set(ans.email);
+						window.localStorage.setItem("registeredEvents",ans.events)
 					}
 				});
 
 		}
 	});
+
+	let workshop_hover = false;
 </script>
 
 <div class="main {visible ? '' : 'none'}">
@@ -96,7 +99,33 @@
 	</div>
 	<div class="banner workshops">
 		<h1 class="atmos">Workshops</h1>
-		<div class="wscont">
+		<div class="wscont {workshop_hover ? 'sliding3' : ""}">
+			{#each workshops.workshops as w}
+				<a href="/workshops#{w.name}" style="text-decoration:None;">
+				<div class="cont">
+					<div
+						class="ws"
+						style="background-image: url('{w.image}');font-weight:bolder;"
+					>
+					</div>
+					<h2>{w.name}</h2>
+						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
+				</div>
+				</a>
+			{/each}
+			{#each workshops.workshops as w}
+				<a href="/workshops#{w.name}" style="text-decoration:None;">
+				<div class="cont">
+					<div
+						class="ws"
+						style="background-image: url('{w.image}');font-weight:bolder;"
+					>
+					</div>
+					<h2>{w.name}</h2>
+						<!-- <p style="margin: 1rem;z-index:5">{w.about}</p> -->
+				</div>
+				</a>
+			{/each}
 			{#each workshops.workshops as w}
 				<a href="/workshops#{w.name}" style="text-decoration:None;">
 				<div class="cont">
@@ -111,6 +140,7 @@
 				</a>
 			{/each}
 		</div>
+		<a href="/workshops" class="workbutt button-85">Go To Workshops</a>
 	</div>
 	<div class="banner contactus" id="contact">
 		<h1>Contact Us</h1>
@@ -150,7 +180,27 @@ input{
 		padding-inline: 1em;
 	}
 	.wscont {
+		margin-top: 5em;
 		display: flex;
+		animation: workshop 12s linear infinite;
+	}
+	.workbutt{
+		padding: 1em;
+		padding-inline: 2em;
+		font-size: 20px;
+		font-family: inherit;
+		margin-top: 3em;
+		margin-bottom: 3em;
+		text-decoration: unset;
+	}
+	.wscont > a{
+		transition: 0.2s ease-in-out; 
+	}
+	.wscont > a:hover{
+		transform: scale(1.1);
+	}
+	.wscont:hover{
+		animation-play-state: paused;
 	}
 	.ws {
 		position: relative;
@@ -181,7 +231,7 @@ input{
 		font-size: 24px;
 		border-radius: 2rem;
 		width: 55%;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(10, 10, 10, 0.5);
 		border: none;
 		color: white;
 		text-indent: 3%;
@@ -190,9 +240,6 @@ input{
 		height: 30em;
 		border-radius: 1em;
 		margin-bottom: 1em;
-	}
-	.cont:hover {
-		transform: translateY(-1em);
 	}
 	.none {
 		opacity: 0% !important;
@@ -366,20 +413,29 @@ input{
 		transform: translate(0, 5%);
 	}
 
+	@keyframes workshop{
+		from{
+			translate: 0% 0;
+		} to {
+			translate: -33.25% 0;
+		}
+	}
+
 	@media screen and (min-width: 930px){
 		
 		.aboutpetr{
 			font-size: 90px;
 			color: #8f60c1
 		}
-		.wscont {
+		/* .wscont {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
-		}
+		} */
 		.workshops{
 			width: 100%;
 			overflow: hidden;
-			padding: 25rem 0rem;
+			padding: 2rem 0rem;
+			padding-top: 2em;
 		} 
 		.ws{
 			height: 250px;
@@ -403,10 +459,10 @@ input{
 		textarea{
 			height: 15em;
 		}
-		.wscont {
+		/* .wscont {
 			display: grid;
 			grid-template-columns: 1fr;
-		}
+		} */
 		.workshops{
 			width: 100%;
 			overflow: hidden;

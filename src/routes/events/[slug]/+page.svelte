@@ -15,6 +15,7 @@
 	let events = data['nofee']['events'];
 	let events1 = data['withfee']
 	let loading = false
+	let registeredEvents:Array<string>
 
 	
 	$: {
@@ -22,26 +23,38 @@
 	}
 	
 	let bg: HTMLDivElement;
-	let currentEvent: event = events[0];
+	let currentEvent: event = events[data.eventID];
 	let registered = false;
+	onMount(() => {
+		bg.style.backgroundImage = `url("${currentEvent.image}")`;
+		setEvent(currentEvent)
+		let local=window.localStorage.getItem("registeredEvents")?.split(",")
+		if (local){
+			registeredEvents = local;
+		}
+	});
+
 	let registering = false;
 
 	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
 
-	onMount(() => {
-		bg.style.backgroundImage = `url("${currentEvent.image}")`;
-	});
 
 	const setEvent = (event: event) => {
 		registering = false;
 		bg.style.backgroundImage = `url("${event.image}")`;
 		currentEvent = event;
-		currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
-		// console.log(event.image);
-		// console.log($userEvents);
-		// console.log(currentEvent.id)
+		let eventId = currentEvent.id.slice(2)
+		currEveFee = events1[parseInt(eventId)].fees
 		registered=false	
-		// console.log('p');
+		if(registeredEvents?.includes(event.id)){
+			registered=true
+		}
+		// registeredEvents.forEach(element =>{
+		// 	if(element == event.id){
+		// 		registered=true
+		// 	}
+		// })
+		console.log(eventId)
 	};
 
 	const clicked = async () => {
@@ -75,6 +88,8 @@
 							if (res.status == 200) {
 								// userEvents.update(value => [...value, currentEvent.id])
 								alert('Registration successfull');
+								registeredEvents.push(currentEvent.id)
+								window.localStorage.setItem("registeredEvents",(registeredEvents).toString())
 								registered = true;
 							} else {
 								alert('Registration Unsuccessfull! Please try Again');
@@ -114,18 +129,25 @@
 <div class="bg" bind:this={bg} />
 <div class="parent">
 	<div class="sbcont" />
-
 	<div class="sidebar">
-		{#each events as event}
+		{#each events as event, index}
 			<!-- svelte-ignore a11y-no-static-element-interactions -->
 			<div
 				class="card"
 				style="background-image: url('{event.image}');"
 				on:mouseenter={() => {
 					setEvent(event);
+					let query = new URLSearchParams($page.url.searchParams.toString());
+					query.set('id', index.toString());
+					goto(`?${query.toString()}`);
+
 				}}
 				on:mousedown={() => {
 					setEvent(event);
+					let query = new URLSearchParams($page.url.searchParams.toString());
+					query.set('id', index.toString());
+					goto(`?${query.toString()}`);
+
 				}}
 			>
 				<p class="atmos"> 
@@ -255,6 +277,7 @@
 	}
 	.orgcont {
 		display: flex;
+		justify-content: center;
 	}
 	#register > h2 {
 		text-align: center;
@@ -322,6 +345,7 @@
 		filter: blur(5px) brightness(50%);
 	}
 	.sidebar {
+		scrollbar-width: none;  /* Firefox */
 		overflow-y: scroll;
 		height: 100vh;
 		width: 25%;
