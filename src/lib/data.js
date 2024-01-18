@@ -45,6 +45,7 @@ import Abhijith from '$lib/assets/Organisers/Abhijith.jpg'
 import Pavitra from '$lib/assets/Organisers/Pavitra.jpg'
 import Prisha from '$lib/assets/Organisers/Prisha.jpg'
 import Nalan from '$lib/assets/Organisers/Nalan.jpg'
+import Kaushik from '$lib/assets/CoreTeam/Kaushik.jpg'
 import Siva from '$lib/assets/Organisers/Siva.jpg'
 import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
 import tblackf from '$lib/assets/Merch/T Shirt F IIT P1.png'
@@ -1389,7 +1390,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Kaushik Rawat",
-            "image": Kshitij,
+            "image": Kaushik,
             "phone": "+917298991001"
           }
              
