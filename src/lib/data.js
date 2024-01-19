@@ -61,7 +61,7 @@ import Chess from '$lib/assets/Informals/Chess.jpg'
 
 
 export const closedRegistrations = [
-    "TF07"
+    "TF07", "TF08", "TF03"
 ]
 
 export let cultural = {
