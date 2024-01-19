@@ -78,13 +78,14 @@
 		>
 			<center><h1 class="hover-underline">EVENTS</h1></center>
 		</div>
-
-		<div class="events_info">
-			{#each user.events as event}
+		<div class="cont" style=" overflow: scroll; height: 85%">
+			<div class="events_info">
+				{#each user.events as event}
 				{#if event.eventId.startsWith('T') || event.eventId.startsWith('C')}
-					<Event eventId={event.eventId} paymentStatus={event.status} />
+				<Event eventId={event.eventId} paymentStatus={event.status} />
 				{/if}
-			{/each}
+				{/each}
+			</div>
 		</div>
 	</div>
 
@@ -105,6 +106,9 @@
 </div>
 
 <style>
+	/* .events_infop{
+		overflow: scroll
+	} */
 	html {
 		zoom: 1 !important;
 		transform: scale(1) !important;
@@ -124,7 +128,7 @@
 		width: 100%;
 		margin: 0 20px;
 		border-radius: 5%;
-		opacity: 0.6;
+		/* opacity: 0.6; */
 		backdrop-filter: blur(40px);
 	}
 	.details {
