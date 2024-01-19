@@ -158,7 +158,7 @@
 			display: inline-block;
 		}
 		.blank {
-			background-color: black;
+			background-color: transparent;
 			width: 100%;
 			height: 100px;
 		}

@@ -26,6 +26,35 @@
 	let currentEvent: event = events[data.eventID];
 	let registered = false;
 	onMount(() => {
+		let ans;
+		console.log(readToken());
+		if(readToken()){
+			fetch(API.whoami, {
+				method: 'POST',
+				headers: {
+					Accept: 'application/json',
+					'Content-type': 'application/json'
+				},
+				credentials: 'omit',
+				body: JSON.stringify({
+					token: readToken()
+				})
+			})
+				.then((res) => res.json())
+				.then((res) => {
+					ans = res;
+					console.log(res);
+					if (ans.user == null || ans.user == undefined) {
+						isLogin.set(false);
+					} else {
+						isLogin.set(true);
+						console.log(ans.email);
+						userEmail.set(ans.email);
+						window.localStorage.setItem("registeredEvents",ans.events)
+					}
+				});
+
+		}
 		bg.style.backgroundImage = `url("${currentEvent.image}")`;
 		setEvent(currentEvent)
 		let local=window.localStorage.getItem("registeredEvents")?.split(",")
@@ -130,11 +159,12 @@
 
 <div class="bg" bind:this={bg} />
 <div class="parent">
-	<div class="sbcont" />
 	<div class="sidebar">
-		{#each events as event, index}
-			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<div
+			<div class="sbcont">
+		
+				{#each events as event, index}
+				<!-- svelte-ignore a11y-no-static-element-interactions -->
+				<div
 				class="card"
 				style="background-image: url('{event.image}');"
 				on:mouseenter={() => {
@@ -142,28 +172,29 @@
 					let query = new URLSearchParams($page.url.searchParams.toString());
 					query.set('id', index.toString());
 					goto(`?${query.toString()}`);
-
+					
 				}}
 				on:mousedown={() => {
 					setEvent(event);
 					let query = new URLSearchParams($page.url.searchParams.toString());
 					query.set('id', index.toString());
 					goto(`?${query.toString()}`);
-
+					
 				}}
 			>
-				<p class="atmos"> 
+			<p class="atmos"> 
 					{event.name}
 				</p>
+		</div>
+				{/each}
 			</div>
-		{/each}
 	</div>
 	<div class="content" bind:this={content}>
 		<div class="banner">
 			<h1 class="atmos" style="height: {currentEvent.name.length > 18 ? '14rem' : '10rem'};">
 				{currentEvent && currentEvent.name}
 			</h1>
-			<span>{currentEvent.date}</span>
+			<span class="date">{currentEvent.date}</span>
 			{#if currentEvent.theme}
 			<h2>THEME</h2>
 			<p style="margin-top: -1rem;">{currentEvent.theme}</p>
@@ -228,7 +259,7 @@
 				{/if}
 			</div>
 		</div>
-		<div id="register">
+		<div >
 			<h2 >ORGANISERS</h2>
 			<div class="orgcont">
 				{#each currentEvent.organisers as p}
@@ -243,7 +274,7 @@
 			<div class="button-cont">
 				{#if registering || registered}
 					<button
-						id="regbtn"
+						id="register"
 						class="register"
 						disabled
 						style="background-color: aqua;opacity:40%"
@@ -253,7 +284,7 @@
 				{/if}
 				{#if !registering && !registered}
 					<button
-						id="regbtn"
+					id="register"
 						class="register"
 						on:click={() => {
 							clicked();
@@ -286,6 +317,7 @@
 	}
 	.nodot {
 		list-style-type: none;
+		margin-bottom: 0.6em;
 	}
 
 	.card {
@@ -354,6 +386,36 @@
 		background-color: #28282d98;
 		backdrop-filter: blur(40px);
 	}
+	.sbcont{
+		animation: scrollpc 1.5s ease-in-out;
+		animation-delay: 1s;
+		
+	}
+	
+	@keyframes scrollpc { 
+		from {
+			margin-top: 0;
+		}
+		50%{
+			margin-top: -70%;
+		}
+		to{
+			margin-top: 0;
+		}
+	
+	}
+	@keyframes scrollmob { 
+		from {
+			margin-left: 0;
+		}
+		50%{
+			margin-left: -70%;
+		}
+		to{
+			margin-left: 0;
+		}
+	
+	}
 	.parent {
 		display: flex;
 		width: 100%;
@@ -400,7 +462,7 @@
 		width: 85%;
 		font-size: 22px;
 	}
-
+	
 	@keyframes banneranim {
 		0% {
 			background-position: 0 0;
@@ -417,19 +479,19 @@
 		flex-direction: column;
 		width: 85%;
 		place-items: center;
-		background-color: rgba(0, 0, 0, 0.459);
+		background-color: rgba(0, 0, 0, 0.146);
 		/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=ab84d1&c2=1422c1&gt=l&gd=dtl
-*/
-		background: #ab84d14b;
-		background: linear-gradient(135deg, #ab84d134, #1422c139);
+		* Created with https://www.css-gradient.com
+		* Gradient link: https://www.css-gradient.com/?c1=ab84d1&c2=1422c1&gt=l&gd=dtl
+		*/
+		/* background: #ab84d14b; */
+		/* background: linear-gradient(135deg, #ab84d134, #1422c139); */
 		backdrop-filter: blur(100px);
 		background-size: 150% 150%;
 		padding: 1rem;
 		border-radius: 12px;
 		margin-top: 1em;
-		animation: banneranim 5s linear infinite;
+		/* animation: banneranim 5s linear infinite; */
 	}
 	@media (max-width: 600px) {
 		/* .sidebar {
@@ -446,12 +508,32 @@
 			position: relative;
 			cursor: pointer;
 		} */
+		.banner > h1{
+			font-size: 28px;
+		}
+		.date{
+			margin-top: -3em;
+		}
+		.content {
+			z-index: 1;
+			padding-top: 2em;
+		}
 		.sidebar {
-			height: 21svh;
+			height: 17svh;
 			display: flex;
 			overflow-x: auto; /* Use overflow-x for horizontal scroll */
 			width: 97%; /* Set the sidebar width to 100% of its parent */
 			margin: 0 0.5em;
+		}
+		
+		.sbcont > *{
+			
+			display: block !important;
+		}
+		.sbcont{
+			display: flex;
+			animation: scrollmob 1.5s ease-in-out;
+			animation-delay: 1s;
 		}
 
 		.card {
@@ -463,6 +545,9 @@
 			cursor: pointer;
 			flex: 0 0 auto; /* Prevent cards from stretching to fill available space */
 			margin-right: 10px; /* Add some spacing between cards if needed */
+			border-radius: 1em;
+			overflow: hidden;
+			margin-top: 0.4em;
 		}
 		.card > p {
 			font-size: 17px;
@@ -473,7 +558,8 @@
 			/* width: 100vw; */
 		}
 		.content {
-			height: 75svh;
+			height: 79svh;
+			overflow-x: hidden;
 		}
 		.sbcont {
 			overflow: scroll;
@@ -489,6 +575,7 @@
 		.register {
 			display: block;
 			margin-bottom: 1em;
+			text-align: center;
 		}
 		.orgcont {
 			display: block;

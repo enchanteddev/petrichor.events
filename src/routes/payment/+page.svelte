@@ -12,6 +12,7 @@
 	import utr3 from '$lib/assets/UtrRefer/utr3.jpeg'
 	import utr4 from '$lib/assets/UtrRefer/utr4.jpeg'
 	import utr5 from '$lib/assets/UtrRefer/utr5.jpeg'
+	import Zoom from '$lib/components/Zoom.svelte';
 
 	export let data: any;
 	let loading = false;
@@ -24,9 +25,9 @@
 		}
 	})
 
-	// if (!$isLogin) {
-	// 	goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
-	// }
+	if (!$isLogin) {
+		goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
+	}
 
 	if ($registerData.registeredEmails.length == 0) {
 		$registerData.registeredEmails.push($userEmail);
@@ -44,9 +45,9 @@
 	});
 
 	onMount(() => {
-		// if (!$isLogin) {
-		// 	goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
-		// }
+	if (!$isLogin) {
+			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
+		}
 		let bgimage = window.document.getElementById('img');
 		if (bgimage !== null) {
 			bgimage.style.backgroundImage = `url(${imgurl})`;
@@ -93,7 +94,7 @@
 						if (warning != null) {
 							warning.style.visibility = 'visible';
 							warning.style.color = 'green';
-							warning.innerHTML = "You'll get your cahsback soon!!!";
+							warning.innerHTML = "Your CACode has been verified.";
 						}
 						setTimeout(() => {
 							if (warning != null) {
@@ -241,11 +242,21 @@
 
 <h1 style="text-align: center;margin-top:-3em">Example of Transaction ID</h1>
 <div class="images">
-<img src="{utr1}" alt=""/>
-<img src="{utr2}" alt=""/>
-<img src="{utr3}" alt=""/>
-<img src="{utr4}" alt=""/>
-<img src="{utr5}" alt=""/>
+<div class="img">
+	<Zoom src="{utr1}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr2}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr3}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr4}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr5}"/>
+</div>
 </div>
 
 <style>
@@ -255,7 +266,7 @@
     align-items: center;
     justify-content: center;
 }
-img{
+.img{
 	margin: 1em;
 	display: inline-block;
 	width:10rem;
@@ -414,7 +425,9 @@ img{
 			margin-top: -6em;
 		}
 		.images{
-			flex-direction: column;
+			/* flex-direction: column; */
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 </style>

@@ -3,8 +3,8 @@
 	import { deleteToken } from '$lib';
 	import Event from '$lib/components/Event.svelte';
 	import { isLogin, registerData, userEmail } from '$lib/stores.js';
-	import { Icon } from 'svelte-awesome';
-	import { powerOff } from 'svelte-awesome/icons';
+	import { Icon } from "svelte-awesome";
+	import { powerOff } from "svelte-awesome/icons";
 	export let data;
 	const { user } = data;
 	console.log(user);
@@ -35,6 +35,7 @@
 						logout();
 					}}><Icon data={powerOff} scale={1.4} /></button
 				>
+
 			</div>
 
 			<div

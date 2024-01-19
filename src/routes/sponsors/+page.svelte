@@ -55,6 +55,12 @@
 <div style="height: 5rem;" />
 
 <style>
+	.sponsor{
+		background-color: rgba(104, 104, 104, 0.253);
+		padding: 1em;
+		border-radius: 1em;
+		backdrop-filter: blur(23px);
+	}
 	#pnbSponsor {
 		grid-area: pnb;
 	}

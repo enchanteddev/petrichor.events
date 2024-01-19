@@ -45,6 +45,7 @@ import Abhijith from '$lib/assets/Organisers/Abhijith.jpg'
 import Pavitra from '$lib/assets/Organisers/Pavitra.jpg'
 import Prisha from '$lib/assets/Organisers/Prisha.jpg'
 import Nalan from '$lib/assets/Organisers/Nalan.jpg'
+import Kaushik from '$lib/assets/CoreTeam/Kaushik.jpg'
 import Siva from '$lib/assets/Organisers/Siva.jpg'
 import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
 import tblackf from '$lib/assets/Merch/T Shirt F IIT P1.png'
@@ -60,7 +61,7 @@ import Chess from '$lib/assets/Informals/Chess.jpg'
 
 
 export const closedRegistrations = [
-    "TF07"
+    "TF07", "TF08", "TF03"
 ]
 
 export let cultural = {
@@ -128,7 +129,7 @@ export let cultural = {
 
      {
         "name": "Click n' Roll",
-        "about": "A Showcase of Frames. This event will be conducted online.Participants have to capture the essence of the fest through photography and videography and create reels using them.",
+        "about": "A Showcase of Frames. This event will be conducted online. Participants have to capture the essence of the fest through photography and videography and create reels using them.",
         "rulebook": {
           "structure": [
             "1. Participants can compete individually or form teams of up to two members.",
@@ -1339,7 +1340,7 @@ export let technical = {
       },
            {
         "name": "WebMosiac",
-        "about": "You will be provided an API from the petrichor team at webmosaic.petrichor.events. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
+        "about": "You will be provided an API from the petrichor team at http://webmosaic.petrichor.events:8080. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
         "rulebook": {
           "structure": [
             "SUBMISSION:",
@@ -1389,8 +1390,8 @@ export let technical = {
         "organisers": [
           {
             "name": "Kaushik Rawat",
-            "image": Kshitij,
-            "phone": "+9172087 98365"
+            "image": Kaushik,
+            "phone": "+917298991001"
           }
              
         ],
@@ -1561,10 +1562,10 @@ export let technical = {
             "\u2022 Those egg which are fully intact after the first drop are allowed to make second drop from greater height from the previous one and in the similar manner to make third drop.",
             "The model will be graded only if the egg remains intact or is just partially cracked (content of egg doesn\u2019t come out).",
             "\u2022 Partially cracked egg \u2192 +5 points (first round) , +10 points (second round) and +15 points (third round)",
-            "\u2022 No crack \u2192 +10 points (first around) , +15 points (second round) and +20 points (third round)",
-            "\u2022 Intact design \u2192 +30 points",
-            "\u2022 Simple and effective design \u2192 +35 points",
-            "\u2022 Time Taken \u2192 < 30 min : +20 points , < 45 min : +10 points",
+            "\u2022 No crack \u2192 +10 points (first round) , +15 points (second round) and +20 points (third round)",
+            "\u2022 Intact design \u2192 +15 points (Partial Marks will be there)",
+            "\u2022 Simple and effective design \u2192 +15 points (Partial Marks will be there)",
+            "\u2022 Time Taken \u2192 < 30 min : +10 points , < 45 min : +5 points",
             "\u2022 Extra chance / Second chance \u2192 -10 points",
             "\u2022 Amount Used \u2192 +15 points ( < Rs 60 ) , +10 points ( < Rs 80 )"
           ],
