@@ -76,7 +76,7 @@
 			class="events_info"
 			style="display: flex; width: 100%; justify-content: space-around; font-size: large; padding-left: 10px;"
 		>
-			<center><h1 class="hover-underline">EVENTS</h1></center>
+			<center><h1 class="hover-underline atmos">EVENTS</h1></center>
 		</div>
 		<div class="cont" style=" overflow: scroll; height: 85%">
 			<div class="events_info">
