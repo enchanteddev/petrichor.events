@@ -26,6 +26,35 @@
 	let currentEvent: event = events[data.eventID];
 	let registered = false;
 	onMount(() => {
+		let ans;
+		console.log(readToken());
+		if(readToken()){
+			fetch(API.whoami, {
+				method: 'POST',
+				headers: {
+					Accept: 'application/json',
+					'Content-type': 'application/json'
+				},
+				credentials: 'omit',
+				body: JSON.stringify({
+					token: readToken()
+				})
+			})
+				.then((res) => res.json())
+				.then((res) => {
+					ans = res;
+					console.log(res);
+					if (ans.user == null || ans.user == undefined) {
+						isLogin.set(false);
+					} else {
+						isLogin.set(true);
+						console.log(ans.email);
+						userEmail.set(ans.email);
+						window.localStorage.setItem("registeredEvents",ans.events)
+					}
+				});
+
+		}
 		bg.style.backgroundImage = `url("${currentEvent.image}")`;
 		setEvent(currentEvent)
 		let local=window.localStorage.getItem("registeredEvents")?.split(",")
