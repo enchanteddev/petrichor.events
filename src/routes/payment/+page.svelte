@@ -94,7 +94,7 @@
 						if (warning != null) {
 							warning.style.visibility = 'visible';
 							warning.style.color = 'green';
-							warning.innerHTML = "You'll get your cahsback soon!!!";
+							warning.innerHTML = "Your CACode has been verified.";
 						}
 						setTimeout(() => {
 							if (warning != null) {

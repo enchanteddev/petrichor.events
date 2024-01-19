@@ -45,6 +45,7 @@ import Abhijith from '$lib/assets/Organisers/Abhijith.jpg'
 import Pavitra from '$lib/assets/Organisers/Pavitra.jpg'
 import Prisha from '$lib/assets/Organisers/Prisha.jpg'
 import Nalan from '$lib/assets/Organisers/Nalan.jpg'
+import Kaushik from '$lib/assets/CoreTeam/Kaushik.jpg'
 import Siva from '$lib/assets/Organisers/Siva.jpg'
 import Jeeva from '$lib/assets/Organisers/Jeeva.jpg'
 import tblackf from '$lib/assets/Merch/T Shirt F IIT P1.png'
@@ -1339,7 +1340,7 @@ export let technical = {
       },
            {
         "name": "WebMosiac",
-        "about": "You will be provided an API from the petrichor team at webmosaic.petrichor.events. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
+        "about": "You will be provided an API from the petrichor team at http://webmosaic.petrichor.events:8080. This backend is to be taken “as is” and not supposed to be modified in any way whatsoever. Your job is to use ANY FRAMEWORK OF YOUR CHOICE to write a web application and display the data being provided in the API as beautifully as possible.",
         "rulebook": {
           "structure": [
             "SUBMISSION:",
@@ -1389,7 +1390,7 @@ export let technical = {
         "organisers": [
           {
             "name": "Kaushik Rawat",
-            "image": Kshitij,
+            "image": Kaushik,
             "phone": "+917298991001"
           }
              
