@@ -22,14 +22,20 @@
 	<div class="blocks details" style="">
 		<div class="informations info">
 			<!-- Name and Email -->
-			<div class="n-email" style="padding-left: 20px; opacity: 0.75;">
+			<div class="n-email" style="padding-left: 20px; ">
 				<div class="name-mail-cont">
 					<h1 style="width: 100%; font-weight: bold; margin-bottom: 10px;">Hi, {user.username}</h1>
-					<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">		
+					<p style="font-size: smaller; width: 100%; margin-top: 5; margin-bottom: 0;">
 						{user.email}
 					</p>
 				</div>
-				<button class="logout" on:click={()=>{logout()}}><Icon data={powerOff} scale={1.4}/></button>
+				<button
+					class="logout"
+					on:click={() => {
+						logout();
+					}}><Icon data={powerOff} scale={1.4} /></button
+				>
+
 			</div>
 
 			<div
@@ -62,7 +68,10 @@
 			</div> -->
 		<!-- </div> -->
 	</div>
-	<div class="blocks" style="background-color: #242424;">
+	<div
+		class="blocks"
+		style="background-color: #242424; backdrop-filter: blur(100px); opacity: 1 !important;"
+	>
 		<div
 			class="events_info"
 			style="display: flex; width: 100%; justify-content: space-around; font-size: large; padding-left: 10px;"
@@ -79,7 +88,7 @@
 		</div>
 	</div>
 
-	<div class="blocks" style="background-color: #242424;">
+	<!-- <div class="blocks" style="background-color: #242424;">
 		<div class="informations" style="display: flex; ">
 			<div class="accommodation" style="font-size: large">
 				<h1 class="hover-underline">MUSICAL NIGHTS</h1>
@@ -92,7 +101,7 @@
 				{/if}
 			{/each}
 		</div>
-	</div>
+	</div> -->
 </div>
 
 <style>
@@ -115,8 +124,8 @@
 		width: 100%;
 		margin: 0 20px;
 		border-radius: 5%;
-		opacity: 0.8;
-		backdrop-filter: blur(10px);
+		opacity: 0.6;
+		backdrop-filter: blur(40px);
 	}
 	.details {
 		display: flex;
@@ -136,7 +145,7 @@
 		display: flex;
 		align-items: center;
 
-		background-color: #333232;
+		/* background-color: black; */
 		border-radius: 20px;
 		/* margin: 10px;
 		padding-top: 10px; */
@@ -145,8 +154,9 @@
 		text-align: left;
 		position: relative;
 		place-items: center;
+		padding-bottom: 15px;
 	}
-	.logout{
+	.logout {
 		position: absolute;
 		text-decoration: none;
 		border-radius: 100em;
@@ -163,7 +173,6 @@
 		border: transparent;
 		color: white;
 		aspect-ratio: 1;
-
 	}
 	.logout:hover {
 		cursor: pointer;
