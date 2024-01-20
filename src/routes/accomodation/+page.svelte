@@ -15,9 +15,9 @@
 			<div class="cost">
 				<h2>Cost of stay per head:</h2>
 				<ul>
-					<li style="font-size: large;font-weight:600;">320 for one day</li>
-					<li style="font-size: larger;font-weight:600;">610 for two days</li>
-					<li style="font-size: x-large;font-weight:600;">900 for three days</li>
+					<li class="thr" style="font-size: large;font-weight:600;">320 for one day</li>
+					<li class="sx" style="font-size: larger;font-weight:600;">610 for two days</li>
+					<li class="nn" style="font-size: x-large;font-weight:600;">900 for three days</li>
 				</ul>
 			</div>
 		</div>
@@ -183,6 +183,44 @@
 		.merch-head {
 			font-size: 30px;
 			margin-left: -1em;
+		}
+		.mpcst{
+			position: relative;
+			flex-direction: column;
+			align-items: center;
+			/* left: 50%; */
+			/* transform: translate(-25%); */
+		}
+		.cost{
+			margin-left: 0em;
+			margin-bottom: 3em;
+			height: 15em;
+			/* width: 18em; */
+			justify-content: center;
+			border-radius: 10%;
+		}
+		.cost > h2{
+			margin-top: 1em;
+		}
+		.thr{
+			font-size: smaller;
+		}
+		.sx{
+			font-size: small;
+		}
+		.nn{
+			font-size: large;
+		}
+		.ormamap{
+			width: 18em;
+			height: 9em;
+			background-size: contain;
+			margin-left: 10em;
+			background-position: center;
+		}
+		.ormahead{
+			margin-left: 6em;
+			font-size: x-large;
 		}
 	}
 </style>
