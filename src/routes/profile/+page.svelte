@@ -74,11 +74,11 @@
 	>
 		<div
 			class="events_info"
-			style="display: flex; width: 100%; justify-content: space-around; font-size: large; padding-left: 10px;"
+			style="display: flex; width: 100%; justify-content: space-around; font-size: large;"
 		>
 			<center><h1 class="hover-underline atmos">EVENTS</h1></center>
 		</div>
-		<div class="cont" style=" overflow: scroll; height: 85%">
+		<div class="cont" style=" overflow: scroll;">
 			<div class="events_info">
 				{#each user.events as event}
 				{#if event.eventId.startsWith('T') || event.eventId.startsWith('C')}
@@ -208,19 +208,19 @@
 		}
 		.blocks {
 			margin: 5px 5px;
-			border-radius: 5%/10%;
+			border-radius: 5%/5%;
 			width: 25rem;
 		}
 		.informations {
 			margin: 0px;
-			margin-bottom: 5px;
-			/* height: 15rem; */
+			margin-bottom: 10px;
+			height: 15rem;
 			flex-direction: column;
 			border-radius: 5%/10%;
 			width: 25rem;
 		}
 		.info {
-			/* height: 15rem; */
+			height: 15rem;
 		}
 		.n-email {
 			height: 5rem;
@@ -235,7 +235,7 @@
 	@media (max-width: 400px) {
 		.blocks,
 		.informations {
-			width: 25rem;
+			width: 22rem;
 		}
 		.container {
 			align-items: first baseline;
