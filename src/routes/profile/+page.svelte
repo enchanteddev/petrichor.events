@@ -78,7 +78,7 @@
 		>
 			<center><h1 class="hover-underline atmos">EVENTS</h1></center>
 		</div>
-		<div class="cont" style=" overflow: scroll;">
+		<div class="cont" style=" overflow: scroll; height: 85%">
 			<div class="events_info">
 				{#each user.events as event}
 				{#if event.eventId.startsWith('T') || event.eventId.startsWith('C')}
