@@ -71,6 +71,7 @@
 				<!-- <a href="/proshows">Proshows</a> -->
 				<a href="/sponsors">Sponsors</a>
 				<a href="/accomodation">Accomodation</a>
+				<a href="/schedule">Schedule</a>
 				<a href="/merch">Merch</a>
 				<a href={$isLogin ? '/profile' : '/login'} class="login"><Icon data={user} scale={1.6} /></a
 				>
@@ -134,6 +135,13 @@
 					}}
 				>
 					<a href="/accomodation">Accomodation</a>
+				</li>
+				<li
+					on:click={() => {
+						isVisN = false;
+					}}
+				>
+					<a href="/schedule">Schedule</a>
 				</li>
 				<li
 					on:click={() => {

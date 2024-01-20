@@ -2122,6 +2122,7 @@ export const merch = [
 
 export const informals = [
     {
+      id: 'IP01',
       name: 'King’s Knightmare',
       about: "Ready to make your move? Join King's Knightmare, the online chess showdown by Petrichor'24 in collaboration with chess.com. Registration is free, and exciting prizes await the strategic minds who conquer the board. Don't miss out—register now and let the chess battle begin!",
       location: 'Chess.com',
@@ -2130,6 +2131,7 @@ export const informals = [
       registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSdzJLUonZ4UTuellHrrp2kATS-zTh8ZxJ6f0C3QcujdmFh4Cg/viewform?usp=sf_link"
     },
     {
+      id: 'IF02',
       name: 'Laser Tag',
       about: "Dive into the ultimate laser showdown! Gather your squad, suit up in neon, and embark on an adrenaline-fueled mission under the glow of lasers. Are you ready for the ultimate tag challenge?",
       location: 'Nila Campus',
@@ -2138,6 +2140,7 @@ export const informals = [
       registerLink: null
     },
     {
+      id: 'IF03',
       name: 'VR Gaming',
       about: "Step into the future of gaming at our VR Event! Immerse yourself in mind-bending worlds, conquer virtual challenges, and redefine your gaming experience. It's not just a game; it's a virtual adventure!",
       location: 'Nila Campus',
