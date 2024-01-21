@@ -250,7 +250,7 @@ export let cultural = {
         "about": "Join our solo singing competition, welcoming voices from East and West, spanning every genre! Elevate your voice, captivate the audience, and let the world be spellbound by your talent. It's your moment to enchant and leave everyone breathless, no matter the genre or cultural influence every style is welcome",
         "rulebook": {
           "structure": [
-            "Round 1(Online) - Deadline : 20-01-2024 ",
+            "Round 1(Online) - Deadline : 23-01-2024 ",
             "a. Participants will have to shoot a video and after uploading, submit the same through the google form provided.",
             "b. The video must have clear sound and should be a recording of a live performance with a clear face in one take.",
             "c. No editing and mixing is allowed in the audiovisual.",
