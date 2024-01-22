@@ -1610,7 +1610,7 @@ export let technical = {
           "structure": [
             "",
               " BOT SPECIFICATIONS",
-                 "1. The dimensions of the bot should be less than or equal to 300 mm X 200mm X 300mm (lxbxh) failing which the team will be disqualified from the competition (this excludes the dimension of the gripper but includes tires). The bot can, however, extend its dimension once the run starts. An error of (±5%) is permitted. ",
+                 "1. The dimensions of the bot should be less than or equal to 300 mm X 250mm X 300mm (lxbxh) failing which the team will be disqualified from the competition (this excludes the dimension of the gripper but includes tires). The bot can, however, extend its dimension once the run starts. An error of (±5%) is permitted. ",
                  "2. The bot must be controlled manually.",
                  "3. Teams can use both wired as well as wireless control mechanisms. In the case of wired bots, the length of the wire should be a minimum of 2 meters so that the wire remains slack at any instant of time. If the participants use a wireless mechanism they have to use either a dual-frequency remote, Bluetooth, or Wifi.",
                  "4. The dimensions of the remote are not included in the size constraint of the bot.",
@@ -1660,7 +1660,7 @@ export let technical = {
             "phone": "9691584687"
           },
           {
-            "name": "Shubhan Mehrotra",
+            "name": "C V Tirumala Rao",
             "image": Shubhan,
             "phone": "9714957474"
           }
