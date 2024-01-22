@@ -58,7 +58,7 @@ import cap from '$lib/assets/Merch/Cap.png'
 import laser from '$lib/assets/Informals/Lazer.jpg'
 import VR from '$lib/assets/Informals/ARVR.jpg'
 import Chess from '$lib/assets/Informals/Chess.jpg'
-
+import Tirumala from '$lib/assets/Organisers/132101005-Photo - C V TIRUMALA RAO.jpeg'
 
 export const closedRegistrations = [
     "TF07", "TF08", "TF03" ,"TF00" , "TF01 , TF10" , "TF11"
@@ -1661,7 +1661,7 @@ export let technical = {
           },
           {
             "name": "C V Tirumala Rao",
-            "image": Shubhan,
+            "image": Tirumala,
             "phone": "9714957474"
           }
         ],
