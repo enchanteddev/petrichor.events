@@ -61,7 +61,7 @@ import Chess from '$lib/assets/Informals/Chess.jpg'
 import Tirumala from '$lib/assets/Organisers/132101005-Photo - C V TIRUMALA RAO.jpeg'
 
 export const closedRegistrations = [
-    "TF07", "TF08", "TF03" ,"TF00" , "TF01 , TF10" , "TF11"
+    "TF07", "TF08", "TF03" ,"TF00" , "TF01" , "TF10" , "TF11"
 ]
 
 export let cultural = {
