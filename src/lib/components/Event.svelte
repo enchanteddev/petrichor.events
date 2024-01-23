@@ -5,7 +5,7 @@
     import { technical } from '$lib/data';
 
     export let eventId : string
-    export let paymentStatus: string
+    export let paymentStatus: boolean
     console.log(eventId)
     let Eventtype=""
     let events=[]
@@ -35,13 +35,15 @@
             src={event["image"]}
             style="margin-top: 10px; border-radius: 10px; height:150px;width:200px"
             alt="Image of something"/>
-            
-        <h4 class="payments" style="background-color: {(paymentStatus == "Payment Verified")? "green":"red"};">{paymentStatus ? "Verified" : "Verification in progress"}</h4>
+            <!-- {
+                console.log(paymentStatus)
+            } -->
+        <h4 class="payments" style="background-color: {(paymentStatus)? "green":"red"};">{paymentStatus ? "Verified" : "Verification in progress"}</h4>
     </div>
     <div class="event-data" style="text-align: left; padding: 0 30px;">
         <div>
-            <h4 style="line-height: 20px;text-align:center">{event["name"]}</h4>
-            <p style="text-align:center">{Eventtype}</p>
+            <h4 style="line-height: 7px;text-align:center">{event["name"]}</h4>
+            <p style="text-align:left; font-size: 12px;">{Eventtype}</p>
         </div>
         <div>
             <h4 style="line-height: 20px;text-align:center">{event["date"]}</h4>
@@ -63,7 +65,9 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		background-color: #333232;
+        opacity: 0.9;
+        border: 1px solid #333232;
+
 		border-radius: 20px;
 		margin: 10px 10px;
 		line-height: 0;

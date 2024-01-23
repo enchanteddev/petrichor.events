@@ -3,8 +3,8 @@
 	import { deleteToken } from '$lib';
 	import Event from '$lib/components/Event.svelte';
 	import { isLogin, registerData, userEmail } from '$lib/stores.js';
-	import { Icon } from 'svelte-awesome';
-	import { powerOff } from 'svelte-awesome/icons';
+	import { Icon } from "svelte-awesome";
+	import { powerOff } from "svelte-awesome/icons";
 	export let data;
 	const { user } = data;
 	console.log(user);
@@ -35,6 +35,7 @@
 						logout();
 					}}><Icon data={powerOff} scale={1.4} /></button
 				>
+
 			</div>
 
 			<div
@@ -61,29 +62,31 @@
 				<h4 style="margin-top: 0; margin-bottom: 10px;">{user.gradyear}</h4>
 			</div>
 		</div>
-		<!-- <div class="informations" style="display: flex; ">
-			<div class="accommodation" style="font-size: large">
-				<h1>ACCOMMODATION</h1>
-			</div> -->
-		<!-- </div> -->
+		<div class="informations" style="display: flex; ">
+			<div class="accommodation" style="font-size: large; height: auto;">
+				<!-- <h1 class="hover-underline">PROSHOW</h1> -->
+				<!-- image goes here -->
+			</div> 
+		</div>
 	</div>
 	<div
 		class="blocks"
-		style="background-color: #242424; backdrop-filter: blur(100px); opacity: 1 !important;"
+		style="backdrop-filter: blur(40px);"
 	>
 		<div
 			class="events_info"
-			style="display: flex; width: 100%; justify-content: space-around; font-size: large; padding-left: 10px;"
+			style="display: flex; width: 100%; justify-content: space-around; font-size: large;"
 		>
-			<center><h1 class="hover-underline">EVENTS</h1></center>
+			<center><h1 class="hover-underline atmos">EVENTS</h1></center>
 		</div>
-
-		<div class="events_info">
-			{#each user.events as event}
+		<div class="cont" style=" overflow: scroll; height: 85%">
+			<div class="events_info">
+				{#each user.events as event}
 				{#if event.eventId.startsWith('T') || event.eventId.startsWith('C')}
-					<Event eventId={event.eventId} paymentStatus={event.status} />
+				<Event eventId={event.eventId} paymentStatus={event.status} />
 				{/if}
-			{/each}
+				{/each}
+			</div>
 		</div>
 	</div>
 
@@ -104,6 +107,9 @@
 </div>
 
 <style>
+	/* .events_infop{
+		overflow: scroll
+	} */
 	html {
 		zoom: 1 !important;
 		transform: scale(1) !important;
@@ -123,7 +129,7 @@
 		width: 100%;
 		margin: 0 20px;
 		border-radius: 5%;
-		opacity: 0.6;
+		/* opacity: 0.6; */
 		backdrop-filter: blur(40px);
 	}
 	.details {
@@ -180,6 +186,11 @@
 		display: flex;
 		width: 100%;
 		justify-content: center;
+		/* Enter image url here */
+		/* background-image: url("https://picsum.photos/200/300"); */
+		background-size: cover;
+		background-repeat: no-repeat;
+	
 	}
 	.hover-underline {
 		text-decoration: none; /* Set default text decoration to none */
@@ -203,19 +214,19 @@
 		}
 		.blocks {
 			margin: 5px 5px;
-			border-radius: 5%/10%;
+			border-radius: 5%/5%;
 			width: 25rem;
 		}
 		.informations {
 			margin: 0px;
-			margin-bottom: 5px;
-			/* height: 15rem; */
+			margin-bottom: 10px;
+			height: 15rem;
 			flex-direction: column;
 			border-radius: 5%/10%;
 			width: 25rem;
 		}
 		.info {
-			/* height: 15rem; */
+			height: 15rem;
 		}
 		.n-email {
 			height: 5rem;
@@ -230,7 +241,7 @@
 	@media (max-width: 400px) {
 		.blocks,
 		.informations {
-			width: 25rem;
+			width: 22rem;
 		}
 		.container {
 			align-items: first baseline;
