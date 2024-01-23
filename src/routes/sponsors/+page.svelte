@@ -20,9 +20,9 @@
 		<div class="name">Punjab National Bank</div>
 	</div>
 	<div id="pnbSponsor" class="sponsor">
-		<div class="title">Associate Sponsor</div>
+		<div class="title">Title Sponsor</div>
 		<div class="img" style="background-image:url({Bharat})" />
-		<div class="name">Bharatversity</div>
+		<div class="name">BharatVersity</div>
 	</div>
 	<div id="vasanthaSponsor" class="sponsor">
 		<div class="title">Event Sponsor</div>
