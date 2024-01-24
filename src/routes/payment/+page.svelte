@@ -7,6 +7,12 @@
 	import { goto } from '$app/navigation';
 	import { enhance } from '$app/forms';
 	import Loading from '$lib/components/Loading.svelte';
+	import utr1 from '$lib/assets/UtrRefer/utr1.jpeg'
+	import utr2 from '$lib/assets/UtrRefer/utr2.jpeg'
+	import utr3 from '$lib/assets/UtrRefer/utr3.jpeg'
+	import utr4 from '$lib/assets/UtrRefer/utr4.jpeg'
+	import utr5 from '$lib/assets/UtrRefer/utr5.jpeg'
+	import Zoom from '$lib/components/Zoom.svelte';
 
 	export let data: any;
 	let loading = false;
@@ -32,14 +38,14 @@
 	let imgurl: string;
 	let amount = data.fees * $registerData.registeredEmails.length;
 	let success = false;
-	let qrcodeurl = `upi://pay?pa=9493256601@ibl&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`;
+	let qrcodeurl = `upi://pay?pa=9493256601@jupiteraxis&pn=******6601&am=${amount}&mc=0000&mode=02&purpose=00`;
 
 	QRCode?.toDataURL(`${qrcodeurl}`, function (err: any, url: string) {
 		imgurl = url;
 	});
 
 	onMount(() => {
-		if (!$isLogin) {
+	if (!$isLogin) {
 			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		}
 		let bgimage = window.document.getElementById('img');
@@ -88,7 +94,7 @@
 						if (warning != null) {
 							warning.style.visibility = 'visible';
 							warning.style.color = 'green';
-							warning.innerHTML = "You'll get your cahsback soon!!!";
+							warning.innerHTML = "Your CACode has been verified.";
 						}
 						setTimeout(() => {
 							if (warning != null) {
@@ -222,7 +228,7 @@
 				<button id="verify" style="cursor:pointer" on:click={() => verify(CAcode)}>Verify</button>
 			</div>
 			<div id="submitButton">
-				<p id="warning">Hii</p>
+				<p id="warning"></p>
 				<button
 					id="submit"
 					on:click={() => submit()}
@@ -234,7 +240,38 @@
 	</form>
 </div>
 
+<h1 style="text-align: center;margin-top:-3em">Example of Transaction ID</h1>
+<div class="images">
+<div class="img">
+	<Zoom src="{utr1}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr2}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr3}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr4}"/>
+</div>
+<div class="img">
+	<Zoom src="{utr5}"/>
+</div>
+</div>
+
 <style>
+.images{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+	margin: 1em;
+	display: inline-block;
+	width:10rem;
+	height:15rem
+}
 	.form {
 		width: 100vw;
 		grid-template-areas: 'data payment';
@@ -381,6 +418,16 @@
 		}
 		#submitButton {
 			width: 18rem;
+		}
+	}
+	@media (max-width:600px){
+		#all{
+			margin-top: -6em;
+		}
+		.images{
+			/* flex-direction: column; */
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 </style>

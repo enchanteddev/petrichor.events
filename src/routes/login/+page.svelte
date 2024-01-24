@@ -64,6 +64,8 @@
 									} else {
 										isLogin.set(true);
 										userEmail.set(ans.email);
+										window.localStorage.setItem("registeredEvents",ans.events)
+
 									}
 								});
 							if (data.nextpg != null) {
@@ -156,7 +158,7 @@
 			display: inline-block;
 		}
 		.blank {
-			background-color: black;
+			background-color: transparent;
 			width: 100%;
 			height: 100px;
 		}

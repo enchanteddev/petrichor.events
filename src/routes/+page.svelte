@@ -126,8 +126,8 @@
 	.mouse{
 		cursor: none;
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: -100vh;
+		left: -100vw;
 		transform: translate(-50%, -50%);
 		z-index: 100;
 		/* height: 10em; */
