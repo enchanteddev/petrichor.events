@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import Loading from '$lib/components/Loading.svelte';
 	import Person from '$lib/components/Person.svelte';
-	import { closedRegistrations } from '$lib/data'
+	import { closedRegistrations } from '$lib/data';
 	import type { event } from '$lib/types';
 	import { isLogin, registerData, userEmail } from '$lib/stores';
 	import { readToken, readID, POST, titleCase } from '$lib/index';
@@ -13,22 +13,21 @@
 
 	export let data: any;
 	let events = data['nofee']['events'];
-	let events1 = data['withfee']
-	let loading = false
-	let registeredEvents:Array<string>
+	let events1 = data['withfee'];
+	let loading = false;
+	let registeredEvents: Array<string>;
 
-	
 	$: {
 		console.log('$isLogin:', $isLogin, $userEmail);
 	}
-	
+
 	let bg: HTMLDivElement;
 	let currentEvent: event = events[data.eventID];
 	let registered = false;
 	onMount(() => {
 		let ans;
 		console.log(readToken());
-		if(readToken()){
+		if (readToken()) {
 			fetch(API.whoami, {
 				method: 'POST',
 				headers: {
@@ -50,62 +49,61 @@
 						isLogin.set(true);
 						console.log(ans.email);
 						userEmail.set(ans.email);
-						window.localStorage.setItem("registeredEvents",ans.events)
+						window.localStorage.setItem('registeredEvents', ans.events);
 					}
 				});
-
 		}
 		bg.style.backgroundImage = `url("${currentEvent.image}")`;
-		setEvent(currentEvent)
-		let local=window.localStorage.getItem("registeredEvents")?.split(",")
-		if (local){
+		setEvent(currentEvent);
+		let local = window.localStorage.getItem('registeredEvents')?.split(',');
+		if (local) {
 			registeredEvents = local;
 		}
 	});
 
 	let registering = false;
 
-	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
+	let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees;
 	let content: HTMLDivElement;
 	const setEvent = (event: event) => {
 		registering = false;
 		bg.style.backgroundImage = `url("${event.image}")`;
 		currentEvent = event;
-		let eventId = currentEvent.id.slice(2)
-		currEveFee = events1[parseInt(eventId)].fees
-		registered=false	
-		if(registeredEvents?.includes(event.id)){
-			registered=true
+		let eventId = currentEvent.id.slice(2);
+		currEveFee = events1[parseInt(eventId)].fees;
+		registered = false;
+		if (registeredEvents?.includes(event.id)) {
+			registered = true;
 		}
 		// registeredEvents.forEach(element =>{
 		// 	if(element == event.id){
 		// 		registered=true
 		// 	}
 		// })
-		console.log(eventId)
-		if (content){
-			content.scrollTo(0, 0)
+		console.log(eventId);
+		if (content) {
+			content.scrollTo(0, 0);
 		}
 	};
 
 	const clicked = async () => {
 		if (!$isLogin) {
-			loading = true
+			loading = true;
 			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		} else {
 			$registerData.eventID = currentEvent.id;
 			$registerData.registeredEmails = [$userEmail];
 			// $registerData.proshowIncluded = confirm("Do you want ProShow tickets to be included with the purchase? (200Rs. extra)")
 
-			loading = true 
+			loading = true;
 			const eventDataResponse = await POST(API.event, { id: currentEvent.id });
 			const eventData = await eventDataResponse.json();
-			loading = false
+			loading = false;
 
 			if (eventData.minMemeber == 1 && eventData.maxMemeber == 1) {
 				if (eventData.fee == 0) {
 					registering = true;
-					loading = true
+					loading = true;
 					await POST(API.events_apply_free, {
 						participants: [$userEmail],
 						// @ts-ignore
@@ -114,13 +112,13 @@
 					})
 						.then((res) => res.json())
 						.then((res) => {
-							loading = false
+							loading = false;
 							console.log(res);
 							if (res.status == 200) {
 								// userEvents.update(value => [...value, currentEvent.id])
 								alert('Registration successfull');
-								registeredEvents.push(currentEvent.id)
-								window.localStorage.setItem("registeredEvents",(registeredEvents).toString())
+								registeredEvents.push(currentEvent.id);
+								window.localStorage.setItem('registeredEvents', registeredEvents.toString());
 								registered = true;
 							} else {
 								alert('Registration Unsuccessfull! Please try Again');
@@ -128,66 +126,99 @@
 						});
 					setEvent(currentEvent);
 				} else {
-					loading = true
-					if ($userEmail.endsWith('smail.iitpkd.ac.in')){
+					loading = true;
+					if ($userEmail.endsWith('smail.iitpkd.ac.in')) {
 						const response = await POST(API.events_apply_paid, {
 							transactionID: '',
 							CAcode: '',
 							token: readToken(),
 							eventId: currentEvent.id,
 							participants: [$userEmail]
-						})
+						});
 
-						const result = await response.json()
-						if (result.status == 200){
-							alert("Event applied, no need to pay as all participants from IIT Palakkad")
-							goto('/profile')
+						const result = await response.json();
+						if (result.status == 200) {
+							alert('Event applied, no need to pay as all participants from IIT Palakkad');
+							goto('/profile');
 						}
 					} else {
-						goto(`/payment?id=${currentEvent.id}`);
+						if (currentEvent.name == 'Drone Dash') {
+							goto(
+								'https://bharatversity.com/events/eventdetails/a202b5a7-8671-4598-a41d-b66cc0940a98'
+							);
+						} else if (currentEvent.name == 'Robowars') {
+							goto(
+								'https://bharatversity.com/events/eventdetails/8c179887-3ab9-4e48-9455-b87a4e6e8585'
+							);
+						} else if (currentEvent.name == 'Labyrinth 2.0') {
+							goto(
+								'https://bharatversity.com/events/eventdetails/d32a38d3-40bc-49c9-ae21-61904771729f'
+							);
+						} else if (currentEvent.name == 'Clench Bot') {
+							goto(
+								'https://bharatversity.com/events/eventdetails/480387c8-982e-46ec-8c97-5b90f048be3d'
+							);
+						} else {
+							goto(`/payment?id=${currentEvent.id}`);
+						}
 					}
 				}
 			} else {
-				loading = true
-				goto('/events/team');
+				loading = true;
+				if (currentEvent.name == 'Drone Dash') {
+					goto(
+						'https://bharatversity.com/events/eventdetails/a202b5a7-8671-4598-a41d-b66cc0940a98'
+					);
+				} else if (currentEvent.name == 'Robowars') {
+					goto(
+						'https://bharatversity.com/events/eventdetails/8c179887-3ab9-4e48-9455-b87a4e6e8585'
+					);
+				} else if (currentEvent.name == 'Labyrinth 2.0') {
+					goto(
+						'https://bharatversity.com/events/eventdetails/d32a38d3-40bc-49c9-ae21-61904771729f'
+					);
+				} else if (currentEvent.name == 'Clench Bot') {
+					goto(
+						'https://bharatversity.com/events/eventdetails/480387c8-982e-46ec-8c97-5b90f048be3d'
+					);
+				} else {
+					goto('/events/team');
+				}
 			}
 		}
 	};
 </script>
 
-<Loading spinning = {loading}></Loading>
+<Loading spinning={loading} />
 
 <div class="bg" bind:this={bg} />
 <div class="parent">
 	<div class="sidebar">
-			<div class="sbcont">
-		
-				{#each events as event, index}
+		<div class="sbcont">
+			{#each events as event, index}
 				<!-- svelte-ignore a11y-no-static-element-interactions -->
 				<div
-				class="card"
-				style="background-image: url('{event.image}');"
-				on:mouseenter={() => {
-					setEvent(event);
-					let query = new URLSearchParams($page.url.searchParams.toString());
-					query.set('id', index.toString());
-					goto(`?${query.toString()}`);
-					
-				}}
-				on:mousedown={() => {
-					setEvent(event);
-					let query = new URLSearchParams($page.url.searchParams.toString());
-					query.set('id', index.toString());
-					goto(`?${query.toString()}`);
-					
-				}}
-			>
-			<p class="atmos"> 
-					{event.name}
-				</p>
+					class="card"
+					style="background-image: url('{event.image}');"
+					on:mouseenter={() => {
+						setEvent(event);
+						let query = new URLSearchParams($page.url.searchParams.toString());
+						query.set('id', index.toString());
+						goto(`?${query.toString()}`);
+					}}
+					on:mousedown={() => {
+						setEvent(event);
+						let query = new URLSearchParams($page.url.searchParams.toString());
+						query.set('id', index.toString());
+						goto(`?${query.toString()}`);
+					}}
+				>
+					<p class="atmos">
+						{event.name}
+					</p>
+				</div>
+			{/each}
 		</div>
-				{/each}
-			</div>
 	</div>
 	<div class="content" bind:this={content}>
 		<div class="banner">
@@ -196,8 +227,8 @@
 			</h1>
 			<span class="date">{currentEvent.date}</span>
 			{#if currentEvent.theme}
-			<h2>THEME</h2>
-			<p style="margin-top: -1rem;">{currentEvent.theme}</p>
+				<h2>THEME</h2>
+				<p style="margin-top: -1rem;">{currentEvent.theme}</p>
 			{/if}
 			<p>{currentEvent && currentEvent.about}</p>
 			<div class="buttons">
@@ -206,7 +237,9 @@
 					<!-- svelte-ignore a11y-missing-attribute -->
 					<a class="a-unset register">Registrations Closed</a>
 				{:else}
-					<a href="#register" class="a-unset register">REGISTER NOW FOR {currEveFee==0?'FREE':`₹${currEveFee}`}</a>
+					<a href="#register" class="a-unset register"
+						>REGISTER NOW FOR {currEveFee == 0 ? 'FREE' : `₹${currEveFee}`}</a
+					>
 				{/if}
 			</div>
 		</div>
@@ -222,45 +255,47 @@
 					<h2>STRUCTURE</h2>
 				{/if}
 				{#if currentEvent.rulebook.structure}
-				{#each currentEvent.rulebook.structure as struct}
-					<li class="nodot">{titleCase(struct)}</li>
-				{/each}
+					{#each currentEvent.rulebook.structure as struct}
+						<li class="nodot">{titleCase(struct)}</li>
+					{/each}
 				{/if}
 			</div>
 			<div class="rules">
 				<h2>RULES</h2>
 				{#if currentEvent.rulebook.rules}
-				{#each currentEvent.rulebook.rules as struct}
-					<li class="nodot">{titleCase(struct)}</li>
-				{/each}
+					{#each currentEvent.rulebook.rules as struct}
+						<li class="nodot">{titleCase(struct)}</li>
+					{/each}
 				{/if}
 			</div>
 			<div class="judging">
 				<h2>JUDGING CRITERIA</h2>
 				{#if currentEvent.rulebook.judging}
-				{#each currentEvent.rulebook.judging as struct}
-					<li class="nodot">{titleCase(struct)}</li>
-				{/each}
+					{#each currentEvent.rulebook.judging as struct}
+						<li class="nodot">{titleCase(struct)}</li>
+					{/each}
 				{/if}
 			</div>
 			<div class="prizes">
 				<h2>PRIZES WORTH</h2>
 				{#if currentEvent.rulebook.prizes}
-				{#if currentEvent.id.slice(0,1)=='T'}
-				{#each currentEvent.rulebook.prizes as struct}
-					<li style="list-style: none;">{titleCase(struct)}</li>
-				{/each}
-				{/if}
-				{#if currentEvent.id.slice(0,1)=='C'}
-				{#each currentEvent.rulebook.prizes as struct, index}
-					<li style="font-size: 22px; list-style: none; font-weight: 400">Prize for position {index + 1} : {titleCase(struct)}</li>
-				{/each}
-				{/if}
+					{#if currentEvent.id.slice(0, 1) == 'T'}
+						{#each currentEvent.rulebook.prizes as struct}
+							<li style="list-style: none;">{titleCase(struct)}</li>
+						{/each}
+					{/if}
+					{#if currentEvent.id.slice(0, 1) == 'C'}
+						{#each currentEvent.rulebook.prizes as struct, index}
+							<li style="font-size: 22px; list-style: none; font-weight: 400">
+								Prize for position {index + 1} : {titleCase(struct)}
+							</li>
+						{/each}
+					{/if}
 				{/if}
 			</div>
 		</div>
-		<div >
-			<h2 >ORGANISERS</h2>
+		<div>
+			<h2>ORGANISERS</h2>
 			<div class="orgcont">
 				{#each currentEvent.organisers as p}
 					<Person personData={p} />
@@ -271,34 +306,34 @@
 					<button class="register">Registrations Closed</button>
 				</div>
 			{:else}
-			<div class="button-cont">
-				{#if registering || registered}
-					<button
-						id="register"
-						class="register"
-						disabled
-						style="background-color: aqua;opacity:40%"
-						on:click={() => clicked()}
-						>{registered ? 'Registered' : 'Register for' + currentEvent.name}</button
-					>
-				{/if}
-				{#if !registering && !registered}
-					<button
-					id="register"
-						class="register"
-						on:click={() => {
-							clicked();
-						}}>{registered ? 'Registered ' : 'Register for ' + currentEvent.name}</button
-					>
-				{/if}
-			</div>
+				<div class="button-cont">
+					{#if registering || registered}
+						<button
+							id="register"
+							class="register"
+							disabled
+							style="background-color: aqua;opacity:40%"
+							on:click={() => clicked()}
+							>{registered ? 'Registered' : 'Register for' + currentEvent.name}</button
+						>
+					{/if}
+					{#if !registering && !registered}
+						<button
+							id="register"
+							class="register"
+							on:click={() => {
+								clicked();
+							}}>{registered ? 'Registered ' : 'Register for ' + currentEvent.name}</button
+						>
+					{/if}
+				</div>
 			{/if}
 		</div>
 	</div>
 </div>
 
 <style>
-	.banner > h1{
+	.banner > h1 {
 		font: var(--sfont);
 	}
 	.button-cont {
@@ -379,42 +414,39 @@
 		filter: blur(5px) brightness(50%);
 	}
 	.sidebar {
-		scrollbar-width: none;  /* Firefox */
+		scrollbar-width: none; /* Firefox */
 		overflow-y: scroll;
 		height: 100vh;
 		width: 25%;
 		background-color: #28282d98;
 		backdrop-filter: blur(40px);
 	}
-	.sbcont{
+	.sbcont {
 		animation: scrollpc 1.5s ease-in-out;
 		animation-delay: 1s;
-		
 	}
-	
-	@keyframes scrollpc { 
+
+	@keyframes scrollpc {
 		from {
 			margin-top: 0;
 		}
-		50%{
+		50% {
 			margin-top: -70%;
 		}
-		to{
+		to {
 			margin-top: 0;
 		}
-	
 	}
-	@keyframes scrollmob { 
+	@keyframes scrollmob {
 		from {
 			margin-left: 0;
 		}
-		50%{
+		50% {
 			margin-left: -70%;
 		}
-		to{
+		to {
 			margin-left: 0;
 		}
-	
 	}
 	.parent {
 		display: flex;
@@ -462,7 +494,7 @@
 		width: 85%;
 		font-size: 22px;
 	}
-	
+
 	@keyframes banneranim {
 		0% {
 			background-position: 0 0;
@@ -508,10 +540,10 @@
 			position: relative;
 			cursor: pointer;
 		} */
-		.banner > h1{
+		.banner > h1 {
 			font-size: 28px;
 		}
-		.date{
+		.date {
 			margin-top: -3em;
 		}
 		.content {
@@ -525,12 +557,11 @@
 			width: 97%; /* Set the sidebar width to 100% of its parent */
 			margin: 0 0.5em;
 		}
-		
-		.sbcont > *{
-			
+
+		.sbcont > * {
 			display: block !important;
 		}
-		.sbcont{
+		.sbcont {
 			display: flex;
 			animation: scrollmob 1.5s ease-in-out;
 			animation-delay: 1s;
