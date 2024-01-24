@@ -62,15 +62,16 @@
 				<h4 style="margin-top: 0; margin-bottom: 10px;">{user.gradyear}</h4>
 			</div>
 		</div>
-		<!-- <div class="informations" style="display: flex; ">
-			<div class="accommodation" style="font-size: large">
-				<h1>ACCOMMODATION</h1>
-			</div> -->
-		<!-- </div> -->
+		<div class="informations" style="display: flex; ">
+			<div class="accommodation" style="font-size: large; height: auto;">
+				<!-- <h1 class="hover-underline">PROSHOW</h1> -->
+				<!-- image goes here -->
+			</div> 
+		</div>
 	</div>
 	<div
 		class="blocks"
-		style="background-color: #242424; backdrop-filter: blur(100px); opacity: 1 !important;"
+		style="backdrop-filter: blur(40px);"
 	>
 		<div
 			class="events_info"
@@ -185,6 +186,11 @@
 		display: flex;
 		width: 100%;
 		justify-content: center;
+		/* Enter image url here */
+		/* background-image: url("https://picsum.photos/200/300"); */
+		background-size: cover;
+		background-repeat: no-repeat;
+	
 	}
 	.hover-underline {
 		text-decoration: none; /* Set default text decoration to none */
