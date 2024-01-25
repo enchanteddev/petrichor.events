@@ -7,6 +7,12 @@
 	import Vasantha from '$lib/assets/Sponsors/Vasantha.jpg';
 	import Cazzkaro from '$lib/assets/Sponsors/Cazz_Karo_Logo.png';
 	import Chess from '$lib/assets/Sponsors/chess.webp';
+	import Abroad from '$lib/assets/Sponsors/abroad.png';
+	import Gift from '$lib/assets/Sponsors/Gift.png';
+	import ICICI from '$lib/assets/Sponsors/ICICI.jpg';
+	import Instrument from '$lib/assets/Sponsors/INSTRUMENT.jpg';
+	import NMR from '$lib/assets/Sponsors/NMR.png';
+	import Tangle from '$lib/assets/Sponsors/Tangle.jpg';
 </script>
 
 <h1 id="heading1">
@@ -24,6 +30,38 @@
 		<div class="img" style="background-image:url({Bharat})" />
 		<div class="name">BharatVersity</div>
 	</div>
+	<!-- Start of new sponser -->
+	<div id="bharatversity" class="sponsor">
+		<div class="title">Powered By</div>
+		<div class="img" style="background-image:url({Tangle})" />
+		<div class="name">Tangle</div>
+	</div>
+	<div id="bharatversity" class="sponsor">
+		<div class="title">Study Abroad Partner</div>
+		<div class="img" style="background-image:url({Abroad})" />
+		<div class="name">AECC</div>
+	</div>
+	<div id="bharatversity" class="sponsor">
+		<div class="title">Gift Partner</div>
+		<div class="img" style="background-image:url({Gift})" />
+		<div class="name">Make Your Own Perfume</div>
+	</div>
+	<div id="bharatversity" class="sponsor">
+		<div class="title">Event Sponsor</div>
+		<div class="img" style="background-image:url({ICICI})" />
+		<div class="name">ICICI Bank</div>
+	</div>
+	<div id="bharatversity" class="sponsor">
+		<div class="title">Event Sponsor</div>
+		<div class="img" style="background-image:url({Instrument})" />
+		<div class="name">Innovative Instruments</div>
+	</div>
+	<div id="bharatversity" class="sponsor">
+		<div class="title">Food Partner</div>
+		<div class="img" style="background-image:url({NMR})" />
+		<div class="name">NMR Uptown</div>
+	</div>
+	<!-- End of new sponser -->
 	<div id="vasanthaSponsor" class="sponsor">
 		<div class="title">Event Sponsor</div>
 		<div class="img" style="background-image:url({Vasantha})" />
