@@ -7,90 +7,53 @@
 	import Vasantha from '$lib/assets/Sponsors/Vasantha.jpg';
 	import Cazzkaro from '$lib/assets/Sponsors/Cazz_Karo_Logo.png';
 	import Chess from '$lib/assets/Sponsors/chess.webp';
+	import Abroad from '$lib/assets/Sponsors/abroad.png';
+	import Gift from '$lib/assets/Sponsors/Gift.png';
+	import ICICI from '$lib/assets/Sponsors/ICICI.jpg';
+	import Instrument from '$lib/assets/Sponsors/INSTRUMENT.jpg';
+	import NMR from '$lib/assets/Sponsors/NMR.png';
+	import Tangle from '$lib/assets/Sponsors/Tangle.jpg';
+	import Sponsor from './Sponsor.svelte';
 </script>
 
 <h1 id="heading1">
 	<span class="atmos" style="color:blueviolet">PETRICHOR'24</span> IS SPONSORED BY
 </h1>
 
+<div class="main">
+	<Sponsor name="BharatVersity" img={Bharat} title="Title Sponsor" />
+	<Sponsor name="Tangle" img={Tangle} title="Powered By" />
+</div>
+
 <div id="all">
-	<div id="bharatversity" class="sponsor">
-		<div class="title">Associate Sponsor</div>
-		<div class="img" style="background-image:url({Pnb})" />
-		<div class="name">Punjab National Bank</div>
-	</div>
-	<div id="pnbSponsor" class="sponsor">
-		<div class="title">Title Sponsor</div>
-		<div class="img" style="background-image:url({Bharat})" />
-		<div class="name">BharatVersity</div>
-	</div>
-	<div id="vasanthaSponsor" class="sponsor">
-		<div class="title">Event Sponsor</div>
-		<div class="img" style="background-image:url({Vasantha})" />
-		<div class="name">Vasantha</div>
-	</div>
-	<div id="sbiSponsor" class="sponsor">
-		<div class="title">Associate Sponsor</div>
-		<div class="img" style="background-image:url({Sbi})" />
-		<div class="name">State Bank of India</div>
-	</div>
-	<div id="canaraSponsor" class="sponsor">
-		<div class="title">Event Sponsor</div>
-		<div class="img" style="background-image:url({Canara})" />
-		<div class="name">Canara Bank</div>
-	</div>
-	<div id="honeywellSponsor" class="sponsor">
-		<div class="title">Digital Partner</div>
-		<div class="img" style="background-image:url({Hp})" />
-		<div class="name">Honeywell Systems</div>
-	</div>
-	<div id="chess" class="sponsor">
-		<div class="title">Event Sponsor</div>
-		<div class="img" style="background-image:url({Chess})" />
-		<div class="name">Chess.com</div>
-	</div>
+	<Sponsor name="State Bank of India" img={Sbi} title="Associate Sponsor" />
+	<Sponsor name="NMR Uptown" img={NMR} title="Food Partner" />
+	<Sponsor name="Punjab National Bank" img={Pnb} title="Associate Sponsor" />
+	<Sponsor name="Honeywell Systems" img={Hp} title="Digital Partner" />
+	<Sponsor name="Canara Bank" img={Canara} title="Event Sponsor" />
+	<Sponsor name="Vasantha" img={Vasantha} title="Event Sponser" />
+	<Sponsor name="AECC" img={Abroad} title="Study Abroad Partner" />
+	<Sponsor name="ICICI Bank" img={ICICI} title="Event Sponsor" />
+	<Sponsor name="Chess.com" img={Chess} title="Event Sponsor" />
+	<Sponsor name="Innovative Instruments" img={Instrument} title="Event Sponsor" />
 </div>
 
 <h2 id="heading2" class="atmos" style="color:rgb(216, 191, 238)">In Partnership with</h2>
 
 <div id="all1">
-	<div id="cazzkaro" class="sponsor">
-		<div class="title">Merch Partner</div>
-		<div class="img" style="background-image:url({Cazzkaro})" />
-		<div class="name">Cazzkaro</div>
-	</div>
+	<Sponsor name="Caazkaro" img={Cazzkaro} title="Merch Partner" />
+	<Sponsor name="Make Your Own Perfume" img={Gift} title="Gift Partner" />
 </div>
 <div style="height: 5rem;" />
 
 <style>
-	.sponsor {
-		background-color: rgba(104, 104, 104, 0.253);
-		padding: 1em;
-		border-radius: 1em;
-		backdrop-filter: blur(23px);
+	.main {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		gap: 10em;
+		margin-bottom: 8em;
 	}
-	#pnbSponsor {
-		grid-area: pnb;
-	}
-	#vasanthaSponsor {
-		grid-area: vasantha;
-	}
-	#sbiSponsor {
-		grid-area: sbi;
-	}
-	#canaraSponsor {
-		grid-area: canara;
-	}
-	#honeywellSponsor {
-		grid-area: honeywell;
-	}
-	#cazzkaro {
-		grid-area: cazzkaro;
-	}
-	#chess {
-		grid-area: chess;
-	}
-
 	* {
 		box-sizing: border-box;
 		margin: 0.2rem 0rem;
@@ -102,14 +65,10 @@
 		grid-column-gap: 10rem;
 		align-items: center;
 		justify-content: center;
-	}
-	#all {
-		grid-template-areas:
-			'pnb vasantha sbi'
-			'canara honeywell chess';
+		grid-template-columns: auto auto auto;
 	}
 	#all1 {
-		grid-template-areas: 'cazzkaro';
+		grid-template-columns: auto auto;
 	}
 
 	#heading1 {
@@ -121,58 +80,25 @@
 		margin: 4rem;
 		text-align: center;
 	}
-
-	.sponsor > .title {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.sponsor > .name {
-		width: 200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.sponsor > .img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		height: 200px;
-		width: 200px;
-	}
-	.title,
-	.name {
-		font-size: larger;
-	}
-
 	/* Mobile Version */
 	@media screen and (max-width: 960px) and (min-width: 600px) {
-		#all {
-			grid-template-areas:
-				'pnb vasantha'
-				'sbi canara'
-				'honeywell honeywell';
+		#all,
+		.main {
+			display: grid;
+			grid-template-columns: auto auto;
 		}
 		#all1 {
-			grid-template-areas: 'cazzkaro';
+			grid-template-columns: auto auto;
 		}
 	}
 	@media screen and (max-width: 600px) {
-		#all {
-			grid-template-areas:
-				'pnb'
-				'vasantha'
-				'sbi'
-				'canara'
-				'honeywell'
-				'chess';
+		#all,
+		.main {
+			display: grid;
+			grid-template-columns: auto;
 		}
 		#all1 {
-			grid-template-areas: 'cazzkaro';
+			grid-template-columns: auto;
 		}
 	}
 </style>
