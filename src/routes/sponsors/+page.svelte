@@ -29,7 +29,7 @@
 	<Sponsor name="State Bank of India" img={Sbi} title="Associate Sponsor" />
 	<Sponsor name="NMR Uptown" img={NMR} title="Food Partner" />
 	<Sponsor name="Punjab National Bank" img={Pnb} title="Associate Sponsor" />
-	<Sponsor name="Honeywell Systems" img={Hp} title="Digital Partner" />
+	<Sponsor name="HP World" img={Hp} title="Digital Partner" />
 	<Sponsor name="Canara Bank" img={Canara} title="Event Sponsor" />
 	<Sponsor name="Vasantha" img={Vasantha} title="Event Sponser" />
 	<Sponsor name="AECC" img={Abroad} title="Study Abroad Partner" />

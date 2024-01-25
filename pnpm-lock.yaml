@@ -20,6 +20,9 @@ dependencies:
   svelte-qrcode:
     specifier: ^1.0.0
     version: 1.0.0
+  vanilla-tilt:
+    specifier: ^1.8.1
+    version: 1.8.1
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -1251,6 +1254,10 @@ packages:
     dependencies:
       busboy: 1.6.0
     dev: true
+
+  /vanilla-tilt@1.8.1:
+    resolution: {integrity: sha512-hPB1XUsnh+SIeVSW2beb5RnuFxz4ZNgxjGD78o52F49gS4xaoLeEMh9qrQnJrnEn/vjjBI7IlxrrXmz4tGV0Kw==}
+    dev: false
 
   /vite@4.4.9:
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}

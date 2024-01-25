@@ -1,13 +1,21 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import VanillaTilt from 'vanilla-tilt';
+    
 	export let name: string;
 	export let img: string;
 	export let title: string;
+
+    let sponsorDiv: HTMLDivElement
+    onMount(() => {
+        VanillaTilt.init(sponsorDiv);
+    })
 </script>
 
-<div class="sponsor">
+<div bind:this={sponsorDiv} class="sponsor">
 	<div class="title">{title}</div>
 	<div class="img" style="background-image:url({img})" />
-	<div class="atmos name">{name}</div>
+	<div class="name">{name}</div>
 </div>
 
 <style>
@@ -16,13 +24,19 @@
 		padding: 1em;
 		border-radius: 1em;
 		backdrop-filter: blur(23px);
+        transition: 200ms ease;
 	}
+
+    .sponsor:hover{
+        scale: 1.05;
+    }
 
 	.title {
 		width: 200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+        font-weight: 1000;
 	}
 	.name {
 		width: 200px;

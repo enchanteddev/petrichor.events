@@ -29,6 +29,7 @@
 		"@types/ws": "^8.5.8",
 		"qrcode": "^1.5.3",
 		"svelte-awesome": "^3.2.1",
-		"svelte-qrcode": "^1.0.0"
+		"svelte-qrcode": "^1.0.0",
+		"vanilla-tilt": "^1.8.1"
 	}
 }
