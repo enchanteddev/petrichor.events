@@ -57,9 +57,9 @@ import cap from '$lib/assets/Merch/Cap.png';
 import laser from '$lib/assets/Informals/Lazer.jpg';
 import VR from '$lib/assets/Informals/ARVR.jpg';
 import Chess from '$lib/assets/Informals/Chess.jpg';
-
+  
 export const closedRegistrations = [
-  "TF07", "TF08", "TF03" ,"TF00" , "TF01 , TF10" , "TF11"
+  "TF07", "TF08", "TF03" ,"TF00" , "TF01 , TF10" , "TF11", "CF19", "CP10", "CF08", "CF18", "CP00"
 ]
 
 

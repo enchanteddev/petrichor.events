@@ -86,8 +86,15 @@
 		}
 	};
 
+	let shiftedEve = {
+		"Drone Dash":'https://bharatversity.com/events/eventdetails/a202b5a7-8671-4598-a41d-b66cc0940a98',
+		'Robowars':'https://bharatversity.com/events/eventdetails/8c179887-3ab9-4e48-9455-b87a4e6e8585',
+		'Labyrinth 2.0':'https://bharatversity.com/events/eventdetails/d32a38d3-40bc-49c9-ae21-61904771729f',
+		'Clench Bot':'https://bharatversity.com/events/eventdetails/480387c8-982e-46ec-8c97-5b90f048be3d'
+	}
+
 	const clicked = async () => {
-		if (!$isLogin) {
+		if (!$isLogin && !(currentEvent.name in shiftedEve)) {
 			loading = true;
 			goto(`/login?nextpg=${$page.url.pathname + $page.url.search}`);
 		} else {
