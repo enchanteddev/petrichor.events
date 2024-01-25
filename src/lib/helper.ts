@@ -1,4 +1,4 @@
-import {technical, workshops, cultural} from '$lib/data'
+import {technical, workshops, cultural, informals} from '$lib/data'
 
 export function getEventDataJS(eventID: string){
     const Tresult = technical.events.filter((e) => e.id == eventID)
@@ -12,5 +12,9 @@ export function getEventDataJS(eventID: string){
     const Wresult = workshops.workshops.filter((e) => e.id == eventID)
     if (Wresult.length > 0){
         return Wresult[0]
+    }
+    const Iresult = informals.filter((e) => e.id == eventID)
+    if (Iresult.length > 0){
+        return Iresult[0]
     }
 }

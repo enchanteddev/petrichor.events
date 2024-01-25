@@ -1,0 +1,340 @@
+{
+    "schedule": [
+        {
+            "name": "Cloak Room",
+            "id": "N",
+            "timing": "",
+            "venue": "S - 307",
+            "date": 27
+        },
+        {
+            "name": "Solo Dance",
+            "id": "CP14",
+            "timing": "9 AM - 11:30 AM",
+            "venue": "Agora",
+            "date": 27
+        },
+        {
+            "name": "Lazer Tag",
+            "id": "IF02",
+            "timing": "10 AM - 6 PM",
+            "venue": "A - Annexure",
+            "date": 27
+        },
+        {
+            "name": "AR / VR",
+            "id": "IF03",
+            "timing": "10 AM - 6 PM",
+            "venue": "M - Front",
+            "date": 27
+        },
+        {
+            "name": "Robotic Maneuver",
+            "id": "TF02",
+            "timing": "10 AM - 1:30 PM",
+            "venue": "Bageshri Lobby",
+            "date": 27
+        },
+        {
+            "name": "Egg Drop Challenge",
+            "id": "TF10",
+            "timing": "10 AM - 1:30 PM",
+            "venue": "Civil Lab",
+            "date": 27
+        },
+        {
+            "name": "Qriosity Quiz Tech",
+            "id": "TF12",
+            "timing": "10 AM - 12:30 PM",
+            "venue": "S - 303",
+            "date": 27
+        },
+        {
+            "name": "AI Workshop",
+            "id": "WP00",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 203",
+            "date": 27
+        },
+        {
+            "name": "Prod Design Workshop",
+            "id": "WP02",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 308",
+            "date": 27
+        },
+        {
+            "name": "Startup Workshop",
+            "id": "WP04",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - CS1",
+            "date": 27
+        },
+        {
+            "name": "CP Workshop",
+            "id": "WP06",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - CS2",
+            "date": 27
+        },
+        {
+            "name": "Robotics Workshop",
+            "id": "WP01",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "M - EE LAB",
+            "date": 27
+        },
+        {
+            "name": "Reinforcement Learning Workshop",
+            "id": "WP03",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 305",
+            "date": 27
+        },
+        {
+            "name": "Measurement and Its' Principles Workshop",
+            "id": "WP05",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 301",
+            "date": 27
+        },
+        {
+            "name": "Inauguration Ceremony",
+            "id": "P",
+            "timing": "11:30 AM - 12:30 PM",
+            "venue": "Agora",
+            "date": 27
+        },
+        {
+            "name": "Informal Stage Events",
+            "id": "I",
+            "timing": "1 PM - 6 PM",
+            "venue": "Informals Stage",
+            "date": 27
+        },
+        {
+            "name": "Group Dance",
+            "id": "CP07",
+            "timing": "1:30 PM - 4 PM",
+            "venue": "Agora",
+            "date": 27
+        },
+        {
+            "name": "Qriosity Quiz Tech",
+            "id": "TF12",
+            "timing": "2:00 PM - 4:30 PM",
+            "venue": "S - 306",
+            "date": 27
+        },
+        {
+            "name": "Drone Race",
+            "id": "TF04",
+            "timing": "2:00 PM - 5:00 PM",
+            "venue": "N - Ground",
+            "date": 27
+        },
+        {
+            "name": "Dance Battle",
+            "id": "CF12",
+            "timing": "4 PM - 6:30 PM",
+            "venue": "Agora",
+            "date": 27
+        },
+        {
+            "name": "Musical Night",
+            "id": "P",
+            "timing": "",
+            "venue": "N - Ground",
+            "date": 27
+        },
+        {
+            "name": "Cloak Room",
+            "id": "",
+            "timing": "",
+            "venue": "S - 307",
+            "date": 28
+        },
+        {
+            "name": "Musical Duo",
+            "id": "CP06",
+            "timing": "9 AM - 11:30 AM",
+            "venue": "Agora",
+            "date": 28
+        },
+        {
+            "name": "Solo Singing",
+            "id": "CP03",
+            "timing": "9 AM - 11:30 AM",
+            "venue": "Informals Stage",
+            "date": 28
+        },
+        {
+            "name": "Drone Stabilization Challenge",
+            "id": "TF11",
+            "timing": "9:30 AM - 12:30 PM",
+            "venue": "S - 303",
+            "date": 28
+        },
+        {
+            "name": "Quiz Culturals",
+            "id": "CF16",
+            "timing": "10:00 AM - 12:30 PM",
+            "venue": "S - 306",
+            "date": 28
+        },
+        {
+            "name": "Face painting",
+            "id": "CF01",
+            "timing": "10 AM - 11:30 AM",
+            "venue": "S - Front",
+            "date": 28
+        },
+        {
+            "name": "Kampan",
+            "id": "TF06",
+            "timing": "10:00 AM - 1:30 PM",
+            "venue": "M - Quad",
+            "date": 28
+        },
+        {
+            "name": "Maze Runner",
+            "id": "TF09",
+            "timing": "10:00 AM - 4:00 PM",
+            "venue": "Bageshri Lobby",
+            "date": 28
+        },
+        {
+            "name": "Lazer Tag",
+            "id": "IF02",
+            "timing": "10 AM - 6 PM",
+            "venue": "A - Annexure",
+            "date": 28
+        },
+        {
+            "name": "AR / VR",
+            "id": "IF03",
+            "timing": "10 AM - 6 PM",
+            "venue": "M - Front",
+            "date": 28
+        },
+        {
+            "name": "AI Workshop",
+            "id": "WP00",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 203",
+            "date": 28
+        },
+        {
+            "name": "Prod Design Workshop",
+            "id": "WP02",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 308",
+            "date": 28
+        },
+        {
+            "name": "Startup Workshop",
+            "id": "WP04",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - CS1",
+            "date": 28
+        },
+        {
+            "name": "CP Workshop",
+            "id": "WP06",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - CS2",
+            "date": 28
+        },
+        {
+            "name": "Robotics Workshop",
+            "id": "WP01",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "M - EE LAB",
+            "date": 28
+        },
+        {
+            "name": "Reinforcement Learning Workshop",
+            "id": "WP03",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 305",
+            "date": 28
+        },
+        {
+            "name": "Measurement and Its' Principles Workshop",
+            "id": "WP05",
+            "timing": "10 AM - 12 PM , 2 PM - 4 PM",
+            "venue": "S - 301",
+            "date": 28
+        },
+        {
+            "name": "Robo Wars",
+            "id": "TF13",
+            "timing": "11 AM - 3 PM",
+            "venue": "Agora Pav.",
+            "date": 28
+        },
+        {
+            "name": "Crafts creation",
+            "id": "CF05",
+            "timing": "11:30 AM - 1:30 PM",
+            "venue": "S - Front",
+            "date": 28
+        },
+        {
+            "name": "Band",
+            "id": "CP17",
+            "timing": "12 PM - 3 PM",
+            "venue": "Agora",
+            "date": 28
+        },
+        {
+            "name": "Informal Stage Events",
+            "id": "I",
+            "timing": "1 PM -6 PM",
+            "venue": "Informals Stage",
+            "date": 28
+        },
+        {
+            "name": "Quiz Culturals",
+            "id": "CF16",
+            "timing": "2 PM - 4:30 PM",
+            "venue": "S - 306",
+            "date": 28
+        },
+        {
+            "name": "Drone Stabilization Challenge",
+            "id": "TF11",
+            "timing": "2:30 pm - 4:30 pm",
+            "venue": "S - 303",
+            "date": 28
+        },
+        {
+            "name": "Culinary event",
+            "id": "CP00",
+            "timing": "2:30 PM - 4:30 PM",
+            "venue": "N - Mess",
+            "date": 28
+        },
+        {
+            "name": "Fashion",
+            "id": "CF04",
+            "timing": "4 PM - 5:30 PM",
+            "venue": "Agora",
+            "date": 28
+        },
+        {
+            "name": "Tech Summit",
+            "id": "T",
+            "timing": "5:30 PM - 6:30 PM",
+            "venue": "Agora",
+            "date": 28
+        },
+        {
+            "name": "Musical Night",
+            "id": "P",
+            "timing": "",
+            "venue": "N - Ground",
+            "date": 28
+        }
+    ]
+}
