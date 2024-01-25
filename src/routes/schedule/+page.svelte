@@ -9,7 +9,7 @@
 
 <div class="overlay">
     <div class="container">
-        <h1 style="text-align: center;">View The Schedule on <span class="atmos">Tangle</span></h1>
+        <h1 style="text-align: center;">View The Schedule On <span class="atmos">Tangle</span></h1>
         <img src={tangle} alt="">
         <a href='https://play.google.com/store/apps/details?id=com.tangleoffline.tangle&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
         <a style="color: white;" href="https://apps.apple.com/in/app/tangle-university-social-app/id6446587394">
