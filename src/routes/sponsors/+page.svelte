@@ -21,28 +21,63 @@
 </h1>
 
 <div class="main">
-	<Sponsor name="BharatVersity" img={Bharat} title="Title Sponsor" />
-	<Sponsor name="Tangle" img={Tangle} title="Powered By" />
+	<Sponsor
+		url="https://bharatversity.com/"
+		name="BharatVersity"
+		img={Bharat}
+		title="Title Sponsor"
+	/>
+	<Sponsor url="https://beta.tangleoffline.com/" name="Tangle" img={Tangle} title="Powered By" />
 </div>
 
 <div id="all">
-	<Sponsor name="State Bank of India" img={Sbi} title="Associate Sponsor" />
-	<Sponsor name="NMR Uptown" img={NMR} title="Food Partner" />
-	<Sponsor name="Punjab National Bank" img={Pnb} title="Associate Sponsor" />
-	<Sponsor name="HP World" img={Hp} title="Digital Partner" />
-	<Sponsor name="Canara Bank" img={Canara} title="Event Sponsor" />
-	<Sponsor name="Vasantha" img={Vasantha} title="Event Sponser" />
-	<Sponsor name="AECC" img={Abroad} title="Study Abroad Partner" />
-	<Sponsor name="ICICI Bank" img={ICICI} title="Event Sponsor" />
-	<Sponsor name="Chess.com" img={Chess} title="Event Sponsor" />
-	<Sponsor name="Innovative Instruments" img={Instrument} title="Event Sponsor" />
+	<Sponsor
+		url="https://www.onlinesbi.sbi/"
+		name="State Bank of India"
+		img={Sbi}
+		title="Associate Sponsor"
+	/>
+	<Sponsor
+		url="https://www.instagram.com/nmrs.uptown/"
+		name="NMR Uptown"
+		img={NMR}
+		title="Food Partner"
+	/>
+	<Sponsor
+		url="https://www.pnbindia.in/"
+		name="Punjab National Bank"
+		img={Pnb}
+		title="Associate Sponsor"
+	/>
+	<Sponsor url="https://http://hp.com/" name="HP World" img={Hp} title="Digital Partner" />
+	<Sponsor url="https://canarabank.com/" name="Canara Bank" img={Canara} title="Event Sponsor" />
+	<Sponsor
+		url="https://www.vasanthasystems.net/"
+		name="Vasantha"
+		img={Vasantha}
+		title="Event Sponser"
+	/>
+	<Sponsor
+		url="https://www.aeccglobal.com/"
+		name="AECC"
+		img={Abroad}
+		title="Study Abroad Partner"
+	/>
+	<Sponsor url="https://www.icicibank.com/" name="ICICI Bank" img={ICICI} title="Event Sponsor" />
+	<Sponsor url="http://chess.com/" name="Chess.com" img={Chess} title="Event Sponsor" />
+	<Sponsor url="" name="Innovative Instruments" img={Instrument} title="Event Sponsor" />
 </div>
 
 <h2 id="heading2" class="atmos" style="color:rgb(216, 191, 238)">In Partnership with</h2>
 
 <div id="all1">
-	<Sponsor name="Caazkaro" img={Cazzkaro} title="Merch Partner" />
-	<Sponsor name="Make Your Own Perfume" img={Gift} title="Gift Partner" />
+	<Sponsor url="http://myop.in/" name="Caazkaro" img={Cazzkaro} title="Merch Partner" />
+	<Sponsor
+		url="https://www.instagram.com/cazzkaroofficial?igsh=MTEzY3o2N3VxZnBnMw=="
+		name="Make Your Own Perfume"
+		img={Gift}
+		title="Gift Partner"
+	/>
 </div>
 <div style="height: 5rem;" />
 

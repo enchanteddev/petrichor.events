@@ -1,22 +1,23 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import VanillaTilt from 'vanilla-tilt';
-    
+
 	export let name: string;
 	export let img: string;
 	export let title: string;
+	export let url: string;
 
-    let sponsorDiv: HTMLDivElement
-    onMount(() => {
-        VanillaTilt.init(sponsorDiv);
-    })
+	let sponsorDiv: HTMLAnchorElement;
+	onMount(() => {
+		VanillaTilt.init(sponsorDiv);
+	});
 </script>
 
-<div bind:this={sponsorDiv} class="sponsor">
+<a href={url} bind:this={sponsorDiv} class="sponsor" target="_blank">
 	<div class="title">{title}</div>
 	<div class="img" style="background-image:url({img})" />
 	<div class="name">{name}</div>
-</div>
+</a>
 
 <style>
 	.sponsor {
@@ -24,19 +25,21 @@
 		padding: 1em;
 		border-radius: 1em;
 		backdrop-filter: blur(23px);
-        transition: 200ms ease;
+		transition: 200ms ease;
+		color: white;
+		text-decoration: none;
 	}
 
-    .sponsor:hover{
-        scale: 1.05;
-    }
+	.sponsor:hover {
+		scale: 1.05;
+	}
 
 	.title {
 		width: 200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        font-weight: 1000;
+		font-weight: 1000;
 	}
 	.name {
 		width: 200px;
