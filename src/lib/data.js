@@ -451,7 +451,7 @@ export let cultural = {
 					'\u2022\tPainting skills - 25%',
 					'\u2022\tOverall visual impact - 25%'
 				],
-				prizes: ['₹3000', '₹2000', '₹1000'],
+				prizes: ['₹1500', '₹1000', '₹500'],
 				rules: [
 					'\u2022        Participants must finish the painting within 60 minutes.',
 					'\u2022        The theme will be announced before the event.',
@@ -497,7 +497,7 @@ export let cultural = {
 					'\u25cf\tEffectiveness in utilization of waste materials - 30%',
 					'\u25cf\tPresentation - 20%'
 				],
-				prizes: ['First: ₹2500', 'Second: ₹1500', 'Third: ₹1000'],
+				prizes: ['First: ₹1500', 'Second: ₹1000', 'Third: ₹500'],
 				rules: [
 					'Registration fee for this event is ₹49 for each registrant.',
 					'\u25cf        Participants will be given 60 minutes to show their creativity and 2 minutes to talk about their crafts.',
