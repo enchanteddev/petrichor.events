@@ -7,7 +7,7 @@
 
 </script>
 
-<div class="overlay">
+<!-- <div class="overlay">
     <div class="container">
         <h1 style="text-align: center;">View The Schedule On <span class="atmos">Tangle</span></h1>
         <img src={tangle} alt="">
@@ -16,7 +16,7 @@
             <img class="trash" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvpnnext.com%2Fimages%2Fget-on-app-store.png&f=1&nofb=1&ipt=5c0569a4b79f39ce2a7b2b19ce204978d00265de8441509cf8237d62752164ba&ipo=images" alt="">
         </a>
     </div>
-</div>
+</div> -->
 
 <div class="main">
 
@@ -65,9 +65,9 @@
         flex-direction: column;
         place-items: center;
         margin-top: 7em;
-        filter: blur(15px);
-        height: 100svh;
-        overflow: hidden;
+        /* filter: blur(15px); */
+        /* height: 100svh;
+        overflow: hidden; */
     }
     .grid{
         display: grid;
